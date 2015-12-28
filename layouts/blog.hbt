@@ -13,7 +13,7 @@
                     {{#each collections.posts}}
                         <li>
                             <h3>{{this.title}}</h3>
-                            <article>{{{this.contents}}}</article>
+                            <h4>Posted {{this.date}} by {{this.author}}</h4>
                         </li>
                     {{/each}}
                 </article>

@@ -25,10 +25,10 @@ var debug = function(options) {
 Metalsmith(__dirname)
     .use(collections({
         pages: {
-            pattern: "pages/*.md",
+            pattern: "content/pages/*.md",
         },
         posts: {
-            pattern: "posts/*.md",
+            pattern: "content/posts/*.md",
             sortBy: "date",
             reverse: true,
         },
@@ -50,7 +50,7 @@ Metalsmith(__dirname)
         directory: "./layouts",
         partials: "./layouts/partials",
     }))
-    .source("./src/content")
+    .source("./src")
     .destination("./build")
     .build(function(err) {
         if (err) {
