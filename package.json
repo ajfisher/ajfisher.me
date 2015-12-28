@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/ajfisher/ajfisher.me/issues"
   },
-  "homepage": "https://github.com/ajfisher/ajfisher.me#readme"
+  "homepage": "https://github.com/ajfisher/ajfisher.me#readme",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "handlebars": "^4.0.5",
+    "metalsmith": "^2.1.0",
+    "metalsmith-layouts": "^1.4.2"
+  }
 }
