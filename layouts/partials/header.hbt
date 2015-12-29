@@ -1,6 +1,9 @@
 <div class="header-container">
     <header class="wrapper clearfix">
         <h1 class="title">{{ title }}</h1>
-        <h2 class="author">by {{ author }} on {{ date }}</h2>
+        <p class="date">Published {{ moment date 'dddd, MMMM Do YYYY' }}</p>
+        <!--<p class="author">{{ author }}</p>-->
+        <p class="postdata">A {{readingtime}} minute read
+        (<span class="worddata">{{ wordcount }} words</span>)</p>
     </header>
 </div>

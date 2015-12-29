@@ -1,18 +1,22 @@
 @import 'theme.scss';
 
+html, body {
+    height: 100%;
+}
+
 html {
-    color: #222;
-    font-size: 1em;
+    color: $dark_grey;
+    font-size: 62.5%;
     line-height: 1.4;
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: $highlight;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: $highlight;
     text-shadow: none;
 }
 
@@ -57,7 +61,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 1.4em/1.0em 'Rokkitt', Helvetica, Helvetica Neue, Arial;
+    font: 2.4rem 'Rokkitt', Helvetica, Helvetica Neue, Arial;
 }
 
 .wrapper {
@@ -65,26 +69,18 @@ body {
     margin: 0 5%;
 }
 
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 2px solid $highlight;
+    height: 95%;
 }
 
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
+.footer-container {
+    border-top: 2px solid $highlight;
 }
 
 .header-container,
 .footer-container {
     @include gradientBackground($dark_grey, 30%);
-}
-
-.title {
-    color: white;
 }
 
 /* ==============
@@ -124,7 +120,7 @@ nav a:hover {
    ============== */
 
 .main {
-    padding: 30px 0;
+    padding: 3rem 0;
 }
 
 .main article h1 {
@@ -154,52 +150,86 @@ nav a:hover {
    ========================================================================== */
 
 h1 {
-    font-size: 3.77em;
+    font-size: 9.5rem;
 }
 
 h2 {
-    font-size: 2.0em;
+    font-size: 6rem;
+}
+
+h3 {
+    font-size: 5rem;
 }
 
 header h1 {
     background-color: $base;
-    padding: 0.5em 0.3em;
-    //text-transform: uppercase;
+    padding: 3.5rem 3rem;
+    margin-bottom: 0;
     @include heading-font();
     font-weight: normal;
-    width: 67%;
     display: inline-block;
     line-height: 1em;
-    color: rgba(255,255,255,0.85);
+    color: $text_colour;
+    min-height: 35rem;
+    margin-top: 10rem;
+    vertical-align: middle;
 }
 
-header h2 {
-    color: rgba(255,255,255,0.85);
+header p {
+    color: $text_colour;
     clear: left;
-    padding: 0 0.3em;
+    padding: 0 3.5rem;
+    font-size: 3rem;
+    margin: 2rem 0rem;
 }
+
+p.date {
+    color: $base;
+}
+
+p.postdata {
+    color: $highlight;
+    font-size: 2rem;
+}
+
+span.worddata {
+    color: $text_colour;
+}
+
 
 a {
     color: $highlight;
     background: $dark_grey;
     text-decoration: none;
-    padding: 0 0.2em;
+    padding: 0 0.5rem;
 }
 
 
-article h2 {
+article h2,
+article h3{
     background-color: $base;
-    color: rgba(255,255,255,0.85);
+    color: $text_colour;
     @include heading-font();
-    padding: 1em 1em;
+    padding: 0.5rem 3rem;
+    margin: 0;
 }
 
 
+article h4 {
+    padding: 0.5rem 3rem;
+    margin:0;
+    @include heading-font();
+    color: $dark_grey;
+}
 
+article p img {
+    width: 100%;
+    min-height: 100%;
+}
 
-
-
-
+article p {
+    margin: 3rem 3rem;
+}
 
 /* ==========================================================================
    Media Queries
@@ -257,7 +287,7 @@ article h2 {
     WIDE: Menu
    ============ */
 
-    .title {
+/**    .title {
         float: left;
     }
 
@@ -265,14 +295,14 @@ article h2 {
         float: right;
         width: 38%;
     }
+**/
 
 /* ============
     WIDE: Main
    ============ */
 
     .main article {
-        float: left;
-        width: 57%;
+        
     }
 
     .main aside {
@@ -288,8 +318,9 @@ article h2 {
    =============== */
 
     .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
+        width: 687px; /* 1140px less 33% for right padding and 10% either side margin */
         margin: 0 auto;
+        padding-right: 339px;
     }
 }
 
