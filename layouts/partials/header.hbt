@@ -1,6 +1,6 @@
 <div class="header-container">
     <header class="wrapper clearfix">
         <h1 class="title">{{ title }}</h1>
-        <h2 class="author">{{ author }}</h2>
+        <h2 class="author">by {{ author }} on {{ date }}</h2>
     </header>
 </div>

@@ -13,6 +13,13 @@
      @include radial-gradient( darken($bgcolor, $darken_amt), $bgcolor );
 }
 
+@mixin main-font() {
+    font-family: 'Rokkitt', serif;
+}
+
+@mixin heading-font() {
+    font-family: 'Lobster', cursive;
+}
 
 // main colour swatches from paletton
 $color-primary-0: #FF5E9A;  // Main Primary color */
@@ -46,3 +53,5 @@ $base: $color-primary-0;
 $highlight: $color-complement-0;
 
 $linkcolor: $color-complement-0;
+
+

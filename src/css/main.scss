@@ -57,7 +57,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 16px/26px 'Rokkitt', Helvetica, Helvetica Neue, Arial;
 }
 
 .wrapper {
@@ -79,8 +79,7 @@ body {
 }
 
 .header-container,
-.footer-container,
-.main aside {
+.footer-container {
     @include gradientBackground($dark_grey, 30%);
 }
 
@@ -155,7 +154,7 @@ nav a:hover {
    ========================================================================== */
 
 h1 {
-    font-size: 2.77em;
+    font-size: 3.77em;
 }
 
 h2 {
@@ -164,15 +163,20 @@ h2 {
 
 header h1 {
     background-color: $base;
-    padding: 0.5 0.3em;
-    text-transform: uppercase;
+    padding: 0.5em 0.3em;
+    //text-transform: uppercase;
+    @include heading-font();
     font-weight: normal;
     width: 67%;
-    display: block;
+    display: inline-block;
+    line-height: 1.5em;
+    color: rgba(255,255,255,0.85);
 }
 
 header h2 {
-    color: $base;    
+    color: rgba(255,255,255,0.85);
+    clear: left;
+    padding: 0 0.3em;
 }
 
 a {
