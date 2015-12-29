@@ -1,11 +1,12 @@
 var fs = require('fs');
 
-var Handlebars = require('handlebars');
-var Metalsmith = require('metalsmith');
+var Handlebars  = require('handlebars');
+var Metalsmith  = require('metalsmith');
 var collections = require('metalsmith-collections');
-var layouts = require('metalsmith-layouts');
-var markdown = require('metalsmith-markdown');
-var permalinks = require('metalsmith-permalinks');
+var layouts     = require('metalsmith-layouts');
+var markdown    = require('metalsmith-markdown');
+var permalinks  = require('metalsmith-permalinks');
+var serve       = require('metalsmith-serve');
 
 Handlebars.registerPartial('footer', fs.readFileSync(__dirname + '/layouts/partials/footer.hbt').toString());
 Handlebars.registerPartial('head', fs.readFileSync(__dirname + '/layouts/partials/head.hbt').toString());
@@ -23,6 +24,10 @@ var debug = function(options) {
 
 
 Metalsmith(__dirname)
+    .use(serve({
+        cache: 0,
+        verbose: true,
+    }))
     .use(collections({
         pages: {
             pattern: "content/pages/*.md",
