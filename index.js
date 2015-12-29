@@ -26,6 +26,11 @@ var debug = function(options) {
 
 
 Metalsmith(__dirname)
+    .metadata({
+        site: {
+            url: "http://ajfisher.me",
+        }
+    })
     .use(watch({
         paths: {
             "$(source)/**/*": true,
