@@ -7,6 +7,7 @@ var layouts     = require('metalsmith-layouts');
 var markdown    = require('metalsmith-markdown');
 var permalinks  = require('metalsmith-permalinks');
 var serve       = require('metalsmith-serve');
+var watch       = require('metalsmith-watch');
 
 Handlebars.registerPartial('footer', fs.readFileSync(__dirname + '/layouts/partials/footer.hbt').toString());
 Handlebars.registerPartial('head', fs.readFileSync(__dirname + '/layouts/partials/head.hbt').toString());
@@ -24,9 +25,11 @@ var debug = function(options) {
 
 
 Metalsmith(__dirname)
-    .use(serve({
-        cache: 0,
-        verbose: true,
+    .use(watch({
+        paths: {
+            "$(source)/**/*": true,
+            "layouts/**/*": "**/*.md",
+        }
     }))
     .use(collections({
         pages: {
@@ -57,6 +60,10 @@ Metalsmith(__dirname)
     }))
     .source("./src")
     .destination("./build")
+    .use(serve({
+        cache: 0,
+        verbose: true,
+    }))
     .build(function(err) {
         if (err) {
             console.log(err);
