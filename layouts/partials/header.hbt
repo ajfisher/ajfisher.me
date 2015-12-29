@@ -2,6 +2,5 @@
     <header class="wrapper clearfix">
         <h1 class="title">{{ title }}</h1>
         <h2 class="author">{{ author }}</h2>
-        {{> nav }}
     </header>
 </div>

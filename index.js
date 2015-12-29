@@ -6,6 +6,7 @@ var collections = require('metalsmith-collections');
 var layouts     = require('metalsmith-layouts');
 var markdown    = require('metalsmith-markdown');
 var permalinks  = require('metalsmith-permalinks');
+var sass        = require('metalsmith-sass');
 var serve       = require('metalsmith-serve');
 var watch       = require('metalsmith-watch');
 var wordcount   = require('metalsmith-word-count');
@@ -36,6 +37,7 @@ Metalsmith(__dirname)
             "$(source)/**/*": true,
             "layouts/**/*": "**/*.md",
             "index.js": "**/*.md",
+            "src/css/**/*": "**/*.scss",
         }
     }))
     .use(collections({
@@ -73,6 +75,10 @@ Metalsmith(__dirname)
     }))
     .source("./src")
     .destination("./build")
+    .use(sass({
+        outputDir: 'css/',
+        watch: 'src/css/**/*',
+    }))
     .use(serve({
         cache: 0,
         verbose: true,

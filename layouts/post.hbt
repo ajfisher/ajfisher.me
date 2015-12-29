@@ -13,6 +13,7 @@
                     {{{ contents }}}
                 </article>
                 <aside>
+                    {{> nav }}
                     <h3>aside</h3>
                     <p>blah blah</p>
                 </aside>
