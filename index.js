@@ -1,6 +1,8 @@
 var fs = require('fs');
 
 var Handlebars  = require('handlebars');
+var Moment      = require('moment');
+
 var Metalsmith  = require('metalsmith');
 var collections = require('metalsmith-collections');
 var layouts     = require('metalsmith-layouts');
@@ -11,11 +13,19 @@ var serve       = require('metalsmith-serve');
 var watch       = require('metalsmith-watch');
 var wordcount   = require('metalsmith-word-count');
 
+// partial definitions
 Handlebars.registerPartial('footer', fs.readFileSync(__dirname + '/layouts/partials/footer.hbt').toString());
 Handlebars.registerPartial('head', fs.readFileSync(__dirname + '/layouts/partials/head.hbt').toString());
 Handlebars.registerPartial('header', fs.readFileSync(__dirname + '/layouts/partials/header.hbt').toString());
 Handlebars.registerPartial('nav', fs.readFileSync(__dirname + '/layouts/partials/nav.hbt').toString());
 Handlebars.registerPartial('warning', fs.readFileSync(__dirname + '/layouts/partials/warning.hbt').toString());
+
+// helper definitions
+Handlebars.registerHelper('moment', function(date, format) {
+    // takes a date and formats it appropriately
+    return Moment(date).format(format);
+});
+
 
 var debug = function(options) {
     return (function(files, metalsmith, done) {
@@ -37,7 +47,7 @@ Metalsmith(__dirname)
             "$(source)/**/*": true,
             "layouts/**/*": "**/*.md",
             "index.js": "**/*.md",
-            "src/css/**/*": "**/*.scss",
+            "src/css/**/*": "**/*",
         }
     }))
     .use(collections({
