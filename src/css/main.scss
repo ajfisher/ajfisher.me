@@ -57,7 +57,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px 'Rokkitt', Helvetica, Helvetica Neue, Arial;
+    font: 1.4em/1.0em 'Rokkitt', Helvetica, Helvetica Neue, Arial;
 }
 
 .wrapper {
@@ -169,7 +169,7 @@ header h1 {
     font-weight: normal;
     width: 67%;
     display: inline-block;
-    line-height: 1.5em;
+    line-height: 1em;
     color: rgba(255,255,255,0.85);
 }
 
@@ -183,11 +183,16 @@ a {
     color: $highlight;
     background: $dark_grey;
     text-decoration: none;
-    padding: 0.2em;
+    padding: 0 0.2em;
 }
 
 
-
+article h2 {
+    background-color: $base;
+    color: rgba(255,255,255,0.85);
+    @include heading-font();
+    padding: 1em 1em;
+}
 
 
 
