@@ -14,6 +14,10 @@
                         <li>
                             <h3>{{this.title}}</h3>
                             <h4>Posted {{this.date}} by {{this.author}}</h4>
+                            <p>
+                                <span class="readingtime">{{this.readingtime}} minute read</span>
+                                <span class="wordcount">({{this.wordcount}} words)</span>
+                            </p>
                         </li>
                     {{/each}}
                 </article>

@@ -8,6 +8,7 @@ var markdown    = require('metalsmith-markdown');
 var permalinks  = require('metalsmith-permalinks');
 var serve       = require('metalsmith-serve');
 var watch       = require('metalsmith-watch');
+var wordcount   = require('metalsmith-word-count');
 
 Handlebars.registerPartial('footer', fs.readFileSync(__dirname + '/layouts/partials/footer.hbt').toString());
 Handlebars.registerPartial('head', fs.readFileSync(__dirname + '/layouts/partials/head.hbt').toString());
@@ -29,6 +30,7 @@ Metalsmith(__dirname)
         paths: {
             "$(source)/**/*": true,
             "layouts/**/*": "**/*.md",
+            "index.js": "**/*.md",
         }
     }))
     .use(collections({
@@ -42,6 +44,12 @@ Metalsmith(__dirname)
         },
     }))
     .use(markdown())
+    .use(wordcount({
+        metaKeyCount: "wordcount",
+        metaKeyReadingTime: "readingtime",
+        seconds: false,
+        raw: true,
+    }))
     .use(permalinks({
         pattern: ":slug",
         linksets: [{
@@ -71,5 +79,3 @@ Metalsmith(__dirname)
             console.log("Site built correctly");
         }
     });
-
-

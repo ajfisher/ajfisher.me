@@ -1,7 +1,7 @@
 <nav>
     <ul>
-        <li><a href="#">nav ul li a</a></li>
-        <li><a href="#">nav ul li a</a></li>
-        <li><a href="#">nav ul li a</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/who">Who is @ajfisher</a></li>
+        <li><a href="/dis-everything">Disclaimer & Disclosure</a></li>
     </ul>
 </nav>
