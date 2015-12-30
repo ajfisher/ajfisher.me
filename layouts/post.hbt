@@ -12,10 +12,14 @@
                 <article>
                     {{{ contents }}}
                 </article>
-                <aside>
+                <aside id="sidebar">
                     {{> nav }}
-                    <h3>aside</h3>
-                    <p>blah blah</p>
+                    <section id="postinfo">
+                        <h2>{{ title }}</h2>
+                        <p class="date">Published on {{ moment date "dddd, MMM YYYY"}}
+                        by {{ author }}</p>
+
+                    </section>
                 </aside>
             </div> <!-- #main -->
         </div> <!-- #main-container -->

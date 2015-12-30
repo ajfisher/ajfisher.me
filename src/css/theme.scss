@@ -19,6 +19,7 @@
 
 @mixin heading-font() {
     font-family: 'Lobster', cursive;
+    font-weight: normal;
 }
 
 // main colour swatches from paletton
@@ -54,5 +55,6 @@ $highlight: $color-complement-0;
 
 $linkcolor: $color-complement-0;
 
-$text_colour: rgba(255, 255, 255, 0.95);
+$dark_text_colour: $dark_grey;
+$light_text_colour: rgba(255, 255, 255, 0.95);
 

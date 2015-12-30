@@ -24,7 +24,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $dark_grey;
     margin: 1em 0;
     padding: 0;
 }
@@ -50,18 +50,15 @@ textarea {
 
 .browserupgrade {
     margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
+    background: $dark_grey;
+    color: #fff;
     padding: 0.2em 0;
 }
 
 
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
 body {
     font: 2.4rem 'Rokkitt', Helvetica, Helvetica Neue, Arial;
+    color: $dark_text_colour;
 }
 
 .wrapper {
@@ -95,24 +92,32 @@ nav ul {
 
 nav a {
     display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
     text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
+    color: $dark_text_colour;
+    @include heading-font();
+    background: none;
+    padding: 0;
 }
 
 nav a:hover,
 nav a:visited {
-    color: white;
+    color: $dark_text_colour;
 }
 
-nav a:hover {
-    text-decoration: underline;
+#sidebar section h2 {
+    @include heading-font();
+    font-size: 4rem;
+    color: $base;
+}
+
+#sidebar section p.date {
+    color: $light_text_colour;
+    display: inline;
+    background: $dark_grey;
+    box-shadow: 0.5rem 0 0 $dark_grey, -0.5rem 0 0 $dark_grey;
+    padding: 0.5rem 0;
+    font-size: 2rem;
+
 }
 
 /* ==============
@@ -166,17 +171,16 @@ header h1 {
     padding: 3.5rem 3rem;
     margin-bottom: 0;
     @include heading-font();
-    font-weight: normal;
     display: inline-block;
     line-height: 1em;
-    color: $text_colour;
+    color: $light_text_colour;
     min-height: 35rem;
     margin-top: 10rem;
     vertical-align: middle;
 }
 
 header p {
-    color: $text_colour;
+    color: $light_text_colour;
     clear: left;
     padding: 0 3.5rem;
     font-size: 3rem;
@@ -193,7 +197,7 @@ p.postdata {
 }
 
 span.worddata {
-    color: $text_colour;
+    color: $light_text_colour;
 }
 
 
@@ -208,27 +212,29 @@ a {
 article h2,
 article h3{
     background-color: $base;
-    color: $text_colour;
+    color: $light_text_colour;
     @include heading-font();
-    padding: 0.5rem 3rem;
+    display: inline;
+    // use this to get consistent edge on outside of wrap
+    box-shadow: 3rem 0 0 $base, -3rem 0 0 $base;
     margin: 0;
+    padding: 0px 0px 0.5rem;
 }
 
 
 article h4 {
-    padding: 0.5rem 3rem;
+    //padding: 0.5rem 3rem;
     margin:0;
     @include heading-font();
-    color: $dark_grey;
+    color: $dark_text_colour;
 }
 
 article p img {
     width: 100%;
-    min-height: 100%;
 }
 
 article p {
-    margin: 3rem 3rem;
+    //margin: 3rem 3rem;
 }
 
 /* ==========================================================================
@@ -242,27 +248,24 @@ article p {
    ==================== */
 
     nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
+        /**margin: 0 1.7%;**/
+        /**padding: 25px 2%;**/
+        /**margin-bottom: 0;**/
     }
 
-    nav li:first-child a {
+/**    nav li:first-child a {
         margin-left: 0;
     }
 
     nav li:last-child a {
         margin-right: 0;
-    }
+    }**/
 
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
 
     nav ul li {
-        display: inline;
     }
 
     .oldie nav a {
@@ -276,8 +279,7 @@ article p {
     WIDE: CSS3 Effects
    ==================== */
 
-    .header-container,
-    .main aside {
+    .header-container {
         -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
@@ -301,16 +303,27 @@ article p {
     WIDE: Main
    ============ */
 
+
     .main article {
-        
+        float: left;
+        width: 61%;
+        padding: 0px 3rem;
     }
 
     .main aside {
         float: right;
         width: 28%;
+        padding: 0px;
     }
-}
 
+    .main aside#sidebar {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 3rem;
+        margin-top: 3rem;
+    }
+
+}
 @media only screen and (min-width: 1140px) {
 
 /* ===============
@@ -318,8 +331,13 @@ article p {
    =============== */
 
     .wrapper {
-        width: 687px; /* 1140px less 33% for right padding and 10% either side margin */
+        width: 1026px; /* 1140px less 33% for right padding and 10% either side margin */
         margin: 0 auto;
+        //padding-right: 339px;
+    }
+
+    header.wrapper {
+        width: 687px;
         padding-right: 339px;
     }
 }
@@ -406,7 +424,7 @@ article p {
 
     pre,
     blockquote {
-        border: 1px solid #999;
+        border: 1px solid $dark_grey;
         page-break-inside: avoid;
     }
 
