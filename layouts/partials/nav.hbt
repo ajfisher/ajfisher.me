@@ -3,5 +3,9 @@
         <li><a href="/">Home</a></li>
         <li><a href="/who">Who is @ajfisher</a></li>
         <li><a href="/dis-everything">Disclaimer & Disclosure</a></li>
+        <li>
+            <a href="https://twitter.com/ajfisher">T</a>
+            <a href="https://github.com/ajfisher">GH</a>
+        </li>
     </ul>
 </nav>
