@@ -1,0 +1,7 @@
+<section id="postinfo">
+    <h2>{{ title }}</h2>
+    <p class="date">Published on {{ moment date "dddd, MMM YYYY"}}
+    by {{ author }}</p>
+
+</section>
+

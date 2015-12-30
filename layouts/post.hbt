@@ -14,12 +14,7 @@
                 </article>
                 <aside id="sidebar">
                     {{> nav }}
-                    <section id="postinfo">
-                        <h2>{{ title }}</h2>
-                        <p class="date">Published on {{ moment date "dddd, MMM YYYY"}}
-                        by {{ author }}</p>
-
-                    </section>
+                    {{> postdata }}
                 </aside>
             </div> <!-- #main -->
         </div> <!-- #main-container -->
