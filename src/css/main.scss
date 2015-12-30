@@ -171,7 +171,7 @@ header h1 {
     padding: 3.5rem 3rem;
     margin-bottom: 0;
     @include heading-font();
-    display: inline-block;
+    //display: inline-block;
     line-height: 1em;
     color: $light_text_colour;
     min-height: 35rem;
