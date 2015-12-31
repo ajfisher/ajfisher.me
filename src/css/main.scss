@@ -182,8 +182,17 @@ nav a:visited:hover {
    Author's custom styles
    ========================================================================== */
 
+// these in place because adblock is insane
+.fa-insta::before {
+	content: '\f16d';
+}
+
+.fa-tw::before {
+	content: '\f099';
+}
+
 h1 {
-    font-size: 9.5rem;
+    font-size: 9rem;
 }
 
 h2 {
@@ -200,11 +209,10 @@ header h1 {
     padding: 3.5rem 3rem;
     margin-bottom: 0;
     @include heading-font();
-    //display: inline-block;
     line-height: 1em;
     color: $light_text_colour;
     min-height: 35rem;
-    margin-top: 10rem;
+    margin-top: 9rem;
     vertical-align: middle;
 }
 
@@ -226,7 +234,7 @@ header p.postdata {
 }
 
 header p.lede {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     font-weight: normal;
 }
 
