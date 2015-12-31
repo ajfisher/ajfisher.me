@@ -8,6 +8,6 @@
             <p class="lede">{{excerpt}}</p>
         {{/if}}
         <p class="postdata">A {{readingtime}} minute read
-        (<span class="worddata">{{ wordcount }} words</span>)</p>
+        (<span class="worddata">{{ humanise wordcount }} words</span>)</p>
     </header>
 </div>

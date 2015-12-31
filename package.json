@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ajfisher/ajfisher.me#readme",
   "dependencies": {
+    "d3-format": "^0.4.2",
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
     "handlebars": "^4.0.5",

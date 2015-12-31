@@ -1,5 +1,6 @@
 var fs = require('fs');
 
+var f           = require('d3-format');
 var Handlebars  = require('handlebars');
 var Moment      = require('moment');
 
@@ -25,6 +26,10 @@ Handlebars.registerPartial('warning', fs.readFileSync(__dirname + '/layouts/part
 Handlebars.registerHelper('moment', function(date, format) {
     // takes a date and formats it appropriately
     return Moment(date).format(format);
+});
+
+Handlebars.registerHelper('humanise', function(num) {
+    return (f.format('.2s')(num));
 });
 
 
