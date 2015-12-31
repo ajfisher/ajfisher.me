@@ -110,13 +110,14 @@ nav a {
     padding: 0;
 }
 
-nav a:hover,
-nav a:visited:hover {
-	border-bottom: 2px solid $highlight;
-}
-
 nav a:visited {
     color: $dark_text_colour;
+}
+
+nav a:hover,
+nav a:visited:hover {
+    color: $base;
+    background: none;
 }
 
 #sidebar section h2 {
@@ -139,6 +140,7 @@ nav a:visited {
 
 #sidebar p.tags a {
     white-space: nowrap;
+    font-size: 2rem;
 }
 
 /* ==============
@@ -232,12 +234,14 @@ a {
     background: $dark_grey;
     text-decoration: none;
     padding: 0 0.5rem;
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
 }
 
-a:hover {
-    color: $light_text_colour;
-    background: $base;
+a:hover,
+a:visited:hover {
+    //color: $light_text_colour;
+    //background: $base;
+    color: $base;
 }
 
 article h2,
