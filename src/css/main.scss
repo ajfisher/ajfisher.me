@@ -104,6 +104,7 @@ nav ul {
 
 nav ul li {
     margin: 0.6rem 0;
+    font-size: 4rem;
 }
 
 nav ul li:first-child {
@@ -112,6 +113,10 @@ nav ul li:first-child {
 
 nav ul li:last-child {
 	margin-bottom: 0;
+}
+
+nav ul li.icons {
+    font-size: 6rem;
 }
 
 nav a {
@@ -192,7 +197,7 @@ nav a:visited:hover {
 }
 
 h1 {
-    font-size: 9rem;
+    font-size: 6rem;
 }
 
 h2 {
@@ -211,8 +216,8 @@ header h1 {
     @include heading-font();
     line-height: 1em;
     color: $light_text_colour;
-    min-height: 35rem;
-    margin-top: 9rem;
+    min-height: 15rem;
+    margin-top: 3rem;
     vertical-align: middle;
 }
 
@@ -306,33 +311,9 @@ article p {
 @media only screen and (min-width: 480px) {
 
 /* ====================
-    INTERMEDIATE: Menu
+    INTERMEDIATE
    ==================== */
 
-    nav a {
-        /**margin: 0 1.7%;**/
-        /**padding: 25px 2%;**/
-        /**margin-bottom: 0;**/
-    }
-
-/**    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }**/
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -362,6 +343,11 @@ article p {
         margin: 0;
     }
 
+    nav ul li,
+    nav ul li.icons{
+        font-size: inherit;
+    }
+
     #sidebar section h2 {
         display: block;
         @include heading-font();
@@ -371,20 +357,24 @@ article p {
         margin: 2.5rem 0px;
     }
 
-/**    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
-    }
-**/
 
 /* ============
     WIDE: Main
    ============ */
 
+    h1 {
+        font-size: 9rem;
+    }
+
+    header.wrapper {
+        width: 687px;
+        padding-right: 339px;
+    }
+
+    header h1 {
+        margin-top: 9rem;
+        min-height: 35rem;
+    }
 
     .main article {
         float: left;
@@ -422,10 +412,6 @@ article p {
         //padding-right: 339px;
     }
 
-    header.wrapper {
-        width: 687px;
-        padding-right: 339px;
-    }
 }
 
 /* ==========================================================================
