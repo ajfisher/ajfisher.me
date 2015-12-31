@@ -45,7 +45,7 @@ Metalsmith(__dirname)
     })
     .use(watch({
         paths: {
-            "$(source)/**/*": true,
+            "$(source)/**/*": "**/*.md",
             "layouts/**/*": "**/*.md",
             "index.js": "**/*.md",
             "src/css/**/*": "**/*",

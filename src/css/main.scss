@@ -137,6 +137,10 @@ nav a:visited {
 
 }
 
+#sidebar p.tags a {
+    white-space: nowrap;
+}
+
 /* ==============
     MOBILE: Main
    ============== */
@@ -150,7 +154,7 @@ nav a:visited {
 }
 
 .main aside {
-    color: white;
+    //color: white;
     padding: 0px 5% 10px;
 }
 
@@ -176,7 +180,7 @@ h1 {
 }
 
 h2 {
-    font-size: 6rem;
+    font-size: 5rem;
 }
 
 h3 {
@@ -204,13 +208,18 @@ header p {
     margin: 2rem 0rem;
 }
 
-p.date {
+header p.date {
     color: $base;
 }
 
-p.postdata {
+header p.postdata {
     color: $highlight;
     font-size: 2rem;
+}
+
+header p.lede {
+    font-size: 2.4rem;
+    font-weight: normal;
 }
 
 span.worddata {
@@ -223,8 +232,13 @@ a {
     background: $dark_grey;
     text-decoration: none;
     padding: 0 0.5rem;
+    transition: all 0.2s ease;
 }
 
+a:hover {
+    color: $light_text_colour;
+    background: $base;
+}
 
 article h2,
 article h3{
