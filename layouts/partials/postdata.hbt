@@ -4,8 +4,8 @@
     by {{ author }}</p>
     {{#if tags}}
         <p class="tags">Tagged:
-        {{#each tags}}
-            <a href="/tagged/{{this}}">{{this}}</a>
+        {{#each tagsUrlSafe}}
+            <a href="/tagged/{{this}}">{{lookup ../tags @index}}</a>
         {{/each}}
         </p>
     {{/if}}

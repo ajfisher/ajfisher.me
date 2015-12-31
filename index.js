@@ -11,6 +11,7 @@ var markdown    = require('metalsmith-markdown');
 var permalinks  = require('metalsmith-permalinks');
 var sass        = require('metalsmith-sass');
 var serve       = require('metalsmith-serve');
+var tags        = require('metalsmith-tags');
 var watch       = require('metalsmith-watch');
 var wordcount   = require('metalsmith-word-count');
 
@@ -18,6 +19,7 @@ var wordcount   = require('metalsmith-word-count');
 Handlebars.registerPartial('footer', fs.readFileSync(__dirname + '/layouts/partials/footer.hbt').toString());
 Handlebars.registerPartial('head', fs.readFileSync(__dirname + '/layouts/partials/head.hbt').toString());
 Handlebars.registerPartial('header', fs.readFileSync(__dirname + '/layouts/partials/header.hbt').toString());
+Handlebars.registerPartial('list', fs.readFileSync(__dirname + '/layouts/partials/list.hbt').toString());
 Handlebars.registerPartial('postdata', fs.readFileSync(__dirname + '/layouts/partials/postdata.hbt').toString());
 Handlebars.registerPartial('nav', fs.readFileSync(__dirname + '/layouts/partials/nav.hbt').toString());
 Handlebars.registerPartial('warning', fs.readFileSync(__dirname + '/layouts/partials/warning.hbt').toString());
@@ -83,6 +85,13 @@ Metalsmith(__dirname)
             match: { collection: "pages"},
             pattern: ":slug",
         }],
+    }))
+    .use(tags({
+        handle: 'tags',
+        path: 'tagged/:tag/index.html',
+        layout: 'blog.hbt',
+        sortBy: 'date',
+        reverse: true,
     }))
     .use(layouts({
         engine: "handlebars",

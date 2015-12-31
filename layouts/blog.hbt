@@ -10,22 +10,20 @@
         <div class="main-container">
             <div class="main wrapper clearfix">
                 <article>
-                    {{#each collections.posts}}
-                        <li>
-                        <h3><a href="/{{this.path}}">{{this.title}}</a></h3>
-                            <h4>Posted {{this.date}} by {{this.author}}</h4>
-                            <p>
-                                <span class="readingtime">{{this.readingtime}} minute read</span>
-                                <span class="wordcount">({{this.wordcount}} words)</span>
-                            </p>
-                            <p>{{this.path}}</p>
-
-                        </li>
-                    {{/each}}
+                    <ul>
+                        {{#if pagination.files}}
+                            {{#each pagination.files}}
+                                {{> list }}
+                            {{/each}}
+                        {{else}}
+                            {{#each collection.posts}}
+                                {{> list }}
+                            {{/each}}
+                        {{/if}}
+                    </ul>
                 </article>
-                <aside>
-                    <h3>aside</h3>
-                    <p>blah blah</p>
+                <aside id="sidebar">
+                    {{> nav }}
                 </aside>
             </div> <!-- #main -->
         </div> <!-- #main-container -->

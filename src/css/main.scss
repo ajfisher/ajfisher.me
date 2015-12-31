@@ -189,6 +189,7 @@ h3 {
     font-size: 5rem;
 }
 
+// default header //
 header h1 {
     background-color: $base;
     padding: 3.5rem 3rem;
@@ -224,10 +225,23 @@ header p.lede {
     font-weight: normal;
 }
 
+// listing header
+body.list header h1 {
+    min-height: 0;
+    font-size: 5rem;
+    display: inline-block;
+    margin: 2rem 0;
+}
+
+body.list .header-container {
+    height: initial;
+}
+
+// Other styles
+
 span.worddata {
     color: $light_text_colour;
 }
-
 
 a {
     color: $highlight;

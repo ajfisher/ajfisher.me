@@ -1,0 +1,11 @@
+<li>
+    <h2><a href="/{{this.path}}">{{this.title}}</a></h2>
+    <p class="date">Published {{ moment date 'dddd, MMMM Do YYYY' }}</p>
+    {{#if excerpt}}
+        <p>{{excerpt}}</p>
+    {{/if}}
+    <p>
+        <span class="readingtime">{{this.readingtime}} minute read</span>
+        <span class="wordcount">({{humanise this.wordcount}} words)</span>
+    </p>
+</li>

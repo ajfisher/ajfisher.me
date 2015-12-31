@@ -1,13 +1,21 @@
 <div class="header-container">
     <header class="wrapper clearfix">
-        <h1 class="title">{{ title }}</h1>
+        <h1 class="title">
+            {{#if tag }}
+                Posts about {{ tag }}
+            {{else}}
+                {{ title }}
+            {{/if}}
+        </h1>
         {{#if author}}
             <p class="date">Published {{ moment date 'dddd, MMMM Do YYYY' }}</p>
         {{/if}}
         {{#if excerpt}}
             <p class="lede">{{excerpt}}</p>
         {{/if}}
-        <p class="postdata">A {{readingtime}} minute read
-        (<span class="worddata">{{ humanise wordcount }} words</span>)</p>
+        {{#if title}}
+            <p class="postdata">A {{readingtime}} minute read
+            (<span class="worddata">{{ humanise wordcount }} words</span>)</p>
+        {{/if}}
     </header>
 </div>
