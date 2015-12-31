@@ -5,9 +5,9 @@
         <li><a href="/dis-everything">Disclaimer & Disclosure</a></li>
         <li class="icons">
             <a href="https://twitter.com/ajfisher" target="_blank"><i class="fa fa-twitter"></i></a>
-            <a href="https://github.com/ajfisher"><i class="fa fa-github"></i></a>
-            <a href="https://instagr.am/andrewjfisher"><i class="fa fa-instagram"></i></a>
-            <a href="mailto:ajfisher.td@gmail.com"><i class="fa fa-envelope-o"></i></a>
+            <a href="https://github.com/ajfisher" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://instagram.com/andrewjfisher" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="mailto:ajfisher.td@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
         </li>
     </ul>
 </nav>
