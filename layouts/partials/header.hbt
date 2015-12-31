@@ -13,7 +13,7 @@
         {{#if excerpt}}
             <p class="lede">{{excerpt}}</p>
         {{/if}}
-        {{#if isPost}}
+        {{#if title}}
             <p class="postdata">A {{readingtime}} minute read
             (<span class="worddata">{{ humanise wordcount }} words</span>)</p>
         {{/if}}
