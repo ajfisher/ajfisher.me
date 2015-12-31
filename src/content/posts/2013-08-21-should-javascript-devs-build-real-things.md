@@ -23,19 +23,29 @@ excerpt: >
 
 [![3541796526_360bfb5bf0_o](http://ajfisher.me/wp-content/uploads/2013/08/3541796526_360bfb5bf0_o-e1377062275181.jpg)](http://www.flickr.com/photos/jurvetson/3541796526)
 
-_The bent and broken pieces of the drone were lying scattered on a table in the office. There wasn't much worth looking at; most of the components shattered beyond repair. The PizzaCopter team looked at the mangled mess at the table. No one really wanted to be the first to talk about the crash.__"Well," said the lead developer, "it looks like there was a bug with the range sensor. The flight controller didn't contain a type check on the data and so when it corrupted it interpreted it as NaN and didn't know what to do. At that point it just sped up and became a high speed projectile with a pizza and smashed into the ground."_
+_The bent and broken pieces of the drone were lying scattered on a table in the office. There wasn't much worth looking at; most of the components shattered beyond repair. The PizzaCopter team looked at the mangled mess at the table. No one really wanted to be the first to talk about the crash._
 
-This is a riff on something [Glenn Siegman](https://twitter.com/gsiegman/) was joking about (quite astutely) on Twitter the other day  and something that has stuck with me since the launch of [technical.io](http://technical.io) earlier this week.<blockquote>What if the Mars Curiosity was programmed with JavaScript, huh?
+_"Well," said the lead developer, "it looks like there was a bug with the range sensor. The flight controller didn't contain a type check on the data and so when it corrupted it interpreted it as NaN and didn't know what to do. At that point it just sped up and became a high speed projectile with a pizza and smashed into the ground."_
+
+This is a riff on something [Glenn Siegman](https://twitter.com/gsiegman/) was joking about (quite astutely) on Twitter the other day  and something that has stuck with me since the launch of [technical.io](http://technical.io) earlier this week.
+
+<blockquote>What if the Mars Curiosity was programmed with JavaScript, huh?
 
 — Glenn Siegman (@gsiegman) [August 15, 2013](https://twitter.com/gsiegman/statuses/368103661500891136)</blockquote>
 
 <blockquote>I'll tell you what would've happened. It would've crashed into Venus spitting out NaN errors.
 
-— Glenn Siegman (@gsiegman) [August 15, 2013](https://twitter.com/gsiegman/statuses/368104836228976640)</blockquote>I don't think things would have been quite that bad, and we've certainly seen rocket scientists crash very expensive spacecraft in the past ([the ill fated Beagle 2 mission for example](http://en.wikipedia.org/wiki/Beagle_2)), however, I've been asked a lot about what I think of the project, not least because it coincided with a talk I did this week called [Building Droids with Javascript](http://www.slideshare.net/andrewjfisher/building-droids-with-javassript) and because I've been working and playing at the intersection of the web and hardware for quite a number of years now.The launch of technical.io was met with the usual Hacker News crazy. One group of devs exclaiming, "OMG this is the most awesome thing ever invented", another, "Dude, be a man and learn C - that's what the real hardware devs do" and a final group that can only be summed up with, "Lol, you're a JavaScript developer, man could you get any lamer? You probably use PHP as well". In all, the usual responses to an HN post discussing programming and a perfect example of why I try to experience as much as the Web as possible without comments - though in this instance I read every single one - just in case there was some insight (in case you were interested - there wasn't).
+— Glenn Siegman (@gsiegman) [August 15, 2013](https://twitter.com/gsiegman/statuses/368104836228976640)</blockquote>
+
+I don't think things would have been quite that bad, and we've certainly seen rocket scientists crash very expensive spacecraft in the past ([the ill fated Beagle 2 mission for example](http://en.wikipedia.org/wiki/Beagle_2)), however, I've been asked a lot about what I think of the project, not least because it coincided with a talk I did this week called [Building Droids with Javascript](http://www.slideshare.net/andrewjfisher/building-droids-with-javassript) and because I've been working and playing at the intersection of the web and hardware for quite a number of years now.
+
+The launch of technical.io was met with the usual Hacker News crazy. One group of devs exclaiming, "OMG this is the most awesome thing ever invented", another, "Dude, be a man and learn C - that's what the real hardware devs do" and a final group that can only be summed up with, "Lol, you're a JavaScript developer, man could you get any lamer? You probably use PHP as well". In all, the usual responses to an HN post discussing programming and a perfect example of why I try to experience as much as the Web as possible without comments - though in this instance I read every single one - just in case there was some insight (in case you were interested - there wasn't).
 
 I've spent a while trying to articulate my thinking on this as it's a complex topic that touches on hardware, design, engineering, community and education. I don't profess to have all the answers but I hope writing about these topics will create discussion about the role of projects like this in the community.
 
-First up, let me give you some context as this may explain my "mixed" opinion on this bit of tech and about using hardware with JavaScript in general.## Growing up a nerd
+First up, let me give you some context as this may explain my "mixed" opinion on this bit of tech and about using hardware with JavaScript in general.
+
+## Growing up a nerd
 
 As a kid I was much more into electronics than I was programming - interested in why a computer worked rather than how to run code on it. I didn't have access to much hardware but dismantled every toy, VCR, blender or TV I could lay my hands on to understand how they worked. As I got older and computers got more powerful I got lured to the software side due to the ability to make things happen faster - particularly as a result of the Amiga demo-scene of the early 90s.
 
@@ -51,7 +61,9 @@ Having access to free development environments to tinker at a low level (initial
 
 Over this time I've used many different AVR based chips and boards, played with PICs, designed my own boards, blown many things up and have achieved a passable knowledge of how to build and use modern electronics - especially when you want to have a physical "thing" that is interactive and connected to the web.
 
-With that context in place, lets move on to JavaScript and Hardware.## JavaScript all the things
+With that context in place, lets move on to JavaScript and Hardware.
+
+## JavaScript all the things
 
 JavaScript is a powerful language. It has a bad rap as being a toy because of it's early days when it was. Over time JavaScript has been getting better, more powerful, more complete and more "serious". My entire career has been defined by the capabilities (or not) of JavaScript dating back to its first release as LiveScript. I don't consider it a toy but I do consider it poorly implemented in parts (but getting better).
 
@@ -63,9 +75,13 @@ Executing console.log("hello world") or window.alert(2+5-20) brings immediate fe
 
 [![4129346259_b8fe3b789a_b](http://ajfisher.me/wp-content/uploads/2013/08/4129346259_b8fe3b789a_b-e1377086535721.jpg)](http://www.flickr.com/photos/taizocurry/4129346259/sizes/l/in/photostream/)
 
-Many of those in their 30s got their first intro to programming by doing this:    10 print "Andrew rulez"
-    20 goto 10
-    >run
+Many of those in their 30s got their first intro to programming by doing this:
+
+```
+10 print "Andrew rulez"
+20 goto 10
+>run
+```
 
 Immediacy of feedback is a powerful learning step and one that simply cannot be replicated by languages like C. Download and install your build tools, create make files, do your compilation and linking steps. Oops, syntax error! Now go back and do this all again once you fix it. Even as a seasoned embedded developer I **HATE** going through this process a bajillion times a day.
 
@@ -92,7 +108,9 @@ At this point I will direct the reader to ["The innovator's dilemma" by Clayton 
 
 From cameras to cars to mobile phones to 3D printers this happens time after time so we shouldn't be surprised that JavaScript is doing this to established areas of technology (eg server side application development, embedded systems etc).
 
-Now we understand why JavaScript is popular let us consider the use of it on hardware.## Droids in JavaScript
+Now we understand why JavaScript is popular let us consider the use of it on hardware.
+
+## Droids in JavaScript
 
 The last 12 months have seen a significant shift in the amount of projects being done attempting to use JavaScript with hardware. Initially this has focused on using JavaScript to control hardware.
 
@@ -122,7 +140,9 @@ Once you couple the skills of a few hundred thousand web developers and designer
 
 [![c3c6adfecbf111e1985822000a1d011d_7](http://ajfisher.me/wp-content/uploads/2013/08/c3c6adfecbf111e1985822000a1d011d_7-e1377087909554.jpg)](http://ajfisher.me/wp-content/uploads/2013/08/c3c6adfecbf111e1985822000a1d011d_7.jpg)
 
-Making hardware available to web developers is a desirable goal. Much of the web is given over to entertainment and solving first world problems. Being able to affect the real world provides an opportunity to fix actual problems and enable better quality of life for many. Web developers and designers intrinsically understand the "hard place" between systems and humans – making them uniquely placed to have a tangible impact in the real world.## Abstraction creates magic
+Making hardware available to web developers is a desirable goal. Much of the web is given over to entertainment and solving first world problems. Being able to affect the real world provides an opportunity to fix actual problems and enable better quality of life for many. Web developers and designers intrinsically understand the "hard place" between systems and humans – making them uniquely placed to have a tangible impact in the real world.
+
+## Abstraction creates magic
 
 So far I've painted a picture of how desirable it is for web developers to be working with hardware so you would assume that I'm entirely for this idea. Here comes the grey side of my argument and the areas I believe we need to be wary of.
 
@@ -158,7 +178,9 @@ Next we have the obfuscation of the OS. To run JavaScript we need an OS to run i
 
 [![9176951660_f8566033a7_b](http://ajfisher.me/wp-content/uploads/2013/08/9176951660_f8566033a7_b-e1377088075518.jpg)](http://www.flickr.com/photos/stfnix/9176951660/sizes/l/in/photostream/)
 
-In my opinion the BeagleBone provides the best mix of this - plug it in, connect over USB or network and you have Cloud9 IDE where you can write and execute JavaScript directly on the board. If you _want_ you can SSH onto the device and work at a Linux command line - you can work in perl, python, java or C quite happily. There's no requirement to do so but you get the power when you do. This provides immense longevity for the device and stops it sitting in a draw discarded 6 or 12 months down the line.## Making hardware for JavaScript devs
+In my opinion the BeagleBone provides the best mix of this - plug it in, connect over USB or network and you have Cloud9 IDE where you can write and execute JavaScript directly on the board. If you _want_ you can SSH onto the device and work at a Linux command line - you can work in perl, python, java or C quite happily. There's no requirement to do so but you get the power when you do. This provides immense longevity for the device and stops it sitting in a draw discarded 6 or 12 months down the line.
+
+## Making hardware for JavaScript devs
 
 Far from being dismissive of the tessel / technical.io project I think it's a great sign of where we are at in the JavaScripting of hardware. As stated earlier I fundamentally believe there is a massive opportunity to solve a lot of problems with physical devices by getting web designers and developers working with them.
 
@@ -174,7 +196,9 @@ To construct this path with JavaScript we need to do two things.
 
 The first is to provide only enough abstraction so that the focus goes onto the electronics. Someone that re-implements the simplicity of the arduino learn package and examples libraries in JavaScript with say a BeagleBone would do a lot to achieve this goal.
 
-The second thing we need to do is provide a pathway for low level interaction. Ultimately this probably means working in C / C++ however an intermediate step may be able to do manipulation of hardware registers directly from JavaScript as well as be able to handle things like Interrupt Service Routines in a reliable way (so you know they will execute quickly and with priority). In embedded systems you can't get away from these requirements so we need to provide a means for developers to learn and understand them as part of the journey not hide it away as being "too hard" and therefore irrelevant.## The "Internet of Things" needs web designers and developers
+The second thing we need to do is provide a pathway for low level interaction. Ultimately this probably means working in C / C++ however an intermediate step may be able to do manipulation of hardware registers directly from JavaScript as well as be able to handle things like Interrupt Service Routines in a reliable way (so you know they will execute quickly and with priority). In embedded systems you can't get away from these requirements so we need to provide a means for developers to learn and understand them as part of the journey not hide it away as being "too hard" and therefore irrelevant.
+
+## The "Internet of Things" needs web designers and developers
 
 At the moment, hardware devices that are being connected to the Internet are mostly being built by embedded systems engineers. Whilst these devices may be technically excellent, they often lack an understanding of good web design practice - particularly from the point of view of good user interface design, API creation and consumption as well as openness and extensibility.
 
