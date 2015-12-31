@@ -85,7 +85,7 @@ body {
    ============== */
 
 nav ul {
-    margin: 0;
+    margin: 0 0 3rem 0;
     padding: 0;
     list-style-type: none;
 }
@@ -121,12 +121,9 @@ nav a:visited:hover {
 }
 
 #sidebar section h2 {
-    @include heading-font();
-    font-size: 4rem;
-    color: $base;
-    line-height: 0.9;
-    margin: 3rem 0px;
+    display: none;
 }
+
 
 #sidebar section p.date {
     color: $light_text_colour;
@@ -155,10 +152,6 @@ nav a:visited:hover {
     font-size: 2em;
 }
 
-.main aside {
-    //color: white;
-    padding: 0px 5% 10px;
-}
 
 .footer-container footer {
     color: white;
@@ -337,6 +330,14 @@ article p {
 /* ============
     WIDE: Menu
    ============ */
+    #sidebar section h2 {
+        display: block;
+        @include heading-font();
+        font-size: 4rem;
+        color: $base;
+        line-height: 0.9;
+        margin: 3rem 0px;
+    }
 
 /**    .title {
         float: left;
@@ -359,6 +360,10 @@ article p {
         padding: 0px 3rem;
     }
 
+/**.main aside {
+    //color: white;
+    padding: 0px 5% 10px;
+}**/
     .main aside {
         float: right;
         width: 28%;
