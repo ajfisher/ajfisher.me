@@ -25,20 +25,21 @@ Handlebars.registerPartial('nav', fs.readFileSync(__dirname + '/layouts/partials
 Handlebars.registerPartial('warning', fs.readFileSync(__dirname + '/layouts/partials/warning.hbt').toString());
 
 // helper definitions
+Handlebars.registerHelper('humanise', function(num) {
+    // takes a number and then uses d3-format to render it in a reasonable
+    // and more human readable form.
+    return (f.format('.2s')(num));
+});
+
 Handlebars.registerHelper('moment', function(date, format) {
     // takes a date and formats it appropriately
     return Moment(date).format(format);
 });
 
-Handlebars.registerHelper('humanise', function(num) {
-    return (f.format('.2s')(num));
-});
-
-
 var debug = function(options) {
     return (function(files, metalsmith, done) {
         console.log(files);
-        console.log(metalsmith.metadata());
+        //console.log(metalsmith.metadata());
         done();
     });
 };
@@ -107,6 +108,7 @@ Metalsmith(__dirname)
     .use(serve({
         cache: 0,
         verbose: true,
+        host: '0.0.0.0',
     }))
     .build(function(err) {
         if (err) {

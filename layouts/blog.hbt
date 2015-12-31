@@ -9,14 +9,17 @@
         {{> header }}
         <div class="main-container">
             <div class="main wrapper clearfix">
+                <h1>{{collection}}</h1>
                 <article>
                     <ul>
                         {{#if pagination.files}}
+                            <h1>tag</h1>
                             {{#each pagination.files}}
                                 {{> list }}
                             {{/each}}
                         {{else}}
-                            {{#each collection.posts}}
+                            <h1>in here</h1>
+                            {{#each collections.posts}}
                                 {{> list }}
                             {{/each}}
                         {{/if}}
