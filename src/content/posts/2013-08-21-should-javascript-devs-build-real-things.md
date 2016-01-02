@@ -29,13 +29,10 @@ _"Well," said the lead developer, "it looks like there was a bug with the range 
 
 This is a riff on something [Glenn Siegman](https://twitter.com/gsiegman/) was joking about (quite astutely) on Twitter the other day  and something that has stuck with me since the launch of [technical.io](http://technical.io) earlier this week.
 
-<blockquote>What if the Mars Curiosity was programmed with JavaScript, huh?
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">What if the Mars Curiosity was programmed with JavaScript, huh?</p>&mdash; Glenn Siegman (@gsiegman) <a href="https://twitter.com/gsiegman/status/368103661500891136">August 15, 2013</a></blockquote>
 
-— Glenn Siegman (@gsiegman) [August 15, 2013](https://twitter.com/gsiegman/statuses/368103661500891136)</blockquote>
-
-<blockquote>I'll tell you what would've happened. It would've crashed into Venus spitting out NaN errors.
-
-— Glenn Siegman (@gsiegman) [August 15, 2013](https://twitter.com/gsiegman/statuses/368104836228976640)</blockquote>
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I&#39;ll tell you what would&#39;ve happened. It would&#39;ve crashed into Venus spitting out NaN errors.</p>&mdash; Glenn Siegman (@gsiegman) <a href="https://twitter.com/gsiegman/status/368104836228976640">August 15, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I don't think things would have been quite that bad, and we've certainly seen rocket scientists crash very expensive spacecraft in the past ([the ill fated Beagle 2 mission for example](http://en.wikipedia.org/wiki/Beagle_2)), however, I've been asked a lot about what I think of the project, not least because it coincided with a talk I did this week called [Building Droids with Javascript](http://www.slideshare.net/andrewjfisher/building-droids-with-javassript) and because I've been working and playing at the intersection of the web and hardware for quite a number of years now.
 
