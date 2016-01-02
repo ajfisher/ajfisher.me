@@ -26,3 +26,13 @@ article_arr_items.forEach(function(item) {
 		}
 	}
 });
+
+// now we do the pull quotes to extract them from the document and then
+// set the appropriate CSS etc
+var pullquote_list = Array.from(document.querySelectorAll("article p b"));
+
+pullquote_list.forEach(function(pq) {
+    pq.parentNode.classList.add("has-pullquote");
+    pq.parentNode.dataset.pullquote = pq.innerText;
+});
+

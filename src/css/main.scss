@@ -301,10 +301,27 @@ article h4 {
     color: $dark_text_colour;
 }
 
+// This is used for the pullquotes
+
+article p b {
+    font-weight: inherit;
+}
+
+p.has-pullquote::before {
+    content: attr(data-pullquote);
+    display: block;
+	@include heading-font();
+    max-width: 90%;
+    font-size: 4rem;
+    margin: inherit;
+    color: $base;
+}
+
+// get the images sorted
+
 article p img {
     width: 100%;
 }
-
 
 article p.imagep {
     margin: 0 -3rem;
