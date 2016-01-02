@@ -11,6 +11,7 @@
             <div class="main wrapper clearfix">
                 <article>
                     {{{ contents }}}
+                    {{> citation }}
                 </article>
                 <aside id="sidebar">
                     {{> nav }}
