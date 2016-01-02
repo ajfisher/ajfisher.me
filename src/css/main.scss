@@ -61,6 +61,11 @@ body {
     color: $dark_text_colour;
 }
 
+header.wrapper {
+    margin: 0;
+    width: 100%;
+}
+
 .wrapper {
     width: 90%;
     margin: 0 5%;
@@ -197,7 +202,7 @@ nav a:visited:hover {
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 5rem;
 }
 
 h2 {
@@ -211,21 +216,21 @@ h3 {
 // default header //
 header h1 {
     background-color: $base;
-    padding: 3.5rem 3rem;
+    padding: 1.5rem 2rem;
     margin-bottom: 0;
     @include heading-font();
     line-height: 1em;
     color: $light_text_colour;
     min-height: 15rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     vertical-align: middle;
 }
 
 header p {
     color: $light_text_colour;
     clear: left;
-    padding: 0 3.5rem;
-    font-size: 3rem;
+    padding: 0 2rem;
+    font-size: 2rem;
     margin: 2rem 0rem;
 }
 
@@ -239,7 +244,7 @@ header p.postdata {
 }
 
 header p.lede {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     font-weight: normal;
 }
 
@@ -300,8 +305,18 @@ article p img {
     width: 100%;
 }
 
-article p {
-    //margin: 3rem 3rem;
+
+article p.imagep {
+    margin: 0 -3rem;
+}
+
+article p.imagep a {
+    padding: 0;
+    background: none;
+}
+
+article p.citation {
+    font-size: 1.8rem;
 }
 
 /* ==========================================================================
@@ -313,6 +328,25 @@ article p {
 /* ====================
     INTERMEDIATE
    ==================== */
+
+    header.wrapper {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    header h1 {
+        padding: 3.5rem 3rem;
+        margin-top: 9rem;
+    }
+
+    header p {
+        padding: 0 3.5rem;
+        font-size: 3rem;
+    }
+    header p.lede {
+        font-size: 2.3rem;
+    }
+
 
 }
 
@@ -372,7 +406,6 @@ article p {
     }
 
     header h1 {
-        margin-top: 9rem;
         min-height: 35rem;
     }
 
@@ -408,8 +441,7 @@ article p {
 
     .wrapper {
         width: 1026px; /* 1140px less 33% for right padding and 10% either side margin */
-        margin: 0 auto;
-        //padding-right: 339px;
+        margin: 0 auto !important;
     }
 
 }
