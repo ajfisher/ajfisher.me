@@ -9,19 +9,17 @@ if (window.innerWidth >= 768) {
     Stickyfill.add(sidebar);
 }
 
-// now add items where they need to be for images in the main body
+// This injects a class onto p tags that contain images in the main article
+// part of the page. Markup doesn't really allow class addition to standard
+// tags so this is worth doing progressively.
 var article_items = document.querySelectorAll("article p * img");
 var article_arr_items = Array.from(article_items);
 
-console.log("in here");
 article_arr_items.forEach(function(item) {
 	if (item.parentNode.localName == "p") {
 		item.parentNode.classList.add("imagep");
-		console.log("its p");
 	} else if (item.parentNode.localName == "a") {
-		console.log("its a");
 		if (item.parentNode.parentNode.localName == "p") {
-			console.log("p a img");
 			item.parentNode.parentNode.classList.add("imagep");
 		} else {
 			console.log(item.parentNode.parentNode.localName);
