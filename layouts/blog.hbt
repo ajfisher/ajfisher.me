@@ -6,19 +6,19 @@
 {{> head }}
     <body class="list">
         {{> warning }}
-        {{> header }}
+        {{> header list=true }}
         <div class="main-container">
             <div class="main wrapper clearfix">
-                <h1>{{collection}}</h1>
                 <article>
+                    {{#if tag}}
+                        <h2>Posts about {{tag}}</h2>
+                    {{/if}}
                     <ul>
                         {{#if pagination.files}}
-                            <h1>tag</h1>
                             {{#each pagination.files}}
                                 {{> list }}
                             {{/each}}
                         {{else}}
-                            <h1>in here</h1>
                             {{#each collections.posts}}
                                 {{> list }}
                             {{/each}}

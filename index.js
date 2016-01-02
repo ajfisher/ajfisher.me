@@ -45,7 +45,6 @@ var debug = function(options) {
     });
 };
 
-
 Metalsmith(__dirname)
     .metadata({
         site: {
@@ -63,11 +62,13 @@ Metalsmith(__dirname)
     .use(collections({
         pages: {
             pattern: "content/pages/*.md",
+			refer: false,
         },
         posts: {
             pattern: "content/posts/*.md",
             sortBy: "date",
             reverse: true,
+            refer: false,
         },
     }))
     .use(markdown())

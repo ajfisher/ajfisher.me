@@ -19,6 +19,7 @@ excerpt: >
     JavaScript is leaving the browser and entering the real world. Is this
     just a bunch of web devs playing with hardware or are we starting to see a
     fundamental shift in the direction web technologies are taking?
+titleimage: http://ajfisher.me/wp-content/uploads/2013/08/3541796526_360bfb5bf0_o-e1377062275181.jpg
 ---
 
 [![3541796526_360bfb5bf0_o](http://ajfisher.me/wp-content/uploads/2013/08/3541796526_360bfb5bf0_o-e1377062275181.jpg)](http://www.flickr.com/photos/jurvetson/3541796526)
