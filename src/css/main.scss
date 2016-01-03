@@ -347,17 +347,21 @@ article p.imagecitation {
 
 // listing styles
 
-.list * ul {
+.list article ul {
     padding: 0;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .list article ul li {
     display: block;
     //border: 1px solid green;
-    width: 44%;
-    float: left;
-    margin-right: 3rem;
-	min-height: 51rem;
+    width: 45%;
+    //float: left;
+    //margin-right: 3rem;
+	//min-height: 51rem;
 }
 
 .list article ul li::after {

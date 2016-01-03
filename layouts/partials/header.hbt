@@ -17,7 +17,7 @@
             <p>TODO: Put the featured article in here</p>
             <h1 class="title">
                 {{#if tag }}
-                    Posts about {{ tag }}
+                    {{pagination.files.length}} posts about {{ tag }}
                 {{else}}
                     {{ title }}
                 {{/if}}
