@@ -19,11 +19,11 @@ excerpt: >
     JavaScript is leaving the browser and entering the real world. Is this
     just a bunch of web devs playing with hardware or are we starting to see a
     fundamental shift in the direction web technologies are taking?
-featureimage: http://ajfisher.me/wp-content/uploads/2013/08/3541796526_360bfb5bf0_o-e1377062275181.jpg
+featureimage: https://c2.staticflickr.com/4/3590/3541796526_360bfb5bf0_o.jpg
+imageby: juvetson
+imagelink: http://www.flickr.com/photos/jurvetson/3541796526
 
 ---
-
-[![3541796526_360bfb5bf0_o](http://ajfisher.me/wp-content/uploads/2013/08/3541796526_360bfb5bf0_o-e1377062275181.jpg)](http://www.flickr.com/photos/jurvetson/3541796526)
 
 _The bent and broken pieces of the drone were lying scattered on a table in the office. There wasn't much worth looking at; most of the components shattered beyond repair. The PizzaCopter team looked at the mangled mess at the table. No one really wanted to be the first to talk about the crash._
 
@@ -207,4 +207,4 @@ If you're a web developer and you're looking at playing with hardware, don't shy
 
 And seriously, if you do design a PizzaCopter for actual use, please don't build it in JavaScript.
 
-_**Update:** There were some concerns expressed that my original fictional intro was a bit FUDdy. On re-reading I tend to agree with that sentiment - it was an artefact of my original version of this post due to me explaining my concerns to another JS dev using a similar story. I've kept the core element but removed the death and destruction._
+_Update: There were some concerns expressed that my original fictional intro was a bit FUDdy. On re-reading I tend to agree with that sentiment - it was an artefact of my original version of this post due to me explaining my concerns to another JS dev using a similar story. I've kept the core element but removed the death and destruction._

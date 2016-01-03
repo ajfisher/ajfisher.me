@@ -1,5 +1,7 @@
-<div class="header-container">
-    <header class="wrapper clearfix" data-featureimage="{{featureimage}}">
+<div class="header-container"
+    style="{{#if featureimage}}background-image: url({{featureimage}}){{/if}}"
+    >
+    <header class="wrapper clearfix">
         {{#if post}}
             <h1 class="title">{{title}}</h1>
             {{#if author}}

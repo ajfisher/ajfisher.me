@@ -214,6 +214,14 @@ h3 {
 }
 
 // default header //
+
+// for the backgrounf if it exists
+.header-container {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 header h1 {
     background-color: $base;
     padding: 1.5rem 2rem;
@@ -332,7 +340,8 @@ article p.imagep a {
     background: none;
 }
 
-article p.citation {
+article p.citation,
+article p.imagecitation {
     font-size: 1.8rem;
 }
 

@@ -11,6 +11,13 @@
             <div class="main wrapper clearfix">
                 <article>
                     {{{ contents }}}
+                    {{#if featureimage}}
+                        {{#if imageby}}
+                            <p class="imagecitation">Title image by
+                                <a href="{{imagelink}}" target="_blank">{{imageby}}</a>
+                            </p>
+                        {{/if}}
+                    {{/if}}
                     {{> citation }}
                 </article>
                 <aside id="sidebar">
