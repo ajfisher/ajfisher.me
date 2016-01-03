@@ -1,5 +1,5 @@
 <div class="header-container">
-    <header class="wrapper clearfix">
+    <header class="wrapper clearfix" data-featureimage="{{featureimage}}">
         {{#if post}}
             <h1 class="title">{{title}}</h1>
             {{#if author}}
@@ -12,6 +12,7 @@
             (<span class="worddata">{{ humanise wordcount }} words</span>)</p>
         {{/if}}
         {{#if list}}
+            <p>TODO: Put the featured article in here</p>
             <h1 class="title">
                 {{#if tag }}
                     Posts about {{ tag }}
