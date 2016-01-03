@@ -345,6 +345,77 @@ article p.imagecitation {
     font-size: 1.8rem;
 }
 
+// listing styles
+
+.list * ul {
+    padding: 0;
+}
+
+.list article ul li {
+    display: block;
+    //border: 1px solid green;
+    width: 44%;
+    float: left;
+    margin-right: 3rem;
+	min-height: 51rem;
+}
+
+.list article ul li::after {
+    content: "//";
+    padding-left: 43%;
+    color: $base;
+    font-size: 1rem;
+}
+
+.list * li div {
+    height: 17rem;
+    overflow: hidden;
+    border-bottom: 0.5rem solid $base;
+//    box-shadow: 0 5px 10px $dark_grey;
+    margin-bottom: 1rem;
+	transition: all 0.8s ease;
+}
+
+.list * li div:hover {
+	border-bottom: 0.5rem solid $dark_grey;
+}
+
+.list * li div a {
+	padding: 0;
+	background: none;
+}
+
+.list * li div img {
+    width: 100%;
+}
+
+.list * h2 {
+    background: none;
+    box-shadow: none;
+    font-size: 3rem;
+	display: block;
+	padding:0;
+}
+
+.list * h2 a {
+	padding: 0;
+	background: none;
+	color: $base;
+}
+
+.list * h2 a:hover {
+	color: $dark_grey;
+}
+
+.list * li p {
+    font-size: 1.8rem;
+}
+
+.list * li p.date {
+	font-size: 1.5rem;
+	color: lighten($dark_grey, 40%);
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */

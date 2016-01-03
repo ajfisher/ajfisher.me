@@ -22,6 +22,7 @@ excerpt: >
 featureimage: https://c2.staticflickr.com/4/3590/3541796526_360bfb5bf0_o.jpg
 imageby: juvetson
 imagelink: http://www.flickr.com/photos/jurvetson/3541796526
+listimage: https://c2.staticflickr.com/4/3590/3541796526_360bfb5bf0_o.jpg
 
 ---
 

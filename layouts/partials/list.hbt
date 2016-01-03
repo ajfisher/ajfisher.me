@@ -1,6 +1,13 @@
 <li>
-    <h2><a href="/{{this.path}}">{{this.title}}</a></h2>
-    <p class="date">Published {{ moment date 'dddd, MMMM Do YYYY' }}</p>
+	{{#if listimage}}
+		<div>
+			<a href="/{{this.path}}">
+				<img src="{{listimage}}"/>
+			</a>
+		</div>
+	{{/if}}
+    <p class="date">{{ moment date 'dddd, MMMM Do YYYY' }}</p>
+	<h2><a href="/{{this.path}}">{{this.title}}</a></h2>
     {{#if excerpt}}
         <p>{{excerpt}}</p>
     {{/if}}
