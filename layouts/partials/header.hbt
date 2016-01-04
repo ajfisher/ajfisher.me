@@ -4,7 +4,7 @@
     <header class="wrapper clearfix">
         {{#if post}}
             <h1 class="title">{{title}}</h1>
-            {{#if author}}
+            {{#if date}}
                 <p class="date">Published {{ moment date 'dddd, MMMM Do YYYY' }}</p>
             {{/if}}
             {{#if excerpt}}
@@ -14,14 +14,18 @@
             (<span class="worddata">{{ humanise wordcount }} words</span>)</p>
         {{/if}}
         {{#if list}}
-            <p>TODO: Put the featured article in here</p>
-            <h1 class="title">
-                {{#if tag }}
-                    {{pagination.files.length}} posts about {{ tag }}
-                {{else}}
-                    {{ title }}
+            <p class="featured">Featured Post</p>
+            {{#with collections.posts.[0]}}
+                <h1>{{title}}</h1>
+                {{#if date}}
+                    <p class="date">Published {{ moment date 'dddd, MMMM Do YYYY' }}</p>
                 {{/if}}
-            </h1>
+                {{#if excerpt}}
+                    <p class="lede">{{excerpt}}</p>
+                {{/if}}
+                <p class="postdata">A {{readingtime}} minute read
+                (<span class="worddata">{{ humanise wordcount }} words</span>)</p>
+            {{/with}}
         {{/if}}
     </header>
 </div>

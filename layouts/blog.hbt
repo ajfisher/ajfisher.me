@@ -10,20 +10,20 @@
         <div class="main-container">
             <div class="main wrapper clearfix">
                 <article>
-                    {{#with collections.posts.[0]}}
-                        <h2>{{title}}</h2>
-                    {{/with}}
                     {{#if tag}}
-                        <h2>Posts about {{tag}}</h2>
+                        <h2>{{pagination.files.length}} posts about {{ tag }}</h2>
                     {{/if}}
                     <ul>
                         {{#if pagination.files}}
-                            <!-- list of files -->
+                            {{!-- list of files --}}
                             {{#each pagination.files}}
-                                {{> list }}
+                                {{!-- evals to true if index > 0 --}}
+                                {{#if @index}}
+                                    {{> list }}
+                                {{/if}}
                             {{/each}}
                         {{else}}
-                            <!-- list of posts -->
+                            {{!-- list of posts --}}
                             {{#each collections.posts}}
                                 {{> list }}
                             {{/each}}
