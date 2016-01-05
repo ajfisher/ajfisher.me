@@ -261,7 +261,7 @@ body.list header h1 {
     min-height: 0;
     font-size: 5rem;
     display: inline-block;
-    margin: 2rem 0;
+    margin: 0rem 0;
 }
 
 body.list .header-container {
@@ -345,6 +345,10 @@ article p.imagecitation {
     font-size: 1.8rem;
 }
 
+article ul {
+    padding:0;
+}
+
 // listing styles
 
 .list article ul {
@@ -352,30 +356,18 @@ article p.imagecitation {
     display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .list article ul li {
     display: block;
-    //border: 1px solid green;
-    width: 45%;
-    //float: left;
-    //margin-right: 3rem;
-	//min-height: 51rem;
-}
-
-.list article ul li::after {
-    content: "//";
-    padding-left: 43%;
-    color: $base;
-    font-size: 1rem;
+    width: 48%;
 }
 
 .list * li div {
     height: 17rem;
     overflow: hidden;
     border-bottom: 0.5rem solid $base;
-//    box-shadow: 0 5px 10px $dark_grey;
     margin-bottom: 1rem;
 	transition: all 0.8s ease;
 }
@@ -391,6 +383,8 @@ article p.imagecitation {
 
 .list * li div img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .list * h2 {
@@ -402,14 +396,30 @@ article p.imagecitation {
     color: $base;
 }
 
-.list * h2 a {
+.list * h2 a,
+.list h1 a {
 	padding: 0;
 	background: none;
 	color: $base;
 }
 
-.list * h2 a:hover {
+.list * h2 a:hover,
+.list * h2 a:visited:hover,
+.list h1 a:hover,
+.list h1 a:visited:hover {
 	color: $dark_grey;
+}
+
+.list h1 a {
+    color: $light_text_colour;
+}
+
+.list p.featured {
+    margin-bottom: 0;
+    margin-top: 8rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $highlight;
 }
 
 .list * li p {

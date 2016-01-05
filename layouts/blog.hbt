@@ -25,7 +25,9 @@
                         {{else}}
                             {{!-- list of posts --}}
                             {{#each collections.posts}}
-                                {{> list }}
+                                {{#if @index}}
+                                    {{> list }}
+                                {{/if}}
                             {{/each}}
                         {{/if}}
                     </ul>

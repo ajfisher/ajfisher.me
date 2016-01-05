@@ -6,19 +6,16 @@ layout: post.hbt
 slug: is-this-the-end-of-windows-server
 title: Is this the end of Windows Server?
 wordpress_id: 512
-categories:
-- cloud computing
-- development
-- internet
-- linux
-- open source
-- predictions
 tags:
 - cloud computing
+- open source
+- development
 - internet
 - linux
 - predictions
 - windows
+listimage: http://ajfisher.me/wp-content/uploads/2012/06/88335700_ec411f3db4_b-carolee-e1339291338180.jpg
+
 ---
 
 [![](http://ajfisher.me/wp-content/uploads/2012/06/88335700_ec411f3db4_b-carolee-e1339291338180.jpg)](http://www.flickr.com/photos/carolee/88335700/sizes/l/in/photostream/)

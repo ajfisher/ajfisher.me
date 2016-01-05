@@ -1,5 +1,12 @@
 <div class="header-container"
-    style="{{#if featureimage}}background-image: url({{featureimage}}){{/if}}"
+    {{#if post}}
+        style="{{#if featureimage}}background-image: url({{featureimage}}){{/if}}"
+    {{/if}}
+    {{#if list}}
+        {{#with collections.posts.[0]}}
+            style="{{#if featureimage}}background-image: url({{featureimage}}){{/if}}"
+        {{/with}}
+    {{/if}}
     >
     <header class="wrapper clearfix">
         {{#if post}}
@@ -16,7 +23,7 @@
         {{#if list}}
             <p class="featured">Featured Post</p>
             {{#with collections.posts.[0]}}
-                <h1>{{title}}</h1>
+                <h1><a href="/{{path}}">{{title}}</a></h1>
                 {{#if date}}
                     <p class="date">Published {{ moment date 'dddd, MMMM Do YYYY' }}</p>
                 {{/if}}
