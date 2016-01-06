@@ -3,6 +3,7 @@ var fs = require('fs');
 var f           = require('d3-format');
 var Handlebars  = require('handlebars');
 var Moment      = require('moment');
+var removemd    = require('remove-markdown');
 
 var Metalsmith  = require('metalsmith');
 var collections = require('metalsmith-collections');
@@ -49,7 +50,7 @@ var excerpt = function(options) {
                     var patt = /^\w.+?\n/m;
                     var m = patt.exec(contents);
                     if (m) {
-                        files[file].excerpt = m[0];
+                        files[file].excerpt = removemd(m[0]);
                     }
                 }
                 console.log(file);
