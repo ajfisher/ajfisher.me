@@ -62,16 +62,9 @@ var excerpt = function(options) {
 
 var debug = function(options) {
     return (function(files, metalsmith, done) {
-        //file.each(function(file) {
-        //    console.log(file.title);
-        //});
-        //console.log(files);
-        //console.log(metalsmith.metadata());
-/**        for (var file in files) {
+        for (var file in files) {
             console.log(file);
-            if (! files[file].featured) delete files[file];
-        }**/
-        //console.log(typeof(files));
+        }
         done();
     });
 };
