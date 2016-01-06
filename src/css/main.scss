@@ -362,6 +362,8 @@ article ul {
 .list article ul li {
     display: block;
     width: 48%;
+    border-bottom: 1px dashed lighten($dark-grey, 30%);
+    margin-bottom: 3rem;
 }
 
 .list * li div {

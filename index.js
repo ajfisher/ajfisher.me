@@ -49,6 +49,11 @@ var debug = function(options) {
             if (! files[file].featured) delete files[file];
         }**/
         //console.log(typeof(files));
+        for (var file in files) {
+            if (files[file].featured) {
+                console.log(files[file].contents.toString());
+            }
+        }
         done();
     });
 };
