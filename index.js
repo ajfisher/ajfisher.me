@@ -53,8 +53,8 @@ var excerpt = function(options) {
                         files[file].excerpt = removemd(m[0]);
                     }
                 }
-                console.log(file);
-                console.log(files[file].excerpt);
+                //console.log(file);
+                //console.log(files[file].excerpt);
             }
         }
         done();

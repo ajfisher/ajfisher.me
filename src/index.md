@@ -1,6 +1,4 @@
 ---
-title: Home
+title: Blog
+layout: blog.hbt
 ---
-Hi, this is my start page; neat ain't it? ;)
-
-###Some info!
