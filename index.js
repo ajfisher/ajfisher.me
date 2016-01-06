@@ -37,6 +37,29 @@ Handlebars.registerHelper('moment', function(date, format) {
     return Moment(date).format(format);
 });
 
+var excerpt = function(options) {
+    // creates excerpts from the markdown using the first para that is actually
+    // a paragraph of contnet not an image etc.
+    return (function(files, metalsmith, done) {
+        for (var file in files) {
+            // just look at markdown files.
+            if (file.endsWith(".md")) {
+                if (! files[file].excerpt) {
+                    var contents = files[file].contents.toString();
+                    var patt = /^\w.+?\n/m;
+                    var m = patt.exec(contents);
+                    if (m) {
+                        files[file].excerpt = m[0];
+                    }
+                }
+                console.log(file);
+                console.log(files[file].excerpt);
+            }
+        }
+        done();
+    });
+};
+
 var debug = function(options) {
     return (function(files, metalsmith, done) {
         //file.each(function(file) {
@@ -49,11 +72,6 @@ var debug = function(options) {
             if (! files[file].featured) delete files[file];
         }**/
         //console.log(typeof(files));
-        for (var file in files) {
-            if (files[file].featured) {
-                console.log(files[file].contents.toString());
-            }
-        }
         done();
     });
 };
@@ -84,7 +102,7 @@ Metalsmith(__dirname)
             refer: false,
         },
     }))
-    .use(debug())
+    .use(excerpt())
     .use(markdown())
     .use(wordcount({
         metaKeyCount: "wordcount",
