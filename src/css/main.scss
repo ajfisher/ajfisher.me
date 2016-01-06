@@ -257,14 +257,21 @@ header p.lede {
 }
 
 // listing header
-body.list header h1 {
+body.list header h1,
+body.page header h1{
     min-height: 0;
     font-size: 5rem;
     display: inline-block;
     margin: 0rem 0;
 }
 
-body.list .header-container {
+body.page header h1 {
+    // we have this because there's nothing else in the header to create margins
+    margin: 3rem 0;
+}
+
+body.list .header-container,
+body.page .header-container {
     height: initial;
 }
 

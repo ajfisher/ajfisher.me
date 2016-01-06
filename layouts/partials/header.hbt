@@ -34,5 +34,8 @@
                 (<span class="worddata">{{ humanise wordcount }} words</span>)</p>
             {{/with}}
         {{/if}}
+        {{#if page}}
+            <h1>{{title}}</h1>
+        {{/if}}
     </header>
 </div>
