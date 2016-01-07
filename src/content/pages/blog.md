@@ -1,5 +1,6 @@
 ---
 title: Blog
 layout: blog.hbt
-home: true
+slug: blog
+
 ---

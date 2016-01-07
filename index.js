@@ -38,6 +38,15 @@ Handlebars.registerHelper('moment', function(date, format) {
     return Moment(date).format(format);
 });
 
+Handlebars.registerHelper('shown', function (from, to, context, options){
+    var item = "";
+    for (var i = from, j = to; i <= j; i++) {
+        item = item + options.fn(context[i]);
+    }
+    return item;
+});
+
+// helpers for metalsmith
 var excerpt = function(options) {
     // creates excerpts from the markdown using the first para that is actually
     // a paragraph of contnet not an image etc.

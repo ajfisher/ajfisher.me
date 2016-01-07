@@ -6,7 +6,7 @@ layout: post.hbt
 slug: a-clickster-fail-of-epic-proportions
 title: The ClickFail of Australian Retail.
 wordpress_id: 561
-categories:
+tags:
 - cloud computing
 - development
 - internet

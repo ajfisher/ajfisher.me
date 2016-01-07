@@ -24,11 +24,17 @@
                             {{/each}}
                         {{else}}
                             {{!-- list of posts --}}
-                            {{#each collections.posts}}
-                                {{#if @index}}
+                            {{#if home}}
+                                {{#shown 1 10 collections.posts}}
                                     {{> list }}
-                                {{/if}}
-                            {{/each}}
+                                {{/shown}}
+                            {{else}}
+                                {{#each collections.posts}}
+                                    {{#if @index}}
+                                        {{> list }}
+                                    {{/if}}
+                                {{/each}}
+                            {{/if}}
                         {{/if}}
                     </ul>
                 </article>
@@ -37,7 +43,6 @@
                 </aside>
             </div> <!-- #main -->
         </div> <!-- #main-container -->
-
         {{> footer }}
     </body>
 </html>
