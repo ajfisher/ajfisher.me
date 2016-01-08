@@ -176,8 +176,21 @@ nav a:visited:hover {
 
 
 .footer-container footer {
-    color: white;
-    padding: 20px 0;
+    color: $light_text_colour;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between,
+
+}
+
+footer section {
+    display: block;
+    width: 100%;
+}
+
+footer img {
+    width: 100%;
 }
 
 /* ===============
@@ -536,10 +549,6 @@ article ul {
         padding: 0px 3rem;
     }
 
-/**.main aside {
-    //color: white;
-    padding: 0px 5% 10px;
-}**/
     .main aside {
         float: right;
         width: 28%;
@@ -553,6 +562,13 @@ article ul {
         margin-top: 3rem;
     }
 
+    .footer-container footer {
+        flex-direction: row;
+    }
+
+    footer section {
+        width: 30%;
+    }
 }
 @media only screen and (min-width: 1140px) {
 
