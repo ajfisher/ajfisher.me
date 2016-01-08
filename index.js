@@ -62,8 +62,6 @@ var excerpt = function(options) {
                         files[file].excerpt = removemd(m[0]);
                     }
                 }
-                //console.log(file);
-                //console.log(files[file].excerpt);
             }
         }
         done();
@@ -104,6 +102,11 @@ Metalsmith(__dirname)
             reverse: true,
             refer: false,
         },
+        featured: {
+            sortBy: "date",
+            reverse: true,
+            refer: false,
+        }
     }))
     .use(excerpt())
     .use(markdown())

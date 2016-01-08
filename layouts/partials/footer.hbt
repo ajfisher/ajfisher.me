@@ -1,6 +1,12 @@
 <div class="footer-container">
     <footer class="wrapper">
-        <p>Footer</p>
+        {{#with collections.featured.[0]}}
+            <section class="featurepost">
+                <p>Featured post</p>
+                <h3><a href="/{{path}}">{{title}}</a></h3>
+                {{excerpt}}
+            </section>
+        {{/with}}
     </footer>
 </div>
 

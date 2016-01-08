@@ -15,6 +15,7 @@ tags:
 - user experience
 - UX
 - web
+collection: featured
 listimage: http://ajfisher.me/wp-content/uploads/2012/10/Scan_Andrew-e1350619210168.jpg
 
 ---
