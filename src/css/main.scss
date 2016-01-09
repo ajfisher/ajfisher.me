@@ -180,8 +180,7 @@ nav a:visited:hover {
     padding: 3rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between,
-
+    justify-content: space-between;
 }
 
 footer section {
@@ -215,14 +214,17 @@ footer img {
 }
 
 h1 {
+    @include heading-font();
     font-size: 5rem;
 }
 
 h2 {
+    @include heading-font();
     font-size: 5rem;
 }
 
 h3 {
+    @include heading-font();
     font-size: 5rem;
 }
 
@@ -239,7 +241,6 @@ header h1 {
     background-color: $base;
     padding: 1.5rem 2rem;
     margin-bottom: 0;
-    @include heading-font();
     line-height: 1em;
     color: $light_text_colour;
     min-height: 15rem;
@@ -313,7 +314,6 @@ article h2,
 article h3{
     background-color: $base;
     color: $light_text_colour;
-    @include heading-font();
     display: inline;
     // use this to get consistent edge on outside of wrap
     box-shadow: 3rem 0 0 $base, -3rem 0 0 $base;
@@ -386,7 +386,8 @@ article ul {
     margin-bottom: 3rem;
 }
 
-.list * li div {
+.list * li div,
+section.featurepost div {
     height: 17rem;
     overflow: hidden;
     border-bottom: 0.5rem solid $base;
@@ -398,18 +399,21 @@ article ul {
 	border-bottom: 0.5rem solid $dark_grey;
 }
 
-.list * li div a {
+.list * li div a,
+section.featurepost div a {
 	padding: 0;
 	background: none;
 }
 
-.list * li div img {
+.list * li div img,
+section.featurepost div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.list * h2 {
+.list * h2,
+footer section h3 {
     background: none;
     box-shadow: none;
     font-size: 3rem;
@@ -419,7 +423,8 @@ article ul {
 }
 
 .list * h2 a,
-.list h1 a {
+.list h1 a,
+footer section h3 a {
 	padding: 0;
 	background: none;
 	color: $base;
@@ -452,6 +457,31 @@ article ul {
 	font-size: 1.5rem;
 	color: lighten($dark_grey, 40%);
 }
+
+// footer related stuff
+
+footer section h2 {
+    color: $light_text_colour;
+	background: $base;
+    font-size: 3rem;
+}
+
+footer section h3 a {
+	color: $highlight;
+}
+
+footer section h3 a:hover,
+footer section h3 a:visited:hover {
+	color: $dark_grey;
+}
+
+footer section p {
+    font-size: 2rem;
+}
+
+/**section.featurepost div {
+	border-bottom-color: $highlight;
+}**/
 
 /* ==========================================================================
    Media Queries
@@ -564,6 +594,8 @@ article ul {
 
     .footer-container footer {
         flex-direction: row;
+        box-sizing: border-box;
+        padding-left: 3rem;
     }
 
     footer section {

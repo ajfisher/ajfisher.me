@@ -4,10 +4,14 @@
             <section class="featurepost">
                 <h2>Featured post</h2>
                 {{#if listimage}}
-                    <img src="{{listimage}}"/>
+                    <div>
+                        <a href="/{{this.path}}">
+                            <img src="{{listimage}}"/>
+                        </a>
+                    </div>
                 {{/if}}
                 <h3><a href="/{{path}}">{{title}}</a></h3>
-                {{excerpt}}
+                <p>{{excerpt}}</p>
             </section>
             <section>
                 <h2>My Books</h2>
