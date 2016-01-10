@@ -464,6 +464,9 @@ footer section h2 {
     color: $light_text_colour;
 	background: $base;
     font-size: 3rem;
+	display: inline-block;
+    box-shadow: 1rem 0 0 $base,-1rem 0 0 $base;
+    margin-left: 1rem;
 }
 
 footer section h3 a {
