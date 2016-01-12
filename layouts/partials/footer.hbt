@@ -15,6 +15,12 @@
             </section>
             <section>
                 <h2>My Books</h2>
+                <div>
+                    <a href="http://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
+                        <img src="http://ecx.images-amazon.com/images/I/91Fz49eGnBL.jpg"
+                            style="object-position: 50% 100%"/>
+                    </a>
+                </div>
                 <h3>
                     <a href="http://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
                         Make: JavaScript Robotics
@@ -23,9 +29,14 @@
                 <p>15 NodeBots authors from around the globe collaborated to bring
                 practical, fun and whimsical projects for you to build using JS and
                 hardware</p>
+                <div>
+                    <a href="http://www.amazon.com/Jump-Start-Responsive-Web-Design-ebook/dp/B00TJ6UY9S/">
+                        <img src="http://ecx.images-amazon.com/images/I/51SOYdHKTIL._SX386_BO1,204,203,200_.jpg" style="object-position: 50% 75%" />
+                    </a>
+                </div>
                 <h3>
-                    <a href="">
-                        Responsive Design
+                    <a href="http://www.amazon.com/Jump-Start-Responsive-Web-Design-ebook/dp/B00TJ6UY9S/">
+                        Jump Start Responsive Web Design
                     </a>
                 </h3>
                 <p>Learn about responsive design and the current approaches to getting
@@ -33,9 +44,18 @@
             </section>
             <section>
                 <h2>Latest talk</h2>
-                <h3>Building Droids with JavaScript, JSFoo, India</h3>
+                <div>
+                    <a href="https://www.youtube.com/watch?v=3C3lHuRToQs">
+                        <img src="/img/footer/jsfoo.png"/>
+                    </a>
+                </div>
+                <h3>
+                    <a href="https://www.youtube.com/watch?v=3C3lHuRToQs">
+                        Droids, JavaScript and Web Connected Hardware, JSFoo, India
+                    </a>
+                </h3>
                 <p>Dive into the world of JS hardware and see the sorts of things
-                people are doing with it with some demos along the way</p>
+                people are doing with it with some demos along the way.</p>
             </section>
         {{/with}}
     </footer>

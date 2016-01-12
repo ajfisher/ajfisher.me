@@ -387,7 +387,7 @@ article ul {
 }
 
 .list * li div,
-section.featurepost div {
+footer section div {
     height: 17rem;
     overflow: hidden;
     border-bottom: 0.5rem solid $base;
@@ -399,20 +399,25 @@ section.featurepost div {
 	border-bottom: 0.5rem solid $dark_grey;
 }
 
+footer section div {
+    border-bottom-color: $highlight;
+}
+
 .list * li div a,
-section.featurepost div a {
+footer section div a {
 	padding: 0;
 	background: none;
 }
 
 .list * li div img,
-section.featurepost div img {
+footer section div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .list * h2,
+footer section h2,
 footer section h3 {
     background: none;
     box-shadow: none;
@@ -461,12 +466,12 @@ footer section h3 a {
 // footer related stuff
 
 footer section h2 {
-    color: $light_text_colour;
-	background: $base;
+    color: $highlight !important;
+/**	background: none;
     font-size: 3rem;
 	display: inline-block;
     box-shadow: 1rem 0 0 $base,-1rem 0 0 $base;
-    margin-left: 1rem;
+    margin-left: 1rem;**/
 }
 
 footer section h3 a {
@@ -593,6 +598,7 @@ footer section p {
         position: sticky;
         top: 3rem;
         margin-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     .footer-container footer {
