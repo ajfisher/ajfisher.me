@@ -33,7 +33,12 @@ var pullquote_list = Array.from(document.querySelectorAll("article p b"));
 
 pullquote_list.forEach(function(pq) {
     pq.parentNode.classList.add("has-pullquote");
-    pq.parentNode.dataset.pullquote = pq.innerText;
+    // make sure it's upper case on first char so it reads right.
+    var quote = pq.innerText;
+    quote = "" + quote[0].toUpperCase() + quote.substring(1)
+
+    // now assign to the pq
+    pq.parentNode.dataset.pullquote = quote;
 });
 
 
