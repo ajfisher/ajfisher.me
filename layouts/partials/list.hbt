@@ -2,7 +2,9 @@
 	{{#if listimage}}
 		<div>
 			<a href="/{{this.path}}">
-				<img src="{{listimage}}"/>
+				<img src="{{listimage}}"
+                {{#if listimage-position}}style="object-position: {{listimage-position}}"{{/if}}
+                />
 			</a>
 		</div>
 	{{/if}}
