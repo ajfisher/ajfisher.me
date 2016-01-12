@@ -1,11 +1,9 @@
 ---
 author: ajfisher
-comments: true
 date: 2012-11-20 12:10:46+00:00
 layout: post.hbt
 slug: a-clickster-fail-of-epic-proportions
 title: The ClickFail of Australian Retail.
-wordpress_id: 561
 tags:
 - cloud computing
 - development
@@ -14,14 +12,15 @@ tags:
 - rant
 - web
 listimage: http://ajfisher.me/wp-content/uploads/2012/11/server-to-busy-e1353413024417.png
+listimage-position: 0% 50%
 
 ---
-
-[![](http://ajfisher.me/wp-content/uploads/2012/11/server-to-busy-e1353413024417.png)](http://ajfisher.me/wp-content/uploads/2012/11/server-to-busy.png)
 
 **There but for the grace of Web Gods, go I...**
 
 In Australia tonight we were supposed to witness the coming of age of Australian Online Retail. Our first "Cyber Tuesday" - a moment where the industry said to Australians who have been lured to the sales of the US and Europe "We can do this too". And then we didn't.
+
+[![](http://ajfisher.me/wp-content/uploads/2012/11/server-to-busy-e1353413024417.png)](http://ajfisher.me/wp-content/uploads/2012/11/server-to-busy.png)
 
 We didn't because technologists were too arrogant to heed the lessons of "Web Scale" development that have been done in the rest of the world. We didn't because our retail industry has spent more time crying foul over the lack of GST on international retailers than gaining proficiency in doing online commerce well. And we didn't because we still have marketers in this country who can say and hype what they want but are not held accountable to delivering good results.
 
@@ -29,7 +28,7 @@ I'm not happy. Not happy at all. I've spent just about my entire adult life work
 
 From designing web applications that could withstand the load of half the young adult population of the UK to listen to and download the latest track featured on a Smirnoff Ice advert. To ensuring the website for the Melbourne Cup could stay up when hundreds of thousands of people all decide to find out the winner at 3:15pm on the first Tuesday of November each year. Or maybe it's just designing ecommerce applications so that when a marketing director decides on a whim to do a 40% off sale with 3 hours notice over lunch time and then email several hundred thousand customers the website will manage to survive.
 
-For the first two hours of the 24 hour sale, the website was simply unavailable due to meltdown. Three hours in as I write this I can get a smattering of pages from the site but no deals to speak of.
+For the first two hours of the 24 hour sale, <b>the website was simply unavailable due to meltdown</b>. Three hours in as I write this I can get a smattering of pages from the site but no deals to speak of.
 
 Most of the retailers have responded admirably, turning to their social media channels to direct customers to their own websites where they could get the offers anyway. This, for me, was a highlight, showing yet again the web's ability to route around failure. Indeed many smaller brands quickly capitalised on the fiasco, launching their own deals on their sites to try and lure in customers who were eager to spend - hijacking the twitter and Facebook back-channels to their own ends.
 
