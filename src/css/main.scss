@@ -339,10 +339,12 @@ p.has-pullquote::before {
     content: attr(data-pullquote);
     display: block;
 	@include heading-font();
-    max-width: 90%;
     font-size: 4rem;
     margin: inherit;
     color: $base;
+    margin-left: -3rem;
+    padding-left: 3rem;
+    border-left: 2px solid $base;
 }
 
 // get the images sorted
