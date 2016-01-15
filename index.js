@@ -68,6 +68,28 @@ var excerpt = function(options) {
     });
 };
 
+var captioner = function(options) {
+
+    options = options || {};
+
+    var filetypes = options.fileExtension || ".html";
+
+    return (function(files, metalsmith, done) {
+        for (var file in files) {
+            if (file.endsWith(filetypes)) {
+                // we have a markdown file
+                // TODO fix this.
+                console.log(file);
+                var contents = files[file].contents.toString();
+                var patt = /img.+\/\>/m;
+                var m = patt.exec(contents);
+                console.log(m);
+            }
+        }
+        done();
+    });
+};
+
 var debug = function(options) {
     return (function(files, metalsmith, done) {
         for (var file in files) {
@@ -110,6 +132,7 @@ Metalsmith(__dirname)
     }))
     .use(excerpt())
     .use(markdown())
+    .use(captioner())
     .use(wordcount({
         metaKeyCount: "wordcount",
         metaKeyReadingTime: "readingtime",
