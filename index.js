@@ -72,7 +72,7 @@ var captioner = function(options) {
 
     options = options || {};
 
-    var filetypes = options.fileExtension || ".html";
+    var filetypes = options.fileExtension || ".md";
 
     return (function(files, metalsmith, done) {
         for (var file in files) {
@@ -80,10 +80,15 @@ var captioner = function(options) {
                 // we have a markdown file
                 // TODO fix this.
                 console.log(file);
+                console.log("------");
                 var contents = files[file].contents.toString();
-                var patt = /img.+\/\>/m;
-                var m = patt.exec(contents);
-                console.log(m);
+                var patt = /\!\[(.+?)\]\((.*)\)/mg;
+                while (m = patt.exec(contents)) {
+                    console.log("...");
+                    console.log(m[0]);
+                    console.log(m[1]);
+                    console.log(m[2]);
+                }
             }
         }
         done();
@@ -131,8 +136,8 @@ Metalsmith(__dirname)
         }
     }))
     .use(excerpt())
-    .use(markdown())
     .use(captioner())
+    .use(markdown())
     .use(wordcount({
         metaKeyCount: "wordcount",
         metaKeyReadingTime: "readingtime",
