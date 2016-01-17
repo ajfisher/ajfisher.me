@@ -22,8 +22,9 @@ var wordcount   = require('metalsmith-word-count');
 var convert_opts = [];
 var convert_src = 'img/posts/*.jpg';
 
+var image_sizes = [300, 400, 500, 650, 750, 1000, 1500];
 // adds a stack of different sizes to autocreate
-[300, 400, 500, 650, 750, 1000, 1500].forEach(function(size) {
+image_sizes.forEach(function(size) {
     convert_opts.push({
         src: convert_src,
         resize: { width: size, resizeStyle: 'aspectfit'},
@@ -64,7 +65,7 @@ Handlebars.registerHelper('shown', function (from, to, context, options){
 // helpers for metalsmith
 var excerpt = function(options) {
     // creates excerpts from the markdown using the first para that is actually
-    // a paragraph of contnet not an image etc.
+    // a paragraph of content not an image etc.
     return (function(files, metalsmith, done) {
         for (var file in files) {
             // just look at markdown files.
@@ -119,11 +120,22 @@ var debug = function(options) {
     });
 };
 
+var meta = function(options) {
+    return (function(files, metalsmith, done) {
+        for (var file in files) {
+            files[file].meta = metalsmith._metadata;
+        }
+        done();
+    });
+};
+
+
 Metalsmith(__dirname)
     .metadata({
         site: {
             url: "http://ajfisher.me",
-        }
+        },
+        imagesizes: image_sizes,
     })
     .use(watch({
         paths: {
@@ -152,7 +164,8 @@ Metalsmith(__dirname)
     }))
     .use(convert(convert_opts))
     .use(excerpt())
-    .use(captioner())
+    //.use(captioner())
+    .use(meta())
     .use(markdown())
     .use(wordcount({
         metaKeyCount: "wordcount",
