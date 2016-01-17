@@ -73,9 +73,12 @@ var excerpt = function(options) {
     });
 };
 
-var captioner = function(options) {
-
+var srcset = function(options) {
+    // this helper looks through a markdown file, rips out any images and
+    // sets them up properly to use image src sets and sizes.
     options = options || {};
+    default_size = options.default_size || 500;
+    sizes_rule = options.sizes || "100vw";
 
     var filetypes = options.fileExtension || ".md";
 
@@ -83,17 +86,25 @@ var captioner = function(options) {
         for (var file in files) {
             if (file.endsWith(filetypes)) {
                 // we have a markdown file
-                // TODO fix this.
-                console.log(file);
-                console.log("------");
                 var contents = files[file].contents.toString();
-                var patt = /\!\[(.+?)\]\((.*)\)/mg;
+                var patt = /\!\[(.+?)\]\((.*)\.jpg\)/mg;
                 while (m = patt.exec(contents)) {
-                    console.log("...");
-                    console.log(m[0]);
-                    console.log(m[1]);
-                    console.log(m[2]);
+                    // find any image which is a straight markdown image in the
+                    // file then replace it with the proper srcset version
+                    var imgrep = "<img src=\"" + m[2] + "_" + default_size + "\" ";
+                    imgrep += "alt=\"" + m[1] + "\" ";
+                    imgrep += "srcset=\"";
+                    image_sizes.forEach(function(size) {
+                        imgrep += m[2] + "_" + size + ".jpg " + size + "w, ";
+                    });
+                    // ensure the appropriate sizes rule is updates
+                    imgrep += "\" sizes=\"" + sizes_rule + "\"";
+                    imgrep += "/>";
+
+                    contents = contents.replace(m[0], imgrep);
                 }
+                // write the file contents back to the file.
+                files[file].contents = new Buffer(contents);
             }
         }
         done();
@@ -155,7 +166,10 @@ Metalsmith(__dirname)
         }
     }))
     .use(excerpt())
-    //.use(captioner())
+    .use(srcset({
+        sizes: "(min-width: 768px) 625px, calc(100vw-6rem)",
+        default_size: 650,
+    }))
     .use(meta())
     .use(markdown())
     .use(wordcount({
