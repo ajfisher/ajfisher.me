@@ -7,6 +7,7 @@ var removemd    = require('remove-markdown');
 
 var Metalsmith  = require('metalsmith');
 var collections = require('metalsmith-collections');
+var convert     = require('metalsmith-convert');
 var layouts     = require('metalsmith-layouts');
 var markdown    = require('metalsmith-markdown');
 var permalinks  = require('metalsmith-permalinks');
@@ -15,6 +16,20 @@ var serve       = require('metalsmith-serve');
 var tags        = require('metalsmith-tags');
 var watch       = require('metalsmith-watch');
 var wordcount   = require('metalsmith-word-count');
+
+
+// make the options for convert
+var convert_opts = [];
+var convert_src = 'img/posts/*.jpg';
+
+// adds a stack of different sizes to autocreate
+[300, 400, 500, 650, 750, 1000, 1500].forEach(function(size) {
+    convert_opts.push({
+        src: convert_src,
+        resize: { width: size, resizeStyle: 'aspectfit'},
+        nameFormat: "%b_%x.jpg",
+    });
+});
 
 // partial definitions
 Handlebars.registerPartial('citation', fs.readFileSync(__dirname + '/layouts/partials/citation.hbt').toString());
@@ -135,6 +150,7 @@ Metalsmith(__dirname)
             refer: false,
         }
     }))
+    .use(convert(convert_opts))
     .use(excerpt())
     .use(captioner())
     .use(markdown())

@@ -45,6 +45,15 @@ picked up the `build/_posts` files and put them in the repo.
 
 Imagemagick - install using `brew install imagemagick`
 
+metalsmith-convert uses a bad version of imagemagick-native. Do this:
+
+```
+git clone git@github.com:tomterl/metalsmith-convert.git
+npm remove --save imagemagick-native
+npm install -- save elad/node-imagemagick-native.git#travis-4.1
+cd ~/dev/ajfisher.me
+npm install ~/tmp/metalsmith-convert
+```
 
 ## Custom meta data instructions
 
