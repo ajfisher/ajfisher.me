@@ -23,6 +23,7 @@
     "handlebars": "^4.0.5",
     "metalsmith": "^2.1.0",
     "metalsmith-collections": "^0.7.0",
+    "metalsmith-convert": "^0.3.0",
     "metalsmith-layouts": "^1.4.2",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-permalinks": "^0.4.1",

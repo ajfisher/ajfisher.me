@@ -41,6 +41,10 @@ Just to make it explicitly work with .md which is a bit nicer to look at.
 
 picked up the `build/_posts` files and put them in the repo.
 
+### Other
+
+Imagemagick - install using `brew install imagemagick`
+
 
 ## Custom meta data instructions
 
