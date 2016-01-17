@@ -19,10 +19,11 @@ excerpt: >
     JavaScript is leaving the browser and entering the real world. Is this
     just a bunch of web devs playing with hardware or are we starting to see a
     fundamental shift in the direction web technologies are taking?
-featureimage: https://c2.staticflickr.com/4/3590/3541796526_360bfb5bf0_o.jpg
-imageby: juvetson
-imagelink: http://www.flickr.com/photos/jurvetson/3541796526
-listimage: https://c2.staticflickr.com/4/3590/3541796526_360bfb5bf0_o.jpg
+old: https://c1.staticflickr.com/1/364/18123764024_9226d0fe39_k.jpg
+featureimage: /img/posts/18123764024_9226d0fe39_k_1500.jpg
+imageby: ninfaj
+imagelink: https://www.flickr.com/photos/ninfaj/18123764024
+listimage: /img/posts/18123764024_9226d0fe39_k
 collection: featured
 featured: true
 
@@ -57,7 +58,7 @@ Even though my day job is and has been web development for a considerable number
 
 The reason for this can be solidly accounted for by the robustness of Linux on the desktop and the availability of the [Arduino](http://arduino.cc). You'll note that neither of these things have anything to do even remotely with javascript.
 
-![Image CC ajfisher](http://ajfisher.me/wp-content/uploads/2013/08/8d6dfc02cd8211e1ad6922000a1e8aaa_7.jpg)
+![Image CC ajfisher](/img/posts/8d6dfc02cd8211e1ad6922000a1e8aaa_7.jpg)
 
 Having access to free development environments to tinker at a low level (initially with USB development kits) with Linux and then subsequently with the excellent hardware package that is Arduino brought me back to hardware in a big way. Since then I've been developing "things" for art, research, personal interest, fixing things for people, scratching itches and generally trying to join hardware with the web. I've spoken around the world on the topic and even helped provide feedback on new products being designed.
 
@@ -75,7 +76,7 @@ Having taught quite a few people to code, <b>the benefit of being able to open a
 
 Executing console.log("hello world") or window.alert(2+5-20) brings immediate feedback, makes you feel as though you're getting somewhere and that you are interacting directly with the computer as a programmer. For those of you old enough to own a Spectrum, C64 or Vic20 - BASIC (itself heavily derided) had the same benefit.
 
-![Image CC taizocurry http://www.flickr.com/photos/taizocurry/4129346259/sizes/l/in/photostream/](http://ajfisher.me/wp-content/uploads/2013/08/4129346259_b8fe3b789a_b-e1377086535721.jpg)
+![Image CC Taizo E.C. http://www.flickr.com/photos/taizocurry/4129346259/sizes/l/in/photostream/](/img/posts/4129346259_33d03514e0_o.jpg)
 
 Many of those in their 30s got their first intro to programming by doing this:
 
@@ -118,7 +119,7 @@ The last 12 months have seen a significant shift in the amount of projects being
 
 For example the [library that was developed to control the ARDrone](https://github.com/felixge/node-ar-drone) by wrapping its network protocol and exposing a JavaScript client. This created a slew of [NodeCopter](http://nodecopter.com/) events, where developers would build things with the drones using JavaScript. All sorts of applications have been created – everything from making drones respond to external APIs (dancing on a twitter @ message), to refined control UIs through to full image recognition and manipulation.
 
-![Image CC nez http://www.flickr.com/photos/nez/8575918404](http://ajfisher.me/wp-content/uploads/2013/08/8575918404_8b7189ca6e_b-1-e1377087633219.jpg)
+![Image CC nez http://www.flickr.com/photos/nez/8575918404](/img/posts/8575918404_37e1b119bc_k.jpg)
 
 After that came the excellent [Serial library for node](https://github.com/voodootikigod/node-serialport) (removing my final objection to using JS with hardware). This meant that applications could control devices that are plugged in via USB. All of a sudden everything from controllable lights (eg [Blink1](http://www.kickstarter.com/projects/thingm/blink1-the-usb-rgb-led)) through to small scale robots started popping up.
 
@@ -126,7 +127,7 @@ Coupled with [Firmata](http://firmata.org/) – a protocol for controlling embed
 
 This eventually led to the[ Nodebots / Johnny-Five project](https://github.com/rwaldron/johnny-five) (disclosure: I'm a big fan, have committed code to the project and helped run a nodebots day) that provides JavaScript objects for common hardware (servos, motors, sensors etc) for Arduino.
 
-![Image CC ajfisher http://ajfisher.me/wp-content/uploads/2013/08/af739286001611e39ba022000a1fb984_7.jpg](http://ajfisher.me/wp-content/uploads/2013/08/af739286001611e39ba022000a1fb984_7-e1377087774928.jpg)
+![Image CC ajfisher](/img/posts/nodle.jpg) 
 
 So within just over 12 months the community has gone from almost no hardware capability at all to being able to control things that fly, crawl and walk, make things light up and sense the environment. Yes much of this stands on the shoulders of other protocols, libraries and hardware but that's not the point (all software if built on the shoulders of lower foundations all the way down). The point is that when something is technically possible people will start doing things with it.
 
@@ -140,7 +141,7 @@ One of my more contentious views is that your average web developer or designer 
 
 Once you couple the skills of a few hundred thousand web developers and designers with the ability to design, build and fabricate actual physical things that talk to the web you start ending up with interesting things. [Robots controllable from mobile phones](https://github.com/ajfisher/ajnodebot), [house lights you can interact with](http://lifx.co/), art where data from a buoy in the middle of the ocean is [tele-present in the middle of a gallery in Poland](http://www.youtube.com/watch?v=0p3je4WGcM0).
 
-![Image CC ajfisher](http://ajfisher.me/wp-content/uploads/2013/08/c3c6adfecbf111e1985822000a1d011d_7-e1377087909554.jpg)]
+![Image CC ajfisher](/img/posts/js_matrix_led.jpg)
 
 Making hardware available to web developers is a desirable goal. Much of the web is given over to entertainment and solving first world problems. Being able to affect the real world provides an opportunity to fix actual problems and enable better quality of life for many. Web developers and designers intrinsically understand the "hard place" between systems and humans – making them uniquely placed to have a tangible impact in the real world.
 
@@ -154,7 +155,7 @@ Whilst electronics is a completely learnable skill, it is a barrier to entry tha
 
 Electronics components often either work or not and are much less tolerant of failure than code – not least because you can destroy a component, not realise it and then spend days debugging before you understand you have killed it.
 
-![Image CC brickman http://www.flickr.com/photos/brickman_photos/5597955361/sizes/l/in/photostream/](http://ajfisher.me/wp-content/uploads/2013/08/5597955361_0cd18c6086_b-e1377088966655.jpg)
+![Image CC brickman http://www.flickr.com/photos/brickman_photos/5597955361/sizes/l/in/photostream/](/img/posts/5597955361_7174f21345_o.jpg)
 
 It is this facet of electronics that the embedded systems camp are coming from when they say "do it in C". Not necessarily because the language is better but because you are working at "the metal" and as a result you will get a much more visceral understanding of the electronics. I totally appreciate this position and my fundamental electronics understanding comes from a combination of this as well as building analog circuits.
 
@@ -178,7 +179,7 @@ The tessel board is using a chip designed to PWM LEDs (to make them brighter or 
 
 Next we have the obfuscation of the OS. To run JavaScript we need an OS to run it on. Given the ARM M3-Cortex chip at the heart of this board, this probably means it's running a micro flavour of Linux. That's great just by itself even without JavaScript but it would appear all of that power is going to be hidden away behind an interface layer. Whilst I'm sure someone will make some mods to make Linux available in some way, most users won't bother with that. Contrast this with the Raspberry Pi or BeagleBone which provide full access to Linux as well as anything you want to run on it.
 
-![Image CC stfnix http://www.flickr.com/photos/stfnix/9176951660/sizes/l/in/photostream/](http://ajfisher.me/wp-content/uploads/2013/08/9176951660_f8566033a7_b-e1377088075518.jpg)
+![Image CC stfnix http://www.flickr.com/photos/stfnix/9176951660/sizes/l/in/photostream/](/img/posts/9176951660_2a261dab3a_k.jpg)
 
 In my opinion the BeagleBone provides the best mix of this - plug it in, connect over USB or network and you have Cloud9 IDE where you can write and execute JavaScript directly on the board. If you _want_ you can SSH onto the device and work at a Linux command line - you can work in perl, python, java or C quite happily. There's no requirement to do so but you get the power when you do. This provides immense longevity for the device and stops it sitting in a draw discarded 6 or 12 months down the line.
 
@@ -190,7 +191,7 @@ However rather than build something simply to "run JavaScript" I believe a bette
 
 Arduino is an excellent example of this approach from a C perspective. The reason for this is Massimo, David and the rest of the team are all educators - as such they fundamentally understand that you need to provide opportunities to experiment and grow your capability with every step and not lock someone into a dead end. With an arduino it is extremely easy to do simple things. You can copy and paste code from the examples and it will work. Due to the framework it's easy to see that the LED is blinking because you're turning pin 13 on and off every 1000 milliseconds - you don't even need to be a programmer to understand that as a concept. This is why arduino has been successful with students who are not naturally inclined to try programming.
 
-![Image CC oskay http://www.flickr.com/photos/oskay/2226419292/sizes/l/in/photostream/](http://ajfisher.me/wp-content/uploads/2013/08/2226419292_ac8a9fbd0e_b-e1377089514592.jpg)
+![Image CC oskay http://www.flickr.com/photos/oskay/2226419292/sizes/l/in/photostream/](/img/posts/2226419292_a91c6dafa5_o.jpg)
 
 However once you get beyond this level of understanding it's perfectly fine and possible (and encouraged) to start writing "real" C code that manipulates registers and memory. Thus the pathway from novice to embedded system programmer is entirely visible.
 
