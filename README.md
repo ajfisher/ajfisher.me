@@ -11,6 +11,20 @@ git clone https://github.com/ajfisher/ajfisher.me
 npm install
 ```
 
+Usage:
+
+To run the processor which will look at general files such as sass, md etc
+
+```
+node index.js
+```
+
+To process all the images to the right sizes, use:
+
+```
+node images.js
+```
+
 ## Dependencies
 
 ### NodeJS

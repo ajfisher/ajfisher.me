@@ -7,7 +7,6 @@ var removemd    = require('remove-markdown');
 
 var Metalsmith  = require('metalsmith');
 var collections = require('metalsmith-collections');
-var convert     = require('metalsmith-convert');
 var layouts     = require('metalsmith-layouts');
 var markdown    = require('metalsmith-markdown');
 var permalinks  = require('metalsmith-permalinks');
@@ -18,19 +17,8 @@ var watch       = require('metalsmith-watch');
 var wordcount   = require('metalsmith-word-count');
 
 
-// make the options for convert
-var convert_opts = [];
-var convert_src = 'img/posts/*.jpg';
-
+// make the options for image sizes to work from
 var image_sizes = [300, 400, 500, 650, 750, 1000, 1500];
-// adds a stack of different sizes to autocreate
-image_sizes.forEach(function(size) {
-    convert_opts.push({
-        src: convert_src,
-        resize: { width: size, resizeStyle: 'aspectfit'},
-        nameFormat: "%b_%x.jpg",
-    });
-});
 
 // partial definitions
 Handlebars.registerPartial('citation', fs.readFileSync(__dirname + '/layouts/partials/citation.hbt').toString());
@@ -55,6 +43,7 @@ Handlebars.registerHelper('moment', function(date, format) {
 });
 
 Handlebars.registerHelper('shown', function (from, to, context, options){
+    // shows items from X to Y in an array
     var item = "";
     for (var i = from, j = to; i <= j; i++) {
         item = item + options.fn(context[i]);
@@ -121,6 +110,8 @@ var debug = function(options) {
 };
 
 var meta = function(options) {
+    // adds the global meta data to each file so it can be used in the
+    // handlebars context from meta.X
     return (function(files, metalsmith, done) {
         for (var file in files) {
             files[file].meta = metalsmith._metadata;
@@ -129,7 +120,7 @@ var meta = function(options) {
     });
 };
 
-
+// metalsmith pipeline
 Metalsmith(__dirname)
     .metadata({
         site: {
@@ -137,6 +128,7 @@ Metalsmith(__dirname)
         },
         imagesizes: image_sizes,
     })
+    .clean(false)
     .use(watch({
         paths: {
             "$(source)/**/*": "**/*.md",
@@ -162,7 +154,6 @@ Metalsmith(__dirname)
             refer: false,
         }
     }))
-    .use(convert(convert_opts))
     .use(excerpt())
     //.use(captioner())
     .use(meta())
