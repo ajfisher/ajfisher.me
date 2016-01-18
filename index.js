@@ -75,10 +75,12 @@ var excerpt = function(options) {
 
 var srcset = function(options) {
     // this helper looks through a markdown file, rips out any images and
-    // sets them up properly to use image src sets and sizes.
+    // sets them up properly to use image src sets and sizes with attribution
+    // using a figure and figcaption if that's provided.
     options = options || {};
     default_size = options.default_size || 500;
     sizes_rule = options.sizes || "100vw";
+    attribution = options.attribution || false;
 
     var filetypes = options.fileExtension || ".md";
 
@@ -87,12 +89,13 @@ var srcset = function(options) {
             if (file.endsWith(filetypes)) {
                 // we have a markdown file
                 var contents = files[file].contents.toString();
-                var patt = /\!\[(.+?)\]\((.*)\.jpg\)/mg;
-                while (m = patt.exec(contents)) {
+                var imgpatt = /\!\[(.+?)\]\((.*)\.jpg\)/mg;
+                var urlpatt = /(.+?)\W(http\:\/\/(.*))/m
+                while (m = imgpatt.exec(contents)) {
                     // find any image which is a straight markdown image in the
                     // file then replace it with the proper srcset version
                     var imgrep = "<img src=\"" + m[2] + "_" + default_size + "\" ";
-                    imgrep += "alt=\"" + m[1] + "\" ";
+                    imgrep += "title=\"" + m[1] + "\" ";
                     imgrep += "srcset=\"";
                     image_sizes.forEach(function(size) {
                         imgrep += m[2] + "_" + size + ".jpg " + size + "w, ";
@@ -100,6 +103,31 @@ var srcset = function(options) {
                     // ensure the appropriate sizes rule is updates
                     imgrep += "\" sizes=\"" + sizes_rule + "\"";
                     imgrep += "/>";
+
+                    // add attribition element if required
+                    if (attribution) {
+                        var attr = "";
+                        var caption = "";
+                        var url = "";
+
+                        if (m[1].indexOf("http://") >= 0) {
+                            caption = m[1].substring(0, m[1].indexOf("http://")-1);
+                            url = m[1].substring(m[1].indexOf("http://"));
+                        } else {
+                            caption = m[1];
+                        }
+                        attr += "<figcaption>";
+                        if (url !== "") {
+                            attr += "<a href=\"" + url + "\">";
+                        }
+                        attr += caption;
+                        if (url !== "") {
+                            attr += "</a>";
+                        }
+                        attr += "</figcaption>";
+
+                        imgrep = "<figure>" + imgrep + attr + "</figure>"
+                    }
 
                     contents = contents.replace(m[0], imgrep);
                 }
@@ -169,6 +197,7 @@ Metalsmith(__dirname)
     .use(srcset({
         sizes: "(min-width: 768px) 625px, calc(100vw-6rem)",
         default_size: 650,
+        attribution: true,
     }))
     .use(meta())
     .use(markdown())

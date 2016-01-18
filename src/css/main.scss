@@ -353,8 +353,27 @@ p.has-pullquote::before {
 }
 
 // get the images sorted
+article figure {
+    margin: 0;
+    position: relative;
+}
 
-article p img {
+article figure figcaption {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    color: $light_text_colour;
+    background: $dark_grey;
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+article figure figcaption a {
+    padding: 0;
+}
+
+article p img,
+article figure img {
     width: 100%;
 }
 

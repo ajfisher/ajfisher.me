@@ -42,4 +42,3 @@ pullquote_list.forEach(function(pq) {
     pq.parentNode.dataset.pullquote = quote;
 });
 
-
