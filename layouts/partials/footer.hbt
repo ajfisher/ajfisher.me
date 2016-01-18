@@ -16,7 +16,7 @@
                         </a>
                     </div>
                 {{/if}}
-                <h3><a href="/{{path}}">{{title}}</a></h3>
+                <p><a href="/{{path}}">{{title}}</a></p>
                 <p>{{excerpt}}</p>
             {{/with}}
         </section>
@@ -32,11 +32,11 @@
                     src="/img/posts/jsfoo_300.jpg"/>
                 </a>
             </div>
-            <h3>
+            <p>
                 <a href="https://www.youtube.com/watch?v=3C3lHuRToQs">
                     Droids, JavaScript and Web Connected Hardware, JSFoo, India
                 </a>
-            </h3>
+            </p>
             <p>Dive into the world of JS hardware and see the sorts of things
             people are doing with it with some demos along the way.</p>
         </section>
@@ -53,11 +53,11 @@
                         style="object-position: 50% 100%"/>
                 </a>
             </div>
-            <h3>
+            <p>
                 <a href="http://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
                     Make: JavaScript Robotics
                 </a>
-            </h3>
+            </p>
 <!--            <p>15 NodeBots authors from around the globe collaborated to bring
             practical, fun and whimsical projects for you to build using JS and
             hardware</p>-->
@@ -71,11 +71,11 @@
                     src="/img/posts/responsive_design_300.jpg" style="object-position: 50% 85%" />
                 </a>
             </div>
-            <h3>
+            <p>
                 <a href="http://www.amazon.com/Jump-Start-Responsive-Web-Design-ebook/dp/B00TJ6UY9S/">
                     Jump Start Responsive Web Design
                 </a>
-            </h3>
+            </p>
 <!--            <p>Learn about responsive design and the current approaches to getting
             started designing and building sites using these techniques</p>-->
         </section>
