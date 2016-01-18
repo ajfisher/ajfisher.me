@@ -11,6 +11,20 @@ git clone https://github.com/ajfisher/ajfisher.me
 npm install
 ```
 
+Usage:
+
+To run the processor which will look at general files such as sass, md etc
+
+```
+node index.js
+```
+
+To process all the images to the right sizes, use:
+
+```
+node images.js
+```
+
 ## Dependencies
 
 ### NodeJS
@@ -41,6 +55,19 @@ Just to make it explicitly work with .md which is a bit nicer to look at.
 
 picked up the `build/_posts` files and put them in the repo.
 
+### Other
+
+Imagemagick - install using `brew install imagemagick`
+
+metalsmith-convert uses a bad version of imagemagick-native. Do this:
+
+```
+git clone git@github.com:tomterl/metalsmith-convert.git
+npm remove --save imagemagick-native
+npm install -- save elad/node-imagemagick-native.git#travis-4.1
+cd ~/dev/ajfisher.me
+npm install ~/tmp/metalsmith-convert
+```
 
 ## Custom meta data instructions
 

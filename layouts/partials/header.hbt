@@ -18,7 +18,7 @@
                 <p class="lede">{{excerpt}}</p>
             {{/if}}
             <p class="postdata">A {{readingtime}} minute read
-            (<span class="worddata">{{ humanise wordcount }} words</span>)</p>
+            <span class="worddata">{{ humanise wordcount }} words</span></p>
         {{/if}}
         {{#if list}}
             <p class="featured">Featured Post</p>
@@ -31,7 +31,7 @@
                     <p class="lede">{{excerpt}}</p>
                 {{/if}}
                 <p class="postdata">A {{readingtime}} minute read
-                (<span class="worddata">{{ humanise wordcount }} words</span>)</p>
+                <span class="worddata">{{ humanise wordcount }} words</span></p>
             {{/with}}
         {{/if}}
         {{#if page}}

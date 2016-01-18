@@ -6,7 +6,13 @@
                 {{#if listimage}}
                     <div>
                         <a href="/{{this.path}}">
-                            <img src="{{listimage}}"/>
+                            <img
+                                srcset="
+                                    {{#each meta.imagesizes}}
+                                    {{../listimage}}_{{this}}.jpg {{this}}w,
+                                    {{/each}}
+                                "
+                                src="{{listimage}}_500.jpg"/>
                         </a>
                     </div>
                 {{/if}}
@@ -18,7 +24,12 @@
             <h2>Latest talk</h2>
             <div>
                 <a href="https://www.youtube.com/watch?v=3C3lHuRToQs">
-                    <img src="/img/footer/jsfoo.png"/>
+                    <img srcset="
+                        {{#each meta.imagesizes}}
+                        /img/posts/jsfoo_{{this}}.jpg {{this}}w,
+                        {{/each}}
+                    "
+                    src="/img/posts/jsfoo_300.jpg"/>
                 </a>
             </div>
             <h3>
@@ -33,7 +44,12 @@
             <h2>My Books</h2>
             <div>
                 <a href="http://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
-                    <img src="http://ecx.images-amazon.com/images/I/91Fz49eGnBL.jpg"
+                    <img srcset="
+                        {{#each meta.imagesizes}}
+                        /img/posts/make_js_robots_{{this}}.jpg {{this}}w,
+                        {{/each}}
+                    "
+                    src="/img/posts/make_js_robots_300.jpg"
                         style="object-position: 50% 100%"/>
                 </a>
             </div>
@@ -47,7 +63,12 @@
             hardware</p>-->
             <div>
                 <a href="http://www.amazon.com/Jump-Start-Responsive-Web-Design-ebook/dp/B00TJ6UY9S/">
-                    <img src="https://learnable-images.s3.amazonaws.com/books/responsive1_medium.jpg" style="object-position: 50% 85%" />
+                    <img srcset="
+                        {{#each meta.imagesizes}}
+                        /img/posts/responsive_design_{{this}}.jpg {{this}}w,
+                        {{/each}}
+                    "
+                    src="/img/posts/responsive_design_300.jpg" style="object-position: 50% 85%" />
                 </a>
             </div>
             <h3>

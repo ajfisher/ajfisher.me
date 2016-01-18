@@ -16,6 +16,10 @@ var tags        = require('metalsmith-tags');
 var watch       = require('metalsmith-watch');
 var wordcount   = require('metalsmith-word-count');
 
+
+// make the options for image sizes to work from
+var image_sizes = [300, 400, 500, 650, 750, 1000, 1500];
+
 // partial definitions
 Handlebars.registerPartial('citation', fs.readFileSync(__dirname + '/layouts/partials/citation.hbt').toString());
 Handlebars.registerPartial('footer', fs.readFileSync(__dirname + '/layouts/partials/footer.hbt').toString());
@@ -39,6 +43,7 @@ Handlebars.registerHelper('moment', function(date, format) {
 });
 
 Handlebars.registerHelper('shown', function (from, to, context, options){
+    // shows items from X to Y in an array
     var item = "";
     for (var i = from, j = to; i <= j; i++) {
         item = item + options.fn(context[i]);
@@ -49,7 +54,7 @@ Handlebars.registerHelper('shown', function (from, to, context, options){
 // helpers for metalsmith
 var excerpt = function(options) {
     // creates excerpts from the markdown using the first para that is actually
-    // a paragraph of contnet not an image etc.
+    // a paragraph of content not an image etc.
     return (function(files, metalsmith, done) {
         for (var file in files) {
             // just look at markdown files.
@@ -68,6 +73,44 @@ var excerpt = function(options) {
     });
 };
 
+var srcset = function(options) {
+    // this helper looks through a markdown file, rips out any images and
+    // sets them up properly to use image src sets and sizes.
+    options = options || {};
+    default_size = options.default_size || 500;
+    sizes_rule = options.sizes || "100vw";
+
+    var filetypes = options.fileExtension || ".md";
+
+    return (function(files, metalsmith, done) {
+        for (var file in files) {
+            if (file.endsWith(filetypes)) {
+                // we have a markdown file
+                var contents = files[file].contents.toString();
+                var patt = /\!\[(.+?)\]\((.*)\.jpg\)/mg;
+                while (m = patt.exec(contents)) {
+                    // find any image which is a straight markdown image in the
+                    // file then replace it with the proper srcset version
+                    var imgrep = "<img src=\"" + m[2] + "_" + default_size + "\" ";
+                    imgrep += "alt=\"" + m[1] + "\" ";
+                    imgrep += "srcset=\"";
+                    image_sizes.forEach(function(size) {
+                        imgrep += m[2] + "_" + size + ".jpg " + size + "w, ";
+                    });
+                    // ensure the appropriate sizes rule is updates
+                    imgrep += "\" sizes=\"" + sizes_rule + "\"";
+                    imgrep += "/>";
+
+                    contents = contents.replace(m[0], imgrep);
+                }
+                // write the file contents back to the file.
+                files[file].contents = new Buffer(contents);
+            }
+        }
+        done();
+    });
+};
+
 var debug = function(options) {
     return (function(files, metalsmith, done) {
         for (var file in files) {
@@ -77,12 +120,26 @@ var debug = function(options) {
     });
 };
 
+var meta = function(options) {
+    // adds the global meta data to each file so it can be used in the
+    // handlebars context from meta.X
+    return (function(files, metalsmith, done) {
+        for (var file in files) {
+            files[file].meta = metalsmith._metadata;
+        }
+        done();
+    });
+};
+
+// metalsmith pipeline
 Metalsmith(__dirname)
     .metadata({
         site: {
             url: "http://ajfisher.me",
-        }
+        },
+        imagesizes: image_sizes,
     })
+    .clean(false)
     .use(watch({
         paths: {
             "$(source)/**/*": "**/*.md",
@@ -109,6 +166,11 @@ Metalsmith(__dirname)
         }
     }))
     .use(excerpt())
+    .use(srcset({
+        sizes: "(min-width: 768px) 625px, calc(100vw-6rem)",
+        default_size: 650,
+    }))
+    .use(meta())
     .use(markdown())
     .use(wordcount({
         metaKeyCount: "wordcount",
