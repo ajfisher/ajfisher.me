@@ -37,6 +37,9 @@
                             {{/if}}
                         {{/if}}
                     </ul>
+                    {{#if home}}
+                        <p class="morelink"><a href="/blog">More posts</a></p>
+                    {{/if}}
                 </article>
                 <aside id="sidebar">
                     {{> nav }}

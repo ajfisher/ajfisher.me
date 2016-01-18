@@ -376,14 +376,14 @@ article ul {
 .list article ul {
     padding: 0;
     display: flex;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+//    justify-content: space-between;
 }
 
 .list article ul li {
     display: block;
-    width: 48%;
+    width: 100%;
     border-bottom: 1px dashed lighten($dark-grey, 30%);
     margin-bottom: 3rem;
 }
@@ -587,6 +587,16 @@ footer section p {
         float: left;
         width: 61%;
         padding: 0px 3rem;
+    }
+
+    .list article ul {
+        -webkit-flex-flow: row wrap;
+        flex-flow: row  wrap;
+        justify-content: space-between;
+    }
+
+    .list article ul li {
+        width: 48%;
     }
 
     .main aside {
