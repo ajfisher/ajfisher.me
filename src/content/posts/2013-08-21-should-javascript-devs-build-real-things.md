@@ -5,16 +5,7 @@ date: 2013-08-21 05:30:31+00:00
 layout: post.hbt
 slug: should-javascript-devs-build-real-things
 title: Should JavaScript devs build real things?
-tags:
-- development
-- javascript
-- media
-- physical computing
-- ubicomp
-- web
-- internet
-- IoT
-- open source
+tags: development, javascript, media, physical computing, ubicomp, web, internet, IoT, open source
 excerpt: >
     JavaScript is leaving the browser and entering the real world. Is this
     just a bunch of web devs playing with hardware or are we starting to see a
