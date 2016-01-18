@@ -14,15 +14,19 @@
         <link rel="stylesheet" href="/css/font-awesome.min.css">
         <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         {{#if post}}
-            <meta name="twitter:card" content="summary_large_image">
+            {{#if featureimage}}
+                <meta name="twitter:card" content="summary_large_image">
+                <meta name="twitter:image" content="http://ajfisher.me{{imageurl featureimage 750}}">
+                <meta name="twitter:creator" content="@ajfisher">
+            {{else}}
+                <meta name="twitter:card" content="summary">
+            {{/if}}
             <meta name="twitter:site" content="@ajfisher">
-            <meta name="twitter:creator" content="@ajfisher">
             <meta name="twitter:title" content="{{title}}">
             {{#if twitter_excerpt}}
                 <meta name="twitter:description" content="{{twitter_excerpt}}">
             {{else}}
                 <meta name="twitter:description" content="{{excerpt}}">
             {{/if}}
-            <meta name="twitter:image" content="http://ajfisher.me/img/posts/TODO">
         {{/if}}
     </head>

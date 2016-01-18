@@ -37,6 +37,19 @@ Handlebars.registerHelper('humanise', function(num) {
     return (f.format('.2s')(num));
 });
 
+Handlebars.registerHelper('imageurl', function(img_url, size) {
+    // takes an image URL and a size and returns a properly formed url with
+    // the appropriate sized version
+
+    if (img_url !== undefined) {
+        var index = img_url.indexOf(".jpg");
+        return (img_url.substring(0, index-1) + "_" + size + ".jpg");
+    } else {
+        return ("");
+    }
+
+});
+
 Handlebars.registerHelper('moment', function(date, format) {
     // takes a date and formats it appropriately
     return Moment(date).format(format);
@@ -50,6 +63,8 @@ Handlebars.registerHelper('shown', function (from, to, context, options){
     }
     return item;
 });
+
+
 
 // helpers for metalsmith
 var excerpt = function(options) {
