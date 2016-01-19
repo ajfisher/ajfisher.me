@@ -13,6 +13,11 @@
                     {{#if tag}}
                         <h2>{{pagination.files.length}} posts about {{ tag }}</h2>
                     {{/if}}
+                    {{#if home}}
+                        <p class="intro">Observations, code and commentary from
+                        ajfisher on the application of technology to the real world.</p>
+                        <h2>Recent posts</h2>
+                    {{/if}}
                     <ul>
                         {{#if pagination.files}}
                             {{!-- list of files --}}
