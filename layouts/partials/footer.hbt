@@ -9,10 +9,10 @@
                             <img
                                 srcset="
                                     {{#each meta.imagesizes}}
-                                    {{../listimage}}_{{this}}.jpg {{this}}w,
+                                    {{imageurl ../listimage this}} {{this}}w,
                                     {{/each}}
                                 "
-                                src="{{listimage}}_500.jpg"/>
+                                src="{{imageurl listimage 500}}"/>
                         </a>
                     </div>
                 {{/if}}
