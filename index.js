@@ -43,7 +43,7 @@ Handlebars.registerHelper('imageurl', function(img_url, size) {
 
     if (img_url !== undefined) {
         var index = img_url.indexOf(".jpg");
-        return (img_url.substring(0, index-1) + "_" + size + ".jpg");
+        return (img_url.substring(0, index) + "_" + size + ".jpg");
     } else {
         return ("");
     }
@@ -109,7 +109,7 @@ var srcset = function(options) {
                 while (m = imgpatt.exec(contents)) {
                     // find any image which is a straight markdown image in the
                     // file then replace it with the proper srcset version
-                    var imgrep = "<img src=\"" + m[2] + "_" + default_size + "\" ";
+                    var imgrep = "<img src=\"" + m[2] + "_" + default_size + ".jpg\" ";
                     imgrep += "title=\"" + m[1] + "\" ";
                     imgrep += "srcset=\"";
                     image_sizes.forEach(function(size) {

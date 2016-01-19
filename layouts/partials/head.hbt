@@ -16,7 +16,7 @@
         {{#if post}}
             {{#if featureimage}}
                 <meta name="twitter:card" content="summary_large_image">
-                <meta name="twitter:image" content="http://ajfisher.me{{imageurl featureimage 750}}">
+                <meta name="twitter:image" content="http://ajfisher.me.s3-website-ap-southeast-2.amazonaws.com{{imageurl featureimage 750}}">
                 <meta name="twitter:creator" content="@ajfisher">
             {{else}}
                 <meta name="twitter:card" content="summary">

@@ -1,10 +1,10 @@
 <div class="header-container"
     {{#if post}}
-        style="{{#if featureimage}}background-image: url({{featureimage}}){{/if}}"
+        style="{{#if featureimage}}background-image: url({{imageurl featureimage 1500}}){{/if}}"
     {{/if}}
     {{#if list}}
         {{#with collections.posts.[0]}}
-            style="{{#if featureimage}}background-image: url({{featureimage}}){{/if}}"
+            style="{{#if featureimage}}background-image: url({{imageurl featureimage 1500}}){{/if}}"
         {{/with}}
     {{/if}}
     >
