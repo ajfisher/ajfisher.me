@@ -154,7 +154,7 @@ nav a:visited:hover {
     box-shadow: 0.5rem 0 0 $dark_grey, -0.5rem 0 0 $dark_grey;
     padding: 0.5rem 0;
     font-size: 2rem;
-
+    box-decoration-break: clone;
 }
 
 #sidebar p.tags a {
@@ -324,6 +324,7 @@ article h3{
     box-shadow: 3rem 0 0 $base, -3rem 0 0 $base;
     margin: 0;
     padding: 0px 0px 0.5rem;
+    box-decoration-break: clone;
 }
 
 
