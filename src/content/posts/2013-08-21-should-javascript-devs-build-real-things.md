@@ -10,11 +10,13 @@ excerpt: >
     JavaScript is leaving the browser and entering the real world. Is this
     just a bunch of web devs playing with hardware or are we starting to see a
     fundamental shift in the direction web technologies are taking?
-old: https://c1.staticflickr.com/1/364/18123764024_9226d0fe39_k.jpg
-featureimage: /img/posts/18123764024_9226d0fe39_k_1500.jpg
+twitter_excerpt: >
+    JS is leaving the browser and starting to be used to make real things. Is
+    this just play or real?
+featureimage: /img/posts/18123764024_9226d0fe39_k.jpg
 imageby: ninfaj
 imagelink: https://www.flickr.com/photos/ninfaj/18123764024
-listimage: /img/posts/18123764024_9226d0fe39_k
+listimage: /img/posts/18123764024_9226d0fe39_k.jpg
 collection: featured
 featured: true
 
@@ -63,7 +65,7 @@ JavaScript is a powerful language. It has a bad rap as being a toy because of it
 
 In my opinion the greatest strengths of JavaScript are its immediacy and its accessibility. It has plenty of weakness (insanely weak typing, implicit casting for comparison, terrible problems with numbers, fluid syntax, I could go on...). Regardless, these weaknesses are entirely overcome by those two points above.
 
-Having taught quite a few people to code, <b>the benefit of being able to open a text editor or a browser console and type code that can immediately and reliably be executed is incredible</b>. The power this brings to the learner is unmatched. When trying to learn new things it's important to get positive reinforcement very quickly and JavaScript has this ability in spades.
+Having taught quite a few people to code, <b>the benefit of being able to open a text editor or a browser console and type code that can be immediately and reliably executed is incredible</b>. The power this brings to the learner is unmatched. When trying to learn new things it's important to get positive reinforcement very quickly and JavaScript has this ability in spades.
 
 Executing console.log("hello world") or window.alert(2+5-20) brings immediate feedback, makes you feel as though you're getting somewhere and that you are interacting directly with the computer as a programmer. For those of you old enough to own a Spectrum, C64 or Vic20 - BASIC (itself heavily derided) had the same benefit.
 
@@ -81,11 +83,11 @@ Immediacy of feedback is a powerful learning step and one that simply cannot be 
 
 As for accessibility, JavaScript is accessible through the sheer amount of it out there. As a web language there's lots of it documented, web developers love to blog about it and there are libraries, snippets and howtos by the million.
 
-I fully accept there is a lot of bad javascript out there - Stack Overflow is absolutely full of the stuff. It's probably second only to bad PHP in terms of volume (I made that up – there's no data to support that statement). Having said that, I bet if we looked at your first couple of years of programming C, Pascal or whatever you learnt back in the day we'd find some coding practices that we shall say are, ahem, less than excellent?
+I fully accept there is a lot of bad javascript out there - Stack Overflow is absolutely full of the stuff. It's probably second only to bad PHP in terms of volume (I made that up - there's no data to support that statement). Having said that, I bet if we looked at your first couple of years of programming C, Pascal or whatever you learnt back in the day we'd find some coding practices that we shall say are, ahem, less than excellent?
 
 There's a lot of discussion about the bad parts of JavaScript blowing people's legs off because they don't understand them (eg everything being mutable so you can do things like redefine "function"). This is often said in a way that only makes me think of worried parents saying "no darling you can't go on the slide because you might fall off and break your arm". As both a parent of a child who's done exactly that by being stupid and as a programmer that has done equally stupid things in C (off by one errors on a memory pointer anyone?) this is both condescending as an argument and misses the point about the benefits of failure in the learning process.
 
-JavaScript's accessibility and immediacy create a good opportunity to teach programming. If we are concerned, as a Computer Science community (and by that I mean all programmers, academic and professional), that JavaScript developers don't code the "best" way then <b>it is incumbent on all of us to educate rather than slap or belittle</b>.
+JavaScript's accessibility and immediacy create a good opportunity to teach programming. If we are concerned, as a Computer Science community (and by that I mean all programmers, academic and professional), that JavaScript developers don't code the "best" way then <b>it is incumbent on all of us to educate rather than belittle</b>.
 
 What must be remembered is that students entering and graduating Computer Science degrees are at an all time low and have been declining for years. And yet the number of informally educated developers in the web community is astonishing, many of them doing excellent work every day.
 
@@ -96,8 +98,8 @@ Given this combination of accessibility and immediacy we find ourselves with an 
 At this point I will direct the reader to ["The innovator's dilemma" by Clayton Christiansen](http://www.amazon.com/The-Innovators-Dilemma-Revolutionary-Business/dp/0062060244). The gist of which is this:
 
 * A new tech comes along (JavaScript) and it's cheap (free) but it doesn't do everything a more mature tech (C++) can do.
-* The incumbents write it off for lack of comparability, usually saying "no one would use that – it doesn't do x, y, z".
-* Over time, users of the new technology get involved with its direction and the features they need to make it better get added – usually at a considerably reduced price and they get the benefit of learning from all the implementations that came before.
+* The incumbents write it off for lack of comparability, usually saying "no one would use that - it doesn't do x, y, z".
+* Over time, users of the new technology get involved with its direction and the features they need to make it better get added - usually at a considerably reduced price and they get the benefit of learning from all the implementations that came before.
 * Eventually the upstarts take large swathes of the market, seemingly overnight, and the incumbents are left with husks of their former positions - often unable to explain how they got to that point and were unable to see the threat.
 
 From cameras to cars to mobile phones to 3D printers this happens time after time so we shouldn't be surprised that JavaScript is doing this to established areas of technology (eg server side application development, embedded systems etc).
@@ -108,13 +110,13 @@ Now we understand why JavaScript is popular let us consider the use of it on har
 
 The last 12 months have seen a significant shift in the amount of projects being done attempting to use JavaScript with hardware. Initially this has focused on using JavaScript to control hardware.
 
-For example the [library that was developed to control the ARDrone](https://github.com/felixge/node-ar-drone) by wrapping its network protocol and exposing a JavaScript client. This created a slew of [NodeCopter](http://nodecopter.com/) events, where developers would build things with the drones using JavaScript. All sorts of applications have been created – everything from making drones respond to external APIs (dancing on a twitter @ message), to refined control UIs through to full image recognition and manipulation.
+For example the [library that was developed to control the ARDrone](https://github.com/felixge/node-ar-drone) by wrapping its network protocol and exposing a JavaScript client. This created a slew of [NodeCopter](http://nodecopter.com/) events, where developers would build things with the drones using JavaScript. All sorts of applications have been created - everything from making drones respond to external APIs (dancing on a twitter @ message), to refined control UIs through to full image recognition and manipulation.
 
 ![Image CC nez http://www.flickr.com/photos/nez/8575918404](/img/posts/8575918404_37e1b119bc_k.jpg)
 
 After that came the excellent [Serial library for node](https://github.com/voodootikigod/node-serialport) (removing my final objection to using JS with hardware). This meant that applications could control devices that are plugged in via USB. All of a sudden everything from controllable lights (eg [Blink1](http://www.kickstarter.com/projects/thingm/blink1-the-usb-rgb-led)) through to small scale robots started popping up.
 
-Coupled with [Firmata](http://firmata.org/) – a protocol for controlling embedded systems over serial – it then became possible to[ start manipulating hardware very directly from within JavaScript ](https://github.com/jgautier/firmata)over serial connections. Whilst focused on Arduino, any board that implements firmata is a viable target.
+Coupled with [Firmata](http://firmata.org/) - a protocol for controlling embedded systems over serial - it then became possible to[ start manipulating hardware very directly from within JavaScript ](https://github.com/jgautier/firmata)over serial connections. Whilst focused on Arduino, any board that implements firmata is a viable target.
 
 This eventually led to the[ Nodebots / Johnny-Five project](https://github.com/rwaldron/johnny-five) (disclosure: I'm a big fan, have committed code to the project and helped run a nodebots day) that provides JavaScript objects for common hardware (servos, motors, sensors etc) for Arduino.
 
@@ -122,7 +124,7 @@ This eventually led to the[ Nodebots / Johnny-Five project](https://github.com/r
 
 So within just over 12 months the community has gone from almost no hardware capability at all to being able to control things that fly, crawl and walk, make things light up and sense the environment. Yes much of this stands on the shoulders of other protocols, libraries and hardware but that's not the point (all software if built on the shoulders of lower foundations all the way down). The point is that when something is technically possible people will start doing things with it.
 
-I've been playing around with web controlled "things" for years. For most of that time, particularly in Melbourne, it has felt very much like I was the only person doing it. There have been others dabbling from time to time but they were mostly coming at it from the engineering side (eg make a thing simply shift data over the network etc). Internationally this was reflected as well – those working truly from a web perspective on hardware design for the last several years could be numbered in the small hundreds at absolute best.
+I've been playing around with web controlled "things" for years. For most of that time, particularly in Melbourne, it has felt very much like I was the only person doing it. There have been others dabbling from time to time but they were mostly coming at it from the engineering side (eg make a thing simply shift data over the network etc). Internationally this was reflected as well - <b>those working truly from a web perspective on hardware design for the last several years could be numbered in the small hundreds</b> at best.
 
 I used [Web Sockets to talk to hardware devices](https://github.com/ajfisher/django-arduino-socketio) very early on and was consistently dismissed (even ridiculed) because HTTP & WS are heavy protocols and there are technically better ways to do it (there are eg [MQTT](http://mqtt.org/)). Now this is nowhere near an extreme position for these types of comms. Why? Because immediacy gives you the ability to prototype rapidly. A web sockets server in JS can be implemented in 15 lines of code plus "npm install express socketio firmata"). Accessibility means that you can find a LOT of developers who can do exactly that code above and actually know how it's going to work even without hardware knowledge. Try and do the same thing with tech like MQTT or [Protocol Buffers](http://en.wikipedia.org/wiki/Protocol_Buffers) and your pool of talent drops spectacularly.
 
@@ -134,7 +136,7 @@ Once you couple the skills of a few hundred thousand web developers and designer
 
 ![Image CC ajfisher](/img/posts/js_matrix_led.jpg)
 
-Making hardware available to web developers is a desirable goal. Much of the web is given over to entertainment and solving first world problems. Being able to affect the real world provides an opportunity to fix actual problems and enable better quality of life for many. Web developers and designers intrinsically understand the "hard place" between systems and humans – making them uniquely placed to have a tangible impact in the real world.
+Making hardware available to web developers is a desirable goal. Much of the web is given over to entertainment and solving first world problems. Being able to affect the real world provides an opportunity to fix actual problems and enable better quality of life for many. Web developers and designers intrinsically understand the "hard place" between systems and humans - making them uniquely placed to have a tangible impact in the real world.
 
 ## Abstraction creates magic
 
@@ -144,7 +146,7 @@ In working with developers coming across to hardware from software the single bi
 
 Whilst electronics is a completely learnable skill, it is a barrier to entry that needs to be overcome before being able to design something non-trivial. Time after time I see posts from people saying, "I don't understand why it won't work" and 99% of the time it's due to a fundamental knowledge failure of how a circuit or a component works. Nearly every one of my own problems falls into this category as well.
 
-Electronics components often either work or not and are much less tolerant of failure than code – not least because you can destroy a component, not realise it and then spend days debugging before you understand you have killed it.
+Electronics components often either work or not and are much less tolerant of failure than code - not least because you can destroy a component, not realise it and then spend days debugging before you understand you have killed it.
 
 ![Image CC brickman http://www.flickr.com/photos/brickman_photos/5597955361/sizes/l/in/photostream/](/img/posts/5597955361_7174f21345_o.jpg)
 
@@ -162,7 +164,7 @@ Technical.io attempts to build a board that runs JavaScript "natively". This isn
 
 This is pretty much what firmata already does, though firmata doesn't provide an API to the underlying hardware it simply provides the mechanism to interact with it (analog reads and writes for sensors and PWM, digital on / off states for IO pins etc). Firmata has its problems (it's very geared towards Arduino, there's issues with the project, it's slow moving, it's bound to a serial baud rate for starters) however it has a good protocol and it's in very wide use. There's also bindings for JavaScript, C, perl, Python and others which makes it very portable.
 
-My bigger concern with this is that it would appear the libraries (and the plug in modules that provide additional functionality) ultimately wrap C libraries (which is pretty common in the node community anyway) however because this is a custom designed board with seemingly little access to  lower levels, the ability of non-core developers to add functionality will be significantly reduced. Thus we land ourselves in the "app" world where the capability of our design is firmly based on the ability of the hardware developers to expose APIs for it (this will sound familiar to anyone that has dealt with Android or iOS?).
+My bigger concern with this is that it would appear the libraries (and the plug in modules that provide additional functionality) ultimately wrap C libraries (which is pretty common in the node community anyway) however because this is a custom designed board with seemingly little access to  lower levels, the ability of non-core developers to add functionality will be significantly reduced. Thus <b>we land ourselves in the "app" world where the capability of our design is based on the ability of the hardware developers to expose APIs</b> for it (this will sound familiar to anyone that has dealt with Android or iOS?).
 
 I also have some concerns that there's some kludging going on with both the hardware and the software. This always happens to an extent, but when you're dealing with inexperienced hardware developers who will be using this there may be some problems. Consider the "Servo" library which you would use to control servo motors. Servos look simple but they are relatively complex devices. Unlike a standard motor which can just go forward or backwards, servos use pulsed signals (PWM) to tell the servo where to position the servo head. For example a signal of pulses that go high for 1.5ms usually means align the head to the centre - longer and shorter pulses moves the head in ranges away from that centre point clockwise or anticlockwise.
 
@@ -200,6 +202,6 @@ This may be perfectly acceptable for M2M type applications (at a stretch from my
 
 If you're a web developer and you're looking at playing with hardware, don't shy away from the electronics. There are no magic bits of hardware that will give you full control of the physical world in a box - though there are plenty of attempts at this. Develop your knowledge the same way you do with the web - by reading, tinkering, playing with code and breaking stuff. Go join a hackerspace, get some learning materials, visit electronics shops, pull things apart and learn how they work.
 
-And seriously, if you do design a PizzaCopter for actual use, please don't build it in JavaScript.
+And seriously, if you design a PizzaCopter for actual use, please don't build it in JavaScript.
 
 _Update: There were some concerns expressed that my original fictional intro was a bit FUDdy. On re-reading I tend to agree with that sentiment - it was an artefact of my original version of this post due to me explaining my concerns to another JS dev using a similar story. I've kept the core element but removed the death and destruction._

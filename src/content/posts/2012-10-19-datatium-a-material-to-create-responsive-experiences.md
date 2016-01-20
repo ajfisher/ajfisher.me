@@ -1,22 +1,20 @@
 ---
 author: ajfisher
-comments: true
 date: 2012-10-19 04:09:00+00:00
 layout: post.hbt
 slug: datatium-a-material-to-create-responsive-experiences
 title: Datatium - a material to create responsive experiences
-tags:
-- media
-- behaviour
-- data
-- mobile
-- responsive design
-- responsive experiences
-- user experience
-- UX
-- web
+tags: media, behaviour, data, mobile, responsive design, responsive experiences, user experience, UX, web
 collection: featured
-listimage: http://ajfisher.me/wp-content/uploads/2012/10/Scan_Andrew-e1350619210168.jpg
+featureimage: /img/posts/datatium_bling_material.jpg
+listimage: /img/posts/behaviour_differentials.jpg
+excerpt: >
+    Device responsive design is only one part of context. These are the sketch notes
+    that underpinned a talk at WDS2012 on the wider aspects of using data
+    in responsive design approaches.
+twitter_excerpt: >
+    To realise the full potential of responsive design, data needs to be
+    considered as a design material to inform context.
 
 ---
 
@@ -24,8 +22,7 @@ I had an opportunity to speak at Web Directions South again this year though was
 
 I've included the slide deck here as well as the document which lead to this presentation. This is actually just a small piece of a wider body of work I've been amassing on this topic for the last year and my first attempt to codify the mechanisms of responsive experience. I will be looking to extend this over the next several months with some additional ideas I have on this and probably build a site to support it.
 
-[slideshare id=14778415&doc=datatium-radiationfreeresponsiveexperiencesrelease-121018004126-phpapp02]
-
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/B1grIeiHuBesRn" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/andrewjfisher/datatium-radiation-free-responsive-experiences" title="Datatium - radiation free responsive experiences" target="_blank">Datatium - radiation free responsive experiences</a> </strong> from <strong><a href="//www.slideshare.net/andrewjfisher" target="_blank">Andrew Fisher</a></strong> </div>
 
 ## Datatium - radiation free responsive experiences.
 
@@ -110,7 +107,7 @@ You don't have to be perfect in every instance. If you can get 99% with about 10
 
 Don't underestimate the value of tiny removals of friction, especially in things like checkout processes. The way I think about this is like a slide right. Remember when you were a kid and they made a slide out of some sort of metal that you just didn't seem to slide on so you had to wiggle your way down. Pretty soon you got bored and went and set fire to things or did something more interesting.
 
-[![](http://ajfisher.me/wp-content/uploads/2012/10/tss1-e1350617817348.jpg)](http://ajfisher.me/wp-content/uploads/2012/10/tss1.jpg)
+![The Sandwich Shop, Surry Hills. cc ajfisher](/img/posts/tss.jpg)
 
 One of my favourite examples of this frictionless interaction is actually from a sandwich shop over in Surry Hills. When you place your order you have to give your name. If you pay with a card though they use your name off the card and just confirm it with you “You're Andrew right?”. Beautiful! We can do this so much more often than we do.
 
@@ -369,7 +366,7 @@ Here's a chord, here's another, here's a third - go start a band.
 
 Well data science is like punk. It's all about exploring the possibilities of what data can do for user experience and break pre-existing rules. So here's my equivalents:
 
-[![](http://ajfisher.me/wp-content/uploads/2012/10/Scan_Andrew-e1350619210168.jpg)](http://ajfisher.me/wp-content/uploads/2012/10/Scan_Andrew.jpg)
+![Behavioural differentials cc ajfisher](/img/posts/behaviour_differentials.jpg)
 
   * Here's a question - What's the behaviour look like over a period?
   * Here's another - How does this change from one period to the next?

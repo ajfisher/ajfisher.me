@@ -13,6 +13,10 @@ tags:
 - web
 listimage: http://ajfisher.me/wp-content/uploads/2012/11/server-to-busy-e1353413024417.png
 listimage-position: 0% 50%
+excerpt: >
+    The coming of age of online retail in Australia crashed and burned in
+    Australia tonight due to lack of preparation and hubris. It could have
+    been so different.
 
 ---
 
@@ -36,7 +40,7 @@ Unfortunately, due to the huge amounts of PR in the lead up to Click Frenzy, man
 
 Australia was late to the ecommerce party. With an industrial boom that kept customers purchasing in store at inflated rates and high shipping costs holding off international competition they had it easy until the GFC and the resources slump. Since then they have woefully mis-invested in their ecommerce platforms. They bought into the sales hype of platforms like Magento and WebSphere Commerce from consultants that have been all too eager to get reseller fees and provide little value or experience alongside it.
 
-Most Australian retailers have shown little more than disdain for the channel. Staffing has been a nightmare - with juniors recruited because they are young, use Facebook  and "get" the Internet. Never mind that they had no experience and as a result, no ability to judge whether what their agencies or vendors were telling them was correct or a good idea.
+Most Australian retailers have shown little more than disdain for the channel. Staffing has been a nightmare - with juniors recruited because they are young, use Facebook  and "get" the Internet. <b>Never mind that they had no experience</b> and as a result, no ability to judge whether what their agencies or vendors were telling them was correct or a good idea.
 
 And then there was click frenzy - an organisation that hyped its ability to drive sales for lagging retailers yet was totally unproven. An organisation who outwardly presented such a level of arrogance in the face of what they were attempting that it can only be called hubris.
 
@@ -48,7 +52,7 @@ Every aspect of this endeavour could have been anticipated. A simple bit of math
 
 Doing this maths is what keeps me awake at night leading up to big launches or events. Thankfully I've always had a stellar team around me - people like [Steve McDonald](http://github.com/stephenmcd) (Tech Lead on Melbourne Cup - now at Fairfax) and [Matt Black](http://github.com/mafrosis) (Product Lead on JBA real time behavioural processor). People I count on to think through all the problems and come up with solutions well before they are needed. People who have been there before and who are humble enough to not believe they know everything and will learn from other people's mistakes in order to prevent us making them as well.
 
-These are solved problems. There was absolutely no reason why any of these sites needed to go down tonight. Indeed looking around others managed to stay alive - [Target](http://www.target.com.au), [Deals Direct](http://www.dealsdirect.com.au), [Kogan](http://www.kogan.com.au) were all fine.
+These are solved problems. <b>There was absolutely no reason why any of these sites needed to go down tonight.</b> Indeed looking around others managed to stay alive - [Target](http://www.target.com.au), [Deals Direct](http://www.dealsdirect.com.au), [Kogan](http://www.kogan.com.au) were all fine.
 
 There was no need for Click Frenzy to be running magento and the type of architecture it was running from watching it fail for a couple of hours suggested it was never going to deal with the traffic it was going to get (Magento is notorious for database overload which takes a lot to architect around). Likewise Myer, Harvey Norman and David Jones should all have good enough systems to be able to deal with these sorts of traffic spikes - what are they doing for Christmas and Boxing Day if they don't?
 
@@ -60,8 +64,8 @@ My hope in all of this is that next week, after the dust settles, after the fing
 
 My fear is that it will be business as usual in Australian Retail - where this is used as yet another reason why ecommerce is not viable and investment and learning will evaporate.
 
-**#Update: 21/11/2012 13:50 AEDT**
+_Update: 2012-11-12 13:50 AEDT_
 
 I mentioned in my post above that Kogan survived alongside other retailers such as Target etc. According to some people who have chatted to me, apparently Kogan did experience a small period out down time however I didn't see that as I was going back to the site every hour or so last night.
 
-Also I just want to point out for the record, as part of this post has been used in articles on The Age and SMH, that this was not written in my capacity as CTO of JBA. JBA work with a lot of retailers around crafting better customer experiences, who fully recognise the challenges of doing ecommerce at scale, and who are working hard to try and build or refactor platforms to to deliver the type of experience that should have happened last night.
+Also I just want to point out for the record, as part of this post has been used in articles on The Age and SMH, that this was not written in my capacity as CTO of JBA. JBA work with a lot of retailers around crafting better customer experiences, who fully recognise the challenges of doing ecommerce at scale, and who are working hard to try and build or refactor platforms to deliver the type of experience that should have happened last night.
