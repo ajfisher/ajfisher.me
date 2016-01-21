@@ -9,7 +9,19 @@
                         {{/each}}"/>
 			</a>
 		</div>
-	{{/if}}
+    {{else}}
+        {{#if featureimage}}
+            <div>
+                <a href="/{{this.path}}">
+                    <img src="{{imageurl featureimage 300}}"
+                    {{#if listimage-position}}style="object-position: {{listimage-position}}"{{/if}}
+                    srcset="{{#each meta.imagesizes}}
+                                {{imageurl ../featureimage this}} {{this}}w,
+                            {{/each}}"/>
+                </a>
+            </div>
+        {{/if}}
+    {{/if}}
     <p class="date">{{ moment date 'dddd, MMMM Do YYYY' }}</p>
 	<h2><a href="/{{this.path}}">{{this.title}}</a></h2>
     {{#if excerpt}}
