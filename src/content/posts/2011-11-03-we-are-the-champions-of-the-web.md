@@ -1,23 +1,19 @@
 ---
 author: ajfisher
-comments: true
 date: 2011-11-03 13:01:03+00:00
 layout: post.hbt
 slug: we-are-the-champions-of-the-web
 title: We are the champions... of the web
-wordpress_id: 443
-categories:
-- web
-tags:
-- internet
-- media
-- mobile
-- standards
-- W3C
-- web
----
+tags: web, internet, media, mobile, standards, W3C, web
+listimage: /img/posts/champion_fist.jpg
+imageby: EJP Photo
+imagelink: https://www.flickr.com/photos/ejpphoto/6114079466
+excerpt: >
+    The "problem" with the web is it's lack of control, but it doesn't need
+    control, it only needs an unruly mass of champions to defend it and let
+    the process unfold to win.
 
-[![](http://ajfisher.me/wp-content/uploads/2011/11/6114079466_bc481f5b2e_b.-ejpphoto-e1320325163777.jpg)](http://ajfisher.me/wp-content/uploads/2011/11/6114079466_bc481f5b2e_b.-ejpphoto.jpg)
+---
 
 Recently, at [Web Directions](south11.webdirections.org) this year [John Allsopp](http://twitter.com/johnallsopp) revisted a classic piece of web writing, "[A Dao of web design](http://www.alistapart.com/articles/dao/)", 11 years since writing it. The presentation stood out as a passionate defence of the things that made the web great including it's universality and openess.
 
@@ -25,11 +21,13 @@ One point he made was a rebuttal to a comment that the "problem" with the web wa
 
 _Full disclosure: I'm a web guy. I come down on this argument the same way as John. The web has been 95% of my career thus far, has allowed me to travel the world, speak, write and have a stack of "firsts" that I am very proud of working on. _
 
-Having seen the news that Internet Explorer has[ dropped below 50% browser share ](http://arstechnica.com/microsoft/news/2011/11/the-end-of-an-era-internet-explorer-drops-below-50-percent-of-web-usage.ars)for the first time in over a decade I am insanely happy because it proves the point. The web doesn't need curators or controllers, it needs champions. Internet explorer - and specifically IE6 has been the dominant controller of the web for nearly a decade.
+Having seen the news that Internet Explorer has [dropped below 50% browser share](http://arstechnica.com/microsoft/news/2011/11/the-end-of-an-era-internet-explorer-drops-below-50-percent-of-web-usage.ars)for the first time in over a decade I am insanely happy because it proves the point. The web doesn't need curators or controllers, it needs champions. Internet explorer - and specifically IE6 has been the dominant controller of the web for nearly a decade.
 
 We've had control - and we reaped it's benefits - stable (though quirky) APIs and Web Standards implementations. For all it's ills IE6 gave us okay CSS, good Javascript and a DOM that was largely workable and we really had only one platform to consider for a long time.
 
 But we don't need control, we need champions. Mozilla and Web Kit and Opera were our champions; but so to was the entire web community. By galvanising around web standards we made the case that control wasn't sufficient for innovation or even good implementation.
+
+![Pow! cc EJP Photo http://www.flickr.com/photos/ejpphoto/6114079466/](/img/posts/champion_fist.jpg)
 
 As the desktop browser champions matured those of us in the community endorsed the browsers as being "mainstream friendly enough" so we installed firefox or chrome on every machine we could possibly "infect" with a decent, modern, secure browser. That's assuming we didn't just tell the person in question to go buy a Mac (so we could minimise the family and friends tech support calls). So momentum built...
 
