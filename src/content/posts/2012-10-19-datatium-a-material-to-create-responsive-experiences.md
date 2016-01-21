@@ -2,11 +2,13 @@
 author: ajfisher
 date: 2012-10-19 04:09:00+00:00
 layout: post.hbt
-slug: datatium-a-material-to-create-responsive-experiences
 title: Datatium - a material to create responsive experiences
+slug: datatium-a-material-to-create-responsive-experiences
 tags: media, behaviour, data, mobile, responsive design, responsive experiences, user experience, UX, web
 collection: featured
 featureimage: /img/posts/datatium_bling_material.jpg
+imageby: neekoh.fi
+imagelink: https://www.flickr.com/photos/neekohfi/5608007004
 listimage: /img/posts/behaviour_differentials.jpg
 excerpt: >
     Device responsive design is only one part of context. These are the sketch notes
@@ -24,8 +26,7 @@ I've included the slide deck here as well as the document which lead to this pre
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/B1grIeiHuBesRn" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/andrewjfisher/datatium-radiation-free-responsive-experiences" title="Datatium - radiation free responsive experiences" target="_blank">Datatium - radiation free responsive experiences</a> </strong> from <strong><a href="//www.slideshare.net/andrewjfisher" target="_blank">Andrew Fisher</a></strong> </div>
 
-## Datatium - radiation free responsive experiences.
-
+## Transcript
 
 Today I'm going to talk about how we use Datatium to make responsive user experiences for the next 45 minutes.
 
@@ -191,7 +192,7 @@ For example if I have a pay as you go mobile phone and I recharge it online, cha
 
 Why not make this a link that surfaces when I start exhibiting this behaviour. Sure it makes it a little harder to design for but if we just make the slot available for responsive experience customisation and define constraints around it then it makes it much more useful for the user.
 
-[![](http://ajfisher.me/wp-content/uploads/2012/10/Screen-Shot-2012-10-14-at-2.10.45-PM-e1350617934210.png)](http://ajfisher.me/wp-content/uploads/2012/10/Screen-Shot-2012-10-14-at-2.10.45-PM.png)
+![Amazon](/img/posts/amazon_shop.jpg)
 
 Taking Amazon back as an example the thing I do more than anything on the Amazon site is check my Gift Card balance because I read so many ebooks on my kindle. Creating a responsive experience for me would be taking that piece of data and then exposing it on the site AND exposing it through the API that is available to the kindle. That's the sort of stuff that starts empowering users and making them feel as though the application is reacting to their behaviour.
 

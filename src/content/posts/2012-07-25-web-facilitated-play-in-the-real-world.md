@@ -1,41 +1,27 @@
 ---
 author: ajfisher
-comments: true
 date: 2012-07-25 06:08:02+00:00
 layout: post.hbt
 slug: web-facilitated-play-in-the-real-world
 title: Web Facilitated Play in the Real World
-wordpress_id: 526
-categories:
-- development
-- django
-- Featured
-- gaming
-- internet
-- IoT
-- media
-- mobile
-- open source
-- presentation
-- web
-tags:
-- arduino
-- hardware
-- internet
-- iot
-- media
-- mobile
-- web
----
+tags: development, gaming, open source, presentation, arduino, hardware, internet, iot, media, mobile, web
+featureimage: /img/posts/swing.jpg
+imageby: fuschia.berry
+imagelink: https://www.flickr.com/photos/fuchsia_berry/8500896205
+excerpt: >
+    How can physical interaction with digital media augment the experience of
+    both and what part does the web have to play in this space?
 
-[![](http://ajfisher.me/wp-content/uploads/2012/07/2042946052_a22ba72884_o-kkseema-e1343196643814.jpg)](http://ajfisher.me/wp-content/uploads/2012/07/2042946052_a22ba72884_o-kkseema.jpg)
+twitter_excerpt: >
+    Explorations in the use of web technologies to facilitate play in physical spaces
+
+---
 
 I got the invitation to attend and present at the [Sketching in Hardware conference](http://sketching-in-hardware.com) this year on some of the work I had been doing around integrating real time web communication with physical devices. This aligned well with the overall theme of "Clouds and Atoms".
 
 My presentation was called "Web facilitated play in the real world" and expressed a summation of the work I have been doing over the last 18 months to bring together mobile and network aware physical devices utilising the real time web. My slides are below and the transcript of my talk is underneath.
 
-[slideshare id=13709388&doc=webfacilitatedplayintherealworld0-4-120720155757-phpapp01]
-
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/GqOckL703dY6Y0" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/andrewjfisher/web-facilitated-play-in-the-real-world" title="Web Facilitated Play in the Real World" target="_blank">Web Facilitated Play in the Real World</a> </strong> from <strong><a href="//www.slideshare.net/andrewjfisher" target="_blank">Andrew Fisher</a></strong> </div>
 
 ## Transcript
 
@@ -50,7 +36,7 @@ The technologist in me loves the fact we have the technical capability for someo
 
 I think our shared spaces are causing some of this as well. How often do you stand on a train station platform and see advertising 2 months or in some cases 2 years out of date. Not that anyone's noticed because they are all looking at little black rectangles of glass.
 
-Our civic environment hasn't kept pace with technology and is becoming ever more boring just as our phones become ever more compelling – is it any wonder we tune out?
+Our civic environment hasn't kept pace with technology and is becoming ever more boring just as our phones become ever more compelling - is it any wonder we tune out?
 
 We have hit an interesting time though.
 
