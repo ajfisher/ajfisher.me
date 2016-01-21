@@ -42,12 +42,18 @@ Handlebars.registerHelper('imageurl', function(img_url, size) {
     // the appropriate sized version
 
     if (img_url !== undefined) {
-        var index = img_url.indexOf(".jpg");
-        return (img_url.substring(0, index) + "_" + size + ".jpg");
+        var ext = [".jpg", ".png"];
+        var url = "";
+        ext.forEach(function (extension) {
+            var index = img_url.indexOf(extension);
+            if (index >= 0) {
+                url = img_url.substring(0, index) + "_" + size + extension;
+            }
+        });
+        return (url);
     } else {
         return ("");
     }
-
 });
 
 Handlebars.registerHelper('moment', function(date, format) {
@@ -55,7 +61,7 @@ Handlebars.registerHelper('moment', function(date, format) {
     return Moment(date).format(format);
 });
 
-Handlebars.registerHelper('shown', function (from, to, context, options){
+Handlebars.registerHelper('shown', function (from, to, context, options) {
     // shows items from X to Y in an array
     var item = "";
     for (var i = from, j = to; i <= j; i++) {
@@ -63,8 +69,6 @@ Handlebars.registerHelper('shown', function (from, to, context, options){
     }
     return item;
 });
-
-
 
 // helpers for metalsmith
 var excerpt = function(options) {
