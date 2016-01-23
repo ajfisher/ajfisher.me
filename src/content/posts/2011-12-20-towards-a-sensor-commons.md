@@ -23,7 +23,7 @@ listimage: /img/posts/resistors.jpg
 
 The [Internet of Things,](http://en.wikipedia.org/wiki/Internet_of_Things) a term being bandied to the point of almost meaninglessness now it's hit the mainstream of the [NYT](http://www.nytimes.com/2011/12/18/sunday-review/the-internet-gets-physical.html?_r=1&pagewanted=all) and the [BBC.](http://www.bbc.co.uk/news/business-13632206) Yet, while the mainstay of the media struggles to describe how and why smart sensor arrays are going to mean you spend less time in traffic, ultimately pay more for your electricity but make sure your fruit is always fresh, there is a quiet revolution taking place.
 
-![Resistors cc Windell Oskay https://www.flickr.com/photos/oskay/437342078](/img/posts/resistors.jpg)
+![Resistors cc Windell Oskay http://www.flickr.com/photos/oskay/437342078](/img/posts/resistors.jpg)
 
 The action taking place is the creation of what I call the Sensor Commons. Why is this a revolution? Because as a population we are deciding that governments and civic planners no longer have the ability to provide meaningful information at a local level.
 
@@ -37,7 +37,7 @@ We don't know what we're going to get when we arrive at a point where there is h
 
 I gave a talk at [Web Directions](http://www.webdirections.org) in October this year on the [Web of Things](http://www.slideshare.net/andrewjfisher/how-the-web-is-going-physical). The last third touched on the notion of community created and led data - citing the nascent [Don't Flush Me project in New York](http://dontflush.me/) and the spontaneous self-organisation of radiation data in the wake of the Fukushima Disaster.
 
-![image cc Julian Stallabrass https://www.flickr.com/photos/slowkodachrome/11817407183/](/img/posts/radiation.jpg)
+![image cc Julian Stallabrass http://www.flickr.com/photos/slowkodachrome/11817407183/](/img/posts/radiation.jpg)
 
 Through observation of many of these projects, as they mature one of the issues I have is that many of these endeavours require deeply technical knowledge in order to be effective. For the true Sensor Commons, as I see it, we need to have deep engagement with the population as a whole, regardless of technical ability or knowledge.
 
@@ -143,7 +143,7 @@ The other part of openness however is about the wider project context. This type
 
 Government data sets and sensor networks are steadfastly closed but there is a lot of weight paid to them because they have an implied lack of error and high precision. Ostensibly this is because they are supposed to be "well engineered", rigorously tested and highly calibrated devices - why else would one sensor cost $50,000?
 
-With radiation data on pachube as an example, there was much made in April about how reliable it was given that it wasn't calibrated, the sensors were probably sitting on peoples' windows and that they were only consumer grade. Precision was never the intent for those deploying the sensors however so the argument was moot - ultimately the point was to assess trend. If my sensor has an accuracy level of ∓ 20%  then it's always going to be out - probably by a similar amount. However if it goes up consistently over time, even though it's out by 20% the trend is still going up - and I wouldn't have known about that unless I was using a more deployable sensor because the government one is probably 200km away.
+With radiation data on pachube as an example, there was much made in April about how reliable it was given that it wasn't calibrated, the sensors were probably sitting on peoples' windows and that they were only consumer grade. <b>Precision was never the intent for those deploying the sensors however so the argument was moot</b> - ultimately the point was to assess trends. If my sensor has an accuracy level of ∓ 20%  then it's always going to be out - probably by a similar amount. However if it goes up consistently over time, even though it's out by 20% the trend is still going up - and I wouldn't have known about that unless I was using a more deployable sensor because the government one is probably 200km away.
 
 Having a culture of openness and transparency makes up for the error and lack of precision in the data. By "showing your workings" it opens up your data and method for critique and from there allows room for improvement. It also provides a method by which you can agree or disagree with the assumptions if you want to use the data and make an informed decision underpinning the data set.
 
