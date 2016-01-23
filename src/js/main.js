@@ -34,7 +34,7 @@ var pullquote_list = Array.from(document.querySelectorAll("article p b"));
 pullquote_list.forEach(function(pq) {
     pq.parentNode.classList.add("has-pullquote");
     // make sure it's upper case on first char so it reads right.
-    var quote = pq.innerHTML;
+    var quote = pq.textContent;
     console.log(quote);
     quote = "" + quote[0].toUpperCase() + quote.substring(1)
 
