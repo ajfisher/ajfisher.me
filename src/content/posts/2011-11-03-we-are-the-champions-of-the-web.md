@@ -21,15 +21,15 @@ One point he made was a rebuttal to a comment that the "problem" with the web wa
 
 _Full disclosure: I'm a web guy. I come down on this argument the same way as John. The web has been 95% of my career thus far, has allowed me to travel the world, speak, write and have a stack of "firsts" that I am very proud of working on. _
 
-Having seen the news that Internet Explorer has [dropped below 50% browser share](http://arstechnica.com/microsoft/news/2011/11/the-end-of-an-era-internet-explorer-drops-below-50-percent-of-web-usage.ars)for the first time in over a decade I am insanely happy because it proves the point. The web doesn't need curators or controllers, it needs champions. Internet explorer - and specifically IE6 has been the dominant controller of the web for nearly a decade.
+Having seen the news that Internet Explorer has [dropped below 50% browser share](http://arstechnica.com/microsoft/news/2011/11/the-end-of-an-era-internet-explorer-drops-below-50-percent-of-web-usage.ars) for the first time in over a decade I am insanely happy because it proves the point. The web doesn't need curators or controllers, it needs champions. Internet explorer - and specifically IE6 has been the dominant controller of the web for nearly a decade.
 
 We've had control - and we reaped it's benefits - stable (though quirky) APIs and Web Standards implementations. For all it's ills IE6 gave us okay CSS, good Javascript and a DOM that was largely workable and we really had only one platform to consider for a long time.
 
-But we don't need control, we need champions. Mozilla and Web Kit and Opera were our champions; but so to was the entire web community. By galvanising around web standards we made the case that control wasn't sufficient for innovation or even good implementation.
+But we don't need control, we need champions. Mozilla and Web Kit and Opera were our champions; but so too was the entire web community. By galvanising around web standards we made the case that control wasn't sufficient for innovation or even good implementation.
 
 ![Pow! cc EJP Photo http://www.flickr.com/photos/ejpphoto/6114079466/](/img/posts/champion_fist.jpg)
 
-As the desktop browser champions matured those of us in the community endorsed the browsers as being "mainstream friendly enough" so we installed firefox or chrome on every machine we could possibly "infect" with a decent, modern, secure browser. That's assuming we didn't just tell the person in question to go buy a Mac (so we could minimise the family and friends tech support calls). So momentum built...
+As the desktop browser champions matured, those of us in the community endorsed the browsers as being "mainstream friendly enough" so we installed firefox or chrome on every machine we could possibly "infect" with a decent, modern, secure browser. That's assuming we didn't just tell the person in question to go buy a Mac (so we could minimise the family and friends tech support calls). So momentum built...
 
 When Nokia originally chose Opera and Mozilla as the core of their mobile web browser and Apple and Android chose webkit they endorsed the open mobile web - with all the consistency issues and difficulty that meant - yet the web browser is still the most used "app" on a mobile phone (outside of the phone and sms functions) and is the fuel of most of the web's current growth. So momentum built...
 
@@ -39,6 +39,6 @@ Now Microsoft - who famously "embraced and extended" the web and produced IE5 & 
 
 And so the champions have prevailed - in an unruly, largely disorganised, bickering, chattering, tweeting mass - but still they have prevailed. In the same way that science, when exposed to the transparency of the scientific method consistently brings new discoveries and innovation.
 
-The position we have attained over the last 18 months and have hit now with this milestone is really a restarting of the process begun in the 90s. We are seeing large scale innovation across the web that languished for such a long period of time. This is why developers and designers are excited about their craft again after years of just about going nowhere.
+The position we have attained over the last 18 months and have hit now with this milestone is really a restarting of the process begun in the 90s. <b>Again we see rampant innovation throughout the web</b> - which has been languishing for a long period of time. This is why developers and designers are excited about their craft again after years of just about going nowhere.
 
-But the new front is the Mobile App - with its fallacy of control that should hopefully be merely a speedbump in our history, like the ubiquitous onmouseover="rollover()" of 2000. The web doesn't need curators nor control; all it needs are champions who are prepared to make a statement, choose a path, have their views supported or revised and continue to evolve this amazing platform.
+But the new front in this war is the Mobile App - with its fallacy of control - and it should hopefully be merely a speedbump in our history, like the ubiquitous onmouseover="rollover()" of 2000. The web doesn't need curators nor control; all it needs are champions who are prepared to make a statement, choose a path, have their views supported or revised and continue to evolve this amazing platform.
