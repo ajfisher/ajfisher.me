@@ -27,7 +27,7 @@
     {{#if excerpt}}
         <p>{{excerpt}}</p>
     {{else}}
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus, nunc in tincidunt eleifend, nulla risus dignissim erat, et vehicula neque neque nec felis. Donec sodales feugiat volutpat. Integer ac ornare augue.</p>
+        <p>{{autoexcerpt}}
     {{/if}}
     <p>
         <span class="readingtime">{{this.readingtime}} minute read</span>

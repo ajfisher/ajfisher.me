@@ -83,7 +83,7 @@ var excerpt = function(options) {
                     var patt = /^\w.+?\n/m;
                     var m = patt.exec(contents);
                     if (m) {
-                        files[file].excerpt = removemd(m[0]);
+                        files[file].autoexcerpt = removemd(m[0]);
                     }
                 }
             }
