@@ -12,7 +12,7 @@ tags:
 - slates
 - tablet
 - web book
-listimate: /img/posts/webbook.jpg
+listimage: /img/posts/webbook.jpg
 ---
 
 2010 is set to be a bumper year for Consumer Electronics. With people spending less outside the home they are focusing more inside and as just about everyone now has some monstrous TV it's the little things that count.
