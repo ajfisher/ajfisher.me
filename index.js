@@ -120,16 +120,16 @@ var srcset = function(options) {
             if (file.endsWith(filetypes)) {
                 // we have a markdown file
                 var contents = files[file].contents.toString();
-                var imgpatt = /\!\[(.+?)\]\((.*)\.jpg\)/mg;
+                var imgpatt = /\!\[(.+?)\]\((.*)\.(jpg|png)\)/mg;
                 var urlpatt = /(.+?)\W(http\:\/\/(.*))/m
                 while (m = imgpatt.exec(contents)) {
                     // find any image which is a straight markdown image in the
                     // file then replace it with the proper srcset version
-                    var imgrep = "<img src=\"" + m[2] + "_" + default_size + ".jpg\" ";
+                    var imgrep = "<img src=\"" + m[2] + "_" + default_size + "." + m[3] + "\" ";
                     imgrep += "title=\"" + m[1] + "\" ";
                     imgrep += "srcset=\"";
                     image_sizes.forEach(function(size) {
-                        imgrep += m[2] + "_" + size + ".jpg " + size + "w, ";
+                        imgrep += m[2] + "_" + size + "." + m[3] + " " + size + "w, ";
                     });
                     // ensure the appropriate sizes rule is updates
                     imgrep += "\" sizes=\"" + sizes_rule + "\"";
