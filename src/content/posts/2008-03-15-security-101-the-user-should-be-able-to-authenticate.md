@@ -1,17 +1,16 @@
 ---
 author: ajfisher
-comments: true
 date: 2008-03-15 17:21:00+00:00
 layout: post.hbt
 slug: security-101-the-user-should-be-able-to-authenticate
 title: 'Security 101 : The user should be able to authenticate'
-wordpress_id: 34
-categories:
-- rant
 tags:
 - banking
 - data
 - security
+- rant
+excerpt: >
+    Security needs to be appropriate for the value of the asset it protects.
 ---
 
 Are you listening Barclays?

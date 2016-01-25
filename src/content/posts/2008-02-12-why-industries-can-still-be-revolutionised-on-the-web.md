@@ -1,18 +1,13 @@
 ---
 author: ajfisher
-comments: true
 date: 2008-02-12 04:56:00+00:00
 layout: post.hbt
 slug: why-industries-can-still-be-revolutionised-on-the-web
 title: Why industries can still be revolutionised on the web
-wordpress_id: 32
-categories:
-- general
-- media
-- rant
 tags:
 - general
 - media
+- rant
 - W3C
 - web
 ---
@@ -25,7 +20,7 @@ By rights I should have a nice warm fuzzy feeling about having a site people tal
 
 Apologists will hold up their hands and say "we're a young form of media - it's going to take time". I however am not in this camp - how much time do we need?
 
-Personally I find it untenable that there are still sites being built using non-standards based HTML and CSS, that sites beyond a couple of holding pages are built using things like Dreamweaver and not content managed, that good structural web design is something that still amazes people rather than being the norm and that information architecture still hasn't found its way to the hearts of 95% of the digital agencies that service the web.
+Personally I find it untenable that there are still sites being built using non-standards based HTML and CSS, that sites beyond a couple of holding pages are built using things like Dreamweaver and not content managed, that <b>good structural web design is something that still amazes people rather than being the norm</b> and that information architecture still hasn't found its way to the hearts of 95% of the digital agencies that service the web.
 
 I am constantly lamenting the state of most industries' websites generally. Take a tour around the leisure industry and find a website for a hotel anywhere in the world. Look at most ecommerce sites for even big retailers and certainly go anywhere online in the government, volunteering or political sectors and you are sure to be assaulted by bad design, bad technology and most importantly bad information architecture.
 
