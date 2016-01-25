@@ -16,6 +16,18 @@ var tags        = require('metalsmith-tags');
 var watch       = require('metalsmith-watch');
 var wordcount   = require('metalsmith-word-count');
 
+// determine if we're building for production or not
+var prod = false;
+if (process.argv[2] == "production") {
+    prod = true;
+    serve = function(options) {
+        // makes it a noop in the pipeline
+        return (function(files, metalsmith, done) {
+            done();
+        });
+    };
+    watch = serve; // turns watch off as well
+}
 
 // make the options for image sizes to work from
 var image_sizes = [300, 400, 500, 650, 750, 1000, 1500];
@@ -185,6 +197,7 @@ Metalsmith(__dirname)
             url: "http://ajfisher.me",
         },
         imagesizes: image_sizes,
+        production: prod,
     })
     .clean(false)
     .use(watch({

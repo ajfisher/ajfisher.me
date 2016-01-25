@@ -24,7 +24,7 @@ image_sizes.forEach(function(size) {
 });
 
 Metalsmith(__dirname)
-    .clean(false)
+    .clean(true)
     .use(convert(convert_opts))
     .source("./src")
     .destination("./build")
@@ -32,6 +32,6 @@ Metalsmith(__dirname)
         if (err) {
             console.log(err);
         } else {
-            console.log("Site built correctly");
+            console.log("Images created correctly");
         }
     });
