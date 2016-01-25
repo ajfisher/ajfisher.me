@@ -355,7 +355,7 @@ p.has-pullquote::before {
 
 // get the images sorted
 article figure {
-    margin: 0 -3rem;
+    margin: 0 -2rem;
     position: relative;
 }
 
@@ -544,6 +544,10 @@ footer section p {
     }
     header p.lede {
         font-size: 2.3rem;
+    }
+
+    article figure {
+        margin: 0 -3rem;
     }
 
     .list * li div,
