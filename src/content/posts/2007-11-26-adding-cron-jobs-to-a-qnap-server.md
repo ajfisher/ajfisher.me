@@ -1,16 +1,12 @@
 ---
 author: ajfisher
-comments: true
 date: 2007-11-26 13:53:00+00:00
 layout: post.hbt
 slug: adding-cron-jobs-to-a-qnap-server
 title: Adding Cron Jobs to a QNAP server
-wordpress_id: 24
-categories:
-- development
-- linux
 tags:
 - cron
+- development
 - linux
 - qnap
 - scripting
@@ -34,23 +30,30 @@ One of the things I wanted to do was add items to my cron list and this process 
 
 3. CD to your scripts directory in custom and make a file called joblist.txt in VI (Vi is the only editor you have on the QNAP drive).
 
-`# vi joblist.txt`
+```sh
+> vi joblist.txt
+```
 
 When in vi make your list of cron jobs using the [standard CRON syntax](http://www.adminschoice.com/docs/crontab.htm).
 
 Mine was the following:
 
-`25 1 * * * /share/backup/script.sh`
+```
+25 1 * * * /share/backup/script.sh
+```
 
 This will run a backup script I had written at 1:25am everyday. You can add as many or as few as you want. Save your document and exit from Vi.
 
 4. Make your script that will fire on start up. I called mine cron_update.sh
 
-`# vi cron_update.sh`
+```sh
+> vi cron_update.sh
+```
 
 In there put the following code:
 
-`#!/bin/sh
+```sh
+#!/bin/sh
 # this script apprends a job list to the existing crontab
 echo "Reconfigure CRON list:"
 cronpath=/share/MD0_DATA/custom/scripts
@@ -59,7 +62,8 @@ crontab -l > $cronpath/cron_jobs.txt
 #append the items we want to the master cron jobs list
 cat $cronpath/joblist.txt >> $cronpath/cron_jobs.txt
 # replace the existing crontab with the new one
-crontab $cronpath/cron_jobs.txt`
+crontab $cronpath/cron_jobs.txt
+```
 
 Save and quite out of Vi.
 
@@ -67,11 +71,15 @@ You'll notice I've used a variable in here to specify where to find the files. T
 
 5. Go back up a directory to your custom folder. In there edit your autorunmaster.sh file with vi.
 
-`# vi autorunmaster.sh`
+```sh
+> vi autorunmaster.sh
+```
 
 At the end of the file append:
 
-`/share/MD0_data/custom/scripts/cron_update.sh`
+```sh
+/share/MD0_data/custom/scripts/cron_update.sh
+```
 
 Then save and close the file.
 
