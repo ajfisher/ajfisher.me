@@ -1,29 +1,25 @@
 ---
 author: ajfisher
-comments: true
 date: 2010-07-20 14:06:04+00:00
 layout: post.hbt
 slug: thingstreams-the-future-of-brand-product-consumer-dialogue
-title: Thingstreams - the future of brand / product / consumer dialogue
-wordpress_id: 236
-categories:
-- Featured
-- internet
-- media
-- mobile
-- predictions
-- thingspace
+title: Thingstreams - the future of product / consumer dialogue
+small-title: true
 tags:
 - internet
 - media
 - mobile
 - predictions
-- ThingSpace
+- thingspace
 - ThingStreams
 - web
+excerpt: >
+    As consumers engage more directly with each other, how to brands understand
+    what is happening in the "backchannel"?
+featureimage: /img/posts/thingstreams.jpg
+imageby: Ramsey Arnaoot
+imagelink: https://www.flickr.com/photos/arnaoot/19857872/
 ---
-
-[![CC: Flickr - ramseyarnaoot](http://ajfisher.me/wp-content/uploads/2010/07/19857872_455b269c8f_b-arnaoot-e1279634130567.jpg)](http://www.flickr.com/photos/arnaoot/19857872/sizes/l/)
 
 Times, they are a changing - for brands and consumers both. Gone are the days where a brand tells you what to think about them and as a consumer I duly do as I'm told because I've been brainwashed by hundreds of exposures to your brand and product message. Thingstreams and more broadly Thingspace will and are changing this behaviour - unfortunately many brands still haven't realised yet.
 
