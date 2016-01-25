@@ -9,6 +9,7 @@ var Metalsmith  = require('metalsmith');
 var collections = require('metalsmith-collections');
 var layouts     = require('metalsmith-layouts');
 var markdown    = require('metalsmith-markdown');
+var metallic    = require('metalsmith-metallic');
 var permalinks  = require('metalsmith-permalinks');
 var sass        = require('metalsmith-sass');
 var serve       = require('metalsmith-serve');
@@ -232,6 +233,7 @@ Metalsmith(__dirname)
         attribution: true,
     }))
     .use(meta())
+    .use(metallic())
     .use(markdown())
     .use(wordcount({
         metaKeyCount: "wordcount",

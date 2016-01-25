@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="/css/normalize.min.css">
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/hljs_solarised.css">
         <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         {{#if post}}
             {{#if featureimage}}
