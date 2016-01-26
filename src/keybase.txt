@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/ajfisher
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://ajfisher.me
+  * I am ajfisher (https://keybase.io/ajfisher) on keybase.
+  * I have a public key with fingerprint 77D8 5BD2 1399 95FB 4000  C20A D5DA D316 FE23 42A7
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101ca0eec58cfcc32f308dd7582894a71716fad84fd2b78a411b787f34af8407ed90a",
+            "fingerprint": "77d85bd2139995fb4000c20ad5dad316fe2342a7",
+            "host": "keybase.io",
+            "key_id": "d5dad316fe2342a7",
+            "kid": "0101ca0eec58cfcc32f308dd7582894a71716fad84fd2b78a411b787f34af8407ed90a",
+            "uid": "f0763069c2e6317683eb968dfecfc819",
+            "username": "ajfisher"
+        },
+        "revoke": {
+            "sig_ids": [
+                "06f0f1e4a970555f5f436948d12309203998d2aeb4d72c37bb9ffdb76ba85fd50f"
+            ]
+        },
+        "service": {
+            "hostname": "ajfisher.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1453842194,
+    "expire_in": 157680000,
+    "prev": "5cecfcb9aabf0f53716b5259c26c6053dcabdbbbd2125b989ad255858a1ef1f1",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.49
+Comment: https://keybase.io/crypto
+
+yMN/AnicrZJrTFxFGIa59QZtsYtVGmqih1QRlvVc95yzpRexF7FeYmIVUpvNOWdm
+drcsu+veYKErSsSEQmlpCikSsT+4V9qCbaloaSlEbjayUUq7yGJCKFaqQEqaxkLj
+HKJ/jD/9NZmZ93u+d95vetdFhkWHjwR/fOpxYnpj+FD3vCfs3cYJTQEh24GPMBQQ
+2XB5gVYAXW5jtgUQBoKkSEqRSAgVTlCQojA0YkgBAJ4TaEFkJZ7iKT2SgMAiQMu8
+ILEUhRceMayEBJbkIRBJidASyGIzQafDabG5MZbngcDJgKYYURQ5JLMkSSo0KQEO
+SIDBREgzLC3xuNBsd6kV2JwsuaDOYsdneGNctvcf+v/Zt2cZh0hez5B6UaGhnqF4
+vcBAWdQLAEEMFyhRFbqg0yblQKyWDiGLywydhF9LOKHXng3VXF0WEzbtIgwHCFKP
+SERBVhJ5kuM4xCGW0YusACiaIUWaxKkIgJagzAKeVhhelkWEgMzrZUngEOBIRBzE
+bNzRa1GW4WpK/+quwzst4XDa3XbFbsUXZrfbYVA9uX0OVZgLZePfCKNssQE8IVzg
+hU6XxW4jDBRWKm6LyqRYjhFYmhJZLQHzHBYnNFpUBYeTwJMj1TbQi5GcogYii5Ik
+4xdyDA5Z5mgO56ZX9CTHAEWSgSyrk6c5WRRECdAcJ3CCREFEIYpQH/WBzU4YcCe3
+ZMJIHJtNcnuckPBf734/Kiw8Omzligj154ZFr3nin/+cFYhdXGd++srt6oT6qeii
+2bWzZfWe2NHFiyv6lzb1BTRLDZ5gnzENOaa27Hr2PN9+uX0hLsGfFNpQXNG+0rQk
+Uxl3T/n4W0N3t/U+rIj0lYaOlCRub9iVu38hp/X7DIMtrvPw/P2it5tDB2LOPjlZ
+MdmU/+hqyvOzJ8sjouraH4x3hl9aHB2uWZ8sWr87fel6priD+2Fslbdct7hYfO1h
+42rzoGa9/2TyIvVqws6CjtGKMW9d6s0Bk6l2RzCuvHsuuTYlft4/I/dlbTuXFBv/
+G7qQ9u3l1ISXa/Q1z9zbYz5xxPNZ85kXk9pCl2JbIjJrTnXVXqMa35g8n3cot37P
+9K8PQtuDg4UOHZnYV/d69NbpfbXdzx2zlgRkmD5zcaHpmyzdlLc6fdNm89DIF38m
+gKJC99jGrvhBa6GvJKLmRnNla9vBM3eieu99NRDTk6YRR4rWCrE3sz6yLvAMs2a6
+v3S8tO61D6eGfReGq15JyStsKN1g2w+Gdm5dNfrO/bKrkbqRibLdzs7b0wFjTscv
++ac/b/m04k7/XsTvSw9+PNDl3/37oxcaoioDqOdGzMyXeVviU6tCnX+Up3uaSh5P
+EMVpc8d/jikdeLOtai6TPruxduiKVtMw7ax+SdP007nVZi+bS21+r1V4a7Bw3Jyf
+8fUn2vHgiaxjt3I7KutGpnqOzuzVHT4eSEpqcf8Fn0npug==
+=guHN
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ajfisher
+
+==================================================================
+
