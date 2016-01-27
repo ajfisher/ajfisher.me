@@ -6,6 +6,7 @@
 * backfill posts related to topics from the last 12 months
 * build project template and post from maker.aj
 * build gallery
+* Fix sizes on listing page for src set.
 
 ## Posts
 
@@ -35,4 +36,5 @@ Other posts:
 * Building NodePixel
 * JS IOT workshop
 * Designing the simplebot
+* Wifi nodebot
 
