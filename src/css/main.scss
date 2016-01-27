@@ -353,6 +353,13 @@ p.has-pullquote::before {
     border-left: 2px solid $base;
 }
 
+article blockquote {
+    font-style: italic;
+    border-left: 2px solid $base;
+    margin-left: -3rem;
+    padding-left: 3rem;
+}
+
 // get the images sorted
 article figure {
     margin: 0 -2rem;
