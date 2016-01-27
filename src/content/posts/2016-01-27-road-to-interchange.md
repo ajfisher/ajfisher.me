@@ -286,7 +286,7 @@ Overall I'm happy about where the project is and where it will go next.
 I'm also really happy that I got to work with some great people on this project,
 in particular Suz and Derek and I'm hoping to do more work with them in the future.
 
-If you want to check out more about Interchange here's some places to
+If you want to check out more about Interchange here are some places to
 dive in further:
 
 * [Interchange repo](https://github.com/ajfisher/nodebots-interchange)
