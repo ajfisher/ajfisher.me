@@ -4,6 +4,7 @@
 			<a href="/{{this.path}}">
 				<img src="{{imageurl listimage 300}}"
                 {{#if listimage-position}}style="object-position: {{listimage-position}}"{{/if}}
+                sizes="(min-width: 768px) 300px, calc(100vw-6rem)"
                 srcset="{{#each meta.imagesizes}}
                             {{imageurl ../listimage this}} {{this}}w,
                         {{/each}}"/>
@@ -15,6 +16,7 @@
                 <a href="/{{this.path}}">
                     <img src="{{imageurl featureimage 300}}"
                     {{#if listimage-position}}style="object-position: {{listimage-position}}"{{/if}}
+                    sizes="(min-width: 768px) 300px, calc(100vw-6rem)"
                     srcset="{{#each meta.imagesizes}}
                                 {{imageurl ../featureimage this}} {{this}}w,
                             {{/each}}"/>
