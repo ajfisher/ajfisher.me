@@ -7,6 +7,7 @@
                     <div>
                         <a href="/{{this.path}}">
                             <img
+                                sizes="(min-width: 768px) 300px, calc(90vw)"
                                 srcset="
                                     {{#each meta.imagesizes}}
                                     {{imageurl ../listimage this}} {{this}}w,
@@ -24,11 +25,13 @@
             <h2>Latest talk</h2>
             <div>
                 <a href="https://www.youtube.com/watch?v=3C3lHuRToQs">
-                    <img srcset="
-                        {{#each meta.imagesizes}}
-                        /img/posts/jsfoo_{{this}}.jpg {{this}}w,
-                        {{/each}}
-                    "
+                    <img
+                        sizes="(min-width: 768px) 300px, calc(90vw)"
+                        srcset="
+                            {{#each meta.imagesizes}}
+                            /img/posts/jsfoo_{{this}}.jpg {{this}}w,
+                            {{/each}}
+                        "
                     src="/img/posts/jsfoo_300.jpg"/>
                 </a>
             </div>
@@ -44,12 +47,14 @@
             <h2>My Books</h2>
             <div>
                 <a href="http://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
-                    <img srcset="
-                        {{#each meta.imagesizes}}
-                        /img/posts/make_js_robots_{{this}}.jpg {{this}}w,
-                        {{/each}}
-                    "
-                    src="/img/posts/make_js_robots_300.jpg"
+                    <img
+                        sizes="(min-width:768px) 300, calc(90vw)"
+                        srcset="
+                            {{#each meta.imagesizes}}
+                            /img/posts/make_js_robots_{{this}}.jpg {{this}}w,
+                            {{/each}}
+                        "
+                        src="/img/posts/make_js_robots_300.jpg"
                         style="object-position: 50% 100%"/>
                 </a>
             </div>
@@ -63,12 +68,14 @@
             hardware</p>-->
             <div>
                 <a href="http://www.amazon.com/Jump-Start-Responsive-Web-Design-ebook/dp/B00TJ6UY9S/">
-                    <img srcset="
-                        {{#each meta.imagesizes}}
-                        /img/posts/responsive_design_{{this}}.jpg {{this}}w,
-                        {{/each}}
-                    "
-                    src="/img/posts/responsive_design_300.jpg" style="object-position: 50% 85%" />
+                    <img
+                        sizes="(min-width: 768px) 300px, calc(90vw)"
+                        srcset="
+                            {{#each meta.imagesizes}}
+                            /img/posts/responsive_design_{{this}}.jpg {{this}}w,
+                            {{/each}}
+                        "
+                        src="/img/posts/responsive_design_300.jpg" style="object-position: 50% 85%" />
                 </a>
             </div>
             <p>

@@ -6,13 +6,13 @@
 * backfill posts related to topics from the last 12 months
 * build project template and post from maker.aj
 * build gallery
+* if featured post is the post you're on then go to an older one
 
 ## Posts
 
 Backfill
 
 * IoT practices from mobile dev: http://www.ibm.com/developerworks/library/iot-mobile-practices-iot-success/
-* Info Radiator: https://www.packtpub.com/books/content/building-information-radiator-part-1
 * WOT 13 summary
 * India Presentation
 * HasGeek post as well
@@ -20,7 +20,7 @@ Backfill
 * Datium presentation
 * Temp sensor
 * Respond 14
-* WDC14 summary
+* WDC14 presentation
 
 Maker projects
 
