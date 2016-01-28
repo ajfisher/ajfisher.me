@@ -9,7 +9,8 @@ excerpt: >
     What started as a plan to simply make components work a bit better with NodeBots
     turned into a way of managing any firmware using JavaScript.
 twitter_excerpt: >
-    The journey of how Node Interchange, a firmware manager for #nodebots, came to be.
+    Node Interchange, a firmware manager for #nodebots, took a winding path
+    on both hardware and software. Here's how it came to be.
 featureimage: /img/posts/interchange.jpg
 imageby: Daxis
 imagelink: https://www.flickr.com/photos/daxis/19572401032/
