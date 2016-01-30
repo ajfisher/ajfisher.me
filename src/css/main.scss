@@ -403,6 +403,22 @@ article ul {
     padding:0;
 }
 
+// dealing with embedded media properly so it scales appropriately.
+p.mediacontainer {
+    // this will effectively force a container that is in the proportion 3:2
+    // which will work for most media
+    position: relative;
+    width: 100%;
+    padding-bottom: 70%;
+}
+
+p.mediacontainer iframe {
+    // and then this will fill the container on both dimensions.
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 // listing styles
 
 .list article ul {

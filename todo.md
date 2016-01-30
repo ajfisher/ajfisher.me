@@ -12,10 +12,7 @@
 
 Backfill
 
-* IoT practices from mobile dev: http://www.ibm.com/developerworks/library/iot-mobile-practices-iot-success/
 * WOT 13 summary
-* India Presentation
-* HasGeek post as well
 * China presentation
 * Datium presentation
 * Temp sensor
