@@ -23,7 +23,6 @@ Other posts:
 
 * Migrating to Metalsmith (notes and pointers)
 * Building NodePixel
-* JS IOT workshop
 * Designing the simplebot
 * Wifi nodebot
 
