@@ -13,8 +13,6 @@ Backfill
 
 * WOT 13 summary
 * Temp sensor
-* Respond 14
-* WDC14 presentation
 
 Maker projects
 
@@ -23,8 +21,6 @@ Maker projects
 
 Other posts:
 
-* Release of Responsive design book
-* Release of Johnny Five Book
 * Migrating to Metalsmith (notes and pointers)
 * Building NodePixel
 * JS IOT workshop
