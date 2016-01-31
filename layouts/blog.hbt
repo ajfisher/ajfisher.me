@@ -15,7 +15,7 @@
                     {{/if}}
                     {{#if home}}
                         <p class="intro">Observations, code and commentary from
-                        ajfisher on the application of technology to the real world.</p>
+                        ajfisher.</p>
                         <h2>Featured posts</h2>
                         <ul>
                             {{#shown 1 2 collections.featured}}
