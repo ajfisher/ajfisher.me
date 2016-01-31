@@ -1,20 +1,10 @@
 ---
 author: ajfisher
-comments: true
 date: 2007-10-15 09:37:00+00:00
 layout: post.hbt
 slug: let-the-new-gaming-witch-hunt-begin
 title: Let the new gaming witch hunt begin
-wordpress_id: 17
-categories:
-- media
-- rant
-tags:
-- censorship
-- gaming
-- government
-- media
-- parenting
+tags: censorship, gaming, government, media, rant
 ---
 
 I'm in my thirties now and I've been playing computer games from the age of about four when my dad first brought home the venerable Vic 20 - partly because he was doing a computer science degree at University but mostly because he wanted to tinker.

@@ -1,22 +1,10 @@
 ---
 author: ajfisher
-comments: true
 date: 2010-10-07 11:03:15+00:00
 layout: post.hbt
 slug: i-like-where-i-think-sony-is-going
 title: I like where I think Sony is going
-wordpress_id: 264
-categories:
-- Consumer Electronics
-- mobile
-- predictions
-tags:
-- android
-- Consumer Electronics
-- mobile
-- phones
-- Sony
-- Xperia
+tags: android, Consumer Electronics, mobile, predictions
 ---
 
 This is one of my speculation fueled posts so I'm admitting that a lot of it is based on rumour, hearsay, wild prognostication and adding up 2+2+2+2 to equal 63. With that in mind on with the rest...

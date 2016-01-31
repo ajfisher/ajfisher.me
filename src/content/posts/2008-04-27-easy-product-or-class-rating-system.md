@@ -1,20 +1,17 @@
 ---
 author: ajfisher
-comments: true
 date: 2008-04-27 18:02:00+00:00
 layout: post.hbt
 slug: easy-product-or-class-rating-system
 title: Easy product or class rating system
-wordpress_id: 38
-categories:
-- fuzzy logic
-- internet
-- web
 tags:
+- fuzzy logic
 - data
 - database
 - optimisation
 - scripting
+- internet
+- web
 ---
 
 So you've got a lovely little ratings system going on your site. All of a sudden though you get slashdotted, dugg or just your marketing starts working and you have thousands of users all rating your products / services / systems / posts / videos etc and your pages start to creak.

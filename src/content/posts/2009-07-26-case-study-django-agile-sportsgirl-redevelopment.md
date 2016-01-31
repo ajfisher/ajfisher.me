@@ -1,22 +1,10 @@
 ---
 author: ajfisher
-comments: true
 date: 2009-07-26 12:46:00+00:00
 layout: post.hbt
 slug: case-study-django-agile-sportsgirl-redevelopment
 title: 'Case Study: Django + Agile = Sportsgirl redevelopment'
-wordpress_id: 43
-categories:
-- django
-- open source
-- web
-tags:
-- agile
-- apache
-- case study
-- development
-- nginx
-- process
+tags: launch, software, development, web, python, retail, ecommerce
 ---
 
 I've decided to write this one up because there isn't much on large scale and high speed Django development as yet and this is all still fresh in my head so it's worth getting down on paper (or screen as it were).

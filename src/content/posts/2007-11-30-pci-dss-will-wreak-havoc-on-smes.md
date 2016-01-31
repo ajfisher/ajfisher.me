@@ -1,21 +1,13 @@
 ---
 author: ajfisher
-comments: true
 date: 2007-11-30 13:15:00+00:00
 layout: post.hbt
 slug: pci-dss-will-wreak-havoc-on-smes
 title: PCI DSS will wreak havoc on SMEs
-wordpress_id: 25
-categories:
-- rant
-tags:
-- banking
-- fraud
-- PCI DSS
-- security
+tags: rant, banking, PCI DSS, security
 ---
 
-One of my clients was asking me about [PCI DSS ](http://www.pcisecuritystandards.org/)certification today. Coincidentally I also received our letter about compulsory compliance to the PCI DSS standard.
+One of my clients was asking me about [PCI DSS](http://www.pcisecuritystandards.org/) certification today. Coincidentally I also received our letter about compulsory compliance to the PCI DSS standard.
 
 Both of us are what are termed "Level 4 Merchants" - that is we process less than 20,000 card transactions through the company in a year. Arguably Level 4 Merchants will probably account for the largest number of business globally as they will incorporate pretty much every SME in PCI compliant countries that takes a card as a form of payment (according to Visa about 27 million businesses).
 
@@ -38,18 +30,15 @@ Big companies have the resources to deal with this sort of stuff and they are al
 BarclayCard are indemnifying themselves by playing the [FUD](http://www.google.co.uk/search?hl=en&q=define%3A+fud&meta=) card with comments like:
 
 
-<blockquote>To date these penalties have not been passed on to any Level 4 Merchants, but from 30th April 2008 your business will be liable for PCI DSS penalty charges and costs associated if you fail to comply or have a data compromise.
+> To date these penalties have not been passed on to any Level 4 Merchants, but from 30th April 2008 your business will be liable for PCI DSS penalty charges and costs associated if you fail to comply or have a data compromise.
 
-Penalty charges can be considerable (in excess of £100,000) so, to protect your business, it is vital that your prepare for PCI DSS compliance by 30th April 2008 and continue to maintain compliance in the future.</blockquote>
-
+> Penalty charges can be considerable (in excess of £100,000) so, to protect your business, it is vital that your prepare for PCI DSS compliance by 30th April 2008 and continue to maintain compliance in the future.
 
 What the PCI DSS standard fails to deal with however is systematic failure of employee behaviour. It doesn't deal with issues such as people skimming cards if they are taken out of sight nor does it deal with employees writing details down on a piece of paper and passing them on when dealing with mail order, nor does it deal with phishing scams.
 
 Indeed I had a card machine problem last week and the support officer at BarclayCard stated:
 
-
-<blockquote>Just write the details down on a piece of paper and process them later</blockquote>
-
+> "Just write the details down on a piece of paper and process them later"
 
 Hardly a piece of advice that should be followed to maintain security.
 

@@ -1,17 +1,10 @@
 ---
 author: ajfisher
-comments: true
 date: 2008-01-08 22:08:00+00:00
 layout: post.hbt
 slug: the-warm-glow-of-site-launch
 title: The warm glow of site launch
-wordpress_id: 30
-categories:
-- general
-tags:
-- media
-- site lanch
-- web
+tags: media, launch, web
 ---
 
 I've been in this game a long time but there is still nothing sweeter than launching a site after spending a months building it with your team and the client. As a TD, site launch brings a mix of emotion - fatigue from the lack of sleep for the 10 days prior to launch, relief that the site is launching on time and on budget and the client seems happy with it all and finally worry about whether the thing will work as expected, what will everyone else think about it and by god I hope the server doesn't fall over on Day 1 under load...

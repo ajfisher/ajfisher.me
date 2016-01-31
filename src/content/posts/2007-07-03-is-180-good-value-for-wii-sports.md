@@ -5,13 +5,9 @@ date: 2007-07-03 08:07:00+00:00
 layout: post.hbt
 slug: is-180-good-value-for-wii-sports
 title: Is £180 good value for Wii Sports?
-wordpress_id: 14
-categories:
-- gaming
 tags:
 - gaming
 - nintendo
-- wii
 ---
 
 I am definitely a [Nintendo](http://www.nintendo.com/) fan boy. I've had every Nintendo console released on the market plus so many Game & Watches it's not funny. Call me sentimental but Nintendo has been a part of and is one of the definers of my life.
@@ -28,6 +24,6 @@ But something inside of me just isn't loving my Wii. I walk into GAME and check 
 
 At present the Wii is the most sold "next gen" console and regular "sold out" signs at GAME down the road suggest they are still selling like hot cakes.
 
-Back to my original question though which is is £180 good value for Wii Sports.
+Back to my original question though which was; is £180 good value for Wii Sports?
 
 Personally I'm more likely to play a bit of Wii Tennis when I get home than watch TV. In real terms my wife and I have played a good dozen hours of Wii Sports each (mostly together) otherwise we'd have gone to the cinema or something which would be £15 a ticket for 2 hours. That alone is about £180 by itself and when you pass the controller over to a neice or nephew or child of a friend who hasn't got one you do get that warm techie buzz about someone "getting it" for the first time and I think that is probably worth £180 any day of the week.

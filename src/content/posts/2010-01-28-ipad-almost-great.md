@@ -1,19 +1,12 @@
 ---
 author: ajfisher
-comments: true
 date: 2010-01-28 07:42:07+00:00
 excerpt: The iPad hardware is outstanding in its simplicity but is a little weak presently
   on the software but will get better.
 layout: post.hbt
 slug: ipad-almost-great
 title: iPad - ALMOST great
-wordpress_id: 143
-categories:
-- media
-- mobile
-tags:
-- Apple
-- iPad
+tags: media, mobile, Apple, OS, tablet, iOS
 ---
 
 There's been a lot of chatter about the [iPad](http://www.apple.com/ipad) today and to put it out there from the start I was expecting outstanding things from [Apple](http://www.apple.com) with their tablet. What I wasn't really expecting was the tablet to be a large version iPhone but in retrospect that isn't too surprising.

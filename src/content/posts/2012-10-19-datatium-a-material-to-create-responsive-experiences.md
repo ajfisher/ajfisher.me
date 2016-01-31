@@ -4,7 +4,7 @@ date: 2012-10-19 04:09:00+00:00
 layout: post.hbt
 title: Datatium - a material to create responsive experiences
 slug: datatium-a-material-to-create-responsive-experiences
-tags: media, behaviour, data, mobile, responsive design, responsive experiences, user experience, UX, web
+tags: media, data, mobile, responsive design, responsive experience, UX, web, context, data science
 collection: featured
 featureimage: /img/posts/datatium_bling_material.jpg
 imageby: neekoh.fi

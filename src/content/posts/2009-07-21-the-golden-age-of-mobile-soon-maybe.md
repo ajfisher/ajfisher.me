@@ -1,22 +1,13 @@
 ---
 author: ajfisher
-comments: true
 date: 2009-07-21 23:24:00+00:00
 layout: post.hbt
 slug: the-golden-age-of-mobile-soon-maybe
 title: The Golden Age of mobile? Soon maybe...
-wordpress_id: 42
-categories:
-- mobile
-tags:
-- futures
-- mobile
-- predictions
-- trends
-- web
+tags: mobile, predictions, web
 ---
 
-Some would say that it's already been in the heady days of GSM Data and WAP, some would say it stalled when European clients pulled all funding from mobile internet apps in the post-dot-com-crash GPRS days, some would say that with the advent of the iPhone we're there in all it's shiny-coverflow-enabled-finger-waggling-goodness.
+Some would say that it's already been - during the heady days of GSM Data and WAP, some would say it stalled when European clients pulled all funding from mobile internet apps in the post-dot-com-crash GPRS days, some would say that with the advent of the iPhone we're there in all it's shiny-coverflow-enabled-finger-waggling-goodness.
 
 It seems like every second person is now weilding some kind of internet enabled device and in Europe and the US the penetration is even higher than Oz although we are racing for a frontline position showing that reasonable access is more important than either coverage or cost.
 

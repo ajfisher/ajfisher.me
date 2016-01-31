@@ -4,12 +4,7 @@ date: 2007-11-26 13:53:00+00:00
 layout: post.hbt
 slug: adding-cron-jobs-to-a-qnap-server
 title: Adding Cron Jobs to a QNAP server
-tags:
-- cron
-- development
-- linux
-- qnap
-- scripting
+tags: development, linux, scripting, sysadmin
 ---
 
 If you haven't come across them yet[ QNAP](http://www.qnap.co.uk/) make these amazing little NAS boxes that are perfect for home or SME use. I've got mine running as a home server but might get one for the office as our old server is on it's last legs and a fully tricked out 1U dell server is a bit of overkill for a glorified file server.

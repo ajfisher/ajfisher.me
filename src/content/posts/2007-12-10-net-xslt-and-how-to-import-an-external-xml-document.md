@@ -1,17 +1,10 @@
 ---
 author: ajfisher
-comments: true
 date: 2007-12-10 17:45:00+00:00
 layout: post.hbt
 slug: net-xslt-and-how-to-import-an-external-xml-document
 title: .NET / XSLT and how to import an external XML document
-wordpress_id: 26
-categories:
-- development
-tags:
-- web
-- xml
-- xsl
+tags: development, web
 ---
 
 I work with XML and XSLT every day of the week. Indeed working for a company called [XML Infinity ](http://www.xmlinfinity.com/)you can imagine how much we use it. I had one of those incredibly frustrating moments this afternoon that one typically when dealing with badly documented parts of .NET or XSLT.
@@ -36,13 +29,17 @@ Turns out the way to do it is a little known second parameter.
 
 If you do this:
 
-`<xsl:variable name="var1" select="document('http://example.com/file.xml')"/>`
+```xsl
+<xsl:variable name="var1" select="document('http://example.com/file.xml')"/>
+```
 
 All you'll end up with is the text nodes. Not very useful.
 
 If you do this, however (note the second parameter):
 
-`<xsl:variable name="var1" select="document('http://example.com/file.xml', /)"/>`
+```xsl
+<xsl:variable name="var1" select="document('http://example.com/file.xml', /)"/>
+```
 
 You'll end up with a full fledged XML document complete with nodes and everything put into your $var1 variable and you can then use it to select data according to standard XPATH constructs.
 

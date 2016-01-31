@@ -4,10 +4,7 @@ date: 2010-09-29 12:37:12+00:00
 layout: post.hbt
 slug: software-is-a-race-to-zero-how-do-you-create-revenue-then
 title: If software is a race to $Zero, how do you create revenue?
-tags:
-- business
-- development
-- software
+tags: strategy, development, software
 excerpt: >
     Commodity values always drop towards their cost of production. Software
     eventually drops to $0 in value so how do you create revenue?

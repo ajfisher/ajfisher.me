@@ -4,12 +4,7 @@ date: 2008-05-09 19:08:00+00:00
 layout: post.hbt
 slug: eeepcs-power-is-in-the-network-not-the-machine
 title: EEEPC's power is in the network not the machine
-tags:
-- internet
-- linux
-- mobile
-- eeepcs
-- network computing
+tags: internet, linux, OS, mobile, network
 ---
 
 It's official - I definitely am in love with [ASUS' EEEPC](http://eeepc.asus.com/global/). I liked the idea when they first came out and specifically trawled around Hong Kong computer markets to find one not long after they were launched. It's not the Apple Air or iPhone kind of aesthetic lust, I'm talking about true "in sickness and in health" type love when it comes to the EEEPC.

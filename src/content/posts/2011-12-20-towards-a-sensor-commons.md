@@ -4,7 +4,7 @@ date: 2011-12-20 10:50:31+00:00
 layout: post.hbt
 slug: towards-a-sensor-commons
 title: Towards a sensor commons
-tags: open source, data, internet, iot, things
+tags: open source, data, internet, IoT
 excerpt: >
     A quiet revolution is taking place in the Internet of Things world and it
     isn't one being orchestrated top down by the companies who want to Internet

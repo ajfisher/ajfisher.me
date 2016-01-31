@@ -1,19 +1,10 @@
 ---
 author: ajfisher
-comments: true
 date: 2009-11-09 23:14:00+00:00
 layout: post.hbt
 slug: admob-purchase-by-google-paves-way-for-interesting-developer-funding
 title: AdMob purchase by google paves way for interesting developer funding
-wordpress_id: 48
-categories:
-- mobile
-tags:
-- acquisition
-- admob
-- advertising
-- google
-- mobile
+tags: acquisition, advertising, media, google, mobile
 ---
 
 It's just been announced that [Google](http://www.google.com.au/) is set to buy [AdMob](http://www.admob.com/) for $750M in an all-stock deal. This is the third biggest purchase Google has ever made (the only two bigger are YouTube and DoubleClick).

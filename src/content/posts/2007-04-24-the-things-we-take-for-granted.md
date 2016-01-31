@@ -1,15 +1,10 @@
 ---
 author: ajfisher
-comments: true
 date: 2007-04-24 13:48:00+00:00
 layout: post.hbt
 slug: the-things-we-take-for-granted
 title: The things we take for granted
-wordpress_id: 10
-categories:
-- general
-tags:
-- chi
+tags: UX, design
 ---
 
 I had one of those amazing moments as a techie last night where you get so gobsmacked by something that you think about it even a day or so later.

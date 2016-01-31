@@ -1,20 +1,10 @@
 ---
 author: ajfisher
-comments: true
 date: 2007-12-19 10:33:00+00:00
 layout: post.hbt
 slug: sms-bamboozlement
 title: SMS Bamboozlement...
-wordpress_id: 27
-categories:
-- mobile
-- rant
-tags:
-- general government
-- mobile
-- sms
-- tech rip off
-- web
+tags: rant, mobile, sms, web
 ---
 
 I'm doing some work for a client at the moment who's industry is particularly technophobic. The absolute cutting edge is a bit of YouTube video thrown willy nilly into a page. I'd also point out that design is something that rarely makes an appearance in this particular industry.

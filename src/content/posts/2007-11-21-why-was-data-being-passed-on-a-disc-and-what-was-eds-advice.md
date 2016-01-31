@@ -1,21 +1,13 @@
 ---
 author: ajfisher
-comments: true
 date: 2007-11-21 09:14:00+00:00
 layout: post.hbt
 slug: why-was-data-being-passed-on-a-disc-and-what-was-eds-advice
 title: Why was data being passed on a disc and what was EDS' advice?
-wordpress_id: 23
-categories:
-- government
-- rant
-tags:
-- data
-- DPA
-- government
+tags: rant, data, privacy, government
 ---
 
-Readers in the UK will be aware of a Data Protection train crash that we have been watching unfold in front of us over the last few days. It turns out that 25 million records of a database managed by [HMRC](http://www.hmrc.gov.uk/) have been lost in the post because they were sent on a couple of disks using unrecorded mail.
+Readers in the UK will be aware of a Data Protection Act train crash that we have been watching unfold in front of us over the last few days. It turns out that 25 million records of a database managed by [HMRC](http://www.hmrc.gov.uk/) have been lost in the post because they were sent on a couple of disks using unrecorded mail.
 
 There has been much speculation about which minister to blame and who in the cabinet (including the Prime Minister) should lose their job but one thing that is mostly missing is the notion of data security.
 
@@ -25,9 +17,7 @@ I've done a lot of work for government and I have to say in my experience they h
 
 According to the DPA
 
-
-<blockquote>"Appropriate technical and organisational measures shall be taken against unauthorised or unlawful processing of personal data and against accidental loss or destruction of, or damage to, personal data."</blockquote>
-
+>"Appropriate technical and organisational measures shall be taken against unauthorised or unlawful processing of personal data and against accidental loss or destruction of, or damage to, personal data."
 
 This is why our PM said procedures weren't followed and he is bang on the money there. This relaxed attitude to data, particularly sensitive data, has been demonstrated in this debacle. If the data was going to be put on disc why wasn't it fully encrypted?
 

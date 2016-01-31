@@ -1,16 +1,11 @@
 ---
 author: ajfisher
-comments: true
 date: 2007-02-15 13:56:00+00:00
 layout: post.hbt
 slug: please-nokia-slap-me-again-no-really
 title: please nokia slap me again - no really
-wordpress_id: 6
-categories:
-- mobile
 tags:
-- n73
-- n770
+- mobile
 - nokia
 ---
 

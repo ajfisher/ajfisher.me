@@ -1,13 +1,10 @@
 ---
 author: ajfisher
-comments: true
 date: 2007-03-05 16:07:00+00:00
 layout: post.hbt
 slug: fuzzys-where-its-at-or-will-be-eventually
 title: Fuzzy's where it's at... or will be eventually
-wordpress_id: 7
-categories:
-- fuzzy logic
+tags: fuzzy logic, retail, web, ecommerce
 ---
 
 I'm working on a project at the moment that took a remarkable turn recently. Most clients we work on are fairly staid in their use of technology - which suits our company as we are firm believers of the Keep It Simple Stupid methodology of programming.

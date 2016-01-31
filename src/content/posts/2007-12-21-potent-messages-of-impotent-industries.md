@@ -1,21 +1,16 @@
 ---
 author: ajfisher
-comments: true
 date: 2007-12-21 13:56:00+00:00
 layout: post.hbt
 slug: potent-messages-of-impotent-industries
 title: Potent messages of impotent industries
-wordpress_id: 29
-categories:
-- rant
 tags:
+- rant
 - censorship
 - distributed computing
 - DRM
 - media
 - movies
-- P2P
-- peer2peer
 - piracy
 ---
 
@@ -41,11 +36,9 @@ As such we'll be seeing another legal case next year - maybe ISOHunt will be nex
 
 The quote from the MPAA spokesman is great:
 
+> "The court's decision... sends a potent message to future defendants that this egregious behaviour will not be tolerated by the judicial system," John Malcolm, the MPAA's executive vice president and director of worldwide anti-piracy operations, said in a statement.
 
-<blockquote>"The court's decision... sends a potent message to future defendants that this egregious behaviour will not be tolerated by the judicial system," John Malcolm, the MPAA's executive vice president and director of worldwide anti-piracy operations, said in a statement.
-
-"The sole purpose of TorrentSpy and sites like it is to facilitate and promote the unlawful dissemination of copyrighted content. TorrentSpy is a one-stop shop for copyright infringement."</blockquote>
-
+> "The sole purpose of TorrentSpy and sites like it is to facilitate and promote the unlawful dissemination of copyrighted content. TorrentSpy is a one-stop shop for copyright infringement."
 
 What's most amusing is that according to many sources, music being downloaded from "official" sources is almost as much as that being downloaded illegally. Surprising how given the tools, a cessation of hostility towards the users and a price point that accurately reflects the product being sold and the consumer comes to the party once again.
 
