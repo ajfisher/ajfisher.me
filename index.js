@@ -30,6 +30,9 @@ if (process.argv[2] == "production") {
     watch = serve; // turns watch off as well
 }
 
+// tag count is used to show a list of tags in use.
+var tagcount = false;
+
 // make the options for image sizes to work from
 var image_sizes = [300, 400, 500, 650, 750, 1000, 1500];
 
@@ -280,5 +283,13 @@ Metalsmith(__dirname)
             console.log(err);
         } else {
             console.log("Site built correctly");
+            if (! this.production && tagcount) {
+                for (tag in this._metadata.tags) {
+                    console.log(tag, this._metadata.tags[tag].length);
+                    if (this._metadata.tags[tag].length == 1) {
+                        console.log("\t" + this._metadata.tags[tag][0].slug);
+                    }
+                }
+            }
         }
     });
