@@ -13,8 +13,6 @@
 Backfill
 
 * WOT 13 summary
-* China presentation
-* Datium presentation
 * Temp sensor
 * Respond 14
 * WDC14 presentation

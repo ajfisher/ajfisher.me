@@ -20,7 +20,13 @@
                 <meta name="twitter:image" content="http://ajfisher.me{{imageurl featureimage 750}}">
                 <meta name="twitter:creator" content="@ajfisher">
             {{else}}
-                <meta name="twitter:card" content="summary">
+                {{#if listimage}}
+                    <meta name="twitter:card" content="summary_large_image">
+                    <meta name="twitter:image" content="http://ajfisher.me{{imageurl listimage 750}}">
+                    <meta name="twitter:creator" content="@ajfisher">
+                {{else}}
+                    <meta name="twitter:card" content="summary">
+                {{/if}}
             {{/if}}
             <meta name="twitter:site" content="@ajfisher">
             <meta name="twitter:title" content="{{title}}">
