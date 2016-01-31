@@ -3,7 +3,7 @@
         style="{{#if featureimage}}background-image: url({{imageurl featureimage 1500}}){{/if}}"
     {{/if}}
     {{#if list}}
-        {{#with collections.posts.[0]}}
+        {{#with collections.featured.[0]}}
             style="{{#if featureimage}}background-image: url({{imageurl featureimage 1500}}){{/if}}"
         {{/with}}
     {{/if}}
@@ -22,7 +22,7 @@
         {{/if}}
         {{#if list}}
             <p class="featured">Featured Post</p>
-            {{#with collections.posts.[0]}}
+            {{#with collections.featured.[0]}}
                 <h1><a href="/{{path}}">{{title}}</a></h1>
                 {{#if date}}
                     <p class="date">Published {{ moment date 'dddd, MMMM Do YYYY' }}</p>

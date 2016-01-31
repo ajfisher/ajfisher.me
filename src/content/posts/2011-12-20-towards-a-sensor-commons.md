@@ -17,7 +17,8 @@ featureimage: /img/posts/commons_grass.jpg
 imageby: sciencesque
 imagelink: https://www.flickr.com/photos/apoptotic/2597478489
 listimage: /img/posts/resistors.jpg
-
+featured: true
+collection: featured
 ---
 
 

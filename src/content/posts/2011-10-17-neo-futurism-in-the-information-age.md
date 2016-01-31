@@ -11,6 +11,8 @@ excerpt: >
 featureimage: /img/posts/atoms_for_peace.jpg
 imageby: Mark Brown
 imagelink: https://www.flickr.com/photos/airship/117781952/
+featured: true
+collection: featured
 ---
 
 Post-WWII. After the dust had settled and old maps had been redrawn, we entered a period of utopian future-gazing.

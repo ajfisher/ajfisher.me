@@ -16,6 +16,12 @@
                     {{#if home}}
                         <p class="intro">Observations, code and commentary from
                         ajfisher on the application of technology to the real world.</p>
+                        <h2>Featured posts</h2>
+                        <ul>
+                            {{#shown 1 2 collections.featured}}
+                                {{> list }}
+                            {{/shown}}
+                        </ul>
                         <h2>Recent posts</h2>
                     {{/if}}
                     <ul>
