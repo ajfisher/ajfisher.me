@@ -93,7 +93,6 @@
 <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 <script>document.write('<script src="/js/vendor/stickyfill.min.js"><\/script>');</script>
 <script src="/js/main.js" defer></script>
-
 {{#if production}}
 <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
