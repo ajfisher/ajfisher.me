@@ -38,6 +38,7 @@ var image_sizes = [300, 400, 500, 650, 750, 1000, 1500];
 
 // partial definitions
 Handlebars.registerPartial('citation', fs.readFileSync(__dirname + '/layouts/partials/citation.hbt').toString());
+Handlebars.registerPartial('favicon', fs.readFileSync(__dirname + '/layouts/partials/favicon.hbt').toString());
 Handlebars.registerPartial('footer', fs.readFileSync(__dirname + '/layouts/partials/footer.hbt').toString());
 Handlebars.registerPartial('head', fs.readFileSync(__dirname + '/layouts/partials/head.hbt').toString());
 Handlebars.registerPartial('header', fs.readFileSync(__dirname + '/layouts/partials/header.hbt').toString());
