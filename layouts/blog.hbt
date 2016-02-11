@@ -36,7 +36,9 @@
                         {{else}}
                             {{!-- list of posts --}}
                             {{#if home}}
-                                {{#shown 1 10 collections.posts}}
+                                {{!-- TODO fix this to display correctly when 
+                                pos 0 is not featured etc --}}
+                                {{#shown 0 9 collections.posts}}
                                     {{> list }}
                                 {{/shown}}
                             {{else}}
