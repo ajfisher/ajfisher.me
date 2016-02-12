@@ -3,7 +3,7 @@ author: ajfisher
 date: 2016-02-11 16:00:00+11:00
 layout: post.hbt
 slug: moving-to-metalsmith
-title: Moving to metalsmith
+title: Making the move to metalsmith
 tags: development, javascript, web, internet, open source, nodejs
 
 ---
@@ -13,14 +13,14 @@ the bullet and migrated my blog off WordPress. Wordpress served me well for a
 long time but the constant tinkering required to just keep it working wasn't
 worth it and was instrumental in stopping me from writing.
 
-Over the last few years I've found myself working in more "pure" writing forms.
+Over the last few years I've found myself working in more "pure" forms.
 At work we use Google Docs for everything and across both my books and various
-open source project, Markdown is the main formata (or Asciidoc). This shift
+open source projects, Markdown is the main format (or Asciidoc). This shift
 has highlighted to me that no matter how good your editor is (and WP isn't _terrible_)
 it's always "in the way" between you as author and how that content becomes
 expressed.
 
-Obviously I'd looked at other static site generators like [Jekyll](https://jekyllrb.com/)
+Obviously, I'd considered other static site generators like [Jekyll](https://jekyllrb.com/)
 but I really didn't fancy the Ruby learning curve. [Hyde](https://github.com/hyde/hyde) 
 and [Pelican](http://docs.getpelican.com/en/3.6.3/) are good options in the
 python world but as I've been doing so much work recently in NodeJS as a result
@@ -181,16 +181,62 @@ run and only needs to be done once in a while as new images are added to posts.
 
 If I add new assets that I need to preview locally I can run this component
 independently to generate the required assets. In the future I'll probably move
-this to AWS lambda.
-
+this to AWS lambda so the images can be autoscaled when new assets are pushed to
+S3.
 
 #### Code changes
 
-fhdjkfdhskfs
+There are some things you don't want to run in dev eg switching off google
+analytics code and twitter meta tags etc. There are some things you also want
+to run in dev, the watch code and microserver for example.
+
+The way I deal with this is by passing a production argument into the command
+line if I'm building for production. This will set a bunch of internals like
+set a metadata value (so handlebars can turn content on or off) and remove
+certain modules as needed. 
+
+One quirk you have to deal with in scenario is that as metalsmith executes as
+a chain, if you want to switch plugins off you can't conditionally call them.
+
+Here I just exploit the functional nature of javascript and do this:
+
+```javascript
+var serve = require('metalsmith-serve');
+
+var prod = false;
+if (process.argv[2] == "production") {
+    prod = true;
+    noop = function(options) {
+        // makes it a noop in the pipeline
+        return (function(files, metalsmith, done) {
+            done();
+        });
+    };
+    serve = noop;
+}
+```
+
+It's not elegant but it works well and is reliable and I don't need to make
+any modifications to my pipeline at all. 
 
 #### File deployment
 
-fdhjfkhsd
+Once the images are made and the site is built it's just a simple matter then
+to use s3cmd to synchronise the build directory with a buck in AWS S3. This
+bucket is set up as publicly accessible and to serve index.html pages as the
+default document.
 
+I use the sync part of s3cmd rather than put as it will look up to see whether
+the file has changed or not before pushing it up - saving on bandwidth, which
+may or may not be important to you (it is for me due to my usual home connection).
 
+## Conclusion
+
+Overall I'm really happy with metalsmith - if you're very familar with JS and 
+you're looking for a static site generator then it's a good one to work with.
+There isn't a huge amount of information about how to do some things but hopefully
+this post will help out a little there.
+
+The entirety of ajfisher.me is [in it's own repo](https://github.com/ajfisher/ajfisher.me)
+so feel free to dig around, run it up and use whatever helps in your own set up.
 
