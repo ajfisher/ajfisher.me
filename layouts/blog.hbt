@@ -43,9 +43,7 @@
                                 {{/shown}}
                             {{else}}
                                 {{#each collections.posts}}
-                                    {{#if @index}}
-                                        {{> list }}
-                                    {{/if}}
+                                    {{> list }}
                                 {{/each}}
                             {{/if}}
                         {{/if}}
