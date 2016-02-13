@@ -1,6 +1,11 @@
 <div class="header-container"
     {{#if post}}
-        style="{{#if featureimage}}background-image: url({{imageurl featureimage 1500}}){{/if}}"
+        style="{{#if featureimage}}
+            background-image: url({{imageurl featureimage 1500}});
+            {{#if featureimage-position}}
+                background-position: {{featureimage-position}};
+            {{/if}}
+        {{/if}}"
     {{/if}}
     {{#if list}}
         {{#with collections.featured.[0]}}
