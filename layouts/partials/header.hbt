@@ -15,7 +15,7 @@
     >
     <header class="wrapper clearfix">
         {{#if post}}
-            <h1 class="title {{#if small-title}}smaller{{/if}}">{{title}}</h1>
+            <h1 class="title {{#if small-title}}smaller{{/if}}{{#if large-title}}larger{{/if}}">{{title}}</h1>
             {{#if date}}
                 <p class="date">Published {{ moment date 'dddd, MMMM Do YYYY' }}</p>
             {{/if}}
