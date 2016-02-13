@@ -226,6 +226,7 @@ h1 {
 h2 {
     @include heading-font();
     font-size: 5rem;
+    border-radius: 0.2rem;
 }
 
 h3 {
@@ -251,6 +252,7 @@ header h1 {
     min-height: 15rem;
     margin-top: 1rem;
     vertical-align: middle;
+    border-radius: 0.2rem;
 }
 
 header p {
@@ -296,6 +298,13 @@ body.page .header-container {
 
 // Other styles
 
+code {
+    font-size: 2rem;
+    background-color: lighten($dark_grey, 65%);
+    border-radius: 0.2rem;
+    padding: 0 0.5rem;
+}
+
 span.worddata {
     color: $light_text_colour;
 }
@@ -306,6 +315,7 @@ a {
     text-decoration: none;
     padding: 0 0.5rem;
     transition: all 0.4s ease;
+	border-radius: 0.2rem;
 }
 
 a:hover,
@@ -443,6 +453,7 @@ footer section div {
     border-bottom: 0.5rem solid $base;
     margin-bottom: 1rem;
 	transition: all 0.8s ease;
+    border-radius: 0.2rem;
 }
 
 .list * li div:hover {
