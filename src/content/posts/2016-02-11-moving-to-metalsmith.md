@@ -163,7 +163,7 @@ tiny little plugins that only do one operation on your file and makes your code
 really tight.
 
 Another example of this was how I wanted to treat images. I really wanted to use
-proper responsive images and srcset to specify different sized
+proper responsive images and `srcset` to specify different sized
 images for different display types. Markdown to HTML processors can't really
 deal with this and I didn't want to write all the image tags
 out by hand in the markdown as that means I'm polluting my content with layout.
@@ -173,7 +173,7 @@ image tag isn't a container so you can't use `::before` or `::after`.
 For my specific use case, I simply wrote a plugin that did what I wanted. I won't
 show the code here but [you can see it in my site gh.](https://github.com/ajfisher/ajfisher.me/blob/master/index.js#L112-L176)
 It finds mardown images, pulls them out and replaces them with a properly
-formatted figure that uses srcset and figcaption. You can see the treatment
+formatted `figure` that uses `srcset` and `figcaption`. You can see the treatment
 of this below.
 
 ![Blacksmithing workshop in Wojciechow, Poland image (CC) Poland MFA http://www.flickr.com/photos/polandmfa/9286266649/](/img/posts/forgehands.jpg)
