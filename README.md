@@ -2,14 +2,33 @@
 
 Website for ajfisher.me
 
+- uses gatsby to build the required elements.
+- All data is in markdown (need to work out how to make that work)
+- Need to build react and all of the components
+- Ideally keep things broadly in SASS as much as possible and link into react
+- Deploy to S3 appropriately
+- Update to more modern approach to CSS at a later point
+- Deploy using Github actions
+- Utilise Terraform to build out the infra (including SSL etc)
+
 Uses metalsmith to produce the required elements.
 
 Install:
 
 ```
 git clone https://github.com/ajfisher/ajfisher.me
-npm install
 ```
+
+Repo layout
+
+- infra
+- site
+- utils
+- Makefile
+
+
+Make commands
+
 
 Usage:
 
