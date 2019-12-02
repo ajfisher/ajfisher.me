@@ -1,5 +1,12 @@
 const path = require(`path`);
 
+exports.onCreateNode = ({ node }) => {
+  // this is to try and resolve the issues with the pathing
+//  if (node.sourceInstanceName === 'image') {
+//    console.log(node);
+//  }
+};
+
 exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
   const result = await graphql(`
