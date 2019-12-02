@@ -15,7 +15,7 @@ help:
 
 clean-site:
 	@echo 'Cleans all of the api files up'
-	cd ./site  && rm -rf node_modules && rm -rf coverage
+	cd ./site  && gatsby clean && rm -rf node_modules && rm -rf coverage
 	@echo 'Files cleaned up'
 
 clean-meta:
