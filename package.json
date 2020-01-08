@@ -22,12 +22,6 @@
     "eslint": "^6.8.0",
     "eslint-config-react-app": "^5.1.0",
     "eslint-plugin-import": "^2.19.1",
-    "eslint-plugin-react": "^7.17.0",
-    "gatsby-cli": "^2.8.14",
-    "gatsby-image": "^2.2.37",
-    "gatsby-remark-images": "^3.1.39",
-    "gatsby-remark-reading-time": "^1.1.0",
-    "gatsby-remark-relative-images": "^0.2.3",
-    "humanize-plus": "^1.8.2"
+    "eslint-plugin-react": "^7.17.0"
   }
 }
