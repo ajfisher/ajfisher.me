@@ -3,6 +3,7 @@ module.exports = {
     title: `AJ Fisher Website`,
     description: `Personal website of AJFisher - technologist`,
     author: `@ajfisher`,
+    siteURL: 'https://ajfisher.me'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,10 +22,13 @@ module.exports = {
         ignore: [`**/\.*`],
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-reading-time`,
           {
             resolve: `gatsby-remark-relative-images`
           },
@@ -32,13 +36,27 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1000,
+              backgroundColor: `none`,
+              quality: 90,
+              withWebp: { quality: 90 },
+              showCaptions: true,
+              disableBgImage: true
             },
+          },
+          {
+            resolve: `gatsby-remark-responsive-image`,
+            options: {
+              maxWidth: 1000,
+              backgroundColor: `none`,
+              quality: 90,
+              withWebp: { quality: 90 },
+              showCaptions: true,
+              disableBgImage: true
+            }
           }
         ]
       }
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
