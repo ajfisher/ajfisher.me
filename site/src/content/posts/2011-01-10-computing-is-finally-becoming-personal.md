@@ -4,13 +4,7 @@ date: 2011-01-10 11:43:30+00:00
 layout: post.hbt
 slug: computing-is-finally-becoming-personal
 title: Computers are finally becoming personal
-tags:
-- Consumer Electronics
-- android
-- Apple
-- internet
-- media
-- mobile
+tags: Consumer Electronics, android, Apple, internet, media, mobile
 listimage: /img/posts/zenith.jpg
 ---
 

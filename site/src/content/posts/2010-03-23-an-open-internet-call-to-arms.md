@@ -4,12 +4,7 @@ date: 2010-03-23 23:03:01+00:00
 layout: post.hbt
 slug: an-open-internet-call-to-arms
 title: An Open Internet call to arms
-tags:
-- censorship
-- government
-- internet
-- media
-- rant
+tags: censorship, government, internet, media, rant
 listimage: /img/posts/taped_shut.jpg
 
 ---

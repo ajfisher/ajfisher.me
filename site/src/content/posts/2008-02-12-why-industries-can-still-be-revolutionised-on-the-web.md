@@ -4,12 +4,7 @@ date: 2008-02-12 04:56:00+00:00
 layout: post.hbt
 slug: why-industries-can-still-be-revolutionised-on-the-web
 title: Why industries can still be revolutionised on the web
-tags:
-- general
-- media
-- rant
-- W3C
-- web
+tags: general, media, rant, W3C, web
 ---
 
 I'm a bit of a cynic really. Anyone that's trawled through the depths of this blog will know that I have a fairly acid tongue when it comes to technology. I am a walking example of the phrase "familiarity breeds contempt".

@@ -5,13 +5,9 @@ date: 2007-11-02 11:44:00+00:00
 layout: post.hbt
 slug: fah-goes-number-1-but-we-could-do-better
 title: FAH goes number 1 but we could do better
-wordpress_id: 18
 categories:
 - general
-tags:
-- distributed computing
-- gaming
-- supercomputers
+tags: distributed computing, gaming, supercomputers
 ---
 
 [Folding at home](http://folding.stanford.edu/) (FAH) has taken the [Guiness World Record ](http://www.guinnessworldrecords.com/)for being the most powerful distributed computing network with a top speed of over 1 petaflop - (a thousand trillion calculations per second).

@@ -5,15 +5,10 @@ date: 2007-08-25 11:28:00+00:00
 layout: post.hbt
 slug: jquery-saves-the-day
 title: JQuery saves the day?
-wordpress_id: 15
 categories:
 - development
 - web
-tags:
-- css
-- javascript
-- jquery
-- web
+tags: css, javascript, jquery, web
 ---
 
 If you haven't come across it yet there is a javascript library called [JQuery](http://jquery.com/) which is being developed as an open source project, designed to give us better control over our web pages and the things we can do with them.

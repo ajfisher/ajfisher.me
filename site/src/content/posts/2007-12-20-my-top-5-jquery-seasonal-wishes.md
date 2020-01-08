@@ -5,13 +5,9 @@ date: 2007-12-20 15:41:00+00:00
 layout: post.hbt
 slug: my-top-5-jquery-seasonal-wishes
 title: My top 5 jQuery seasonal wishes
-wordpress_id: 28
 categories:
 - development
-tags:
-- javascript
-- jquery
-- web
+tags: javascript, jquery, web
 ---
 
 I've waxed lyrical about jQuery before, I've been using it a lot to do worker code which I just can't be bothered to hand write any more. Not least because jQuery handles all the little browser inconsistencies for me so the code I actually call into a page is infinitely more maintainable, especially if someone follows behind who maybe isn't so up to speed with JavaScript as I am.

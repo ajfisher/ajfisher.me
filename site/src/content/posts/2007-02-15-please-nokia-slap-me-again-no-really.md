@@ -4,9 +4,7 @@ date: 2007-02-15 13:56:00+00:00
 layout: post.hbt
 slug: please-nokia-slap-me-again-no-really
 title: please nokia slap me again - no really
-tags:
-- mobile
-- nokia
+tags: mobile, nokia
 ---
 
 I love Nokia phones. In fact you could probably say that I have had a love affair with Nokia devices for over the last 10 years ever since my first one.

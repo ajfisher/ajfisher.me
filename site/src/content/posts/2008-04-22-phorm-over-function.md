@@ -4,12 +4,7 @@ date: 2008-04-22 07:43:00+00:00
 layout: post.hbt
 slug: phorm-over-function
 title: Phorm over function?
-tags:
-- internet
-- media
-- privacy
-- security
-- web
+tags: internet, media, privacy, security, web
 ---
 
 Phorm is, and will continue to be for some time I think a hugely divisive issue online. [BBC have another story today about it](http://news.bbc.co.uk/1/hi/technology/7359024.stm), this time having spoken to the various security companies like F-Secure, McAffee etc about whether they will flag a message to the user about whether Phorm has been enabled or not.

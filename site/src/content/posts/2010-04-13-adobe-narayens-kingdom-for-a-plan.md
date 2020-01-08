@@ -4,13 +4,7 @@ date: 2010-04-13 12:39:35+00:00
 layout: post.hbt
 slug: adobe-narayens-kingdom-for-a-plan
 title: Adobe - Narayen's kingdom for a plan...
-tags:
-- Adobe
-- Apple
-- google
-- media
-- strategy
-- web
+tags: Adobe, Apple, google, media, strategy, web
 listimage: /img/posts/fortune_cookie.jpg
 ---
 
