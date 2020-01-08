@@ -1,46 +1,53 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
+/** Core site layout **/
+import React from 'react'
+import PropTypes from 'prop-types';
+import { useStaticQuery, graphql } from 'gatsby';
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import PostHeader from './header';
+import Article from './article';
 
-import Header from "./header"
-import "./layout.css"
-
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
+const useSiteMetadata = () => {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            description
+            author
+            siteURL
+          }
         }
       }
-    }
-  `)
+    `,
+  );
+  return site.siteMetadata;
+};
+
+const Layout = ({ children, title, date, excerpt,
+  featuredImage, featuredImageBy, featuredImageLink, path, readingTime}) => {
+
+  const {siteURL} = useSiteMetadata();
+  const urlpath = `${siteURL}${path}`;
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      <PostHeader title={title} date={date}
+        excerpt={excerpt} featuredImage={featuredImage}
+        readingTime={readingTime} />
+      <main className="wrapper">
+        <Article title={title} url={urlpath}
+          featuredImageBy={featuredImageBy} featuredImageLink={featuredImageLink}>
+            {children}
+        </Article>
+        <aside>
+          <nav>Here is the nav</nav>
+          <postdata>Here is the post data</postdata>
+        </aside>
+      </main>
+      <footer>
+        © {new Date().getFullYear()}, Built with
+      </footer>
     </>
   )
 }

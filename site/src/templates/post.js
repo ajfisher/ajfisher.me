@@ -1,48 +1,70 @@
 import React from "react"
-import { graphql } from "gatsby"
-export default function Template({ data }) {
-  console.log(data)
-  const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+import { StaticQuery, graphql } from "gatsby"
+
+import Layout from "../components/layout"
+
+export default function Template({ data, location }) {
+  const { markdownRemark, imageSharp } = data // data.markdownRemark holds your post data
+  const { fields, frontmatter, html } = markdownRemark
+
+  let featuredImageSrc;
+  try {
+    const { sizes: featuredImageSizes = {} } = imageSharp;
+    const { src } = featuredImageSizes;
+    featuredImageSrc = src;
+  } catch (e) {
+    // just pass on it
+    featuredImageSrc = undefined;
+  }
+
+  // console.log('image', data);
+
   return (
-    <div className="blog-post">
-      <h1>{frontmatter.title}</h1>
-      <h2>{frontmatter.date}</h2>
-      <p>{frontmatter.excerpt}</p>
-      <p>{frontmatter.featureimage}</p>
-      <div
-        className="blog-post-content"
+    <Layout title={frontmatter.title} date={frontmatter.date}
+      excerpt={frontmatter.excerpt} featuredImage={featuredImageSrc}
+      featuredImageBy={frontmatter.imageby} featuredImageLink={frontmatter.imagelink}
+      readingTime={fields.readingTime} path={location.pathname}
+    >
+      <section
+        className="content"
         dangerouslySetInnerHTML={{ __html: html }}
       />
-    </div>
+    </Layout>
   )
 }
 
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query($slug: String!, $featuredImage: String) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY-MM-DD")
         slug
         title
         excerpt
         featureimage
+        imageby
+        imagelink
+      }
+      fields {
+        readingTime {
+          minutes
+          words
+        }
       }
     }
+		imageSharp(resolutions: {originalName: {eq: $featuredImage}}) {
+			resolutions {
+				src
+				srcSet
+				width
+				height
+			}
+			sizes {
+				src
+				srcSet
+				sizes
+			}
+		}
   }
-`
-
-const imageQuery = graphql`
-{
-  file(relativePath: {eq: "posts/planes.jpg"}) {
-    id
-    childImageSharp {
-      fixed(width: 1000) {
-        srcSet
-        src
-      }
-    }
-  }
-}
-`
+`;
