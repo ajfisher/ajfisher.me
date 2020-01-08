@@ -34,7 +34,7 @@ install: install-site
 	npm install
 
 start:
-	cd ./site && gatsby develop
+	cd ./site && gatsby develop -H 0.0.0.0
 
 serve:
 	cd ./site && gatsby serve
