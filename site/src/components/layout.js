@@ -3,9 +3,9 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import PostHeader from './header';
 import Article from './article';
-import Tags from './tags';
+import PostHeader from './header';
+import PostData from './postdata';
 
 const useSiteMetadata = () => {
   const { site } = useStaticQuery(
@@ -43,9 +43,7 @@ const Layout = ({ children, title, date, excerpt,
         </Article>
         <aside>
           <nav>Here is the nav</nav>
-          <postdata>Here is the post data
-            <Tags>{tags}</Tags>
-          </postdata>
+          <PostData tags={tags} title={title} publicationDate={date} author="ajfisher"/>
         </aside>
       </main>
       <footer>
