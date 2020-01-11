@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import PostHeader from './header';
 import Article from './article';
+import Tags from './tags';
 
 const useSiteMetadata = () => {
   const { site } = useStaticQuery(
@@ -25,7 +26,7 @@ const useSiteMetadata = () => {
 };
 
 const Layout = ({ children, title, date, excerpt,
-  featuredImage, featuredImageBy, featuredImageLink, path, readingTime}) => {
+  featuredImage, featuredImageBy, featuredImageLink, path, readingTime, tags}) => {
 
   const {siteURL} = useSiteMetadata();
   const urlpath = `${siteURL}${path}`;
@@ -42,7 +43,9 @@ const Layout = ({ children, title, date, excerpt,
         </Article>
         <aside>
           <nav>Here is the nav</nav>
-          <postdata>Here is the post data</postdata>
+          <postdata>Here is the post data
+            <Tags>{tags}</Tags>
+          </postdata>
         </aside>
       </main>
       <footer>
