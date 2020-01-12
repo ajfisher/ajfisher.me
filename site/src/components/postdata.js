@@ -12,10 +12,15 @@ const Published = styled.p`
   color: var(--light-text-colour);
   background: var(--dark-grey);
   box-shadow: 0.5rem 0 0 var(--dark-grey), -0.5rem 0 0 var(--dark-grey);
+  box-decoration-break: clone;
 `;
 
 const Section = styled.section`
-  order: 1;
+  padding: 0 2rem;
+
+  @media only screen and ${device.large} {
+    padding: 0;
+  }
 `;
 
 const Title = styled.h2`

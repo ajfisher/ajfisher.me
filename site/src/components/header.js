@@ -59,11 +59,11 @@ const Container = styled.div`
 const Title = styled.h1`
   background-color: var(--base);
   padding: 1.5rem 2rem;
-  margin: 0rem 2rem;
+  margin: 0rem 5vw;
   color: var(--light-text-colour);
   min-height: 25vh;
   max-height: 35vh;
-  width: 67vw;
+  width: 60vw;
   border-radius: 0.2rem;
 
   @media only screen and ${device.medium} {
@@ -73,13 +73,14 @@ const Title = styled.h1`
 
   @media only screen and ${device.large} {
     /**min-height: 35rem;**/
+    margin: 0;
   }
 `;
 
 const Para = styled.p`
   color: var(--light-text-colour);
   /** clear: left; **/
-  padding: 0 2rem;
+  padding: 0 5vw;
   font-size: 2rem;
   margin: 1.5rem 0rem;
 

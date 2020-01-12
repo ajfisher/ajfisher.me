@@ -75,14 +75,14 @@ h1 {
 h2 {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
-    font-size: 5rem;
-    border-radius: 0.2rem;
+    font-size: 4rem;
+    /** border-radius: 0.2rem;**/
 }
 
 h3 {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 a {
@@ -115,23 +115,17 @@ article h3{
     background-color: var(--base);
     color: var(--light-text-colour);
     display: inline;
-    /** use this to get consistent edge on outside of wrap**/
-    box-shadow: 3rem 0 0 var(--base), -3rem 0 0 var(--base);
-    margin: 0;
-    padding: 0px 0px 0.5rem;
-    box-decoration-break: clone;
 }
 
 article h4 {
-    /** padding: 0.5rem 3rem; **/
     margin:0;
     font-family: var(--heading-font-family);
     color: var(--dark-text-colour);
 }
 
 article figure.gatsby-resp-image-figure {
-    width: 100vw;
-    margin-left: -5vw;
+    width: 100%;
+    margin-left: 0;
     position: relative;
 }
 
@@ -171,8 +165,8 @@ p.has-pullquote::before {
 article blockquote {
     font-style: italic;
     border-left: 2px solid var(--base);
-    margin-left: -3rem;
-    padding-left: 3rem;
+    /** margin-left: -2rem;
+    padding-left: 2rem; **/
 }
 
 /* MEDIA QUERIES FOR Medium Size display */

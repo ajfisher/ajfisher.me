@@ -1,15 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const LinkedTag = ({children, className, href}) => {
-  return <a className={className} href={href}>{children}</a>
-};
+const TagPara = styled.p`
 
-const Tag = styled(LinkedTag)`
-  font-size: 2rem;
-  white-space: nowrap;
-  margin-right: 0.5rem;
+  & a {
+    font-size: 2rem;
+  }
 `;
+
+const Tag = ({children, className, href}) => {
+  const gap = ` `;
+  return <><a className={className} href={href}>{children}</a> </>
+};
 
 const Tags = ({children}) => {
 
@@ -22,7 +24,7 @@ const Tags = ({children}) => {
   });
 
   return (
-    <p>Tagged: {taglist}</p>
+    <TagPara>Tagged: {taglist}</TagPara>
   );
 };
 
