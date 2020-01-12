@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+
 import { device } from './devices';
 
 const Navigation = styled.nav`
@@ -19,6 +23,10 @@ const Navigation = styled.nav`
 
     & li:first-child {
       margin-top: 0;
+    }
+
+    & li.icons a {
+      padding-right: 1rem;
     }
   }
 
@@ -47,10 +55,18 @@ const Nav = ({children}) => {
         <li><a href="/who">Who is @ajfisher</a></li>
         <li><a href="/dis-everything">Disclaimer & Disclosure</a></li>
         <li className="icons">
-          <a href="https://twitter.com/ajfisher" target="_blank"><i class="fa fa-tw"></i></a>
-          <a href="https://github.com/ajfisher" target="_blank"><i class="fa fa-github"></i></a>
-          <a href="https://instagram.com/andrewjfisher" target="_blank"><i class="fa fa-insta"></i></a>
-          <a href="mailto:ajfisher.td@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
+          <a href="https://twitter.com/ajfisher" target="_blank">
+            <FontAwesomeIcon icon={faTwitter}/>
+          </a>
+          <a href="https://github.com/ajfisher" target="_blank">
+            <FontAwesomeIcon icon={faGithub}/>
+          </a>
+          <a href="https://instagram.com/andrewjfisher" target="_blank">
+            <FontAwesomeIcon icon={faInstagram}/>
+          </a>
+          <a href="mailto:ajfisher.td@gmail.com" target="_blank">
+            <FontAwesomeIcon icon={faEnvelope}/>
+          </a>
         </li>
       </ul>
     </Navigation>
