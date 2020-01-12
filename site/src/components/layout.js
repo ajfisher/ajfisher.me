@@ -10,6 +10,8 @@ import PostData from './postdata';
 
 import { device } from './devices';
 
+import Nav from './nav';
+
 const Main = styled.main`
   display: flex;
   flex-direction: column;
@@ -68,10 +70,6 @@ const Aside = styled.aside`
       order: 2;
     }
   }
-`;
-
-const Nav = styled.nav`
-
 `;
 
 const Layout = ({ children, title, date, excerpt,
