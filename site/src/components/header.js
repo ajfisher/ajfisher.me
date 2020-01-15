@@ -54,6 +54,11 @@ const Container = styled.div`
   @media only screen and ${device.large} {
     max-width: 687px;
   }
+
+  @media only screen and ${device.wide} {
+    max-width: 1026px;
+    margin: 0 auto;
+  }
 `
 
 const Title = styled.h1`
@@ -78,6 +83,11 @@ const Title = styled.h1`
     /**margin: 0;**/
     font-size: 6rem;
     line-height: 6rem;
+  }
+  @media only screen and ${device.wide} {
+    min-width: unset;
+    max-width: unset;
+    width: 550px;
   }
 `;
 

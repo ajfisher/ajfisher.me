@@ -189,8 +189,8 @@ article blockquote {
    =============== */
 
     .wrapper {
-        width: 1026px; /* 1140px less 33% for right padding and 10% either side margin */
-        margin: 0 auto !important;
+        /** width: 1026px; /* 1140px less 33% for right padding and 10% either side margin */
+        /** margin: 0 auto !important; **/
     }
 
 }
