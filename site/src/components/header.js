@@ -65,7 +65,7 @@ const Title = styled.h1`
   max-height: 35vh;
   width: min-content;
   min-width: 60vw;
-  max-width: 65vw;
+  max-width: 70vw;
   border-radius: 0.2rem;
 
   @media only screen and ${device.medium} {

@@ -37,8 +37,12 @@ const Navigation = styled.nav`
       margin-top: 0;
     }
 
-    & li.icons a {
-      padding-right: calc(var(--gutter));
+    & li.icons {
+      font-size: 5rem;
+
+      & a {
+        padding-right: calc(var(--gutter));
+      }
     }
   }
 
