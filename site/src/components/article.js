@@ -33,8 +33,13 @@ const StyledArticle = styled.article`
       padding: 0 var(--gutter);
     }
 
-    & p {
+    & p, & ul > li {
       font-size: 2.2rem;
+    }
+
+    & ul {
+      margin: 0 var(--gutter);
+      margin-left: calc(-1 * var(--gutter));
     }
 
     & p img {
