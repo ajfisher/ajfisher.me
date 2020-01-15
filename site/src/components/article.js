@@ -12,10 +12,10 @@ const StyledArticle = styled.article`
     /** Article is a flex item when it's bigger **/
     flex-grow: 2;
     align-self: flex-start;
-    max-width: 70%;
+    width: 61vw;
 
     & section {
-      padding: 0 3rem;
+      /**padding: 0 3rem;**/
     }
   }
 
@@ -44,6 +44,12 @@ const StyledArticle = styled.article`
 
     & p img {
       width: 100%;
+    }
+
+    & p iframe {
+      margin-left: calc(-1 * var(--gutter));
+      width: 100vw;
+      max-width: 100vw !important;
     }
 
     & pre {

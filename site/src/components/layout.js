@@ -36,17 +36,16 @@ const Aside = styled.aside`
   /** Aside is a flex item **/
   width: 100%;
 
-
   @media only screen and ${device.large} {
-    /** Aside is a flex item at bigger resolutions
+    /** Aside is a flex item at bigger resolutions **/
     flex-grow: 1;
     align-self: flex-start;
-    max-width: 28%;
-    top: 3rem;
-    position: sticky;
-    height: min-content;
-    padding: 0;
+    top: var(--gutter);
     margin-top: var(--gutter);
+    position: sticky;
+    padding: 0 var(--gutter);
+    height: min-content;
+    width: 28vw;
 
     /** But it is also a container of the nav and post data **/
     display: flex;

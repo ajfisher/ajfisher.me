@@ -24,8 +24,9 @@ const TextHeader = styled.header`
           box-shadow: 0 0.65rem 0.8rem #aaa;
 
   @media only screen and ${device.medium} {
-    min-height: 90vh;
-    padding: 2.5vh 0;
+    min-height: 70vh;
+    max-height: 90vh;
+    padding: var(--gutter) 0;
   }
 
   // put the little shadow along the bottom for big screens.
@@ -46,13 +47,12 @@ const Container = styled.div`
   padding-top: 0rem;
 
   @media only screen and ${device.medium} {
-    width: 90vw;
-    margin: 0 5vw;
+    /** width: 90vw;
+    margin: 0 5vw;**/
   }
 
   @media only screen and ${device.large} {
-    width: 687px;
-    padding-right: 339px;
+    max-width: 687px;
   }
 `
 
@@ -69,13 +69,15 @@ const Title = styled.h1`
   border-radius: 0.2rem;
 
   @media only screen and ${device.medium} {
-    padding: 3.5rem 3rem;
+    padding: var(--gutter);
     /** margin-top: 9rem; **/
   }
 
   @media only screen and ${device.large} {
     /**min-height: 35rem;**/
-    margin: 0;
+    /**margin: 0;**/
+    font-size: 6rem;
+    line-height: 6rem;
   }
 `;
 
@@ -83,11 +85,12 @@ const Para = styled.p`
   color: var(--light-text-colour);
   padding: 0 var(--gutter);
   font-size: 2rem;
-  margin: 1.5rem 0rem;
+  margin: var(--gutter) 0;
 
   @media only screen and ${device.medium} {
-    font-size: 3rem;
-    padding: 0 3.5rem;
+    font-size: 2.2rem;
+    padding: 0 var(--gutter);
+    margin: calc(0.5 * var(--gutter)) 0;
   }
 `;
 
@@ -100,7 +103,7 @@ const Lede = styled(Para)`
   font-weight: normal;
 
   @media only screen and ${device.medium} {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
 `;
 

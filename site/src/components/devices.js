@@ -3,7 +3,7 @@
 const size = {
   small: '401px',
   medium: '501px',
-  large: '801px',
+  large: '751px',
   wide: '1140px'
 };
 

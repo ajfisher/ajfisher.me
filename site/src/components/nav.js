@@ -40,8 +40,16 @@ const Navigation = styled.nav`
     & li.icons {
       font-size: 5rem;
 
+      @media only screen and ${device.large} {
+        font-size: inherit;
+      }
+
       & a {
         padding-right: calc(var(--gutter));
+
+        @media only screen and ${device.large} {
+          padding-right: calc(0.5 * var(--gutter));
+        }
       }
     }
   }
