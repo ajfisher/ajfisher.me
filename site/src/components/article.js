@@ -6,48 +6,58 @@ import { graphql } from 'gatsby';
 import { device } from './devices';
 
 const StyledArticle = styled.article`
-  flex-grow: 1;
-  align-self: flex-start;
   width: 100%;
 
   @media only screen and ${device.large} {
+    /** Article is a flex item when it's bigger **/
     flex-grow: 2;
-    max-width: 61%;
+    align-self: flex-start;
+    max-width: 70%;
 
     & section {
       padding: 0 3rem;
     }
   }
 
-  & section h2, & section h3 {
-    box-shadow: 2rem 0 0 var(--base), -2rem 0 0 var(--base);
-    margin: 0;
-    margin-left: 2rem;
-    padding: 0px 0px 0.5rem;
-    box-decoration-break: clone;
-  }
+  & section {
 
-  & section p,
-  & section pre {
-    padding: 0 2rem;
-  }
+    & h2, & h3 {
+      box-shadow: var(--gutter) 0 0 var(--base), calc(var(--gutter) * -1) 0 0 var(--base);
+      margin: 0;
+      margin-left: var(--gutter);
+      padding: 0px 0px 0.5rem;
+      box-decoration-break: clone;
+    }
 
-  & section p {
-    font-size: 2.2rem;
-  }
-
-  & section pre code {
-    font-size: 2rem;
-  }
-
-  & section blockquote {
-    margin: auto 0.2rem;
-    margin-right: 0;
-    padding: 0 1.6rem;
-    padding-right: 2rem;
+    & p, & pre {
+      padding: 0 var(--gutter);
+    }
 
     & p {
-      padding: 0;
+      font-size: 2.2rem;
+    }
+
+    & p img {
+      width: 100%;
+    }
+
+    & pre {
+      overflow-x: scroll;
+
+      & code {
+        font-size: 2rem;
+      }
+    }
+
+    & blockquote {
+      margin: auto var(--margin-indent);
+      margin-right: 0;
+      padding: 0 calc(var(--gutter) - var(--margin-indent) - 2px);
+      padding-right: var(--gutter);
+
+      & p {
+        padding: 0;
+      }
     }
   }
 

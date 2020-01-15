@@ -11,7 +11,7 @@ const TextHeader = styled.header`
   border-bottom: 2px solid var(--highlight);
   min-height: 63vh;
   margin: 0;
-  padding: 2rem 0;
+  padding: var(--gutter) 0;
 
   /** Put the background gradient in**/
   background: var(--darkened-grey);
@@ -58,12 +58,14 @@ const Container = styled.div`
 
 const Title = styled.h1`
   background-color: var(--base);
-  padding: 1.5rem 2rem;
-  margin: 0rem 5vw;
+  padding: var(--gutter);
+  margin: 0rem var(--gutter);
   color: var(--light-text-colour);
   min-height: 25vh;
   max-height: 35vh;
-  width: 60vw;
+  width: min-content;
+  min-width: 60vw;
+  max-width: 65vw;
   border-radius: 0.2rem;
 
   @media only screen and ${device.medium} {
@@ -79,8 +81,7 @@ const Title = styled.h1`
 
 const Para = styled.p`
   color: var(--light-text-colour);
-  /** clear: left; **/
-  padding: 0 5vw;
+  padding: 0 var(--gutter);
   font-size: 2rem;
   margin: 1.5rem 0rem;
 

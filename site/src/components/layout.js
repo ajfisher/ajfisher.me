@@ -13,18 +13,16 @@ import { device } from './devices';
 import Nav from './nav';
 
 const Main = styled.main`
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  /** width: 90%; **/
-  /** margin: 0 5%; **/
+  width: 100%;
   box-sizing: border-box;
 
   @media only screen and ${device.large} {
+    /** Main is a flex container when it's bigger*/
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 
   @media only screen and ${device.wide} {
@@ -36,27 +34,28 @@ const Main = styled.main`
 
 const Aside = styled.aside`
   /** Aside is a flex item **/
-  flex-grow: 1;
-  align-self: flex-start;
   width: 100%;
 
-  /** But it is also a container **/
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 
   @media only screen and ${device.large} {
+    /** Aside is a flex item at bigger resolutions
     flex-grow: 1;
-    max-width: 31%;
+    align-self: flex-start;
+    max-width: 28%;
     top: 3rem;
     position: sticky;
     height: min-content;
-    padding: 0 3rem;
+    padding: 0;
+    margin-top: var(--gutter);
+
+    /** But it is also a container of the nav and post data **/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
-  /** change the order depending on column or row **/
+  /** change the order if it's a row layout.**/
   & nav {
-    order: 2;
 
     @media only screen and ${device.large} {
       order: 1;
@@ -64,7 +63,6 @@ const Aside = styled.aside`
   }
 
   & section {
-    order: 1;
 
     @media only screen and ${device.large} {
       order: 2;
@@ -89,8 +87,8 @@ const Layout = ({ children, title, date, excerpt,
             {children}
         </Article>
         <Aside>
-          <Nav>Here is the nav</Nav>
           <PostData tags={tags} title={title} publicationDate={date} author="ajfisher"/>
+          <Nav/>
         </Aside>
       </Main>
       <footer>

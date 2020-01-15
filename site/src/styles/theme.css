@@ -43,5 +43,25 @@
     --dark-text-colour: var(--dark-grey);
     --light-text-colour: rgba(255, 255, 255, 0.95);
 
+    --gutter-small: 1rem;
+    --gutter-medium: 2rem;
+    --gutter-large: 4rem;
+
+    --gutter: var(--gutter-small);
+
+    --margin-indent: calc(0.2 * var(--gutter));
+}
+
+/** change gutter values depending on screen size **/
+@media only screen and (min-width: 501px) { /** Medium up **/
+    root: {
+        --gutter: var(--gutter-medium);
+    }
+}
+
+@media only screen and (min-width: 1140px) { /** wide up **/
+    root: {
+        --gutter: var(--gutter-large);
+    }
 }
 

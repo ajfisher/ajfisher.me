@@ -9,16 +9,28 @@ import { device } from './devices';
 
 const Navigation = styled.nav`
 
-  padding: 0 2rem;
+  padding: 0 var(--gutter);
+
+  @media only screen and ${device.large} {
+    padding: 0;
+  }
 
   & ul {
-    margin: 0 0 3rem 0;
+    margin: 0 0 var(--gutter) 0;
     padding: 0;
     list-style-type: none;
 
+    @media only screen and ${device.large} {
+      margin: 0;
+    }
+
     & li {
       font-size: 4rem;
-      margin: 0.6rem 0;
+      margin: 0;
+
+      @media only screen and ${device.large} {
+        font-size: inherit;
+      }
     }
 
     & li:first-child {
@@ -26,7 +38,7 @@ const Navigation = styled.nav`
     }
 
     & li.icons a {
-      padding-right: 1rem;
+      padding-right: calc(var(--gutter));
     }
   }
 

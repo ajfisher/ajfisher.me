@@ -13,10 +13,15 @@ const Published = styled.p`
   background: var(--dark-grey);
   box-shadow: 0.5rem 0 0 var(--dark-grey), -0.5rem 0 0 var(--dark-grey);
   box-decoration-break: clone;
+
+  @media only screen and ${device.large} {
+    box-shadow: none;
+    padding: 0.5rem;
+  }
 `;
 
 const Section = styled.section`
-  padding: 0 2rem;
+  padding: 0 var(--gutter);
 
   @media only screen and ${device.large} {
     padding: 0;
@@ -30,6 +35,8 @@ const Title = styled.h2`
     display: block;
     font-size: 4rem;
     color: var(--base);
+    margin: 2.5rem 0;
+    line-height: 0.9;
   }
 `;
 

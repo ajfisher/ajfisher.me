@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const TagPara = styled.p`
+  margin-bottom: var(--gutter);
 
   & a {
     font-size: 2rem;
