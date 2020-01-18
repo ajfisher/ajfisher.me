@@ -70,37 +70,55 @@ const Title = styled.h1`
   max-height: 35vh;
   width: min-content;
   min-width: 60vw;
-  max-width: 70vw;
+  max-width: calc(100% - 2 * var(--gutter));
   border-radius: 0.2rem;
+  box-sizing: border-box;
+  font-size: 4rem;
+  line-height: 4rem;
 
   @media only screen and ${device.medium} {
     padding: var(--gutter);
-    /** margin-top: 9rem; **/
+    max-width: 70vw;
+    font-size: 5rem;
+    line-height: 5rem;
   }
 
   @media only screen and ${device.large} {
-    /**min-height: 35rem;**/
-    /**margin: 0;**/
     font-size: 6rem;
     line-height: 6rem;
+    width: 61vw;
+    max-height: 40vh;
   }
   @media only screen and ${device.wide} {
     min-width: unset;
     max-width: unset;
-    width: 550px;
+    min-height: 35vh;
+    max-height: 45vh;
+    margin: 0;
+    width: 45%;
   }
 `;
 
 const Para = styled.p`
   color: var(--light-text-colour);
   padding: 0 var(--gutter);
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: var(--gutter) 0;
+  box-sizing: border-box;
 
   @media only screen and ${device.medium} {
-    font-size: 2.2rem;
+    font-size: 2rem;
     padding: 0 var(--gutter);
     margin: calc(0.5 * var(--gutter)) 0;
+  }
+
+  @media only screen and ${device.large} {
+    font-size: 2.2rem;
+    max-width: 61vw;
+  }
+
+  @media only screen and ${device.wide} {
+    max-width: 61%;
   }
 `;
 
@@ -141,7 +159,7 @@ const PostHeader = ({ title, date, excerpt, featuredImage, readingTime }) => {
   return (
     <Header featuredImage={featuredImage}>
       <Container className="wrapper">
-        <Title className="title">{title}</Title>
+        <Title>{title}</Title>
         <PublishedDate className="date">Published: {formatted_date}</PublishedDate>
         { excerpt.length > 0 &&
           <Lede>{excerpt}</Lede>

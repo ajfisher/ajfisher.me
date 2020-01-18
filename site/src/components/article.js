@@ -29,12 +29,20 @@ const StyledArticle = styled.article`
       box-decoration-break: clone;
     }
 
+    h4 {
+      margin: 0 var(--gutter);
+    }
+
     & p, & pre {
       padding: 0 var(--gutter);
     }
 
     & p, & ul > li {
-      font-size: 2.2rem;
+      font-size: 2rem;
+
+      @media only screen and ${device.large} {
+        font-size: 2.2rem;
+      }
     }
 
     & ul {
@@ -49,7 +57,7 @@ const StyledArticle = styled.article`
     & p iframe {
       margin-left: calc(-1 * var(--gutter));
       width: 100vw;
-      max-width: 100vw !important;
+      max-width: calc(100% + 2 * var(--gutter)) !important;
     }
 
     & pre {

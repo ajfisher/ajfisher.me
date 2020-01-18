@@ -33,10 +33,14 @@ const Title = styled.h2`
 
   @media only screen and ${device.large} {
     display: block;
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--base);
-    margin: 2.5rem 0;
+    margin: var(--gutter) 0;
     line-height: 0.9;
+  }
+
+  @media only screen and ${device.wide} {
+    font-size: 4rem;
   }
 `;
 

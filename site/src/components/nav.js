@@ -25,11 +25,13 @@ const Navigation = styled.nav`
     }
 
     & li {
-      font-size: 4rem;
+      font-size: 3.5rem;
+      line-height: 4rem;
       margin: 0;
 
       @media only screen and ${device.large} {
         font-size: inherit;
+        line-height: inherit;
       }
     }
 
