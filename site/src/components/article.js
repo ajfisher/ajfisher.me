@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Location } from '@reach/router';
 import { graphql } from 'gatsby';
 
 import { device } from './devices';
