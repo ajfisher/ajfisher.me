@@ -100,10 +100,10 @@ a:visited:hover {
 }
 
 /** Sets the width of a container **/
-.wrapper {
+/**.wrapper {
     width: 90%;
     margin: 0 5%;
-}
+}**/
 
 /** general article content specific styles **/
 article h1 {
