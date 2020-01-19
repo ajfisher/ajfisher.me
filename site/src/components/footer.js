@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Img from 'gatsby-image';
 
 import { device } from './devices';
+import { PostItem } from './list';
 
 const StyledFooter = styled.footer`
   box-sizing: border-box;
@@ -18,6 +19,9 @@ const StyledFooter = styled.footer`
   background: -webkit-radial-gradient(circle, var(--dark-grey) 0%, var(--darkened-grey) 100% );
   background: radial-gradient(circle, var(--dark-grey) 0%, var(--darkened-grey) 100% );
 
+  & ::selection {
+    background: var(--base);
+  }
 `;
 
 const FooterContainer = styled.div`
@@ -102,7 +106,7 @@ ImageLink.defaultProps = {
   position: '50% 50%'
 };
 
-const Footer = ({}) => {
+const Footer = ({slug}) => {
 
   const data = useStaticQuery(graphql`
     query footerImageQuery {
@@ -129,14 +133,52 @@ const Footer = ({}) => {
           }
         }
       }
+
+      featuredPosts: allMarkdownRemark(filter: {frontmatter: {featured: {eq: true}}},
+        sort: {fields: frontmatter___date, order: DESC})
+        {
+          edges {
+            node {
+              frontmatter {
+                title
+                date(formatString: "YYYY/MM/DD")
+                listimage
+                listimage_position
+                excerpt
+                featureimage
+                featureimage_position
+                slug
+              }
+            }
+          }
+        }
     }
   `);
+
+  // get the featured article
+  const featuredPosts = data.featuredPosts.edges.map((edge) => {
+    return edge.node.frontmatter;
+  });
+
+  let featured = featuredPosts[0]; // latest
+
+  // make sure we don't feature the current post on itself
+  if (featured.slug === slug) {
+    featured = featuredPosts[1]; // second latest
+  }
+
+  featured.url = `/${featured.date}/${featured.slug}`;
+  if (featured.listimage.startsWith('/img/')) {
+    featured.listimage = featured.listimage.substring(5);
+  }
 
   return (
     <StyledFooter>
       <FooterContainer>
         <section>
           <Title>Featured Post</Title>
+          <PostItem url={featured.url} title={featured.title}
+            excerpt={featured.excerpt} image={featured.listimage} />
         </section>
         <section>
           <Title>Latest talk</Title>

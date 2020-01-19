@@ -71,7 +71,8 @@ const Aside = styled.aside`
 `;
 
 const Layout = ({ children, title, date, excerpt,
-  featuredImage, featuredImageBy, featuredImageLink, path, readingTime, tags}) => {
+  featuredImage, featuredImageBy, featuredImageLink,
+  path, readingTime, slug, tags}) => {
 
   const {siteURL} = useSiteMetadata();
   const urlpath = `${siteURL}${path}`;
@@ -91,7 +92,7 @@ const Layout = ({ children, title, date, excerpt,
           <Nav/>
         </Aside>
       </Main>
-      <Footer/>
+      <Footer slug={slug}/>
     </>
   )
 }

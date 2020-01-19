@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 
 export default function Template({ data, location }) {
-  const { markdownRemark, imageSharp } = data // data.markdownRemark holds your post data
+  const { markdownRemark, imageSharp, featuredPosts } = data;
   const { fields, frontmatter, html } = markdownRemark
 
   let featuredImageSrc;
@@ -24,7 +24,7 @@ export default function Template({ data, location }) {
       excerpt={frontmatter.excerpt} featuredImage={featuredImageSrc}
       featuredImageBy={frontmatter.imageby} featuredImageLink={frontmatter.imagelink}
       readingTime={fields.readingTime} path={location.pathname}
-      tags={frontmatter.tags}
+      tags={frontmatter.tags} slug={frontmatter.slug}
     >
       <section
         className="content"
