@@ -21,7 +21,7 @@ const Tags = ({children}) => {
   });
 
   const taglist = tags.map((tagname) => {
-    return <Tag href={`/tags/${tagname}`}>{tagname}</Tag>
+    return <Tag href={`/tags/${tagname}`} key={tagname}>{tagname}</Tag>
   });
 
   return (
