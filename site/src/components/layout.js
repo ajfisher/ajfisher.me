@@ -11,6 +11,7 @@ import PostData from './postdata';
 import { device } from './devices';
 
 import Nav from './nav';
+import Footer from './footer';
 
 const Main = styled.main`
   width: 100%;
@@ -90,9 +91,7 @@ const Layout = ({ children, title, date, excerpt,
           <Nav/>
         </Aside>
       </Main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-      </footer>
+      <Footer/>
     </>
   )
 }
