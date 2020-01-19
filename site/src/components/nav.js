@@ -30,7 +30,7 @@ const Navigation = styled.nav`
       margin: 0;
 
       @media only screen and ${device.large} {
-        font-size: inherit;
+        font-size: 3rem;;
         line-height: inherit;
       }
     }
@@ -43,7 +43,7 @@ const Navigation = styled.nav`
       font-size: 5rem;
 
       @media only screen and ${device.large} {
-        font-size: inherit;
+        font-size: 4rem;
       }
 
       & a {
