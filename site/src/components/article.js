@@ -37,7 +37,7 @@ const StyledArticle = styled.article`
       padding: 0 var(--gutter);
     }
 
-    & p, & ul > li {
+    & p, & ul > li, & blockquote {
       font-size: 2rem;
 
       @media only screen and ${device.large} {
