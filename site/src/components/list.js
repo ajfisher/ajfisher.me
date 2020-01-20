@@ -6,7 +6,7 @@ import Img from 'gatsby-image';
 
 import { device } from './devices';
 
-const ImageLink = styled.div`
+export const ImageLink = styled.div`
   height: 25rem;
 
   border-bottom: 0.5rem solid var(--highlight);
@@ -50,13 +50,10 @@ export const PostItem = ({title, image, url, excerpt}) => {
     }
   `);
 
-
   let i = 0;
   const postImage = postItemImages.edges.find(({node}) => {
     if (node.relativePath == image) return node;
   });
-
-  console.log(postImage);
 
   return (
     <>

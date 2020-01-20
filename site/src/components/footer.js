@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Img from 'gatsby-image';
 
 import { device } from './devices';
-import { PostItem } from './list';
+import { PostItem, ImageLink } from './list';
 
 const StyledFooter = styled.footer`
   box-sizing: border-box;
@@ -81,31 +81,6 @@ const Title = styled.h2`
   margin: var(--gutter) 0;
 `;
 
-const ImageLink = styled.div`
-  height: 25rem;
-
-  border-bottom: 0.5rem solid var(--highlight);
-  border-radius: 0.2rem;
-  margin-bottom: calc(0.5 * var(--gutter));
-  transition: all 0.8s ease;
-
-  @media only screen and ${device.large} {
-    height: 17rem;
-  }
-
-  & div.gatsby-image-wrapper {
-    height: 100%;
-  }
-
-  & img {
-    object-position: ${props => props.position} !important;
-  }
-`;
-
-ImageLink.defaultProps = {
-  position: '50% 50%'
-};
-
 const Footer = ({slug}) => {
 
   const data = useStaticQuery(graphql`
@@ -178,7 +153,8 @@ const Footer = ({slug}) => {
         <section>
           <Title>Featured Post</Title>
           <PostItem url={featured.url} title={featured.title}
-            excerpt={featured.excerpt} image={featured.listimage} />
+            excerpt={featured.excerpt} image={featured.listimage}
+            imagePosition={featured.listimage_position} />
         </section>
         <section>
           <Title>Latest talk</Title>
