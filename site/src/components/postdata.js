@@ -17,7 +17,7 @@ const Published = styled.p`
   @media only screen and ${device.large} {
     box-shadow: none;
     padding: 0.5rem;
-    border-bottom: 0.2rem solid var(--highlight);
+    border-bottom: 0.2rem solid var(--base);
     border-radius: 0.2rem;
   }
 `;
