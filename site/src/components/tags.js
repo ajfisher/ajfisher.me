@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { kebabCase } from '../lib/utils';
+
 const TagPara = styled.p`
   margin-bottom: var(--gutter);
 
@@ -11,7 +13,7 @@ const TagPara = styled.p`
 
 const Tag = ({children, className, href}) => {
   const gap = ` `;
-  return <><a className={className} href={href}>{children}</a> </>
+  return <><a className={className} href={kebabCase(href)}>{children}</a> </>
 };
 
 const Tags = ({children}) => {
