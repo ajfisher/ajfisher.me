@@ -47,6 +47,14 @@ const StyledArticle = styled.article`
     & ul {
       margin: 0 var(--gutter);
       margin-left: calc(-1 * var(--gutter));
+
+      @media only screen and ${device.large} {
+        margin-left: -2rem;
+      }
+
+      @media only screen and ${device.wide} {
+        margin-left: -1rem;
+      }
     }
 
     & p img {
