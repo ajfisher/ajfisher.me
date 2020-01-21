@@ -18,8 +18,6 @@ export default function Template({ data, location }) {
     featuredImageSrc = undefined;
   }
 
-  // console.log('image', data);
-
   return (
     <Layout title={frontmatter.title} date={frontmatter.date}
       excerpt={frontmatter.excerpt} featuredImage={featuredImageSrc}
