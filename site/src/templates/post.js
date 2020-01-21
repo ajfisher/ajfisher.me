@@ -5,7 +5,8 @@ import Layout from "../components/layout"
 
 export default function Template({ data, location }) {
   const { markdownRemark, imageSharp, featuredPosts } = data;
-  const { fields, frontmatter, html } = markdownRemark
+  const { fields, frontmatter, html } = markdownRemark;
+  const { taglist } = fields;
 
   let featuredImageSrc;
   try {
@@ -24,7 +25,7 @@ export default function Template({ data, location }) {
       excerpt={frontmatter.excerpt} featuredImage={featuredImageSrc}
       featuredImageBy={frontmatter.imageby} featuredImageLink={frontmatter.imagelink}
       readingTime={fields.readingTime} path={location.pathname}
-      tags={frontmatter.tags} slug={frontmatter.slug}
+      tags={taglist} slug={frontmatter.slug}
     >
       <section
         className="content"
@@ -46,13 +47,13 @@ export const pageQuery = graphql`
         featureimage
         imageby
         imagelink
-        tags
       }
       fields {
         readingTime {
           minutes
           words
         }
+        taglist
       }
     }
 		imageSharp(resolutions: {originalName: {eq: $featuredImage}}) {

@@ -28,6 +28,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-transformer-remark-tags`,
           `gatsby-remark-reading-time`,
           {
             resolve: `gatsby-remark-relative-images`

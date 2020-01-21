@@ -18,11 +18,7 @@ const Tag = ({children, className, href}) => {
 
 const Tags = ({children}) => {
 
-  const tags = children.split(',').map(item => {
-    return item.trim();
-  });
-
-  const taglist = tags.map((tagname) => {
+  const taglist = children.map((tagname) => {
     return <Tag href={`/tags/${tagname}`} key={tagname}>{tagname}</Tag>
   });
 
