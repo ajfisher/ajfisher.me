@@ -1,11 +1,9 @@
 const path = require(`path`);
 const {fmImagesToRelative} = require('gatsby-remark-relative-images');
+const { kebabCase } = require('./lib/utils');
 
 exports.onCreateNode = ({ node }) => {
   // this is to try and resolve the issues with the pathing
-  // if (node.sourceInstanceName === 'content') {
-    // console.log(node.relativePath);
-  // }
 };
 
 exports.createPages = async ({ actions, graphql }) => {
@@ -24,11 +22,18 @@ exports.createPages = async ({ actions, graphql }) => {
           }
         }
       }
+      tagsGroup: allMarkdownRemark {
+        group(field: fields___taglist) {
+          fieldValue
+        }
+      }
     }
   `)
   if (result.errors) {
     console.error(result.errors)
   }
+
+  // build out the pages for pages and posts
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     // TODO add the listimage in here as well.
     let featuredImage = node.frontmatter.featureimage;
@@ -58,5 +63,17 @@ exports.createPages = async ({ actions, graphql }) => {
         context
       });
     }
+  });
+
+  // now build out a page for each of the tags
+  const tags = result.data.tagsGroup.group;
+  tags.forEach(tag => {
+    createPage({
+      path: `/tagged/${kebabCase(tag.fieldValue)}`,
+      component: path.resolve(`src/templates/tags.js`),
+      context: {
+        tag: tag.fieldValue
+      }
+    });
   });
 }
