@@ -12,6 +12,7 @@ const StyledArticle = styled.article`
     flex-grow: 2;
     align-self: flex-start;
     width: 61vw;
+    max-width: 65%
 
     & section {
       /**padding: 0 3rem;**/
