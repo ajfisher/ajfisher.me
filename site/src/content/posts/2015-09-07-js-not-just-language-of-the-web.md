@@ -39,16 +39,16 @@ Alongside my talk was a hardware workshop and I also wrote an article for
 HasGeek detailing some of this transition we're starting to see.
 
 > Over the last few years I have watched this community evolve from a group of
-    people sharing some code on GitHub and some pics on twitter to a truly global
-    movement where thousands of developers and designers have built real-world
-    physical things controlled with JavaScript. Web developers in particular
-    love to make things but we tend to focus on the digital. Even our language
-    speaks to this, where we talk about code as a "craft" as much as engineering
-    and we "build" a site. It's this aptitude and interest in building that is
-    one of the key elements in why NodeBots and JS hardware is taking off. I
-    have watched the satisfaction of someone who's only experience of hardware
-    is putting batteries into an object build a sensor that determines if the
-    the coffee machine is free or in use.
+people sharing some code on GitHub and some pics on twitter to a truly global
+movement where thousands of developers and designers have built real-world
+physical things controlled with JavaScript. Web developers in particular
+love to make things but we tend to focus on the digital. Even our language
+speaks to this, where we talk about code as a "craft" as much as engineering
+and we "build" a site. It's this aptitude and interest in building that is
+one of the key elements in why NodeBots and JS hardware is taking off. I
+have watched the satisfaction of someone who's only experience of hardware
+is putting batteries into an object build a sensor that determines if the
+the coffee machine is free or in use.
 
 Full article at HasGeek
 [JavaScript - not just the language of the web](https://blog.hasgeek.com/2015/javascript-not-just-the-language-of-the-web/)
