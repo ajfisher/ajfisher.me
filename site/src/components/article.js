@@ -74,7 +74,7 @@ const StyledPostArticle = styled(Article)`
     overflow-x: scroll;
 
     & code {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 
