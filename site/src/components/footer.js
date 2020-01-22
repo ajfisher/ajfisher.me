@@ -1,11 +1,11 @@
-import { useStaticQuery, graphql} from 'gatsby';
+import { Link, useStaticQuery, graphql} from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 
 import Img from 'gatsby-image';
 
 import { device } from './devices';
-import { PostItem, ImageLink } from './list';
+import { getPostImages, ImageLink } from './list';
 
 const StyledFooter = styled.footer`
   box-sizing: border-box;
@@ -21,6 +21,15 @@ const StyledFooter = styled.footer`
 
   & ::selection {
     background: var(--base);
+  }
+`;
+
+export const FooterImageLink = styled(ImageLink)`
+  border-bottom: 0.5rem solid var(--highlight);
+  border-radius: 0.2rem;
+
+  :hover {
+    border-bottom: 0.5rem solid var(--base);
   }
 `;
 
@@ -60,6 +69,10 @@ const FooterContainer = styled.div`
       font-size: 2rem;
       margin: var(--gutter) 0;
 
+      @media only screen and ${device.large} {
+        margin: calc(0.5 * var(--gutter)) 0;
+      }
+
       & a, & a:visited {
         background: none;
         padding: 0;
@@ -67,11 +80,13 @@ const FooterContainer = styled.div`
     }
 
     & div {
+
       & a, & a:visited {
         background: none;
         padding: 0;
       }
     }
+
   }
 `;
 
@@ -79,7 +94,37 @@ const Title = styled.h2`
   color: var(--highlight);
   font-size: 3rem;
   margin: var(--gutter) 0;
+
+  @media only screen and ${device.large} {
+    margin: calc(0.5 * var(--gutter)) 0;
+  }
 `;
+
+const PostItem = ({title, image, url, excerpt}) => {
+
+  const { postItemImages } = getPostImages();
+
+  const postImage = postItemImages.edges.find(({node}) => {
+    if (node.relativePath == image) return node;
+  });
+
+  return (
+    <>
+      <FooterImageLink>
+        <Link to={url}>
+          <Img
+            fluid={postImage.node.childImageSharp.fluid}
+            alt={title}
+          />
+        </Link>
+      </FooterImageLink>
+      <p><Link to={url}>{title}</Link></p>
+      { excerpt.length > 0 &&
+        <p>{excerpt}</p>
+      }
+    </>
+  );
+};
 
 const Footer = ({slug}) => {
 
@@ -158,14 +203,14 @@ const Footer = ({slug}) => {
         </section>
         <section>
           <Title>Latest talk</Title>
-          <ImageLink>
+          <FooterImageLink>
             <a href="https://www.youtube.com/watch?v=3C3lHuRToQs">
               <Img
                 fluid={data.jsFoo.childImageSharp.fluid}
                 alt="YouTube - JSFoo, India"
               />
             </a>
-          </ImageLink>
+          </FooterImageLink>
           <p>
             <a href="https://www.youtube.com/watch?v=3C3lHuRToQs">
               Droids, JavaScript and Web Connected Hardware, JSFoo, India
@@ -178,27 +223,27 @@ const Footer = ({slug}) => {
         </section>
         <section>
           <Title>My books</Title>
-          <ImageLink position="50% 100%">
+          <FooterImageLink position="50% 100%">
             <a href="http://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
               <Img
                 fluid={data.jsRobotics.childImageSharp.fluid}
                 alt="Make JavaScript Robotics Book Cover"
               />
             </a>
-          </ImageLink>
+          </FooterImageLink>
           <p>
             <a href="http://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
               Make: JavaScript Robotics
             </a>
           </p>
-          <ImageLink position="50% 85%">
+          <FooterImageLink position="50% 85%">
             <a href="http://www.amazon.com/Jump-Start-Responsive-Web-Design-ebook/dp/B00TJ6UY9S/">
               <Img
                 fluid={data.responsiveDesign.childImageSharp.fluid}
                 alt="Jump Start Responsive Design Book Cover"
               />
             </a>
-          </ImageLink>
+          </FooterImageLink>
           <p>
             <a href="http://www.amazon.com/Jump-Start-Responsive-Web-Design-ebook/dp/B00TJ6UY9S/">
               Jump Start Responsive Web Design

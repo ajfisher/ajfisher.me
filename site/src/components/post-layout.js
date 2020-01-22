@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import Article from './article';
+import { PostArticle } from './article';
 import Header from './header';
 import PostData from './postdata';
 
@@ -27,10 +27,10 @@ const Layout = ({ children, title, date, excerpt,
         excerpt={excerpt} featuredImage={featuredImage}
         readingTime={readingTime} />
       <Main>
-        <Article title={title} url={urlpath}
+        <PostArticle title={title} url={urlpath}
           featuredImageBy={featuredImageBy} featuredImageLink={featuredImageLink}>
             {children}
-        </Article>
+        </PostArticle>
         <Aside>
           <PostData tags={tags} title={title} publicationDate={date} author="ajfisher"/>
           <Nav/>

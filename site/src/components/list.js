@@ -1,18 +1,50 @@
-import { useStaticQuery, graphql} from 'gatsby';
+import { Link, useStaticQuery, graphql} from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
+
+import humanize from 'humanize-plus';
+import moment from 'moment';
 
 import Img from 'gatsby-image';
 
 import { device } from './devices';
 
+export const ListItems = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0 var(--gutter) !important;
+
+  @media only screen and ${device.large} {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+`;
+
+const Item = styled.li`
+  width: 100%;
+  height: min-content;
+
+  @media only screen and ${device.large} {
+    width: 48%;
+  }
+
+
+`;
+
 export const ImageLink = styled.div`
   height: 25rem;
 
-  border-bottom: 0.5rem solid var(--highlight);
+  border-bottom: 0.5rem solid var(--base);
   border-radius: 0.2rem;
   margin-bottom: calc(0.5 * var(--gutter));
   transition: all 0.8s ease;
+
+  :hover {
+    border-bottom: 0.5rem solid var(--dark-grey);
+  }
 
   @media only screen and ${device.large} {
     height: 17rem;
@@ -31,9 +63,16 @@ ImageLink.defaultProps = {
   position: '50% 50%'
 };
 
-export const PostItem = ({title, image, url, excerpt}) => {
 
-  const {postItemImages} = useStaticQuery(graphql`
+const PostDate = styled.p`
+  color: var(--lightened-grey);
+  font-size: 1.5rem !important;
+`;
+
+
+export const getPostImages = () => {
+  // returns all of the item images
+  return useStaticQuery(graphql`
     query postItemImageQuery {
       postItemImages: allFile {
         edges {
@@ -49,27 +88,46 @@ export const PostItem = ({title, image, url, excerpt}) => {
       }
     }
   `);
-
-  let i = 0;
-  const postImage = postItemImages.edges.find(({node}) => {
-    if (node.relativePath == image) return node;
-  });
-
-  return (
-    <>
-      <ImageLink>
-        <a href={url}>
-          <Img
-            fluid={postImage.node.childImageSharp.fluid}
-            alt={title}
-          />
-        </a>
-      </ImageLink>
-      <p><a href={url}>{title}</a></p>
-      { excerpt.length > 0 &&
-        <p>{excerpt}</p>
-      }
-    </>
-  );
 };
+
+export const PostListItem = ({url, title, image, position,  excerpt, date,
+  readingtime, wordcount}) => {
+
+    image = image || '';
+
+    const { postItemImages } = getPostImages();
+
+    if (image.startsWith('/img/')) {
+      image = image.substring(5);
+    }
+
+    const postImage = postItemImages.edges.find(({node}) => {
+      if (node.relativePath == image) return node;
+    });
+
+    const rounded_time = Math.ceil(readingtime);
+    const humanised_words = humanize.compactInteger(wordcount, 1);
+
+    return(
+      <Item>
+        {typeof(postImage) !== 'undefined' &&
+          <ImageLink position={position}>
+            <Link to={url}>
+              <Img
+                fluid={postImage.node.childImageSharp.fluid}
+                alt={title}
+              />
+            </Link>
+          </ImageLink>
+        }
+        <h2><Link to={url}>{title}</Link></h2>
+        <PostDate>{moment(date).format("dddd, MMMM Do YYYY")}</PostDate>
+        { excerpt.length > 0 &&
+          <p>{excerpt}</p>
+        }
+        <p>A {rounded_time} minute read ({humanised_words} words)</p>
+      </Item>
+    );
+};
+
 

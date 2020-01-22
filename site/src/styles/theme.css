@@ -8,6 +8,8 @@
 
     --dark-grey: #3f3f3f;
     --darkened-grey: #0c0c0c; /* 20% darker */
+    --lightened-grey: #7f7f7f; /* 20% lighter */
+
     /** main colour swatches from paletton **/
     --color-primary-0: #FF5E9A;  /* Main Primary color */
     --color-primary-1: #FFC4DA;

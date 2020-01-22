@@ -6,6 +6,45 @@ import { device } from './devices';
 
 import { Article } from './layout';
 
+const StyledListArticle = styled(Article)`
+
+  & h1 {
+    color: var(--base);
+    font-size: 3rem;
+    background: none;
+    box-shadow: none;
+    padding: 0 var(--gutter);
+  }
+
+  & h2 {
+    background: none;
+    color: var(--base);
+    box-shadow: none;
+    padding: 0;
+    font-size: 3rem;
+
+  }
+
+  & a, & a:visited {
+    color: var(--base);
+    background: none;
+    padding: 0;
+  }
+
+  & a:hover, & a:visited:hover {
+    color: var(--dark-grey);
+  }
+
+  & p {
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  & li p {
+    font-size: 1.8rem;
+  }
+`;
+
 const StyledPostArticle = styled(Article)`
 
   & h2, & h3 {
@@ -72,7 +111,7 @@ const Attribution = ({author, authorurl, featuredImageBy, featuredImageLink, tit
   );
 };
 
-const PostArticle = ({children, featuredImageBy, featuredImageLink, title, url}) => {
+export const PostArticle = ({children, featuredImageBy, featuredImageLink, title, url}) => {
 
   return(
     <StyledPostArticle>
@@ -85,4 +124,18 @@ const PostArticle = ({children, featuredImageBy, featuredImageLink, title, url})
   );
 };
 
-export default PostArticle;
+export const ListArticle = ({children}) => {
+  return(
+    <StyledListArticle>
+      {children}
+    </StyledListArticle>
+  );
+};
+
+const BaseArticle = ({children}) => {
+  return(
+    <Article>{children}</Article>
+  );
+}
+
+export default BaseArticle;

@@ -8,7 +8,8 @@ import { device } from './devices';
 import PostHeader from './header';
 import Nav from './nav';
 import Footer from './footer';
-import { Article, Aside, Main } from './layout';
+import { ListArticle } from './article';
+import { Aside, Main } from './layout';
 
 const Layout = ({ children, slug}) => {
 
@@ -16,9 +17,9 @@ const Layout = ({ children, slug}) => {
     <>
       <PostHeader/>
       <Main>
-        <Article>
-          {children}
-        </Article>
+        <ListArticle>
+          <section>{children}</section>
+        </ListArticle>
         <Aside>
           <Nav/>
         </Aside>
