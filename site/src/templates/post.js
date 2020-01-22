@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../components/post-layout"
 
 export default function Template({ data, location }) {
   const { markdownRemark, imageSharp, featuredPosts } = data;

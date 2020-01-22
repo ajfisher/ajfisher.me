@@ -148,16 +148,16 @@ const PostData = styled(Para)`
   }
 `;
 
-const PostHeader = ({ title, date, excerpt, featuredImage, readingTime }) => {
+const Header = ({ title, date, excerpt, featuredImage, readingTime={} }) => {
 
   const formatted_date = moment(date).format('dddd, MMMM Do YYYY');
-  const rounded_time = Math.ceil(readingTime.minutes);
-  const humanised_words = humanize.compactInteger(readingTime.words, 1);
+  const rounded_time = Math.ceil(readingTime.minutes) || 0;
+  const humanised_words = humanize.compactInteger(readingTime.words, 1) || 0;
 
-  const Header = (typeof(featuredImage) === 'undefined') ? TextHeader : ImageHeader;
+  const PostHeader = (typeof(featuredImage) === 'undefined') ? TextHeader : ImageHeader;
 
   return (
-    <Header featuredImage={featuredImage}>
+    <PostHeader featuredImage={featuredImage}>
       <Container className="wrapper">
         <Title>{title}</Title>
         <PublishedDate className="date">Published: {formatted_date}</PublishedDate>
@@ -168,18 +168,18 @@ const PostHeader = ({ title, date, excerpt, featuredImage, readingTime }) => {
           <PostData className="postdata"><span className="worddata">A {rounded_time} minute read</span> {humanised_words} words</PostData>
         }
       </Container>
-    </Header>
+    </PostHeader>
   );
 };
 
-PostHeader.propTypes = {
+Header.propTypes = {
   title: PropTypes.string,
   excerpt: PropTypes.string,
 };
 
-PostHeader.defaultProps = {
+Header.defaultProps = {
   title: ``,
   excerpt: ``,
 };
 
-export default PostHeader;
+export default Header;

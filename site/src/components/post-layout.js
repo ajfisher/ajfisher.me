@@ -1,74 +1,18 @@
-/** Core site layout **/
+/** layout for poasts **/
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Article from './article';
-import PostHeader from './header';
+import Header from './header';
 import PostData from './postdata';
 
 import { device } from './devices';
 
 import Nav from './nav';
 import Footer from './footer';
-
-const Main = styled.main`
-  width: 100%;
-  box-sizing: border-box;
-
-  @media only screen and ${device.large} {
-    /** Main is a flex container when it's bigger*/
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-
-  @media only screen and ${device.wide} {
-    width: 1026px;
-    margin: 0 auto;
-  }
-
-`;
-
-const Aside = styled.aside`
-  /** Aside is a flex item **/
-  width: 100%;
-
-  @media only screen and ${device.large} {
-    /** Aside is a flex item at bigger resolutions **/
-    flex-grow: 1;
-    align-self: flex-start;
-    top: var(--gutter);
-    margin-top: var(--gutter);
-    position: sticky;
-    padding: 0 var(--gutter);
-    height: min-content;
-    width: 28vw;
-
-    /** But it is also a container of the nav and post data **/
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  /** change the order if it's a row layout.**/
-  & nav {
-
-    @media only screen and ${device.large} {
-      order: 1;
-    }
-  }
-
-  & section {
-
-    @media only screen and ${device.large} {
-      order: 2;
-    }
-  }
-`;
+import { Main, Aside } from './layout';
 
 const Layout = ({ children, title, date, excerpt,
   featuredImage, featuredImageBy, featuredImageLink,
@@ -79,7 +23,7 @@ const Layout = ({ children, title, date, excerpt,
 
   return (
     <>
-      <PostHeader title={title} date={date}
+      <Header title={title} date={date}
         excerpt={excerpt} featuredImage={featuredImage}
         readingTime={readingTime} />
       <Main>

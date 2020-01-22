@@ -4,97 +4,50 @@ import { graphql } from 'gatsby';
 
 import { device } from './devices';
 
-const StyledArticle = styled.article`
-  width: 100%;
+import { Article } from './layout';
 
-  @media only screen and ${device.large} {
-    /** Article is a flex item when it's bigger **/
-    flex-grow: 2;
-    align-self: flex-start;
-    width: 61vw;
-    max-width: 65%
+const StyledPostArticle = styled(Article)`
 
-    & section {
-      /**padding: 0 3rem;**/
-    }
+  & h2, & h3 {
+    box-shadow: var(--gutter) 0 0 var(--base), calc(var(--gutter) * -1) 0 0 var(--base);
+    margin: 0;
+    margin-left: var(--gutter);
+    padding: 0px 0px 0.5rem;
+    box-decoration-break: clone;
   }
 
-  & section {
+  & h4 {
+    margin: 0 var(--gutter);
+  }
 
-    & h2, & h3 {
-      box-shadow: var(--gutter) 0 0 var(--base), calc(var(--gutter) * -1) 0 0 var(--base);
-      margin: 0;
-      margin-left: var(--gutter);
-      padding: 0px 0px 0.5rem;
-      box-decoration-break: clone;
-    }
+  & p iframe {
+    margin-left: calc(-1 * var(--gutter));
+    width: 100vw;
+    max-width: calc(100% + 2 * var(--gutter)) !important;
+  }
 
-    h4 {
-      margin: 0 var(--gutter);
-    }
+  & pre {
+    overflow-x: scroll;
 
-    & p, & pre {
-      padding: 0 var(--gutter);
-    }
-
-    & p, & ul > li, & blockquote {
+    & code {
       font-size: 2rem;
-
-      @media only screen and ${device.large} {
-        font-size: 2.2rem;
-      }
-    }
-
-    & ul {
-      margin: 0 var(--gutter);
-      margin-left: calc(-1 * var(--gutter));
-
-      @media only screen and ${device.large} {
-        margin-left: -2rem;
-      }
-
-      @media only screen and ${device.wide} {
-        margin-left: -1rem;
-      }
-    }
-
-    & p img {
-      width: 100%;
-    }
-
-    & p iframe {
-      margin-left: calc(-1 * var(--gutter));
-      width: 100vw;
-      max-width: calc(100% + 2 * var(--gutter)) !important;
-    }
-
-    & pre {
-      overflow-x: scroll;
-
-      & code {
-        font-size: 2rem;
-      }
-    }
-
-    & blockquote {
-      margin: auto var(--margin-indent);
-      margin-right: 0;
-      padding: 0 calc(var(--gutter) - var(--margin-indent) - 2px);
-      padding-right: var(--gutter);
-
-      & p {
-        padding: 0;
-      }
     }
   }
 
-  & section.attribution p {
-    font-size: 1.8rem;
+  & blockquote {
+    margin: auto var(--margin-indent);
+    margin-right: 0;
+    padding: 0 calc(var(--gutter) - var(--margin-indent) - 2px);
+    padding-right: var(--gutter);
+
+    & p {
+      padding: 0;
+    }
   }
 `;
 
 const Attribute = styled.p`
-  font-size: 1.8rem;
+  font-size: 1.8rem !important;
 `;
 
 const Attribution = ({author, authorurl, featuredImageBy, featuredImageLink, title, pageurl}) => {
@@ -119,17 +72,17 @@ const Attribution = ({author, authorurl, featuredImageBy, featuredImageLink, tit
   );
 };
 
-const Article = ({children, featuredImageBy, featuredImageLink, title, url}) => {
+const PostArticle = ({children, featuredImageBy, featuredImageLink, title, url}) => {
 
   return(
-    <StyledArticle>
+    <StyledPostArticle>
       {children}
       <Attribution title={title} author="ajfisher"
         authorurl="https://twitter.com/ajfisher" pageurl={url}
         featuredImageBy={featuredImageBy} featuredImageLink={featuredImageLink}
       />
-    </StyledArticle>
+    </StyledPostArticle>
   );
 };
 
-export default Article;
+export default PostArticle;
