@@ -30,8 +30,6 @@ const Item = styled.li`
   @media only screen and ${device.large} {
     width: 48%;
   }
-
-
 `;
 
 export const ImageLink = styled.div`
