@@ -19,6 +19,8 @@ const Layout = ({ children, featured={}, slug}) => {
   const excerpt = frontmatter.excerpt || fields.excerpt || '';
 
   console.log(frontmatter);
+  const url = `/${frontmatter.date}/${frontmatter.slug}`;
+
   let featuredImage;
 
   if (frontmatter.featured && frontmatter.featureimage !== null) {
@@ -39,7 +41,7 @@ const Layout = ({ children, featured={}, slug}) => {
   return (
     <>
       <Header featured='true' title={frontmatter.title} date={frontmatter.date}
-        excerpt={excerpt} featuredImage={featuredImage}
+        excerpt={excerpt} featuredImage={featuredImage} url={url}
         readingTime={fields.readingTime} />
       <Main>
         <ListArticle>

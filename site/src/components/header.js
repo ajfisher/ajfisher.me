@@ -61,7 +61,7 @@ const Container = styled.div`
   }
 `
 
-const Title = styled.h1`
+const StyledTitle = styled.h1`
   background-color: var(--base);
   padding: var(--gutter);
   margin: 0rem var(--gutter);
@@ -75,6 +75,16 @@ const Title = styled.h1`
   box-sizing: border-box;
   font-size: 4rem;
   line-height: 4rem;
+
+  & a, & a:visited {
+    background: none;
+    padding: 0;
+    color: inherit;
+  }
+
+  & a:hover, & a:visited:hover {
+    color: var(--dark-grey);
+  }
 
   @media only screen and ${device.medium} {
     padding: var(--gutter);
@@ -148,7 +158,27 @@ const PostData = styled(Para)`
   }
 `;
 
-const Header = ({ title, date, excerpt, featuredImage, readingTime={} }) => {
+const Title = ({children, url}) => {
+
+  if (typeof(url) === 'undefined') {
+    return(
+      <StyledTitle>{children}</StyledTitle>
+    );
+  } else {
+    return(
+      <StyledTitle as="h2"><a href={url}>{children}</a></StyledTitle>
+    );
+  }
+};
+
+const Featured = styled.p`
+  color: var(--highlight);
+  margin: 0 var(--gutter);
+  text-transform: uppercase;
+  font-size: 1.8rem;
+`;
+
+const Header = ({ title, date, excerpt, url, featured=false, featuredImage, readingTime={} }) => {
 
   const formatted_date = moment(date).format('dddd, MMMM Do YYYY');
   const rounded_time = Math.ceil(readingTime.minutes) || 0;
@@ -159,7 +189,10 @@ const Header = ({ title, date, excerpt, featuredImage, readingTime={} }) => {
   return (
     <PostHeader featuredImage={featuredImage}>
       <Container className="wrapper">
-        <Title>{title}</Title>
+        { featured &&
+          <Featured>Featured Post</Featured>
+        }
+        <Title url={url}>{title}</Title>
         <PublishedDate className="date">Published: {formatted_date}</PublishedDate>
         { excerpt.length > 0 &&
           <Lede>{excerpt}</Lede>
