@@ -78,6 +78,8 @@ export const pageQuery = graphql`
             featured
             featureimage
             featureimage_position
+            small_title
+            large_title
           }
           excerpt(pruneLength: 220)
           fields {

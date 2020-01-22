@@ -14,18 +14,18 @@ import Nav from './nav';
 import Footer from './footer';
 import { Main, Aside } from './layout';
 
-const Layout = ({ children, title, date, excerpt,
-  featuredImage, featuredImageBy, featuredImageLink,
-  path, readingTime, slug, tags}) => {
+const Layout = ({ children, frontmatter, featuredImage, path, readingTime, tags}) => {
 
+  const { title, date, excerpt, slug, small_title=false, large_title=false,
+    featuredImageBy, featuredImageLink } = frontmatter;
   const {siteURL} = useSiteMetadata();
   const urlpath = `${siteURL}${path}`;
 
   return (
     <>
-      <Header title={title} date={date}
-        excerpt={excerpt} featuredImage={featuredImage}
-        readingTime={readingTime} />
+      <Header title={title} date={date} excerpt={excerpt}
+        featuredImage={featuredImage} readingTime={readingTime}
+        smalltitle={small_title} largetitle={large_title}/>
       <Main>
         <PostArticle title={title} url={urlpath}
           featuredImageBy={featuredImageBy} featuredImageLink={featuredImageLink}>

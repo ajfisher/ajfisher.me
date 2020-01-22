@@ -19,11 +19,9 @@ export default function Template({ data, location }) {
   }
 
   return (
-    <Layout title={frontmatter.title} date={frontmatter.date}
-      excerpt={frontmatter.excerpt} featuredImage={featuredImageSrc}
-      featuredImageBy={frontmatter.imageby} featuredImageLink={frontmatter.imagelink}
+    <Layout frontmatter={frontmatter} featuredImage={featuredImageSrc}
       readingTime={fields.readingTime} path={location.pathname}
-      tags={taglist} slug={frontmatter.slug}
+      tags={taglist}
     >
       <section
         className="content"
@@ -45,6 +43,8 @@ export const pageQuery = graphql`
         featureimage
         imageby
         imagelink
+        small_title
+        large_title
       }
       fields {
         readingTime {

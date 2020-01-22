@@ -76,6 +76,34 @@ const StyledTitle = styled.h1`
   font-size: 4rem;
   line-height: 4rem;
 
+  &.enlarge {
+    font-size: 5rem;
+    line-height: 5rem;
+
+    @media only screen and ${device.medium} {
+      font-size: 6rem;
+      line-height: 6rem;
+    }
+
+    @media only screen and ${device.large} {
+      font-size: 7rem;
+      line-height: 7rem;
+    }
+  }
+
+  &.shrink {
+
+    @media only screen and ${device.medium} {
+      font-size: 4.5rem;
+      line-height: 4.5rem;
+    }
+
+    @media only screen and ${device.large} {
+      font-size: 6rem;
+      line-height: 6rem;
+    }
+  }
+
   & a, & a:visited {
     background: none;
     padding: 0;
@@ -158,17 +186,31 @@ const PostData = styled(Para)`
   }
 `;
 
-const Title = ({children, url}) => {
+const Title = ({children, url, smalltitle, largetitle}) => {
+
+  let classname;
+  if (smalltitle) {
+    classname = 'shrink';
+  } else if (largetitle) {
+    classname = 'enlarge';
+  }
+
+  console.log(classname);
 
   if (typeof(url) === 'undefined') {
     return(
-      <StyledTitle>{children}</StyledTitle>
+      <StyledTitle className={classname}>{children}</StyledTitle>
     );
   } else {
     return(
-      <StyledTitle as="h2"><a href={url}>{children}</a></StyledTitle>
+      <StyledTitle as="h2" className={classname}><a href={url}>{children}</a></StyledTitle>
     );
   }
+};
+
+Title.defaultProps = {
+  smalltitle: false,
+  largetitle: false
 };
 
 const Featured = styled.p`
@@ -178,7 +220,8 @@ const Featured = styled.p`
   font-size: 1.8rem;
 `;
 
-const Header = ({ title, date, excerpt, url, featured=false, featuredImage, readingTime={} }) => {
+const Header = ({ title, date, excerpt, url, featured=false, featuredImage,
+  smalltitle, largetitle, readingTime={} }) => {
 
   const formatted_date = moment(date).format('dddd, MMMM Do YYYY');
   const rounded_time = Math.ceil(readingTime.minutes) || 0;
@@ -192,7 +235,7 @@ const Header = ({ title, date, excerpt, url, featured=false, featuredImage, read
         { featured &&
           <Featured>Featured Post</Featured>
         }
-        <Title url={url}>{title}</Title>
+        <Title url={url} smalltitle={smalltitle} largetitle={largetitle}>{title}</Title>
         <PublishedDate className="date">Published: {formatted_date}</PublishedDate>
         { excerpt.length > 0 &&
           <Lede>{excerpt}</Lede>
@@ -213,6 +256,10 @@ Header.propTypes = {
 Header.defaultProps = {
   title: ``,
   excerpt: ``,
+  readingTime: {},
+  smalltitle: false,
+  largetitle: false,
+  featured: false
 };
 
 export default Header;
