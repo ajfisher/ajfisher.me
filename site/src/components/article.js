@@ -59,10 +59,15 @@ const StyledPostArticle = styled(Article)`
     margin: 0 var(--gutter);
   }
 
+  & p.mediacontainer {
+    height: 50vh;
+  }
+
   & p iframe {
     margin-left: calc(-1 * var(--gutter));
     width: 100vw;
     max-width: calc(100% + 2 * var(--gutter)) !important;
+    height: 100%;
   }
 
   & pre {
