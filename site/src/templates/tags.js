@@ -9,12 +9,29 @@ export default function Template({ pageContext, data}) {
   const {edges} = data.allMarkdownRemark;
   const slug = `/tagged/${tag}`;
 
-  console.log(edges);
+  const featuredIndex = edges.findIndex(({node}, index) => {
+    if (node.frontmatter.featured === true) return index;
+  });
+
+  let featured;
+
+  // see if we got a featured post.
+  if (featuredIndex >= 0) {
+    featured = edges[featuredIndex].node;
+  } else {
+    // just get the first one
+    featured = edges[0].node;
+  }
+
+  const items = edges.filter((item, index) => {
+    if (index !== featuredIndex) return item;
+  });
+
   return (
-    <Layout slug={slug}>
-      <h1>{edges.length} posts tagged {tag}</h1>
+    <Layout slug={slug} featured={featured}>
+      <h1>{items.length} posts tagged {tag}</h1>
       <ListItems>
-        {edges.map(({node}) => {
+        {items.map(({node}) => {
           const { slug, title, date,
             listimage, listimage_position } = node.frontmatter;
           const {readingTime} = node.fields;
@@ -25,7 +42,9 @@ export default function Template({ pageContext, data}) {
 
           return (
             <PostListItem
+              key={url}
               title={title}
+              date={date}
               excerpt={excerpt}
               url={url}
               readingtime={readingTime.minutes}
