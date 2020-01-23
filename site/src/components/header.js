@@ -195,8 +195,6 @@ const Title = ({children, url, smalltitle, largetitle}) => {
     classname = 'enlarge';
   }
 
-  console.log(classname);
-
   if (typeof(url) === 'undefined') {
     return(
       <StyledTitle className={classname}>{children}</StyledTitle>
@@ -237,7 +235,7 @@ const Header = ({ title, date, excerpt, url, featured=false, featuredImage,
         }
         <Title url={url} smalltitle={smalltitle} largetitle={largetitle}>{title}</Title>
         <PublishedDate className="date">Published: {formatted_date}</PublishedDate>
-        { excerpt.length > 0 &&
+        { excerpt != null && excerpt.length > 0 &&
           <Lede>{excerpt}</Lede>
         }
         { rounded_time > 0 &&
@@ -259,7 +257,8 @@ Header.defaultProps = {
   readingTime: {},
   smalltitle: false,
   largetitle: false,
-  featured: false
+  featured: false,
+  date: '2020-01-01'
 };
 
 export default Header;
