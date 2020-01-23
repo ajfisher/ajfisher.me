@@ -88,7 +88,7 @@ export const getPostImages = () => {
   `);
 };
 
-export const PostListItem = ({url, title, image, position,  excerpt, date,
+export const PostListItem = ({url, title, image, position, excerpt, date,
   readingtime, wordcount}) => {
 
     image = image || '';

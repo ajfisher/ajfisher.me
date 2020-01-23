@@ -55,8 +55,7 @@ exports.createPages = async ({ actions, graphql }) => {
         component: path.resolve(`src/templates/post.js`),
         context
       });
-    } else {
-      // console.log(node.frontmatter.date + '/' + node.frontmatter.slug);
+    } else if (node.frontmatter.layout.startsWith('post')) {
       createPage({
         path: node.frontmatter.date + '/' + node.frontmatter.slug,
         component: path.resolve(`src/templates/post.js`),

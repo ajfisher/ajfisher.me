@@ -14,11 +14,10 @@ import { getPostImages } from './list';
 
 const Layout = ({ children, featured={}, slug}) => {
 
-  // todo determine the featured article and pull it from the list.
+  // determine the featured article and pull it from the list.
   const {frontmatter={}, fields={}} = featured;
   const excerpt = frontmatter.excerpt || fields.excerpt || '';
 
-  console.log(frontmatter);
   const url = `/${frontmatter.date}/${frontmatter.slug}`;
 
   let featuredImage;
@@ -35,8 +34,6 @@ const Layout = ({ children, featured={}, slug}) => {
 
     featuredImage = featuredFluid.node.childImageSharp.fluid.src;
   }
-
-  console.log(featuredImage);
 
   return (
     <>
