@@ -83,16 +83,16 @@ const Nav = ({children}) => {
         <li><a href="/who">Who is @ajfisher</a></li>
         <li><a href="/dis-everything">Disclaimer & Disclosure</a></li>
         <li className="icons">
-          <a href="https://twitter.com/ajfisher" target="_blank">
+          <a href="https://twitter.com/ajfisher" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faTwitter}/>
           </a>
-          <a href="https://github.com/ajfisher" target="_blank">
+          <a href="https://github.com/ajfisher" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub}/>
           </a>
-          <a href="https://instagram.com/andrewjfisher" target="_blank">
+          <a href="https://instagram.com/andrewjfisher" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram}/>
           </a>
-          <a href="mailto:ajfisher.td@gmail.com" target="_blank">
+          <a href="mailto:ajfisher.td@gmail.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faEnvelope}/>
           </a>
         </li>
