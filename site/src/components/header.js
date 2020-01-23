@@ -127,6 +127,7 @@ const StyledTitle = styled.h1`
     width: 61vw;
     max-height: 40vh;
   }
+
   @media only screen and ${device.wide} {
     min-width: unset;
     max-width: unset;
