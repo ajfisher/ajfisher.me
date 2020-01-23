@@ -22,10 +22,10 @@ drew from my own experience in mobile, looking at:
 refinement.
 
 > This challenge is magnified when you consider the numerous contexts in which
-    your IoT product might be used. It might just be a sensor, but how do you
-    interact with it? Is it by using a mobile or web application? Is configuration
-    different than reporting? How usable are these interfaces? The list of
-    questions can seem endless.
+your IoT product might be used. It might just be a sensor, but how do you
+interact with it? Is it by using a mobile or web application? Is configuration
+different than reporting? How usable are these interfaces? The list of
+questions can seem endless.
 
 Full article at IBM Developer Works:
 [Best practices for IoT development](http://www.ibm.com/developerworks/library/iot-mobile-practices-iot-success/)
