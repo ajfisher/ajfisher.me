@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { Link } from 'gatsby';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
@@ -77,7 +79,7 @@ const Nav = ({children}) => {
     <Navigation>
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/blog">Article archive</a></li>
+        <li><Link to="/blog">Article archive</Link></li>
         <li><a href="/who">Who is @ajfisher</a></li>
         <li><a href="/dis-everything">Disclaimer & Disclosure</a></li>
         <li className="icons">
