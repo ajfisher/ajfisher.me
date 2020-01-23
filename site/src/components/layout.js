@@ -51,7 +51,7 @@ export const Article = styled.article`
       padding: 0 var(--gutter);
     }
 
-    & p, & ul > li, & blockquote {
+    & p, & ul > li, & blockquote, & ol > li {
       font-size: 2rem;
 
       @media only screen and ${device.large} {
@@ -59,7 +59,7 @@ export const Article = styled.article`
       }
     }
 
-    & ul {
+    & ul, & ol {
       margin: 0 var(--gutter);
       margin-left: calc(-1 * var(--gutter));
 

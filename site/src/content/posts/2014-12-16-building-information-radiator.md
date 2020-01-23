@@ -23,8 +23,8 @@ or some combination thereof. An information radiator is usually disconnected fro
 source of that data which is often abstract in nature.
 
 > In this post, I'll show you how to build an "information radiator" with a bit
-    of Python and some LEDs, which you can then use to make your own for your
-    own personal needs.
+of Python and some LEDs, which you can then use to make your own for your
+own personal needs.
 
 Full post at Packt: Building an Information Radiator
 [Part 1](https://www.packtpub.com/books/content/building-information-radiator-part-1)
