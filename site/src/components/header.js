@@ -99,8 +99,8 @@ const StyledTitle = styled.h1`
     }
 
     @media only screen and ${device.large} {
-      font-size: 6rem;
-      line-height: 6rem;
+      font-size: 5rem;
+      line-height: 5rem;
     }
   }
 
