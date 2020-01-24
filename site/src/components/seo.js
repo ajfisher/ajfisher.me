@@ -1,22 +1,15 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, meta, title }) {
+function SEO({ description, meta, title, type }) {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
-            title
+            defaultTitle
             description
             author
           }
@@ -27,47 +20,55 @@ function SEO({ description, meta, title }) {
 
   const lang = 'en';
 
-  const metaDescription = description || site.siteMetadata.description
+  const seo = {
+    title: title || site.siteMetadata.defaultTitle,
+    metaDescription: description || site.siteMetadata.description,
+    pageType: type || `website`
+  }
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={seo.title}
+      titleTemplate={`%s | ${site.siteMetadata.defaultTitle}`}
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: seo.metaDescription,
         },
         {
           property: `og:title`,
-          content: title,
+          content: seo.title,
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: seo.metaDescription,
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: seo.pageType,
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: `@ajfisher`,
+        },
+        {
+          name: `twitter.site`,
+          content: `@ajfisher`,
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: seo.title,
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: seo.metaDescription,
         },
       ].concat(meta)}
     />

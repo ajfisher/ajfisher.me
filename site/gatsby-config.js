@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `AJ Fisher | Blog | Portfolio`,
-    description: `Website of AJFisher - technologist`,
+    defaultTitle: `ajfisher`,
+    description: `The blog and portfolio of AJFisher - technologist`,
     author: `@ajfisher`,
     siteURL: 'https://ajfisher.me'
   },
@@ -61,11 +61,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `ajfisher website`,
+        short_name: `ajfisher`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#FF5E9A`,
+        theme_color: `#FF5E9A`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },

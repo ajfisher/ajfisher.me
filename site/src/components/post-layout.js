@@ -51,7 +51,7 @@ const useSiteMetadata = () => {
       query {
         site {
           siteMetadata {
-            title
+            title: defaultTitle
             description
             author
             siteURL
