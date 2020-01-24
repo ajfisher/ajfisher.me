@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `AJ Fisher Website`,
-    description: `Personal website of AJFisher - technologist`,
+    title: `AJ Fisher | Blog | Portfolio`,
+    description: `Website of AJFisher - technologist`,
     author: `@ajfisher`,
     siteURL: 'https://ajfisher.me'
   },
@@ -70,6 +70,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-robots-txt`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
