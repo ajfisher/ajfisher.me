@@ -1,7 +1,9 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 
-import Layout from "../components/post-layout"
+import Layout from '../components/post-layout';
+import SEO from '../components/seo';
+
 
 export default function Template({ data, location }) {
   const { markdownRemark, imageSharp, featuredPosts } = data;
@@ -18,11 +20,18 @@ export default function Template({ data, location }) {
     featuredImageSrc = undefined;
   }
 
+  const excerpt = frontmatter.excerpt || markdownRemark.excerpt || '';
+
   return (
     <Layout frontmatter={frontmatter} featuredImage={featuredImageSrc}
       readingTime={fields.readingTime} path={location.pathname}
       tags={taglist}
     >
+      <SEO
+        title={frontmatter.title}
+        description={excerpt}
+        type="article"
+      />
       <section
         className="content"
         dangerouslySetInnerHTML={{ __html: html }}
@@ -46,6 +55,7 @@ export const pageQuery = graphql`
         small_title
         large_title
       }
+      excerpt(pruneLength: 220)
       fields {
         readingTime {
           minutes
