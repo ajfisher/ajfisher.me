@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, StaticQuery, graphql } from 'gatsby';
 
 import Layout from '../components/list-layout';
+import SEO from '../components/seo';
 import { ListItems, PostListItem } from '../components/list';
 
 export default function Template({ pageContext, data}) {
@@ -27,8 +28,18 @@ export default function Template({ pageContext, data}) {
     if (index !== featuredIndex) return item;
   });
 
+  const seo = {
+    title: `Posts tagged ${tag}`,
+    description: `Posts that are tagged ${tag} on ajfisher.me`
+  };
+
   return (
     <Layout slug={slug} featured={featured}>
+      <SEO
+        title={seo.title}
+        description={seo.description}
+        type="list"
+      />
       <h1>{items.length} posts tagged {tag}</h1>
       <ListItems>
         {items.map(({node}) => {

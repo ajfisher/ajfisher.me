@@ -29,6 +29,11 @@ const BlogArchive = ({pageContext, data}) => {
 
   return(
     <Layout slug={slug} featured={featured}>
+      <SEO
+        title="All blog posts"
+        description="All blog posts on ajfisher.me"
+        type="list"
+      />
       <h1>All blog posts</h1>
       <ListItems>
         {items.map(({node}) => {
