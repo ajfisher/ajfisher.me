@@ -80,6 +80,21 @@ export const getPostImages = () => {
               fluid {
                 ...GatsbyImageSharpFluid
               }
+              base: fixed(width: 400) {
+                src
+              }
+              small: fixed(width: 500) {
+                src
+              }
+              medium: fixed(width: 750) {
+                src
+              }
+              large: fixed(width: 1050) {
+                src
+              }
+              wide: fixed(width: 1600) {
+                src
+              }
             }
           }
         }

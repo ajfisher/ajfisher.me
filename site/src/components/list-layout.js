@@ -28,11 +28,20 @@ const Layout = ({ children, featured={}, slug}) => {
     }
 
     const { postItemImages } = getPostImages();
-    const featuredFluid = postItemImages.edges.find(({node}) => {
+    const featuredImageSet = postItemImages.edges.find(({node}) => {
       if (node.relativePath == frontmatter.featureimage) return node;
     });
 
-    featuredImage = featuredFluid.node.childImageSharp.fluid.src;
+    if (featuredImageSet) {
+      const {childImageSharp: img} = featuredImageSet.node;
+      featuredImage = {
+        base: img.base.src,
+        small: img.small.src,
+        medium: img.medium.src,
+        large: img.large.src,
+        wide: img.wide.src
+      };
+    }
   }
 
   return (

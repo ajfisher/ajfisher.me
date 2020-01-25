@@ -12,9 +12,13 @@ export default function Template({ data, location }) {
 
   let featuredImageSrc;
   try {
-    const { sizes: featuredImageSizes = {} } = imageSharp;
-    const { src } = featuredImageSizes;
-    featuredImageSrc = src;
+    featuredImageSrc = {
+      base: imageSharp.base.src,
+      small: imageSharp.small.src,
+      medium: imageSharp.medium.src,
+      large: imageSharp.large.src,
+      wide: imageSharp.wide.src
+    };
   } catch (e) {
     // just pass on it
     featuredImageSrc = undefined;
@@ -76,6 +80,21 @@ export const pageQuery = graphql`
 				srcSet
 				sizes
 			}
+      base: fixed(width: 400) {
+        src
+      }
+      small: fixed(width: 500) {
+        src
+      }
+      medium: fixed(width: 750) {
+        src
+      }
+      large: fixed(width: 1050) {
+        src
+      }
+      wide: fixed(width: 1600) {
+        src
+      }
 		}
   }
 `;

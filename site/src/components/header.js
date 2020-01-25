@@ -38,7 +38,23 @@ const ImageHeader = styled(TextHeader)`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(${props => props.featuredImage});
+  background-image: url(${props => props.featuredImage.base});
+
+  @media only screen and ${device.small} {
+    background-image: url(${props => props.featuredImage.small});
+  }
+
+  @media only screen and ${device.medium} {
+    background-image: url(${props => props.featuredImage.medium});
+  }
+
+  @media only screen and ${device.large} {
+    background-image: url(${props => props.featuredImage.large});
+  }
+
+  @media only screen and ${device.wide} {
+    background-image: url(${props => props.featuredImage.wide});
+  }
 `;
 
 const Container = styled.div`
