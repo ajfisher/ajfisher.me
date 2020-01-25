@@ -16,32 +16,43 @@ const StyledListArticle = styled(Article)`
     padding: 0 var(--gutter);
   }
 
-  & h2 {
+  & h2.home {
+    margin: calc(0.5 * var(--gutter)) var(--gutter);
+    display: block;
     background: none;
     color: var(--base);
     box-shadow: none;
     padding: 0;
-    font-size: 3rem;
-    margin: 0;
-  }
-
-  & a, & a:visited {
-    color: var(--base);
-    background: none;
-    padding: 0;
-  }
-
-  & a:hover, & a:visited:hover {
-    color: var(--dark-grey);
   }
 
   & p {
     font-size: 2rem;
-    padding: 0;
   }
 
-  & li p {
-    font-size: 1.8rem;
+  & li {
+    & h2 {
+      background: none;
+      color: var(--base);
+      box-shadow: none;
+      padding: 0;
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    & p {
+      font-size: 1.8rem;
+      padding: 0;
+    }
+
+    & a, & a:visited {
+      color: var(--base);
+      background: none;
+      padding: 0;
+    }
+
+    & a:hover, & a:visited:hover {
+      color: var(--dark-grey);
+    }
   }
 `;
 
