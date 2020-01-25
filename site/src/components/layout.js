@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 import { device } from './devices';
 
-import PostHeader from './header';
+import Header from './header';
 import Nav from './nav';
 import Footer from './footer';
 
@@ -46,6 +46,19 @@ export const Article = styled.article`
   }
 
   & section {
+
+    & h2, & h3 {
+      box-shadow: var(--gutter) 0 0 var(--base), calc(var(--gutter) * -1) 0 0 var(--base);
+      margin: 0;
+      margin-left: var(--gutter);
+      padding: 0px 0px 0.5rem;
+      box-decoration-break: clone;
+    }
+
+    & h4 {
+      margin: 0 var(--gutter);
+    }
+
 
     & p, & pre {
       padding: 0 var(--gutter);
@@ -114,15 +127,16 @@ export const Aside = styled.aside`
   }
 `;
 
-const Layout = ({ children, slug}) => {
+const Layout = ({ children, title, excerpt, largetitle, smalltitle, slug}) => {
 
   return (
     <>
-      <PostHeader/>
+      <Header title={title} excerpt={excerpt}
+        largetitle={largetitle} smalltitle={smalltitle}/>
       <Main>
-        <article>
+        <Article>
           {children}
-        </article>
+        </Article>
         <Aside>
           <Nav/>
         </Aside>
@@ -130,6 +144,14 @@ const Layout = ({ children, slug}) => {
       <Footer slug={slug}/>
     </>
   )
-}
+};
+
+Layout.defaultProps = {
+  title: 'This page has no name',
+  slug: '/unknown',
+  excerpt: '',
+  largetitle: false,
+  smalltitle: false
+};
 
 export default Layout;

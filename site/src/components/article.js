@@ -22,7 +22,7 @@ const StyledListArticle = styled(Article)`
     box-shadow: none;
     padding: 0;
     font-size: 3rem;
-
+    margin: 0;
   }
 
   & a, & a:visited {
@@ -46,18 +46,6 @@ const StyledListArticle = styled(Article)`
 `;
 
 const StyledPostArticle = styled(Article)`
-
-  & h2, & h3 {
-    box-shadow: var(--gutter) 0 0 var(--base), calc(var(--gutter) * -1) 0 0 var(--base);
-    margin: 0;
-    margin-left: var(--gutter);
-    padding: 0px 0px 0.5rem;
-    box-decoration-break: clone;
-  }
-
-  & h4 {
-    margin: 0 var(--gutter);
-  }
 
   & p.mediacontainer {
     height: 50vh;
