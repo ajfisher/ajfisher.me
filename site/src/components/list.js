@@ -88,10 +88,12 @@ export const getPostImages = () => {
   `);
 };
 
-export const PostListItem = ({url, title, image, position, excerpt, date,
-  readingtime, wordcount}) => {
+export const PostListItem = ({title, image, position, excerpt, date,
+  slug, readingtime, wordcount}) => {
 
     image = image || '';
+
+    const url = `/${date}/${slug}`;
 
     const { postItemImages } = getPostImages();
 
