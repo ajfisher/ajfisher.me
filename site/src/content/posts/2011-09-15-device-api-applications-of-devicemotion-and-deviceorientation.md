@@ -34,11 +34,11 @@ With that in mind, I feel mobile web can come to the rescue. Why not use the web
 Have a look at the presentation I gave on this at [Web Directions South, What do you know Melbourne in August](http://whatdoyouknow.webdirections.org/) this year. There's slideshare and youtube available.
 
 
-<p><iframe src="//www.slideshare.net/slideshow/embed_code/key/s9rdOygKqy7n9k" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/andrewjfisher/device-api-now-with-added-fun" title="Device API - now with added fun" target="_blank">Device API - now with added fun</a> </strong> from <strong><a href="//www.slideshare.net/andrewjfisher" target="_blank">Andrew Fisher</a></strong></div></p>
+<p class="mediacontainer"><iframe src="//www.slideshare.net/slideshow/embed_code/key/s9rdOygKqy7n9k" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/andrewjfisher/device-api-now-with-added-fun" title="Device API - now with added fun" target="_blank">Device API - now with added fun</a> </strong> from <strong><a href="//www.slideshare.net/andrewjfisher" target="_blank">Andrew Fisher</a></strong></div></p>
 
 The YouTube screencast in particular shows how quickly people could jump on and start playing and interacting with a system that was literally only up for 90 seconds. Watching the smiles as people played this from where I was standing on the stage was gold. Tank tag demo starts at 4:30.
 
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/h86K3wBycLA" frameborder="0" allowfullscreen></iframe></p>
+<p class="mediacontainer"><iframe width="560" height="315" src="https://www.youtube.com/embed/h86K3wBycLA" frameborder="0" allowfullscreen></iframe></p>
 
 ## How does it work?
 
