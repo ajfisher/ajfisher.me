@@ -116,7 +116,6 @@ const Attribution = ({author, authorurl, featuredImageBy, featuredImageLink, tit
 };
 
 export const PostArticle = ({children, featuredImageBy, featuredImageLink, title, url}) => {
-
   return(
     <StyledPostArticle>
       {children}

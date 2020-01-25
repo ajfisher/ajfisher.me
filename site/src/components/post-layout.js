@@ -17,7 +17,7 @@ import { Main, Aside } from './layout';
 const Layout = ({ children, frontmatter, featuredImage, path, readingTime, tags}) => {
 
   const { title, date, excerpt, slug, small_title=false, large_title=false,
-    featuredImageBy, featuredImageLink } = frontmatter;
+    imageby, imagelink } = frontmatter;
   const {siteURL} = useSiteMetadata();
   const urlpath = `${siteURL}${path}`;
 
@@ -28,7 +28,7 @@ const Layout = ({ children, frontmatter, featuredImage, path, readingTime, tags}
         smalltitle={small_title} largetitle={large_title}/>
       <Main>
         <PostArticle title={title} url={urlpath}
-          featuredImageBy={featuredImageBy} featuredImageLink={featuredImageLink}>
+          featuredImageBy={imageby} featuredImageLink={imagelink}>
             {children}
         </PostArticle>
         <Aside>
