@@ -222,29 +222,31 @@ const Featured = styled.p`
 const Header = ({ title, date, excerpt, url, featured=false, featuredImage,
   smalltitle, largetitle, readingTime={} }) => {
 
-  const formatted_date = moment(date).format('dddd, MMMM Do YYYY');
-  const rounded_time = Math.ceil(readingTime.minutes) || 0;
-  const humanised_words = humanize.compactInteger(readingTime.words, 1) || 0;
+    const formatted_date = moment(date).format('dddd, MMMM Do YYYY');
+    const rounded_time = Math.ceil(readingTime.minutes) || 0;
+    const humanised_words = humanize.compactInteger(readingTime.words, 1) || 0;
 
-  const PostHeader = (typeof(featuredImage) === 'undefined') ? TextHeader : ImageHeader;
+    const PostHeader = (typeof(featuredImage) === 'undefined') ? TextHeader : ImageHeader;
 
-  return (
-    <PostHeader featuredImage={featuredImage}>
-      <Container className="wrapper">
-        { featured &&
-          <Featured>Featured Post</Featured>
-        }
-        <Title url={url} smalltitle={smalltitle} largetitle={largetitle}>{title}</Title>
-        <PublishedDate className="date">Published: {formatted_date}</PublishedDate>
-        { excerpt != null && excerpt.length > 0 &&
-          <Lede>{excerpt}</Lede>
-        }
-        { rounded_time > 0 &&
-          <PostData className="postdata"><span className="worddata">A {rounded_time} minute read</span> {humanised_words} words</PostData>
-        }
-      </Container>
-    </PostHeader>
-  );
+    return (
+      <PostHeader featuredImage={featuredImage}>
+        <Container className="wrapper">
+          { featured &&
+            <Featured>Featured Post</Featured>
+          }
+          <Title url={url} smalltitle={smalltitle} largetitle={largetitle}>{title}</Title>
+          { typeof(date) !== 'undefined' &&
+            <PublishedDate className="date">Published: {formatted_date}</PublishedDate>
+          }
+          { excerpt != null && excerpt.length > 0 &&
+            <Lede>{excerpt}</Lede>
+          }
+          { rounded_time > 0 &&
+            <PostData className="postdata"><span className="worddata">A {rounded_time} minute read</span> {humanised_words} words</PostData>
+          }
+        </Container>
+      </PostHeader>
+    );
 };
 
 Header.propTypes = {
@@ -259,7 +261,7 @@ Header.defaultProps = {
   smalltitle: false,
   largetitle: false,
   featured: false,
-  date: '2020-01-01'
+  date: undefined
 };
 
 export default Header;
