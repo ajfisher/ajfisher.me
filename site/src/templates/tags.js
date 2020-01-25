@@ -47,17 +47,17 @@ export default function Template({ pageContext, data}) {
             listimage, listimage_position } = node.frontmatter;
           const {readingTime} = node.fields;
 
-          const url = `/${date}/${slug}`;
+          // const url = `/${date}/${slug}`;
 
           const excerpt = node.frontmatter.excerpt || node.excerpt || null;
 
           return (
             <PostListItem
-              key={url}
+              key={slug}
               title={title}
               date={date}
               excerpt={excerpt}
-              url={url}
+              slug={slug}
               readingtime={readingTime.minutes}
               wordcount={readingTime.words}
               image={listimage}
