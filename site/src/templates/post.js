@@ -69,17 +69,6 @@ export const pageQuery = graphql`
       }
     }
 		imageSharp(resolutions: {originalName: {eq: $featuredImage}}) {
-			resolutions {
-				src
-				srcSet
-				width
-				height
-			}
-			sizes {
-				src
-				srcSet
-				sizes
-			}
       base: fixed(width: 400, quality: 70) {
         src
       }

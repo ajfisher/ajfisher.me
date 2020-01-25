@@ -77,7 +77,7 @@ export const getPostImages = () => {
           node {
             relativePath
             childImageSharp {
-              fluid {
+              fluid(quality: 90) {
                 ...GatsbyImageSharpFluid
               }
               base: fixed(width: 400, quality: 90) {
