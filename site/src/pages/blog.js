@@ -1,7 +1,7 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react';
+import { Link, graphql } from 'gatsby';
 
-import SEO from "../components/seo"
+import SEO from '../components/seo';
 import Layout from '../components/list-layout';
 import { ListItems, PostListItem } from '../components/list';
 
@@ -41,17 +41,15 @@ const BlogArchive = ({pageContext, data}) => {
             listimage, listimage_position } = node.frontmatter;
           const {readingTime} = node.fields;
 
-          const url = `/${date}/${slug}`;
-
           const excerpt = node.frontmatter.excerpt || node.excerpt || null;
 
           return (
             <PostListItem
-              key={url}
+              key={slug}
               title={title}
               date={date}
               excerpt={excerpt}
-              url={url}
+              slug={slug}
               readingtime={readingTime.minutes}
               wordcount={readingTime.words}
               image={listimage}
