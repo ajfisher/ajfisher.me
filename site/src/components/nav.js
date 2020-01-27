@@ -78,10 +78,10 @@ const Nav = ({children}) => {
   return (
     <Navigation>
       <ul>
-        <li><a href="/">Home</a></li>
+        <li><Link href="/">Home</Link></li>
         <li><Link to="/blog">Article archive</Link></li>
-        <li><a href="/who">Who is @ajfisher</a></li>
-        <li><a href="/dis-everything">Disclaimer & Disclosure</a></li>
+        <li><Link to="/who">Who is @ajfisher</Link></li>
+        <li><Link to="/dis-everything">Disclaimer & Disclosure</Link></li>
         <li className="icons">
           <a title="@ajfisher on Twitter" href="https://twitter.com/ajfisher" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faTwitter}/>
