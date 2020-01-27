@@ -39,7 +39,7 @@ start:
 	cd ./site && gatsby develop -H 0.0.0.0
 
 serve:
-	cd ./site && gatsby serve
+	cd ./site && gatsby serve -H 0.0.0.0
 
 pre-commit:
 	echo "Not implemented"
