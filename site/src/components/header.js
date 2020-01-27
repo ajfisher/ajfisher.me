@@ -218,7 +218,7 @@ const Title = ({children, url, smalltitle, largetitle}) => {
     );
   } else {
     return(
-      <StyledTitle as="h2" className={classname}><a href={url}>{children}</a></StyledTitle>
+      <StyledTitle as="h2" className={classname}><Link to={url}>{children}</Link></StyledTitle>
     );
   }
 };

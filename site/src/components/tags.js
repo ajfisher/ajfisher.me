@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 import { kebabCase } from '../lib/utils';
 
@@ -13,7 +14,7 @@ const TagPara = styled.p`
 
 const Tag = ({children, className, href}) => {
   const gap = ` `;
-  return <><a className={className} href={kebabCase(href)}>{children}</a> </>
+  return <><Link className={className} to={kebabCase(href)}>{children}</Link> </>
 };
 
 const Tags = ({children}) => {
