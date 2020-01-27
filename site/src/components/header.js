@@ -238,7 +238,13 @@ const Featured = styled.p`
 const Header = ({ title, date, excerpt, url, featured=false, featuredImage,
   smalltitle, largetitle, readingTime={} }) => {
 
-    const formatted_date = moment(date).format('dddd, MMMM Do YYYY');
+    let formatted_date;
+    if (typeof(date) !== 'undefined') {
+      formatted_date = moment(date).format('dddd, MMMM Do YYYY');
+    } else {
+      console.log('THIS IS THE WRONG DATE', date);
+    }
+
     const rounded_time = Math.ceil(readingTime.minutes) || 0;
     const humanised_words = humanize.compactInteger(readingTime.words, 1) || 0;
 
