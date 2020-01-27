@@ -18,8 +18,8 @@ const Layout = ({ children, frontmatter, featuredImage, path, readingTime, tags}
 
   const { title, date, excerpt, slug, small_title=false, large_title=false,
     imageby, imagelink } = frontmatter;
-  const {siteURL} = useSiteMetadata();
-  const urlpath = `${siteURL}${path}`;
+  const {siteUrl} = useSiteMetadata();
+  const urlpath = `${siteUrl}${path}`;
 
   return (
     <>
@@ -58,7 +58,7 @@ const useSiteMetadata = () => {
             title: defaultTitle
             description
             author
-            siteURL
+            siteUrl
           }
         }
       }
