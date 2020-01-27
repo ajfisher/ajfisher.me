@@ -11,6 +11,7 @@ import Footer from './footer';
 import { ListArticle } from './article';
 import { Aside, Main } from './layout';
 import { getPostImages } from './list';
+import { pathDate } from '../lib/utils';
 
 const Layout = ({ children, featured={}, slug}) => {
 
@@ -18,7 +19,7 @@ const Layout = ({ children, featured={}, slug}) => {
   const {frontmatter={}, fields={}} = featured;
   const excerpt = frontmatter.excerpt || fields.excerpt || '';
 
-  const url = `/${frontmatter.date}/${frontmatter.slug}`;
+  const url = `/${pathDate(frontmatter.date)}/${frontmatter.slug}`;
 
   let featuredImage;
 

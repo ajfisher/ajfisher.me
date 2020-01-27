@@ -6,6 +6,7 @@ import Img from 'gatsby-image';
 
 import { device } from './devices';
 import { getPostImages, ImageLink } from './list';
+import { pathDate } from '../lib/utils';
 
 const StyledFooter = styled.footer`
   box-sizing: border-box;
@@ -161,7 +162,7 @@ const Footer = ({slug}) => {
             node {
               frontmatter {
                 title
-                date(formatString: "YYYY/MM/DD")
+                date(formatString: "YYYY-MM-DD")
                 listimage
                 listimage_position
                 excerpt
@@ -187,7 +188,7 @@ const Footer = ({slug}) => {
     featured = featuredPosts[1]; // second latest
   }
 
-  featured.url = `/${featured.date}/${featured.slug}`;
+  featured.url = `/${pathDate(featured.date)}/${featured.slug}`;
   if (featured.listimage.startsWith('/img/')) {
     featured.listimage = featured.listimage.substring(5);
   }

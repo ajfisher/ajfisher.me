@@ -8,6 +8,7 @@ import moment from 'moment';
 import Img from 'gatsby-image';
 
 import { device } from './devices';
+import { pathDate } from '../lib/utils';
 
 export const ListItems = styled.ul`
   list-style: none;
@@ -108,7 +109,7 @@ export const PostListItem = ({title, image, position, excerpt, date,
 
     image = image || '';
 
-    const url = `/${date}/${slug}`;
+    const url = `/${pathDate(date)}/${slug}`;
 
     const { postItemImages } = getPostImages();
 

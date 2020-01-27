@@ -1,6 +1,6 @@
 const path = require(`path`);
 const {fmImagesToRelative} = require('gatsby-remark-relative-images');
-const { kebabCase } = require('./lib/utils');
+const { kebabCase, pathDate } = require('./lib/utils');
 
 exports.onCreateNode = ({ node }) => {
   // this is to try and resolve the issues with the pathing
@@ -15,7 +15,7 @@ exports.createPages = async ({ actions, graphql }) => {
           node {
             frontmatter {
 							slug
-              date(formatString: "YYYY/MM/DD")
+              date(formatString: "YYYY-MM-DD")
               layout
               featureimage
             }
@@ -57,7 +57,7 @@ exports.createPages = async ({ actions, graphql }) => {
       });
     } else if (node.frontmatter.layout.startsWith('post')) {
       createPage({
-        path: node.frontmatter.date + '/' + node.frontmatter.slug,
+        path: pathDate(node.frontmatter.date) + '/' + node.frontmatter.slug,
         component: path.resolve(`src/templates/post.js`),
         context
       });
