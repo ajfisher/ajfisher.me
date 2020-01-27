@@ -8,7 +8,7 @@ import SEO from '../components/seo';
 export default function Template({ data, location }) {
   const { markdownRemark, imageSharp, featuredPosts } = data;
   const { fields, frontmatter, html } = markdownRemark;
-  const { taglist } = fields;
+  const { taglist={} } = fields;
 
   let featuredImageSrc;
   try {

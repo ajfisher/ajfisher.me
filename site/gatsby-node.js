@@ -52,7 +52,7 @@ exports.createPages = async ({ actions, graphql }) => {
     if (node.frontmatter.layout.startsWith('page')) {
       createPage({
         path: node.frontmatter.slug,
-        component: path.resolve(`src/templates/post.js`),
+        component: path.resolve(`src/templates/article.js`),
         context
       });
     } else if (node.frontmatter.layout.startsWith('post')) {

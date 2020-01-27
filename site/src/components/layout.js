@@ -56,9 +56,8 @@ export const Article = styled.article`
     }
 
     & h4 {
-      margin: 0 var(--gutter);
+      margin: calc(0.5 * var(--gutter)) var(--gutter);
     }
-
 
     & p, & pre {
       padding: 0 var(--gutter);

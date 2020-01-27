@@ -45,6 +45,10 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
+Layout.defaultProps = {
+  tags: {},
+}
+
 const useSiteMetadata = () => {
   const { site } = useStaticQuery(
     graphql`

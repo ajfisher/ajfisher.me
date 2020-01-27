@@ -18,6 +18,8 @@ const Tag = ({children, className, href}) => {
 
 const Tags = ({children}) => {
 
+  if (children === null) return null;
+
   const taglist = children.map((tagname) => {
     return <Tag href={`/tagged/${tagname}`} key={tagname}>{tagname}</Tag>
   });
