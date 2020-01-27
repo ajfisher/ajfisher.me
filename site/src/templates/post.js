@@ -4,7 +4,6 @@ import { StaticQuery, graphql } from 'gatsby';
 import Layout from '../components/post-layout';
 import SEO from '../components/seo';
 
-
 export default function Template({ data, location }) {
   const { markdownRemark, imageSharp, featuredPosts } = data;
   const { fields, frontmatter, html } = markdownRemark;
@@ -25,6 +24,7 @@ export default function Template({ data, location }) {
   }
 
   const excerpt = frontmatter.excerpt || markdownRemark.excerpt || '';
+  const twitter_excerpt = frontmatter.twitter_excerpt || excerpt;
 
   return (
     <Layout frontmatter={frontmatter} featuredImage={featuredImageSrc}
@@ -35,6 +35,8 @@ export default function Template({ data, location }) {
         title={frontmatter.title}
         description={excerpt}
         type="article"
+        tweet={twitter_excerpt}
+        image={featuredImageSrc}
       />
       <section
         className="content"
@@ -53,6 +55,7 @@ export const pageQuery = graphql`
         slug
         title
         excerpt
+        twitter_excerpt
         featureimage
         imageby
         imagelink

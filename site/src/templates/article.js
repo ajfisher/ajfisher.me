@@ -4,7 +4,6 @@ import { StaticQuery, graphql } from 'gatsby';
 import Layout from '../components/post-layout';
 import SEO from '../components/seo';
 
-
 export default function Template({ data, location }) {
   const { markdownRemark, imageSharp, featuredPosts } = data;
   const { fields, frontmatter, html } = markdownRemark;
@@ -12,15 +11,20 @@ export default function Template({ data, location }) {
 
   let featuredImageSrc;
   try {
-    const { sizes: featuredImageSizes = {} } = imageSharp;
-    const { src } = featuredImageSizes;
-    featuredImageSrc = src;
+    featuredImageSrc = {
+      base: imageSharp.base.src,
+      small: imageSharp.small.src,
+      medium: imageSharp.medium.src,
+      large: imageSharp.large.src,
+      wide: imageSharp.wide.src
+    };
   } catch (e) {
     // just pass on it
     featuredImageSrc = undefined;
   }
 
   const excerpt = frontmatter.excerpt || markdownRemark.excerpt || '';
+  const twitter_excerpt = frontmatter.twitter_excerpt || excerpt;
 
   return (
     <Layout frontmatter={frontmatter} featuredImage={featuredImageSrc}
@@ -31,6 +35,7 @@ export default function Template({ data, location }) {
         title={frontmatter.title}
         description={excerpt}
         type="article"
+        tweet={twitter_excerpt}
       />
       <section
         className="content"
@@ -49,6 +54,7 @@ export const pageQuery = graphql`
         slug
         title
         excerpt
+        twitter_excerpt
         featureimage
         imageby
         imagelink
@@ -65,17 +71,21 @@ export const pageQuery = graphql`
       }
     }
 		imageSharp(resolutions: {originalName: {eq: $featuredImage}}) {
-			resolutions {
-				src
-				srcSet
-				width
-				height
-			}
-			sizes {
-				src
-				srcSet
-				sizes
-			}
+      base: fixed(width: 400, quality: 70) {
+        src
+      }
+      small: fixed(width: 500, quality: 80) {
+        src
+      }
+      medium: fixed(width: 750, quality: 90) {
+        src
+      }
+      large: fixed(width: 1050, quality: 100) {
+        src
+      }
+      wide: fixed(width: 1600, quality: 100) {
+        src
+      }
 		}
   }
 `;

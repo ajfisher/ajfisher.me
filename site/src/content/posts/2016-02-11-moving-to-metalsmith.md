@@ -18,7 +18,6 @@ excerpt: >
 twitter_excerpt: >
     Moving from WordPress to metalsmith.io and some of the things I found out
     along the way to a more refined authoring exp.
-
 ---
 
 Over the last couple of months I finally bit
