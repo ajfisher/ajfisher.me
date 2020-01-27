@@ -60,13 +60,15 @@ const StyledPostArticle = styled(Article)`
 
   & p.mediacontainer {
     height: 50vh;
+    padding:0;
   }
 
   & p iframe {
-    margin-left: calc(-1 * var(--gutter));
-    width: 100vw;
+    /**margin-left: calc(-1 * var(--gutter));**/
     max-width: calc(100% + 2 * var(--gutter)) !important;
+    width: 100%;
     height: 100%;
+    border: none;
   }
 
   & pre {
