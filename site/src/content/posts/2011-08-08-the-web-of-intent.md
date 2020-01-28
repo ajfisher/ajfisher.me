@@ -25,7 +25,7 @@ But all of this is back to front - and this is the beauty of the web intent - I 
 
 It's at this point that a demonstration is probably useful. This is the Mozilla labs view of Web Activities which is a similar concept. It's a little contrived because nothing exists yet except the flickr plugin but it explains the idea. Go ahead, watch the video, this will wait.
 
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/m5_YDG_jiYg" frameborder="0" allowfullscreen></iframe></p>
+<p class="mediacontainer"><iframe width="560" height="315" src="https://www.youtube.com/embed/m5_YDG_jiYg" frameborder="0" allowfullscreen></iframe></p>
 
 So now you get the idea - as a user I can "install" personally useful web apps that do certain things and when I want to use them I can push the content to the app which then interacts with it in some fashion.
 

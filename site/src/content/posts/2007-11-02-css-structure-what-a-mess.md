@@ -4,7 +4,7 @@ date: 2007-11-02 17:29:00+00:00
 layout: post.hbt
 slug: css-structure-what-a-mess
 title: CSS Structure - what a mess
-tags: css, W3C, web, standards, rant
+tags: css, W3C, web, standards, rant, development
 ---
 
 James posted a message on my blog some weeks ago and it's only now that a penny has dropped in my mind about what we need to deal with the issue of structure in CSS - the problem is we have none. As James points out you end up with a flat mess that with all the best will in the world definitions are hard to find.
@@ -15,8 +15,10 @@ As the web building fraternity finally weans itself off of dreamweaver and table
 
 At the moment, to get a degree of specificity one has to redeclare selectors:
 
-`div#header div.nav ul {}
-div#header div#logo img {}`
+```
+div#header div.nav ul {}
+div#header div#logo img {}
+```
 
 for example.
 
@@ -28,21 +30,24 @@ My solution then W3C if you're listening is this. Cascade in the style sheet, ca
 
 In many programming languages there is a keyword to get you down to the level of an object that you are going to manipluate numerous properties of in one go for example "with" in VB. Thus I could say:
 
-`with myobject
-.property1 = x;
-.property2 = y;
-endwith`
+```
+with myobject
+  .property1 = x;
+  .property2 = y;
+endwith
+```
 
 The CSS equivalent would be:
 
-`
+```
 div#header {
-div#logo img { css }
-div#nav {
-css
-ul { css }
+  div#logo img { css... }
+  div#nav {
+    css...
+    ul { css... }
+  }
 }
-}`
+```
 
 This gives you the specificity required, removing the redundancy and creates a cascade like structure to the document that would also make things much easier to debug what is going on.
 

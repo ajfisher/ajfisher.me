@@ -43,7 +43,9 @@ Thankfully a technique from statistics gives us an option here which is to use a
 
 The general formula for this is:
 
+```
 Avgw = (Avg1 * (n1 / (n1+n2))) + (Avg2 * (n2/ (n1+n2)))
+```
 
 Where:
 
@@ -54,6 +56,7 @@ n2 is the number of elements in the second set
 
 In our example this simplifies even further because our second set is actuall only one item. So let's work this through:
 
+```
 Avgw = (3.67 * (3/(3+1))) + (2 * (1/(3+1)))
 
 = (3.67 * 3/4) + (2 * 1/4)
@@ -61,6 +64,7 @@ Avgw = (3.67 * (3/(3+1))) + (2 * (1/(3+1)))
 = 2.75 + 0.5
 
 = 3.25
+```
 
 Which is the answer we're after for our average.
 
