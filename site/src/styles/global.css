@@ -123,25 +123,6 @@ article h4 {
     color: var(--dark-text-colour);
 }
 
-article figure.gatsby-resp-image-figure {
-    width: 100%;
-    margin-left: 0;
-    position: relative;
-}
-
-article figcaption.gatsby-resp-image-figcaption {
-    position: absolute;
-    bottom: 0.5rem;
-    right: 0.5rem;
-    color: var(--light-text-colour);
-    background: var(--dark-grey);
-    padding: 0 0.5rem;
-    font-size: 1.5rem;
-}
-
-article figure figcaption a {
-    padding: 0;
-}
 
 // This is used for the pullquotes
 

@@ -58,6 +58,30 @@ const StyledListArticle = styled(Article)`
 
 const StyledPostArticle = styled(Article)`
 
+  & figure.gatsby-resp-image-figure {
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+
+    & span {
+      max-width: 100% !important;
+    }
+  }
+
+  & figcaption.gatsby-resp-image-figcaption {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    color: var(--light-text-colour);
+    background: var(--dark-grey);
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  & figure figcaption a {
+    padding: 0;
+  }
+
   & p.mediacontainer {
     height: 50vh;
     padding:0;
