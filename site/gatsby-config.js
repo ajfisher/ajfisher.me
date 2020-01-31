@@ -40,8 +40,9 @@ module.exports = {
               backgroundColor: `none`,
               quality: 90,
               withWebp: { quality: 90 },
-              showCaptions: true,
-              disableBgImage: true
+              showCaptions: false,
+              disableBgImage: true,
+              backgroundColor: `none`
             },
           },
           {
@@ -51,8 +52,9 @@ module.exports = {
               backgroundColor: `none`,
               quality: 90,
               withWebp: { quality: 90 },
-              showCaptions: true,
-              disableBgImage: true
+              showCaptions: false,
+              disableBgImage: true,
+              backgroundColor: `none`
             }
           }
         ]
@@ -67,7 +69,7 @@ module.exports = {
         background_color: `#FF5E9A`,
         theme_color: `#FF5E9A`,
         display: `minimal-ui`,
-        icon: `src/img/ajfisher-icon.png`, // This path is relative to the root of the site.
+        icon: `src/img/ajfisher_large.jpg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-robots-txt`

@@ -123,6 +123,34 @@ article h4 {
     color: var(--dark-text-colour);
 }
 
+article p span.gatsby-resp-image-wrapper {
+    margin: 0 calc(-1 * var(--gutter)) !important;
+    max-width: 1000px !important;
+}
+
+article p.caption {
+    font-size: 2rem !important;
+    background-color: var(--base);
+    margin-top: calc(-0.5 * var(--gutter));
+    margin-bottom: 0;
+    color: var(--light-text-colour) !important;
+    padding: 0.2rem 0.5rem !important;
+    padding-left: var(--gutter) !important;
+    display: inline-block;
+	border-radius: 0.2rem;
+}
+
+article p.caption a, article p.caption a:visited {
+    color: var(--light-text-colour);
+    background: none;
+    padding: 0;
+}
+
+article p.caption a:hover, article p.caption a:visited:hover {
+    color: var(--dark-grey);
+}
+
+/**
 article figure.gatsby-resp-image-figure {
     width: 100%;
     margin-left: 0;
@@ -141,7 +169,7 @@ article figcaption.gatsby-resp-image-figcaption {
 
 article figure figcaption a {
     padding: 0;
-}
+}**/
 
 // This is used for the pullquotes
 
