@@ -172,32 +172,6 @@ article figure figcaption a {
     padding: 0;
 }**/
 
-// This is used for the pullquotes
-
-article p b {
-    font-weight: inherit;
-}
-
-p.has-pullquote::before {
-    content: attr(data-pullquote);
-    display: block;
-	@include heading-font();
-
-    font-size: 4rem;
-    margin: inherit;
-    color: var(--base);
-    margin-left: -3rem;
-    padding-left: 3rem;
-    border-left: 2px solid var(--base);
-}
-
-article blockquote {
-    font-style: italic;
-    border-left: 2px solid var(--base);
-    /** margin-left: -2rem;
-    padding-left: 2rem; **/
-}
-
 /* MEDIA QUERIES FOR Medium Size display */
 
 @media only screen and (min-width: 480px) {
@@ -212,14 +186,5 @@ article blockquote {
 /* MEDIA QUERIES FOR WIDE size display */
 
 @media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-    .wrapper {
-        /** width: 1026px; /* 1140px less 33% for right padding and 10% either side margin */
-        /** margin: 0 auto !important; **/
-    }
 
 }

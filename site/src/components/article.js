@@ -103,15 +103,29 @@ const StyledPostArticle = styled(Article)`
     }
   }
 
-  & blockquote {
+  & blockquote, & p.has-pullquote::before {
+    font-style: italic;
     margin: auto var(--margin-indent);
     margin-right: 0;
     padding: 0 calc(var(--gutter) - var(--margin-indent) - 2px);
     padding-right: var(--gutter);
+    border-left: 2px solid var(--base);
+  }
 
-    & p {
-      padding: 0;
-    }
+  & blockquote > p {
+    padding: 0 !important;
+  }
+
+  & p.has-pullquote::before {
+    content: attr(data-pullquote);
+    display: block;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+
+    font-size: 4rem;
+    color: var(--base);
+    margin: inherit !important;
+    margin-left: calc(-1 * var(--gutter) + var(--margin-indent)) !important;
   }
 `;
 

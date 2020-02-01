@@ -61,6 +61,10 @@ export const Article = styled.article`
 
     & p, & pre {
       padding: 0 var(--gutter);
+
+      & b {
+        font-weight: inherit;
+      }
     }
 
     /** use this for inline code snippets **/
