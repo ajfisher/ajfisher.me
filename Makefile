@@ -53,6 +53,6 @@ build:
 	@echo "build: Build files for deploy"
 	cd ./site && gatsby build
 
-deploy-app:
-	echo "Not implemented"
-	@echo "deploy-app:	Deploy the front end application"
+deploy:
+	@echo "Deploying the application"
+	cd ./site/public && aws s3 sync . s3://aj-web-ajfisher-me-prod/
