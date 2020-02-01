@@ -81,6 +81,7 @@ const Nav = ({children}) => {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/blog">Article archive</Link></li>
         <li><Link to="/who">Who is @ajfisher</Link></li>
+        <li><Link to="/colophon">Colophon</Link></li>
         <li><Link to="/dis-everything">Disclaimer & Disclosure</Link></li>
         <li className="icons">
           <a title="@ajfisher on Twitter" href="https://twitter.com/ajfisher" target="_blank" rel="noopener noreferrer">
