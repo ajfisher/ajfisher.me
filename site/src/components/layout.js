@@ -63,6 +63,15 @@ export const Article = styled.article`
       padding: 0 var(--gutter);
     }
 
+    /** use this for inline code snippets **/
+    & p > code.language-text {
+      background-color: var(--lightened-grey);
+      border-radius: 0.2rem;
+      font-size: initial;
+      color: var(--light-text-colour);
+      padding: 0.2rem 0.5rem;
+    }
+
     & p, & ul > li, & blockquote, & ol > li {
       font-size: 2rem;
 

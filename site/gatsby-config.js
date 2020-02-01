@@ -56,6 +56,15 @@ module.exports = {
               disableBgImage: true,
               backgroundColor: `none`
             }
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              aliases: {
+                sh: `bash`,
+                xsl: `xml`,
+              }
+            },
           }
         ]
       }
