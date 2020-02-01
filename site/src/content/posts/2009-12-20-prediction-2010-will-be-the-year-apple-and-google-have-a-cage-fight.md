@@ -10,7 +10,9 @@ listimage: /img/posts/cagefight.jpg
 
 The pre- match slanging is pretty much over and the location of the fight has been chosen. 2010 is going to be the year Apple and Google finally stop dancing around and actually get in the ring. Unlike a nice clean refereed boxing match (Apple V Microsoft) this is going to be a dirty underground cage fight complete with barbed-wire wrapped gloves - expect to see a lot of blood on the floor - and fanbois rucking in the concourses.
 
-![Onslaught unleashed, image (cc) Chris http://www.flickr.com/photos/icantcu/3447153416](/img/posts/cagefight.jpg)
+![Boxer laying on the canvas after fight](/img/posts/cagefight.jpg)
+
+<p class="caption"><a href="http://www.flickr.com/photos/icantcu/3447153416">Onslaught unleashed, image (cc) Chris</a></p>
 
 The ground is, of course, Mobile and the massive dominance both organisations have taken in this space over the last 12 months. Mobile is still a fast growing area of communications but smartphones is where it's at. There's no question Apple ignited the world's imagination of what is possible in the mobile space and capitalising on the fact that the fashionability of a phone is important in a way that RIM and Microsoft just didn't get.
 

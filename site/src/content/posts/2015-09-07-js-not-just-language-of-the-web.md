@@ -24,7 +24,10 @@ not just about NodeBots but how web connected hardware is where a lot of
 development will be taking place over the coming decade and how web developers
 in particular have useful skills to bring to bear in the hardware world.
 
-![Cyber love, image (cc) Nani C. http://www.flickr.com/photos/hiperbolica/3414999010](/img/posts/robot_love.jpg)
+![Drawing of robot with a heart symbol in a speech bubble](/img/posts/robot_love.jpg)
+
+<p class="caption"><a href="http://www.flickr.com/photos/hiperbolica/3414999010">"Cyber
+love" - image (cc) Nani C.</a></p>
 
 The talk was on Droids, JavaScript & Web Connected hardware, the video is below:
 

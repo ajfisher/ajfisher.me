@@ -29,6 +29,9 @@ On the surface this may not look like a huge revenue opportunity however I would
 
 These acquisitions are a great thing for Adobe. The purchases of Macromedia and Ominture have gone less well than anticipated as behomouth pieces of software were digested by the business. These smaller, more nimble, web oriented businesses will inject some creativity back into Adobe and hopefully some of their culture will rub off on the software giant.
 
-![Image, cc Marcin Wichary http://www.flickr.com/photos/mwichary/2198354027/](/img/posts/adobe.jpg)
+![Adobe logo on the floor](/img/posts/adobe.jpg)
+
+<p class="caption"><a href="http://www.flickr.com/photos/mwichary/2198354027/">Image,
+cc Marcin Wichary</a></p>
 
 A lot of people will lament the swallowing up of two extremely savvy web organisations that have shaped a big chunk of the digital landscape over the last 2 years. Maybe, but I'm quite excited by the potential this brings. With Adobe's resources focussed in these areas, there's a lot more to come from both Nitobi and Typekit and that will only bring benefits to the web - like flash did over a decade ago to bring interaction to the web but whose time is now past.

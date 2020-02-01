@@ -175,7 +175,10 @@ It finds mardown images, pulls them out and replaces them with a properly
 formatted `figure` that uses `srcset` and `figcaption`. You can see the treatment
 of this below.
 
-![Blacksmithing workshop in Wojciechow, Poland image (CC) Poland MFA http://www.flickr.com/photos/polandmfa/9286266649/](/img/posts/forgehands.jpg)
+![Photo of a blacksmith's hands on a hammer and anvil](/img/posts/forgehands.jpg)
+
+<p class="caption"><a href="http://www.flickr.com/photos/polandmfa/9286266649/">"Blacksmithing
+workshop in Wojciechow, Poland" - image (CC) Poland MFA</a></p>
 
 Writing plugins is easy so definitely don't put it off as there's no magic
 to it.

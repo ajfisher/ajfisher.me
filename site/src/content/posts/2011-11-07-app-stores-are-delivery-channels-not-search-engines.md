@@ -23,7 +23,10 @@ I saw the tweet above from [Tim O'Reilly](http://twitter.com/#!/timoreilly/) the
 
 Whilst I technically applaud what Chomp have managed to do, they have almost no revenue to speak of and a dismally small audience for such a service. My sense is that the reality of app store search is that almost no one actually uses it to search for apps in a general sense - they use it for recognised brand terms or keywords which lead them, without fail, to exactly the application the user is after.
 
-![Androids eat apples, image cc ryanne lai http://www.flickr.com/photos/laihiu/4407979507](/img/posts/chomp.jpg)
+![Google Android plushie doll attempting to eat a MacBook computer](/img/posts/chomp.jpg)
+
+<p class="caption"><a href="http://www.flickr.com/photos/laihiu/4407979507">"Androids
+eat apples" - image (cc) ryanne lai</a></p>
 
 No one I know (and I talk to a LOT of people about mobile device usage) have ever said to me that they couldn't find the app they were looking for. When was the last time someone you know lamented the fact they couldn't discover an app based on broad criteria? I'm tipping never.
 
@@ -39,7 +42,10 @@ Let's face it, no one goes to iTunes and searches for "app to see what my friend
 
 And I can almost guarantee you that no one has ever searched for "kill pigs with irate avian projectiles using a catapult game".
 
-![Angry Birds Live, image cc Yaniv Golan http://www.flickr.com/photos/yghelloworld/4966726746/](/img/posts/angry_birds.jpg)
+![Angry Birds sculptures from plastecine](/img/posts/angry_birds.jpg)
+
+<p class="caption"><a href="http://www.flickr.com/photos/yghelloworld/4966726746/">"Angry
+Birds Live" - image cc Yaniv Golan</a></p>
 
 Apps, like any other product are also subject to referral. People write about them - how many blog posts are entitled "[The 10 best [CATEGORY] apps for [PLATFORM] ever](http://www.google.com.au/search?hl=en&safe=off&q=The+10+best+*+apps+for+*+ever&oq=The+10+best+*+apps+for+*+ever&aq=f&aqi=&aql=1&gs_sm=e&gs_upl=1186469l1195562l0l1196345l31l28l1l2l0l1l412l4534l2-11.4.1l16l0)"? If you like something you tell someone about it and if you really like something you install it for them on their device. I'm not sure either of my parents have ever even seen an app store but they have plenty of applications installed on their phones and tablets courtesy of us kids.
 
@@ -53,7 +59,9 @@ In my view it is inconceivable that if there were even a reasonable number of se
 
 The other factor in all of this is that over the last 15 years we have been trained to believe that the web has the answers. Google is always there in a web browser, only a few seconds away, regardless of mobile device or desktop. A couple of little app stores that we only use once every couple of weeks isn't going to become our first point of reference compared to the entity that answers our questions multiple times a day, every day.
 
-![Search](/img/posts/google_apps.png)
+![Search results prompts for 'best apps' on google](/img/posts/google_apps.png)
+
+<p class="caption">Search prompts for "best apps"</p>
 
 Ultimately there's nothing new about this at all - how do I choose what bit of video editing software to install on my Ubuntu laptop? I go to the web, I read reviews then I download and install the ones I want to check out; eventually selecting one that meets my needs. Synaptic doesn't do this for me and it's one of the best (and longest lived) app stores in existence.
 

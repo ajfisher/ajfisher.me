@@ -19,13 +19,17 @@ What makes web intents different than a protocol link is that they are fundament
 
 Instead; in the tabbed browser world, I simply have tabs up one end of my browser window that are permanently there. I also have a couple of extensions that operate at a meta-level on the whole page I'm viewing - notably bit.ly, evernote and chrome2phone.
 
-![image (cc) Poppy Thomas-Hill http://www.flickr.com/photos/pinkpoppyimages/](/img/posts/will_you.jpg)
+![Chalkboard with the phrase 'will you (blank) me?'](/img/posts/will_you.jpg)
+
+<p class="caption"><a href="http://www.flickr.com/photos/pinkpoppyimages/">image (cc) Poppy Thomas-Hill</a></p>
 
 But all of this is back to front - and this is the beauty of the web intent - I want to bring my existing services to the attention of the page so it can interact with what I'm looking at right now without that web page needing to know anything specific about the Intent directly (eg what protocol or services it also has available).
 
 It's at this point that a demonstration is probably useful. This is the Mozilla labs view of Web Activities which is a similar concept. It's a little contrived because nothing exists yet except the flickr plugin but it explains the idea. Go ahead, watch the video, this will wait.
 
 <p class="mediacontainer"><iframe width="560" height="315" src="https://www.youtube.com/embed/m5_YDG_jiYg" frameborder="0" allowfullscreen></iframe></p>
+
+<p class="caption">Demonstration of web activities</p>
 
 So now you get the idea - as a user I can "install" personally useful web apps that do certain things and when I want to use them I can push the content to the app which then interacts with it in some fashion.
 

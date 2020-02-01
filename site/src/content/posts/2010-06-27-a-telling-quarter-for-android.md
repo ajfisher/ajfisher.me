@@ -6,6 +6,7 @@ slug: a-telling-quarter-for-android
 title: A telling quarter for Android
 tags: android, Apple, google, iphone, mobile
 featureimage: /img/posts/android.jpg
+listimage: /img/posts/android.jpg
 imageby: Scott Akerman
 imagelink: https://www.flickr.com/photos/sterlic/6778181411/
 ---
@@ -14,11 +15,15 @@ Most people looking at the mobile and smart phone sector focus on unit sales as 
 
 Well, Android has been enjoying exponential growth in the number of apps in the market over the last two years since it launched. This is not uncommon for a new platform and iPhone OS did exactly the same thing when it launched.
 
-![# apps in Android market from androlib.com](/img/posts/android-appstats.png)
+![A graph of android market apps](/img/posts/android-appstats.png)
+
+<p class="caption">Number of apps in Android market - from androlib.com<p>
 
 Why this is an important quarter for android however is that the number of apps currently available for Android was the inflection point at which Apple's iPhone app growth stated to slow. As can be seen in the chart below iPhone apps have continued to grow but the pace has eased off. This is a sign that the developer community is saturating and is maturing.
 
-![# iPhone apps in iTunes - from Wikipedia](/img/posts/iphone-stats-smaller.png)
+![A graph of iTunes market apps](/img/posts/iphone-stats-smaller.png)
+
+<p class="caption">Number of iPhone apps in iTunes - from Wikipedia</p>
 
 I would suggest this also indicates that developers are becoming more considered about the types of apps they are building rather than doing quick, iterative development to just "try things out". Certain niches are now evident in the iPhone ecosystem that revolve around the capabilities of the device and the ways people use them. The overall quality of apps are increasing too (anecdotally and as should be expected as a platform matures).
 

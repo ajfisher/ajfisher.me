@@ -15,7 +15,7 @@ excerpt: >
 
 ---
 
-Recently, at [Web Directions](south11.webdirections.org) this year [John Allsopp](http://twitter.com/johnallsopp) revisted a classic piece of web writing, "[A Dao of web design](http://www.alistapart.com/articles/dao/)", 11 years since writing it. The presentation stood out as a passionate defence of the things that made the web great including it's universality and openess.
+Recently, at [Web Directions](http://south11.webdirections.org) this year [John Allsopp](http://twitter.com/johnallsopp) revisted a classic piece of web writing, "[A Dao of web design](http://www.alistapart.com/articles/dao/)", 11 years since writing it. The presentation stood out as a passionate defence of the things that made the web great including it's universality and openess.
 
 One point he made was a rebuttal to a comment that the "problem" with the web was one of control. This was becoming the defence for why the mobile app model was the future but it's been raised before - that the failings of the web were its lack of control, its slow speed of evolution and its difficulty.
 
@@ -27,7 +27,10 @@ We've had control - and we reaped it's benefits - stable (though quirky) APIs an
 
 But we don't need control, we need champions. Mozilla and Web Kit and Opera were our champions; but so too was the entire web community. By galvanising around web standards we made the case that control wasn't sufficient for innovation or even good implementation.
 
-![Pow! cc EJP Photo http://www.flickr.com/photos/ejpphoto/6114079466/](/img/posts/champion_fist.jpg)
+![An illuminated fist punching through a circular light](/img/posts/champion_fist.jpg)
+
+<p class="caption"><a href="http://www.flickr.com/photos/ejpphoto/6114079466/">"Pow!"
+image (cc) EJP Photo</a></p>
 
 As the desktop browser champions matured, those of us in the community endorsed the browsers as being "mainstream friendly enough" so we installed firefox or chrome on every machine we could possibly "infect" with a decent, modern, secure browser. That's assuming we didn't just tell the person in question to go buy a Mac (so we could minimise the family and friends tech support calls). So momentum built...
 
