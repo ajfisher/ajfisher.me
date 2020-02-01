@@ -121,9 +121,10 @@ const StyledPostArticle = styled(Article)`
     display: block;
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
-
+    font-style: normal;
     font-size: 4rem;
     color: var(--base);
+
     margin: inherit !important;
     margin-left: calc(-1 * var(--gutter) + var(--margin-indent)) !important;
   }
