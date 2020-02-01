@@ -78,7 +78,7 @@ export const pageQuery = graphql`
             title
             listimage
             listimage_position
-            date(formatString: "YYYY/MM/DD")
+            date(formatString: "YYYY-MM-DD")
             excerpt
             featured
             featureimage
