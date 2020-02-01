@@ -17,6 +17,7 @@ clean-site:
 	@echo 'Cleans all of the api files up'
 	cd ./site  && gatsby clean && rm -rf node_modules && rm -rf coverage
 	cd ./site/plugins/gatsby-transformer-remark-tags && rm -rf node_modules
+	cd ./site/plugins/gatsby-remark-transformer-pullquotes && rm -rf node_modules
 	@echo 'Files cleaned up'
 
 clean-meta:
@@ -30,6 +31,7 @@ install-site:
 	@echo 'Installs the site dependencies'
 	cd ./site && npm install
 	cd ./site/plugins/gatsby-transformer-remark-tags && npm install
+	cd ./site/plugins/gatsby-remark-transformer-pullquotes && npm install
 	@echo 'Site dependencies installed'
 
 install: install-site
@@ -53,4 +55,4 @@ build:
 
 deploy-app:
 	echo "Not implemented"
-	@echo "deploy-app:								Deploy the front end application"
+	@echo "deploy-app:	Deploy the front end application"
