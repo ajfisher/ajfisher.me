@@ -65,7 +65,8 @@ module.exports = {
                 xsl: `xml`,
               }
             },
-          }
+          },
+          `gatsby-remark-transformer-pullquotes`
         ]
       }
     },
