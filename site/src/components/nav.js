@@ -78,7 +78,7 @@ const Nav = ({children}) => {
   return (
     <Navigation>
       <ul>
-        <li><Link href="/">Home</Link></li>
+        <li><Link to="/">Home</Link></li>
         <li><Link to="/blog">Article archive</Link></li>
         <li><Link to="/who">Who is @ajfisher</Link></li>
         <li><Link to="/dis-everything">Disclaimer & Disclosure</Link></li>
