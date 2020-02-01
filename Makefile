@@ -1,4 +1,4 @@
-.PHONY: help lint test
+.PHONY: help lint test build
 
 help:
 	@echo "install:         Install all the parts needed for local dev"
@@ -48,8 +48,8 @@ test:
 	cd ./site && npm run test
 
 build:
-	echo "Not implemented"
-	@echo "build:									Build web application"
+	@echo "build: Build files for deploy"
+	cd ./site && gatsby build
 
 deploy-app:
 	echo "Not implemented"
