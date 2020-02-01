@@ -129,8 +129,8 @@ article p span.gatsby-resp-image-wrapper {
 }
 
 article p.caption {
-    font-size: 2rem !important;
-    background-color: var(--base);
+    font-size: 1.8rem !important;
+    background-color: var(--dark-grey);
     margin-top: calc(-0.5 * var(--gutter));
     margin-bottom: 0;
     color: var(--light-text-colour) !important;
@@ -138,6 +138,7 @@ article p.caption {
     padding-left: var(--gutter) !important;
     display: inline-block;
 	border-radius: 0.2rem;
+    border-bottom: 0.2rem solid var(--base);
 }
 
 article p.caption a, article p.caption a:visited {
@@ -147,7 +148,7 @@ article p.caption a, article p.caption a:visited {
 }
 
 article p.caption a:hover, article p.caption a:visited:hover {
-    color: var(--dark-grey);
+    color: var(--base);
 }
 
 /**
