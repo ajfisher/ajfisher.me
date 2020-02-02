@@ -15,11 +15,10 @@ jobs:
 
             - name: Cache site node modules
               uses: actions/cache@v1
-              working-directory: ./site
               with:
-                  path: node_modules
-                  key: site-build-${{hashFiles('**/package-lock.json')}}
-                  restore-keys: site-build-${{hashFiles('**/package-lock.json')}}
+                  path: ./site/node_modules
+                  key: site-build-${{hashFiles('**/site/package-lock.json')}}
+                  restore-keys: site-build-${{hashFiles('**/site/package-lock.json')}}
 
             - name: Install deps
               run: make install-site
