@@ -1,0 +1,29 @@
+name: Build process test
+on: [ push ]
+jobs:
+    build:
+        name: Build the site code
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v1
+
+            - name: Setup Node
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 12
+
+            - name: Cache site node modules
+              uses: actions/cache@v1
+              working-directory: ./site
+              with:
+                  path: node_modules
+                  key: site-build-${{hashFiles('**/package-lock.json')}}
+                  restore-keys: site-build-${{hashFiles('**/package-lock.json')}}
+
+            - name: Install deps
+              run: make install-site
+
+            - name: Build output files
+              run: make build
+
