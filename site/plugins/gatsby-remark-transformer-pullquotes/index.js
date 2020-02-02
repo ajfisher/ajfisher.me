@@ -14,7 +14,7 @@ module.exports = ({markdownAST}, pluginOptions) => {
     });
 
     if (bfound) {
-      console.log('----- THIS IS A P with a B in it ------');
+      // console.log('----- THIS IS A P with a B in it ------');
       let pullquote = node.children[bindex+1].value;
       pullquote = pullquote[0].toUpperCase() + pullquote.substring(1);
       const text = toString(node);
@@ -32,12 +32,5 @@ module.exports = ({markdownAST}, pluginOptions) => {
     }
   });
 
-  /**
-  visit(markdownAST, 'html', (node, index, parent) => {
-    if (node.value == '<b>') {
-      // we have a b tag which we use to make a pullquote
-    }
-  });**/
-  // console.log(markdownAST);
   return markdownAST;
 };
