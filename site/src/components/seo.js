@@ -12,6 +12,7 @@ function SEO({ description, meta, title, type, tweet, image }) {
             defaultTitle
             description
             author
+            siteUrl
           }
         }
       }
@@ -25,6 +26,8 @@ function SEO({ description, meta, title, type, tweet, image }) {
     metaDescription: description || site.siteMetadata.description,
     pageType: type || `website`,
   }
+
+  const image_url = `${site.siteMetadata.siteUrl}${image.medium}`
 
   return (
     <Helmet
@@ -59,7 +62,7 @@ function SEO({ description, meta, title, type, tweet, image }) {
           content: `@ajfisher`,
         },
         {
-          name: `twitter.site`,
+          name: `twitter:site`,
           content: `@ajfisher`,
         },
         {
@@ -72,7 +75,7 @@ function SEO({ description, meta, title, type, tweet, image }) {
         },
         {
           name: `twitter:image`,
-          content: image.large,
+          content: image_url,
         },
       ].concat(meta)}
     />
