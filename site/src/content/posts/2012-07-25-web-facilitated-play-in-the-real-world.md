@@ -21,7 +21,11 @@ I got the invitation to attend and present at the [Sketching in Hardware confere
 
 My presentation was called "Web facilitated play in the real world" and expressed a summation of the work I have been doing over the last 18 months to bring together mobile and network aware physical devices utilising the real time web. My slides are below and the transcript of my talk is underneath.
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/GqOckL703dY6Y0" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/andrewjfisher/web-facilitated-play-in-the-real-world" title="Web Facilitated Play in the Real World" target="_blank">Web Facilitated Play in the Real World</a> </strong> from <strong><a href="//www.slideshare.net/andrewjfisher" target="_blank">Andrew Fisher</a></strong> </div>
+<p class="mediacontainer"><iframe src="//www.slideshare.net/slideshow/embed_code/key/GqOckL703dY6Y0" title="Web facilitated play in the real world" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; max-width: 100%;" allowfullscreen> </iframe></p>
+
+<p class="caption"><a href="https://www.slideshare.net/andrewjfisher/web-facilitated-play-in-the-real-world">Web facilitated play in the real world</a> - (CC) ajfisher</p>
+
+You can find the transcript of the talk below.
 
 ## Transcript
 

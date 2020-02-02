@@ -31,12 +31,15 @@ love" - image (cc) Nani C.</a></p>
 
 The talk was on Droids, JavaScript & Web Connected hardware, the video is below:
 
-<p class="mediacontainer"><iframe src="https://www.youtube.com/embed/3C3lHuRToQs" frameborder="0" allowfullscreen></iframe></p>
+<p class="mediacontainer"><iframe title="Video of talk on JS and web tech" src="https://www.youtube.com/embed/3C3lHuRToQs" frameborder="0" allowfullscreen></iframe></p>
 
 The full slides are available here:
 [Droids, JavaScript & Web Connected Hardware](http://droidsjs.ajf.io/#/)
 
-<p class="mediacontainer"><iframe src="http://droidsjs.ajf.io/" frameborder="0" allowfullscreeen></iframe></p>
+<p class="mediacontainer"><iframe title="Slide notes from droids talk" src="http://droidsjs.ajf.io/" frameborder="0" allowfullscreeen></iframe></p>
+
+<p class="caption"><a href="http://droidsjs.ajf.io/#/">Droids, JavaScript and
+Web Connected Hardware</a> - (CC) ajfisher</p>
 
 Alongside my talk was a hardware workshop and I also wrote an article for
 HasGeek detailing some of this transition we're starting to see.

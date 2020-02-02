@@ -6,7 +6,7 @@ title: Datatium - a material to create responsive experiences
 slug: datatium-a-material-to-create-responsive-experiences
 tags: media, data, mobile, responsive design, responsive experience, UX, web, context, data science
 collection: featured
-large-title: true
+small-title: true
 featured: true
 featureimage: /img/posts/datatium_bling_material.jpg
 imageby: neekoh.fi
@@ -26,9 +26,9 @@ I had an opportunity to speak at Web Directions South again this year though was
 
 I've included the slide deck here as well as the document which lead to this presentation.
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/B1grIeiHuBesRn" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p class="mediacontainer"><iframe title="Datatium - radiation free responsive experiences" src="//www.slideshare.net/slideshow/embed_code/key/B1grIeiHuBesRn" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe></p>
 
-<p class="caption"><a href="https://www.slideshare.net/andrewjfisher/datatium-radiation-free-responsive-experiences">"Datatium - radiation free, response experiences" - (CC) ajfisher</a>
+<p class="caption"><a href="https://www.slideshare.net/andrewjfisher/datatium-radiation-free-responsive-experiences">"Datatium - radiation free, responsive experiences" - (CC) ajfisher</a>
 
 This is just a small piece of a wider body of work I've been amassing on this topic for the last year and my first attempt to codify the mechanisms of responsive experience. I will be looking to extend this over the next several months with some additional ideas I have on this and probably build a site to support it.
 

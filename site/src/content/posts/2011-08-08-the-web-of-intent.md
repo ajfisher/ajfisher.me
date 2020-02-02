@@ -27,7 +27,7 @@ But all of this is back to front - and this is the beauty of the web intent - I 
 
 It's at this point that a demonstration is probably useful. This is the Mozilla labs view of Web Activities which is a similar concept. It's a little contrived because nothing exists yet except the flickr plugin but it explains the idea. Go ahead, watch the video, this will wait.
 
-<p class="mediacontainer"><iframe width="560" height="315" src="https://www.youtube.com/embed/m5_YDG_jiYg" frameborder="0" allowfullscreen></iframe></p>
+<p class="mediacontainer"><iframe title="Demonstration of web activities by mozilla" width="560" height="315" src="https://www.youtube.com/embed/m5_YDG_jiYg" frameborder="0" allowfullscreen></iframe></p>
 
 <p class="caption">Demonstration of web activities</p>
 

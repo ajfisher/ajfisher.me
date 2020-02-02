@@ -9,7 +9,9 @@ tags: cloud computing, presentation
 
 I recently gave a presentation at Web Directions South which was fantastic (the conference I'm referring to here!). The session was on cloud computing and I hope everyone got something out of it. [I've put the presentation itself over at slideshare](http://www.slideshare.net/andrewjfisher/cloud-presentation-31odp)
 
-<p class="mediacontainer"><iframe src="//www.slideshare.net/slideshow/embed_code/key/tQOKpT9M2gqmD0" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/andrewjfisher/cloud-presentation-31odp" title="Cloud Sourcing the Business" target="_blank">Cloud Sourcing the Business</a> </strong> from <strong><a href="//www.slideshare.net/andrewjfisher" target="_blank">Andrew Fisher</a></strong> </div></p>
+<p class="mediacontainer"><iframe src="//www.slideshare.net/slideshow/embed_code/key/tQOKpT9M2gqmD0" title="Cloud Sourcing the Business" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; max-width: 100%;" allowfullscreen> </iframe></p>
+
+<p class="caption"><a href="https://www.slideshare.net/andrewjfisher/cloud-presentation-31odp">Cloud Sourcing the Business</a> - (CC) ajfisher</p>
 
 My speaking notes are below as the presentation won't make much sense without it as it's mostly images or single statements.
 
