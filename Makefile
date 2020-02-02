@@ -55,4 +55,4 @@ build:
 
 deploy:
 	@echo "Deploying the application"
-	cd ./site/public && aws s3 sync . s3://aj-web-ajfisher-me-prod/
+	cd ./site/public && aws s3 sync . s3://aj-web-ajfisher-me-prod/ --delete
