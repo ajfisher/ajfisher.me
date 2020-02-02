@@ -24,7 +24,7 @@ resource "aws_cloudfront_distribution" "web_app" {
   default_root_object = "index.html"
 
   custom_error_response {
-    error_code = "404"
+    error_code = "403"
     response_page_path = "/404.html"
     response_code = "404"
   }
@@ -35,8 +35,8 @@ resource "aws_cloudfront_distribution" "web_app" {
     target_origin_id = "origin-web-app-${aws_s3_bucket.website_code.id}"
 
     min_ttl          = "0"
-    default_ttl      = "300"                                              //3600
-    max_ttl          = "1200"                                             //86400
+    default_ttl      = "300"                //3600
+    max_ttl          = "1200"               //86400
 
     // This redirects any HTTP request to HTTPS. Security first!
     viewer_protocol_policy = "redirect-to-https"
@@ -48,6 +48,12 @@ resource "aws_cloudfront_distribution" "web_app" {
       cookies {
         forward = "none"
       }
+    }
+
+    # redirect the request if needed
+    lambda_function_association {
+      event_type = "origin-request"
+      lambda_arn = "${aws_lambda_function.redirect_lambda.qualified_arn}"
     }
   }
 
