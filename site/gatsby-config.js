@@ -3,7 +3,7 @@ module.exports = {
     defaultTitle: `ajfisher`,
     description: `The blog and portfolio of AJFisher - technologist`,
     author: `@ajfisher`,
-    siteUrl: 'https://ajfisher.me'
+    siteUrl: 'https://www.ajfisher.me'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
