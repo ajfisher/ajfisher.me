@@ -9,6 +9,42 @@ resource "aws_s3_bucket" "website_logs" {
   }
 }
 
+# redirection bucket
+resource "aws_s3_bucket" "redirect_to_apex" {
+  bucket = "ajfisher-site-apex-redirect-${var.env}"
+
+  website {
+    redirect_all_requests_to = "https://ajfisher.me"
+  }
+}
+
+resource "aws_s3_bucket_policy" "redirect_to_apex" {
+  bucket = "${aws_s3_bucket.redirect_to_apex.id}"
+  policy= <<POLICY
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Principal": "*",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Resource": "${aws_s3_bucket.redirect_to_apex.arn}/*",
+      "Effect": "Allow"
+    },
+    {
+      "Principal": "*",
+      "Action": [
+        "s3:ListBucket"
+      ],
+      "Resource": "${aws_s3_bucket.redirect_to_apex.arn}",
+      "Effect": "Allow"
+    }
+  ]
+}
+POLICY
+}
+
 # Deploy user which will be used to upload files to the bucket
 
 resource "aws_iam_user" "deploy_user" {
