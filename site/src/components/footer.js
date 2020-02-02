@@ -1,6 +1,7 @@
 import { Link, useStaticQuery, graphql} from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import Img from 'gatsby-image';
 
@@ -205,17 +206,17 @@ const Footer = ({slug}) => {
         <section>
           <Title>Latest talk</Title>
           <FooterImageLink>
-            <a href="https://www.youtube.com/watch?v=3C3lHuRToQs">
+            <OutboundLink href="https://www.youtube.com/watch?v=3C3lHuRToQs">
               <Img
                 fluid={data.jsFoo.childImageSharp.fluid}
                 alt="YouTube - JSFoo, India"
               />
-            </a>
+            </OutboundLink>
           </FooterImageLink>
           <p>
-            <a href="https://www.youtube.com/watch?v=3C3lHuRToQs">
+            <OutboundLink href="https://www.youtube.com/watch?v=3C3lHuRToQs">
               Droids, JavaScript and Web Connected Hardware, JSFoo, India
-            </a>
+            </OutboundLink>
           </p>
           <p>
             Dive into the world of JS hardware and see the sorts of things
@@ -225,30 +226,30 @@ const Footer = ({slug}) => {
         <section>
           <Title>My books</Title>
           <FooterImageLink position="50% 100%">
-            <a href="http://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
+            <OutboundLink href="http://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
               <Img
                 fluid={data.jsRobotics.childImageSharp.fluid}
                 alt="Make JavaScript Robotics Book Cover"
               />
-            </a>
+            </OutboundLink>
           </FooterImageLink>
           <p>
-            <a href="http://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
+            <OutboundLink href="http://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
               Make: JavaScript Robotics
-            </a>
+            </OutboundLink>
           </p>
           <FooterImageLink position="50% 85%">
-            <a href="http://www.amazon.com/Jump-Start-Responsive-Web-Design-ebook/dp/B00TJ6UY9S/">
+            <OutboundLink href="http://www.amazon.com/Jump-Start-Responsive-Web-Design-ebook/dp/B00TJ6UY9S/">
               <Img
                 fluid={data.responsiveDesign.childImageSharp.fluid}
                 alt="Jump Start Responsive Design Book Cover"
               />
-            </a>
+            </OutboundLink>
           </FooterImageLink>
           <p>
-            <a href="http://www.amazon.com/Jump-Start-Responsive-Web-Design-ebook/dp/B00TJ6UY9S/">
+            <OutboundLink href="http://www.amazon.com/Jump-Start-Responsive-Web-Design-ebook/dp/B00TJ6UY9S/">
               Jump Start Responsive Web Design
-            </a>
+            </OutboundLink>
           </p>
         </section>
       </FooterContainer>

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Link } from 'gatsby';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -84,18 +85,18 @@ const Nav = ({children}) => {
         <li><Link to="/colophon/">Colophon</Link></li>
         <li><Link to="/dis-everything/">Disclaimer & Disclosure</Link></li>
         <li className="icons">
-          <a title="@ajfisher on Twitter" href="https://twitter.com/ajfisher" target="_blank" rel="noopener noreferrer">
+          <OutboundLink title="@ajfisher on Twitter" href="https://twitter.com/ajfisher" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faTwitter}/>
-          </a>
-          <a title="@ajfisher on Github" href="https://github.com/ajfisher" target="_blank" rel="noopener noreferrer">
+          </OutboundLink>
+          <OutboundLink title="@ajfisher on Github" href="https://github.com/ajfisher" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub}/>
-          </a>
-          <a title="@ajfisher on Instagram" href="https://instagram.com/andrewjfisher" target="_blank" rel="noopener noreferrer">
+          </OutboundLink>
+          <OutboundLink title="@ajfisher on Instagram" href="https://instagram.com/andrewjfisher" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram}/>
-          </a>
-          <a title="Send ajfisher an email" href="mailto:ajfisher.td@gmail.com" target="_blank" rel="noopener noreferrer">
+          </OutboundLink>
+          <OutboundLink title="Send ajfisher an email" href="mailto:ajfisher.td@gmail.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faEnvelope}/>
-          </a>
+          </OutboundLink>
         </li>
       </ul>
     </Navigation>
