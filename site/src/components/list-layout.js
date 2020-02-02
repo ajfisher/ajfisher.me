@@ -19,7 +19,7 @@ const Layout = ({ children, featured={}, slug}) => {
   const {frontmatter={}, fields={}} = featured;
   const excerpt = frontmatter.excerpt || fields.excerpt || '';
 
-  const url = `/${pathDate(frontmatter.date)}/${frontmatter.slug}`;
+  const url = `/${pathDate(frontmatter.date)}/${frontmatter.slug}/`;
 
   let featuredImage;
 

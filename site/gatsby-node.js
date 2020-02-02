@@ -51,13 +51,13 @@ exports.createPages = async ({ actions, graphql }) => {
 
     if (node.frontmatter.layout.startsWith('page')) {
       createPage({
-        path: node.frontmatter.slug,
+        path: node.frontmatter.slug + '/',
         component: path.resolve(`src/templates/article.js`),
         context
       });
     } else if (node.frontmatter.layout.startsWith('post')) {
       createPage({
-        path: pathDate(node.frontmatter.date) + '/' + node.frontmatter.slug,
+        path: pathDate(node.frontmatter.date) + '/' + node.frontmatter.slug + '/',
         component: path.resolve(`src/templates/post.js`),
         context
       });
@@ -68,7 +68,7 @@ exports.createPages = async ({ actions, graphql }) => {
   const tags = result.data.tagsGroup.group;
   tags.forEach(tag => {
     createPage({
-      path: `/tagged/${kebabCase(tag.fieldValue)}`,
+      path: `/tagged/${kebabCase(tag.fieldValue)}/`,
       component: path.resolve(`src/templates/tags.js`),
       context: {
         tag: tag.fieldValue

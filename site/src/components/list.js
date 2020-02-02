@@ -109,7 +109,7 @@ export const PostListItem = ({title, image, position, excerpt, date,
 
     image = image || '';
 
-    const url = `/${pathDate(date)}/${slug}`;
+    const url = `/${pathDate(date)}/${slug}/`;
 
     const { postItemImages } = getPostImages();
 

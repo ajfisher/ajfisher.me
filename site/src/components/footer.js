@@ -188,7 +188,7 @@ const Footer = ({slug}) => {
     featured = featuredPosts[1]; // second latest
   }
 
-  featured.url = `/${pathDate(featured.date)}/${featured.slug}`;
+  featured.url = `/${pathDate(featured.date)}/${featured.slug}/`;
   if (featured.listimage.startsWith('/img/')) {
     featured.listimage = featured.listimage.substring(5);
   }
