@@ -54,6 +54,10 @@ function SEO({ description, meta, title, type, tweet, image }) {
           content: seo.pageType,
         },
         {
+          name: `og:image`,
+          content: image_url,
+        },
+        {
           name: `twitter:card`,
           content: `summary_large_image`,
         },
