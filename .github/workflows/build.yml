@@ -59,7 +59,7 @@ jobs:
               with:
                   path: ./site/public
                   key: site-public-${{hashFiles('**/site/**')}}
-                  restore-keys: site-public-${{hasFiles('**/site/**')}}
+                  restore-keys: site-public-${{hashFiles('**/site/**')}}
 
             - name: Build output files
               run: make build
