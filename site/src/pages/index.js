@@ -16,7 +16,7 @@ const HomePage = ({pageContext, data}) => {
   return (
     <Layout slug="/" featured={featured.edges[0].node}>
       <SEO
-        title="Home"
+        title="Home | ajfisher.me"
         description="Featured and recent posts from ajfisher"
         type="list"
       />
