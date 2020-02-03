@@ -53,6 +53,14 @@ jobs:
               if: steps.cache-pullquotes-modules.outputs.cache-hit != 'true'
               run: cd site/plugins/gatsby-remark-transformer-pullquotes && npm install
 
+            - name: Public output cache
+              id: cache-build
+              uses: actions/cache@v1
+              with:
+                  path: ./site/public
+                  key: site-public-${{hashFiles('**/site/**')}}
+                  restore-keys: site-public-${{hasFiles('**/site/**')}}
+
             - name: Build output files
               run: make build
 
