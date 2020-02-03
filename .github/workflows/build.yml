@@ -1,4 +1,4 @@
-name: Build process test
+name: Build and deploy site
 on: [ push ]
 jobs:
     build:
@@ -57,7 +57,7 @@ jobs:
               run: make build
 
             - name: Sync files to S3
-              run: aws s3 sync ./site/build/ s3://aj-web-ajfisher-me-prod/ --delete
+              run: aws s3 sync ./site/public/ s3://aj-web-ajfisher-me-prod/ --delete
               shell: bash
               env:
                   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
