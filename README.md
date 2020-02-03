@@ -105,5 +105,3 @@ npm install ~/tmp/metalsmith-convert
 * featured: (true) if you want it to appear in feature list
 * excerpt: use with MD multiline `>` to create an excerpt or it will be pulled
 from first proper para
-
-NOOP to make redeploy work
