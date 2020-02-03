@@ -4,6 +4,8 @@ jobs:
     build:
         name: Build the site code
         runs-on: ubuntu-latest
+        env:
+            GATSBY_PLUGIN_TAGS: /plugins/gatsby-transformer-remark-tags
         steps:
             - name: Checkout code
               uses: actions/checkout@v1
@@ -14,15 +16,23 @@ jobs:
                   node-version: 12
 
             - name: Cache site node modules
+              id: cache-site-modules
               uses: actions/cache@v1
               with:
                   path: ./site/node_modules
                   key: site-build-${{hashFiles('**/site/package-lock.json')}}
                   restore-keys: site-build-${{hashFiles('**/site/package-lock.json')}}
 
+            - name: Cache Tags plugin node modules
+              id: cache-tags-modules
+              uses: actions/cache@v1
+              with:
+                  path: ./site${{env.GATSBY_PLUGIN_TAGS}}/node_modules
+                  key: site-tags-${{hashFiles('**/site${{env.GATSBY_PLUGIN_TAGS}}/package-lock.json')}}
+                  restore-keys: site-tags-${{hashFiles('**/site${{env.GATSBY_PLUGIN_TAGS}}/package-lock.json')}}
+
             - name: Install deps
               run: make install-site
 
             - name: Build output files
               run: make build
-
