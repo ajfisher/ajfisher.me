@@ -25,6 +25,10 @@ jobs:
                   key: site-build-${{hashFiles('**/site/package-lock.json')}}
                   restore-keys: site-build-${{hashFiles('**/site/package-lock.json')}}
 
+            - name: Install site deps
+              if: steps.cache-site-modules.outputs.cache-hit != 'true'
+              run: cd site && npm install
+
             - name: Cache Tags plugin node modules
               id: cache-tags-modules
               uses: actions/cache@v1
@@ -33,16 +37,21 @@ jobs:
                   key: site-tags-${{hashFiles('**/gatsby-transformer-remark-tags/package-lock.json')}}
                   restore-keys: site-tags-${{hashFiles('**/gatsby-transformer-remark-tags/package-lock.json')}}
 
+            - name: Install tags deps
+              if: steps.cache-tags-modules.outputs.cache-hit != 'true'
+              run: cd site/plugins/gatsby-transformer-remark-tags && npm install
+
             - name: Cache pullquotes plugin node modules
-              id: cache-tags-pullquotes
+              id: cache-pullquotes-modules
               uses: actions/cache@v1
               with:
                   path: ${{env.GATSBY_PULLQUOTE_MODULES}}
                   key: site-tags-${{hashFiles('**/gatsby-remark-transformer-pullquotes/package-lock.json')}}
                   restore-keys: site-tags-${{hashFiles('**/gatsby-remark-transformer-pullquotes/package-lock.json')}}
 
-            - name: Install deps
-              run: make install-site
+            - name: Install pullquote deps
+              if: steps.cache-pullquotes-modules.outputs.cache-hit != 'true'
+              run: cd site/plugins/gatsby-remark-transformer-pullquotes && npm install
 
             - name: Build output files
               run: make build
