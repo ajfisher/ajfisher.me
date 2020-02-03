@@ -37,6 +37,8 @@ export default function Template({ data, location }) {
         type="article"
         tweet={twitter_excerpt}
         image={featuredImageSrc}
+        readingTime={fields.readingTime.minutes}
+        words={fields.readingTime.words}
       />
       <section
         className="content"

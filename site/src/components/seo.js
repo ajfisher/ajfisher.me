@@ -1,9 +1,11 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react';
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import { useStaticQuery, graphql } from 'gatsby';
 
-function SEO({ description, meta, title, type, tweet, image }) {
+import humanize from 'humanize-plus';
+
+function SEO({ description, meta, title, type, tweet, image, readingTime, words}) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -27,7 +29,26 @@ function SEO({ description, meta, title, type, tweet, image }) {
     pageType: type || `website`,
   }
 
-  const image_url = `${site.siteMetadata.siteUrl}${image.medium}`
+  if (typeof(image.medium) !== 'undefined') {
+    const image_url = `${site.siteMetadata.siteUrl}${image.medium}`;
+
+    meta.push({name: `og:image`, content: image_url });
+    meta.push({ name: `twitter:image`, content: image_url});
+  }
+
+  if (readingTime > 0) {
+    const rounded_time = Math.ceil(readingTime) || 0;
+
+    meta.push({name: `twitter:label1`, content: `Reading Time`});
+    meta.push({name: `twitter:data1`, content: `${rounded_time} minutes`});
+  }
+
+  if (words > 0) {
+    const humanised_words = humanize.compactInteger(words, 1) || 0;
+
+    meta.push({name: `twitter:label2`, content: `Words`});
+    meta.push({name: `twitter:data2`, content: `${humanised_words}`});
+  }
 
   return (
     <Helmet
@@ -54,10 +75,6 @@ function SEO({ description, meta, title, type, tweet, image }) {
           content: seo.pageType,
         },
         {
-          name: `og:image`,
-          content: image_url,
-        },
-        {
           name: `twitter:card`,
           content: `summary_large_image`,
         },
@@ -77,10 +94,6 @@ function SEO({ description, meta, title, type, tweet, image }) {
           name: `twitter:description`,
           content: tweet || seo.metaDescription,
         },
-        {
-          name: `twitter:image`,
-          content: image_url,
-        },
       ].concat(meta)}
     />
   )
@@ -91,7 +104,9 @@ SEO.defaultProps = {
   meta: [],
   description: ``,
   tweet: ``,
-  image: ``
+  image: ``,
+  readingTime: 0,
+  words: 0
 }
 
 SEO.propTypes = {
@@ -99,6 +114,8 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  readingTime: PropTypes.number,
+  words: PropTypes.number
 }
 
 export default SEO
