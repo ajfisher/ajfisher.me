@@ -29,25 +29,27 @@ function SEO({ description, meta, title, type, tweet, image, readingTime, words}
     pageType: type || `website`,
   }
 
+  const card_meta = [];
+
   if (typeof(image.medium) !== 'undefined') {
     const image_url = `${site.siteMetadata.siteUrl}${image.medium}`;
 
-    meta.push({name: `og:image`, content: image_url });
-    meta.push({ name: `twitter:image`, content: image_url});
+    card_meta.push({name: `og:image`, content: image_url });
+    card_meta.push({ name: `twitter:image`, content: image_url});
   }
 
   if (readingTime > 0) {
     const rounded_time = Math.ceil(readingTime) || 0;
 
-    meta.push({name: `twitter:label1`, content: `Reading Time`});
-    meta.push({name: `twitter:data1`, content: `${rounded_time} minutes`});
+    card_meta.push({name: `twitter:label1`, content: `Reading Time`});
+    card_meta.push({name: `twitter:data1`, content: `${rounded_time} minutes`});
   }
 
   if (words > 0) {
     const humanised_words = humanize.compactInteger(words, 1) || 0;
 
-    meta.push({name: `twitter:label2`, content: `Words`});
-    meta.push({name: `twitter:data2`, content: `${humanised_words}`});
+    card_meta.push({name: `twitter:label2`, content: `Words`});
+    card_meta.push({name: `twitter:data2`, content: `${humanised_words}`});
   }
 
   return (
@@ -94,7 +96,7 @@ function SEO({ description, meta, title, type, tweet, image, readingTime, words}
           name: `twitter:description`,
           content: tweet || seo.metaDescription,
         },
-      ].concat(meta)}
+      ].concat(meta).concat(card_meta)}
     />
   )
 }
