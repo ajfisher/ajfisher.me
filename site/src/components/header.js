@@ -14,7 +14,7 @@ const TextHeader = styled.header`
   padding: var(--gutter) 0;
 
   /** Put the background gradient in**/
-  background: var(--darkened-grey);
+  background-color: var(--darkened-grey);
   background: -moz-radial-gradient(circle, var(--dark-grey) 0%, var(--darkened-grey) 100% );
   background: -webkit-radial-gradient(circle, var(--dark-grey) 0%, var(--darkened-grey) 100% );
   background: radial-gradient(circle, var(--dark-grey) 0%, var(--darkened-grey) 100% );
@@ -35,6 +35,7 @@ const TextHeader = styled.header`
 `;
 
 const ImageHeader = styled(TextHeader)`
+  background-color: var(--darkened-grey);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
