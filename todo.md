@@ -21,7 +21,6 @@ Maker projects
 
 Other posts:
 
-* Migrating to Metalsmith (notes and pointers)
 * Building NodePixel
 * Designing the simplebot
 * Wifi nodebot

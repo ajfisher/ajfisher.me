@@ -23,11 +23,11 @@ than to control the lights from your smartwatch - especially when you can
 do it using JavaScript.
 
 > I could build a simple web application that gets your latest train times or
-    Yelp reviews, but where’s the fun in that? Instead I’m going to pair a
-    Pebble with one of the other current darlings of the hacker community, the
-    ESP8266 WiFi module.
+Yelp reviews, but where’s the fun in that? Instead I’m going to pair a
+Pebble with one of the other current darlings of the hacker community, the
+ESP8266 WiFi module.
 
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/BeIQ47WBVXs" frameborder="0" allowfullscreen></iframe></p>
+<p class="mediacontainer"><iframe title="Controlled LEDs via Pebble Smartwatch" width="560" height="315" src="https://www.youtube.com/embed/BeIQ47WBVXs" frameborder="0" allowfullscreen></iframe></p>
 
 The full post is over at Packt:
 [Using your smartwatch to control networked LEDs](https://www.packtpub.com/books/content/using-your-smart-watch-control-networked-leds)

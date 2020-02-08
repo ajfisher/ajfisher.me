@@ -24,31 +24,37 @@ not just about NodeBots but how web connected hardware is where a lot of
 development will be taking place over the coming decade and how web developers
 in particular have useful skills to bring to bear in the hardware world.
 
-![Cyber love, image (cc) Nani C. http://www.flickr.com/photos/hiperbolica/3414999010](/img/posts/robot_love.jpg)
+![Drawing of robot with a heart symbol in a speech bubble](/img/posts/robot_love.jpg)
+
+<p class="caption"><a href="http://www.flickr.com/photos/hiperbolica/3414999010">"Cyber
+love" - image (cc) Nani C.</a></p>
 
 The talk was on Droids, JavaScript & Web Connected hardware, the video is below:
 
-<p class="mediacontainer"><iframe src="https://www.youtube.com/embed/3C3lHuRToQs" frameborder="0" allowfullscreen></iframe></p>
+<p class="mediacontainer"><iframe title="Video of talk on JS and web tech" src="https://www.youtube.com/embed/3C3lHuRToQs" frameborder="0" allowfullscreen></iframe></p>
 
 The full slides are available here:
 [Droids, JavaScript & Web Connected Hardware](http://droidsjs.ajf.io/#/)
 
-<p class="mediacontainer"><iframe src="http://droidsjs.ajf.io/" frameborder="0" allowfullscreeen></iframe></p>
+<p class="mediacontainer"><iframe title="Slide notes from droids talk" src="http://droidsjs.ajf.io/" frameborder="0" allowfullscreeen></iframe></p>
+
+<p class="caption"><a href="http://droidsjs.ajf.io/#/">Droids, JavaScript and
+Web Connected Hardware</a> - (CC) ajfisher</p>
 
 Alongside my talk was a hardware workshop and I also wrote an article for
 HasGeek detailing some of this transition we're starting to see.
 
 > Over the last few years I have watched this community evolve from a group of
-    people sharing some code on GitHub and some pics on twitter to a truly global
-    movement where thousands of developers and designers have built real-world
-    physical things controlled with JavaScript. Web developers in particular
-    love to make things but we tend to focus on the digital. Even our language
-    speaks to this, where we talk about code as a "craft" as much as engineering
-    and we "build" a site. It's this aptitude and interest in building that is
-    one of the key elements in why NodeBots and JS hardware is taking off. I
-    have watched the satisfaction of someone who's only experience of hardware
-    is putting batteries into an object build a sensor that determines if the
-    the coffee machine is free or in use.
+people sharing some code on GitHub and some pics on twitter to a truly global
+movement where thousands of developers and designers have built real-world
+physical things controlled with JavaScript. Web developers in particular
+love to make things but we tend to focus on the digital. Even our language
+speaks to this, where we talk about code as a "craft" as much as engineering
+and we "build" a site. It's this aptitude and interest in building that is
+one of the key elements in why NodeBots and JS hardware is taking off. I
+have watched the satisfaction of someone who's only experience of hardware
+is putting batteries into an object build a sensor that determines if the
+the coffee machine is free or in use.
 
 Full article at HasGeek
 [JavaScript - not just the language of the web](https://blog.hasgeek.com/2015/javascript-not-just-the-language-of-the-web/)

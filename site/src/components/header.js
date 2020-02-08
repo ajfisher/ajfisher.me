@@ -11,7 +11,7 @@ const TextHeader = styled.header`
   border-bottom: 2px solid var(--highlight);
   min-height: 63vh;
   margin: 0;
-  padding: 2rem 0;
+  padding: var(--gutter) 0;
 
   /** Put the background gradient in**/
   background: var(--darkened-grey);
@@ -24,8 +24,9 @@ const TextHeader = styled.header`
           box-shadow: 0 0.65rem 0.8rem #aaa;
 
   @media only screen and ${device.medium} {
-    min-height: 90vh;
-    padding: 2.5vh 0;
+    min-height: 70vh;
+    max-height: 90vh;
+    padding: var(--gutter) 0;
   }
 
   // put the little shadow along the bottom for big screens.
@@ -37,7 +38,23 @@ const ImageHeader = styled(TextHeader)`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(${props => props.featuredImage});
+  background-image: url(${props => props.featuredImage.base});
+
+  @media only screen and ${device.small} {
+    background-image: url(${props => props.featuredImage.small});
+  }
+
+  @media only screen and ${device.medium} {
+    background-image: url(${props => props.featuredImage.medium});
+  }
+
+  @media only screen and ${device.large} {
+    background-image: url(${props => props.featuredImage.large});
+  }
+
+  @media only screen and ${device.wide} {
+    background-image: url(${props => props.featuredImage.wide});
+  }
 `;
 
 const Container = styled.div`
@@ -46,46 +63,117 @@ const Container = styled.div`
   padding-top: 0rem;
 
   @media only screen and ${device.medium} {
-    width: 90vw;
-    margin: 0 5vw;
+    /** width: 90vw;
+    margin: 0 5vw;**/
   }
 
   @media only screen and ${device.large} {
-    width: 687px;
-    padding-right: 339px;
+    max-width: 687px;
+  }
+
+  @media only screen and ${device.wide} {
+    max-width: 1026px;
+    margin: 0 auto;
   }
 `
 
-const Title = styled.h1`
+const StyledTitle = styled.h1`
   background-color: var(--base);
-  padding: 1.5rem 2rem;
-  margin: 0rem 2rem;
+  padding: var(--gutter);
+  margin: 0rem var(--gutter);
   color: var(--light-text-colour);
   min-height: 25vh;
   max-height: 35vh;
-  width: 67vw;
+  width: min-content;
+  min-width: 60vw;
+  max-width: calc(100% - 2 * var(--gutter));
   border-radius: 0.2rem;
+  box-sizing: border-box;
+  font-size: 4rem;
+  line-height: 4rem;
+
+  &.enlarge {
+    font-size: 5rem;
+    line-height: 5rem;
+
+    @media only screen and ${device.medium} {
+      font-size: 6rem;
+      line-height: 6rem;
+    }
+
+    @media only screen and ${device.large} {
+      font-size: 7rem;
+      line-height: 7rem;
+    }
+  }
+
+  &.shrink {
+
+    @media only screen and ${device.medium} {
+      font-size: 4.5rem;
+      line-height: 4.5rem;
+    }
+
+    @media only screen and ${device.large} {
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+  }
+
+  & a, & a:visited {
+    background: none;
+    padding: 0;
+    color: inherit;
+  }
+
+  & a:hover, & a:visited:hover {
+    color: var(--dark-grey);
+  }
 
   @media only screen and ${device.medium} {
-    padding: 3.5rem 3rem;
-    /** margin-top: 9rem; **/
+    padding: var(--gutter);
+    max-width: 70vw;
+    font-size: 5rem;
+    line-height: 5rem;
   }
 
   @media only screen and ${device.large} {
-    /**min-height: 35rem;**/
+    font-size: 6rem;
+    line-height: 6rem;
+    width: 61vw;
+    max-height: 40vh;
+  }
+
+  @media only screen and ${device.wide} {
+    min-width: unset;
+    max-width: unset;
+    min-height: 35vh;
+    max-height: 45vh;
+    margin: 0;
+    width: 45%;
   }
 `;
 
 const Para = styled.p`
   color: var(--light-text-colour);
-  /** clear: left; **/
-  padding: 0 2rem;
-  font-size: 2rem;
-  margin: 1.5rem 0rem;
+  padding: 0 var(--gutter);
+  font-size: 1.8rem;
+  margin: var(--gutter) 0;
+  box-sizing: border-box;
 
   @media only screen and ${device.medium} {
-    font-size: 3rem;
-    padding: 0 3.5rem;
+    font-size: 2rem;
+    padding: 0 var(--gutter);
+    margin: calc(0.5 * var(--gutter)) 0;
+  }
+
+  @media only screen and ${device.large} {
+    font-size: 2.2rem;
+    max-width: 61vw;
+  }
+
+  @media only screen and ${device.wide} {
+    max-width: 61%;
   }
 `;
 
@@ -98,7 +186,7 @@ const Lede = styled(Para)`
   font-weight: normal;
 
   @media only screen and ${device.medium} {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
 `;
 
@@ -115,38 +203,85 @@ const PostData = styled(Para)`
   }
 `;
 
-const PostHeader = ({ title, date, excerpt, featuredImage, readingTime }) => {
+const Title = ({children, url, smalltitle, largetitle}) => {
 
-  const formatted_date = moment(date).format('dddd, MMMM Do YYYY');
-  const rounded_time = Math.ceil(readingTime.minutes);
-  const humanised_words = humanize.compactInteger(readingTime.words, 1);
+  let classname;
+  if (smalltitle) {
+    classname = 'shrink';
+  } else if (largetitle) {
+    classname = 'enlarge';
+  }
 
-  const Header = (typeof(featuredImage) === 'undefined') ? TextHeader : ImageHeader;
-
-  return (
-    <Header featuredImage={featuredImage}>
-      <Container className="wrapper">
-        <Title className="title">{title}</Title>
-        <PublishedDate className="date">Published: {formatted_date}</PublishedDate>
-        { excerpt.length > 0 &&
-          <Lede>{excerpt}</Lede>
-        }
-        { rounded_time > 0 &&
-          <PostData className="postdata"><span className="worddata">A {rounded_time} minute read</span> {humanised_words} words</PostData>
-        }
-      </Container>
-    </Header>
-  );
+  if (typeof(url) === 'undefined') {
+    return(
+      <StyledTitle className={classname}>{children}</StyledTitle>
+    );
+  } else {
+    return(
+      <StyledTitle as="h2" className={classname}><Link to={url}>{children}</Link></StyledTitle>
+    );
+  }
 };
 
-PostHeader.propTypes = {
+Title.defaultProps = {
+  smalltitle: false,
+  largetitle: false
+};
+
+const Featured = styled.p`
+  color: var(--highlight);
+  margin: 0 var(--gutter);
+  text-transform: uppercase;
+  font-size: 1.8rem;
+`;
+
+const Header = ({ title, date, excerpt, url, featured=false, featuredImage,
+  smalltitle, largetitle, readingTime={} }) => {
+
+    let formatted_date;
+    if (typeof(date) !== 'undefined') {
+      formatted_date = moment(date).format('dddd, MMMM Do YYYY');
+    }
+
+    const rounded_time = Math.ceil(readingTime.minutes) || 0;
+    const humanised_words = humanize.compactInteger(readingTime.words, 1) || 0;
+
+    const PostHeader = (typeof(featuredImage) === 'undefined') ? TextHeader : ImageHeader;
+
+    return (
+      <PostHeader featuredImage={featuredImage}>
+        <Container className="wrapper">
+          { featured &&
+            <Featured>Featured Post</Featured>
+          }
+          <Title url={url} smalltitle={smalltitle} largetitle={largetitle}>{title}</Title>
+          { typeof(date) !== 'undefined' &&
+            <PublishedDate className="date">Published: {formatted_date}</PublishedDate>
+          }
+          { excerpt != null && excerpt.length > 0 &&
+            <Lede>{excerpt}</Lede>
+          }
+          { rounded_time > 0 &&
+            <PostData className="postdata"><span className="worddata">A {rounded_time} minute read</span> {humanised_words} words</PostData>
+          }
+        </Container>
+      </PostHeader>
+    );
+};
+
+Header.propTypes = {
   title: PropTypes.string,
   excerpt: PropTypes.string,
 };
 
-PostHeader.defaultProps = {
+Header.defaultProps = {
   title: ``,
   excerpt: ``,
+  readingTime: {},
+  smalltitle: false,
+  largetitle: false,
+  featured: false,
+  date: undefined
 };
 
-export default PostHeader;
+export default Header;

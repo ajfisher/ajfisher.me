@@ -3,7 +3,7 @@ author: ajfisher
 date: 2007-02-15 13:56:00+00:00
 layout: post.hbt
 slug: please-nokia-slap-me-again-no-really
-title: please nokia slap me again - no really
+title: Please nokia slap me again - no really
 tags: mobile, nokia
 ---
 

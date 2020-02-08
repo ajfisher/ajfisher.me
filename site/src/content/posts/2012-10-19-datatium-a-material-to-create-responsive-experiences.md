@@ -6,6 +6,8 @@ title: Datatium - a material to create responsive experiences
 slug: datatium-a-material-to-create-responsive-experiences
 tags: media, data, mobile, responsive design, responsive experience, UX, web, context, data science
 collection: featured
+small-title: true
+featured: true
 featureimage: /img/posts/datatium_bling_material.jpg
 imageby: neekoh.fi
 imagelink: https://www.flickr.com/photos/neekohfi/5608007004
@@ -22,9 +24,13 @@ twitter_excerpt: >
 
 I had an opportunity to speak at Web Directions South again this year though was a bit daunted by the prospect of being asked to speak in the Design track for the very first time in my career. However, this was a great opportunity to distill a lot of the thinking I've been doing around responsive experiences for the last two years, thinking that dates back all the way to the work I did with [Paul Thurlow](http://twitter.com/jptcovers) at [peoplesound.com](http://wayback.archive.org/web/*/http://www.peoplesound.com) over a decade ago as well as more recent work at [JBA](http://jbadigital.com) as a result of my data work.
 
-I've included the slide deck here as well as the document which lead to this presentation. This is actually just a small piece of a wider body of work I've been amassing on this topic for the last year and my first attempt to codify the mechanisms of responsive experience. I will be looking to extend this over the next several months with some additional ideas I have on this and probably build a site to support it.
+I've included the slide deck here as well as the document which lead to this presentation.
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/B1grIeiHuBesRn" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/andrewjfisher/datatium-radiation-free-responsive-experiences" title="Datatium - radiation free responsive experiences" target="_blank">Datatium - radiation free responsive experiences</a> </strong> from <strong><a href="//www.slideshare.net/andrewjfisher" target="_blank">Andrew Fisher</a></strong> </div>
+<p class="mediacontainer"><iframe title="Datatium - radiation free responsive experiences" src="//www.slideshare.net/slideshow/embed_code/key/B1grIeiHuBesRn" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe></p>
+
+<p class="caption"><a href="https://www.slideshare.net/andrewjfisher/datatium-radiation-free-responsive-experiences">"Datatium - radiation free, responsive experiences" - (CC) ajfisher</a>
+
+This is just a small piece of a wider body of work I've been amassing on this topic for the last year and my first attempt to codify the mechanisms of responsive experience. I will be looking to extend this over the next several months with some additional ideas I have on this and probably build a site to support it.
 
 ## Transcript
 
@@ -108,7 +114,10 @@ You don't have to be perfect in every instance. If you can get 99% with about 10
 
 Don't underestimate the value of tiny removals of friction, especially in things like checkout processes. The way I think about this is like a slide right. Remember when you were a kid and they made a slide out of some sort of metal that you just didn't seem to slide on so you had to wiggle your way down. Pretty soon you got bored and went and set fire to things or did something more interesting.
 
-![The Sandwich Shop, Surry Hills. cc ajfisher](/img/posts/tss.jpg)
+![A sandwich shop with people queuing to buy food](/img/posts/tss.jpg)
+
+<p class="caption">The Sandwich Shop, Surry Hills, Sydney - image (cc) ajfisher</p>
+
 
 One of my favourite examples of this frictionless interaction is actually from a sandwich shop over in Surry Hills. When you place your order you have to give your name. If you pay with a card though they use your name off the card and just confirm it with you “You're Andrew right?”. Beautiful! We can do this so much more often than we do.
 
@@ -192,7 +201,7 @@ For example if I have a pay as you go mobile phone and I recharge it online, cha
 
 Why not make this a link that surfaces when I start exhibiting this behaviour. Sure it makes it a little harder to design for but if we just make the slot available for responsive experience customisation and define constraints around it then it makes it much more useful for the user.
 
-![Amazon](/img/posts/amazon_shop.jpg)
+![Screen shot of the home page of Amazon.com](/img/posts/amazon_shop.jpg)
 
 Taking Amazon back as an example the thing I do more than anything on the Amazon site is check my Gift Card balance because I read so many ebooks on my kindle. Creating a responsive experience for me would be taking that piece of data and then exposing it on the site AND exposing it through the API that is available to the kindle. That's the sort of stuff that starts empowering users and making them feel as though the application is reacting to their behaviour.
 
@@ -234,9 +243,7 @@ So behaviourally responsive experiences take a bit more work but they completely
 
 Now we understand how conditionally and behaviourally responsive experiences work we're going to talk about how we really start to change the nature of experience and look at contextually responsive experiences.
 
-
 ## Contextually responsive experiences
-
 
 These experiences are ones that constantly evolve, they are highly chaotic and require you to think more about intent than about anything else. They are shaped by external factors to the user as well as to the explicit and implicit data they have generated for you.
 
@@ -298,9 +305,7 @@ Now, a lot of companies when they “go mobile” have this belief they need to 
 
 I've been told anecdotally that when ANZ came to build their GoMoney application for mobile devices it was based around the insight that the majority of users logged in to the existing web application on their phone, looked at their account balance and exited again. As such in their mobile app they put it front and centre and then tacked on making a payment as well as that was the number two task.
 
-
-<blockquote>**Context is what drives need and requirements.**</blockquote>
-
+> Context is what drives need and requirements.
 
 When I'm out and about and I'm really mobile, I don't need the full capabilities of the entire ANZ online banking platform. I just want to see whether I've been paid and whether I have enough money to buy that new Vita game or not.
 
@@ -365,9 +370,11 @@ Back in the 70s a magazine was launched to help you make a punk band. In it ther
 
 Here's a chord, here's another, here's a third - go start a band.
 
-Well data science is like punk. It's all about exploring the possibilities of what data can do for user experience and break pre-existing rules. So here's my equivalents:
+![Graph of behaviours over time, change and then change of change](/img/posts/behaviour_differentials.jpg)
 
-![Behavioural differentials cc ajfisher](/img/posts/behaviour_differentials.jpg)
+<p class="caption">Behavioural differentials - image (cc) ajfisher</p>
+
+Well data science is like punk. It's all about exploring the possibilities of what data can do for user experience and break pre-existing rules. So here's my equivalents:
 
   * Here's a question - What's the behaviour look like over a period?
   * Here's another - How does this change from one period to the next?

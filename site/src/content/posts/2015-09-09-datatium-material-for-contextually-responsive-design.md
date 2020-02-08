@@ -7,7 +7,7 @@ title: Datatium - data as material for contextually responsive design
 small-title: true
 tags: development, data science, responsive design, design, web, mobile, context
 excerpt: >
-    Resposive design is still very screen size focussed where as we should be
+    Responsive design is still very screen size focussed where as we should be
     considering context much more than we do. This talk explains how Datatium
     helps resolve this.
 listimage: /img/posts/phone_hand.jpg
@@ -34,6 +34,9 @@ screen sizes (though we have thankfully moved on from simply pixel sizes) and
 truly understand context first in order to be able to create good responsive
 experiences.
 
-<p class="mediacontainer"><iframe src="http://datatium.ajf.io/"></iframe></p>
+<p class="mediacontainer"><iframe title="Datatium slides" src="http://datatium.ajf.io/"></iframe></p>
+
+<p class="caption"><a href="http://datatium.ajf.io/">Datatium - Data as material
+for contextually responsive design</a> - (CC) ajfisher</p>
 
 Large version is available at [datatium.ajf.io](http://datatium.ajf.io/)

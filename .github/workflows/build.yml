@@ -1,0 +1,73 @@
+name: Build and deploy site
+on: [ push ]
+jobs:
+    build:
+        name: Build the site code
+        runs-on: ubuntu-latest
+        env:
+            GATSBY_TAGS_MODULES: ./site/plugins/gatsby-transformer-remark-tags/node_modules
+            GATSBY_PULLQUOTE_MODULES: ./site/plugins/gatsby-remark-transformer-pullquotes/node_modules
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v1
+
+            - name: Setup Node
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 12
+
+            - name: Cache site node modules
+              id: cache-site-modules
+              uses: actions/cache@v1
+              with:
+                  path: ./site/node_modules
+                  key: site-build-${{hashFiles('**/site/package-lock.json')}}
+                  restore-keys: site-build-${{hashFiles('**/site/package-lock.json')}}
+
+            - name: Install site deps
+              if: steps.cache-site-modules.outputs.cache-hit != 'true'
+              run: cd site && npm install
+
+            - name: Cache Tags plugin node modules
+              id: cache-tags-modules
+              uses: actions/cache@v1
+              with:
+                  path: ${{env.GATSBY_TAGS_MODULES}}
+                  key: site-tags-${{hashFiles('**/gatsby-transformer-remark-tags/package-lock.json')}}
+                  restore-keys: site-tags-${{hashFiles('**/gatsby-transformer-remark-tags/package-lock.json')}}
+
+            - name: Install tags deps
+              if: steps.cache-tags-modules.outputs.cache-hit != 'true'
+              run: cd site/plugins/gatsby-transformer-remark-tags && npm install
+
+            - name: Cache pullquotes plugin node modules
+              id: cache-pullquotes-modules
+              uses: actions/cache@v1
+              with:
+                  path: ${{env.GATSBY_PULLQUOTE_MODULES}}
+                  key: site-tags-${{hashFiles('**/gatsby-remark-transformer-pullquotes/package-lock.json')}}
+                  restore-keys: site-tags-${{hashFiles('**/gatsby-remark-transformer-pullquotes/package-lock.json')}}
+
+            - name: Install pullquote deps
+              if: steps.cache-pullquotes-modules.outputs.cache-hit != 'true'
+              run: cd site/plugins/gatsby-remark-transformer-pullquotes && npm install
+
+            - name: Public output cache
+              id: cache-build
+              uses: actions/cache@v1
+              with:
+                  path: ./site/public
+                  key: site-public-${{hashFiles('**/site/**')}}
+                  restore-keys: site-public-${{hashFiles('**/site/**')}}
+
+            - name: Build output files
+              run: make build
+
+            - name: Sync files to S3
+              run: aws s3 sync ./site/public/ s3://aj-web-ajfisher-me-prod/ --delete
+              shell: bash
+              if: github.ref == 'refs/heads/master'
+              env:
+                  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

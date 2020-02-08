@@ -18,7 +18,10 @@ My dad  got a [Galaxy S Tab](http://www.samsung.com/au/smartphone/galaxy-tab/) 
 
 The full meaning of this only came home after watching[ manufacturer after manufacturer](http://www.engadget.com/features/tablets-at-ces-2011/) parade a seemingly infinite number of tablet computing devices most of which were running [Android](http://www.android.com/) - as much a consumption oriented operating system as [Apple's iOS](http://www.apple.com/ipad/).
 
-![Zenith Z-19 Terminal, image (cc) ajmexico http://www.flickr.com/photos/ajmexico/3281139507/](/img/posts/zenith.jpg)
+![First era personal computer terminal](/img/posts/zenith.jpg)
+
+<p class="caption"><a href="http://www.flickr.com/photos/ajmexico/3281139507/">Zenith
+Z-19 Terminal - image (cc) ajmexico</a></p>
 
 With increasing speed, the computing landscape is moving towards one of consumption driven devices not general purpose computational devices. Tablets (including the iPad and others) are [expected](http://news.yahoo.com/s/afp/20110105/ts_afp/usitelectronicstelecomcomputerinternetces) to shift 30 million units of sales in 2011 and the Kindle is likely to shift another 20 million units just by itself. 70% of all computers sold are now laptops, netbooks or tablet devices - the humble desktop now almost only exists in a business context.
 

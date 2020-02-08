@@ -15,7 +15,10 @@ excerpt: >
 
 I've always loved the fact that in every smartphone there are a range of sensors attached to it. At the moment this is limited to GPS (position on the earth), orientation (how the device is tilting) and direction (how is it moving / accelerating) but we'll get others such as temperature, light etc at some point too. While we've had access to these for some time at the native app level, exposing access to these sensors has been slow to filter through to the web browser. We've had GPS for a while using the GeoLocation API which is great but it's a little too macro for playing with.
 
-![Gyroscope et rotations, image (cc) by Mathieu Marquer http://www.flickr.com/photos/slasher-fun/3039970101/](/img/posts/gyro.jpg)
+![A large gyroscope photographed while spinning](/img/posts/gyro.jpg)
+
+<p class="caption"><a href="http://www.flickr.com/photos/slasher-fun/3039970101/">Gyroscope
+et rotations - image (cc) by Mathieu Marquer</a></p>
 
 With the iPhone 4 and Gingerbread Android devices we're starting to see this data become available. Mobile Chrome is lagging but Mobile Safari, Firefox for Android and Opera Mobile in developer mode are all providing access to the gyroscope and accelerometer data even though [the spec is still in draft mode](http://dev.w3.org/geo/api/spec-source-orientation.html). (Note: Having just got a Honeycomb tablet today, it appears mobile chrome for Android now supports these features so we should see it available in handsets from Ice Cream Sandwich)
 
@@ -33,12 +36,19 @@ With that in mind, I feel mobile web can come to the rescue. Why not use the web
 
 Have a look at the presentation I gave on this at [Web Directions South, What do you know Melbourne in August](http://whatdoyouknow.webdirections.org/) this year. There's slideshare and youtube available.
 
+<p class="mediacontainer"><iframe src="//www.slideshare.net/slideshow/embed_code/key/s9rdOygKqy7n9k" title="Device API - now with added fun" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe></p>
 
-<p><iframe src="//www.slideshare.net/slideshow/embed_code/key/s9rdOygKqy7n9k" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/andrewjfisher/device-api-now-with-added-fun" title="Device API - now with added fun" target="_blank">Device API - now with added fun</a> </strong> from <strong><a href="//www.slideshare.net/andrewjfisher" target="_blank">Andrew Fisher</a></strong></div></p>
+<p class="caption"><a href="https://www.slideshare.net/andrewjfisher/device-api-now-with-added-fun" target="_blank">"Device API - now with added fun" - slide deck (CC) ajfisher</a></p>
 
-The YouTube screencast in particular shows how quickly people could jump on and start playing and interacting with a system that was literally only up for 90 seconds. Watching the smiles as people played this from where I was standing on the stage was gold. Tank tag demo starts at 4:30.
+The YouTube screencast in particular shows how quickly people could jump on and start playing and interacting with a system that was literally only up for 90 seconds.
 
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/h86K3wBycLA" frameborder="0" allowfullscreen></iframe></p>
+<p class="mediacontainer"><iframe title="Device API - now with added fun screen cast" width="560" height="315" src="https://www.youtube.com/embed/h86K3wBycLA" frameborder="0" allowfullscreen></iframe></p>
+
+<p class="caption">YouTube screen capture of live presentation - WebDirections</p>
+
+Watching the smiles as people played this from where I was standing on the stage was gold. Tank tag demo starts at 4:30.
+
+
 
 ## How does it work?
 

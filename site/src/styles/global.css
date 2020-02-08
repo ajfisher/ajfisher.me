@@ -75,14 +75,14 @@ h1 {
 h2 {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
-    font-size: 5rem;
-    border-radius: 0.2rem;
+    font-size: 4rem;
+    /** border-radius: 0.2rem;**/
 }
 
 h3 {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 a {
@@ -100,10 +100,10 @@ a:visited:hover {
 }
 
 /** Sets the width of a container **/
-.wrapper {
+/**.wrapper {
     width: 90%;
     margin: 0 5%;
-}
+}**/
 
 /** general article content specific styles **/
 article h1 {
@@ -115,23 +115,46 @@ article h3{
     background-color: var(--base);
     color: var(--light-text-colour);
     display: inline;
-    /** use this to get consistent edge on outside of wrap**/
-    box-shadow: 3rem 0 0 var(--base), -3rem 0 0 var(--base);
-    margin: 0;
-    padding: 0px 0px 0.5rem;
-    box-decoration-break: clone;
 }
 
 article h4 {
-    /** padding: 0.5rem 3rem; **/
     margin:0;
     font-family: var(--heading-font-family);
     color: var(--dark-text-colour);
 }
 
+article p span.gatsby-resp-image-wrapper {
+    margin: 0 calc(-1 * var(--gutter)) !important;
+    max-width: 1000px !important;
+}
+
+article p.caption {
+    font-size: 1.8rem !important;
+    background-color: var(--dark-grey);
+    margin-top: calc(-0.5 * var(--gutter));
+    margin-bottom: 0;
+    color: var(--light-text-colour) !important;
+    padding: 0.2rem 0.5rem !important;
+    padding-left: var(--gutter) !important;
+    display: inline-block;
+	border-radius: 0.2rem;
+    border-bottom: 0.2rem solid var(--base);
+}
+
+article p.caption a, article p.caption a:visited {
+    color: var(--light-text-colour);
+    background: none;
+    padding: 0;
+}
+
+article p.caption a:hover, article p.caption a:visited:hover {
+    color: var(--base);
+}
+
+/**
 article figure.gatsby-resp-image-figure {
-    width: 100vw;
-    margin-left: -5vw;
+    width: 100%;
+    margin-left: 0;
     position: relative;
 }
 
@@ -147,33 +170,7 @@ article figcaption.gatsby-resp-image-figcaption {
 
 article figure figcaption a {
     padding: 0;
-}
-
-// This is used for the pullquotes
-
-article p b {
-    font-weight: inherit;
-}
-
-p.has-pullquote::before {
-    content: attr(data-pullquote);
-    display: block;
-	@include heading-font();
-
-    font-size: 4rem;
-    margin: inherit;
-    color: var(--base);
-    margin-left: -3rem;
-    padding-left: 3rem;
-    border-left: 2px solid var(--base);
-}
-
-article blockquote {
-    font-style: italic;
-    border-left: 2px solid var(--base);
-    margin-left: -3rem;
-    padding-left: 3rem;
-}
+}**/
 
 /* MEDIA QUERIES FOR Medium Size display */
 
@@ -189,14 +186,5 @@ article blockquote {
 /* MEDIA QUERIES FOR WIDE size display */
 
 @media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-    .wrapper {
-        width: 1026px; /* 1140px less 33% for right padding and 10% either side margin */
-        margin: 0 auto !important;
-    }
 
 }

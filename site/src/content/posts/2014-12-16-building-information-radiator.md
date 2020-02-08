@@ -23,14 +23,16 @@ or some combination thereof. An information radiator is usually disconnected fro
 source of that data which is often abstract in nature.
 
 > In this post, I'll show you how to build an "information radiator" with a bit
-    of Python and some LEDs, which you can then use to make your own for your
-    own personal needs.
+of Python and some LEDs, which you can then use to make your own for your
+own personal needs.
 
 Full post at Packt: Building an Information Radiator
 [Part 1](https://www.packtpub.com/books/content/building-information-radiator-part-1)
 [Part 2](https://www.packtpub.com/books/content/building-information-radiator-part-2)
 
-![Temperature forecast, by ajfisher](/img/posts/radiator.jpg)
+![A light that indicates the forecast sitting on a bookshelf](/img/posts/radiator.jpg)
+
+<p class="caption">Temperature forecast radiator - ajfisher</p>
 
 Information radiators are fun to make, especially with kids or for workshops
 as there are plenty of data sources you can use; weather, incoming tweets,

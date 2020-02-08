@@ -1,12 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: `AJ Fisher Website`,
-    description: `Personal website of AJFisher - technologist`,
+    defaultTitle: `ajfisher`,
+    description: `The blog and portfolio of AJFisher - technologist`,
     author: `@ajfisher`,
-    siteURL: 'https://ajfisher.me'
+    siteUrl: 'https://www.ajfisher.me'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-13280033-1",
+        siteSpeedSampleRate: 10
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -28,6 +36,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-transformer-remark-tags`,
           `gatsby-remark-reading-time`,
           {
             resolve: `gatsby-remark-relative-images`
@@ -39,8 +48,9 @@ module.exports = {
               backgroundColor: `none`,
               quality: 90,
               withWebp: { quality: 90 },
-              showCaptions: true,
-              disableBgImage: true
+              showCaptions: false,
+              disableBgImage: true,
+              backgroundColor: `none`
             },
           },
           {
@@ -50,27 +60,39 @@ module.exports = {
               backgroundColor: `none`,
               quality: 90,
               withWebp: { quality: 90 },
-              showCaptions: true,
-              disableBgImage: true
+              showCaptions: false,
+              disableBgImage: true,
+              backgroundColor: `none`
             }
-          }
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              aliases: {
+                sh: `bash`,
+                xsl: `xml`,
+              }
+            },
+          },
+          `gatsby-remark-transformer-pullquotes`
         ]
       }
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `ajfisher website`,
+        short_name: `ajfisher`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#FF5E9A`,
+        theme_color: `#FF5E9A`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/img/ajfisher_large.jpg`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-robots-txt`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`
   ],
 }

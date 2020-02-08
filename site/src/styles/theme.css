@@ -8,6 +8,8 @@
 
     --dark-grey: #3f3f3f;
     --darkened-grey: #0c0c0c; /* 20% darker */
+    --lightened-grey: #7f7f7f; /* 20% lighter */
+
     /** main colour swatches from paletton **/
     --color-primary-0: #FF5E9A;  /* Main Primary color */
     --color-primary-1: #FFC4DA;
@@ -43,5 +45,25 @@
     --dark-text-colour: var(--dark-grey);
     --light-text-colour: rgba(255, 255, 255, 0.95);
 
+    --gutter-small: 1rem;
+    --gutter-medium: 2rem;
+    --gutter-large: 3rem;
+
+    --gutter: var(--gutter-small);
+
+    --margin-indent: calc(0.2 * var(--gutter));
+}
+
+/** change gutter values depending on screen size **/
+@media only screen and (min-width: 501px) { /** Medium up **/
+    :root {
+        --gutter: var(--gutter-medium);
+    }
+}
+
+@media only screen and (min-width: 1051px) { /** wide up **/
+    :root {
+        --gutter: var(--gutter-large);
+    }
 }
 
