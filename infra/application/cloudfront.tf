@@ -66,7 +66,7 @@ resource "aws_cloudfront_distribution" "web_app" {
   viewer_certificate {
     acm_certificate_arn       = "${aws_acm_certificate.apex_cert.arn}"
     ssl_support_method        = "sni-only"
-    minimum_protocol_version  = "TLSv1.1_2016"
+    minimum_protocol_version  = "TLSv1.2_2018"
   }
 
   depends_on = [ "aws_acm_certificate_validation.apex_cert" ]
@@ -128,7 +128,7 @@ resource "aws_cloudfront_distribution" "redirect_distribution" {
   viewer_certificate {
     acm_certificate_arn = "${aws_acm_certificate.app_cert.arn}"
     ssl_support_method = "sni-only"
-    minimum_protocol_version = "TLSv1.1_2016"
+    minimum_protocol_version = "TLSv1.2_2018"
   }
 
   restrictions {
