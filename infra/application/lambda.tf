@@ -66,3 +66,16 @@ resource "aws_lambda_function" "redirect_lambda" {
 
   runtime = "nodejs10.x"
 }
+
+resource "aws_lambda_function" "header_lambda" {
+  provider = "aws.useast"
+  filename = "${data.archive_file.cloudfront_lambda_functions.output_path}"
+  function_name = "ajsite_cache_csp_headers_${var.env}"
+  role = "${aws_iam_role.lambda_execution_role.arn}"
+  handler = "security_cache_headers.handler"
+  publish = true
+
+  source_code_hash = "${data.archive_file.cloudfront_lambda_functions.output_base64sha256}"
+
+  runtime = "nodejs10.x"
+}
