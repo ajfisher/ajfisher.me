@@ -34,16 +34,19 @@ resource "aws_cloudfront_distribution" "web_app" {
     cached_methods  = ["GET", "HEAD"]
     target_origin_id = "origin-web-app-${aws_s3_bucket.website_code.id}"
 
-    min_ttl          = "0"
-    default_ttl      = "300"                //3600
-    max_ttl          = "1200"               //86400
+    // don't allow any cache set in cf - it should all come from response
+    // headers of origin - this is from lambda as well
+    # min_ttl          = "0"
+    # default_ttl      = "30"                //3600
+    # max_ttl          = "30"               //86400
 
     // This redirects any HTTP request to HTTPS. Security first!
     viewer_protocol_policy = "redirect-to-https"
     compress               = true
 
     forwarded_values {
-      query_string = false
+      query_string  = false
+      # headers       = ["Origin"]
 
       cookies {
         forward = "none"
@@ -54,6 +57,12 @@ resource "aws_cloudfront_distribution" "web_app" {
     lambda_function_association {
       event_type = "origin-request"
       lambda_arn = "${aws_lambda_function.redirect_lambda.qualified_arn}"
+    }
+
+    # add the correct header
+    lambda_function_association {
+      event_type  = "origin-response"
+      lambda_arn  = "${aws_lambda_function.header_lambda.qualified_arn}"
     }
   }
 
@@ -66,7 +75,7 @@ resource "aws_cloudfront_distribution" "web_app" {
   viewer_certificate {
     acm_certificate_arn       = "${aws_acm_certificate.apex_cert.arn}"
     ssl_support_method        = "sni-only"
-    minimum_protocol_version  = "TLSv1.1_2016"
+    minimum_protocol_version  = "TLSv1.2_2018"
   }
 
   depends_on = [ "aws_acm_certificate_validation.apex_cert" ]
@@ -128,7 +137,7 @@ resource "aws_cloudfront_distribution" "redirect_distribution" {
   viewer_certificate {
     acm_certificate_arn = "${aws_acm_certificate.app_cert.arn}"
     ssl_support_method = "sni-only"
-    minimum_protocol_version = "TLSv1.1_2016"
+    minimum_protocol_version = "TLSv1.2_2018"
   }
 
   restrictions {
