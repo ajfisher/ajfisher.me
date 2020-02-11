@@ -65,7 +65,7 @@ exports.handler = (event, context, callback) => {
   [
     {
       key: 'Strict-Transport-Security',
-      value: 'max-age=604800; includeSubDomains'
+      value: 'max-age=15768000; includeSubDomains; preload'
     },
     {
       key: 'X-Content-Type-Options',
@@ -91,11 +91,12 @@ exports.handler = (event, context, callback) => {
       key: 'Content-Security-Policy',
       value:
         "default-src 'self' ; " +
-        "connect-src 'self' ; " +
+        "connect-src 'self' https://fonts.gstatic.com https://www.google-analytics.com ; " +
         "script-src 'self' 'unsafe-inline' https://www.google-analytics.com ; " +
         "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com ; " +
         "prefetch-src 'self' ; " +
-        "img-src 'self' data: https://www.google-analytics.com ; " +
+        "img-src 'self' data: https://www.google-analytics.com https://github.com " +
+          " https://raw.githubusercontent.com ; " +
         "font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com ; " +
         "manifest-src 'self' ; " +
         'upgrade-insecure-requests; block-all-mixed-content ; ' +
