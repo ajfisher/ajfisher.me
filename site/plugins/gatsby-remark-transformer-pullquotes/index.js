@@ -17,6 +17,9 @@ module.exports = ({markdownAST}, pluginOptions) => {
       // console.log('----- THIS IS A P with a B in it ------');
       let pullquote = node.children[bindex+1].value;
       pullquote = pullquote[0].toUpperCase() + pullquote.substring(1);
+      // if (pullquote.indexOf('"') >= 0) {
+      pullquote = pullquote.replace(/"/g, '&quot;');
+      // }
       const text = toString(node);
       // console.log(`>>>>> Upper cased: ${pullquote}`);
       // console.log(`>>>>> Node text: ${text}`);
