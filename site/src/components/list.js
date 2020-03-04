@@ -29,7 +29,11 @@ const Item = styled.li`
   height: min-content;
 
   @media only screen and ${device.large} {
-    width: 48%;
+    width: 47%;
+  }
+
+  @media only screen and ${device.wide} {
+    width: 45%;
   }
 `;
 

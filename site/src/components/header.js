@@ -73,7 +73,7 @@ const Container = styled.div`
   }
 
   @media only screen and ${device.wide} {
-    max-width: 1026px;
+    max-width: 1020px;
     margin: 0 auto;
   }
 `

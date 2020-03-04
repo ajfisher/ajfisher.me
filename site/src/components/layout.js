@@ -24,7 +24,7 @@ export const Main = styled.main`
   }
 
   @media only screen and ${device.wide} {
-    width: 1026px;
+    width: 1020px;
     margin: 0 auto;
   }
 
@@ -37,12 +37,15 @@ export const Article = styled.article`
     /** Article is a flex item when it's bigger **/
     flex-grow: 2;
     align-self: flex-start;
-    width: 61vw;
-    max-width: 65%
+    width: 62%;
 
     & section {
       /**padding: 0 3rem;**/
     }
+  }
+
+  @media only screen and ${device.wide} {
+    width: 66%;
   }
 
   & section {
@@ -115,7 +118,7 @@ export const Aside = styled.aside`
     position: sticky;
     padding: 0 var(--gutter);
     height: min-content;
-    width: 28vw;
+    width: 27%;
 
     /** But it is also a container of the nav and post data **/
     display: flex;
