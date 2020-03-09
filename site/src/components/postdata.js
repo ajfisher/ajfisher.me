@@ -17,7 +17,7 @@ const Published = styled.p`
   @media only screen and ${device.large} {
     box-shadow: none;
     padding: 0.5rem;
-    border-bottom: 0.2rem solid var(--base);
+    border-bottom: 0.2rem solid var(--light-base);
     border-radius: 0.2rem;
   }
 `;
@@ -36,7 +36,7 @@ const Title = styled.h2`
   @media only screen and ${device.large} {
     display: block;
     font-size: 3rem;
-    color: var(--base);
+    color: var(--dark-base);
     margin: var(--gutter) 0;
     line-height: 0.9;
   }

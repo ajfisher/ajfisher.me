@@ -33,7 +33,7 @@ const Navigation = styled.nav`
       margin: 0;
 
       @media only screen and ${device.large} {
-        font-size: 3rem;;
+        font-size: 2.8rem;
         line-height: inherit;
       }
     }
@@ -70,7 +70,7 @@ const Navigation = styled.nav`
 
   & a:hover, & a:visited:hover {
     background: none;
-    color: var(--base);
+    color: var(--dark-base);
   }
 `;
 

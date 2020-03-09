@@ -9,7 +9,7 @@ import { Article } from './layout';
 const StyledListArticle = styled(Article)`
 
   & h1 {
-    color: var(--base);
+    color: var(--dark-base);
     font-size: 3rem;
     background: none;
     box-shadow: none;
@@ -20,7 +20,7 @@ const StyledListArticle = styled(Article)`
     margin: calc(0.5 * var(--gutter)) var(--gutter);
     display: block;
     background: none;
-    color: var(--base);
+    color: var(--dark-base);
     box-shadow: none;
     padding: 0;
   }
@@ -32,7 +32,7 @@ const StyledListArticle = styled(Article)`
   & li {
     & h2 {
       background: none;
-      color: var(--base);
+      color: var(--dark-base);
       box-shadow: none;
       padding: 0;
       font-size: 3rem;
@@ -45,7 +45,7 @@ const StyledListArticle = styled(Article)`
     }
 
     & a, & a:visited {
-      color: var(--base);
+      color: var(--dark-base);
       background: none;
       padding: 0;
     }
@@ -109,7 +109,7 @@ const StyledPostArticle = styled(Article)`
     margin-right: 0;
     padding: 0 calc(var(--gutter) - var(--margin-indent) - 2px);
     padding-right: var(--gutter);
-    border-left: 2px solid var(--base);
+    border-left: 2px solid var(--accent);
   }
 
   & blockquote > p {
@@ -119,11 +119,11 @@ const StyledPostArticle = styled(Article)`
   & p.has-pullquote::before {
     content: attr(data-pullquote);
     display: block;
-    font-family: var(--heading-font-family);
+    font-family: var(--quote-font-family);
     font-weight: var(--heading-font-weight);
     font-style: normal;
     font-size: 4rem;
-    color: var(--base);
+    color: var(--highlight);
 
     margin: inherit !important;
     margin-left: calc(-1 * var(--gutter) + var(--margin-indent)) !important;
