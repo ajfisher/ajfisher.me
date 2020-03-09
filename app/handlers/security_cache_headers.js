@@ -91,7 +91,7 @@ exports.handler = (event, context, callback) => {
       key: 'Content-Security-Policy',
       value:
         "default-src 'self' ; " +
-        "connect-src 'self' https://fonts.gstatic.com https://www.google-analytics.com ; " +
+        "connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://www.google-analytics.com ; " +
         "script-src 'self' 'unsafe-inline' https://www.google-analytics.com ; " +
         "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com ; " +
         "prefetch-src 'self' ; " +
