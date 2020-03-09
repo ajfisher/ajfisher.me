@@ -88,7 +88,6 @@ const StyledPostArticle = styled(Article)`
   }
 
   & p iframe {
-    /**margin-left: calc(-1 * var(--gutter));**/
     max-width: calc(100% + 2 * var(--gutter)) !important;
     width: 100%;
     height: 100%;

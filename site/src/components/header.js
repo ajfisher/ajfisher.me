@@ -15,9 +15,7 @@ const TextHeader = styled.header`
 
   /** Put the background gradient in**/
   background-color: var(--darkened-grey);
-  background: -moz-radial-gradient(circle, var(--dark-grey) 0%, var(--darkened-grey) 100% );
-  background: -webkit-radial-gradient(circle, var(--dark-grey) 0%, var(--darkened-grey) 100% );
-  background: radial-gradient(circle, var(--dark-grey) 0%, var(--darkened-grey) 100% );
+  background: linear-gradient(45deg, var(--dark-base) 30%, var(--highlight) 100%);
 
   -webkit-box-shadow: 0 0.5rem 0.8rem #aaa;
      -moz-box-shadow: 0 0.5rem 0.8rem #aaa;
@@ -79,11 +77,9 @@ const Container = styled.div`
 `
 
 const StyledTitle = styled.h1`
-  /**background-color: var(--base);**/
   background-color: var(--light-base);
   padding: var(--gutter);
   margin: 0rem var(--gutter);
-  /**color: var(--light-text-colour);**/
   color: var(--dark-base);
   min-height: 25vh;
   max-height: 35vh;
