@@ -74,19 +74,19 @@ export const pageQuery = graphql`
       }
     }
 		imageSharp(resolutions: {originalName: {eq: $featuredImage}}) {
-      base: fixed(width: 400, quality: 70) {
+      base: fixed(width: 400, quality: 100, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
         src
       }
-      small: fixed(width: 500, quality: 80) {
+      small: fixed(width: 500, quality: 100, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
         src
       }
-      medium: fixed(width: 750, quality: 90) {
+      medium: fixed(width: 750, quality: 90, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
         src
       }
-      large: fixed(width: 1050, quality: 100) {
+      large: fixed(width: 1050, quality: 100, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
         src
       }
-      wide: fixed(width: 1600, quality: 100) {
+      wide: fixed(width: 1600, quality: 100, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
         src
       }
 		}

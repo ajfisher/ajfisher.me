@@ -100,6 +100,21 @@ export const getPostImages = () => {
               wide: fixed(width: 1600, quality: 100) {
                 src
               }
+              duo_base: fixed(width: 400, quality: 90, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
+                src
+              }
+              duo_small: fixed(width: 500, quality: 95, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
+                src
+              }
+              duo_medium: fixed(width: 750, quality: 95, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
+                src
+              }
+              duo_large: fixed(width: 1050, quality: 100, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
+                src
+              }
+              duo_wide: fixed(width: 1600, quality: 100, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
+                src
+              }
             }
           }
         }
