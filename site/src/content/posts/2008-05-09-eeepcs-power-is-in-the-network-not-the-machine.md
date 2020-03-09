@@ -4,6 +4,7 @@ date: 2008-05-09 19:08:00+00:00
 layout: post.hbt
 slug: eeepcs-power-is-in-the-network-not-the-machine
 title: EEEPC's power is in the network not the machine
+small-title: true
 tags: internet, linux, OS, mobile, network
 ---
 

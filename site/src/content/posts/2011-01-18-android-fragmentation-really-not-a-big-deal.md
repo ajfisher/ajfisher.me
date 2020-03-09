@@ -5,6 +5,7 @@ date: 2011-01-18 12:02:07+00:00
 layout: post.hbt
 slug: android-fragmentation-really-not-a-big-deal
 title: 'Android fragmentation: really not a big deal'
+small-title: true
 categories:
 - development
 - mobile

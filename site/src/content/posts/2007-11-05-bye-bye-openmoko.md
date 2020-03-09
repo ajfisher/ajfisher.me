@@ -5,6 +5,7 @@ date: 2007-11-05 10:26:00+00:00
 layout: post.hbt
 slug: bye-bye-openmoko
 title: Bye bye OpenMoko
+large-title: true
 categories:
 - mobile
 tags: google, mobile, nokia, phone, web

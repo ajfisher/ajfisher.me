@@ -4,6 +4,7 @@ date: 2011-10-04 04:59:51+00:00
 layout: post.hbt
 slug: on-a-post-flash-world-and-adobes-place-within-it
 title: On a post-flash world and Adobe's place within it
+small-title: true
 tags: media, mobile, predictions, web, acquisition, Adobe
 excerpt: >
     Sacred cows in the Adobe world finally appear to be on the BBQ. Recent signals

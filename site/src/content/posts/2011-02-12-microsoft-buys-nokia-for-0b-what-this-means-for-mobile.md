@@ -5,6 +5,7 @@ date: 2011-02-12 04:19:33+00:00
 layout: post.hbt
 slug: microsoft-buys-nokia-for-0b-what-this-means-for-mobile
 title: Microsoft “buys” Nokia for $0B - what this means for mobile.
+small-title: true
 categories:
 - mobile
 tags: android, Apple, mobile, nokia

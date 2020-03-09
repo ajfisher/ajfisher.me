@@ -4,6 +4,7 @@ date: 2009-07-29 02:08:00+00:00
 layout: post.hbt
 slug: an-unofficial-endorsement-of-the-android-platform
 title: An unofficial endorsement of the Android platform?
+small-title: true
 tags: android, google, iphone, mobile
 ---
 
