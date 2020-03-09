@@ -15,8 +15,6 @@ html {
 body {
     font: 2.4rem 'Rokkitt', Helvetica, Helvetica Neue, Arial;
     color: var(--dark-text-colour);
-    /** -webkit-font-smoothing: antialiased;**/
-    /** -moz-osx-font-smoothing: grayscale;**/
     font-kerning: normal;
     -moz-font-feature-settings: "kern", "liga", "clig", "calt";
     -ms-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -76,7 +74,6 @@ h2 {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
     font-size: 4rem;
-    /** border-radius: 0.2rem;**/
 }
 
 h3 {
@@ -98,12 +95,6 @@ a:hover,
 a:visited:hover {
     color: var(--light-base);
 }
-
-/** Sets the width of a container **/
-/**.wrapper {
-    width: 90%;
-    margin: 0 5%;
-}**/
 
 /** general article content specific styles **/
 article h1 {
@@ -151,31 +142,7 @@ article p.caption a:hover, article p.caption a:visited:hover {
     color: var(--light-base);
 }
 
-/**
-article figure.gatsby-resp-image-figure {
-    width: 100%;
-    margin-left: 0;
-    position: relative;
-}
-
-article figcaption.gatsby-resp-image-figcaption {
-    position: absolute;
-    bottom: 0.5rem;
-    right: 0.5rem;
-    color: var(--light-text-colour);
-    background: var(--dark-grey);
-    padding: 0 0.5rem;
-    font-size: 1.5rem;
-}
-
-article figure figcaption a {
-    padding: 0;
-}**/
-
 /* MEDIA QUERIES FOR Medium Size display */
-
-@media only screen and (min-width: 480px) {
-}
 
 /* MEDIA QUERIES FOR Large Size displau */
 @media only screen and (min-width: 768px) {
@@ -184,7 +151,3 @@ article figure figcaption a {
     }
 }
 /* MEDIA QUERIES FOR WIDE size display */
-
-@media only screen and (min-width: 1140px) {
-
-}

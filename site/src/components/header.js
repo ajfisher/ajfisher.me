@@ -77,11 +77,9 @@ const Container = styled.div`
 `
 
 const StyledTitle = styled.h1`
-  /**background-color: var(--base);**/
   background-color: var(--light-base);
   padding: var(--gutter);
   margin: 0rem var(--gutter);
-  /**color: var(--light-text-colour);**/
   color: var(--dark-base);
   min-height: 25vh;
   max-height: 35vh;

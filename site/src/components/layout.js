@@ -37,10 +37,6 @@ export const Article = styled.article`
     flex-grow: 2;
     align-self: flex-start;
     width: 62%;
-
-    & section {
-      /**padding: 0 3rem;**/
-    }
   }
 
   @media only screen and ${device.wide} {
