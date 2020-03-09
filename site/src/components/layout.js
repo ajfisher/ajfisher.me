@@ -27,7 +27,6 @@ export const Main = styled.main`
     width: 1020px;
     margin: 0 auto;
   }
-
 `;
 
 export const Article = styled.article`
@@ -51,7 +50,7 @@ export const Article = styled.article`
   & section {
 
     & h2, & h3 {
-      box-shadow: var(--gutter) 0 0 var(--base), calc(var(--gutter) * -1) 0 0 var(--base);
+      box-shadow: var(--gutter) 0 0 var(--light-base), calc(var(--gutter) * -1) 0 0 var(--light-base);
       margin: 0;
       margin-left: var(--gutter);
       padding: 0px 0px 0.5rem;

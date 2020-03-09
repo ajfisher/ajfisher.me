@@ -40,7 +40,7 @@ const Item = styled.li`
 export const ImageLink = styled.div`
   height: 25rem;
 
-  border-bottom: 0.5rem solid var(--base);
+  border-bottom: 0.5rem solid var(--light-base);
   border-radius: 0.2rem;
   margin-bottom: calc(0.5 * var(--gutter));
   transition: all 0.8s ease;

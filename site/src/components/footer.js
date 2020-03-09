@@ -22,7 +22,7 @@ const StyledFooter = styled.footer`
   background: radial-gradient(circle, var(--dark-grey) 0%, var(--darkened-grey) 100% );
 
   & ::selection {
-    background: var(--base);
+    background: var(--light-base);
   }
 `;
 
@@ -31,7 +31,7 @@ export const FooterImageLink = styled(ImageLink)`
   border-radius: 0.2rem;
 
   :hover {
-    border-bottom: 0.5rem solid var(--base);
+    border-bottom: 0.5rem solid var(--light-base);
   }
 `;
 

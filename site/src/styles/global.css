@@ -26,12 +26,12 @@ body {
 }
 
 ::-moz-selection {
-    background: var(--highlight);
+    background: var(--accent);
     text-shadow: none;
 }
 
 ::selection {
-    background: var(--highlight);
+    background: var(--accent);
     text-shadow: none;
 }
 
@@ -96,7 +96,7 @@ a {
 
 a:hover,
 a:visited:hover {
-    color: var(--base);
+    color: var(--light-base);
 }
 
 /** Sets the width of a container **/
@@ -112,8 +112,8 @@ article h1 {
 
 article h2,
 article h3{
-    background-color: var(--base);
-    color: var(--light-text-colour);
+    background-color: var(--light-base);
+    color: var(--dark-base);
     display: inline;
 }
 
@@ -138,7 +138,7 @@ article p.caption {
     padding-left: var(--gutter) !important;
     display: inline-block;
 	border-radius: 0.2rem;
-    border-bottom: 0.2rem solid var(--base);
+    border-bottom: 0.2rem solid var(--light-base);
 }
 
 article p.caption a, article p.caption a:visited {
@@ -148,7 +148,7 @@ article p.caption a, article p.caption a:visited {
 }
 
 article p.caption a:hover, article p.caption a:visited:hover {
-    color: var(--base);
+    color: var(--light-base);
 }
 
 /**

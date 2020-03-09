@@ -79,10 +79,12 @@ const Container = styled.div`
 `
 
 const StyledTitle = styled.h1`
-  background-color: var(--base);
+  /**background-color: var(--base);**/
+  background-color: var(--light-base);
   padding: var(--gutter);
   margin: 0rem var(--gutter);
-  color: var(--light-text-colour);
+  /**color: var(--light-text-colour);**/
+  color: var(--dark-base);
   min-height: 25vh;
   max-height: 35vh;
   width: min-content;
@@ -179,7 +181,7 @@ const Para = styled.p`
 `;
 
 const PublishedDate = styled(Para)`
-  color: var(--base);
+  color: var(--light-base);
 `;
 
 const Lede = styled(Para)`
@@ -196,7 +198,7 @@ const PostData = styled(Para)`
   margin-bottom: 0;
 
   & span {
-    color: var(--highlight);
+    color: var(--light-base);
   }
 
   @media only screen and ${device.medium} {
