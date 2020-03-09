@@ -3,7 +3,9 @@ author: ajfisher
 date: 2009-11-09 23:14:00+00:00
 layout: post.hbt
 slug: admob-purchase-by-google-paves-way-for-interesting-developer-funding
-title: AdMob purchase by google paves way for interesting developer funding
+title: AdMob purchase opens door to new funding models
+excerpt: The AdMob purchase by Google paves the way for some interesting developer funding opportunities
+small-title: true
 tags: acquisition, advertising, media, google, mobile
 ---
 

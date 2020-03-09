@@ -145,11 +145,11 @@ const StyledTitle = styled.h1`
 
   @media only screen and ${device.wide} {
     min-width: unset;
-    max-width: unset;
+    max-width: calc(66% - var(--gutter));
     min-height: 35vh;
     max-height: 45vh;
     margin: 0;
-    width: 45%;
+    /**width: 45%;**/
   }
 `;
 

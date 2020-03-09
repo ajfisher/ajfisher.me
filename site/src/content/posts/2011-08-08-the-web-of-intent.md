@@ -4,6 +4,7 @@ date: 2011-08-08 11:41:32+00:00
 layout: post.hbt
 slug: the-web-of-intent
 title: The web of intent
+large-title: true
 tags: internet, media, predictions, web
 listimage: /img/posts/will_you.jpg
 excerpt: >

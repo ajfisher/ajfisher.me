@@ -3,7 +3,8 @@ author: ajfisher
 date: 2009-11-13 01:12:00+00:00
 layout: post.hbt
 slug: spdy-could-gain-acceptence-very-quickly-with-some-product-innovation
-title: SPDY could gain acceptence very quickly - with some product innovation
+title: SPDY could gain acceptence - with some innovation
+small-title: true
 tags: google, internet, network, protocol
 ---
 

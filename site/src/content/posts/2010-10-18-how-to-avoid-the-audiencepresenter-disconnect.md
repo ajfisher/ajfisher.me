@@ -3,7 +3,7 @@ author: ajfisher
 date: 2010-10-18 01:14:44+00:00
 layout: post.hbt
 slug: how-to-avoid-the-audiencepresenter-disconnect
-title: How to avoid the Audience:Presenter Disconnect
+title: 'How to avoid the Audience : Presenter Disconnect'
 small-title: true
 tags: presentation
 featureimage: /img/posts/concert.jpg

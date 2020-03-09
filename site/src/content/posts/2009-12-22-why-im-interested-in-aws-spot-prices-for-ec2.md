@@ -4,6 +4,7 @@ date: 2009-12-22 06:46:00+00:00
 layout: post.hbt
 slug: why-im-interested-in-aws-spot-prices-for-ec2
 title: Why I'm interested in AWS Spot Prices for EC2
+small-title: true
 tags: AWS, cloud computing, commodities, development, sysadmin
 ---
 

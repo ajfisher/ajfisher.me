@@ -4,6 +4,7 @@ date: 2011-09-15 06:38:50+00:00
 layout: post.hbt
 slug: device-api-applications-of-devicemotion-and-deviceorientation
 title: Device API - Applications of DeviceMotion & DeviceOrientation
+small-title: true
 tags: development, python, internet, media, mobile, open source, web, android, API, arduino, advertising, hardware
 listimage: /img/posts/gyro.jpg
 excerpt: >

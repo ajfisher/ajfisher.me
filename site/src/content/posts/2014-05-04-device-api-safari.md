@@ -4,6 +4,7 @@ date: 2014-05-04 18:30:00+11:00
 layout: post.hbt
 slug: device-api-safari
 title: A Device API safari
+large-title: true
 tags: development, web, API, standards, mobile, presentation
 excerpt: >
     There are many interesting things to be found in the Device API. This

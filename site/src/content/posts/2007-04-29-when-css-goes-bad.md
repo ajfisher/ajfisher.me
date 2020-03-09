@@ -4,6 +4,7 @@ date: 2007-04-29 12:18:00+00:00
 layout: post.hbt
 slug: when-css-goes-bad
 title: When CSS goes bad
+large-title: true
 tags: development, css, debugging, standards
 ---
 

@@ -4,6 +4,7 @@ date: 2010-06-23 06:45:48+00:00
 layout: post.hbt
 slug: why-google-is-a-more-typical-business-than-you-think
 title: Why Google is a more "typical" business than you think
+small-title: true
 tags: cloud computing, linux, web, desktop, OS, google
 featureimage: /img/posts/keyboard.jpg
 imageby: Willian Hook

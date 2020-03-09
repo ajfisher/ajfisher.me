@@ -3,7 +3,8 @@ author: ajfisher
 date: 2009-10-11 01:58:00+00:00
 layout: post.hbt
 slug: the-only-reason-why-linux-isnt-ready-for-prime-time-desktop
-title: The only reason why Linux isn't ready for prime time desktop
+title: One feature away from desktop Linux
+excerpt: There is only one real reason Linux isn't ready for prime time desktop usage - but it is close.
 tags: OS, linux, desktop, presentation
 ---
 
