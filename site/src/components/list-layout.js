@@ -36,11 +36,11 @@ const Layout = ({ children, featured={}, slug}) => {
     if (featuredImageSet) {
       const {childImageSharp: img} = featuredImageSet.node;
       featuredImage = {
-        base: img.base.src,
-        small: img.small.src,
-        medium: img.medium.src,
-        large: img.large.src,
-        wide: img.wide.src
+        base: img.duo_base.src,
+        small: img.duo_small.src,
+        medium: img.duo_medium.src,
+        large: img.duo_large.src,
+        wide: img.duo_wide.src
       };
     }
   }
