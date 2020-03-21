@@ -226,7 +226,7 @@ const Footer = ({slug}) => {
         <section>
           <Title>My books</Title>
           <FooterImageLink position="50% 100%">
-            <OutboundLink href="http://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
+            <OutboundLink href="https://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
               <Img
                 fluid={data.jsRobotics.childImageSharp.fluid}
                 alt="Make JavaScript Robotics Book Cover"
@@ -234,12 +234,12 @@ const Footer = ({slug}) => {
             </OutboundLink>
           </FooterImageLink>
           <p>
-            <OutboundLink href="http://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
+            <OutboundLink href="https://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
               Make: JavaScript Robotics
             </OutboundLink>
           </p>
           <FooterImageLink position="50% 85%">
-            <OutboundLink href="http://www.amazon.com/Jump-Start-Responsive-Web-Design-ebook/dp/B00TJ6UY9S/">
+            <OutboundLink href="https://www.amazon.com/Jump-Start-Responsive-Web-Design/dp/0987332163/">
               <Img
                 fluid={data.responsiveDesign.childImageSharp.fluid}
                 alt="Jump Start Responsive Design Book Cover"
@@ -247,7 +247,7 @@ const Footer = ({slug}) => {
             </OutboundLink>
           </FooterImageLink>
           <p>
-            <OutboundLink href="http://www.amazon.com/Jump-Start-Responsive-Web-Design-ebook/dp/B00TJ6UY9S/">
+            <OutboundLink href="https://www.amazon.com/Jump-Start-Responsive-Web-Design/dp/0987332163/">
               Jump Start Responsive Web Design
             </OutboundLink>
           </p>
