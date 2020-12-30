@@ -27,6 +27,9 @@ const Layout = ({ children, featured={}, slug}) => {
     if (frontmatter.featureimage.startsWith('/img/')) {
       frontmatter.featureimage = frontmatter.featureimage.substring(5);
     }
+    if (! frontmatter.featureimage.startsWith('posts/')) {
+      frontmatter.featureimage = 'posts/' + frontmatter.featureimage;
+    }
 
     const { postItemImages } = getPostImages();
     const featuredImageSet = postItemImages.edges.find(({node}) => {
