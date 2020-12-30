@@ -6,10 +6,11 @@ slug: why-google-is-a-more-typical-business-than-you-think
 title: Why Google is a more "typical" business than you think
 small-title: true
 tags: cloud computing, linux, web, desktop, OS, google
-featureimage: /img/posts/keyboard.jpg
+featureimage: keyboard.jpg
 imageby: Willian Hook
 imagelink: https://www.flickr.com/photos/williamhook/2971294143/
-listimage: /img/posts/keyboard.jpg
+listimage: posts/keyboard.jpg
+
 ---
 
 There's been some interesting reportage over the last couple of weeks around whether Google's decision to remove Windows from internal use as a supported desktop has wider ramifications for the future of Windows in business. The Linux and Mac press have been crowing; suggesting that CIOs take Google's lead and kill off their dependence on the Microsoft OS.

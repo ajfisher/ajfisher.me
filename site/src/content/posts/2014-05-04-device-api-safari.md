@@ -9,10 +9,11 @@ tags: development, web, API, standards, mobile, presentation
 excerpt: >
     There are many interesting things to be found in the Device API. This
     talk went on a journey to see what we could find worth playing with.
-featureimage: /img/posts/jungle.jpg
+featureimage: jungle.jpg
 imageby: Miwok
 imagelink: https://www.flickr.com/photos/miwok/8665323395/
-listimage: /img/posts/jungle.jpg
+listimage: posts/jungle.jpg
+
 ---
 
 The Device API allows browsers to have more access to the underlying hardware

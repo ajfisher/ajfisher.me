@@ -6,7 +6,7 @@ slug: the-web-of-intent
 title: The web of intent
 large-title: true
 tags: internet, media, predictions, web
-listimage: /img/posts/will_you.jpg
+listimage: posts/will_you.jpg
 excerpt: >
     Web applications could handle common tasks such as sharing or pinning using
     an Intent oriented design.
@@ -20,7 +20,7 @@ What makes web intents different than a protocol link is that they are fundament
 
 Instead; in the tabbed browser world, I simply have tabs up one end of my browser window that are permanently there. I also have a couple of extensions that operate at a meta-level on the whole page I'm viewing - notably bit.ly, evernote and chrome2phone.
 
-![Chalkboard with the phrase 'will you (blank) me?'](/img/posts/will_you.jpg)
+![Chalkboard with the phrase 'will you (blank) me?'](../../img/posts/will_you.jpg)
 
 <p class="caption"><a href="http://www.flickr.com/photos/pinkpoppyimages/">image (cc) Poppy Thomas-Hill</a></p>
 

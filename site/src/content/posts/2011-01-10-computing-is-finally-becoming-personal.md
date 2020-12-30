@@ -5,7 +5,7 @@ layout: post.hbt
 slug: computing-is-finally-becoming-personal
 title: Computers are finally becoming personal
 tags: Consumer Electronics, android, Apple, internet, media, mobile
-listimage: /img/posts/zenith.jpg
+listimage: posts/zenith.jpg
 ---
 
 After going back to work, it dawned on me that I hadn't used a computer for nearly two weeks - evident in the fact that I spent my first day back getting helplessly finger-twisted using a keyboard. Two weeks away from a computer for me probably hasn't occurred since 1990 when I went away camping and surfing for a month. So what occurred this Christmas?
@@ -18,7 +18,7 @@ My dad  got a [Galaxy S Tab](http://www.samsung.com/au/smartphone/galaxy-tab/) 
 
 The full meaning of this only came home after watching[ manufacturer after manufacturer](http://www.engadget.com/features/tablets-at-ces-2011/) parade a seemingly infinite number of tablet computing devices most of which were running [Android](http://www.android.com/) - as much a consumption oriented operating system as [Apple's iOS](http://www.apple.com/ipad/).
 
-![First era personal computer terminal](/img/posts/zenith.jpg)
+![First era personal computer terminal](../../img/posts/zenith.jpg)
 
 <p class="caption"><a href="http://www.flickr.com/photos/ajmexico/3281139507/">Zenith
 Z-19 Terminal - image (cc) ajmexico</a></p>

@@ -6,11 +6,11 @@ slug: moving-to-metalsmith
 title: Making the move to metalsmith
 large-title: true
 tags: development, javascript, web, internet, open source, nodejs
-featureimage: /img/posts/forging.jpg
+featureimage: forging.jpg
 featureimage-position: 100% 100%
 imageby: Flavio~
 imagelink: https://www.flickr.com/photos/37873897@N06/7070849827/
-listimage: /img/posts/forging.jpg
+listimage: posts/forging.jpg
 excerpt: >
     I moved this site from WP to metalsmith.io in order to get a more pure
     authoring experience. The result is good, though there were a few gotchas
@@ -175,7 +175,7 @@ It finds mardown images, pulls them out and replaces them with a properly
 formatted `figure` that uses `srcset` and `figcaption`. You can see the treatment
 of this below.
 
-![Photo of a blacksmith's hands on a hammer and anvil](/img/posts/forgehands.jpg)
+![Photo of a blacksmith's hands on a hammer and anvil](../../img/posts/forgehands.jpg)
 
 <p class="caption"><a href="http://www.flickr.com/photos/polandmfa/9286266649/">"Blacksmithing
 workshop in Wojciechow, Poland" - image (CC) Poland MFA</a></p>

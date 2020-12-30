@@ -9,7 +9,7 @@
   "author": "ajfisher",
   "license": "MIT",
   "dependencies": {
-    "mdast-util-to-string": "^1.0.7",
-    "unist-util-visit": "^2.0.1"
+    "mdast-util-to-string": "^2.0.0",
+    "unist-util-visit": "^2.0.3"
   }
 }

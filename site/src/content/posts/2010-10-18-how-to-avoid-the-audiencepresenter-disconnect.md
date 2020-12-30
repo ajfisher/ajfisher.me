@@ -6,7 +6,7 @@ slug: how-to-avoid-the-audiencepresenter-disconnect
 title: 'How to avoid the Audience : Presenter Disconnect'
 small-title: true
 tags: presentation
-featureimage: /img/posts/concert.jpg
+featureimage: concert.jpg
 imageby: Martin Fisch
 imagelink: https://www.flickr.com/photos/marfis75/2459533929
 

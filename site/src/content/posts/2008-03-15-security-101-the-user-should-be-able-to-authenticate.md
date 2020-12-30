@@ -14,13 +14,13 @@ Are you listening Barclays?
 
 I like security - particularly data security and in very particular data security that protects my personal information ([unlike a certain Uk government department a few months back](http://technologytreason.blogspot.com/2007/11/why-was-data-being-passed-on-disc-and.html)).
 
-However, I've been around this game long enough, worked for a [bank ](http://www.citibank.com/)long enough and built more web applications capturing user data for long enough that I know there is one fundamental truth when it comes to data security and that is: **pragmatism**.
+However, I've been around this game long enough, worked for a [bank](http://www.citibank.com/) long enough and built more web applications capturing user data for long enough that I know there is one fundamental truth when it comes to data security and that is: **pragmatism**.
 
-When I was at Uni I was told, "The only secure system is one that has no network connection, no keyboard or mouse and most of all no users" (and I apologise [Dr Fekete ](http://www.it.usyd.edu.au/about/people/staff/fekete.shtml)for bastardising your phrase but you can't have done a bad job for me to remember it 15 years later!).
+When I was at Uni I was told, "The only secure system is one that has no network connection, no keyboard or mouse and most of all no users" (and I apologise [Dr Fekete](http://www.it.usyd.edu.au/about/people/staff/fekete.shtml) for bastardising your phrase but you can't have done a bad job for me to remember it 15 years later!).
 
 However the flip side of all of this was that depending on the data being protected, the security protocol should be appropriate without undue burden placed upon the user. Which is why logging into [flickr](http://www.flickr.com/) is trivial but logging into your bank should and is a more arduous affair.
 
-Banks are very secure enviroments which is good because the last thing I want is some 13 year old [script kiddie ](http://en.wikipedia.org/wiki/Script_kiddie)making off with the tens of pounds in my bank account. Having said that, the bank should never make it difficult for me to get to the tens of pounds in my account due to security reasons.
+Banks are very secure enviroments which is good because the last thing I want is some 13 year old [script kiddie](http://en.wikipedia.org/wiki/Script_kiddie) making off with the tens of pounds in my bank account. Having said that, the bank should never make it difficult for me to get to the tens of pounds in my account due to security reasons.
 
 At the moment though banks are running very scared and they are nailing the customers because of it. On my recent trip to Australia I had my card stopped no less than three times because Barclays decided that the activity looked fradulent.
 

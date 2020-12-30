@@ -5,23 +5,24 @@ layout: post.hbt
 slug: a-telling-quarter-for-android
 title: A telling quarter for Android
 tags: android, Apple, google, iphone, mobile
-featureimage: /img/posts/android.jpg
-listimage: /img/posts/android.jpg
+featureimage: android.jpg
+listimage: posts/android.jpg
 imageby: Scott Akerman
 imagelink: https://www.flickr.com/photos/sterlic/6778181411/
+
 ---
 
 Most people looking at the mobile and smart phone sector focus on unit sales as an indicator of performance - I suggest that one also needs to look at apps. The number of available apps is a metric that shows developer commitment to the ecosystem and also gives the manufacturer marketing leverage (see Apple 100k apps marketing). Apps gives a good long term view of the platform and is a key driver in purchasing behaviour. Steve Jobs understands this which is why he plays the "most available apps of any platform" card at every possible opportunity.
 
 Well, Android has been enjoying exponential growth in the number of apps in the market over the last two years since it launched. This is not uncommon for a new platform and iPhone OS did exactly the same thing when it launched.
 
-![A graph of android market apps](/img/posts/android-appstats.png)
+![A graph of android market apps](../../img/posts/android-appstats.png)
 
 <p class="caption">Number of apps in Android market - from androlib.com<p>
 
 Why this is an important quarter for android however is that the number of apps currently available for Android was the inflection point at which Apple's iPhone app growth stated to slow. As can be seen in the chart below iPhone apps have continued to grow but the pace has eased off. This is a sign that the developer community is saturating and is maturing.
 
-![A graph of iTunes market apps](/img/posts/iphone-stats-smaller.png)
+![A graph of iTunes market apps](../../img/posts/iphone-stats-smaller.png)
 
 <p class="caption">Number of iPhone apps in iTunes - from Wikipedia</p>
 

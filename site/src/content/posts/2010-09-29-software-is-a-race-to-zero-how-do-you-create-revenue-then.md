@@ -9,14 +9,14 @@ tags: strategy, development, software
 excerpt: >
     Commodity values always drop towards their cost of production. Software
     eventually drops to $0 in value so how do you create revenue?
-listimage: /img/posts/line_chart.jpg
+listimage: posts/line_chart.jpg
 ---
 
 All software that has a market will inevitably and inexorably find itself in a race to the bottom with respect to price.
 
 To clarify, if you haven't heard this expression before - all commodities drop in price over time (as rarity disappears) to eventually hit a bottom price per unit. As the skills to write code are now very common and there is effectively no price per unit for production or distribution, the natural floor for any piece of software is basically nothing. Nothing other than time and inclination anyway.
 
-![Picture of warehouse roofs that look like a downward line chart](/img/posts/line_chart.jpg)
+![Picture of warehouse roofs that look like a downward line chart](../../img/posts/line_chart.jpg)
 
 <p class="caption"><a href="http://www.flickr.com/photos/96dpi/4032198061">Line
 chart (image (cc) Andreas Levers)</a></p>

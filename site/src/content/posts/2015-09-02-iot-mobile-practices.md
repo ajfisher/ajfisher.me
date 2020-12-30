@@ -8,7 +8,7 @@ tags: physical computing, development, ubicomp, IoT, mobile
 excerpt: >
     IoT product development has the opportunity to draw on some of the lessons
     hard won over the years of developing for mobile.
-listimage: /img/posts/the_things.jpg
+listimage: posts/the_things.jpg
 
 ---
 

@@ -9,7 +9,8 @@ excerpt: >
     "Information Radiators" - devices that use physical means to relay
     encoded information are great projects if you want to explore IoT. This
     post provides a how to example.
-listimage: /img/posts/radiator.jpg
+listimage: posts/radiator.jpg
+
 ---
 Information radiators are an interesting, though under-explored area of IoT - probably
 because they are difficult to make money from in anything other than very custom
@@ -30,7 +31,7 @@ Full post at Packt: Building an Information Radiator
 [Part 1](https://www.packtpub.com/books/content/building-information-radiator-part-1)
 [Part 2](https://www.packtpub.com/books/content/building-information-radiator-part-2)
 
-![A light that indicates the forecast sitting on a bookshelf](/img/posts/radiator.jpg)
+![A light that indicates the forecast sitting on a bookshelf](../../img/posts/radiator.jpg)
 
 <p class="caption">Temperature forecast radiator - ajfisher</p>
 

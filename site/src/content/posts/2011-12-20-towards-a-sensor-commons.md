@@ -14,18 +14,19 @@ twitter_excerpt: >
     To realise the power of the Internet of Things, the current top down approach
     needs to be abandonded in favour of bottom up uses.
 
-featureimage: /img/posts/commons_grass.jpg
+featureimage: commons_grass.jpg
 imageby: sciencesque
 imagelink: https://www.flickr.com/photos/apoptotic/2597478489
-listimage: /img/posts/resistors.jpg
+listimage: posts/resistors.jpg
 featured: true
 collection: featured
+
 ---
 
 
 The [Internet of Things,](http://en.wikipedia.org/wiki/Internet_of_Things) a term being bandied to the point of almost meaninglessness now it's hit the mainstream of the [NYT](http://www.nytimes.com/2011/12/18/sunday-review/the-internet-gets-physical.html?_r=1&pagewanted=all) and the [BBC.](http://www.bbc.co.uk/news/business-13632206) Yet, while the mainstay of the media struggles to describe how and why smart sensor arrays are going to mean you spend less time in traffic, ultimately pay more for your electricity but make sure your fruit is always fresh, there is a quiet revolution taking place.
 
-![Different types of electronic resistors](/img/posts/resistors.jpg)
+![Different types of electronic resistors](../../img/posts/resistors.jpg)
 
 <p class="caption"><a href="http://www.flickr.com/photos/oskay/437342078">"Resistors" -
 image (cc) Windell Oskay</a></p>
@@ -42,7 +43,7 @@ We don't know what we're going to get when we arrive at a point where there is h
 
 I gave a talk at [Web Directions](http://www.webdirections.org) in October this year on the [Web of Things](http://www.slideshare.net/andrewjfisher/how-the-web-is-going-physical). The last third touched on the notion of community created and led data - citing the nascent [Don't Flush Me project in New York](http://dontflush.me/) and the spontaneous self-organisation of radiation data in the wake of the Fukushima Disaster.
 
-![Grafitti on a wall suggesting a radiation leak](/img/posts/radiation.jpg)
+![Grafitti on a wall suggesting a radiation leak](../../img/posts/radiation.jpg)
 
 <p class="caption"><a href="http://www.flickr.com/photos/slowkodachrome/11817407183/">image cc Julian Stallabrass</a></p>
 
@@ -86,7 +87,7 @@ As an example the Don't Flush Me team have done an excellent job of this, they h
 
 One of the biggest issues facing Sensor Commons projects is that of dispersion. Projects that seem like such a good idea fall at the hurdle of widespread adoption. Understanding how you can disperse your sensors properly means that like a dandelion seed on the wind you'll find plenty of places to put down and ensure success.
 
-![Dandelions illuminated by a low sun](/img/posts/commons_grass.jpg)
+![Dandelions illuminated by a low sun](../../img/posts/commons_grass.jpg)
 
 <p class="caption"><a href="http://www.flickr.com/photos/apoptotic/2597478489/">Image
 (cc) sciencesque</a></p>
@@ -105,7 +106,7 @@ If you can gain trust with the community then you get the opportunity to try and
 
 Do you have a local library that is on a main road? Might make a good location for an air quality sensor that uses their WiFi to stream the data back up. Libraries, schools, local council buildings are all community infrastructure - it's worth a conversation to see if you can use it for your project.
 
-![Image of the Giesel Library](/img/posts/geisel_library.jpg)
+![Image of the Giesel Library](../../img/posts/geisel_library.jpg)
 
 <p class="caption"><a href="http://www.flickr.com/photos/opalsson/13535412304/">"The
 Geisel Library" - image (cc) O Palsson</a></p>
@@ -142,7 +143,7 @@ Once you have the data then look for ways not just to make it public but also wa
 
 Imagine engaging with a local council that has a display on the side of their building showing what the overall air quality score was in real time for the borough? These sorts of Civic Displays could become quite common place as different projects feed data into them. There's probably an opportunity for civic art to incorporate data from these types of projects and display it in interesting ways to the local population.
 
-![Terrace house with blackboard showing energy consumption and ranking](/img/posts/neighbourhood_scoreboards.jpg)
+![Terrace house with blackboard showing energy consumption and ranking](../../img/posts/neighbourhood_scoreboards.jpg)
 
 <p class="caption"><a href="http://neighbourhoodscoreboards.com/">Neighbourhood
 scoreboards project</a></p>

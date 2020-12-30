@@ -30,7 +30,12 @@ module.exports = {
         ignore: [`**/\.*`],
       },
     },
-    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-sharp`,
+      options: {
+        checkSupportedExtensions: false,
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,

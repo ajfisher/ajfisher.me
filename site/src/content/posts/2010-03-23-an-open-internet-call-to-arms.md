@@ -5,7 +5,7 @@ layout: post.hbt
 slug: an-open-internet-call-to-arms
 title: An Open Internet call to arms
 tags: censorship, government, internet, media, rant
-listimage: /img/posts/taped_shut.jpg
+listimage: posts/taped_shut.jpg
 
 ---
 
@@ -51,7 +51,7 @@ I want everyone who works at an ISP, a major content provider, or is a techie to
 
 On a day in April we choose to voluntarily censor the Australian Internet.
 
-![Dark haired man with mouth taped shut](/img/posts/taped_shut.jpg)
+![Dark haired man with mouth taped shut](../../img/posts/taped_shut.jpg)
 
 <p class="caption"><a href="http://www.flickr.com/photos/vtotter/3426290124/">It's
 better this way (image (cc) Kevin)</a></p>

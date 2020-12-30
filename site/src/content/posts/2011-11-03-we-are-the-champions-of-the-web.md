@@ -5,7 +5,7 @@ layout: post.hbt
 slug: we-are-the-champions-of-the-web
 title: We are the champions... of the web
 tags: web, internet, media, mobile, standards, W3C, web
-listimage: /img/posts/champion_fist.jpg
+listimage: posts/champion_fist.jpg
 imageby: EJP Photo
 imagelink: https://www.flickr.com/photos/ejpphoto/6114079466
 excerpt: >
@@ -27,7 +27,7 @@ We've had control - and we reaped it's benefits - stable (though quirky) APIs an
 
 But we don't need control, we need champions. Mozilla and Web Kit and Opera were our champions; but so too was the entire web community. By galvanising around web standards we made the case that control wasn't sufficient for innovation or even good implementation.
 
-![An illuminated fist punching through a circular light](/img/posts/champion_fist.jpg)
+![An illuminated fist punching through a circular light](../../img/posts/champion_fist.jpg)
 
 <p class="caption"><a href="http://www.flickr.com/photos/ejpphoto/6114079466/">"Pow!"
 image (cc) EJP Photo</a></p>

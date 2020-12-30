@@ -10,7 +10,7 @@ excerpt: >
     Sacred cows in the Adobe world finally appear to be on the BBQ. Recent signals
     from the tooling company suggest Flash may finally be about to die - and not
     too soon.
-listimage: /img/posts/adobe.jpg
+listimage: posts/adobe.jpg
 
 ---
 
@@ -30,7 +30,7 @@ On the surface this may not look like a huge revenue opportunity however I would
 
 These acquisitions are a great thing for Adobe. The purchases of Macromedia and Ominture have gone less well than anticipated as behomouth pieces of software were digested by the business. These smaller, more nimble, web oriented businesses will inject some creativity back into Adobe and hopefully some of their culture will rub off on the software giant.
 
-![Adobe logo on the floor](/img/posts/adobe.jpg)
+![Adobe logo on the floor](../../img/posts/adobe.jpg)
 
 <p class="caption"><a href="http://www.flickr.com/photos/mwichary/2198354027/">Image,
 cc Marcin Wichary</a></p>

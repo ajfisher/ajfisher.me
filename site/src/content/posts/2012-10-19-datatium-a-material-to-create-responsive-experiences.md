@@ -8,10 +8,10 @@ tags: media, data, mobile, responsive design, responsive experience, UX, web, co
 collection: featured
 small-title: true
 featured: true
-featureimage: /img/posts/datatium_bling_material.jpg
+featureimage: datatium_bling_material.jpg
 imageby: neekoh.fi
 imagelink: https://www.flickr.com/photos/neekohfi/5608007004
-listimage: /img/posts/behaviour_differentials.jpg
+listimage: posts/behaviour_differentials.jpg
 excerpt: >
     Device responsive design is only one part of context. These are the sketch notes
     that underpinned a talk at WDS2012 on the wider aspects of using data
@@ -114,7 +114,7 @@ You don't have to be perfect in every instance. If you can get 99% with about 10
 
 Don't underestimate the value of tiny removals of friction, especially in things like checkout processes. The way I think about this is like a slide right. Remember when you were a kid and they made a slide out of some sort of metal that you just didn't seem to slide on so you had to wiggle your way down. Pretty soon you got bored and went and set fire to things or did something more interesting.
 
-![A sandwich shop with people queuing to buy food](/img/posts/tss.jpg)
+![A sandwich shop with people queuing to buy food](../../img/posts/tss.jpg)
 
 <p class="caption">The Sandwich Shop, Surry Hills, Sydney - image (cc) ajfisher</p>
 
@@ -201,7 +201,7 @@ For example if I have a pay as you go mobile phone and I recharge it online, cha
 
 Why not make this a link that surfaces when I start exhibiting this behaviour. Sure it makes it a little harder to design for but if we just make the slot available for responsive experience customisation and define constraints around it then it makes it much more useful for the user.
 
-![Screen shot of the home page of Amazon.com](/img/posts/amazon_shop.jpg)
+![Screen shot of the home page of Amazon.com](../../img/posts/amazon_shop.jpg)
 
 Taking Amazon back as an example the thing I do more than anything on the Amazon site is check my Gift Card balance because I read so many ebooks on my kindle. Creating a responsive experience for me would be taking that piece of data and then exposing it on the site AND exposing it through the API that is available to the kindle. That's the sort of stuff that starts empowering users and making them feel as though the application is reacting to their behaviour.
 
@@ -370,7 +370,7 @@ Back in the 70s a magazine was launched to help you make a punk band. In it ther
 
 Here's a chord, here's another, here's a third - go start a band.
 
-![Graph of behaviours over time, change and then change of change](/img/posts/behaviour_differentials.jpg)
+![Graph of behaviours over time, change and then change of change](../../img/posts/behaviour_differentials.jpg)
 
 <p class="caption">Behavioural differentials - image (cc) ajfisher</p>
 
