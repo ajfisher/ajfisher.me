@@ -17,7 +17,7 @@ officially goes on sale. This is the first book I've been an author on and
 it was great to work alongside [Craig Sharkie - @twalve](http://github.com/twalve)
 on this project over the last 6 months.
 
-![Cover shot of Jump Start responsive Design book](/img/posts/responsive_design.jpg)
+![Cover shot of Jump Start responsive Design book](../..//img/posts/responsive_design.jpg)
 
 <p class="caption"><a href="http://www.sitepoint.com/store/jump-start-responsive-web-design/">"Jump
 Start Responsive Design" - Sharkie & Fisher</a></p>

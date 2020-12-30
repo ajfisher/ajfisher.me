@@ -15,13 +15,13 @@ Most people looking at the mobile and smart phone sector focus on unit sales as 
 
 Well, Android has been enjoying exponential growth in the number of apps in the market over the last two years since it launched. This is not uncommon for a new platform and iPhone OS did exactly the same thing when it launched.
 
-![A graph of android market apps](/img/posts/android-appstats.png)
+![A graph of android market apps](../../img/posts/android-appstats.png)
 
 <p class="caption">Number of apps in Android market - from androlib.com<p>
 
 Why this is an important quarter for android however is that the number of apps currently available for Android was the inflection point at which Apple's iPhone app growth stated to slow. As can be seen in the chart below iPhone apps have continued to grow but the pace has eased off. This is a sign that the developer community is saturating and is maturing.
 
-![A graph of iTunes market apps](/img/posts/iphone-stats-smaller.png)
+![A graph of iTunes market apps](../../img/posts/iphone-stats-smaller.png)
 
 <p class="caption">Number of iPhone apps in iTunes - from Wikipedia</p>
 

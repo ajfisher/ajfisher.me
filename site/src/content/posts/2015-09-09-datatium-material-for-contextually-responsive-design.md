@@ -26,7 +26,7 @@ our current responsive design trends as it's not sufficient to simply respond
 to someone's screen size when there are night and day differences in things like
 network speed for example.
 
-![Image (cc) by CAFNR http://www.flickr.com/photos/cafnr/14267599480](/img/posts/phone_hand.jpg)
+![Image (cc) by CAFNR http://www.flickr.com/photos/cafnr/14267599480](../../img/posts/phone_hand.jpg)
 
 I was asked to talk about this topic at [Be Responsive](http://beresponsive.io)
 to highlight how responsive design needs to move past the current fixation on

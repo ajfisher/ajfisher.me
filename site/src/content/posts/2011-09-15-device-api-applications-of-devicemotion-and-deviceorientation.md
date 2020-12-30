@@ -16,7 +16,7 @@ excerpt: >
 
 I've always loved the fact that in every smartphone there are a range of sensors attached to it. At the moment this is limited to GPS (position on the earth), orientation (how the device is tilting) and direction (how is it moving / accelerating) but we'll get others such as temperature, light etc at some point too. While we've had access to these for some time at the native app level, exposing access to these sensors has been slow to filter through to the web browser. We've had GPS for a while using the GeoLocation API which is great but it's a little too macro for playing with.
 
-![A large gyroscope photographed while spinning](/img/posts/gyro.jpg)
+![A large gyroscope photographed while spinning](../../img/posts/gyro.jpg)
 
 <p class="caption"><a href="http://www.flickr.com/photos/slasher-fun/3039970101/">Gyroscope
 et rotations - image (cc) by Mathieu Marquer</a></p>

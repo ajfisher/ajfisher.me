@@ -21,7 +21,7 @@ There but for the grace of Web Gods, go I...
 
 In Australia tonight we were supposed to witness the coming of age of Australian Online Retail. Our first "Cyber Tuesday" - a moment where the industry said to Australians who have been lured to the sales of the US and Europe "We can do this too". And then we didn't.
 
-![A screenshot of webpage with an error 'Server too busy'](/img/posts/server-too-busy.png)
+![A screenshot of webpage with an error 'Server too busy'](../../img/posts/server-too-busy.png)
 
 We didn't because technologists were too arrogant to heed the lessons of "Web Scale" development that have been done in the rest of the world. We didn't because our retail industry has spent more time crying foul over the lack of GST on international retailers than gaining proficiency in doing online commerce well. And we didn't because we still have marketers in this country who can say and hype what they want but are not held accountable to delivering good results.
 

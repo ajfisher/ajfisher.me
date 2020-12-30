@@ -30,7 +30,7 @@ Full post at Packt: Building an Information Radiator
 [Part 1](https://www.packtpub.com/books/content/building-information-radiator-part-1)
 [Part 2](https://www.packtpub.com/books/content/building-information-radiator-part-2)
 
-![A light that indicates the forecast sitting on a bookshelf](/img/posts/radiator.jpg)
+![A light that indicates the forecast sitting on a bookshelf](../../img/posts/radiator.jpg)
 
 <p class="caption">Temperature forecast radiator - ajfisher</p>
 

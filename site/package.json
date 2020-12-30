@@ -22,7 +22,7 @@
     "gatsby-remark-images": "^3.8.1",
     "gatsby-remark-prismjs": "^3.10.0",
     "gatsby-remark-reading-time": "^1.1.0",
-    "gatsby-remark-relative-images": "^0.2.3",
+    "gatsby-remark-relative-images": "^2.0.2",
     "gatsby-remark-responsive-image": "^1.0.0-alpha13-alpha.435e0178",
     "gatsby-source-filesystem": "^2.8.1",
     "gatsby-transformer-remark": "^2.13.1",

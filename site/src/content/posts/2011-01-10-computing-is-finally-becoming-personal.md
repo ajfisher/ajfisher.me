@@ -18,7 +18,7 @@ My dad  got a [Galaxy S Tab](http://www.samsung.com/au/smartphone/galaxy-tab/) 
 
 The full meaning of this only came home after watching[ manufacturer after manufacturer](http://www.engadget.com/features/tablets-at-ces-2011/) parade a seemingly infinite number of tablet computing devices most of which were running [Android](http://www.android.com/) - as much a consumption oriented operating system as [Apple's iOS](http://www.apple.com/ipad/).
 
-![First era personal computer terminal](/img/posts/zenith.jpg)
+![First era personal computer terminal](../../img/posts/zenith.jpg)
 
 <p class="caption"><a href="http://www.flickr.com/photos/ajmexico/3281139507/">Zenith
 Z-19 Terminal - image (cc) ajmexico</a></p>

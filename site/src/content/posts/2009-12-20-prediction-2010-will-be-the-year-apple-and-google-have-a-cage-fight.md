@@ -11,7 +11,7 @@ listimage: /img/posts/cagefight.jpg
 
 The pre- match slanging is pretty much over and the location of the fight has been chosen. 2010 is going to be the year Apple and Google finally stop dancing around and actually get in the ring. Unlike a nice clean refereed boxing match (Apple V Microsoft) this is going to be a dirty underground cage fight complete with barbed-wire wrapped gloves - expect to see a lot of blood on the floor - and fanbois rucking in the concourses.
 
-![Boxer laying on the canvas after fight](/img/posts/cagefight.jpg)
+![Boxer laying on the canvas after fight](../../img/posts/cagefight.jpg)
 
 <p class="caption"><a href="http://www.flickr.com/photos/icantcu/3447153416">Onslaught unleashed, image (cc) Chris</a></p>
 

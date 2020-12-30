@@ -24,7 +24,7 @@ I saw the tweet above from [Tim O'Reilly](http://twitter.com/#!/timoreilly/) the
 
 Whilst I technically applaud what Chomp have managed to do, they have almost no revenue to speak of and a dismally small audience for such a service. My sense is that the reality of app store search is that almost no one actually uses it to search for apps in a general sense - they use it for recognised brand terms or keywords which lead them, without fail, to exactly the application the user is after.
 
-![Google Android plushie doll attempting to eat a MacBook computer](/img/posts/chomp.jpg)
+![Google Android plushie doll attempting to eat a MacBook computer](../../img/posts/chomp.jpg)
 
 <p class="caption"><a href="http://www.flickr.com/photos/laihiu/4407979507">"Androids
 eat apples" - image (cc) ryanne lai</a></p>
@@ -43,7 +43,7 @@ Let's face it, no one goes to iTunes and searches for "app to see what my friend
 
 And I can almost guarantee you that no one has ever searched for "kill pigs with irate avian projectiles using a catapult game".
 
-![Angry Birds sculptures from plastecine](/img/posts/angry_birds.jpg)
+![Angry Birds sculptures from plastecine](../../img/posts/angry_birds.jpg)
 
 <p class="caption"><a href="http://www.flickr.com/photos/yghelloworld/4966726746/">"Angry
 Birds Live" - image cc Yaniv Golan</a></p>
@@ -60,7 +60,7 @@ In my view it is inconceivable that if there were even a reasonable number of se
 
 The other factor in all of this is that over the last 15 years we have been trained to believe that the web has the answers. Google is always there in a web browser, only a few seconds away, regardless of mobile device or desktop. A couple of little app stores that we only use once every couple of weeks isn't going to become our first point of reference compared to the entity that answers our questions multiple times a day, every day.
 
-![Search results prompts for 'best apps' on google](/img/posts/google_apps.png)
+![Search results prompts for 'best apps' on google](../../img/posts/google_apps.png)
 
 <p class="caption">Search prompts for "best apps"</p>
 

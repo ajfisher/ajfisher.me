@@ -19,7 +19,7 @@ I've made this point before but the power of the Netbook is in the Network - not
 
 Having said all of this the Netbook category has gone ballistic - having doubled from 16 to 33 Million units sold in 2009 - sales are worth about $USD11Bn globally ([Display Search research for 2009](http://www.displaysearch.com/cps/rde/xchg/displaysearch/hs.xsl/071309_mini_note_netbook_shipments_to_double_y_y_to_more_than_30m_units_in_2009.asp))
 
-![Prototype web book - from litle](/img/posts/webbook.jpg)
+![Prototype web book - from litle](../../img/posts/webbook.jpg)
 
 <p class="caption"><a href="http://www.flickr.com/photos/litl/4077444353/">litl
 web book prototype design (image (c) litl)</a></p>

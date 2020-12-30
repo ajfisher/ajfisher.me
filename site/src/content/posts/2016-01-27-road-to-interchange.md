@@ -77,7 +77,7 @@ Given that the ubiquitous HCSR04 ping sensor was one of the main use cases for
 building backpacks in the first place, this component was the
 [first prototype of the approach.](https://gist.github.com/ajfisher/1d57c5f845c376f04fbb)
 
-![Ultrasonic distance sensor](/img/posts/ultrasonic.jpg)
+![Ultrasonic distance sensor](../../img/posts/ultrasonic.jpg)
 
 <p class="caption"><a href="http://www.flickr.com/photos/120586634@N05/22805671435/"
 rel="noopener noreferrer" target="_blank">Spark Core Ultrasonic Project, image
@@ -121,7 +121,7 @@ to Arduino Nanos to get our project costs down and make them more accessible.
 A Nano could be had for less than $2 a unit at moderate volumes. Further, Arduino
 Micros (a nano without the USB interface) could be had closer to $1 per unit.
 
-![SimpleBot - basic robot made from craft materials](/img/posts/simplebot_basic.jpg)
+![SimpleBot - basic robot made from craft materials](../../img/posts/simplebot_basic.jpg)
 
 <p class="caption">SimpleBot, image (cc) ajfisher</p>
 

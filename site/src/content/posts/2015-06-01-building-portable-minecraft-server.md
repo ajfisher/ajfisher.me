@@ -36,7 +36,7 @@ The build process for this is published over at Packt
 There's also [some code](https://gist.github.com/ajfisher/f61c89733340cd5351a4)
 if you just want to get stuck in.
 
-![RaspberryPi running minecraft in a lunchbox with a battery](/img/posts/minecraft_inbox.jpg)
+![RaspberryPi running minecraft in a lunchbox with a battery](../../img/posts/minecraft_inbox.jpg)
 
 <p class="caption">Minecraft server in a box - image (CC) ajfisher</p>
 
