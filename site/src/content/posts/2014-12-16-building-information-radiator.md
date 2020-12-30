@@ -9,7 +9,8 @@ excerpt: >
     "Information Radiators" - devices that use physical means to relay
     encoded information are great projects if you want to explore IoT. This
     post provides a how to example.
-listimage: /img/posts/radiator.jpg
+listimage: posts/radiator.jpg
+
 ---
 Information radiators are an interesting, though under-explored area of IoT - probably
 because they are difficult to make money from in anything other than very custom

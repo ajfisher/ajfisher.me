@@ -10,7 +10,7 @@ excerpt: >
     Sacred cows in the Adobe world finally appear to be on the BBQ. Recent signals
     from the tooling company suggest Flash may finally be about to die - and not
     too soon.
-listimage: /img/posts/adobe.jpg
+listimage: posts/adobe.jpg
 
 ---
 

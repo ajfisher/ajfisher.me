@@ -9,9 +9,10 @@ tags: internet, media, mobile, predictions, web
 excerpt: >
     As consumers engage more directly with each other, how to brands understand
     what is happening in the "backchannel"?
-featureimage: /img/posts/thingstreams.jpg
+featureimage: thingstreams.jpg
 imageby: Ramsey Arnaoot
 imagelink: https://www.flickr.com/photos/arnaoot/19857872/
+
 ---
 
 Times, they are a changing - for brands and consumers both. Gone are the days where a brand tells you what to think about them and as a consumer I duly do as I'm told because I've been brainwashed by hundreds of exposures to your brand and product message. Thingstreams and more broadly Thingspace will and are changing this behaviour - unfortunately many brands still haven't realised yet.

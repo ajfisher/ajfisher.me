@@ -14,12 +14,13 @@ twitter_excerpt: >
     To realise the power of the Internet of Things, the current top down approach
     needs to be abandonded in favour of bottom up uses.
 
-featureimage: /img/posts/commons_grass.jpg
+featureimage: commons_grass.jpg
 imageby: sciencesque
 imagelink: https://www.flickr.com/photos/apoptotic/2597478489
-listimage: /img/posts/resistors.jpg
+listimage: posts/resistors.jpg
 featured: true
 collection: featured
+
 ---
 
 

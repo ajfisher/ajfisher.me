@@ -8,8 +8,9 @@ tags: development, books, responsive design, design, web, launch
 excerpt: >
     Working on my first book was quite good fun, though hard work, and today
     after all of that effort it's finally released.
-listimage: /img/posts/responsive_design.jpg
+listimage: posts/responsive_design.jpg
 listimage-position: 50% 85%
+
 ---
 
 Today, ['Jump Start Responsive Design'](http://www.sitepoint.com/store/jump-start-responsive-web-design/)

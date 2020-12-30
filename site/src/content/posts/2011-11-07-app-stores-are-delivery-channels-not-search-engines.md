@@ -14,7 +14,7 @@ excerpt: >
 twitter_excerpt: >
     If discovery is important to the app store, why is it still "broken"?
 
-listimage: /img/posts/chomp.jpg
+listimage: posts/chomp.jpg
 ---
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Wonder why <a href="https://twitter.com/search?q=%24GOOG&amp;src=ctag">$GOOG</a> and <a href="https://twitter.com/search?q=%24AAPL&amp;src=ctag">$AAPL</a> haven&#39;t invested more in making app store search actually work. A critique: <a href="http://t.co/ofVg3Dhb">http://t.co/ofVg3Dhb</a></p>&mdash; Tim O&#39;Reilly (@timoreilly) <a href="https://twitter.com/timoreilly/status/132671142942081024">November 5, 2011</a></blockquote>

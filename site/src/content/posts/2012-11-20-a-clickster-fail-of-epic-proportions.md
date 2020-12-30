@@ -5,7 +5,7 @@ layout: post.hbt
 slug: a-clickster-fail-of-epic-proportions
 title: The ClickFail of Australian Retail.
 tags: cloud computing, development, internet, media, rant, web, retail, ecommerce
-listimage: /img/posts/server-too-busy.png
+listimage: posts/server-too-busy.png
 listimage-position: 0% 50%
 excerpt: >
     The coming of age of online retail in Australia crashed and burned in

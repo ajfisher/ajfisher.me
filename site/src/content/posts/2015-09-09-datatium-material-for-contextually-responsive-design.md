@@ -10,7 +10,7 @@ excerpt: >
     Responsive design is still very screen size focussed where as we should be
     considering context much more than we do. This talk explains how Datatium
     helps resolve this.
-listimage: /img/posts/phone_hand.jpg
+listimage: posts/phone_hand.jpg
 
 ---
 

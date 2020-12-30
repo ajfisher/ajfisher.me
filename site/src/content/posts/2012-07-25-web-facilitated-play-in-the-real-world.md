@@ -5,7 +5,7 @@ layout: post.hbt
 slug: web-facilitated-play-in-the-real-world
 title: Web Facilitated Play in the Real World
 tags: development, gaming, open source, presentation, arduino, hardware, internet, IoT, media, mobile, web
-featureimage: /img/posts/swing.jpg
+featureimage: swing.jpg
 imageby: fuschia.berry
 imagelink: https://www.flickr.com/photos/fuchsia_berry/8500896205
 excerpt: >

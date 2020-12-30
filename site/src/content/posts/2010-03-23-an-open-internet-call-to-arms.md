@@ -5,7 +5,7 @@ layout: post.hbt
 slug: an-open-internet-call-to-arms
 title: An Open Internet call to arms
 tags: censorship, government, internet, media, rant
-listimage: /img/posts/taped_shut.jpg
+listimage: posts/taped_shut.jpg
 
 ---
 

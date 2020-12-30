@@ -6,7 +6,7 @@ slug: device-api-applications-of-devicemotion-and-deviceorientation
 title: Device API - Applications of DeviceMotion & DeviceOrientation
 small-title: true
 tags: development, python, internet, media, mobile, open source, web, android, API, arduino, advertising, hardware
-listimage: /img/posts/gyro.jpg
+listimage: posts/gyro.jpg
 excerpt: >
     Modern smartphones are jam-packed with sensors attached to them. This data
     is now available for use in the mobile web browser too. Here's some things you

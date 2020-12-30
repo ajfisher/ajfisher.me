@@ -9,12 +9,13 @@ tags: development, internet, media, mobile, presentation, web
 excerpt: >
     Finally the gloom of the GFC appears past and the web community are attempting
     to dream big ideas again - a summary of WDS11.
-featureimage: /img/posts/atoms_for_peace.jpg
-listimage: /img/posts/atoms_for_peace.jpg
+featureimage: atoms_for_peace.jpg
+listimage: posts/atoms_for_peace.jpg
 imageby: Mark Brown
 imagelink: https://www.flickr.com/photos/airship/117781952/
 featured: true
 collection: featured
+
 ---
 
 Post-WWII. After the dust had settled and old maps had been redrawn, we entered a period of utopian future-gazing.

@@ -6,7 +6,7 @@ slug: the-web-of-intent
 title: The web of intent
 large-title: true
 tags: internet, media, predictions, web
-listimage: /img/posts/will_you.jpg
+listimage: posts/will_you.jpg
 excerpt: >
     Web applications could handle common tasks such as sharing or pinning using
     an Intent oriented design.

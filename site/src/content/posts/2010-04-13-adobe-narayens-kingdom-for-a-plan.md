@@ -5,7 +5,7 @@ layout: post.hbt
 slug: adobe-narayens-kingdom-for-a-plan
 title: Adobe - Narayen's kingdom for a plan...
 tags: Adobe, Apple, google, media, strategy, web
-listimage: /img/posts/fortune_cookie.jpg
+listimage: posts/fortune_cookie.jpg
 ---
 
 Adobe's public fracas with Apple over lack of flash on iThings and Google open sources VP8 - it's been a tough couple of weeks for Adobe with no signs of getting better. Cries of "My kingdom for a plan" may just about to be heard from the corner offices...

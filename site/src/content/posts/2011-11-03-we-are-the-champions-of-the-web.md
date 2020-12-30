@@ -5,7 +5,7 @@ layout: post.hbt
 slug: we-are-the-champions-of-the-web
 title: We are the champions... of the web
 tags: web, internet, media, mobile, standards, W3C, web
-listimage: /img/posts/champion_fist.jpg
+listimage: posts/champion_fist.jpg
 imageby: EJP Photo
 imagelink: https://www.flickr.com/photos/ejpphoto/6114079466
 excerpt: >
