@@ -8,6 +8,7 @@ tags: development, gaming, open source, presentation, arduino, hardware, interne
 featureimage: swing.jpg
 imageby: fuschia.berry
 imagelink: https://www.flickr.com/photos/fuchsia_berry/8500896205
+listimage: posts/swing.jpg
 excerpt: >
     How can physical interaction with digital media augment the experience of
     both and what part does the web have to play in this space?

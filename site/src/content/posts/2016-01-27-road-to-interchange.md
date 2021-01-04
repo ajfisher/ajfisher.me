@@ -12,10 +12,10 @@ excerpt: >
 twitter_excerpt: >
     Node Interchange, a firmware manager for #nodebots, took a winding path
     on both hardware and software. Here's how it came to be.
-featureimage: interchange.jpg
-imageby: Daxis
-imagelink: https://www.flickr.com/photos/daxis/19572401032/
-listimage: posts/interchange.jpg
+featureimage: omer-rana-nRjdDzaCfdM-unsplash.jpg
+imageby: Omer Rana on Unsplash
+imagelink: https://unsplash.com/photos/nRjdDzaCfdM
+listimage: posts/omer-rana-nRjdDzaCfdM-unsplash.jpg
 collection: featured
 featured: true
 ---
