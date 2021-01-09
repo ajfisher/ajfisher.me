@@ -4,6 +4,7 @@ import { Link, StaticQuery, graphql } from 'gatsby';
 import Layout from '../components/list-layout';
 import SEO from '../components/seo';
 import { ListItems, PostListItem } from '../components/list';
+import { Paginate } from '../components/pagination.js';
 
 export default function Template({ pageContext, data}) {
   const {limit, skip, numPages, currentPage} = pageContext;
@@ -66,6 +67,11 @@ export default function Template({ pageContext, data}) {
           );
         })}
       </ListItems>
+      <Paginate
+        basepath="/blog"
+        currentpage={currentPage}
+        numpages={numPages}
+      />
     </Layout>
   );
 };
