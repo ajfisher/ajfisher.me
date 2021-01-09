@@ -1,15 +1,17 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { Link, StaticQuery, graphql } from 'gatsby';
 
-import SEO from '../components/seo';
 import Layout from '../components/list-layout';
+import SEO from '../components/seo';
 import { ListItems, PostListItem } from '../components/list';
+import { Paginate } from '../components/pagination.js';
 
-const BlogArchive = ({pageContext, data}) => {
+export default function Template({ pageContext, data}) {
+  const {limit, skip, numPages, currentPage} = pageContext;
   const {edges} = data.allMarkdownRemark;
-  const slug = '/blog';
+  const slug = `/blog/${currentPage}`;
 
-  const featuredIndex = edges.findIndex(({node}, index) => {
+  let featuredIndex = edges.findIndex(({node}, index) => {
     if (node.frontmatter.featured === true) return index;
   });
 
@@ -21,20 +23,27 @@ const BlogArchive = ({pageContext, data}) => {
   } else {
     // just get the first one
     featured = edges[0].node;
+    // and set the featuredIndex to 0
+    featuredIndex = 0;
   }
 
   const items = edges.filter((item, index) => {
     if (index !== featuredIndex) return item;
   });
 
-  return(
+  const seo = {
+    title: `Article archive - page ${currentPage}`,
+    description: `Article archive page ${currentPage} from ajfisher.me`
+  };
+
+  return (
     <Layout slug={slug} featured={featured}>
       <SEO
-        title="All blog posts"
-        description="All blog posts on ajfisher.me"
+        title={seo.title}
+        description={seo.description}
         type="list"
       />
-      <h1>All blog posts</h1>
+      <h1>Article archive - page {currentPage}</h1>
       <ListItems>
         {items.map(({node}) => {
           const { slug, title, date,
@@ -58,17 +67,22 @@ const BlogArchive = ({pageContext, data}) => {
           );
         })}
       </ListItems>
+      <Paginate
+        basepath="/blog"
+        currentpage={currentPage}
+        numpages={numPages}
+      />
     </Layout>
   );
 };
 
-export default BlogArchive;
-
 export const pageQuery = graphql`
-  query {
+  query($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      filter: {frontmatter: {layout: {regex: "/^post/"} }}
-      sort: {order: DESC, fields: frontmatter___date}
+      sort: {order: DESC, fields: frontmatter___date},
+      filter: {frontmatter: {layout: {regex: "/^post/"}}},
+      limit: $limit,
+      skip: $skip
     ) {
       edges {
         node {
@@ -98,3 +112,4 @@ export const pageQuery = graphql`
     }
   }
 `;
+

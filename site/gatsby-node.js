@@ -33,6 +33,8 @@ exports.createPages = async ({ actions, graphql }) => {
     console.error(result.errors)
   }
 
+  let postCount = 0; // how many posts do we end up with.
+
   // build out the pages for pages and posts
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     // TODO add the listimage in here as well.
@@ -56,6 +58,7 @@ exports.createPages = async ({ actions, graphql }) => {
         context
       });
     } else if (node.frontmatter.layout.startsWith('post')) {
+      postCount = postCount + 1;
       createPage({
         path: pathDate(node.frontmatter.date) + '/' + node.frontmatter.slug + '/',
         component: path.resolve(`src/templates/post.js`),
@@ -75,4 +78,20 @@ exports.createPages = async ({ actions, graphql }) => {
       }
     });
   });
+
+  // now build out a page for each paginated page of the blog list
+  const postsPerPage = 11;
+  const numPostPages = Math.ceil(postCount / postsPerPage);
+  for (let i = 0; i < numPostPages; i++) {
+    createPage({
+      path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+      component: path.resolve(`src/templates/post-list.js`),
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        numPages: numPostPages,
+        currentPage: i + 1,
+      }
+    });
+  }
 }
