@@ -15,7 +15,7 @@ const Pagination = styled.nav`
   display: flex;
 
   & a {
-    margin: 0 calc(0.5 * var(--gutter));
+    margin: 0 calc(0.25 * var(--gutter));
     padding: calc(0.25 * var(--gutter)) calc(1 * var(--gutter));
 
     background-color: inherit;
@@ -25,6 +25,14 @@ const Pagination = styled.nav`
       margin: 0 calc(0.25 * var(--gutter));
       padding: calc(0.25 * var(--gutter)) calc(0.5 * var(--gutter));
     }
+  }
+
+  & a:first-child {
+    margin-left: 0;
+  }
+
+  & a:last-child {
+    margin-right: 0;
   }
 
   & a:hover {
