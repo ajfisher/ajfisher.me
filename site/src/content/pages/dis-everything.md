@@ -1,6 +1,6 @@
 ---
 author: ajfisher
-date: 2010-03-13 00:47:51+00:00
+date: 2021-10-23 12:23:00+11:00
 layout: page.hbt
 slug: dis-everything
 large-title: true
@@ -13,7 +13,7 @@ so here's everything relevant about me.
 
 ## Disclaimer
 
-I am one of several Aesop and Rocket Melbourne employees that answer questions
+I am one of several Aesop, LoyPal and Rocket Melbourne employees that answer questions
 and write online and in the wider media and this extends to speaking engagements.
 I am usually communicating about Physical Computing, Open Source Software,
 Mobile technology and the future of Internet and Retail related technology so
@@ -29,8 +29,9 @@ I reserve the right categorically to say something stupid ;)
 ## Disclosure
 
 I am currently an employee of [Aesop Skincare](https://aesop.com) where I
-receive a salary from them. I am also the founder of Rocket Melbourne where I
-draw a salary.
+receive a salary. I am also the founder of Rocket Melbourne where I
+draw a salary. In addition, I am a co-founder and CTO of LoyPal where I have
+equity interests and draw income.
 
 I don't accept speaking fees, consulting fees, honoraria, or junkets. I don't
 accept free, discounted, or loaned products. When I receive unsolicited gifts
@@ -41,10 +42,10 @@ for that event. Most conferences also either waive or discount fees for that eve
 so that my colleagues or clients may attend as well. Generally either I, or my
 company pay for travel and accommodation expenses when I speak, however living in
 Australia means some conference organisers will cover my travel costs to get me
-somewhere (as Melbourne is REMOTE).
+somewhere (as Melbourne is a long way from anywhere).
 
 I do not run advertisements or otherwise receive any monetary compensation
-from the operation of my website. 
+from the operation of this website. 
 
 The costs of hosting and operating ajfisher.me are covered by Rocket Melbourne
 for my ongoing contibution to open source projects and open communities.
