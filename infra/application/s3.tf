@@ -1,9 +1,8 @@
-
 # logfiles for the front end application
 resource "aws_s3_bucket" "website_logs" {
-  bucket  = "aj-web-logs-${var.env}"
-  acl     = "log-delivery-write"
-  tags {
+  bucket = "aj-web-logs-${var.env}"
+  acl    = "log-delivery-write"
+  tags = {
     src       = "terraform"
     component = "logs"
   }
@@ -19,8 +18,8 @@ resource "aws_s3_bucket" "redirect_to_apex" {
 }
 
 resource "aws_s3_bucket_policy" "redirect_to_apex" {
-  bucket = "${aws_s3_bucket.redirect_to_apex.id}"
-  policy= <<POLICY
+  bucket = aws_s3_bucket.redirect_to_apex.id
+  policy = <<POLICY
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -43,6 +42,7 @@ resource "aws_s3_bucket_policy" "redirect_to_apex" {
   ]
 }
 POLICY
+
 }
 
 # Deploy user which will be used to upload files to the bucket
@@ -52,12 +52,12 @@ resource "aws_iam_user" "deploy_user" {
 }
 
 resource "aws_iam_access_key" "deploy_user" {
-  user = "${aws_iam_user.deploy_user.name}"
+  user = aws_iam_user.deploy_user.name
 }
 
 resource "aws_iam_user_policy" "deploy_data_rw_policy" {
   name = "deploy_data_rw_policy"
-  user = "${aws_iam_user.deploy_user.name}"
+  user = aws_iam_user.deploy_user.name
 
   policy = <<EOF
 {
@@ -85,5 +85,6 @@ resource "aws_iam_user_policy" "deploy_data_rw_policy" {
   ]
 }
 EOF
+
 }
 

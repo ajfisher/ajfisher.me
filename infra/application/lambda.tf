@@ -1,5 +1,5 @@
 resource "aws_iam_role" "lambda_execution_role" {
-  name = "ajfisher_site_lambda_execution_role"
+  name        = "ajfisher_site_lambda_execution_role"
   description = "Allow lambdas to be able to affect Cloudfront requests and responses"
 
   assume_role_policy = <<EOF
@@ -17,14 +17,15 @@ resource "aws_iam_role" "lambda_execution_role" {
   ]
 }
 EOF
+
 }
 
 resource "aws_iam_policy" "lambda_logging_policy" {
-  name = "ajfisher_site_lambda_policy"
-  path = "/"
+  name        = "ajfisher_site_lambda_policy"
+  path        = "/"
   description = "Policy, primarily for logging"
 
-  policy= <<EOF
+  policy = <<EOF
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -41,41 +42,43 @@ resource "aws_iam_policy" "lambda_logging_policy" {
   ]
 }
 EOF
+
 }
 
 resource "aws_iam_role_policy_attachment" "lambda_logs" {
-  role = "${aws_iam_role.lambda_execution_role.name}"
-  policy_arn = "${aws_iam_policy.lambda_logging_policy.arn}"
+  role       = aws_iam_role.lambda_execution_role.name
+  policy_arn = aws_iam_policy.lambda_logging_policy.arn
 }
 
 data "archive_file" "cloudfront_lambda_functions" {
-  type = "zip"
+  type        = "zip"
   output_path = "/tmp/cloudfront_lambda_functions.zip"
-  source_dir = "../../app/handlers"
+  source_dir  = "../../app/handlers"
 }
 
 resource "aws_lambda_function" "redirect_lambda" {
-  provider = "aws.useast"
-  filename = "${data.archive_file.cloudfront_lambda_functions.output_path}"
+  provider      = aws.useast
+  filename      = data.archive_file.cloudfront_lambda_functions.output_path
   function_name = "test_ajsite_index_redirect_${var.env}"
-  role = "${aws_iam_role.lambda_execution_role.arn}"
-  handler = "gatsby_index_redirect.handler"
-  publish = true
+  role          = aws_iam_role.lambda_execution_role.arn
+  handler       = "gatsby_index_redirect.handler"
+  publish       = true
 
-  source_code_hash = "${data.archive_file.cloudfront_lambda_functions.output_base64sha256}"
+  source_code_hash = data.archive_file.cloudfront_lambda_functions.output_base64sha256
 
   runtime = "nodejs10.x"
 }
 
 resource "aws_lambda_function" "header_lambda" {
-  provider = "aws.useast"
-  filename = "${data.archive_file.cloudfront_lambda_functions.output_path}"
+  provider      = aws.useast
+  filename      = data.archive_file.cloudfront_lambda_functions.output_path
   function_name = "ajsite_cache_csp_headers_${var.env}"
-  role = "${aws_iam_role.lambda_execution_role.arn}"
-  handler = "security_cache_headers.handler"
-  publish = true
+  role          = aws_iam_role.lambda_execution_role.arn
+  handler       = "security_cache_headers.handler"
+  publish       = true
 
-  source_code_hash = "${data.archive_file.cloudfront_lambda_functions.output_base64sha256}"
+  source_code_hash = data.archive_file.cloudfront_lambda_functions.output_base64sha256
 
   runtime = "nodejs10.x"
 }
+
