@@ -1,7 +1,7 @@
 ---
 author: ajfisher
 comments: true
-date: 2010-01-06 07:52:58+00:00
+date: 2021-10-23 12:27:58+11:00
 layout: page.hbt
 slug: who
 title: Who is @ajfisher?
@@ -11,9 +11,9 @@ If you're interested, here's a bit more about me.
 
 ## My job
 
-I am the Head of Creative Technologies at Aesop, a global cosmetics retailer,
+I am the Director of Global Technology at Aesop, a global cosmetics retailer,
 headquartered in Melbourne, Australia. I work with a great bunch of people
-who are some of the best at what they do in technology as well as digital and
+who are some of the best at what they do in technology, digital and
 physical retail. I get to work with a diverse team all over the world and am
 proud that the business entrusts me to do interesting things with the Aesop
 brand and not ruin the business.
@@ -22,6 +22,12 @@ Alongside this I am the founder of technology research lab Rocket Melbourne
 Here, I get to explore some of the future ways in which Internet technologies and
 individuals overlap and get to spend my time peering into the future as well
 as hopefully creating a very small part of it as well.
+
+Finally, I am the Co-Founder and Chief Product and Technology Officer for LoyPal,
+an Australian digital startup focussing on customer growth for marketing and
+customer teams for direct to consumer brands using advanced data processing
+capabilities. This team is some of the best I've ever had the privilege to work
+with and the product being built is transforming client businesses. 
 
 ## My projects
 
@@ -113,4 +119,4 @@ something interesting let me know.
 
 The best way to contact me is good old fashioned email. I'm ajfisher.td [at] gmail
 
-Failing that @ajfisher me on twitter will usually get a response to.
+Failing that @ajfisher me on twitter will usually get a response too.
