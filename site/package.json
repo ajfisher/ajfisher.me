@@ -5,11 +5,11 @@
   "version": "1.1.0",
   "author": "Andrew Fisher <ajfisher.td@gmail.com>",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/free-brands-svg-icons": "^5.15.1",
-    "@fortawesome/free-regular-svg-icons": "^5.15.1",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
     "gatsby": "^2.29.3",
     "gatsby-image": "^2.8.0",
     "gatsby-plugin-google-analytics": "^2.8.0",
@@ -29,17 +29,17 @@
     "gatsby-transformer-remark": "^2.13.1",
     "gatsby-transformer-sharp": "^2.9.0",
     "humanize-plus": "^1.8.2",
-    "prismjs": "^1.22.0",
+    "prismjs": "^1.25.0",
     "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "eslint-config-react-app": "^6.0.0",
     "gatsby-cli": "^2.16.2",
-    "prettier": "^2.2.1"
+    "prettier": "^2.4.1"
   },
   "keywords": [
     "gatsby"
