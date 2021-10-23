@@ -1,12 +1,12 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/post-layout';
 import SEO from '../components/seo';
 
 export default function Template({ data, location }) {
-  const { markdownRemark, imageSharp, featuredPosts } = data;
-  const { fields, frontmatter, html } = markdownRemark;
+  const { markdownRemark, imageSharp} = data;
+  const { fields, frontmatter, html, timeToRead, wordCount } = markdownRemark;
   const { taglist } = fields;
 
   let featuredImageSrc;
@@ -37,8 +37,8 @@ export default function Template({ data, location }) {
         type="article"
         tweet={twitter_excerpt}
         image={featuredImageSrc}
-        readingTime={fields.readingTime.minutes}
-        words={fields.readingTime.words}
+        readingTime={timeToRead}
+        words={wordCount.words}
       />
       <section
         className="content"
@@ -65,15 +65,15 @@ export const pageQuery = graphql`
         large_title
       }
       excerpt(pruneLength: 220)
+      wordCount {
+        words
+      }
+      timeToRead
       fields {
-        readingTime {
-          minutes
-          words
-        }
         taglist
       }
     }
-		imageSharp(resolutions: {originalName: {eq: $featuredImage}}) {
+		imageSharp(fixed: {originalName: {eq: $featuredImage}}) {
       base: fixed(width: 400, quality: 100, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
         src
       }

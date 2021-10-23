@@ -1,13 +1,16 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/post-layout';
 import SEO from '../components/seo';
 
 export default function Template({ data, location }) {
-  const { markdownRemark, imageSharp, featuredPosts } = data;
-  const { fields, frontmatter, html } = markdownRemark;
-  const { taglist={} } = fields;
+  const { markdownRemark, imageSharp} = data;
+  const { fields, frontmatter, html, timeToRead } = markdownRemark;
+  let taglist = null;
+  if (fields) {
+    taglist = fields.taglist || [];
+  }
 
   let featuredImageSrc;
   try {
@@ -28,7 +31,7 @@ export default function Template({ data, location }) {
 
   return (
     <Layout frontmatter={frontmatter} featuredImage={featuredImageSrc}
-      readingTime={fields.readingTime} path={location.pathname}
+      readingTime={timeToRead} path={location.pathname}
       tags={taglist}
     >
       <SEO
@@ -62,15 +65,15 @@ export const pageQuery = graphql`
         large_title
       }
       excerpt(pruneLength: 220)
+      wordCount {
+        words
+      }
+      timeToRead
       fields {
-        readingTime {
-          minutes
-          words
-        }
         taglist
       }
     }
-		imageSharp(resolutions: {originalName: {eq: $featuredImage}}) {
+		imageSharp(fixed: {originalName: {eq: $featuredImage}}) {
       base: fixed(width: 400, quality: 70) {
         src
       }

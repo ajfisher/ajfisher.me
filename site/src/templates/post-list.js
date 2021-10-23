@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, StaticQuery, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/list-layout';
 import SEO from '../components/seo';
@@ -48,7 +48,10 @@ export default function Template({ pageContext, data}) {
         {items.map(({node}) => {
           const { slug, title, date,
             listimage, listimage_position } = node.frontmatter;
-          const {readingTime} = node.fields;
+          const readingTime = {
+            minutes: node.timeToRead,
+            words: node.wordCount.words
+          }
 
           const excerpt = node.frontmatter.excerpt || node.excerpt || null;
 
@@ -101,12 +104,10 @@ export const pageQuery = graphql`
             large_title
           }
           excerpt(pruneLength: 220)
-          fields {
-            readingTime {
-              minutes
-              words
-            }
+          wordCount {
+            words
           }
+          timeToRead
         }
       }
     }
