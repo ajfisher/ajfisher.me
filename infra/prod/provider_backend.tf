@@ -1,13 +1,11 @@
 provider "aws" {
   region  = "ap-southeast-2"
-  version = "~> 2.0"
 }
 
 # this is used for dealing with ACM
 provider "aws" {
   alias   = "useast"
   region  = "us-east-1"
-  version = "~> 2.0"
 }
 
 resource "aws_s3_bucket" "ajsite-terraform-state" {
