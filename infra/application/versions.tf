@@ -8,14 +8,10 @@ terraform {
     aws = {
       source = "hashicorp/aws"
       version = "~> 3.63.0"
+      configuration_aliases = [ aws.useast ]
     }
     template = {
       source = "hashicorp/template"
     }
   }
-}
-
-provider "aws" {
-  alias  = "useast"
-  region = "us-east-1"
 }
