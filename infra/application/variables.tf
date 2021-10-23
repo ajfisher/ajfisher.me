@@ -13,3 +13,4 @@ variable "domain_prefix" {
 variable "zone_id" {
   default = "nothing"
 }
+

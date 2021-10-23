@@ -14,6 +14,7 @@ data "template_file" "bucket_policy" {
   }]
 }
 EOF
+
 }
 
 data "template_file" "public_bucket_policy" {
@@ -29,17 +30,18 @@ data "template_file" "public_bucket_policy" {
   }]
 }
 EOF
-}
 
+}
 
 # Location for the frontend code to reside
 resource "aws_s3_bucket" "website_code" {
-  bucket  = "aj-web-ajfisher-me-${var.env}"
-  acl     = "private"
-#  acl     = "public-read"
+  bucket = "aj-web-ajfisher-me-${var.env}"
+  acl    = "private"
+
+  #  acl     = "public-read"
 
   logging {
-    target_bucket = "${aws_s3_bucket.website_logs.id}"
+    target_bucket = aws_s3_bucket.website_logs.id
     target_prefix = "aj-web-logs-${var.env}/"
   }
 
@@ -54,9 +56,10 @@ resource "aws_s3_bucket" "website_code" {
     allowed_methods = ["GET", "HEAD"]
   }
 
-  tags {
+  tags = {
     src       = "terraform"
     component = "code"
   }
-  policy = "${data.template_file.bucket_policy.rendered}"
+  policy = data.template_file.bucket_policy.rendered
 }
+
