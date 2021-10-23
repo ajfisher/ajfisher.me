@@ -13,7 +13,6 @@ const TagPara = styled.p`
 `;
 
 const Tag = ({children, className, href}) => {
-  const gap = ` `;
   return <><Link className={className} to={kebabCase(href)}>{children}</Link> </>
 };
 

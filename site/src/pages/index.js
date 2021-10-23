@@ -26,11 +26,14 @@ const HomePage = ({pageContext, data}) => {
       <ListItems>
         {featured.edges.map(({node}, index) => {
           // jump out on first as this will appear up top
-          if (index === 0) return;
+          if (index === 0) return null;
 
           const { slug, title, date,
             listimage, listimage_position } = node.frontmatter;
-          const {readingTime} = node.fields;
+          const readingTime = {
+            minutes: node.timeToRead,
+            words: node.wordCount.words
+          };
 
           const excerpt = node.frontmatter.excerpt || node.excerpt || null;
 
@@ -55,7 +58,10 @@ const HomePage = ({pageContext, data}) => {
         {posts.edges.map(({node}) => {
           const { slug, title, date,
             listimage, listimage_position } = node.frontmatter;
-          const {readingTime} = node.fields;
+          const readingTime = {
+            minutes: node.timeToRead,
+            words: node.wordCount.words
+          };
 
           const excerpt = node.frontmatter.excerpt || node.excerpt || null;
 
@@ -108,12 +114,10 @@ export const pageQuery = graphql`
             small_title
             large_title
           }
-          fields {
-            readingTime {
-              minutes
-              words
-            }
+          wordCount {
+            words
           }
+          timeToRead
         }
       }
     }
@@ -142,12 +146,10 @@ export const pageQuery = graphql`
             large_title
           }
           excerpt(pruneLength: 220)
-          fields {
-            readingTime {
-              minutes
-              words
-            }
+          wordCount {
+            words
           }
+          timeToRead
         }
       }
     }

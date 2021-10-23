@@ -27,7 +27,7 @@ module.exports = {
       options: {
         name: `content`,
         path: `${__dirname}/src/content`,
-        ignore: [`**/\.*`],
+        ignore: [`**/.*`],
       },
     },
     {
@@ -38,6 +38,46 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-transformer-remark-tags`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1000,
+              backgroundColor: `none`,
+              quality: 90,
+              withWebp: { quality: 90 },
+              showCaptions: false,
+              disableBgImage: true,
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-image`,
+            options: {
+              maxWidth: 1000,
+              backgroundColor: `none`,
+              quality: 90,
+              withWebp: { quality: 90 },
+              showCaptions: false,
+              disableBgImage: true,
+            }
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              aliases: {
+                sh: `bash`,
+                xsl: `xml`,
+              }
+            },
+          },
+          `gatsby-remark-transformer-pullquotes`
+        ]
+      }
+    },
+/**    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -55,7 +95,6 @@ module.exports = {
               withWebp: { quality: 90 },
               showCaptions: false,
               disableBgImage: true,
-              backgroundColor: `none`
             },
           },
           {
@@ -67,7 +106,6 @@ module.exports = {
               withWebp: { quality: 90 },
               showCaptions: false,
               disableBgImage: true,
-              backgroundColor: `none`
             }
           },
           {
@@ -82,7 +120,7 @@ module.exports = {
           `gatsby-remark-transformer-pullquotes`
         ]
       }
-    },
+    },**/
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
