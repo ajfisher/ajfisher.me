@@ -107,7 +107,7 @@ const PostItem = ({title, image, url, excerpt}) => {
   const { postItemImages } = getPostImages();
 
   const postImage = postItemImages.edges.find(({node}) => {
-    if (node.relativePath == image) return node;
+    if (node.relativePath === image) return node;
   });
 
   return (
@@ -149,6 +149,14 @@ const Footer = ({slug}) => {
       }
 
       jsFoo: file(relativePath: { eq: "posts/jsfoo.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      art: file(relativePath: { eq: "posts/edge_of_collapse_725914.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -204,27 +212,27 @@ const Footer = ({slug}) => {
             imagePosition={featured.listimage_position} />
         </section>
         <section>
-          <Title>Latest talk</Title>
+          <Title>Artworks</Title>
           <FooterImageLink>
-            <OutboundLink href="https://www.youtube.com/watch?v=3C3lHuRToQs">
+            <OutboundLink href="https://www.voice.com/ajfisher">
               <Img
-                fluid={data.jsFoo.childImageSharp.fluid}
-                alt="YouTube - JSFoo, India"
+                fluid={data.art.childImageSharp.fluid}
+                alt="Generative artwork - At the Edge of Collapse"
               />
             </OutboundLink>
           </FooterImageLink>
           <p>
-            <OutboundLink href="https://www.youtube.com/watch?v=3C3lHuRToQs">
-              Droids, JavaScript and Web Connected Hardware, JSFoo, India
+            <OutboundLink href="https://www.voice.com/ajfisher">
+              Generative artworks available for purchase as NFTs from Voice
             </OutboundLink>
           </p>
           <p>
-            Dive into the world of JS hardware and see the sorts of things
-            people are doing with it with some demos along the way.
+            Dive into the world of NFTs using an environmentally sustainable
+            platform.
           </p>
         </section>
         <section>
-          <Title>My books</Title>
+          <Title>My Books</Title>
           <FooterImageLink position="50% 100%">
             <OutboundLink href="https://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
               <Img
