@@ -10,7 +10,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
-    "gatsby": "^4.0.0",
+    "gatsby": "^5.8.1",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-google-analytics": "^4.0.0",
     "gatsby-plugin-manifest": "^4.0.0",
@@ -25,7 +25,7 @@
     "gatsby-remark-reading-time": "^1.1.0",
     "gatsby-remark-relative-images": "^2.0.2",
     "gatsby-remark-responsive-image": "^1.0.0-alpha13-alpha.435e0178",
-    "gatsby-source-filesystem": "^4.0.0",
+    "gatsby-source-filesystem": "^4.25.0",
     "gatsby-transformer-remark": "^5.0.0",
     "gatsby-transformer-sharp": "^4.25.0",
     "humanize-plus": "^1.8.2",
@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "eslint-config-react-app": "^6.0.0",
-    "gatsby-cli": "^4.0.0",
+    "gatsby-cli": "^5.8.0",
     "prettier": "^2.4.1"
   },
   "keywords": [
