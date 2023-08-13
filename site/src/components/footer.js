@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import { device } from './devices';
 import { getPostImages, ImageLink } from './list';
@@ -110,80 +110,62 @@ const PostItem = ({title, image, url, excerpt}) => {
     if (node.relativePath === image) return node;
   });
 
-  return (
-    <>
-      <FooterImageLink>
-        <Link to={url}>
-          <Img
-            fluid={postImage.node.childImageSharp.fluid}
-            alt={title}
-          />
-        </Link>
-      </FooterImageLink>
-      <p><Link to={url}>{title}</Link></p>
-      { excerpt.length > 0 &&
-        <p>{excerpt}</p>
-      }
-    </>
-  );
+  return <>
+    <FooterImageLink>
+      <Link to={url}>
+        <GatsbyImage image={postImage.node.childImageSharp.gatsbyImageData} alt={title} />
+      </Link>
+    </FooterImageLink>
+    <p><Link to={url}>{title}</Link></p>
+    { excerpt.length > 0 &&
+      <p>{excerpt}</p>
+    }
+  </>;
 };
 
 const Footer = ({slug}) => {
 
-  const data = useStaticQuery(graphql`
-    query footerImageQuery {
-      responsiveDesign: file(relativePath: { eq: "posts/responsive_design.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-
-      jsRobotics: file(relativePath: { eq: "posts/make_js_robots.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-
-      jsFoo: file(relativePath: { eq: "posts/jsfoo.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-
-      art: file(relativePath: { eq: "posts/edge_of_collapse_725914.png" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-
-      featuredPosts: allMarkdownRemark(filter: {frontmatter: {featured: {eq: true}}},
-        sort: {fields: frontmatter___date, order: DESC})
-        {
-          edges {
-            node {
-              frontmatter {
-                title
-                date(formatString: "YYYY-MM-DD")
-                listimage
-                listimage_position
-                excerpt
-                featureimage
-                featureimage_position
-                slug
-              }
-            }
-          }
-        }
+  const data = useStaticQuery(graphql`query footerImageQuery {
+  responsiveDesign: file(relativePath: {eq: "posts/responsive_design.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
     }
-  `);
+  }
+  jsRobotics: file(relativePath: {eq: "posts/make_js_robots.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+  jsFoo: file(relativePath: {eq: "posts/jsfoo.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+  art: file(relativePath: {eq: "posts/edge_of_collapse_725914.png"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+  featuredPosts: allMarkdownRemark(
+    filter: {frontmatter: {featured: {eq: true}}}
+    sort: {fields: frontmatter___date, order: DESC}
+  ) {
+    edges {
+      node {
+        frontmatter {
+          title
+          date(formatString: "YYYY-MM-DD")
+          listimage
+          listimage_position
+          excerpt
+          featureimage
+          featureimage_position
+          slug
+        }
+      }
+    }
+  }
+}`);
 
   // get the featured article
   const featuredPosts = data.featuredPosts.edges.map((edge) => {
@@ -215,10 +197,9 @@ const Footer = ({slug}) => {
           <Title>Artworks</Title>
           <FooterImageLink>
             <OutboundLink href="https://www.voice.com/ajfisher">
-              <Img
-                fluid={data.art.childImageSharp.fluid}
-                alt="Generative artwork - At the Edge of Collapse"
-              />
+              <GatsbyImage
+                image={data.art.childImageSharp.gatsbyImageData}
+                alt="Generative artwork - At the Edge of Collapse" />
             </OutboundLink>
           </FooterImageLink>
           <p>
@@ -235,10 +216,9 @@ const Footer = ({slug}) => {
           <Title>My Books</Title>
           <FooterImageLink position="50% 100%">
             <OutboundLink href="https://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
-              <Img
-                fluid={data.jsRobotics.childImageSharp.fluid}
-                alt="Make JavaScript Robotics Book Cover"
-              />
+              <GatsbyImage
+                image={data.jsRobotics.childImageSharp.gatsbyImageData}
+                alt="Make JavaScript Robotics Book Cover" />
             </OutboundLink>
           </FooterImageLink>
           <p>
@@ -248,10 +228,9 @@ const Footer = ({slug}) => {
           </p>
           <FooterImageLink position="50% 85%">
             <OutboundLink href="https://www.amazon.com/Jump-Start-Responsive-Web-Design/dp/0987332163/">
-              <Img
-                fluid={data.responsiveDesign.childImageSharp.fluid}
-                alt="Jump Start Responsive Design Book Cover"
-              />
+              <GatsbyImage
+                image={data.responsiveDesign.childImageSharp.gatsbyImageData}
+                alt="Jump Start Responsive Design Book Cover" />
             </OutboundLink>
           </FooterImageLink>
           <p>
