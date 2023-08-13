@@ -30,6 +30,7 @@ module.exports = {
         ignore: [`**/.*`],
       },
     },
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-transformer-sharp`,
       options: {
