@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import humanize from 'humanize-plus';
 import moment from 'moment';
 
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import { device } from './devices';
 import { pathDate } from '../lib/utils';
@@ -58,12 +58,12 @@ export const ImageLink = styled.div`
   }
 
   & img {
-    object-position: ${props => props.position} !important;
+    object-position: ${props => props.$position} !important;
   }
 `;
 
 ImageLink.defaultProps = {
-  position: '50% 50%'
+  $position: '50% 50%'
 };
 
 
@@ -72,55 +72,71 @@ const PostDate = styled.p`
   font-size: 1.5rem !important;
 `;
 
-
 export const getPostImages = () => {
   // returns all of the item images
-  return useStaticQuery(graphql`
-    query postItemImageQuery {
-      postItemImages: allFile {
-        edges {
-          node {
-            relativePath
-            childImageSharp {
-              fluid(quality: 90) {
-                ...GatsbyImageSharpFluid
-              }
-              base: fixed(width: 400, quality: 90) {
-                src
-              }
-              small: fixed(width: 500, quality: 95) {
-                src
-              }
-              medium: fixed(width: 750, quality: 95) {
-                src
-              }
-              large: fixed(width: 1050, quality: 100) {
-                src
-              }
-              wide: fixed(width: 1600, quality: 100) {
-                src
-              }
-              duo_base: fixed(width: 400, quality: 90, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
-                src
-              }
-              duo_small: fixed(width: 500, quality: 95, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
-                src
-              }
-              duo_medium: fixed(width: 750, quality: 95, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
-                src
-              }
-              duo_large: fixed(width: 1050, quality: 100, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
-                src
-              }
-              duo_wide: fixed(width: 1600, quality: 100, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
-                src
-              }
-            }
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  return useStaticQuery(graphql`query postItemImageQuery {
+  postItemImages: allFile {
+    edges {
+      node {
+        relativePath
+        childImageSharp {
+          gatsbyImageData(quality: 90, layout: FULL_WIDTH)
+          base: fixed(width: 400, quality: 90) {
+            src
+          }
+          small: fixed(width: 500, quality: 95) {
+            src
+          }
+          medium: fixed(width: 750, quality: 95) {
+            src
+          }
+          large: fixed(width: 1050, quality: 100) {
+            src
+          }
+          wide: fixed(width: 1600, quality: 100) {
+            src
+          }
+          duo_base: fixed(
+            width: 400
+            quality: 90
+            duotone: {highlight: "#FF5E9A", shadow: "#000000"}
+          ) {
+            src
+          }
+          duo_small: fixed(
+            width: 500
+            quality: 95
+            duotone: {highlight: "#FF5E9A", shadow: "#000000"}
+          ) {
+            src
+          }
+          duo_medium: fixed(
+            width: 750
+            quality: 95
+            duotone: {highlight: "#FF5E9A", shadow: "#000000"}
+          ) {
+            src
+          }
+          duo_large: fixed(
+            width: 1050
+            quality: 100
+            duotone: {highlight: "#FF5E9A", shadow: "#000000"}
+          ) {
+            src
+          }
+          duo_wide: fixed(
+            width: 1600
+            quality: 100
+            duotone: {highlight: "#FF5E9A", shadow: "#000000"}
+          ) {
+            src
           }
         }
       }
     }
-  `);
+  }
+}`);
 };
 
 export const PostListItem = ({title, image, position, excerpt, date,
@@ -137,21 +153,20 @@ export const PostListItem = ({title, image, position, excerpt, date,
     }
 
     const postImage = postItemImages.edges.find(({node}) => {
-      if (node.relativePath == image) return node;
+      if (node.relativePath === image) return node;
+
+      return null;
     });
 
     const rounded_time = Math.ceil(readingtime);
     const humanised_words = humanize.compactInteger(wordcount, 1);
 
-    return(
+    return (
       <Item>
         {typeof(postImage) !== 'undefined' &&
-          <ImageLink position={position}>
+          <ImageLink $position={position}>
             <Link to={url}>
-              <Img
-                fluid={postImage.node.childImageSharp.fluid}
-                alt={title}
-              />
+              <GatsbyImage image={postImage.node.childImageSharp.gatsbyImageData} alt={title} />
             </Link>
           </ImageLink>
         }

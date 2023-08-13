@@ -16,11 +16,10 @@
     "url": "https://github.com/ajfisher/ajfisher.me/issues"
   },
   "homepage": "https://github.com/ajfisher/ajfisher.me#readme",
-  "dependencies": {},
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.16.0",
-    "eslint-config-react-app": "^6.0.0",
+    "eslint": "^8.46.0",
+    "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-react": "^7.21.5"
   }

@@ -7,12 +7,14 @@ import { ListItems, PostListItem } from '../components/list';
 import { Paginate } from '../components/pagination.js';
 
 export default function Template({ pageContext, data}) {
-  const {limit, skip, numPages, currentPage} = pageContext;
+  const {numPages, currentPage} = pageContext;
   const {edges} = data.allMarkdownRemark;
   const slug = `/blog/${currentPage}`;
 
   let featuredIndex = edges.findIndex(({node}, index) => {
     if (node.frontmatter.featured === true) return index;
+
+    return null;
   });
 
   let featured;
@@ -29,6 +31,8 @@ export default function Template({ pageContext, data}) {
 
   const items = edges.filter((item, index) => {
     if (index !== featuredIndex) return item;
+
+    return null;
   });
 
   const seo = {

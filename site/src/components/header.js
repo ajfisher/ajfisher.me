@@ -1,4 +1,4 @@
-import { graphql, Link } from 'gatsby';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
@@ -37,22 +37,23 @@ const ImageHeader = styled(TextHeader)`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(${props => props.featuredImage.base});
+
+  background-image: url(${props => props.$featuredimage.base});
 
   @media only screen and ${device.small} {
-    background-image: url(${props => props.featuredImage.small});
+    background-image: url(${props => props.$featuredimage.small});
   }
 
   @media only screen and ${device.medium} {
-    background-image: url(${props => props.featuredImage.medium});
+    background-image: url(${props => props.$featuredimage.medium});
   }
 
   @media only screen and ${device.large} {
-    background-image: url(${props => props.featuredImage.large});
+    background-image: url(${props => props.$featuredimage.large});
   }
 
   @media only screen and ${device.wide} {
-    background-image: url(${props => props.featuredImage.wide});
+    background-image: url(${props => props.$featuredimage.wide});
   }
 `;
 
@@ -234,7 +235,7 @@ const Featured = styled.p`
   font-size: 1.8rem;
 `;
 
-const Header = ({ title, date, excerpt, url, featured=false, featuredImage,
+const Header = ({ title, date, excerpt, url, featured=false, featuredimage,
   smalltitle, largetitle, readingTime={} }) => {
 
     let formatted_date;
@@ -245,10 +246,10 @@ const Header = ({ title, date, excerpt, url, featured=false, featuredImage,
     const rounded_time = Math.ceil(readingTime.minutes) || 0;
     const humanised_words = humanize.compactInteger(readingTime.words, 1) || 0;
 
-    const PostHeader = (typeof(featuredImage) === 'undefined') ? TextHeader : ImageHeader;
+    const PostHeader = (typeof(featuredimage) === 'undefined') ? TextHeader : ImageHeader;
 
     return (
-      <PostHeader featuredImage={featuredImage}>
+      <PostHeader $featuredimage={featuredimage}>
         <Container className="wrapper">
           { featured &&
             <Featured>Featured Post</Featured>
