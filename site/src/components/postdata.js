@@ -13,6 +13,7 @@ const Published = styled.p`
   background: var(--dark-grey);
   box-shadow: 0.5rem 0 0 var(--dark-grey), -0.5rem 0 0 var(--dark-grey);
   box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 
   @media only screen and ${device.large} {
     box-shadow: none;
