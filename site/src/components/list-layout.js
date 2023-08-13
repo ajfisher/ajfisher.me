@@ -53,7 +53,7 @@ const Layout = ({ children, featured={}, slug}) => {
   return (
     <>
       <Header featured='true' title={frontmatter.title} date={frontmatter.date}
-        excerpt={excerpt} featuredImage={featuredImage} url={url}
+        excerpt={excerpt} featuredimage={featuredImage} url={url}
         smalltitle={frontmatter.small_title} largetitle={frontmatter.large_title}
         readingTime={fields.readingTime} />
       <Main>

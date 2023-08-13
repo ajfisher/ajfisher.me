@@ -7,7 +7,7 @@ import { ListItems, PostListItem } from '../components/list';
 import { Paginate } from '../components/pagination.js';
 
 export default function Template({ pageContext, data}) {
-  const {limit, skip, numPages, currentPage} = pageContext;
+  const {numPages, currentPage} = pageContext;
   const {edges} = data.allMarkdownRemark;
   const slug = `/blog/${currentPage}`;
 

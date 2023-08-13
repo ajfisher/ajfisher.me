@@ -216,7 +216,7 @@ const Footer = ({slug}) => {
         </section>
         <section>
           <Title>My Books</Title>
-          <FooterImageLink position="50% 100%">
+          <FooterImageLink $position="50% 100%">
             <OutboundLink href="https://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
               <GatsbyImage
                 image={data.jsRobotics.childImageSharp.gatsbyImageData}
@@ -228,7 +228,7 @@ const Footer = ({slug}) => {
               Make: JavaScript Robotics
             </OutboundLink>
           </p>
-          <FooterImageLink position="50% 85%">
+          <FooterImageLink $position="50% 85%">
             <OutboundLink href="https://www.amazon.com/Jump-Start-Responsive-Web-Design/dp/0987332163/">
               <GatsbyImage
                 image={data.responsiveDesign.childImageSharp.gatsbyImageData}

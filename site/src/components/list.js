@@ -58,12 +58,12 @@ export const ImageLink = styled.div`
   }
 
   & img {
-    object-position: ${props => props.position} !important;
+    object-position: ${props => props.$position} !important;
   }
 `;
 
 ImageLink.defaultProps = {
-  position: '50% 50%'
+  $position: '50% 50%'
 };
 
 
@@ -164,7 +164,7 @@ export const PostListItem = ({title, image, position, excerpt, date,
     return (
       <Item>
         {typeof(postImage) !== 'undefined' &&
-          <ImageLink position={position}>
+          <ImageLink $position={position}>
             <Link to={url}>
               <GatsbyImage image={postImage.node.childImageSharp.gatsbyImageData} alt={title} />
             </Link>

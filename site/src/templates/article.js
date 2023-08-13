@@ -30,7 +30,7 @@ export default function Template({ data, location }) {
   const twitter_excerpt = frontmatter.twitter_excerpt || excerpt;
 
   return (
-    <Layout frontmatter={frontmatter} featuredImage={featuredImageSrc}
+    <Layout frontmatter={frontmatter} featuredimage={featuredImageSrc}
       readingTime={timeToRead} path={location.pathname}
       tags={taglist}
     >
