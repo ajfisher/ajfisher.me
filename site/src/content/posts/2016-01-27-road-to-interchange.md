@@ -88,13 +88,13 @@ After some refinement with [Jeff Hoeffs](http://twitter.com/soundanalogous) and
 that whilst the idea of the backpack was solid, using it was a nightmare. Specifically:
 
 * The build process sucked - a result of Arduino's inability to properly
-deal with preprocessor directives (eg conditional includes) - meaning the end
-user had to manage included libraries and #defines in the code.
+    deal with preprocessor directives (eg conditional includes) - meaning the end
+    user had to manage included libraries and #defines in the code.
 * Switching to avr-gcc helped resolve the technical issues but increased
-build complexity for the end user of the backpack.
+    build complexity for the end user of the backpack.
 * [INOTool](http://inotool.org/) had fragmented and became an effectively
-non-maintained project (which could have simplified the acv-gcc interaction though
-it meant a python build chain).
+    non-maintained project (which could have simplified the acv-gcc interaction though
+    it meant a python build chain).
 
 These issues highlighted that many NodeBots end
 users weren't close enough to the hardware build tools that we were familiar
