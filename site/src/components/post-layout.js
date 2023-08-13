@@ -1,6 +1,6 @@
 /** layout for poasts **/
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
@@ -8,7 +8,7 @@ import { PostArticle } from './article';
 import Header from './header';
 import PostData from './postdata';
 
-import { device } from './devices';
+// import { device } from './devices';
 
 import Nav from './nav';
 import Footer from './footer';

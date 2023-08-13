@@ -108,6 +108,8 @@ const PostItem = ({title, image, url, excerpt}) => {
 
   const postImage = postItemImages.edges.find(({node}) => {
     if (node.relativePath === image) return node;
+
+    return null;
   });
 
   return <>

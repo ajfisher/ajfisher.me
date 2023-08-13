@@ -153,7 +153,9 @@ export const PostListItem = ({title, image, position, excerpt, date,
     }
 
     const postImage = postItemImages.edges.find(({node}) => {
-      if (node.relativePath == image) return node;
+      if (node.relativePath === image) return node;
+
+      return null;
     });
 
     const rounded_time = Math.ceil(readingtime);

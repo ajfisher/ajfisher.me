@@ -1,9 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+// import styled from 'styled-components';
+// import PropTypes from 'prop-types';
+// import { graphql } from 'gatsby';
 
-import { device } from './devices';
+// import { device } from './devices';
 
 import Header from './header';
 import Nav from './nav';
@@ -33,7 +33,9 @@ const Layout = ({ children, featured={}, slug}) => {
 
     const { postItemImages } = getPostImages();
     const featuredImageSet = postItemImages.edges.find(({node}) => {
-      if (node.relativePath == frontmatter.featureimage) return node;
+      if (node.relativePath === frontmatter.featureimage) return node;
+
+      return null;
     });
 
     if (featuredImageSet) {
