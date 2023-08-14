@@ -86,7 +86,7 @@ export default function Template({ pageContext, data}) {
 export const pageQuery = graphql`
   query($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      sort: {order: DESC, fields: frontmatter___date},
+      sort: {frontmatter: {date: DESC}},
       filter: {frontmatter: {layout: {regex: "/^post/"}}},
       limit: $limit,
       skip: $skip

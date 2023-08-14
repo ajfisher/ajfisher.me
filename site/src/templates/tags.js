@@ -12,6 +12,8 @@ export default function Template({ pageContext, data}) {
 
   const featuredIndex = edges.findIndex(({node}, index) => {
     if (node.frontmatter.featured === true) return index;
+
+    return null;
   });
 
   let featured;
@@ -26,6 +28,8 @@ export default function Template({ pageContext, data}) {
 
   const items = edges.filter((item, index) => {
     if (index !== featuredIndex) return item;
+
+    return null;
   });
 
   const seo = {
@@ -77,7 +81,7 @@ export const pageQuery = graphql`
   query($tag: String) {
     allMarkdownRemark(
       filter: {fields: {taglist: {in: [$tag]}}}
-      sort: {order: DESC, fields: frontmatter___date}
+      sort: {frontmatter: {date: DESC}}
     ) {
       edges {
         node {

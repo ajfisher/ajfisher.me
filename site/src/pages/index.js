@@ -95,7 +95,7 @@ export const pageQuery = graphql`
         layout: {regex: "/^post/"}
         featured: {eq: true}
       }}
-      sort: {order: DESC, fields: frontmatter___date}
+      sort: {frontmatter: {date: DESC}}
       limit: 3
     ) {
       edges {
@@ -126,7 +126,7 @@ export const pageQuery = graphql`
         layout: {regex: "/^post/"}
         featured: {in: [null, false]}
       }}
-      sort: {order: DESC, fields: frontmatter___date}
+      sort: {frontmatter: {date: DESC}}
       limit: 10
     ) {
       edges {
