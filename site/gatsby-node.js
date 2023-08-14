@@ -22,7 +22,7 @@ exports.createPages = async ({ actions, graphql }) => {
         }
       }
       tagsGroup: allMarkdownRemark {
-        group(field: fields___taglist) {
+        group(field: {fields: {taglist: SELECT}}) {
           fieldValue
         }
       }
