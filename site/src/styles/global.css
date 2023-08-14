@@ -89,6 +89,8 @@ a {
     padding: 0 0.5rem;
     transition: all 0.4s ease;
 	border-radius: 0.2rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
 
 a:hover,
@@ -106,6 +108,8 @@ article h3{
     background-color: var(--light-base);
     color: var(--dark-base);
     display: inline;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
 
 article h4 {
