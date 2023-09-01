@@ -17,7 +17,6 @@ imageby: ajfisher Representation of a neural network Stable Diffusion
 imagelink: https://ajfisher.me/
 listimage: posts/ai_works_now_head_sd.jpg
 featured: true
-large-title: true
 ---
 
 Recently, I was fortunate enough to get up to Sydney to attend the
