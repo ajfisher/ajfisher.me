@@ -119,8 +119,12 @@ article h4 {
 }
 
 article p span.gatsby-resp-image-wrapper {
-    margin: 0 calc(-1 * var(--gutter)) !important;
+    /** margin: 0 calc(-1 * var(--gutter)) !important;**/
     max-width: 1000px !important;
+}
+
+article p:has(span.gatsby-resp-image-wrapper) {
+    margin-bottom: 0px;
 }
 
 article p.caption {
