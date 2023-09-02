@@ -1,7 +1,7 @@
 ---
 author: ajfisher
 comments: true
-date: 2021-10-23 12:27:58+11:00
+date: 2023-09-02 12:27:58+10:00
 layout: page.hbt
 slug: who
 title: Who is @ajfisher?
@@ -11,17 +11,18 @@ If you're interested, here's a bit more about me.
 
 ## My job
 
-I am the Director of Global Technology at Aesop, a global cosmetics retailer,
-headquartered in Melbourne, Australia. I work with a great bunch of people
-who are some of the best at what they do in technology, digital and
-physical retail. I get to work with a diverse team all over the world and am
-proud that the business entrusts me to do interesting things with the Aesop
-brand and not ruin the business.
-
-Alongside this I am the founder of technology research lab Rocket Melbourne
+I am the founder of technology research lab and consultancy, Rocket Melbourne.
 Here, I get to explore some of the future ways in which Internet technologies and
 individuals overlap and get to spend my time peering into the future as well
-as hopefully creating a very small part of it as well.
+as creating a very small part of it as well. Most of my work with clients is
+focussed on how they deliver incredible customer experiences by leveraging
+design, technology and data into a cohesive whole that lives up to customer
+and brand expectations.
+
+Up until recently I was the Global Director of Technology for Aesop, a large,
+international cosmetics retail business that was bought by L'Oreal for $3.7Bn
+in 2023. Working at this business for 7 years was an immense privilege given
+its strong brand and commitment to ethics.
 
 Finally, I am the Co-Founder and Chief Product and Technology Officer for LoyPal,
 an Australian digital startup focussing on customer growth for marketing and
@@ -79,10 +80,10 @@ If you're really interested, [check out my details on LinkedIn](http://au.linked
 I am part of several online and physical communities.
 
 * [Connected Community HackerSpace](https://hackmelbourne.org) - The original
-HackerSpace / MakerSpace in Melbourne where I'm a member as well as run regular
-workshops.
+    HackerSpace / MakerSpace in Melbourne where I'm a member as well as run regular
+    workshops.
 * NodeBots AU - A [slack](https://invite.nodebotsau.io) and [meetup](https://www.meetup.com/Melbourne-NodeBots-Nights/)
-community that looks at ways to bring the web and physical computing together
+    community that looks at ways to bring the web and physical computing together
 
 #### My networks
 
