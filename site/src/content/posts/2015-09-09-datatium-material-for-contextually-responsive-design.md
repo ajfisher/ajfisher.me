@@ -11,7 +11,7 @@ excerpt: >
     considering context much more than we do. This talk explains how Datatium
     helps resolve this.
 listimage: posts/phone_hand.jpg
-
+featureimage: datatium_material.png
 ---
 
 A large focus of my work at [JBA](jbadigital.com) is UX related data science
