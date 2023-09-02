@@ -10,8 +10,5 @@ terraform {
       version = "~> 3.63.0"
       configuration_aliases = [ aws.useast ]
     }
-    template = {
-      source = "hashicorp/template"
-    }
   }
 }
