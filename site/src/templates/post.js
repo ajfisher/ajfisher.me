@@ -2,12 +2,10 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/post-layout';
-import SEO from '../components/seo';
+import PageHead from '../components/page-head';
 
-export default function Template({ data, location }) {
-  const { markdownRemark, imageSharp} = data;
-  const { fields, frontmatter, html, timeToRead, wordCount } = markdownRemark;
-  const { taglist } = fields;
+const getFeaturedImage = (imageSharp) => {
+  // parses image sharp and returns a value
 
   let featuredImageSrc;
   try {
@@ -23,15 +21,19 @@ export default function Template({ data, location }) {
     featuredImageSrc = undefined;
   }
 
+  return featuredImageSrc;
+}
+
+export const Head = ({location, params, data, pageContext}) => {
+  const { markdownRemark, imageSharp} = data;
+  const { frontmatter, timeToRead, wordCount} = markdownRemark;
+
+  const featuredImageSrc = getFeaturedImage(imageSharp);
   const excerpt = frontmatter.excerpt || markdownRemark.excerpt || '';
   const twitter_excerpt = frontmatter.twitter_excerpt || excerpt;
-
   return (
-    <Layout frontmatter={frontmatter} featuredimage={featuredImageSrc}
-      readingTime={fields.readingTime} path={location.pathname}
-      tags={taglist}
-    >
-      <SEO
+    <>
+      <PageHead
         title={frontmatter.title}
         description={excerpt}
         type="article"
@@ -40,6 +42,22 @@ export default function Template({ data, location }) {
         readingTime={timeToRead}
         words={wordCount.words}
       />
+    </>
+  );
+};
+
+export default function Template({ data, location }) {
+  const { markdownRemark, imageSharp} = data;
+  const { fields, frontmatter, html} = markdownRemark;
+  const { taglist } = fields;
+
+  const featuredImageSrc = getFeaturedImage(imageSharp);
+
+  return (
+    <Layout frontmatter={frontmatter} featuredimage={featuredImageSrc}
+      readingTime={fields.readingTime} path={location.pathname}
+      tags={taglist}
+    >
       <section
         className="content"
         dangerouslySetInnerHTML={{ __html: html }}

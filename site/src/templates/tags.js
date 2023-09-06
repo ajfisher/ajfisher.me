@@ -2,8 +2,27 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/list-layout';
-import SEO from '../components/seo';
+import PageHead from '../components/page-head';
 import { ListItems, PostListItem } from '../components/list';
+
+export const Head = ({location, params, data, pageContext}) => {
+  const {tag} = pageContext;
+
+  const seo = {
+    title: `Posts tagged ${tag}`,
+    description: `Posts that are tagged ${tag} on ajfisher.me`
+  };
+
+  return (
+    <>
+      <PageHead
+        title={seo.title}
+        description={seo.description}
+        type="list"
+      />
+    </>
+  );
+};
 
 export default function Template({ pageContext, data}) {
   const {tag} = pageContext;
@@ -32,18 +51,8 @@ export default function Template({ pageContext, data}) {
     return null;
   });
 
-  const seo = {
-    title: `Posts tagged ${tag}`,
-    description: `Posts that are tagged ${tag} on ajfisher.me`
-  };
-
   return (
     <Layout slug={slug} featured={featured}>
-      <SEO
-        title={seo.title}
-        description={seo.description}
-        type="list"
-      />
       <h1>{items.length} posts tagged {tag}</h1>
       <ListItems>
         {items.map(({node}) => {

@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link, graphql } from 'gatsby';
 
-import SEO from '../components/seo';
+// import SEO from '../components/seo';
+ import PageHead from '../components/page-head';
 import Layout from '../components/list-layout';
 import { ListItems, PostListItem } from '../components/list';
 
@@ -10,17 +11,24 @@ const Intro = styled.p`
   margin-top: var(--gutter) !important;
 `;
 
+export const Head = () => {
+  return (
+    <>
+      <PageHead
+        title="Home | ajfisher.me"
+        description="Featured and recent posts from ajfisher"
+        type="list"
+      />
+    </>
+  );
+};
+
+
 const HomePage = ({pageContext, data}) => {
   const {featured, posts} = data;
 
   return (
     <Layout slug="/" featured={featured.edges[0].node}>
-      <SEO
-        title="Home | ajfisher.me"
-        description="Featured and recent posts from ajfisher"
-        type="list"
-      />
-
       <Intro>Observations, images and code from ajfisher</Intro>
       <h2 className="home">Featured posts</h2>
       <ListItems>
