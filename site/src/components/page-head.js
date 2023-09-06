@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+// import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby';
 
 import humanize from 'humanize-plus';
 
-function SEO({ description, meta, title, type, tweet, image, readingTime, words}) {
+function PageHead({ description, meta, title, type, tweet, image, readingTime, words}) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -20,8 +20,6 @@ function SEO({ description, meta, title, type, tweet, image, readingTime, words}
       }
     `
   )
-
-  const lang = 'en';
 
   const seo = {
     title: title || site.siteMetadata.defaultTitle,
@@ -52,56 +50,57 @@ function SEO({ description, meta, title, type, tweet, image, readingTime, words}
     card_meta.push({name: `twitter:data2`, content: `${humanised_words}`});
   }
 
+  meta=[
+    {
+      name: `description`,
+      content: seo.metaDescription,
+    },
+    {
+      property: `og:title`,
+      content: seo.title,
+    },
+    {
+      property: `og:description`,
+      content: seo.metaDescription,
+    },
+    {
+      property: `og:type`,
+      content: seo.pageType,
+    },
+    {
+      name: `twitter:card`,
+      content: `summary_large_image`,
+    },
+    {
+      name: `twitter:creator`,
+      content: `@ajfisher`,
+    },
+    {
+      name: `twitter:site`,
+      content: `@ajfisher`,
+    },
+    {
+      name: `twitter:title`,
+      content: seo.title,
+    },
+    {
+      name: `twitter:description`,
+      content: tweet || seo.metaDescription,
+    },
+  ].concat(meta).concat(card_meta);
+
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={seo.title}
-      titleTemplate={`%s | ${site.siteMetadata.defaultTitle}`}
-      meta={[
-        {
-          name: `description`,
-          content: seo.metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: seo.title,
-        },
-        {
-          property: `og:description`,
-          content: seo.metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: seo.pageType,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary_large_image`,
-        },
-        {
-          name: `twitter:creator`,
-          content: `@ajfisher`,
-        },
-        {
-          name: `twitter:site`,
-          content: `@ajfisher`,
-        },
-        {
-          name: `twitter:title`,
-          content: seo.title,
-        },
-        {
-          name: `twitter:description`,
-          content: tweet || seo.metaDescription,
-        },
-      ].concat(meta).concat(card_meta)}
-    />
+    <>
+      <html lang="en"/>
+      <title>{`${seo.title} | ${site.siteMetadata.defaultTitle}`}</title>
+      {
+        meta.map(d => (<meta name={d.name} property={d.property} content={d.content} key={d.name || d.property} />) )
+      }
+    </>
   )
 }
 
-SEO.defaultProps = {
+PageHead.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
@@ -111,7 +110,7 @@ SEO.defaultProps = {
   words: 0
 }
 
-SEO.propTypes = {
+PageHead.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
@@ -120,4 +119,4 @@ SEO.propTypes = {
   words: PropTypes.number
 }
 
-export default SEO
+export default PageHead

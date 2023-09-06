@@ -2,9 +2,28 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/list-layout';
-import SEO from '../components/seo';
+import PageHead from '../components/page-head';
+
 import { ListItems, PostListItem } from '../components/list';
 import { Paginate } from '../components/pagination.js';
+
+export const Head = ({location, params, data, pageContext}) => {
+  const {currentPage} = pageContext;
+  const seo = {
+    title: `Article archive - page ${currentPage}`,
+    description: `Article archive page ${currentPage} from ajfisher.me`
+  };
+
+  return (
+    <>
+      <PageHead
+        title={seo.title}
+        description={seo.description}
+        type="list"
+      />
+    </>
+  );
+};
 
 export default function Template({ pageContext, data}) {
   const {numPages, currentPage} = pageContext;
@@ -35,18 +54,8 @@ export default function Template({ pageContext, data}) {
     return null;
   });
 
-  const seo = {
-    title: `Article archive - page ${currentPage}`,
-    description: `Article archive page ${currentPage} from ajfisher.me`
-  };
-
   return (
     <Layout slug={slug} featured={featured}>
-      <SEO
-        title={seo.title}
-        description={seo.description}
-        type="list"
-      />
       <h1>Article archive - page {currentPage}</h1>
       <ListItems>
         {items.map(({node}) => {

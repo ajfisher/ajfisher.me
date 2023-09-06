@@ -2,7 +2,25 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/post-layout';
-import SEO from '../components/seo';
+import PageHead from '../components/page-head';
+
+export const Head = ({location, params, data, pageContext}) => {
+  const { markdownRemark} = data;
+  const { frontmatter} = markdownRemark;
+
+  const excerpt = frontmatter.excerpt || markdownRemark.excerpt || '';
+  const twitter_excerpt = frontmatter.twitter_excerpt || excerpt;
+  return (
+    <>
+      <PageHead
+        title={frontmatter.title}
+        description={excerpt}
+        type="article"
+        tweet={twitter_excerpt}
+      />
+    </>
+  );
+};
 
 export default function Template({ data, location }) {
   const { markdownRemark, imageSharp} = data;
@@ -26,20 +44,11 @@ export default function Template({ data, location }) {
     featuredImageSrc = undefined;
   }
 
-  const excerpt = frontmatter.excerpt || markdownRemark.excerpt || '';
-  const twitter_excerpt = frontmatter.twitter_excerpt || excerpt;
-
   return (
     <Layout frontmatter={frontmatter} featuredimage={featuredImageSrc}
       readingTime={timeToRead} path={location.pathname}
       tags={taglist}
     >
-      <SEO
-        title={frontmatter.title}
-        description={excerpt}
-        type="article"
-        tweet={twitter_excerpt}
-      />
       <section
         className="content"
         dangerouslySetInnerHTML={{ __html: html }}

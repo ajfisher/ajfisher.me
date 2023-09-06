@@ -2,7 +2,19 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import PageHead from '../components/page-head';
+
+export const Head = () => {
+  return (
+    <>
+      <PageHead
+        title="This page cannot be found | ajfisher.me"
+        description="The page you requested does not exist or has moved."
+        type="website"
+      />
+    </>
+  );
+};
 
 const NotFoundPage = ({location}) => {
   console.log(location);
@@ -12,7 +24,7 @@ const NotFoundPage = ({location}) => {
 
   return (
     <Layout slug={slug} title={title} excerpt={excerpt} largetitle="true" >
-      <SEO title={title}/>
+      <PageHead title={title}/>
       <section class="content">
         <p>You made a request for <strong>{location.pathname}</strong>.</p>
         <p>Unfortunately this page doesn't exist or has been permanently moved

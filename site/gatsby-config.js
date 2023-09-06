@@ -6,7 +6,6 @@ module.exports = {
     siteUrl: 'https://www.ajfisher.me'
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-google-analytics`,
