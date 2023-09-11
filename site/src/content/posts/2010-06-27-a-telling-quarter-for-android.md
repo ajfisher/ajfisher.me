@@ -6,7 +6,7 @@ slug: a-telling-quarter-for-android
 title: A telling quarter for Android
 tags: android, Apple, google, iphone, mobile
 featureimage: android.jpg
-listimage: posts/android.jpg
+listimage: ../../img/posts/android.jpg
 imageby: Scott Akerman
 imagelink: https://www.flickr.com/photos/sterlic/6778181411/
 

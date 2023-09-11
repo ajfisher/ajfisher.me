@@ -10,7 +10,7 @@ excerpt: >
     server that can be put in a lunch box and taken to the park.
 featureimage: minecraft_ss.png
 imageby: ajfisher
-listimage: posts/minecraft.jpg
+listimage: ../../img/posts/minecraft.jpg
 
 ---
 

@@ -9,7 +9,7 @@ tags: presentation
 featureimage: concert.jpg
 imageby: Martin Fisch
 imagelink: https://www.flickr.com/photos/marfis75/2459533929
-listimage: posts/concert.jpg
+listimage: ../../img/posts/concert.jpg
 
 ---
 

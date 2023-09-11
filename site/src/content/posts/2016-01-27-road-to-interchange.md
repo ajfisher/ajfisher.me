@@ -15,7 +15,7 @@ twitter_excerpt: >
 featureimage: omer-rana-nRjdDzaCfdM-unsplash.jpg
 imageby: Omer Rana on Unsplash
 imagelink: https://unsplash.com/photos/nRjdDzaCfdM
-listimage: posts/omer-rana-nRjdDzaCfdM-unsplash.jpg
+listimage: ../../img/posts/omer-rana-nRjdDzaCfdM-unsplash.jpg
 collection: featured
 featured: true
 ---

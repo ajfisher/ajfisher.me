@@ -9,7 +9,7 @@ tags: cloud computing, linux, web, desktop, OS, google
 featureimage: keyboard.jpg
 imageby: Willian Hook
 imagelink: https://www.flickr.com/photos/williamhook/2971294143/
-listimage: posts/keyboard.jpg
+listimage: ../../img/posts/keyboard.jpg
 
 ---
 

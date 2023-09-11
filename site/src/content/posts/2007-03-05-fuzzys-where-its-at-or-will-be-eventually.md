@@ -11,7 +11,7 @@ excerpt: >
 featureimage: fuzzy_at_sd.png
 imageby: ajfisher Representation of fuzzy logic Stable Diffusion
 imagelink: https://ajfisher.me/
-listimage: posts/fuzzy_at_sd.png
+listimage: ../../img/posts/fuzzy_at_sd.png
 
 ---
 

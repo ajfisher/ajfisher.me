@@ -10,7 +10,7 @@ featureimage: forging.jpg
 featureimage-position: 100% 100%
 imageby: Flavio~
 imagelink: https://www.flickr.com/photos/37873897@N06/7070849827/
-listimage: posts/forging.jpg
+listimage: ../../img/posts/forging.jpg
 excerpt: >
     I moved this site from WP to metalsmith.io in order to get a more pure
     authoring experience. The result is good, though there were a few gotchas
