@@ -3,10 +3,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import { device } from './devices';
-import { getPostImages, ImageLink } from './list';
+import { ImageLink } from './list';
 import { pathDate } from '../lib/utils';
 
 const StyledFooter = styled.footer`
@@ -104,18 +104,12 @@ const Title = styled.h2`
 
 const PostItem = ({title, image, url, excerpt}) => {
 
-  const { postItemImages } = getPostImages();
-
-  const postImage = postItemImages.edges.find(({node}) => {
-    if (node.relativePath === image) return node;
-
-    return null;
-  });
+  const postImage = getImage(image);
 
   return <>
     <FooterImageLink>
       <Link to={url}>
-        <GatsbyImage image={postImage.node.childImageSharp.gatsbyImageData} alt={title} />
+        <GatsbyImage image={postImage} alt={title} />
       </Link>
     </FooterImageLink>
     <p><Link to={url}>{title}</Link></p>
@@ -157,7 +151,13 @@ const Footer = ({slug}) => {
         frontmatter {
           title
           date(formatString: "YYYY-MM-DD")
-          listimage
+          listimage {
+            childImageSharp {
+              gatsbyImageData(
+                layout: FULL_WIDTH
+              )
+            }
+          }
           listimage_position
           excerpt
           featureimage
@@ -182,9 +182,6 @@ const Footer = ({slug}) => {
   }
 
   featured.url = `/${pathDate(featured.date)}/${featured.slug}/`;
-  if (featured.listimage.startsWith('/img/')) {
-    featured.listimage = featured.listimage.substring(5);
-  }
 
   return (
     <StyledFooter>

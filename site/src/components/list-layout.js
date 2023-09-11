@@ -18,7 +18,6 @@ const Layout = ({ children, featured={}, slug}) => {
   // determine the featured article and pull it from the list.
   const {frontmatter={}, fields={}} = featured;
   const excerpt = frontmatter.excerpt || fields.excerpt || '';
-
   const url = `/${pathDate(frontmatter.date)}/${frontmatter.slug}/`;
 
   let featuredImage;
