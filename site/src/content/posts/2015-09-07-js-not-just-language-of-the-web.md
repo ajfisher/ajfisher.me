@@ -8,7 +8,7 @@ tags: physical computing, development, ubicomp, javascript, nodejs, nodebots
 excerpt: >
     JS is moving out of the browser and into all manner of places. My notes
     and slides from my talk on this topic at JSFoo 15.
-listimage: posts/robot_love.jpg
+listimage: ../../img/posts/robot_love.jpg
 
 ---
 

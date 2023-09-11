@@ -9,7 +9,7 @@ excerpt: >
     The ESP8266 is a capable device in its own right and can run a simple web
     server. Couple this with a smartwatch for control and you have some interesting
     remote control options.
-listimage: posts/pebble_neopixel.jpg
+listimage: ../../img/posts/pebble_neopixel.jpg
 
 ---
 

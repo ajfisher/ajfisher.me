@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import humanize from 'humanize-plus';
 import moment from 'moment';
 
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import { device } from './devices';
 import { pathDate } from '../lib/utils';
@@ -146,27 +146,17 @@ export const PostListItem = ({title, image, position, excerpt, date,
 
     const url = `/${pathDate(date)}/${slug}/`;
 
-    const { postItemImages } = getPostImages();
-
-    if (image.startsWith('/img/')) {
-      image = image.substring(5);
-    }
-
-    const postImage = postItemImages.edges.find(({node}) => {
-      if (node.relativePath === image) return node;
-
-      return null;
-    });
+    const listimage = getImage(image);
 
     const rounded_time = Math.ceil(readingtime);
     const humanised_words = humanize.compactInteger(wordcount, 1);
 
     return (
       <Item>
-        {typeof(postImage) !== 'undefined' &&
+        {typeof(listimage) !== 'undefined' &&
           <ImageLink $position={position}>
             <Link to={url}>
-              <GatsbyImage image={postImage.node.childImageSharp.gatsbyImageData} alt={title} />
+              <GatsbyImage image={listimage} alt={title} />
             </Link>
           </ImageLink>
         }

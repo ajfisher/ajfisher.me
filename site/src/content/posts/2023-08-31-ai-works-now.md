@@ -13,9 +13,10 @@ twitter_excerpt: >
     🤖 In 2023, AI isn't just evolving—it's revolutionizing. Yet, challenges
     loom large. Dive into insights from the Web Directions AI conf
 featureimage: ai_works_now_sd.jpg
+featuredimage: ../../img/posts/ai_works_now_sd.jpg
 imageby: ajfisher Representation of a neural network Stable Diffusion
 imagelink: https://ajfisher.me/
-listimage: posts/ai_works_now_head_sd.jpg
+listimage: ../../img/posts/ai_works_now_sd.jpg
 featured: true
 ---
 

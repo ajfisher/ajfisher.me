@@ -5,7 +5,7 @@ layout: post.hbt
 title: Is this the end of Windows Server?
 slug: is-this-the-end-of-windows-server
 tags: cloud computing, open source, development, internet, linux, predictions, OS
-listimage: posts/windows_server.jpg
+listimage: ../../img/posts/windows_server.jpg
 featureimage: servers.jpg
 imageby: Shawn T. O'Neil
 imagelink: https://www.flickr.com/photos/oneilsh/14601920735

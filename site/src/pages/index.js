@@ -112,8 +112,6 @@ export const pageQuery = graphql`
           frontmatter {
             slug
             title
-            listimage
-            listimage_position
             date(formatString: "YYYY-MM-DD")
             excerpt
             featured
@@ -121,6 +119,14 @@ export const pageQuery = graphql`
             featureimage_position
             small_title
             large_title
+            listimage_position
+            listimage {
+              childImageSharp {
+                gatsbyImageData(
+                  layout: FULL_WIDTH
+                )
+              }
+            }
           }
           wordCount {
             words
@@ -143,7 +149,13 @@ export const pageQuery = graphql`
           frontmatter {
             slug
             title
-            listimage
+            listimage {
+              childImageSharp {
+                gatsbyImageData(
+                  layout: FULL_WIDTH
+                )
+              }
+            }
             listimage_position
             date(formatString: "YYYY-MM-DD")
             excerpt

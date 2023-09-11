@@ -12,7 +12,7 @@ excerpt: >
 featureimage: lauren-george-K0sCNAKfmhc-unsplash.jpg
 imageby: Lauren George on Unsplash
 imagelink: https://unsplash.com/photos/K0sCNAKfmhc 
-listimage: posts/lauren-george-K0sCNAKfmhc-unsplash.jpg
+listimage: ../../img/posts/lauren-george-K0sCNAKfmhc-unsplash.jpg
 
 ---
 

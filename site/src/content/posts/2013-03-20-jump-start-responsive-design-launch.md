@@ -8,7 +8,7 @@ tags: development, books, responsive design, design, web, launch
 excerpt: >
     Working on my first book was quite good fun, though hard work, and today
     after all of that effort it's finally released.
-listimage: posts/responsive_design.jpg
+listimage: ../../img/posts/responsive_design.jpg
 listimage-position: 50% 85%
 
 ---

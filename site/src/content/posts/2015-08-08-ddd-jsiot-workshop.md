@@ -8,7 +8,7 @@ tags: development, IoT, javascript, web, hardware, arduino, nodejs, nodebots
 excerpt: >
     A summary of the various projects completed as part of the JS IoT workshop
     given at DDD Melbourne 2015.
-listimage: posts/neopixel_goggles.jpg
+listimage: ../../img/posts/neopixel_goggles.jpg
 
 ---
 
