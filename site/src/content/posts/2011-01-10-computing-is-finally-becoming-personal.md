@@ -5,7 +5,7 @@ layout: post.hbt
 slug: computing-is-finally-becoming-personal
 title: Computers are finally becoming personal
 tags: Consumer Electronics, android, Apple, internet, media, mobile
-listimage: posts/zenith.jpg
+listimage: ../../img/posts/zenith.jpg
 ---
 
 After going back to work, it dawned on me that I hadn't used a computer for nearly two weeks - evident in the fact that I spent my first day back getting helplessly finger-twisted using a keyboard. Two weeks away from a computer for me probably hasn't occurred since 1990 when I went away camping and surfing for a month. So what occurred this Christmas?

@@ -8,7 +8,7 @@ tags: development, books, javascript, robotics, arduino, nodebots, nodejs, launc
 excerpt: >
     This new book on JavaScript robotics launches today, co-authored by 15 of
     core NodeBots community members from around the world.
-listimage: posts/make_js_robots.jpg
+listimage: ../../img/posts/make_js_robots.jpg
 listimage-position: 50% 100%
 
 ---

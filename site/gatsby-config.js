@@ -36,7 +36,17 @@ module.exports = {
         checkSupportedExtensions: false,
       },
     },
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `dominantColor`,
+          quality: 90,
+          breakpoints: [400, 500, 750, 1080, 1600]
+        },
+      }
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {

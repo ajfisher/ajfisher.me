@@ -6,7 +6,7 @@ slug: 2010-the-year-the-netbook-turns-into-the-web-book
 title: '2010: The year the Netbook turns into the Web-book'
 small-title: true
 tags: internet, mobile, predictions, tablet
-listimage: posts/webbook.jpg
+listimage: ../../img/posts/webbook.jpg
 ---
 
 2010 is set to be a bumper year for Consumer Electronics. With people spending less outside the home they are focusing more inside and as just about everyone now has some monstrous TV it's the little things that count.

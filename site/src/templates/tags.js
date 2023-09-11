@@ -63,8 +63,6 @@ export default function Template({ pageContext, data}) {
             words: node.wordCount.words
           };
 
-          // const url = `/${date}/${slug}`;
-
           const excerpt = node.frontmatter.excerpt || node.excerpt || null;
 
           return (
@@ -98,7 +96,13 @@ export const pageQuery = graphql`
           frontmatter {
             slug
             title
-            listimage
+            listimage {
+              childImageSharp {
+                gatsbyImageData(
+                  layout: FULL_WIDTH
+                )
+              }
+            }
             listimage_position
             date(formatString: "YYYY-MM-DD")
             excerpt

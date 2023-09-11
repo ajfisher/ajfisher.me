@@ -16,7 +16,7 @@ twitter_excerpt: >
 featureimage: 18123764024_9226d0fe39_k.jpg
 imageby: ninfaj
 imagelink: https://www.flickr.com/photos/ninfaj/18123764024
-listimage: posts/18123764024_9226d0fe39_k.jpg
+listimage: ../../img/posts/18123764024_9226d0fe39_k.jpg
 collection: featured
 featured: true
 

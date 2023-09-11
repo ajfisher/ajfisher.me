@@ -11,7 +11,7 @@ featured: true
 featureimage: datatium_bling_material.jpg
 imageby: neekoh.fi
 imagelink: https://www.flickr.com/photos/neekohfi/5608007004
-listimage: posts/behaviour_differentials.jpg
+listimage: ../../img/posts/behaviour_differentials.jpg
 excerpt: >
     Device responsive design is only one part of context. These are the sketch notes
     that underpinned a talk at WDS2012 on the wider aspects of using data

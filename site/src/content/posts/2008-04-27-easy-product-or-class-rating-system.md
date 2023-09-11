@@ -5,7 +5,7 @@ layout: post.hbt
 slug: easy-product-or-class-rating-system
 title: Easy product or class rating system
 tags: fuzzy logic, data, database, optimisation, scripting, internet, web
-listimage: posts/server_fire.png
+listimage: ../../img/posts/server_fire.png
 excerpt: >
     Build a rating system that won't set your servers on fire.
 ---

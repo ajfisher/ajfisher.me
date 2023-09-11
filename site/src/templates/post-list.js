@@ -106,7 +106,13 @@ export const pageQuery = graphql`
           frontmatter {
             slug
             title
-            listimage
+            listimage {
+              childImageSharp {
+                gatsbyImageData(
+                  layout: FULL_WIDTH
+                )
+              }
+            }
             listimage_position
             date(formatString: "YYYY-MM-DD")
             excerpt
