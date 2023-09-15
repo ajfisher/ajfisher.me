@@ -1,36 +1,18 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-
 import Layout from '../components/post-layout';
 import PageHead from '../components/page-head';
-
-const getFeaturedImage = (imageSharp) => {
-  // parses image sharp and returns a value
-
-  let featuredImageSrc;
-  try {
-    featuredImageSrc = {
-      base: imageSharp.base.src,
-      small: imageSharp.small.src,
-      medium: imageSharp.medium.src,
-      large: imageSharp.large.src,
-      wide: imageSharp.wide.src
-    };
-  } catch (e) {
-    // just pass on it
-    featuredImageSrc = undefined;
-  }
-
-  return featuredImageSrc;
-}
+import { getFeaturedImageSources } from '../lib/utils';
 
 export const Head = ({location, params, data, pageContext}) => {
-  const { markdownRemark, imageSharp} = data;
+  const { markdownRemark} = data;
   const { frontmatter, timeToRead, wordCount} = markdownRemark;
 
-  const featuredImageSrc = getFeaturedImage(imageSharp);
   const excerpt = frontmatter.excerpt || markdownRemark.excerpt || '';
   const twitter_excerpt = frontmatter.twitter_excerpt || excerpt;
+
+  const featuredImageSrc = getFeaturedImageSources(frontmatter?.featureimage?.childImageSharp);
+
   return (
     <>
       <PageHead
@@ -47,11 +29,11 @@ export const Head = ({location, params, data, pageContext}) => {
 };
 
 export default function Template({ data, location }) {
-  const { markdownRemark, imageSharp} = data;
+  const { markdownRemark} = data;
   const { fields, frontmatter, html} = markdownRemark;
   const { taglist } = fields;
 
-  const featuredImageSrc = getFeaturedImage(imageSharp);
+  const featuredImageSrc = getFeaturedImageSources(frontmatter?.featureimage?.childImageSharp);
 
   return (
     <Layout frontmatter={frontmatter} featuredimage={featuredImageSrc}
@@ -67,7 +49,7 @@ export default function Template({ data, location }) {
 }
 
 export const pageQuery = graphql`
-  query($slug: String!, $featuredImage: String) {
+  query($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
@@ -76,11 +58,29 @@ export const pageQuery = graphql`
         title
         excerpt
         twitter_excerpt
-        featureimage
-        imageby
-        imagelink
         small_title
         large_title
+        featureimage {
+          childImageSharp {
+            base: gatsbyImageData(width: 400, quality: 100
+              transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000"}}
+            )
+            small: gatsbyImageData(width: 500, quality: 100
+              transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000"}}
+            )
+            medium: gatsbyImageData(width: 750, quality: 90
+              transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000"}}
+            )
+            large: gatsbyImageData(width: 1050, quality: 100
+              transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000"}}
+            )
+            wide: gatsbyImageData(width: 1600, quality: 100
+              transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000"}}
+            )
+          }
+        }
+        imageby
+        imagelink
       }
       excerpt(pruneLength: 220)
       wordCount {
@@ -91,22 +91,5 @@ export const pageQuery = graphql`
         taglist
       }
     }
-		imageSharp(fixed: {originalName: {eq: $featuredImage}}) {
-      base: fixed(width: 400, quality: 100, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
-        src
-      }
-      small: fixed(width: 500, quality: 100, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
-        src
-      }
-      medium: fixed(width: 750, quality: 90, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
-        src
-      }
-      large: fixed(width: 1050, quality: 100, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
-        src
-      }
-      wide: fixed(width: 1600, quality: 100, duotone: {highlight:"#FF5E9A", shadow:"#000000"}) {
-        src
-      }
-		}
   }
 `;

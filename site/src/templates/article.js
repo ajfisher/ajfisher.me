@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/post-layout';
 import PageHead from '../components/page-head';
+import { getFeaturedImageSources } from '../lib/utils';
 
 export const Head = ({location, params, data, pageContext}) => {
   const { markdownRemark} = data;
@@ -23,26 +24,14 @@ export const Head = ({location, params, data, pageContext}) => {
 };
 
 export default function Template({ data, location }) {
-  const { markdownRemark, imageSharp} = data;
+  const { markdownRemark } = data;
   const { fields, frontmatter, html, timeToRead } = markdownRemark;
   let taglist = null;
   if (fields) {
     taglist = fields.taglist || [];
   }
 
-  let featuredImageSrc;
-  try {
-    featuredImageSrc = {
-      base: imageSharp.base.src,
-      small: imageSharp.small.src,
-      medium: imageSharp.medium.src,
-      large: imageSharp.large.src,
-      wide: imageSharp.wide.src
-    };
-  } catch (e) {
-    // just pass on it
-    featuredImageSrc = undefined;
-  }
+  const featuredImageSrc = getFeaturedImageSources(frontmatter?.featureimage?.childImageSharp);
 
   return (
     <Layout frontmatter={frontmatter} featuredimage={featuredImageSrc}
@@ -67,7 +56,25 @@ export const pageQuery = graphql`
         title
         excerpt
         twitter_excerpt
-        featureimage
+        featureimage {
+          childImageSharp {
+            base: gatsbyImageData(width: 400, quality: 100
+              transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000"}}
+            )
+            small: gatsbyImageData(width: 500, quality: 100
+              transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000"}}
+            )
+            medium: gatsbyImageData(width: 750, quality: 90
+              transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000"}}
+            )
+            large: gatsbyImageData(width: 1050, quality: 100
+              transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000"}}
+            )
+            wide: gatsbyImageData(width: 1600, quality: 100
+              transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000"}}
+            )
+          }
+        }
         imageby
         imagelink
         small_title

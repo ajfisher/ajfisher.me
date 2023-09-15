@@ -6,7 +6,7 @@ slug: moving-to-metalsmith
 title: Making the move to metalsmith
 large-title: true
 tags: development, javascript, web, internet, open source, nodejs
-featureimage: forging.jpg
+featureimage: ../../img/posts/forging.jpg
 featureimage-position: 100% 100%
 imageby: Flavio~
 imagelink: https://www.flickr.com/photos/37873897@N06/7070849827/

@@ -8,7 +8,7 @@ tags: minecraft, physical computing, rpi
 excerpt: >
     Using a raspberry pi and some batteries to create a portable minecraft
     server that can be put in a lunch box and taken to the park.
-featureimage: minecraft_ss.png
+featureimage: ../../img/posts/minecraft_ss.png
 imageby: ajfisher
 listimage: ../../img/posts/minecraft.jpg
 

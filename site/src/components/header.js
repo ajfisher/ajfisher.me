@@ -235,6 +235,7 @@ const Featured = styled.p`
   font-size: 1.8rem;
 `;
 
+
 const Header = ({ title, date, excerpt, url, featured=false, featuredimage,
   smalltitle, largetitle, readingTime={} }) => {
 

@@ -160,7 +160,13 @@ const Footer = ({slug}) => {
           }
           listimage_position
           excerpt
-          featureimage
+          featureimage {
+            childImageSharp {
+              gatsbyImageData(
+                layout: FULL_WIDTH
+              )
+            }
+          }
           featureimage_position
           slug
         }

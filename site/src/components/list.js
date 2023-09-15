@@ -82,9 +82,12 @@ export const getPostImages = () => {
         relativePath
         childImageSharp {
           gatsbyImageData(quality: 90, layout: FULL_WIDTH)
-          base: fixed(width: 400, quality: 90) {
-            src
-          }
+          base: gatsbyImageData(
+            width: 400
+            quality: 90
+            placeholder: BLURRED
+            layout: FIXED
+          )
           small: fixed(width: 500, quality: 95) {
             src
           }

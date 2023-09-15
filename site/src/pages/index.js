@@ -2,8 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link, graphql } from 'gatsby';
 
-// import SEO from '../components/seo';
- import PageHead from '../components/page-head';
+import PageHead from '../components/page-head';
 import Layout from '../components/list-layout';
 import { ListItems, PostListItem } from '../components/list';
 
@@ -115,7 +114,25 @@ export const pageQuery = graphql`
             date(formatString: "YYYY-MM-DD")
             excerpt
             featured
-            featureimage
+            featureimage {
+              childImageSharp {
+                base: gatsbyImageData(width: 400, quality: 100
+                  transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000"}}
+                )
+                small: gatsbyImageData(width: 400, quality: 100
+                  transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000"}}
+                )
+                medium: gatsbyImageData(width: 750, quality: 90
+                  transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000"}}
+                )
+                large: gatsbyImageData(width: 1050, quality: 100
+                  transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000"}}
+                )
+                wide: gatsbyImageData(width: 1600, quality: 100
+                  transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000"}}
+                )
+              }
+            }
             featureimage_position
             small_title
             large_title
@@ -160,8 +177,6 @@ export const pageQuery = graphql`
             date(formatString: "YYYY-MM-DD")
             excerpt
             featured
-            featureimage
-            featureimage_position
             small_title
             large_title
           }

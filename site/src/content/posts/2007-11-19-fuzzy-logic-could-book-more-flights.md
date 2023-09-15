@@ -5,7 +5,7 @@ layout: post.hbt
 slug: fuzzy-logic-could-book-more-flights
 title: Fuzzy logic could book more flights
 tags: agents, fuzzy logic, web
-featureimage: planes.jpg
+featureimage: ../../img/posts/planes.jpg
 imageby: Martyn
 imagelink: https://www.flickr.com/photos/martynr/129190027
 excerpt: >

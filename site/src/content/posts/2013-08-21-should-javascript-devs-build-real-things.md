@@ -13,7 +13,7 @@ excerpt: >
 twitter_excerpt: >
     JS is leaving the browser and starting to be used to make real things. Is
     this just play or real?
-featureimage: 18123764024_9226d0fe39_k.jpg
+featureimage: ../../img/posts/18123764024_9226d0fe39_k.jpg
 imageby: ninfaj
 imagelink: https://www.flickr.com/photos/ninfaj/18123764024
 listimage: ../../img/posts/18123764024_9226d0fe39_k.jpg
