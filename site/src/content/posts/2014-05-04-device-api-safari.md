@@ -9,7 +9,7 @@ tags: development, web, API, standards, mobile, presentation
 excerpt: >
     There are many interesting things to be found in the Device API. This
     talk went on a journey to see what we could find worth playing with.
-featureimage: lauren-george-K0sCNAKfmhc-unsplash.jpg
+featureimage: ../../img/posts/lauren-george-K0sCNAKfmhc-unsplash.jpg
 imageby: Lauren George on Unsplash
 imagelink: https://unsplash.com/photos/K0sCNAKfmhc 
 listimage: ../../img/posts/lauren-george-K0sCNAKfmhc-unsplash.jpg

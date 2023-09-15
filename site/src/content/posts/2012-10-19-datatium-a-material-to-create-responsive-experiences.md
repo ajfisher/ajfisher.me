@@ -8,7 +8,7 @@ tags: media, data, mobile, responsive design, responsive experience, UX, web, co
 collection: featured
 small-title: true
 featured: true
-featureimage: datatium_bling_material.jpg
+featureimage: ../../img/posts/datatium_bling_material.jpg
 imageby: neekoh.fi
 imagelink: https://www.flickr.com/photos/neekohfi/5608007004
 listimage: ../../img/posts/behaviour_differentials.jpg
