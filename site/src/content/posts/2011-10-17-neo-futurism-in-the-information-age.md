@@ -9,7 +9,7 @@ tags: development, internet, media, mobile, presentation, web
 excerpt: >
     Finally the gloom of the GFC appears past and the web community are attempting
     to dream big ideas again - a summary of WDS11.
-featureimage: atoms_for_peace.jpg
+featureimage: ../../img/posts/atoms_for_peace.jpg
 listimage: ../../img/posts/atoms_for_peace.jpg
 imageby: Mark Brown
 imagelink: https://www.flickr.com/photos/airship/117781952/

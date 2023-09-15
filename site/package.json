@@ -21,8 +21,6 @@
     "gatsby-plugin-styled-components": "^6.0.0",
     "gatsby-remark-images": "^7.0.0",
     "gatsby-remark-prismjs": "^7.0.0",
-    "gatsby-remark-relative-images": "^2.0.2",
-    "gatsby-remark-responsive-image": "^1.0.0-alpha13-alpha.435e0178",
     "gatsby-source-filesystem": "^5.0.0",
     "gatsby-transformer-remark": "^6.0.0",
     "gatsby-transformer-sharp": "^5.0.0",

@@ -9,7 +9,7 @@ tags: internet, media, mobile, predictions, web
 excerpt: >
     As consumers engage more directly with each other, how to brands understand
     what is happening in the "backchannel"?
-featureimage: thingstreams.jpg
+featureimage: ../../img/posts/thingstreams.jpg
 imageby: Ramsey Arnaoot
 imagelink: https://www.flickr.com/photos/arnaoot/19857872/
 listimage: ../../img/posts/thingstreams.jpg

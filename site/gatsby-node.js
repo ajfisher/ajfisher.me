@@ -16,7 +16,6 @@ exports.createPages = async ({ actions, graphql }) => {
 							slug
               date(formatString: "YYYY-MM-DD")
               layout
-              featureimage
             }
           }
         }
@@ -36,18 +35,9 @@ exports.createPages = async ({ actions, graphql }) => {
 
   // build out the pages for pages and posts
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    // TODO add the listimage in here as well.
-    let featuredImage = node.frontmatter.featureimage;
 
-		if (featuredImage !== '' && featuredImage !== null) {
-			if (featuredImage.indexOf('/img/posts/') === 0) {
-				// we need to pull this off the front of the url
-				featuredImage = featuredImage.substring(11);
-			}
-		}
     const context = {
       slug: node.frontmatter.slug,
-      featuredImage
     };
 
     if (node.frontmatter.layout.startsWith('page')) {
