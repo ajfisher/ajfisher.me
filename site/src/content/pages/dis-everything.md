@@ -13,7 +13,7 @@ so here's everything relevant about me.
 
 ## Disclaimer
 
-I am one of several Aesop, LoyPal and Rocket Melbourne employees that answer questions
+I am one of several LoyPal and Rocket Melbourne employees that answer questions
 and write online and in the wider media and this extends to speaking engagements.
 I am usually communicating about Physical Computing, Open Source Software,
 Mobile technology and the future of Internet and Retail related technology so
@@ -28,8 +28,7 @@ I reserve the right categorically to say something stupid ;)
 
 ## Disclosure
 
-I am currently an employee of [Aesop Skincare](https://aesop.com) where I
-receive a salary. I am also the founder of Rocket Melbourne where I
+I am the founder of Rocket Melbourne where I
 draw a salary. In addition, I am a co-founder and CTO of LoyPal where I have
 equity interests and draw income.
 
