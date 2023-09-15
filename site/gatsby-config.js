@@ -63,6 +63,7 @@ module.exports = {
               disableBgImage: true,
             },
           },
+          /**
           {
             resolve: `gatsby-remark-responsive-image`,
             options: {
@@ -74,6 +75,7 @@ module.exports = {
               disableBgImage: true,
             }
           },
+          **/
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
@@ -87,50 +89,6 @@ module.exports = {
         ]
       }
     },
-/**    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          `gatsby-transformer-remark-tags`,
-          `gatsby-remark-reading-time`,
-          {
-            resolve: `gatsby-remark-relative-images`
-          },
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1000,
-              backgroundColor: `none`,
-              quality: 90,
-              withWebp: { quality: 90 },
-              showCaptions: false,
-              disableBgImage: true,
-            },
-          },
-          {
-            resolve: `gatsby-remark-responsive-image`,
-            options: {
-              maxWidth: 1000,
-              backgroundColor: `none`,
-              quality: 90,
-              withWebp: { quality: 90 },
-              showCaptions: false,
-              disableBgImage: true,
-            }
-          },
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              aliases: {
-                sh: `bash`,
-                xsl: `xml`,
-              }
-            },
-          },
-          `gatsby-remark-transformer-pullquotes`
-        ]
-      }
-    },**/
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
