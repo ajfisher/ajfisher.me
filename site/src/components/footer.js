@@ -137,7 +137,7 @@ const Footer = ({slug}) => {
       gatsbyImageData(layout: FULL_WIDTH)
     }
   }
-  art: file(relativePath: {eq: "posts/edge_of_collapse_725914.png"}) {
+  podcast: file(relativePath: {eq: "posts/enterprise_ai.jpg"}) {
     childImageSharp {
       gatsbyImageData(layout: FULL_WIDTH)
     }
@@ -199,22 +199,22 @@ const Footer = ({slug}) => {
             imagePosition={featured.listimage_position} />
         </section>
         <section>
-          <Title>Artworks</Title>
+          <Title>Recent Media</Title>
           <FooterImageLink>
-            <OutboundLink href="https://www.voice.com/ajfisher">
+            <Link href="/2023/02/12/podcast-enterprise-ai/">
               <GatsbyImage
-                image={data.art.childImageSharp.gatsbyImageData}
-                alt="Generative artwork - At the Edge of Collapse" />
-            </OutboundLink>
+                image={data.podcast.childImageSharp.gatsbyImageData}
+                alt="Generative AI in the enterprise" />
+            </Link>
           </FooterImageLink>
           <p>
-            <OutboundLink href="https://www.voice.com/ajfisher">
-              Generative artworks available for purchase as NFTs from Voice
-            </OutboundLink>
+            <Link href="/2023/02/12/podcast-enterprise-ai/">
+              ChatGPT and Generative AI in the enterprise
+            </Link>
           </p>
           <p>
-            Dive into the world of NFTs using an environmentally sustainable
-            platform.
+            Sitting down with other technology leaders, we discuss what risks
+            and rewards may exist as AI enters the workplace at scale.
           </p>
         </section>
         <section>
