@@ -79,7 +79,7 @@ h2 {
 h3 {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
-    font-size: 4rem;
+    font-size: 3.4rem;
 }
 
 a {
@@ -103,16 +103,20 @@ article h1 {
     font-size: 2em;
 }
 
+article h2 {
+    background-color: var(--light-base);
+}
+
 article h2,
 article h3{
-    background-color: var(--light-base);
     color: var(--dark-base);
     display: inline;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
 }
 
-article h4 {
+article h4,
+article h5 {
     margin:0;
     font-family: var(--heading-font-family);
     color: var(--dark-text-colour);
@@ -125,6 +129,7 @@ article p span.gatsby-resp-image-wrapper {
 
 article p:has(span.gatsby-resp-image-wrapper) {
     margin-bottom: 0px;
+    padding: 0;
 }
 
 article p.caption {
