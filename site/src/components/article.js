@@ -1,9 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-// import { graphql } from 'gatsby';
-
-// import { device } from './devices';
-
 import { Article } from './layout';
 
 const StyledListArticle = styled(Article)`
@@ -87,6 +83,10 @@ const StyledPostArticle = styled(Article)`
     padding:0;
   }
 
+  & p.mediacontainer.letterbox {
+    height: 40vh;
+  }
+
   & p iframe {
     max-width: calc(100% + 2 * var(--gutter)) !important;
     width: 100%;
@@ -134,12 +134,30 @@ const Attribute = styled.p`
 `;
 
 const Attribution = ({author, authorurl, featuredImageBy, featuredImageLink, title, pageurl}) => {
+  let imageAttribution;
+  if (featuredImageBy && featuredImageLink) {
+    imageAttribution = ()=> {
+      return (
+        <>
+          Title image by <a href={featuredImageLink}>{featuredImageBy}</a>
+        </>
+      );
+    };
+  } else {
+    imageAttribution = ()=> {
+      return (
+        <>
+          Title image by {featuredImageBy}
+        </>
+      );
+    };
+  }
 
   return(
     <section className="attribution">
-      {featuredImageBy && featuredImageLink &&
+      {featuredImageBy &&
         <Attribute>
-          Title image by <a href={featuredImageLink}>{featuredImageBy}</a>
+          {imageAttribution()}
         </Attribute>
       }
       <Attribute>
