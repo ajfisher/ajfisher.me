@@ -44,16 +44,18 @@ export const Article = styled.article`
   }
 
   & section {
+    & h2 {
+      box-shadow: var(--gutter) 0 0 var(--light-base), calc(var(--gutter) * -1) 0 0 var(--light-base);
+    }
 
     & h2, & h3 {
-      box-shadow: var(--gutter) 0 0 var(--light-base), calc(var(--gutter) * -1) 0 0 var(--light-base);
       margin: 0;
       margin-left: var(--gutter);
       padding: 0px 0px 0.5rem;
       box-decoration-break: clone;
     }
 
-    & h4 {
+    & h4, & h5 {
       margin: calc(0.5 * var(--gutter)) var(--gutter);
     }
 
