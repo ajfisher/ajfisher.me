@@ -110,19 +110,19 @@ export const pageQuery = graphql`
             featureimage {
               childImageSharp {
                 base: gatsbyImageData(width: 400, quality: 100
-                  transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000"}}
+                  transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000", opacity: 80}}
                 )
                 small: gatsbyImageData(width: 500, quality: 100
-                  transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000"}}
+                  transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000", opacity: 80}}
                 )
                 medium: gatsbyImageData(width: 750, quality: 90
-                  transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000"}}
+                  transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000", opacity: 80}}
                 )
                 large: gatsbyImageData(width: 1050, quality: 100
-                  transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000"}}
+                  transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000", opacity: 80}}
                 )
                 wide: gatsbyImageData(width: 1600, quality: 100
-                  transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000"}}
+                  transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000", opacity: 80}}
                 )
               }
             }
