@@ -1,4 +1,4 @@
-import { Link, useStaticQuery, graphql} from 'gatsby';
+import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -66,81 +66,10 @@ ImageLink.defaultProps = {
   $position: '50% 50%'
 };
 
-
 const PostDate = styled.p`
   color: var(--lightened-grey);
   font-size: 1.5rem !important;
 `;
-
-export const getPostImages = () => {
-  // returns all of the item images
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  return useStaticQuery(graphql`query postItemImageQuery {
-  postItemImages: allFile {
-    edges {
-      node {
-        relativePath
-        childImageSharp {
-          gatsbyImageData(quality: 90, layout: FULL_WIDTH)
-          base: gatsbyImageData(
-            width: 400
-            quality: 90
-            placeholder: BLURRED
-            layout: FIXED
-          )
-          small: fixed(width: 500, quality: 95) {
-            src
-          }
-          medium: fixed(width: 750, quality: 95) {
-            src
-          }
-          large: fixed(width: 1050, quality: 100) {
-            src
-          }
-          wide: fixed(width: 1600, quality: 100) {
-            src
-          }
-          duo_base: fixed(
-            width: 400
-            quality: 90
-            duotone: {highlight: "#FF5E9A", shadow: "#000000"}
-          ) {
-            src
-          }
-          duo_small: fixed(
-            width: 500
-            quality: 95
-            duotone: {highlight: "#FF5E9A", shadow: "#000000"}
-          ) {
-            src
-          }
-          duo_medium: fixed(
-            width: 750
-            quality: 95
-            duotone: {highlight: "#FF5E9A", shadow: "#000000"}
-          ) {
-            src
-          }
-          duo_large: fixed(
-            width: 1050
-            quality: 100
-            duotone: {highlight: "#FF5E9A", shadow: "#000000"}
-          ) {
-            src
-          }
-          duo_wide: fixed(
-            width: 1600
-            quality: 100
-            duotone: {highlight: "#FF5E9A", shadow: "#000000"}
-          ) {
-            src
-          }
-        }
-      }
-    }
-  }
-}`);
-};
 
 export const PostListItem = ({title, image, position, excerpt, date,
   slug, readingtime, wordcount}) => {
