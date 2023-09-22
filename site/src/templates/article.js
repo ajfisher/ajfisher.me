@@ -47,7 +47,7 @@ export default function Template({ data, location }) {
 }
 
 export const pageQuery = graphql`
-  query($slug: String!, $featuredImage: String) {
+  query($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
@@ -73,6 +73,7 @@ export const pageQuery = graphql`
             wide: gatsbyImageData(width: 1600, quality: 100
               transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000", opacity: 80}}
             )
+            share: gatsbyImageData(width: 1200, quality: 90)
           }
         }
         imageby
@@ -89,22 +90,5 @@ export const pageQuery = graphql`
         taglist
       }
     }
-		imageSharp(fixed: {originalName: {eq: $featuredImage}}) {
-      base: fixed(width: 400, quality: 70) {
-        src
-      }
-      small: fixed(width: 500, quality: 80) {
-        src
-      }
-      medium: fixed(width: 750, quality: 90) {
-        src
-      }
-      large: fixed(width: 1050, quality: 100) {
-        src
-      }
-      wide: fixed(width: 1600, quality: 100) {
-        src
-      }
-		}
   }
 `;
