@@ -53,16 +53,26 @@ jobs:
               if: steps.cache-pullquotes-modules.outputs.cache-hit != 'true'
               run: cd site/plugins/gatsby-remark-transformer-pullquotes && npm install
 
-            - name: Public output cache
-              id: cache-build
+            - name: Public output
+              id: public-build
               uses: actions/cache@v3
               with:
                   path: ./site/public
-                  key: site-public-${{hashFiles('**/site/**')}}
-                  restore-keys: site-public-${{hashFiles('**/site/**')}}
+                  key: site-public-${{hashFiles('**/site/public/**')}}
+                  restore-keys: site-public-
+
+            - name: Gatsby Cache output
+              id: cache-build
+              uses: actions/cache@v3
+              with:
+                  path: ./site/.cache
+                  key: site-cache-${{hashFiles('**/site/.cache/**')}}
+                  restore-keys: site-cache-
 
             - name: Build output files
               run: make build
+              env:
+                GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
 
             - name: Configure AWS CLI
               uses: aws-actions/configure-aws-credentials@v1
