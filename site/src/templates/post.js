@@ -77,6 +77,7 @@ export const pageQuery = graphql`
             wide: gatsbyImageData(width: 1600, quality: 100
               transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000", opacity: 80}}
             )
+            share: gatsbyImageData(width: 1200, quality: 90)
           }
         }
         imageby

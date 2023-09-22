@@ -26,7 +26,8 @@ export const getFeaturedImageSources = (imageSharp) => {
       small: getSrc(imageSharp.small),
       medium: getSrc(imageSharp.medium),
       large: getSrc(imageSharp.large),
-      wide: getSrc(imageSharp.wide)
+      wide: getSrc(imageSharp.wide),
+      share: getSrc(imageSharp.share)
     };
   } catch (e) {
     // just pass on it

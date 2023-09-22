@@ -29,10 +29,10 @@ function PageHead({ description, meta, title, type, tweet, image, readingTime, w
 
   const card_meta = [];
 
-  if (typeof(image.medium) !== 'undefined') {
-    const image_url = `${site.siteMetadata.siteUrl}${image.medium}`;
+  if (typeof(image.share) !== 'undefined') {
+    const image_url = `${site.siteMetadata.siteUrl}${image.share}`;
 
-    card_meta.push({name: `og:image`, content: image_url });
+    card_meta.push({property: `og:image`, content: image_url });
     card_meta.push({ name: `twitter:image`, content: image_url});
   }
 
