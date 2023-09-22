@@ -91,16 +91,20 @@ exports.handler = (event, context, callback) => {
       key: 'Content-Security-Policy',
       value:
         "default-src 'self' ; " +
-        "connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://www.google-analytics.com ; " +
-        "script-src 'self' 'unsafe-inline' https://www.google-analytics.com ; " +
+        "connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com" +
+          " https://www.google-analytics.com https://www.googletagmanager.com" +
+          " https://www.github.com/ ; " +
+        "script-src 'self' 'unsafe-inline' https://www.google-analytics.com" +
+          " https://www.googletagmanager.com ; " +
         "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com ; " +
-        "prefetch-src 'self' ; " +
         "img-src 'self' data: https://www.google-analytics.com https://github.com " +
           " https://raw.githubusercontent.com ; " +
         "font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com ; " +
         "manifest-src 'self' ; " +
         'upgrade-insecure-requests; block-all-mixed-content ; ' +
-        "frame-src 'self' http://*.ajf.io https://*.ajf.io https://www.youtube.com ; "
+        "frame-src 'self' http://*.ajf.io https://*.ajf.io" +
+          " https://www.youtube.com https://w.soundcloud.com/ https://player.vimeo.com/" +
+          " https://www.slideshare.net/ ; "
     }
   ].forEach(h => (headers[h.key.toLowerCase()] = [h]));
 
