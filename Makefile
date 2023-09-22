@@ -51,7 +51,7 @@ test:
 
 build:
 	@echo "build: Build files for deploy"
-	cd ./site && ./node_modules/.bin/gatsby build
+	cd ./site && ./node_modules/.bin/gatsby build --log-pages
 
 deploy:
 	@echo "Deploying the application"
