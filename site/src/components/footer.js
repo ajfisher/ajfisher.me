@@ -132,11 +132,6 @@ const Footer = ({slug}) => {
       gatsbyImageData(layout: FULL_WIDTH)
     }
   }
-  jsFoo: file(relativePath: {eq: "posts/jsfoo.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
-    }
-  }
   podcast: file(relativePath: {eq: "posts/enterprise_ai.jpg"}) {
     childImageSharp {
       gatsbyImageData(layout: FULL_WIDTH)
@@ -145,6 +140,7 @@ const Footer = ({slug}) => {
   featuredPosts: allMarkdownRemark(
     filter: {frontmatter: {featured: {eq: true}}}
     sort: {frontmatter: {date: DESC}}
+    limit: 2
   ) {
     edges {
       node {
@@ -160,14 +156,6 @@ const Footer = ({slug}) => {
           }
           listimage_position
           excerpt
-          featureimage {
-            childImageSharp {
-              gatsbyImageData(
-                layout: FULL_WIDTH
-              )
-            }
-          }
-          featureimage_position
           slug
         }
       }
