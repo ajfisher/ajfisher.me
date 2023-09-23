@@ -26,36 +26,41 @@ export const Head = ({location, params, data, pageContext}) => {
 
 export default function Template({ pageContext, data}) {
   const {tag} = pageContext;
-  const {edges} = data.allMarkdownRemark;
+  const { featured, posts } = data;
   const slug = `/tagged/${tag}`;
 
-  const featuredIndex = edges.findIndex(({node}, index) => {
-    if (node.frontmatter.featured === true) return index;
+  let featuredPost;
+  let filteredPosts = [];
 
-    return null;
-  });
+  if (featured?.edges.length > 0) {
+    featuredPost = featured.edges[0];
+    // filter the main posts so that the featured post is pulled out as it
+    // is going to be displayed separately. Do this just by taking the slug
+    // from the featured posts and then filtering the main post list against it
+    const featuredSlug = featuredPost.frontmatter?.slug;
 
-  let featured;
-
-  // see if we got a featured post.
-  if (featuredIndex >= 0) {
-    featured = edges[featuredIndex].node;
-  } else {
-    // just get the first one
-    featured = edges[0].node;
+    filteredPosts = posts.edges.filter((post) => {
+      if (post.node.frontmatter?.slug !== featuredSlug) return true;
+      return false;
+    });
+  } else if (posts?.edges.length > 0) {
+    // get the first one from the list instead and shift it off the front of the
+    // main post list.
+    [featuredPost, ...filteredPosts] = posts?.edges;
   }
 
-  const items = edges.filter((item, index) => {
-    if (index !== featuredIndex) return item;
-
-    return null;
-  });
+  const pluralPosts = (filteredPosts?.length > 1) ? 'posts' : 'post';
 
   return (
-    <Layout slug={slug} featured={featured}>
-      <h1>{items.length} posts tagged {tag}</h1>
+    <Layout slug={slug} featured={featuredPost.node}>
+      {filteredPosts.length > 0 ? (
+        <h1>{filteredPosts?.length || ''} other {pluralPosts} tagged "{tag}"</h1>
+      ) : (
+        <p>There are no other posts tagged <strong>"{tag}"</strong>. Enjoy the one above or
+        some of those items linked below.</p>
+      )}
       <ListItems>
-        {items.map(({node}) => {
+        {filteredPosts.map(({node}) => {
           const { slug, title, date,
             listimage, listimage_position } = node.frontmatter;
           const readingTime = {
@@ -86,7 +91,55 @@ export default function Template({ pageContext, data}) {
 
 export const pageQuery = graphql`
   query($tag: String) {
-    allMarkdownRemark(
+    featured: allMarkdownRemark(
+      filter: {
+        fields:
+          {taglist: {in: [$tag]}},
+          frontmatter: {featured: {eq: true}}
+      }
+      sort: {frontmatter: {date: DESC}}
+      limit: 1
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            slug
+            title
+            date(formatString: "YYYY-MM-DD")
+            excerpt
+            featureimage {
+              childImageSharp {
+                base: gatsbyImageData(width: 400, quality: 100
+                  transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000", opacity: 80}}
+                )
+                small: gatsbyImageData(width: 400, quality: 100
+                  transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000", opacity: 80}}
+                )
+                medium: gatsbyImageData(width: 750, quality: 90
+                  transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000", opacity: 80}}
+                )
+                large: gatsbyImageData(width: 1050, quality: 100
+                  transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000", opacity: 80}}
+                )
+                wide: gatsbyImageData(width: 1600, quality: 100
+                  transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000", opacity: 80}}
+                )
+                share: gatsbyImageData(width: 1200, quality: 90)
+              }
+            }
+            featureimage_position
+            small_title
+            large_title
+          }
+          wordCount {
+            words
+          }
+          timeToRead
+        }
+      }
+    }
+    posts: allMarkdownRemark(
       filter: {fields: {taglist: {in: [$tag]}}}
       sort: {frontmatter: {date: DESC}}
     ) {
@@ -128,8 +181,6 @@ export const pageQuery = graphql`
               }
             }
             featureimage_position
-            small_title
-            large_title
           }
           excerpt(pruneLength: 220)
           wordCount {
