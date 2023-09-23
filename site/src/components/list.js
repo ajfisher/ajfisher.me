@@ -82,6 +82,8 @@ export const PostListItem = ({title, image, position, excerpt, date,
 
     const rounded_time = Math.ceil(readingtime);
     const humanised_words = humanize.compactInteger(wordcount, 1);
+    // work out if we should say An 8 minute or A 7 seven minute
+    const a_an = ([8,11,18].includes(rounded_time)) ? 'An' : 'A';
 
     return (
       <Item>
@@ -97,7 +99,7 @@ export const PostListItem = ({title, image, position, excerpt, date,
         { excerpt.length > 0 &&
           <p>{excerpt}</p>
         }
-        <p>A {rounded_time} minute read ({humanised_words} words)</p>
+        <p>{a_an} {rounded_time} minute read ({humanised_words} words)</p>
       </Item>
     );
 };
