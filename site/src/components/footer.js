@@ -141,7 +141,7 @@ const Footer = ({slug}) => {
   featuredPosts: allMarkdownRemark(
     filter: {frontmatter: {featured: {eq: true}}}
     sort: {frontmatter: {date: DESC}}
-    limit: 2
+    limit: 3
   ) {
     edges {
       node {
@@ -174,6 +174,9 @@ const Footer = ({slug}) => {
   // make sure we don't feature the current post on itself
   if (featured.slug === slug) {
     featured = featuredPosts[1]; // second latest
+    if (featured.slug === 'podcast-enterprise-ai') {
+      featured = featuredPosts[2]; // last
+    }
   }
 
   featured.url = `/${pathDate(featured.date)}/${featured.slug}/`;
