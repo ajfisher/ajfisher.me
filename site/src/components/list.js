@@ -47,6 +47,7 @@ export const ImageLink = styled.div`
 
   :hover {
     border-bottom: 0.5rem solid var(--dark-grey);
+    border-radius: 0.2rem;
   }
 
   @media only screen and ${device.large} {

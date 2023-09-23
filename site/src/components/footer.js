@@ -32,6 +32,7 @@ export const FooterImageLink = styled(ImageLink)`
 
   :hover {
     border-bottom: 0.5rem solid var(--light-base);
+    border-radius: 0.2rem;
   }
 `;
 
