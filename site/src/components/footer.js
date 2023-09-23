@@ -108,11 +108,11 @@ const PostItem = ({title, image, url, excerpt}) => {
 
   return <>
     <FooterImageLink>
-      <Link to={url}>
+      <Link to={url || '/'}>
         <GatsbyImage image={postImage} alt={title} />
       </Link>
     </FooterImageLink>
-    <p><Link to={url}>{title}</Link></p>
+    <p><Link to={url || '/'}>{title}</Link></p>
     { excerpt.length > 0 &&
       <p>{excerpt}</p>
     }
@@ -189,14 +189,14 @@ const Footer = ({slug}) => {
         <section>
           <Title>Recent Media</Title>
           <FooterImageLink>
-            <Link href="/2023/02/12/podcast-enterprise-ai/">
+            <Link to="/2023/02/12/podcast-enterprise-ai/">
               <GatsbyImage
                 image={data.podcast.childImageSharp.gatsbyImageData}
                 alt="Generative AI in the enterprise" />
             </Link>
           </FooterImageLink>
           <p>
-            <Link href="/2023/02/12/podcast-enterprise-ai/">
+            <Link to="/2023/02/12/podcast-enterprise-ai/">
               ChatGPT and Generative AI in the enterprise
             </Link>
           </p>
