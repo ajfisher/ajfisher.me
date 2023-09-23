@@ -9,6 +9,13 @@ const TagPara = styled.p`
 
   & a {
     font-size: 2rem;
+    background: var(--dark-grey);
+    padding: 0 0.5rem;
+	  border-radius: 0.2rem;
+  }
+
+  & a:hover, a:visited:hover {
+    color: var(--light-base);
   }
 `;
 
