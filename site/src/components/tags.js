@@ -32,7 +32,7 @@ const Tags = ({children}) => {
   });
 
   return (
-    <TagPara>Tagged: {taglist}</TagPara>
+    <TagPara>Tags:<br/>{taglist}</TagPara>
   );
 };
 
