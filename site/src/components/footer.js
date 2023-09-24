@@ -32,6 +32,7 @@ export const FooterImageLink = styled(ImageLink)`
 
   :hover {
     border-bottom: 0.5rem solid var(--light-base);
+    border-radius: 0.2rem;
   }
 `;
 
@@ -108,11 +109,11 @@ const PostItem = ({title, image, url, excerpt}) => {
 
   return <>
     <FooterImageLink>
-      <Link to={url}>
+      <Link to={url || '/'}>
         <GatsbyImage image={postImage} alt={title} />
       </Link>
     </FooterImageLink>
-    <p><Link to={url}>{title}</Link></p>
+    <p><Link to={url || '/'}>{title}</Link></p>
     { excerpt.length > 0 &&
       <p>{excerpt}</p>
     }
@@ -140,7 +141,7 @@ const Footer = ({slug}) => {
   featuredPosts: allMarkdownRemark(
     filter: {frontmatter: {featured: {eq: true}}}
     sort: {frontmatter: {date: DESC}}
-    limit: 2
+    limit: 3
   ) {
     edges {
       node {
@@ -173,6 +174,9 @@ const Footer = ({slug}) => {
   // make sure we don't feature the current post on itself
   if (featured.slug === slug) {
     featured = featuredPosts[1]; // second latest
+    if (featured.slug === 'podcast-enterprise-ai') {
+      featured = featuredPosts[2]; // last
+    }
   }
 
   featured.url = `/${pathDate(featured.date)}/${featured.slug}/`;
@@ -189,14 +193,14 @@ const Footer = ({slug}) => {
         <section>
           <Title>Recent Media</Title>
           <FooterImageLink>
-            <Link href="/2023/02/12/podcast-enterprise-ai/">
+            <Link to="/2023/02/12/podcast-enterprise-ai/">
               <GatsbyImage
                 image={data.podcast.childImageSharp.gatsbyImageData}
                 alt="Generative AI in the enterprise" />
             </Link>
           </FooterImageLink>
           <p>
-            <Link href="/2023/02/12/podcast-enterprise-ai/">
+            <Link to="/2023/02/12/podcast-enterprise-ai/">
               ChatGPT and Generative AI in the enterprise
             </Link>
           </p>

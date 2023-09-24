@@ -84,18 +84,15 @@ h3 {
 
 a {
     color: var(--highlight);
-    background: var(--dark-grey);
     text-decoration: none;
-    padding: 0 0.5rem;
     transition: all 0.4s ease;
-	border-radius: 0.2rem;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
 }
 
 a:hover,
 a:visited:hover {
-    color: var(--light-base);
+    color: var(--dark-base);
 }
 
 /** general article content specific styles **/
@@ -142,7 +139,7 @@ article p.caption {
     padding-left: var(--gutter) !important;
     display: inline-block;
 	border-radius: 0.2rem;
-    border-bottom: 0.2rem solid var(--light-base);
+    border-bottom: 0.4rem solid var(--light-base);
 }
 
 article p.caption a, article p.caption a:visited {

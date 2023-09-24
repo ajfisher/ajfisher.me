@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 import { device } from './devices';
@@ -85,9 +85,6 @@ const Nav = ({children}) => {
         <li><Link to="/colophon/">Colophon</Link></li>
         <li><Link to="/dis-everything/">Disclaimer & Disclosure</Link></li>
         <li className="icons">
-          <OutboundLink title="@ajfisher on Twitter" href="https://twitter.com/ajfisher" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faTwitter}/>
-          </OutboundLink>
           <OutboundLink title="@ajfisher on Github" href="https://github.com/ajfisher" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub}/>
           </OutboundLink>
@@ -96,6 +93,12 @@ const Nav = ({children}) => {
           </OutboundLink>
           <OutboundLink title="Send ajfisher an email" href="mailto:ajfisher.td@gmail.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faEnvelope}/>
+          </OutboundLink>
+          <OutboundLink title="@ajfisher on Twitter" href="https://twitter.com/ajfisher" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faTwitter}/>
+          </OutboundLink>
+          <OutboundLink title="@ajfisher on LinkedIn" href="https://www.linkedin.com/in/andrewfisher/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin}/>
           </OutboundLink>
         </li>
       </ul>
