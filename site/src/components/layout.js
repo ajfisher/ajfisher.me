@@ -2,7 +2,6 @@
 
 import React from 'react';
 import styled from 'styled-components';
-// import PropTypes from 'prop-types';
 
 import { device } from './devices';
 
@@ -44,6 +43,8 @@ export const Article = styled.article`
   }
 
   & section {
+    margin-top: var(--gutter);
+
     & h2 {
       box-shadow: var(--gutter) 0 0 var(--light-base), calc(var(--gutter) * -1) 0 0 var(--light-base);
     }
