@@ -1,4 +1,4 @@
-/** layout for poasts **/
+/** layout for posts **/
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -10,7 +10,7 @@ import Nav from './nav';
 import Footer from './footer';
 import { Main, Aside } from './layout';
 
-const Layout = ({ children, frontmatter, featuredimage, path, readingTime, tags}) => {
+const Layout = ({ children, frontmatter, featuredimage, path, readingTime, tags, relatedposts}) => {
 
   const { title, date, excerpt, slug, small_title=false, large_title=false,
     imageby, imagelink } = frontmatter;
@@ -23,8 +23,9 @@ const Layout = ({ children, frontmatter, featuredimage, path, readingTime, tags}
         featuredimage={featuredimage} readingTime={readingTime}
         smalltitle={small_title} largetitle={large_title}/>
       <Main>
-        <PostArticle title={title} url={urlpath}
-          featuredImageBy={imageby} featuredImageLink={imagelink}>
+        <PostArticle title={title} url={urlpath} relatedposts={relatedposts}
+          featuredImageBy={imageby} featuredImageLink={imagelink}
+          date={date} tags={tags}>
             {children}
         </PostArticle>
         <Aside>

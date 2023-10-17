@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { device } from './devices';
 import { Article } from './layout';
+import { RelatedList, RelatedListItem } from './list';
 
 const StyledListArticle = styled(Article)`
 
@@ -134,6 +136,24 @@ const Attribute = styled.p`
 `;
 
 const Attribution = ({author, authorurl, featuredImageBy, featuredImageLink, title, pageurl}) => {
+const StyledRelatedPosts = styled.section`
+
+  & h4 {
+    color: var(--base);
+  }
+
+  & li p {
+    padding: 0;
+
+    & a, & a:visited {
+      color: var(--base);
+    }
+
+    & a:hover, & a:visited:hover {
+      color: var(--dark-grey);
+    }
+  }
+`;
   let imageAttribution;
   if (featuredImageBy && featuredImageLink) {
     imageAttribution = ()=> {
@@ -173,10 +193,37 @@ const Attribution = ({author, authorurl, featuredImageBy, featuredImageLink, tit
   );
 };
 
-export const PostArticle = ({children, featuredImageBy, featuredImageLink, title, url}) => {
+export const PostArticle = ({children, featuredImageBy, featuredImageLink,
+  title, url, relatedposts, date, tags}) => {
+  const noPosts = 2;
+  relatedposts = relatedposts.slice(0,noPosts);
+
   return(
     <StyledPostArticle>
       {children}
+      {relatedposts.length >= 2 &&
+        <StyledRelatedPosts>
+          <h4>Similar posts you might like</h4>
+          <RelatedList>
+            {relatedposts.map(({post}) => {
+
+              const { slug, title, date,
+                listimage, listimage_position } = post.frontmatter;
+
+              return (
+                <RelatedListItem
+                  key={slug}
+                  title={title}
+                  date={date}
+                  slug={slug}
+                  image={listimage}
+                  position={listimage_position}
+                />
+              );
+            })}
+          </RelatedList>
+        </StyledRelatedPosts>
+      }
       <Attribution title={title} author="ajfisher"
         authorurl="https://twitter.com/ajfisher" pageurl={url}
         featuredImageBy={featuredImageBy} featuredImageLink={featuredImageLink}
