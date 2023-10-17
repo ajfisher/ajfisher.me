@@ -2,7 +2,7 @@
 author: ajfisher
 date: 2015-04-15 21:30:00+11:00
 layout: post.hbt
-slug: make-javascript-robotics-launch
+slug: make-js-robotics-launch
 title: "Book launch of Make: JavaScript Robotics"
 tags: development, books, javascript, robotics, arduino, nodebots, nodejs, launch
 excerpt: >
