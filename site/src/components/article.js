@@ -262,8 +262,12 @@ export const Attribution = ({author, featuredImageBy,
 };
 
 export const PostArticle = ({children, featuredImageBy, featuredImageLink,
-  title, url, relatedposts, date, tags}) => {
+  title, url, relatedposts=[], date, tags}) => {
   const noPosts = 2;
+  // filter any wrong posts first
+  relatedposts = relatedposts.filter((item) => {
+    return (item.post !== null);
+  });
   relatedposts = relatedposts.slice(0,noPosts);
 
   return(
