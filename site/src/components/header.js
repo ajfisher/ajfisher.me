@@ -9,7 +9,7 @@ import { device } from './devices';
 const TextHeader = styled.header`
   box-sizing: border-box;
   border-bottom: 2px solid var(--highlight);
-  min-height: 63vh;
+  min-height: 50vh;
   margin: 0;
   padding: var(--gutter) 0;
 
@@ -22,13 +22,14 @@ const TextHeader = styled.header`
           box-shadow: 0 0.65rem 0.8rem #aaa;
 
   @media only screen and ${device.medium} {
-    min-height: 70vh;
+    min-height: 60vh;
     max-height: 90vh;
     padding: var(--gutter) 0;
   }
 
   // put the little shadow along the bottom for big screens.
   @media only screen and ${device.large} {
+    min-height: 70vh;
   }
 `;
 

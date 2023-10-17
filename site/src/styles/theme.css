@@ -39,6 +39,7 @@
     --base: var(--color-primary-0);
     --light-base: var(--color-primary-2);
     --dark-base: var(--color-primary-3);
+    --light-bg-tint: color-mix(in srgb, var(--base), #fff 90%);
 
     --highlight: var(--color-secondary-1-0);
     --accent: var(--color-secondary-1-2);

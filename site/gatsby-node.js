@@ -5,6 +5,27 @@ exports.onCreateNode = ({ node }) => {
   // this is to try and resolve the issues with the pathing
 };
 
+exports.createSchemaCustomization = ({ actions, schema }) => {
+  const { createTypes } = actions;
+  // create foreignkey link from the markdown node to pick up the
+  // similarity items that come from the related posts. Also then traverse the
+  // posts in the similarity list and create a link back to the markdown document
+  // so we can grab things like excerpts, links, list images etc when we want
+  // to render the related items out.
+  const typeDefs = `
+    type MarkdownRemark implements Node {
+      related: SimilarityDataJson @link(by: "slug", from: "frontmatter.slug")
+    }
+    type SimilarityDataJson implements Node {
+      post_similarity: [PostSimilarity]
+    }
+    type PostSimilarity {
+      post: MarkdownRemark @link(by: "frontmatter.slug", from: "slug")
+    }
+  `;
+  createTypes(typeDefs);
+}
+
 exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
   const result = await graphql(`

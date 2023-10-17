@@ -1,6 +1,10 @@
+import moment from 'moment';
 import React from 'react';
 import styled from 'styled-components';
+import { device } from './devices';
 import { Article } from './layout';
+import { RelatedList, RelatedListItem } from './list';
+import { TagList } from './tags';
 
 const StyledListArticle = styled(Article)`
 
@@ -129,57 +133,168 @@ const StyledPostArticle = styled(Article)`
   }
 `;
 
-const Attribute = styled.p`
-  font-size: 1.8rem !important;
+const StyledAttribution = styled.section`
+  padding: calc(0.25 * var(--gutter)) 0;
+  background: var(--light-bg-tint);
+  border-bottom: 0.4rem solid var(--light-base);
+  margin-bottom: var(--gutter);
+
+  @media only screen and ${device.large} {
+    border-radius: 0.2rem;
+    border-bottom: none;
+    border-top: 0.4rem solid var(--light-base);
+  }
+
+  & h4 {
+    color: var(--base);
+  }
 `;
 
-const Attribution = ({author, authorurl, featuredImageBy, featuredImageLink, title, pageurl}) => {
+const Attributes = styled.dl`
+  margin: calc(0.5 * var(--gutter)) var(--gutter);
+  display: grid;
+
+  grid-template-rows: auto;
+
+  @media only screen and ${device.medium} {
+    grid-template-columns: 20% auto;
+  }
+
+  & dt {
+    font-weight: bold;
+    font-size: 1.8rem;
+
+    @media only screen and ${device.medium} {
+      font-weight: normal;
+    }
+  }
+
+  & dd {
+    margin: 0;
+    margin-bottom: var(--gutter);
+    font-size: 1.5rem;
+
+    @media only screen and ${device.medium} {
+      margin-left: var(--gutter);
+      margin-bottom: 0;
+      font-size: 1.8rem;
+    }
+  }
+
+  & dt.displaysmall, dd.displaysmall {
+    @media only screen and ${device.large} {
+      display: none;
+    }
+  }
+`
+
+const StyledRelatedPosts = styled.section`
+
+  & h4 {
+    color: var(--base);
+  }
+
+  & li p {
+    padding: 0;
+
+    & a, & a:visited {
+      color: var(--base);
+    }
+
+    & a:hover, & a:visited:hover {
+      color: var(--dark-grey);
+    }
+  }
+`;
+
+const Attribute = ({name, showfull = true, children}) => {
+  const displayClass = (showfull===true) ? "" : "displaysmall";
+  return (
+    <>
+      <dt className={displayClass}>{name}</dt>
+      <dd className={displayClass}>{children}</dd>
+    </>
+  );
+};
+
+export const Attribution = ({author, featuredImageBy,
+    featuredImageLink, title, pageurl, date, tags}) => {
   let imageAttribution;
   if (featuredImageBy && featuredImageLink) {
     imageAttribution = ()=> {
-      return (
-        <>
-          Title image by <a href={featuredImageLink}>{featuredImageBy}</a>
-        </>
-      );
+      return (<><a href={featuredImageLink}>{featuredImageBy}</a></>);
     };
   } else {
     imageAttribution = ()=> {
-      return (
-        <>
-          Title image by {featuredImageBy}
-        </>
-      );
+      return (<>{featuredImageBy}</>);
     };
   }
 
   return(
-    <section className="attribution">
-      {featuredImageBy &&
-        <Attribute>
-          {imageAttribution()}
+    <StyledAttribution>
+      <h4>About this post</h4>
+      <Attributes>
+        <Attribute name="Title">"{title}"</Attribute>
+        <Attribute name="Published on"
+          showfull="false">{moment(date).format("dddd, MMMM Do YYYY")}</Attribute>
+        {tags &&
+          <Attribute name="Tags" showfull="false">
+            <TagList>{tags}</TagList>
+          </Attribute>
+        }
+        <Attribute name="Author" showfull="false">
+          <a href="{authourl}">{author}</a>
         </Attribute>
-      }
-      <Attribute>
-        "{title}" by <a href={authorurl}>{author}</a> is licensed under
-         a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-          CC BY-NC-SA 4.0 International License
-        </a>.
-      </Attribute>
-      <Attribute>
-        Permanent source for attribution: <a href={pageurl}>{pageurl}</a>.
-      </Attribute>
-    </section>
+        {featuredImageBy &&
+          <Attribute name="Title image">
+            {imageAttribution()}
+          </Attribute>
+        }
+        <Attribute name="License">
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC
+            BY-NC-SA 4.0 International License
+          </a>
+        </Attribute>
+        <Attribute name="Permanent source"><a href={pageurl}>{pageurl}</a></Attribute>
+      </Attributes>
+    </StyledAttribution>
   );
 };
 
-export const PostArticle = ({children, featuredImageBy, featuredImageLink, title, url}) => {
+export const PostArticle = ({children, featuredImageBy, featuredImageLink,
+  title, url, relatedposts=[], date, tags}) => {
+  const noPosts = 2;
+  // filter any wrong posts first
+  relatedposts = relatedposts.filter((item) => {
+    return (item.post !== null);
+  });
+  relatedposts = relatedposts.slice(0,noPosts);
+
   return(
     <StyledPostArticle>
       {children}
-      <Attribution title={title} author="ajfisher"
+      {relatedposts.length >= 2 &&
+        <StyledRelatedPosts>
+          <h4>Similar posts you might like</h4>
+          <RelatedList>
+            {relatedposts.map(({post}) => {
+
+              const { slug, title, date,
+                listimage, listimage_position } = post.frontmatter;
+
+              return (
+                <RelatedListItem key={slug} title={title} date={date}
+                  slug={slug} image={listimage} position={listimage_position}
+                />
+              );
+            })}
+          </RelatedList>
+        </StyledRelatedPosts>
+      }
+      <Attribution title={title} author="ajfisher" date={date}
         authorurl="https://twitter.com/ajfisher" pageurl={url}
         featuredImageBy={featuredImageBy} featuredImageLink={featuredImageLink}
+        tags={tags}
       />
     </StyledPostArticle>
   );

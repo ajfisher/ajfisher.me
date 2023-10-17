@@ -158,4 +158,42 @@ export const PostListItem = ({title, image, position, excerpt, date,
     );
 };
 
+export const RelatedList = styled(ListItems)`
+  li > p {
+    margin: var(--gutter) 0;
 
+    @media only screen and ${device.large} {
+      margin: calc(0.5 * var(--gutter)) 0;
+    }
+  }
+`;
+
+export const RelatedListItem = ({title, image, position, date, slug}) => {
+
+    image = image || '';
+
+    const url = `/${pathDate(date)}/${slug}/`;
+
+    let listimage;
+    if (image === '') {
+      listimage = ListItemPlaceholderImage();
+    } else {
+      const PostImage = (image, title) => {
+        const postimage = getImage(image);
+        return(<GatsbyImage image={postimage} alt={title} />);
+      };
+
+      listimage = PostImage(image, title);
+    }
+
+    return (
+      <Item>
+        <ImageLink $position={position}>
+          <Link to={url}>
+            {listimage}
+          </Link>
+        </ImageLink>
+        <p><Link to={url}>{title}</Link></p>
+      </Item>
+    );
+};

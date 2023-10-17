@@ -14,6 +14,7 @@ module.exports = {
         siteSpeedSampleRate: 10
       }
     },
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -27,6 +28,13 @@ module.exports = {
         name: `content`,
         path: `${__dirname}/src/content`,
         ignore: [`**/.*`],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `related-posts`,
+        path: `${__dirname}/utils/embeddings/similarity_data.json`,
       },
     },
     `gatsby-plugin-image`,
