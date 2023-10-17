@@ -127,6 +127,8 @@ article p span.gatsby-resp-image-wrapper {
 article p:has(span.gatsby-resp-image-wrapper) {
     margin-bottom: 0px;
     padding: 0;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
 
 article p.caption {
