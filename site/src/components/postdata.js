@@ -6,16 +6,17 @@ import { device } from './devices';
 import Tags from './tags';
 
 const Published = styled.p`
-  font-size: 2rem;
-  padding: 0.5rem 0;
-  display: inline;
-  color: var(--light-text-colour);
-  background: var(--dark-grey);
-  box-shadow: 0.5rem 0 0 var(--dark-grey), -0.5rem 0 0 var(--dark-grey);
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
+  display: none;
 
   @media only screen and ${device.large} {
+    display: inline;
+
+    font-size: 2rem;
+    color: var(--light-text-colour);
+    background: var(--dark-grey);
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+
     box-shadow: none;
     padding: 0.5rem;
     border-bottom: 0.4rem solid var(--light-base);
@@ -48,10 +49,8 @@ const Title = styled.h2`
 `;
 
 const PostData = ({author='ajfisher', title, tags, publicationDate}) => {
-
-
   return (
-    <Section>
+    <Section className="postdata">
       <Title>{title}</Title>
       <Published>
         Published on {moment(publicationDate).format("dddd, MMMM Do YYYY")} by {author}
