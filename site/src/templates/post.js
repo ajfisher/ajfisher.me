@@ -4,7 +4,7 @@ import Layout from '../components/post-layout';
 import PageHead from '../components/page-head';
 import { getFeaturedImageSources } from '../lib/utils';
 
-export const Head = ({location, params, data, pageContext}) => {
+export const Head = ({data}) => {
   const { markdownRemark} = data;
   const { frontmatter, timeToRead, wordCount} = markdownRemark;
 
@@ -30,7 +30,7 @@ export const Head = ({location, params, data, pageContext}) => {
 
 export default function Template({ data, location }) {
   const { markdownRemark} = data;
-  const { fields, frontmatter, html} = markdownRemark;
+  const { fields, frontmatter, html, related} = markdownRemark;
   const { taglist } = fields;
 
   const featuredImageSrc = getFeaturedImageSources(frontmatter?.featureimage?.childImageSharp);
@@ -38,7 +38,7 @@ export default function Template({ data, location }) {
   return (
     <Layout frontmatter={frontmatter} featuredimage={featuredImageSrc}
       readingTime={fields.readingTime} path={location.pathname}
-      tags={taglist}
+      tags={taglist} relatedposts={related?.post_similarity}
     >
       <section
         className="content"
@@ -90,6 +90,28 @@ export const pageQuery = graphql`
       timeToRead
       fields {
         taglist
+      }
+      related {
+        post_similarity {
+          similarity
+          post {
+            excerpt(pruneLength: 220)
+            frontmatter {
+              date(formatString: "YYYY-MM-DD")
+              slug
+              title
+              excerpt
+              listimage_position
+              listimage {
+                childImageSharp {
+                  gatsbyImageData(
+                    layout: FULL_WIDTH
+                  )
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
