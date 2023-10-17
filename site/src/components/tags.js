@@ -30,9 +30,13 @@ const Tag = ({children, className, href}) => {
 };
 
 const Tags = ({children}) => {
-  return (
-    <TagPara>Tags:<br/><TagList>{children}</TagList></TagPara>
-  );
+  if (children?.length > 0) {
+    return (
+      <TagPara>Tags:<br/><TagList>{children}</TagList></TagPara>
+    );
+  }
+
+  return;
 };
 
 export const TagList = ({children}) => {

@@ -237,9 +237,11 @@ export const Attribution = ({author, featuredImageBy,
         <Attribute name="Title">"{title}"</Attribute>
         <Attribute name="Published on"
           showfull="false">{moment(date).format("dddd, MMMM Do YYYY")}</Attribute>
-        <Attribute name="Tags" showfull="false">
-          <TagList>{tags}</TagList>
-        </Attribute>
+        {tags &&
+          <Attribute name="Tags" showfull="false">
+            <TagList>{tags}</TagList>
+          </Attribute>
+        }
         <Attribute name="Author" showfull="false">
           <a href="{authourl}">{author}</a>
         </Attribute>
@@ -277,13 +279,8 @@ export const PostArticle = ({children, featuredImageBy, featuredImageLink,
                 listimage, listimage_position } = post.frontmatter;
 
               return (
-                <RelatedListItem
-                  key={slug}
-                  title={title}
-                  date={date}
-                  slug={slug}
-                  image={listimage}
-                  position={listimage_position}
+                <RelatedListItem key={slug} title={title} date={date}
+                  slug={slug} image={listimage} position={listimage_position}
                 />
               );
             })}
