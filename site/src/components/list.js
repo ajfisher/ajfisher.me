@@ -15,7 +15,7 @@ export const ListItems = styled.ul`
   padding: 0;
   margin: 0 var(--gutter) !important;
 
-  @media only screen and ${device.large} {
+  @media only screen and ${device.medium} {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -28,11 +28,11 @@ const Item = styled.li`
   width: 100%;
   height: min-content;
 
-  @media only screen and ${device.large} {
-    width: 47%;
+  @media only screen and ${device.medium} {
+    width: 49%;
   }
 
-  @media only screen and ${device.wide} {
+  @media only screen and ${device.large} {
     width: 45%;
   }
 `;
@@ -141,6 +141,8 @@ export const PostListItem = ({title, image, position, excerpt, date,
     // work out if we should say An 8 minute or A 7 seven minute
     const a_an = ([8,11,18].includes(rounded_time)) ? 'An' : 'A';
 
+    const reading_time = `${a_an} ${rounded_time} minute read (${humanised_words} words).`;
+
     return (
       <Item>
         <ImageLink $position={position}>
@@ -153,7 +155,7 @@ export const PostListItem = ({title, image, position, excerpt, date,
         { excerpt.length > 0 &&
           <p>{excerpt}</p>
         }
-        <p>{a_an} {rounded_time} minute read ({humanised_words} words)</p>
+        <p>{reading_time}</p>
       </Item>
     );
 };

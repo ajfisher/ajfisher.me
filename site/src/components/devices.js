@@ -2,8 +2,8 @@
 
 const size = {
   small: '401px',
-  medium: '501px',
-  large: '751px',
+  medium: '601px',
+  large: '821px',
   wide: '1051px'
 };
 
