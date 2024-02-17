@@ -17,9 +17,7 @@ Flash, unfortunately, has gone from being a tool that enhances the web to one wh
 There was a time when Flash was just a tool for creating some interesting animations - then Macromedia made it a bit more programmer oriented, then a lot more programmer oriented but what Adobe didn't have the guts to do when they bought Macromedia was rip out all the designer oriented components and make it programmer focussed (that honour was left to the Open Source Flash Development team, with whom the last vestiges of Flash credibility now reside).
 
 ![A fortune cookie with the fortune 'meh'](../../img/posts/fortune_cookie.jpg)
-
-<p class="caption"><a href="http://www.flickr.com/photos/rickharris/430890004">meh
-(image (cc) Rick Harris)</a></p>
+*[meh(image (cc) Rick Harris)](http://www.flickr.com/photos/rickharris/430890004)*
 
 Adobe's lack of vision was the equivalent of a parent thinking it is okay to let toddlers play with machine guns - today's average designer is not capable of building anything non-trivial in flash that will not degrade or crash a browser.
 
@@ -42,8 +40,7 @@ My opinion is the acquisition of Macromedia went harder than anyone realised and
 Adobe's current rate of innovation is laughable and they continue to support and invest in products they should have killed off 5+ years ago. Both revenue and profit have taken a dive with profit almost falling off a cliff since 2007.
 
 ![Graph of Adobe's historical profit per year](../../img/posts/shares_adobe.png)
-
-<p class="caption">Historical gross profit of Adobe corporation - Wolfram|Alpha</p>
+*Historical gross profit of Adobe corporation - Wolfram|Alpha*
 
 While I'm here it's worth pointing out that that profit is equal to about $45K per employee (compared to $70K per employee at Oracle or nearly $250K per employee at Google!)
 

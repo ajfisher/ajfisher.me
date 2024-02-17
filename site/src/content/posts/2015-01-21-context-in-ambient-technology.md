@@ -49,8 +49,7 @@ be reading this while standing on a train station platform where there will be
 signage indicating how long until the next train arrives.
 
 ![A glitched railway sign](../../img/posts/sign_glitch.png)
-
-<p class="caption">Departure boards are great ambient tech - when they work</p>
+*Departure boards are great ambient tech - when they work*
 
 Or, if you live in a house like mine you'll have many gadgets, all sporting
 lights that are blinking on and off various colours to indicate a stack of
@@ -113,9 +112,8 @@ Try to reply to a message of some sort on your phone while you walk down a
 crowded street (DO NOT try this if you're driving).
 
 ![Man in suit passing on the road](../../img/posts/pawel-janiak-8UzhdypkVzg-unsplash.jpg)
-
-<p class="caption"><a href="https://unsplash.com/photos/8UzhdypkVzg">A man in suit passing on the road</a> -
-Pawel Janiak (Unsplash)</p>
+*[A man in suit passing on the road](https://unsplash.com/photos/8UzhdypkVzg) -
+Pawel Janiak (Unsplash)*
 
 Observe the information you pay attention to when you're navigating somewhere
 in a public space you don't know. What signs do you look at? When do you look
@@ -235,8 +233,7 @@ not being readily present in our environment especially as the ISS passes
 overhead often through the day where it cannot be seen.
 
 ![ISS Notify - Nathan Bergey](../../img/posts/iss_notify_original.png)
-
-<p class="caption">The ISS Notify device (image Kickstarter) - (c) Nathan Bergey</p>
+*The ISS Notify device (image Kickstarter) - (c) Nathan Bergey*
 
 #### Smart lighting
 
@@ -326,9 +323,8 @@ signage in public spaces this will get more sophisticated and may eventually be
 able to adapt to the individual standing in front of it.
 
 ![Flight arrivals board](../../img/posts/jeshoots-com-9qQTUYm4ss4-unsplash.jpg)
-
-<p class="caption">Flight arrivals board - 
-<a href="https://unsplash.com/photos/9qQTUYm4ss4">Image jeshoots (Unsplash)</a></p>
+*Flight arrivals board - 
+[Image jeshoots (Unsplash)](https://unsplash.com/photos/9qQTUYm4ss4)*
 
 Imagine for example, an RFID or NFC encoded boarding pass which updates the
 displays in an airport as you walk near them in order to direct you to your
@@ -369,8 +365,7 @@ Neighbourhood Scorecards project highlighted energy usage on a series of black
 boards attached to the front of some homes in Sydney.
 
 ![Neighbourhood Scorecards project](../../img/posts/neighbourhood_scoreboards.jpg)
-
-<p class="caption">Neighbourhood Scorecard Project - Sydney Design Lab</p>
+*Neighbourhood Scorecard Project - Sydney Design Lab*
 
 The information was real though the means of updating was very manual. These
 visualisations encode very complex information in an ambient manner where they
