@@ -14,7 +14,8 @@ import { device } from './devices';
 const NavButton = styled.button`
 
   display: inline-block;
-  z-index: 2; // place above content
+  z-index: 3; // place above content
+  transform: ${({ isOpen }) => isOpen ? 'rotate(90deg)' : 'none'};
 
   position: fixed;
   top: calc(0.5 * var(--gutter));
@@ -25,7 +26,7 @@ const NavButton = styled.button`
   background-color: transparent;
   font-size: 3rem;
   color: var(--base);
-  transition: color 0.8s ease;
+  transition: all 0.8s ease;
 
   @media only screen and ${device.large} {
     display: none;
@@ -69,7 +70,7 @@ const NavDrawer = styled.nav`
   padding: var(--gutter);
 
   background: var(--light-text-colour);
-  transition: right 0.3s ease-in-out;
+  transition: right 0.5s ease-in-out;
 
   @media only screen and ${device.medium} {
     width: 60vw;
@@ -199,7 +200,7 @@ const Nav = () => {
 
   return (
     <>
-      <NavButton onClick={toggleMenu}>
+      <NavButton onClick={toggleMenu} isOpen={isOpen}>
         <FontAwesomeIcon icon={faBars}/>
       </NavButton>
       <NavMenuOverlay isOpen={isOpen} onClick={toggleMenu}/>
