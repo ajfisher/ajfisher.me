@@ -137,12 +137,12 @@ const StyledAttribution = styled.section`
   padding: calc(0.25 * var(--gutter)) 0;
   background: var(--light-bg-tint);
   border-bottom: 0.4rem solid var(--light-base);
-  margin-bottom: var(--gutter);
 
   @media only screen and ${device.large} {
     border-radius: 0.2rem;
     border-bottom: none;
     border-top: 0.4rem solid var(--light-base);
+    margin-bottom: var(--gutter);
   }
 
   & h4 {
