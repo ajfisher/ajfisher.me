@@ -131,7 +131,8 @@ article p:has(span.gatsby-resp-image-wrapper) {
     margin-right: 0px !important;
 }
 
-article p.caption {
+article p.caption,
+article p span.gatsby-resp-image-wrapper + em {
     font-size: 1.8rem !important;
     background-color: var(--dark-grey);
     margin-top: calc(-0.5 * var(--gutter));
@@ -144,16 +145,25 @@ article p.caption {
     border-bottom: 0.4rem solid var(--light-base);
 }
 
-article p.caption a, article p.caption a:visited {
+article p.caption a, article p.caption a:visited,
+article p span.gatsby-resp-image-wrapper + em a,
+article p span.gatsby-resp-image-wrapper + em a:visited {
     color: var(--light-text-colour);
     background: none;
     padding: 0;
 }
 
-article p.caption a:hover, article p.caption a:visited:hover {
+article p.caption a:hover, article p.caption a:visited:hover,
+article p span.gatsby-resp-image-wrapper + em a:hover,
+article p span.gatsby-resp-image-wrapper + em a:visited:hover {
     color: var(--light-base);
 }
 
+article p span.gatsby-resp-image-wrapper + em {
+    /* specific overrides for doing inline captions */
+    font-style: normal;
+    margin-top: calc(0.25 * var(--gutter));
+}
 /* MEDIA QUERIES FOR Medium Size display */
 
 /* MEDIA QUERIES FOR Large Size displau */
