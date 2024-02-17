@@ -24,15 +24,15 @@ const NavButton = styled.button`
 
   background-color: transparent;
   font-size: 3rem;
-  color: var(--light-base);
+  color: var(--base);
+  transition: color 0.8s ease;
 
   @media only screen and ${device.large} {
     display: none;
   }
 
-  & :hover {
+  &:hover {
     color: var(--dark-text-colour);
-    transition: all 0.8s ease;
   }
 `;
 
