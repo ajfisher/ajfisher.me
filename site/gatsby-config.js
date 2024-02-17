@@ -109,7 +109,14 @@ module.exports = {
         icon: `src/img/ajfisher_large.jpg`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-robots-txt`,
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: `https://ajfisher.me`,
+        sitemap: 'https://ajfisher.me/sitemap-0.xml',
+        policy: [{userAgent: '*', allow: '/'}],
+      }
+    },
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
