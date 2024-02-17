@@ -27,9 +27,9 @@ batteries laying around so it was a fairly straight forward process to get it
 all up and running.
 
 > Minecraft is a lot of fun, especially when you play with friends. Minecraft 
-servers are great but they aren’t very portable and rely on a good Internet
-connection. What about if you could take your own portable server with you -
-say to the park - and it will fit inside a lunchbox?
+> servers are great but they aren’t very portable and rely on a good Internet
+> connection. What about if you could take your own portable server with you -
+> say to the park - and it will fit inside a lunchbox?
 
 The build process for this is published over at Packt
 [Building a portable minecraft server for LAN parties in the park](https://www.packtpub.com/books/content/building-portable-minecraft-server-lan-parties-park)
