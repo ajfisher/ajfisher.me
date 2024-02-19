@@ -78,10 +78,7 @@ building backpacks in the first place, this component was the
 [first prototype of the approach.](https://gist.github.com/ajfisher/1d57c5f845c376f04fbb)
 
 ![Ultrasonic distance sensor](../../img/posts/ultrasonic.jpg)
-
-<p class="caption"><a href="http://www.flickr.com/photos/120586634@N05/22805671435/"
-rel="noopener noreferrer" target="_blank">Spark Core Ultrasonic Project, image
-(cc) Gareth Halfacree</a></p>
+*[Spark Core Ultrasonic Project, image(cc) Gareth Halfacree](https://www.flickr.com/photos/120586634@N05/22805671435/)*
 
 After some refinement with [Jeff Hoeffs](http://twitter.com/soundanalogous) and
 [Rick Waldron](http://twitter.com/rwaldron) it became immediately apparent
@@ -122,8 +119,7 @@ A Nano could be had for less than $2 a unit at moderate volumes. Further, Arduin
 Micros (a nano without the USB interface) could be had closer to $1 per unit.
 
 ![SimpleBot - basic robot made from craft materials](../../img/posts/simplebot_basic.jpg)
-
-<p class="caption">SimpleBot, image (cc) ajfisher</p>
+*SimpleBot, image (cc) ajfisher*
 
 This started entering the price point that we were looking to achieve for the
 backpack with the benefit that we would have a full serial interface for
@@ -271,8 +267,7 @@ refined the command line interaction, including an interactive prompts to make
 the installation process even easier.
 
 ![Interactive Interchange prompt](https://github.com/ajfisher/nodebots-interchange/raw/master/docs/assets/interchange.gif)
-
-<p class="caption">Interchange interactivity example.</p>
+*Interchange interactivity example.*
 
 In the end, the deadline was met and the BuzzConf nodebots workshop went off
 without any significant hitches - related to installing firmware at least. It was

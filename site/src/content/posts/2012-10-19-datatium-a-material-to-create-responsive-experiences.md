@@ -115,8 +115,7 @@ You don't have to be perfect in every instance. If you can get 99% with about 10
 Don't underestimate the value of tiny removals of friction, especially in things like checkout processes. The way I think about this is like a slide right. Remember when you were a kid and they made a slide out of some sort of metal that you just didn't seem to slide on so you had to wiggle your way down. Pretty soon you got bored and went and set fire to things or did something more interesting.
 
 ![A sandwich shop with people queuing to buy food](../../img/posts/tss.jpg)
-
-<p class="caption">The Sandwich Shop, Surry Hills, Sydney - image (cc) ajfisher</p>
+*The Sandwich Shop, Surry Hills, Sydney - image (cc) ajfisher*
 
 
 One of my favourite examples of this frictionless interaction is actually from a sandwich shop over in Surry Hills. When you place your order you have to give your name. If you pay with a card though they use your name off the card and just confirm it with you “You're Andrew right?”. Beautiful! We can do this so much more often than we do.
@@ -371,8 +370,7 @@ Back in the 70s a magazine was launched to help you make a punk band. In it ther
 Here's a chord, here's another, here's a third - go start a band.
 
 ![Graph of behaviours over time, change and then change of change](../../img/posts/behaviour_differentials.jpg)
-
-<p class="caption">Behavioural differentials - image (cc) ajfisher</p>
+*Behavioural differentials - image (cc) ajfisher*
 
 Well data science is like punk. It's all about exploring the possibilities of what data can do for user experience and break pre-existing rules. So here's my equivalents:
 

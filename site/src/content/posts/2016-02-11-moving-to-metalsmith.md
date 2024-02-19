@@ -170,15 +170,15 @@ There's also the issue of captioning images which you can't do in CSS as the
 image tag isn't a container so you can't use `::before` or `::after`.
 
 For my specific use case, I simply wrote a plugin that did what I wanted. I won't
-show the code here but [you can see it in my site gh.](https://github.com/ajfisher/ajfisher.me/blob/master/index.js#L112-L176)
-It finds mardown images, pulls them out and replaces them with a properly
+show the code here but [you can see it in my site
+gh.](https://github.com/ajfisher/ajfisher.me/blob/master/index.js#L112-L176)
+It finds markdown images, pulls them out and replaces them with a properly
 formatted `figure` that uses `srcset` and `figcaption`. You can see the treatment
 of this below.
 
 ![Photo of a blacksmith's hands on a hammer and anvil](../../img/posts/forgehands.jpg)
-
-<p class="caption"><a href="http://www.flickr.com/photos/polandmfa/9286266649/">"Blacksmithing
-workshop in Wojciechow, Poland" - image (CC) Poland MFA</a></p>
+*["Blacksmithing workshop in Wojciechow, Poland" -
+image (CC) Poland MFA](https://www.flickr.com/photos/polandmfa/9286266649/)*
 
 Writing plugins is easy so definitely don't put it off as there's no magic
 to it.

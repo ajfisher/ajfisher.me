@@ -19,9 +19,7 @@ it was great to work alongside [Craig Sharkie - @twalve](http://github.com/twalv
 on this project over the last 6 months.
 
 ![Cover shot of Jump Start responsive Design book](../..//img/posts/responsive_design.jpg)
-
-<p class="caption"><a href="http://www.sitepoint.com/store/jump-start-responsive-web-design/">"Jump
-Start Responsive Design" - Sharkie & Fisher</a></p>
+*["Jump Start Responsive Design" - Sharkie & Fisher](http://www.sitepoint.com/store/jump-start-responsive-web-design/)*
 
 The book is squarely aimed at developers and designers who are looking to rapidly
 get up to speed on current RWD techniques and just get going with them on their

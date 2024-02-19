@@ -78,10 +78,8 @@ into every aspect of our lives (for good and bad) and was as fundamental a
 change as moving off mainframes to PCs.
 
 ![Mobile unblocked tremendous computing opportunities](../../img/posts/freestocks-hRVrvH9-dG0-unsplash.jpg)
-
-<p class="caption"><a href="https://unsplash.com/photos/hRVrvH9-dG0"
-rel="noopener noreferrer" target="_blank">Mobile untethered computing from desks.
-Photo by freestocks on Unsplash</a></p>
+*[Mobile untethered computing from desks. Photo by freestocks on
+Unsplash](https://unsplash.com/photos/hRVrvH9-dG0)*
 
 By following a similar trajectory, AI is driving excitement as a result (in a
 similar fashion as the move to mobile or the advent of the web for those who
@@ -115,8 +113,7 @@ feel they need to give it instructions that they could never get a human
 they know to follow.
 
 ![ChatGPT explains a reactor in the style of a rap](../../img/posts/reactor_rap_battle.png)
-
-<p class="caption">ChatGPT explaining nuclear reactors, image (cc) ajfisher</p>
+*ChatGPT explaining nuclear reactors, image (cc) ajfisher*
 
 The upside of this is that this means there are many opportunities for
 developing what future mental models we’ll all use might look like. As a

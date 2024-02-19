@@ -21,8 +21,7 @@ What makes web intents different than a protocol link is that they are fundament
 Instead; in the tabbed browser world, I simply have tabs up one end of my browser window that are permanently there. I also have a couple of extensions that operate at a meta-level on the whole page I'm viewing - notably bit.ly, evernote and chrome2phone.
 
 ![Chalkboard with the phrase 'will you (blank) me?'](../../img/posts/will_you.jpg)
-
-<p class="caption"><a href="http://www.flickr.com/photos/pinkpoppyimages/">image (cc) Poppy Thomas-Hill</a></p>
+*[image (cc) Poppy Thomas-Hill](http://www.flickr.com/photos/pinkpoppyimages/)*
 
 But all of this is back to front - and this is the beauty of the web intent - I want to bring my existing services to the attention of the page so it can interact with what I'm looking at right now without that web page needing to know anything specific about the Intent directly (eg what protocol or services it also has available).
 
