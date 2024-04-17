@@ -16,7 +16,7 @@ clean-env:
 clean: clean-env
 
 install:
-	test -d venv || { echo "Create vitual env"; python3 -m venv venv; }
+	test -d venv || { echo "Create vitual env"; python3.11 -m venv venv; }
 	. venv/bin/activate; pip install -r requirements.txt
 
 build: install
