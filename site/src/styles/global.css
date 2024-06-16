@@ -164,6 +164,34 @@ article p span.gatsby-resp-image-wrapper + em {
     font-style: normal;
     margin-top: calc(0.25 * var(--gutter));
 }
+
+
+/* Some definitions for the form */
+article form label {
+    font-family: var(--main-font-family);
+    font-size: 2.2rem;
+}
+
+article form input {
+    padding: var(--margin-indent);
+    margin-left: var(--gutter-small);
+    border: 1px solid var(--base);
+    margin-right: var(--gutter-small);
+    height: 100%;
+    font-family: var(--main-font-family);
+    font-size: 2.2rem;
+    width: 60%;
+}
+article form button {
+    padding: var(--margin-indent);
+    background-color: var(--light-base);
+    color: var(--dark-base);
+    height: 100%;
+    border: none;
+    font-family: var(--main-font-family);
+    font-size: 2.2rem;
+}
+
 /* MEDIA QUERIES FOR Medium Size display */
 
 /* MEDIA QUERIES FOR Large Size displau */

@@ -33,13 +33,14 @@ const LeadersPage = ({data}) => {
     below. Don't forget to sign up if you want to get more information about
     additional content.
   `;
+  const tags = ['thinking', 'business', 'innovation'];
 
   const frontmatter = {
     title,
     date,
     excerpt,
     slug,
-    large_title: true,
+    large_title: false,
   };
 
   const submitURL = 'https://docs.google.com/forms/d/e/1FAIpQLSei22e0iBvHq5b3wrhOTetsVk_srB4a1pLzotYPKnGmi2dNYg/formResponse';
@@ -78,7 +79,7 @@ const LeadersPage = ({data}) => {
   };
 
   return (
-    <Layout frontmatter={frontmatter} tags={['leadership', 'resources']}
+    <Layout frontmatter={frontmatter} tags={tags}
       path='/leaders' featuredimage={featuredImageSrc}
     >
       <PageHead title={title}/>
@@ -138,6 +139,7 @@ const LeadersPage = ({data}) => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
+                  placeholder="email@example.com"
                 />
               </label>
               <button type="submit">Submit</button>
