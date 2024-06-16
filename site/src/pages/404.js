@@ -17,7 +17,6 @@ export const Head = () => {
 };
 
 const NotFoundPage = ({location}) => {
-  console.log(location);
   const title = 'This page cannot be found';
   const slug = '/404';
   const excerpt = `Sometimes life is hard and doesn't give us what we want. This is one of those times. The page you have requested does not exist or has moved somewhere else.`;
