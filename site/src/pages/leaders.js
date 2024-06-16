@@ -11,7 +11,7 @@ export const Head = () => {
     <>
       <PageHead
         title="Leaders | ajfisher.me"
-        description="Information about leaders"
+        description="Information for leaders"
         type="article"
       />
     </>
@@ -20,7 +20,6 @@ export const Head = () => {
 
 
 const LeadersPage = ({data}) => {
-  console.log(data.headimage.nodes[0]);
   const {base, large, medium, small, wide, share} = data?.headimage?.nodes[0];
 
   const featuredImageSrc = getFeaturedImageSources({
@@ -44,7 +43,6 @@ const LeadersPage = ({data}) => {
   };
 
   const submitURL = 'https://docs.google.com/forms/d/e/1FAIpQLSei22e0iBvHq5b3wrhOTetsVk_srB4a1pLzotYPKnGmi2dNYg/formResponse';
-  //const submitURL = 'https://script.google.com/macros/s/AKfycbycGh1DtxirxjS-pkiSsTkw4299LWW5HOrfoJshZMqVoIFCO5fOYEvRDtfI6QufAGWq/exec';
 
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -79,7 +77,6 @@ const LeadersPage = ({data}) => {
     }
   };
 
-// const Layout = ({ children, frontmatter, featuredimage, path, readingTime, tags, relatedposts}) => {
   return (
     <Layout frontmatter={frontmatter} tags={['leadership', 'resources']}
       path='/leaders' featuredimage={featuredImageSrc}
