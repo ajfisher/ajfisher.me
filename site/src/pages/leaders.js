@@ -93,6 +93,8 @@ const LeadersPage = ({data}) => {
           helpful. If you come across something you think should be on here then
           please reach out to me and let me know</p>
 
+        <h4>Articles and documents</h4>
+        <p>These are articles, documents or tools I've found helpful:</p>
         <p>
           <ul>
             <li>Practical explanation on <Link
@@ -119,6 +121,24 @@ const LeadersPage = ({data}) => {
             <li>How to <Link
               to="https://www.linkedin.com/pulse/nurturing-relationships-heart-networking-cath-andrew-duacc"
               >nurture relationships</Link> - by Cath Andrew - a great HR leader.
+            </li>
+          </ul>
+        </p>
+
+        <h4>Podcasts and other media</h4>
+        <p>If you like to listen, these are some podcasts that I think are worth
+          your time:</p>
+        <p>
+          <ul>
+            <li><Link
+              to="https://amantha.com/podcast/">How I Work</Link>
+                - by Amantha Imber. Practical tips around productivity but a lot
+                of it relates to how you can manage your team too.
+            </li>
+            <li><Link
+              to="https://hbr.org/2018/01/podcast-ideacast">HBR Ideacast</Link>.
+                Different management and leadership topics as well as some
+                general business - often linked back to articles or further details.
             </li>
           </ul>
         </p>
