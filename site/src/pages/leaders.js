@@ -87,6 +87,10 @@ const LeadersPage = ({data}) => {
         <p>Thanks for attending my recent talk. Below you'll find some resources
           that I think may be helpful for your leadership journey.</p>
 
+        <p>Slides from my recent talk at Web Directions Code Leaders, including
+          notes, are <Link to="/talks/follow_me_talk.pdf">available here for
+          download (PDF)</Link>.</p>
+
         <h3>Resources</h3>
 
         <p>These are some resources that I've found that have been genuinely
