@@ -87,9 +87,17 @@ const LeadersPage = ({data}) => {
         <p>Thanks for attending my recent talk. Below you'll find some resources
           that I think may be helpful for your leadership journey.</p>
 
+        <p>You can view the slides from my talk below, or alternatively <a
+          href="https://wdcl2024.ajf.io/">visit the site</a> for the large
+          version.</p>
+
+        <p class="mediacontainer"><iframe title="Follow Me Slides"
+          src="https://wdcl2024.ajf.io/?embed"></iframe></p>
+
         <p>Slides from my recent talk at Web Directions Code Leaders, including
-          notes, are <Link to="/talks/follow_me_talk.pdf">available here for
-          download (PDF)</Link>.</p>
+          notes, are <a
+            href="https://wdcl2024.ajf.io/static/follow_me_talk.pdf">available here for
+          download (PDF 60MB)</a>.</p>
 
         <h3>Resources</h3>
 
@@ -101,30 +109,30 @@ const LeadersPage = ({data}) => {
         <p>These are articles, documents or tools I've found helpful:</p>
         <p>
           <ul>
-            <li>Practical explanation on <Link
-                  to="https://www.coachforsuccess.com/3-steps-to-create-relationship-maps-for-professional-success/">
+            <li>Practical explanation on <a
+                  href="https://www.coachforsuccess.com/3-steps-to-create-relationship-maps-for-professional-success/">
                 relationship maps
-              </Link> and how to use them.
+              </a> and how to use them.
             </li>
-            <li>How to pull together a <Link
-              to="https://www.teamagile.no/vi-deler/teamcontract">team contract</Link> /
+            <li>How to pull together a <a
+              href="https://www.teamagile.no/vi-deler/teamcontract">team contract</a> /
                 social contract
             </li>
-            <li>An alternative approach to a <Link
-              to="https://theteamcanvas.com/learn/">team canvas</Link> using a
+            <li>An alternative approach to a <a
+              href="https://theteamcanvas.com/learn/">team canvas</a> using a
                 web based tool
             </li>
-            <li><Link to="https://hbr.org/">hbr.org</Link> - an outstanding
+            <li><a href="https://hbr.org/">hbr.org</a> - an outstanding
               resource for management content. Yes, you need to get a subscription
               but you can expense it.
             </li>
-            <li>Why capabilities in your people are key - <Link
-              to="https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/to-lead-in-the-postcrisis-tomorrow-put-leadership-and-capabilities-in-place-today"
-              >McKinsey</Link>
+            <li>Why capabilities in your people are key - <a
+              href="https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/to-lead-in-the-postcrisis-tomorrow-put-leadership-and-capabilities-in-place-today"
+              >McKinsey</a>.
             </li>
-            <li>How to <Link
-              to="https://www.linkedin.com/pulse/nurturing-relationships-heart-networking-cath-andrew-duacc"
-              >nurture relationships</Link> - by Cath Andrew - a great HR leader.
+            <li>How to <a
+              href="https://www.linkedin.com/pulse/nurturing-relationships-heart-networking-cath-andrew-duacc"
+              >nurture relationships</a> - by Cath Andrew - a great HR leader.
             </li>
           </ul>
         </p>
@@ -134,13 +142,13 @@ const LeadersPage = ({data}) => {
           your time:</p>
         <p>
           <ul>
-            <li><Link
-              to="https://amantha.com/podcast/">How I Work</Link>
+            <li><a
+              href="https://amantha.com/podcast/">How I Work</a>
                 - by Amantha Imber. Practical tips around productivity but a lot
                 of it relates to how you can manage your team too.
             </li>
-            <li><Link
-              to="https://hbr.org/2018/01/podcast-ideacast">HBR Ideacast</Link>.
+            <li><a
+              href="https://hbr.org/2018/01/podcast-ideacast">HBR Ideacast</a>.
                 Different management and leadership topics as well as some
                 general business - often linked back to articles or further details.
             </li>

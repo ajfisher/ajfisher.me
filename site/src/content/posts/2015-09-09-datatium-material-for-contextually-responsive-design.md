@@ -34,9 +34,10 @@ screen sizes (though we have thankfully moved on from simply pixel sizes) and
 truly understand context first in order to be able to create good responsive
 experiences.
 
-<p class="mediacontainer"><iframe title="Datatium slides" src="http://datatium.ajf.io/"></iframe></p>
+<p class="mediacontainer"><iframe title="Datatium slides"
+    src="https://datatium.ajf.io/"></iframe></p>
 
-<p class="caption"><a href="http://datatium.ajf.io/">Datatium - Data as material
+<p class="caption"><a href="https://datatium.ajf.io/">Datatium - Data as material
 for contextually responsive design</a> - (CC) ajfisher</p>
 
-Large version is available at [datatium.ajf.io](http://datatium.ajf.io/)
+Large version is available at [datatium.ajf.io](https://datatium.ajf.io/)
