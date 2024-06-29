@@ -35,13 +35,15 @@ and explored numerous facets of the Device API, including:
 
 The presentation is embedded below:
 
-<p class="mediacontainer"><iframe title="A device API safari" src="//www.slideshare.net/slideshow/embed_code/key/BGkZl6CDNLabUl" allowfullscreen frameborder="0"></iframe></p>
+<p class="mediacontainer"><iframe title="A device API safari"
+    src="//www.slideshare.net/slideshow/embed_code/key/BGkZl6CDNLabUl"
+    allowfullscreen frameborder="0"></iframe></p>
 
 [A Device API Safari - WDC 2014](//www.slideshare.net/andrewjfisher/a-device-api-safari-web-directions-code-2014)
 
 The main aim of this talk was to have a large number of demos in the 20 minute
 presentation in order to show case what was possible. All the code for these
-demos is [available in the repo.](http://github.com/ajfisher/wdc)
+demos is [available in the repo.](https://github.com/ajfisher/wdc)
 
 The demos are embedded below if you'd like to play with them in more detail noting
 that support can be a bit hit and miss. Firefox is pretty much guaranteed.
@@ -50,19 +52,24 @@ that support can be a bit hit and miss. Firefox is pretty much guaranteed.
 
 Support: all mobile devices with a proximity sensor
 
-<p class="mediacontainer"><iframe title="Proximity sensor test" src="http://wdc14.ajf.io/examples/proximity/" frameborder="0"></iframe></p>
+<p class="mediacontainer"><iframe title="Proximity sensor test"
+    src="https://wdc14.ajf.io/examples/proximity/" frameborder="0"></iframe></p>
 
-[Proximity detection](http://wdc14.ajf.io/examples/proximity/)
+[Proximity detection](https://wdc14.ajf.io/examples/proximity/)
 
-<p class="mediacontainer"><iframe title="Video of proximity test" src="https://www.youtube.com/embed/7cgug03jmVw" frameborder="0" allowfullscreen></iframe></p>
+<p class="mediacontainer"><iframe title="Video of proximity test"
+    src="https://www.youtube.com/embed/7cgug03jmVw" frameborder="0"
+    allowfullscreen></iframe></p>
 
 ## Battery
 
 Support: All modern browsers except IE (any)
 
-<p class="mediacontainer"><iframe title="Battery API example" src="http://wdc14.ajf.io/examples/battery/demo.html" frameborder="0"></iframe></p>
+<p class="mediacontainer"><iframe title="Battery API example"
+    src="https://wdc14.ajf.io/examples/battery/demo.html"
+    frameborder="0"></iframe></p>
 
-[Battery level](http://wdc14.ajf.io/examples/battery/demo.html)
+[Battery level](https://wdc14.ajf.io/examples/battery/demo.html)
 
 ## Vibration
 
@@ -70,15 +77,19 @@ Support: Most devices that have vibration motor in them
 
 Application in HTML games:
 
-<p class="mediacontainer"><iframe title="Vibration motor example" src="https://www.youtube.com/embed/0AC_InC0QMA" frameborder="0" allowfullscreen></iframe></p>
+<p class="mediacontainer"><iframe title="Vibration motor example"
+    src="https://www.youtube.com/embed/0AC_InC0QMA" frameborder="0"
+    allowfullscreen></iframe></p>
 
-[Racer](http://wdc14.ajf.io/examples/racing_car/)
+[Racer](https://wdc14.ajf.io/examples/racing_car/)
 
 Application in form error reporting:
 
-<p class="mediacontainer"><iframe title="Vibrating form example" src="http://wdc14.ajf.io/examples/vibrate/form.html" frameborder="0"></iframe></p>
+<p class="mediacontainer"><iframe title="Vibrating form example"
+    src="https://wdc14.ajf.io/examples/vibrate/form.html"
+    frameborder="0"></iframe></p>
 
-[Vibration form](http://wdc14.ajf.io/examples/vibrate/form.html)
+[Vibration form](https://wdc14.ajf.io/examples/vibrate/form.html)
 
 ## Ambient light
 
@@ -86,15 +97,20 @@ Support: Firefox on desktop and most mobile devices
 
 Application in contrast modification:
 
-<p class="mediacontainer"><iframe title="Ambient light contrast changer" src="http://wdc14.ajf.io/examples/ambient/contrast.html" frameborder="0"></iframe></p>
+<p class="mediacontainer"><iframe title="Ambient light contrast changer"
+    src="https://wdc14.ajf.io/examples/ambient/contrast.html"
+    frameborder="0"></iframe></p>
 
-[Ambient light for contrast modification](http://wdc14.ajf.io/examples/ambient/contrast.html)
+[Ambient light for contrast modification](https://wdc14.ajf.io/examples/ambient/contrast.html)
 
 Application in silliness:
 
-<p class="mediacontainer"><iframe title="Video showing ambient light changes" src="https://www.youtube.com/embed/E2Eu5gRvkME" frameborder="0" allowfullscreen></iframe></p>
+<p class="mediacontainer"><iframe title="Video showing ambient light changes"
+    src="https://www.youtube.com/embed/E2Eu5gRvkME" frameborder="0"
+    allowfullscreen></iframe></p>
 
-<p class="mediacontainer"><iframe title="Ambient light demo" src="http://wdc14.ajf.io/examples/ambient/ghosts.html" frameborder="0"></iframe></p>
+<p class="mediacontainer"><iframe title="Ambient light demo"
+    src="https://wdc14.ajf.io/examples/ambient/ghosts.html" frameborder="0"></iframe></p>
 
-[Ghosts appearing over video stream](http://wdc14.ajf.io/examples/ambient/ghosts.html)
+[Ghosts appearing over video stream](https://wdc14.ajf.io/examples/ambient/ghosts.html)
 

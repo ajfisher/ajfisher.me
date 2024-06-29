@@ -31,4 +31,5 @@ devices that were built were:
 * Ambient light visualisation
 * Temperature data logger
 
-<p class="mediacontainer"><iframe title="JS IOT slides" frameborder="0" src="http://jsiot.ajf.io/"></iframe></p>
+<p class="mediacontainer"><iframe title="JS IOT slides" frameborder="0"
+    src="https://jsiot.ajf.io/"></iframe></p>
