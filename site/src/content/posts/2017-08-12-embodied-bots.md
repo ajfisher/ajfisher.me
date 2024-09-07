@@ -8,6 +8,10 @@ tags: development, design, AI, robotics, philosophy, talks
 excerpt: >
     Explorations of how to build bots with JavaScript that blend virtual and
     physical worlds, using chat interfaces like Slack to create embodied agents.
+twitter_excerpt: >
+    How we built bots with JavaScript that interact with both virtual
+    and physical worlds, using platforms like Slack. Full slides and code examples
+    from DDD Melbourne. #bots #JavaScript #DDDMelbourne #nlp
 listimage: ../../img/posts/embodied_bots_list.png
 featureimage: ../../img/posts/embodied_bots_touch.png
 imageby: ajfisher - Embodied bots coversations - Flux.Dev
