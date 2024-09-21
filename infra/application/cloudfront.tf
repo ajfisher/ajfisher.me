@@ -6,8 +6,8 @@ resource "aws_cloudfront_origin_access_identity" "origin_access_identity" {
 resource "aws_cloudfront_distribution" "web_app" {
   enabled             = true
   is_ipv6_enabled     = true
-  price_class         = "PriceClass_100"
-  http_version        = "http2"
+  price_class         = "PriceClass_All"
+  http_version        = "http2and3"
   wait_for_deployment = false
 
   aliases = ["ajfisher.me"]
@@ -47,8 +47,6 @@ resource "aws_cloudfront_distribution" "web_app" {
     forwarded_values {
       query_string = false
 
-      # headers       = ["Origin"]
-
       cookies {
         forward = "none"
       }
@@ -76,7 +74,7 @@ resource "aws_cloudfront_distribution" "web_app" {
   viewer_certificate {
     acm_certificate_arn      = aws_acm_certificate.apex_cert.arn
     ssl_support_method       = "sni-only"
-    minimum_protocol_version = "TLSv1.2_2018"
+    minimum_protocol_version = "TLSv1.2_2021"
   }
 
   depends_on = [aws_acm_certificate_validation.apex_cert]
@@ -100,11 +98,12 @@ resource "aws_cloudfront_distribution" "redirect_distribution" {
   is_ipv6_enabled = true
 
   aliases             = ["www.ajfisher.me"]
-  price_class         = "PriceClass_100"
+  price_class         = "PriceClass_All"
+  http_version        = "http2and3"
   wait_for_deployment = false
 
   origin {
-    domain_name = aws_s3_bucket.redirect_to_apex.website_endpoint
+    domain_name = aws_s3_bucket_website_configuration.redirect_to_apex.website_endpoint
     origin_id   = "origin-redirect-app-${aws_s3_bucket.redirect_to_apex.id}"
 
     // The redirect origin must be http even if it's on S3 for redirects to work properly
@@ -138,7 +137,7 @@ resource "aws_cloudfront_distribution" "redirect_distribution" {
   viewer_certificate {
     acm_certificate_arn      = aws_acm_certificate.app_cert.arn
     ssl_support_method       = "sni-only"
-    minimum_protocol_version = "TLSv1.2_2018"
+    minimum_protocol_version = "TLSv1.2_2021"
   }
 
   restrictions {
