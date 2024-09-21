@@ -133,7 +133,7 @@ const StyledPostArticle = styled(Article)`
   }
 `;
 
-const StyledAttribution = styled.section`
+const StyledAttribution = styled.aside`
   padding: calc(0.25 * var(--gutter)) 0;
   background: var(--light-bg-tint);
   border-bottom: 0.4rem solid var(--light-base);
@@ -143,10 +143,6 @@ const StyledAttribution = styled.section`
     border-bottom: none;
     border-top: 0.4rem solid var(--light-base);
     margin-bottom: var(--gutter);
-  }
-
-  & h4 {
-    color: var(--base);
   }
 `;
 
@@ -173,6 +169,7 @@ const Attributes = styled.dl`
     margin: 0;
     margin-bottom: var(--gutter);
     font-size: 1.5rem;
+    min-height: 2.4rem;
 
     @media only screen and ${device.medium} {
       margin-left: var(--gutter);
@@ -188,14 +185,12 @@ const Attributes = styled.dl`
   }
 `
 
-const StyledRelatedPosts = styled.section`
-
-  & h4 {
-    color: var(--base);
-  }
+const StyledRelatedPosts = styled.aside`
 
   & li p {
     padding: 0;
+    font-size: 2.2rem;
+
 
     & a, & a:visited {
       color: var(--base);
@@ -231,8 +226,8 @@ export const Attribution = ({author, featuredImageBy,
   }
 
   return(
-    <StyledAttribution>
-      <h4>About this post</h4>
+    <StyledAttribution aria-label="Post attribution information">
+      <h2>About this post</h2>
       <Attributes>
         <Attribute name="Title">"{title}"</Attribute>
         <Attribute name="Published on"
@@ -274,8 +269,8 @@ export const PostArticle = ({children, featuredImageBy, featuredImageLink,
     <StyledPostArticle>
       {children}
       {relatedposts.length >= 2 &&
-        <StyledRelatedPosts>
-          <h4>Similar posts you might like</h4>
+        <StyledRelatedPosts aria-label="Related content">
+          <h2>Similar posts you might like</h2>
           <RelatedList>
             {relatedposts.map(({post}) => {
 

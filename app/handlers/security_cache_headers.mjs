@@ -4,7 +4,7 @@
 // Thanks to https://www.ximedes.com/2018-04-23/deploying-gatsby-on-s3-and-cloudfront/
 // for the approach which is very solid
 
-exports.handler = (event, context, callback) => {
+export const handler = async (event) => {
   const request = event.Records[0].cf.request;
   const response = event.Records[0].cf.response;
   const headers = response.headers;
@@ -108,5 +108,5 @@ exports.handler = (event, context, callback) => {
     }
   ].forEach(h => (headers[h.key.toLowerCase()] = [h]));
 
-  callback(null, response);
+  return response;
 };

@@ -1,34 +1,56 @@
 # logfiles for the front end application
 resource "aws_s3_bucket" "website_logs" {
   bucket = "aj-web-logs-${var.env}"
-  acl    = "log-delivery-write"
   tags = {
     src       = "terraform"
     component = "logs"
   }
+}
 
-  server_side_encryption_configuration {
-    rule {
-      apply_server_side_encryption_by_default {
-        sse_algorithm = "AES256"
-      }
+resource "aws_s3_bucket_server_side_encryption_configuration" "website-logs-encryption" {
+  bucket = aws_s3_bucket.website_logs.id
+
+  rule {
+    apply_server_side_encryption_by_default {
+      sse_algorithm     = "AES256"
     }
   }
+}
+
+resource "aws_s3_bucket_ownership_controls" "website_logs" {
+  bucket = aws_s3_bucket.website_logs.id
+  rule {
+    object_ownership = "BucketOwnerPreferred"
+  }
+}
+
+resource "aws_s3_bucket_acl" "website_logs" {
+  depends_on = [aws_s3_bucket_ownership_controls.website_logs]
+
+  bucket = aws_s3_bucket.website_logs.id
+  acl = "log-delivery-write"
 }
 
 # redirection bucket
 resource "aws_s3_bucket" "redirect_to_apex" {
   bucket = "ajfisher-site-apex-redirect-${var.env}"
+}
 
-  website {
-    redirect_all_requests_to = "https://ajfisher.me"
+resource "aws_s3_bucket_website_configuration" "redirect_to_apex" {
+  bucket = aws_s3_bucket.redirect_to_apex.id
+
+  redirect_all_requests_to {
+    host_name = "ajfisher.me"
+    protocol = "https"
   }
+}
 
-  server_side_encryption_configuration {
-    rule {
-      apply_server_side_encryption_by_default {
-        sse_algorithm = "AES256"
-      }
+resource "aws_s3_bucket_server_side_encryption_configuration" "redirect-encryption" {
+  bucket = "ajfisher-site-apex-redirect-${var.env}"
+
+  rule {
+    apply_server_side_encryption_by_default {
+      sse_algorithm     = "AES256"
     }
   }
 }

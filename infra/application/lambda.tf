@@ -66,7 +66,7 @@ resource "aws_lambda_function" "redirect_lambda" {
 
   source_code_hash = data.archive_file.cloudfront_lambda_functions.output_base64sha256
 
-  runtime = "nodejs14.x"
+  runtime = "nodejs20.x"
 }
 
 resource "aws_lambda_function" "header_lambda" {
@@ -79,6 +79,6 @@ resource "aws_lambda_function" "header_lambda" {
 
   source_code_hash = data.archive_file.cloudfront_lambda_functions.output_base64sha256
 
-  runtime = "nodejs14.x"
+  runtime = "nodejs20.x"
 }
 
