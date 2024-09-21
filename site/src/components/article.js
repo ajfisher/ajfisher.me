@@ -169,6 +169,7 @@ const Attributes = styled.dl`
     margin: 0;
     margin-bottom: var(--gutter);
     font-size: 1.5rem;
+    min-height: 2.4rem;
 
     @media only screen and ${device.medium} {
       margin-left: var(--gutter);
