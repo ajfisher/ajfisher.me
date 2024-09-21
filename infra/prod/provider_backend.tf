@@ -11,9 +11,9 @@ provider "aws" {
 resource "aws_s3_bucket" "ajsite-terraform-state" {
   bucket = "ajfisher-site-terraform-state"
 
-  versioning {
-    enabled = true
-  }
+  #  versioning {
+  #    enabled = true
+  #  }
 
   lifecycle {
     prevent_destroy = true
@@ -23,11 +23,28 @@ resource "aws_s3_bucket" "ajsite-terraform-state" {
     Name = "Terraform S3 remote state store"
   }
 
-  server_side_encryption_configuration {
-    rule {
-      apply_server_side_encryption_by_default {
-        sse_algorithm = "AES256"
-      }
+  #  server_side_encryption_configuration {
+  #    rule {
+  #      apply_server_side_encryption_by_default {
+  #        sse_algorithm = "AES256"
+  #      }
+  #    }
+  #  }
+}
+resource "aws_s3_bucket_versioning" "ajfisher-terraform-state-versioning" {
+  bucket = "ajfisher-site-terraform-state"
+
+  versioning_configuration {
+    status = "Enabled"
+  }
+}
+
+resource "aws_s3_bucket_server_side_encryption_configuration" "ajfisher-terraform-state-encryption" {
+  bucket = "ajfisher-site-terraform-state"
+
+  rule {
+    apply_server_side_encryption_by_default {
+      sse_algorithm     = "AES256"
     }
   }
 }
