@@ -6,11 +6,10 @@ slug: moving-to-metalsmith
 title: Making the move to metalsmith
 large-title: true
 tags: development, javascript, web, internet, open source, nodejs
-featureimage: ../../img/posts/forging.jpg
+featureimage: ../../img/posts/forging.png
 featureimage-position: 100% 100%
-imageby: Flavio~
-imagelink: https://www.flickr.com/photos/37873897@N06/7070849827/
-listimage: ../../img/posts/forging.jpg
+imageby: ajfisher, generated using FLUX.dev
+listimage: ../../img/posts/forging.png
 excerpt: >
     I moved this site from WP to metalsmith.io in order to get a more pure
     authoring experience. The result is good, though there were a few gotchas
