@@ -7,6 +7,8 @@ title: 2010 will be the year Apple and Google have a cage fight
 small-title: true
 tags: android, Apple, google, internet, iphone, mobile, predictions
 listimage: ../../img/posts/cagefight.jpg
+featureimage: ../../img/posts/fighters.png
+imageby: ajfisher - Fighters in a ring - FLUX.dev
 ---
 
 The pre-match slanging is pretty much over and the location of the fight has
