@@ -115,7 +115,7 @@
 }
 
 /** change gutter values depending on screen size **/
-@media only screen and (min-width: 501px) { /** Medium up **/
+@media only screen and (min-width: 601px) { /** Medium up **/
     :root {
         --gutter: var(--gutter-medium);
     }
