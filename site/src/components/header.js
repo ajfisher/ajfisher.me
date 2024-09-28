@@ -1,14 +1,25 @@
 import { Link } from 'gatsby';
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 import humanize from 'humanize-plus';
 import moment from 'moment';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCamera, faClock } from '@fortawesome/free-solid-svg-icons';
 
 import { device } from './devices';
-const TextHeader = styled.header`
+
+const BaseHeader = styled.header`
   box-sizing: border-box;
   border-bottom: 2px solid var(--highlight);
+
+  -webkit-box-shadow: 0 0.5rem 0.8rem #aaa;
+     -moz-box-shadow: 0 0.5rem 0.8rem #aaa;
+          box-shadow: 0 0.65rem 0.8rem #aaa;
+`;
+
+const TextHeader = styled(BaseHeader)`
   min-height: 50vh;
   margin: 0;
   padding: var(--gutter) 0;
@@ -17,9 +28,6 @@ const TextHeader = styled.header`
   background-color: var(--darkened-grey);
   background: linear-gradient(45deg, var(--dark-base) 30%, var(--highlight) 100%);
 
-  -webkit-box-shadow: 0 0.5rem 0.8rem #aaa;
-     -moz-box-shadow: 0 0.5rem 0.8rem #aaa;
-          box-shadow: 0 0.65rem 0.8rem #aaa;
 
   @media only screen and ${device.medium} {
     min-height: 60vh;
@@ -33,7 +41,32 @@ const TextHeader = styled.header`
   }
 `;
 
-const ImageHeader = styled(TextHeader)`
+const ImageHeader = styled(BaseHeader)`
+  background: var(--darkened-grey);
+
+  .headerimage {
+    min-height: 60vh;
+
+    @media only screen and ${device.small} {
+      min-height: 60vh;
+    }
+
+    @media only screen and ${device.medium} {
+      min-height: 65vh;
+    }
+
+    @media only screen and ${device.large} {
+      min-height: 40vh;
+      max-height: 55vh;
+    }
+
+    @media only screen and ${device.wide} {
+      max-height: 60vh;
+    }
+  }
+`;
+
+const OldImageHeader = styled(BaseHeader)`
   background-color: var(--darkened-grey);
   background-repeat: no-repeat;
   background-position: center;
@@ -61,37 +94,46 @@ const ImageHeader = styled(TextHeader)`
 const Container = styled.div`
   margin:0;
   width: 100vw;
+  margin-top: -10rem;
   padding-top: 0rem;
+  padding-bottom: var(--gutter);
+  position: relative;
+  z-index: 2;
 
+  @media only screen and ${device.small} {
+    margin-top: -12rem;
+    padding-bottom: calc(0.5 * var(--gutter));
+  }
   @media only screen and ${device.medium} {
-    /** width: 90vw;
-    margin: 0 5vw;**/
   }
 
   @media only screen and ${device.large} {
-    max-width: 687px;
   }
 
   @media only screen and ${device.wide} {
     max-width: 1020px;
     margin: 0 auto;
+    margin-top: -15rem;
   }
 `
 
 const StyledTitle = styled.h1`
+  /** margin: 0rem var(--gutter);**/
+  /** min-height: 25vh;
+  max-height: 35vh;**/
+  /** max-width: calc(100% - 2 * var(--gutter));
+  border-radius: 0.2rem; **/
+
   background-color: var(--light-base);
   padding: var(--gutter);
-  margin: 0rem var(--gutter);
   color: var(--dark-base);
-  min-height: 25vh;
-  max-height: 35vh;
   width: min-content;
-  min-width: 60vw;
-  max-width: calc(100% - 2 * var(--gutter));
-  border-radius: 0.2rem;
+  min-width: 90vw;
+  min-height: 12rem;
   box-sizing: border-box;
   font-size: 4rem;
   line-height: 4rem;
+  margin: 0;
 
   &.enlarge {
     font-size: 5rem;
@@ -131,6 +173,10 @@ const StyledTitle = styled.h1`
     color: var(--dark-grey);
   }
 
+  @media only screen and ${device.small} {
+    min-width: 80vw;
+  }
+
   @media only screen and ${device.medium} {
     padding: var(--gutter);
     max-width: 70vw;
@@ -143,14 +189,16 @@ const StyledTitle = styled.h1`
     line-height: 6rem;
     width: 61vw;
     max-height: 40vh;
+    min-width: 70vw;
   }
 
   @media only screen and ${device.wide} {
-    min-width: unset;
-    max-width: calc(66% - var(--gutter));
-    min-height: 35vh;
-    max-height: 45vh;
-    margin: 0;
+    min-width: 60vw;
+    /**min-width: unset;**/
+    /**max-width: calc(66% - var(--gutter));**/
+    /**min-height: 35vh;**/
+    /**max-height: 45vh;**/
+    /**margin: 0;**/
     /**width: 45%;**/
   }
 `;
@@ -160,7 +208,10 @@ const Para = styled.p`
   padding: 0 var(--gutter);
   font-size: 1.8rem;
   margin: var(--gutter) 0;
+  margin-block-end: 0;
   box-sizing: border-box;
+  width: min-content;
+  min-width: 70vw;
 
   @media only screen and ${device.medium} {
     font-size: 2rem;
@@ -174,7 +225,8 @@ const Para = styled.p`
   }
 
   @media only screen and ${device.wide} {
-    max-width: 61%;
+    /**max-width: 61%;**/
+    min-width: 60vw;
   }
 `;
 
@@ -193,10 +245,16 @@ const Lede = styled(Para)`
 
 const PostData = styled(Para)`
   font-size: 1.8rem;
-  margin-bottom: 0;
+  color: var(--lightened-grey);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: calc(0.5 * var(--gutter));
+  min-width: 90vw;
 
   & span {
-    color: var(--light-base);
+    /**color: var(--light-base);**/
   }
 
   @media only screen and ${device.medium} {
@@ -236,8 +294,64 @@ const Featured = styled.p`
   font-size: 1.8rem;
 `;
 
+const Header = ({
+  title, date, excerpt, url,
+  featured=false,
+  featuredimage, featuredImageBy,
+  smalltitle, largetitle,
+  readingTime=0, wordCount={} }) => {
 
-const Header = ({ title, date, excerpt, url, featured=false, featuredimage,
+    let formatted_date;
+    if (typeof(date) !== 'undefined') {
+      formatted_date = moment(date).format('ddd, MMM Do YYYY');
+    }
+
+    const rounded_time = Math.ceil(readingTime) || 0;
+    const humanised_words = humanize.compactInteger(wordCount.words, 1) || 0;
+
+    const PostHeader = (typeof(featuredimage) === 'undefined') ? TextHeader : ImageHeader;
+    const postimage = getImage(featuredimage);
+
+    return (
+      <PostHeader>
+        <GatsbyImage image={postimage} alt="test" class="headerimage" />;
+        <Container className="wrapper">
+          { featured &&
+            <Featured>Featured Post</Featured>
+          }
+          <Title url={url} smalltitle={smalltitle} largetitle={largetitle}>{title}</Title>
+          { excerpt != null && excerpt.length > 0 &&
+            <Lede>{excerpt}</Lede>
+          }
+          { typeof(date) !== 'undefined' &&
+            <PublishedDate className="date">Published: {formatted_date}</PublishedDate>
+          }
+          { rounded_time > 0 &&
+            <PostData className="postdata">
+                <span>
+                  <FontAwesomeIcon icon={faClock}/>
+                </span>
+                <span>
+                {rounded_time} min
+                ({humanised_words} words)
+                </span>
+            </PostData>
+          }
+          { typeof(featuredimage) !== 'undefined' &&
+            featuredImageBy &&
+            <PostData>
+              <span>
+                <FontAwesomeIcon icon={faCamera}/>
+              </span>
+              <span>{featuredImageBy}</span>
+            </PostData>
+          }
+        </Container>
+      </PostHeader>
+    );
+};
+
+const OldHeader = ({ title, date, excerpt, url, featured=false, featuredimage,
   smalltitle, largetitle, readingTime={} }) => {
 
     let formatted_date;
@@ -248,7 +362,7 @@ const Header = ({ title, date, excerpt, url, featured=false, featuredimage,
     const rounded_time = Math.ceil(readingTime.minutes) || 0;
     const humanised_words = humanize.compactInteger(readingTime.words, 1) || 0;
 
-    const PostHeader = (typeof(featuredimage) === 'undefined') ? TextHeader : ImageHeader;
+    const PostHeader = (typeof(featuredimage) === 'undefined') ? TextHeader : OldImageHeader;
 
     return (
       <PostHeader $featuredimage={featuredimage}>
@@ -287,3 +401,5 @@ Header.defaultProps = {
 };
 
 export default Header;
+
+export { OldHeader, Header };
