@@ -118,12 +118,6 @@ const Container = styled.div`
 `
 
 const StyledTitle = styled.h1`
-  /** margin: 0rem var(--gutter);**/
-  /** min-height: 25vh;
-  max-height: 35vh;**/
-  /** max-width: calc(100% - 2 * var(--gutter));
-  border-radius: 0.2rem; **/
-
   background-color: var(--light-base);
   padding: var(--gutter);
   color: var(--dark-base);
@@ -194,12 +188,6 @@ const StyledTitle = styled.h1`
 
   @media only screen and ${device.wide} {
     min-width: 60vw;
-    /**min-width: unset;**/
-    /**max-width: calc(66% - var(--gutter));**/
-    /**min-height: 35vh;**/
-    /**max-height: 45vh;**/
-    /**margin: 0;**/
-    /**width: 45%;**/
   }
 `;
 
@@ -252,10 +240,6 @@ const PostData = styled(Para)`
   align-items: flex-start;
   gap: calc(0.5 * var(--gutter));
   min-width: 90vw;
-
-  & span {
-    /**color: var(--light-base);**/
-  }
 
   @media only screen and ${device.medium} {
     font-size: 2rem;
