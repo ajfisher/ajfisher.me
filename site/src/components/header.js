@@ -11,40 +11,18 @@ import { faCamera, faClock } from '@fortawesome/free-solid-svg-icons';
 import { device } from './devices';
 
 const BaseHeader = styled.header`
+  background: var(--darkened-grey);
+
   box-sizing: border-box;
   border-bottom: 2px solid var(--highlight);
+
+  margin: 0;
 
   -webkit-box-shadow: 0 0.5rem 0.8rem #aaa;
      -moz-box-shadow: 0 0.5rem 0.8rem #aaa;
           box-shadow: 0 0.65rem 0.8rem #aaa;
-`;
 
-const TextHeader = styled(BaseHeader)`
-  min-height: 50vh;
-  margin: 0;
-  padding: var(--gutter) 0;
-
-  /** Put the background gradient in**/
-  background-color: var(--darkened-grey);
-  background: linear-gradient(45deg, var(--dark-base) 30%, var(--highlight) 100%);
-
-
-  @media only screen and ${device.medium} {
-    min-height: 60vh;
-    max-height: 90vh;
-    padding: var(--gutter) 0;
-  }
-
-  // put the little shadow along the bottom for big screens.
-  @media only screen and ${device.large} {
-    min-height: 70vh;
-  }
-`;
-
-const ImageHeader = styled(BaseHeader)`
-  background: var(--darkened-grey);
-
-  .headerimage {
+  .headerimage, .imagefill {
     min-height: 60vh;
 
     @media only screen and ${device.small} {
@@ -64,6 +42,32 @@ const ImageHeader = styled(BaseHeader)`
       max-height: 60vh;
     }
   }
+`;
+
+const TextHeader = styled(BaseHeader)`
+  /**padding: var(--gutter) 0;**/
+
+  /**
+  @media only screen and ${device.medium} {
+    min-height: 60vh;
+    max-height: 90vh;
+    padding: var(--gutter) 0;
+  }
+
+  @media only screen and ${device.large} {
+    min-height: 70vh;
+  }
+  **/
+
+  .imagefill {
+    /** Put the background gradient in**/
+    background-color: var(--darkened-grey);
+    background: linear-gradient(45deg, var(--dark-base) 30%, var(--highlight) 100%);
+  }
+`;
+
+const ImageHeader = styled(BaseHeader)`
+  /** this is a noop as sizing handled in base **/
 `;
 
 const OldImageHeader = styled(BaseHeader)`
@@ -123,7 +127,7 @@ const StyledTitle = styled.h1`
   color: var(--dark-base);
   width: min-content;
   min-width: 90vw;
-  min-height: 12rem;
+  min-height: 14rem;
   box-sizing: border-box;
   font-size: 4rem;
   line-height: 4rem;
@@ -187,7 +191,8 @@ const StyledTitle = styled.h1`
   }
 
   @media only screen and ${device.wide} {
-    min-width: 60vw;
+    min-width: 67%;
+    width: 67%;
   }
 `;
 
@@ -213,8 +218,7 @@ const Para = styled.p`
   }
 
   @media only screen and ${device.wide} {
-    /**max-width: 61%;**/
-    min-width: 60vw;
+    min-width: 67%;
   }
 `;
 
@@ -293,12 +297,18 @@ const Header = ({
     const rounded_time = Math.ceil(readingTime) || 0;
     const humanised_words = humanize.compactInteger(wordCount.words, 1) || 0;
 
-    const PostHeader = (typeof(featuredimage) === 'undefined') ? TextHeader : ImageHeader;
+    console.log(`what is the ${featuredimage}`);
+    const PostHeader = (featuredimage === null) ? TextHeader : ImageHeader;
     const postimage = getImage(featuredimage);
 
     return (
       <PostHeader>
-        <GatsbyImage image={postimage} alt="test" class="headerimage" />;
+        { featuredimage !== null &&
+          <GatsbyImage image={postimage} alt="test" class="headerimage" />
+        }
+        { featuredimage === null &&
+          <div class="imagefill" />
+        }
         <Container className="wrapper">
           { featured &&
             <Featured>Featured Post</Featured>
