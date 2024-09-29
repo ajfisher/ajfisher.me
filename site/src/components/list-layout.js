@@ -16,13 +16,13 @@ const Layout = ({ children, featured={}, slug}) => {
   const excerpt = frontmatter.excerpt || fields.excerpt || featured?.excerpt || '';
   const url = `/${pathDate(frontmatter.date)}/${frontmatter.slug}/`;
 
-  const {title, date} = frontmatter;
+  const {title, date, imageby} = frontmatter;
   const featuredImage = frontmatter?.featureimage || null;
-  const {imageby} = frontmatter;
+  const featurePost = frontmatter.featured || false;
 
   return (
     <>
-      <Header featured='true' title={title} date={date}
+      <Header featured={featurePost} title={title} date={date}
         excerpt={excerpt} url={url}
         featuredimage={featuredImage} featuredImageBy={imageby}
         smalltitle={frontmatter.small_title} largetitle={frontmatter.large_title}

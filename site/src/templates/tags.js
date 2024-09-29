@@ -47,6 +47,7 @@ export default function Template({ pageContext, data}) {
     // get the first one from the list instead and shift it off the front of the
     // main post list.
     [featuredPost, ...filteredPosts] = posts?.edges;
+    featuredPost = featuredPost.node;
   }
 
   const pluralPosts = (filteredPosts?.length > 1) ? 'posts' : 'post';
