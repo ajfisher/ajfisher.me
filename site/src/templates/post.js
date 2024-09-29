@@ -32,7 +32,7 @@ export default function Template({ data, location }) {
   const { fields, frontmatter, html, related, timeToRead, wordCount} = markdownRemark;
   const { taglist } = fields;
 
-  const featuredImage = frontmatter?.featureimage;
+  const featuredImage = frontmatter?.featureimage || null;
 
   return (
     <Layout frontmatter={frontmatter} featuredimage={featuredImage}

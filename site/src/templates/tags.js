@@ -33,7 +33,7 @@ export default function Template({ pageContext, data}) {
   let filteredPosts = [];
 
   if (featured?.edges.length > 0) {
-    featuredPost = featured.edges[0];
+    featuredPost = featured.edges[0].node;
     // filter the main posts so that the featured post is pulled out as it
     // is going to be displayed separately. Do this just by taking the slug
     // from the featured posts and then filtering the main post list against it
@@ -52,7 +52,7 @@ export default function Template({ pageContext, data}) {
   const pluralPosts = (filteredPosts?.length > 1) ? 'posts' : 'post';
 
   return (
-    <Layout slug={slug} featured={featuredPost.node}>
+    <Layout slug={slug} featured={featuredPost}>
       {filteredPosts.length > 0 ? (
         <h1>{filteredPosts?.length || ''} other {pluralPosts} tagged "{tag}"</h1>
       ) : (
@@ -110,24 +110,13 @@ export const pageQuery = graphql`
             excerpt
             featureimage {
               childImageSharp {
-                base: gatsbyImageData(width: 400, quality: 100
-                  transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000", opacity: 80}}
+                gatsbyImageData(
+                  layout: FULL_WIDTH
                 )
-                small: gatsbyImageData(width: 400, quality: 100
-                  transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000", opacity: 80}}
-                )
-                medium: gatsbyImageData(width: 750, quality: 90
-                  transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000", opacity: 80}}
-                )
-                large: gatsbyImageData(width: 1050, quality: 100
-                  transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000", opacity: 80}}
-                )
-                wide: gatsbyImageData(width: 1600, quality: 100
-                  transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000", opacity: 80}}
-                )
-                share: gatsbyImageData(width: 1200, quality: 90)
               }
             }
+            imageby
+            imagelink
             featureimage_position
             small_title
             large_title
@@ -162,24 +151,13 @@ export const pageQuery = graphql`
             featured
             featureimage {
               childImageSharp {
-                base: gatsbyImageData(width: 400, quality: 100
-                  transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000", opacity: 80}}
+                gatsbyImageData(
+                  layout: FULL_WIDTH
                 )
-                small: gatsbyImageData(width: 500, quality: 100
-                  transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000", opacity: 80}}
-                )
-                medium: gatsbyImageData(width: 750, quality: 90
-                  transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000", opacity: 80}}
-                )
-                large: gatsbyImageData(width: 1050, quality: 100
-                  transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000", opacity: 80}}
-                )
-                wide: gatsbyImageData(width: 1600, quality: 100
-                  transformOptions: {duotone: {highlight:"FF5E9A", shadow:"000000", opacity: 80}}
-                )
-                share: gatsbyImageData(width: 1200, quality: 90)
               }
             }
+            imageby
+            imagelink
             featureimage_position
           }
           excerpt(pruneLength: 220)

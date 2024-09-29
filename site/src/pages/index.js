@@ -131,24 +131,13 @@ export const pageQuery = graphql`
             featured
             featureimage {
               childImageSharp {
-                base: gatsbyImageData(width: 400, quality: 100
-                  transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000", opacity: 80}}
+                gatsbyImageData(
+                  layout: FULL_WIDTH
                 )
-                small: gatsbyImageData(width: 400, quality: 100
-                  transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000", opacity: 80}}
-                )
-                medium: gatsbyImageData(width: 750, quality: 90
-                  transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000", opacity: 80}}
-                )
-                large: gatsbyImageData(width: 1050, quality: 100
-                  transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000", opacity: 80}}
-                )
-                wide: gatsbyImageData(width: 1600, quality: 100
-                  transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000", opacity: 80}}
-                )
-                share: gatsbyImageData(width: 1200, quality: 90)
               }
             }
+            imageby
+            imagelink
             featureimage_position
             small_title
             large_title
