@@ -1,7 +1,7 @@
 /* Used to specify the main breakpoints used for the site */
 
 const size = {
-  small: '401px',
+  small: '501px',
   medium: '601px',
   large: '821px',
   wide: '1051px'

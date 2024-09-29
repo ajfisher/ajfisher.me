@@ -79,7 +79,7 @@ h2 {
 h3 {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
-    font-size: 3.4rem;
+    font-size: 3.0rem;
 }
 
 h4 {
@@ -107,15 +107,11 @@ article h1 {
 }
 
 article h2 {
-    background-color: var(--light-base);
+    color: var(--dark-base);
 }
 
-article h2,
 article h3{
     color: var(--dark-base);
-    display: inline;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
 }
 
 article h4,

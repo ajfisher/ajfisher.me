@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types'
-// import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby';
+import { getSrc } from "gatsby-plugin-image"
 
 import humanize from 'humanize-plus';
 
@@ -29,8 +29,8 @@ function PageHead({ description, meta, title, type, tweet, image, readingTime, w
 
   const card_meta = [];
 
-  if (typeof(image.share) !== 'undefined') {
-    const image_url = `${site.siteMetadata.siteUrl}${image.share}`;
+  if (image !== '') {
+    const image_url = `${site.siteMetadata.siteUrl}${getSrc(image)}`;
 
     card_meta.push({property: `og:image`, content: image_url });
     card_meta.push({ name: `twitter:image`, content: image_url});

@@ -14,7 +14,7 @@ import { device } from './devices';
 const NavButton = styled.button`
 
   display: inline-block;
-  z-index: 3; // place above content
+  z-index: 103; // place above content
   transform: ${({ isOpen }) => isOpen ? 'rotate(90deg)' : 'none'};
 
   position: fixed;
@@ -48,7 +48,7 @@ const NavMenuOverlay = styled.div`
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
-  z-index: 1;
+  z-index: 101;
 
   @media only screen and ${device.large} {
     display: none;
@@ -60,7 +60,7 @@ const NavDrawer = styled.nav`
   flex-direction: column;
 
   position: fixed;
-  z-index: 2;
+  z-index: 102;
 
   top: 0;
   right: ${({ isOpen }) => isOpen ? '0' : '-100%'};

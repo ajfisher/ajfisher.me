@@ -10,7 +10,16 @@ import Nav from './nav';
 import Footer from './footer';
 import { Main, Aside } from './layout';
 
-const Layout = ({ children, frontmatter, featuredimage, path, readingTime, tags, relatedposts}) => {
+const Layout = ({
+  children,
+  frontmatter,
+  featuredimage,
+  path,
+  readingTime,
+  wordCount,
+  tags,
+  relatedposts,
+}) => {
 
   const { title, date, excerpt, slug, small_title=false, large_title=false,
     imageby, imagelink } = frontmatter;
@@ -20,7 +29,8 @@ const Layout = ({ children, frontmatter, featuredimage, path, readingTime, tags,
   return (
     <>
       <Header title={title} date={date} excerpt={excerpt}
-        featuredimage={featuredimage} readingTime={readingTime}
+        featuredimage={featuredimage} featuredImageBy={imageby}
+        readingTime={readingTime} wordCount={wordCount}
         smalltitle={small_title} largetitle={large_title}/>
       <Main>
         <PostArticle title={title} url={urlpath} relatedposts={relatedposts}

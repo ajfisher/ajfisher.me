@@ -4,24 +4,29 @@ import Nav from './nav';
 import Footer from './footer';
 import { ListArticle } from './article';
 import { Aside, Main } from './layout';
-import { pathDate, getFeaturedImageSources } from '../lib/utils';
+import { pathDate } from '../lib/utils';
 
 const Layout = ({ children, featured={}, slug}) => {
 
   // determine the featured article and pull it from the list.
-  const {frontmatter={}, fields={}} = featured;
+  const {
+    frontmatter={}, fields={},
+    timeToRead, wordCount
+  } = featured;
   const excerpt = frontmatter.excerpt || fields.excerpt || featured?.excerpt || '';
   const url = `/${pathDate(frontmatter.date)}/${frontmatter.slug}/`;
 
   const {title, date} = frontmatter;
-  const featuredImageSrc = getFeaturedImageSources(frontmatter?.featureimage?.childImageSharp);
+  const featuredImage = frontmatter?.featureimage || null;
+  const {imageby} = frontmatter;
 
   return (
     <>
       <Header featured='true' title={title} date={date}
-        excerpt={excerpt} featuredimage={featuredImageSrc} url={url}
+        excerpt={excerpt} url={url}
+        featuredimage={featuredImage} featuredImageBy={imageby}
         smalltitle={frontmatter.small_title} largetitle={frontmatter.large_title}
-        readingTime={fields.readingTime} />
+        readingTime={timeToRead} wordCount={wordCount} />
       <Main>
         <ListArticle>
           <section>{children}</section>
