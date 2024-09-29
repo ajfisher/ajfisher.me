@@ -13,5 +13,15 @@
         "tag": "mobile",
         "title": "Mobile technology",
         "intro": "The way we work, communicate, and engage with the digital world has fundamentally changed as a result of mobile computing. As platforms develop, they continue to transform personal computing, enhance user experiences, and drive innovation across domains. From having a smartphone in every pocket to mobile networks enabling IoT, mobile tech plays a dominant role in shaping connectivity, accessibility and seamless interactions on the move."
+    },
+    {
+        "tag": "physical computing",
+        "title": "Physical computing",
+        "intro": "Physical computing bridges the gaps between the digital and physical worlds, allowing the interaction of sensors, controllers and hardware interfaces. IoT devices and robotics are the obvious manifestation pf physical computing and are main drivers of innovation, however creative uses are also emerging around art and design. All of these use cases are expanding the boundaries of how we interact with technology and how it shapes our behaviour in turn."
+    },
+    {
+        "tag": "ubicomp",
+        "title": "Ubiquitous computing",
+        "intro": "Imagining a world where technology seamlessly integrates into everday envionment is the heart of ubicomp. Ubiquitous computing seeks to make digital interactions virtually invisible, enabling devices to operate autonomously and adapting to users' needs without direct input. Ubicomp transforms how we engage with technology by embedding it into the objects and spaces that surround us, creating interconnected digital ecosystems that are efficient and are hyper-personalised."
     }
 ]
