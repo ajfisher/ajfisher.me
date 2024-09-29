@@ -12,6 +12,9 @@ import { device } from './devices';
 
 const BaseHeader = styled.header`
   background: var(--darkened-grey);
+  background: -moz-radial-gradient(circle, var(--dark-grey) 0%, var(--darkened-grey) 100% );
+  background: -webkit-radial-gradient(circle, var(--dark-grey) 0%, var(--darkened-grey) 100% );
+  background: radial-gradient(circle, var(--dark-grey) 0%, var(--darkened-grey) 100% );
 
   box-sizing: border-box;
   border-bottom: 2px solid var(--highlight);
