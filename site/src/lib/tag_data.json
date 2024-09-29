@@ -1,0 +1,17 @@
+[
+    {
+        "tag": "android",
+        "title": "Android operating system",
+        "intro": "Alongside iOS, Windows and Linux, Android is an operating system that powers billions of devices globally. Being open-source fosters innovation and flexibility, allowing it to be used in everything from phones to desktops to IoT devices to gaming consoles and more. Key however, Android drives sustained evolution of the mobile computing experience for much of the world."
+    },
+    {
+        "tag": "Apple",
+        "title": "Apple",
+        "intro": "Apple has redefined technology and interaction many times with its innovative approach to hardware, software and design. From the stalwart Mac to iPhones and iPads, it creates a seamless ecosystem of devices and services - setting new benchmarks for user experience and innovation. Apple's Second Mouse strategy coupled with its focus on simplicity, performance and great design influences how we interact with the digital world."
+    },
+    {
+        "tag": "mobile",
+        "title": "Mobile technology",
+        "intro": "The way we work, communicate, and engage with the digital world has fundamentally changed as a result of mobile computing. As platforms develop, they continue to transform personal computing, enhance user experiences, and drive innovation across domains. From having a smartphone in every pocket to mobile networks enabling IoT, mobile tech plays a dominant role in shaping connectivity, accessibility and seamless interactions on the move."
+    }
+]

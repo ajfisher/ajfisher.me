@@ -37,6 +37,13 @@ module.exports = {
         path: `${__dirname}/utils/embeddings/similarity_data.json`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `tagdata`,
+        path: `${__dirname}/src/lib/tag_data.json`,
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-transformer-sharp`,
