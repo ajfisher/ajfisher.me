@@ -35,11 +35,11 @@ const BaseHeader = styled.header`
 
     @media only screen and ${device.large} {
       min-height: 40vh;
-      max-height: 55vh;
+      max-height: 60vh;
     }
 
     @media only screen and ${device.wide} {
-      max-height: 60vh;
+      max-height: 70vh;
     }
   }
 `;
@@ -277,9 +277,10 @@ Title.defaultProps = {
 
 const Featured = styled.p`
   color: var(--highlight);
-  margin: 0 var(--gutter);
+  margin: calc(0.5 * var(--gutter)) var(--gutter);
   text-transform: uppercase;
   font-size: 1.8rem;
+  text-decoration: underline;
 `;
 
 const Header = ({
@@ -297,23 +298,22 @@ const Header = ({
     const rounded_time = Math.ceil(readingTime) || 0;
     const humanised_words = humanize.compactInteger(wordCount.words, 1) || 0;
 
-    console.log(`what is the ${featuredimage}`);
     const PostHeader = (featuredimage === null) ? TextHeader : ImageHeader;
     const postimage = getImage(featuredimage);
 
     return (
       <PostHeader>
         { featuredimage !== null &&
-          <GatsbyImage image={postimage} alt="test" class="headerimage" />
+          <GatsbyImage image={postimage} alt={featuredImageBy} class="headerimage" />
         }
         { featuredimage === null &&
           <div class="imagefill" />
         }
         <Container className="wrapper">
+          <Title url={url} smalltitle={smalltitle} largetitle={largetitle}>{title}</Title>
           { featured &&
             <Featured>Featured Post</Featured>
           }
-          <Title url={url} smalltitle={smalltitle} largetitle={largetitle}>{title}</Title>
           { excerpt != null && excerpt.length > 0 &&
             <Lede>{excerpt}</Lede>
           }
