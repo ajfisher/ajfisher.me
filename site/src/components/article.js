@@ -10,13 +10,20 @@ const StyledListArticle = styled(Article)`
 
   & h1 {
     color: var(--dark-base);
-    font-size: 3rem;
-    background: none;
-    box-shadow: none;
+    font-size: 3.5rem;
     padding: 0 var(--gutter);
+    margin-bottom: 0;
   }
 
-  & h2.home {
+  & h1::first-letter {
+    text-transform: uppercase;
+  }
+
+  & h2.list {
+    font-size: 3rem;
+  }
+
+  & h2.home, h2.list {
     margin: calc(0.5 * var(--gutter)) var(--gutter);
     display: block;
     background: none;
@@ -27,6 +34,10 @@ const StyledListArticle = styled(Article)`
 
   & p {
     font-size: 2rem;
+
+  }
+  & p.tagintro {
+    font-size: 1.8rem;
   }
 
   & li {

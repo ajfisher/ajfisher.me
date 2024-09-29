@@ -7,9 +7,12 @@ import { ListItems, PostListItem } from '../components/list';
 
 export const Head = ({location, params, data, pageContext}) => {
   const {tag} = pageContext;
+  const {tagdata} = data;
+
+  const title = tagdata?.title || null;
 
   const seo = {
-    title: `Posts tagged ${tag}`,
+    title: `${title || tag} tagged posts`,
     description: `Posts that are tagged ${tag} on ajfisher.me`
   };
 
@@ -26,8 +29,11 @@ export const Head = ({location, params, data, pageContext}) => {
 
 export default function Template({ pageContext, data}) {
   const {tag} = pageContext;
-  const { featured, posts } = data;
+  const { featured, posts, tagdata } = data;
   const slug = `/tagged/${tag}`;
+
+  const title = tagdata?.title || null;
+  const intro = tagdata?.intro || null;
 
   let featuredPost;
   let filteredPosts = [];
@@ -54,8 +60,14 @@ export default function Template({ pageContext, data}) {
 
   return (
     <Layout slug={slug} featured={featuredPost}>
+      <h1>{title || tag}</h1>
+      {intro &&
+        <p class="tagintro">{intro}</p>
+      }
       {filteredPosts.length > 0 ? (
-        <h1>{filteredPosts?.length || ''} other {pluralPosts} tagged "{tag}"</h1>
+        <p class="tagintro">
+          If you enjoy this topic, here are {filteredPosts?.length || ''} more {pluralPosts} related to "{tag}" you might like to read.
+        </p>
       ) : (
         <p>There are no other posts tagged <strong>"{tag}"</strong>. Enjoy the one above or
         some of those items linked below.</p>
@@ -168,6 +180,11 @@ export const pageQuery = graphql`
           timeToRead
         }
       }
+    }
+    tagdata: tagDataJson(tag: {eq: $tag}) {
+      tag
+      title
+      intro
     }
   }
 `;
