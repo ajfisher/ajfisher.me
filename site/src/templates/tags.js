@@ -5,7 +5,7 @@ import Layout from '../components/list-layout';
 import PageHead from '../components/page-head';
 import { ListItems, PostListItem } from '../components/list';
 
-export const Head = ({location, params, data, pageContext}) => {
+export const Head = ({data, pageContext}) => {
   const {tag} = pageContext;
   const {tagdata} = data;
 
