@@ -5,7 +5,7 @@ layout: post.hbt
 slug: web-directions-south-2009-cloud-sourcing-the-business
 title: Web Directions South 2009 - Cloud Sourcing the Business
 small-title: true
-tags: cloud computing, presentation
+tags: cloud computing, presentation, conference, business
 ---
 
 I recently gave a presentation at Web Directions South which was fantastic (the conference I'm referring to here!). The session was on cloud computing and I hope everyone got something out of it. [I've put the presentation itself over at slideshare](http://www.slideshare.net/andrewjfisher/cloud-presentation-31odp)

@@ -4,7 +4,7 @@ date: 2007-12-21 13:56:00+00:00
 layout: post.hbt
 slug: potent-messages-of-impotent-industries
 title: Potent messages of impotent industries
-tags: rant, censorship, distributed computing, DRM, media, movies, piracy
+tags: rant, censorship, distributed computing, drm, media, piracy
 ---
 
 I should probably know better than to open my mouth but the obvious has to be stated on this one. For anyone that is net Savvy enough to know what BitTorrent is, the news that TorrentSpy has just lost its court case against the MPAA isn't exactly surprising.

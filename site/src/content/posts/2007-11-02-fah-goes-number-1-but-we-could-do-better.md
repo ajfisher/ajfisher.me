@@ -5,8 +5,6 @@ date: 2007-11-02 11:44:00+00:00
 layout: post.hbt
 slug: fah-goes-number-1-but-we-could-do-better
 title: FAH goes number 1 but we could do better
-categories:
-- general
 tags: distributed computing, gaming, supercomputers
 ---
 

@@ -5,7 +5,7 @@ layout: post.hbt
 slug: datatium-material-for-contextually-responsive-design
 title: Datatium - data as material for contextually responsive design
 small-title: true
-tags: development, data science, responsive design, design, web, mobile, context
+tags: development, data science, responsive design, design, web, mobile, context, ux
 excerpt: >
     Responsive design is still very screen size focussed where as we should be
     considering context much more than we do. This talk explains how Datatium
@@ -14,7 +14,7 @@ listimage: ../../img/posts/phone_hand.jpg
 featureimage: ../../img/posts/datatium_material.png
 ---
 
-A large focus of my work at [JBA](jbadigital.com) is UX related data science
+A large focus of my work at JBA was UX related data science
 and in particular how useful understanding of what someone is doing can be used
 to create a better experience for them. Whilst most of this is oriented to
 online experiences, the application of this applies to any experience really.
@@ -41,3 +41,7 @@ experiences.
 for contextually responsive design</a> - (CC) ajfisher</p>
 
 Large version is available at [datatium.ajf.io](https://datatium.ajf.io/)
+
+Update:
+
+* JBA Digital was bought by the Ive Group and the website no longer exists.

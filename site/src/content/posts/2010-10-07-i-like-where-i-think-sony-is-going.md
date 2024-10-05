@@ -4,7 +4,7 @@ date: 2010-10-07 11:03:15+00:00
 layout: post.hbt
 slug: i-like-where-i-think-sony-is-going
 title: I like where I think Sony is going
-tags: android, Consumer Electronics, mobile, predictions
+tags: android, consumer electronics, mobile, predictions
 ---
 
 This is one of my speculation fueled posts so I'm admitting that a lot of it is based on rumour, hearsay, wild prognostication and adding up 2+2+2+2 to equal 63. With that in mind on with the rest...
@@ -13,7 +13,7 @@ Right now I'm inclined to think that [Sony](http://www.sony.com) is on the cusp 
 
 However they have a huge opportunity and I think they've realised it but the rest of the world hasn't yet.
 
-The advantage Sony has over every other company I mentioned above is they are already present in every single part of  the Consumer Electronics market. They also operate in channels the others don't touch - distribution and content creation.
+The advantage Sony has over every other company I mentioned above is they are already present in every single part of the Consumer Electronics market. They also operate in channels the others don't touch - distribution and content creation.
 
 Whilst Apple might have iTunes, they still have to license the movie from Sony Pictures to distribute it. Whilst Samsung has the beautiful 50 inch LED display with a BlueRay player, they still have to get the Discs from Sony to play on it.
 
@@ -27,9 +27,9 @@ HTC showed in the middle of the year though that the future of the phone was one
 
 Many of the new top end Android phones are starting to follow suit so expect to see HDMI feature on Sony's next high-end Xperia and you'll be able to watch HD movies streamed via Crackle to your home system. With bandwidth detection it would be simple to be passing down 5 or 6.1 sound for your home theatre as well and HDMI will take care of the connections.
 
-Sony have dropped a few hints in public over the last few months about slates running Android and clearly they will be watching the [Galaxy S Tab](http://www.samsung.com/au/smartphone/galaxy-tab/) to see if they can outdo them. A mobile device that can play to BlueRay quality would be very cool and would outdo the iPad.
+Sony have dropped a few hints in public over the last few months about slates running Android and clearly they will be watching the [Galaxy S Tab](http://www.samsung.com/au/smartphone/galaxy-tab/) to see if they can outdo them. A mobile device that can play to BlueRay quality would be very cool and would outdo the iPad.
 
-Finally there's gaming - there have been some [persistent](http://www.engadget.com/2010/08/11/exclusive-sony-ericsson-to-introduce-android-3-0-gaming-platfor/) [rumours](http://www.google.com.au/images?hl=en&source=imghp&biw=1333&bih=626&q=psp+xperia&gbv=2&aq=f&aqi=&aql=&oq=&gs_rfai=) flying around that the next Xperia phone will be Sony's replacement for the PSP. I subscribe to this not because I love my PSP but because it's unlike Sony not to have shown us anything new for so long.
+Finally there's gaming - there have been some [persistent](http://www.engadget.com/2010/08/11/exclusive-sony-ericsson-to-introduce-android-3-0-gaming-platfor/) [rumours](http://www.google.com.au/images?hl=en&source=imghp&biw=1333&bih=626&q=psp+xperia&gbv=2&aq=f&aqi=&aql=&oq=&gs_rfai=) flying around that the next Xperia phone will be Sony's replacement for the PSP. I subscribe to this not because I love my PSP but because it's unlike Sony not to have shown us anything new for so long.
 
 The PSP Go last year wasn't a roaring success but it gave Sony experience working out how to distribute games digitally and assess the state of the market. With no hardware upgrade and no new games there wasn't really a compelling reason to upgrade. PSP is now at the end of it's life cycle.
 

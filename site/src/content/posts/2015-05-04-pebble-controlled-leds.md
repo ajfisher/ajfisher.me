@@ -4,7 +4,7 @@ date: 2015-05-04 20:00:00+11:00
 layout: post.hbt
 slug: pebble-controlled-leds
 title: Controlling networked LEDs using a smartwatch
-tags: physical computing, ESP8266, pebble, javascript, development, ubicomp, IoT, hardware
+tags: physical computing, javascript, development, ubicomp, iot, hardware
 excerpt: >
     The ESP8266 is a capable device in its own right and can run a simple web
     server. Couple this with a smartwatch for control and you have some interesting

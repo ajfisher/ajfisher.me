@@ -5,7 +5,7 @@ layout: post.hbt
 slug: how-to-avoid-the-audiencepresenter-disconnect
 title: 'How to avoid the Audience : Presenter Disconnect'
 small-title: true
-tags: presentation
+tags: presentation, essay
 featureimage: ../../img/posts/concert.jpg
 imageby: Martin Fisch
 imagelink: https://www.flickr.com/photos/marfis75/2459533929
@@ -111,9 +111,9 @@ Delivery of information will stop the "Just get on with it" or "Tell me somethin
 
 #### Consider points that can be tweeted
 
-I hate this idea as it's a sign of our waning attention spans but it's a fact of life so you either roll with it or stick your head in the sand. Our communications are turning into microbursts of activity. When you take notes at a conference you note the points not the words, when an audience member tweets, they compress and express the insight, not all the details.
+I hate this idea as it's a sign of our waning attention spans but it's a fact of life so you either roll with it or stick your head in the sand. Our communications are turning into microbursts of activity. When you take notes at a conference you note the points not the words, when an audience member tweets, they compress and express the insight, not all the details.
 
-If you are taking a long time to get through a point or have made the same point ten times the audience is going to start getting frustrated as they have stopped annotating your talk. This is complex because sometimes you have to build a story to illustrate a point. The challenge is to get there quickly and avoid the "I wonder where this is going?" style comments.
+If you are taking a long time to get through a point or have made the same point ten times the audience is going to start getting frustrated as they have stopped annotating your talk. This is complex because sometimes you have to build a story to illustrate a point. The challenge is to get there quickly and avoid the "I wonder where this is going?" style comments.
 
 Something I've started doing recently as a result of observing my own behaviour at conferences is reviewing every slide I'm presenting and expressing it as a tweet or short annotation. If I can't, or it takes me a paragraph to express then it's a problem and I can try and fix it. If your presentation has gone more than about 3-4 slides (about 2-3 minutes) without something tweetable or notable then you're on the limit of the audience's attention span wavering.
 
@@ -147,7 +147,7 @@ This goes without saying but it's a minefield. Disrespect can come out in a lot 
 
 ## Conclusion
 
-There are plenty of much better speakers and presenters than I am or ever will be - I work with at least two and I am in constant awe of people that can deliver amazing presentations effortlessly to any sized group. Conversely, I don't think I'm the worst speaker or presenter ever - mostly because I am so nervous that I don't lack for preparation - I literally have backups of backups of backups to account for things going wrong.
+There are plenty of much better speakers and presenters than I am or ever will be - I work with at least two and I am in constant awe of people that can deliver amazing presentations effortlessly to any sized group. Conversely, I don't think I'm the worst speaker or presenter ever - mostly because I am so nervous that I don't lack for preparation - I literally have backups of backups of backups to account for things going wrong.
 
 I don't know whether the things I've written about here are right, or if they are right for you. They work for me, it's how I approach a presentation and if they help you out too that's great.
 

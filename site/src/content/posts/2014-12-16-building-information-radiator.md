@@ -4,7 +4,7 @@ date: 2014-12-16 18:30:00+11:00
 layout: post.hbt
 slug: building-information-radiator
 title: Building an information radiator
-tags: physical computing, python, development, ubicomp, IoT, arduino, hardware, product
+tags: physical computing, python, development, ubicomp, iot, arduino, hardware
 excerpt: >
     "Information Radiators" - devices that use physical means to relay
     encoded information are great projects if you want to explore IoT. This

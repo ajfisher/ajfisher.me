@@ -5,7 +5,7 @@ layout: post.hbt
 slug: prediction-2010-will-be-the-year-apple-and-google-have-a-cage-fight
 title: 2010 will be the year Apple and Google have a cage fight
 small-title: true
-tags: android, Apple, google, internet, iphone, mobile, predictions
+tags: android, apple, google, internet, ios, mobile, predictions, business
 listimage: ../../img/posts/cagefight.jpg
 featureimage: ../../img/posts/fighters.png
 imageby: ajfisher - Fighters in a ring - FLUX.dev

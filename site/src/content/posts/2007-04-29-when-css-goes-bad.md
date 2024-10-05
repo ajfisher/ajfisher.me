@@ -5,7 +5,7 @@ layout: post.hbt
 slug: when-css-goes-bad
 title: When CSS goes bad
 large-title: true
-tags: development, css, debugging, standards
+tags: development, css, standards
 ---
 
 If you do a lot of CSS work you'll have seen particular bugs time after time and how to deal with them, however when things do go wrong [and they will trust me] finding bug related information can be a nightmare.

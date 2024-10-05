@@ -5,7 +5,7 @@ date: 2007-05-03 13:49:00+00:00
 layout: post.hbt
 slug: drmed-for-life
 title: DRMed for Life
-tags: DRM, media, movies, piracy, rant
+tags: drm, media, piracy, rant
 ---
 
 In the news recently has been the whole thing about not only the copy protection on [HD-DVD and Blu-Ray disks being cracked](http://www.infoworld.com/article/06/12/29/HNdrmhacked_1.html) but people posting digg links with decryption keys in them. I can understand Digg's position in removing said posts until the community kicked off and [they then decided they'll go down with the ship ](http://blog.digg.com/?p=74)if they got prosecuted. Hurrah for someone over there seeing sense.

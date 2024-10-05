@@ -4,7 +4,7 @@ date: 2015-09-02 22:30:00+11:00
 layout: post.hbt
 slug: iot-mobile-practices
 title: Applying the lessons of mobile dev to IoT
-tags: physical computing, development, ubicomp, IoT, mobile
+tags: physical computing, development, ubicomp, iot
 excerpt: >
     IoT product development has the opportunity to draw on some of the lessons
     hard won over the years of developing for mobile.

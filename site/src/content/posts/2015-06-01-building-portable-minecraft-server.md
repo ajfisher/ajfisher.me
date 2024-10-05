@@ -4,7 +4,7 @@ date: 2015-06-01 19:30:00+11:00
 layout: post.hbt
 slug: building-portable-minecraft-server
 title: Building a portable minecraft server
-tags: minecraft, physical computing, rpi
+tags: physical computing, gaming
 excerpt: >
     Using a raspberry pi and some batteries to create a portable minecraft
     server that can be put in a lunch box and taken to the park.

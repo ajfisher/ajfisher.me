@@ -5,7 +5,7 @@ layout: post.hbt
 slug: spdy-could-gain-acceptence-very-quickly-with-some-product-innovation
 title: SPDY could gain acceptence - with some innovation
 small-title: true
-tags: google, internet, network, protocol
+tags: google, internet, web
 ---
 
 Google have announced some early findings about their research into a faster protocol to reduce latency times due to good old fashioned HTTP. HTTP was designed as a really simple protocol to delivery (primarily) text content over the Internet and thus was born the Web.

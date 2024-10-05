@@ -5,14 +5,10 @@ date: 2008-01-31 05:53:00+00:00
 layout: post.hbt
 slug: the-state-of-oz-technology
 title: The state of Oz technology
-categories:
-- linux
-- mobile
-- rant
-tags: linux, mobile, PCI DSS, sms, web
+tags: linux, mobile, security, sms, web
 ---
 
-Well rarely does an entire country entice me to start ranting (and at this point I'll point out I am in fact Australian) but by crikey Australian technology hasn't really moved in the last 5 years.
+Rarely does an entire country entice me to start ranting (and at this point I'll point out I am in fact Australian) but by crikey Australian technology hasn't really moved in the last 5 years.
 
 Now I appreciate this is a sweeping statement and I'll point out that the technology I'm talking about primarily is media based - mobile / web / internet. I have also had the benefit of living in London for the better part of 10 years so I've been at the hub of what is going on.
 

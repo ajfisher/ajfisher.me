@@ -4,7 +4,7 @@ date: 2008-04-21 10:43:00+00:00
 layout: post.hbt
 slug: can-yahoo-really-get-things-so-wrong
 title: Can Yahoo really get things so wrong?
-tags: censorship, internet, privacy, rant, spam, web
+tags: censorship, internet, privacy, rant, web
 ---
 
 Yahoo are one of the original dotcoms. They've been around for a **long** time so they should know their business. Imagine my surprise when one of my clients starts complaining that their confirmation emails to yahoo email accounts are permanently being binned as is everything else they send - including personal communications.
@@ -21,4 +21,4 @@ Trying to get Yahoo to do anything about this issue is similarly problematic as 
 
 So overall we've just had to advise people to not use Yahoo or to check their junk mail periodically and read the mail there.
 
-_Update - The guys at Yahoo came to our rescue after tracing through the "network" somewhat to find someone that knows someone at Yahoo to help us out. Unfortunately their techies couldn't explain why we'd been black listed either but we are now officially on their whitelist so big thanks to the guys for helping us out._
+_Update - The folks at Yahoo came to our rescue after tracing through the "network" somewhat to find someone that knows someone at Yahoo to help us out. Unfortunately their techies couldn't explain why we'd been black listed either but we are now officially on their whitelist so big thanks to the team for helping us out._

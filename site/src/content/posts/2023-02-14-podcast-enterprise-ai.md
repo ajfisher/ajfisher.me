@@ -4,7 +4,7 @@ date: 2023-02-13 10:00:00+11:00
 layout: post
 slug: podcast-enterprise-ai
 title: ChatGPT and Generative AI in the enterprise
-tags: ai, podcast, discussion, thinking, business, generative AI, innovation
+tags: ai, podcast, business, generative ai, innovation
 excerpt: >
     There is a lot of opportunity for Generative AI from a business technology
     perspective. Talking with other technology leaders, we discuss what

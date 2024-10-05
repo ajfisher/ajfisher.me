@@ -8,7 +8,7 @@ title: Microsoft “buys” Nokia for $0B - what this means for mobile.
 small-title: true
 categories:
 - mobile
-tags: android, Apple, mobile, nokia
+tags: nokia, mobile, business, strategy
 ---
 
 Windows Mobile 7 is the latest incarnation of the Microsoft mobile platform that started in the late 90s as Windows CE. It has always had relatively good penetration in the mobile business sector and has been the foundation of HTC and Samsung's smartphone strategies. For the latter part of the decade though, Windows Mobile has been languishing, and the release last year of WinMo 7 was received by the industry with a cursory “I think Microsoft just updated something to do with mobile” before switching their attention back to what is happening on the iPhone, Android and Blackberry platforms.

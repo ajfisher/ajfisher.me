@@ -5,7 +5,7 @@ layout: post.hbt
 slug: neo-futurism-in-the-information-age
 title: Neo-Futurism in the Information Age
 small-title: true
-tags: development, internet, media, mobile, presentation, web
+tags: development, internet, media, mobile, web, conference
 excerpt: >
     Finally the gloom of the GFC appears past and the web community are attempting
     to dream big ideas again - a summary of WDS11.
@@ -22,7 +22,7 @@ Post-WWII. After the dust had settled and old maps had been redrawn, we entered 
 
 This period, predominately lasting through the 1950s and mostly found in the American and Soviet superpowers of the time, was characterised by our view that as humans we would triumph over any adversity. We held the view that all of nature was our to command - for we had just mastered the atom, the jet age had begun and we were on the cusp of sending humans into space. The dream of protein pills and personal jetpacks didn't eventuate, however the thinking ushered in a new period that would last for another couple of decades - a period where considering big, idealistic futures was considered the norm and that one should get out and try and make them happen.
 
-For me, [Web Directions South 11](http://south11.webdirections.org) held much of the same passion and fervour. Finally, at least in Australia it seems, the shadow of the GFC is lifting and <b>we are at the dawn of a period where a third of all humans are connected and we are starting to see the future that mastering the connected bit can achieve</b>. Whereas in 2010 it was about the potential technologies like HTML5 and mobile technologies would bring us, in 2011 it is about our application of these technologies into new ways of working, new styles of design and the creation of a future for everyone.
+For me, [Web Directions South 11](http://south11.webdirections.org) held much of the same passion and fervour. Finally, at least in Australia it seems, the shadow of the GFC is lifting and <b>we are at the dawn of a period where a third of all humans are connected and we are starting to see the future that mastering the connected bit can achieve</b>. Whereas in 2010 it was about the potential technologies like HTML5 and mobile technologies would bring us, in 2011 it is about our application of these technologies into new ways of working, new styles of design and the creation of a future for everyone.
 
 Much of the conference theme was about just getting out and doing stuff, providing echoes of the 1950s sentiment that we live in a time where it is the makers' world, that we are architects of the future and our place within it.
 

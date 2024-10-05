@@ -4,7 +4,7 @@ date: 2007-03-05 16:07:00+00:00
 layout: post.hbt
 slug: fuzzys-where-its-at-or-will-be-eventually
 title: Fuzzy's where it's at... or will be eventually
-tags: fuzzy logic, retail, web, ecommerce
+tags: algorithms, retail, ecommerce
 excerpt: >
     Using fuzzy logic can create significantly better customer experience.
     However it hasn't caught on on web circles yet but examples are starting.

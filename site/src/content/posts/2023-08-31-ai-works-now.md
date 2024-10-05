@@ -4,7 +4,7 @@ date: 2023-08-31 10:00:00+11:00
 layout: post
 slug: ai-works-now
 title: AI in 2023 - it works well enough now
-tags: ai, conference, thinking, agents
+tags: ai, conference, agents, generative ai
 excerpt: >
     After attending the Web Directions AI conference, it's clear 2023 brings
     significant advancements in AI. Yet, as its potential grows, challenges in

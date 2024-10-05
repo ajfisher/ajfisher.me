@@ -4,7 +4,7 @@ date: 2015-08-08 22:00:00+11:00
 layout: post.hbt
 slug: ddd-jsiot-workshop
 title: DDD JavaScript IoT workshop
-tags: development, IoT, javascript, web, hardware, arduino, nodejs, nodebots
+tags: development, iot, javascript, web, hardware, arduino, nodejs, nodebots
 excerpt: >
     A summary of the various projects completed as part of the JS IoT workshop
     given at DDD Melbourne 2015.

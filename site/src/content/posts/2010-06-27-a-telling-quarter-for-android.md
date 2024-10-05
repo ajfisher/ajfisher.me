@@ -4,7 +4,7 @@ date: 2010-06-27 22:18:50+00:00
 layout: post.hbt
 slug: a-telling-quarter-for-android
 title: A telling quarter for Android
-tags: android, Apple, google, iphone, mobile
+tags: android, google, mobile, os, business
 featureimage: ../../img/posts/android.jpg
 listimage: ../../img/posts/android.jpg
 imageby: Scott Akerman

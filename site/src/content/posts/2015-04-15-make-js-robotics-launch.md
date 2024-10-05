@@ -4,7 +4,7 @@ date: 2015-04-15 21:30:00+11:00
 layout: post.hbt
 slug: make-js-robotics-launch
 title: "Book launch of Make: JavaScript Robotics"
-tags: development, books, javascript, robotics, arduino, nodebots, nodejs, launch
+tags: development, books, javascript, robotics, arduino, nodebots, nodejs
 excerpt: >
     This new book on JavaScript robotics launches today, co-authored by 15 of
     core NodeBots community members from around the world.
