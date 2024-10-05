@@ -33,8 +33,13 @@ Certificates and cloudfront distributions.
 
 #### Images
 
-Images are a mix of pictures I take myself where needed for a project or else
-I source Creative Commons available images from Flickr which are then attributed.
+Images are a mix of pictures I take myself where needed for a project,
+sourced from Creative Commons available images in Flickr which are then
+attributed. As of 2024, some images are now produced for headers using Stable
+Diffusion, which I do locally. I acknowledge that Generative image models have
+likely been trained on copyright artwork (including mine) I explicitly do not
+use prompts that mimic artists' unique style (eg "in the style of... " type
+prompts).
 
 Gatsby has an excellent image processing system which can produce various sizes
 of image in order to make the site responsive and keep the page weight as light
