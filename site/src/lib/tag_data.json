@@ -1,27 +1,53 @@
 [
     {
+        "tag": "ai",
+        "title": "Artificial Intelligence (AI)",
+        "intro": "Machines that can learn, adapt and automate processes are finally driving second order innovation as organisations take hold of these technologies and use them. While AI comes with great potential upsides that will benefit many, it is not without perils either.",
+        "tagimage": "../img/posts/tag_ai.png"
+    },
+    {
         "tag": "android",
         "title": "Android operating system",
-        "intro": "Alongside iOS, Windows and Linux, Android is an operating system that powers billions of devices globally. Being open-source fosters innovation and flexibility, allowing it to be used in everything from phones to desktops to IoT devices to gaming consoles and more. Key however, Android drives sustained evolution of the mobile computing experience for much of the world."
+        "intro": "As an alternative to iOS, Windows and Linux, Android is an OS that powers billions of devices globally. Being open-source fosters innovation and flexibility, allowing it to be used in everything from phones to desktops to IoT devices to gaming consoles and more.",
+        "tagimage": "../img/posts/tag_android.png"
     },
     {
         "tag": "Apple",
-        "title": "Apple",
-        "intro": "Apple has redefined technology and interaction many times with its innovative approach to hardware, software and design. From the stalwart Mac to iPhones and iPads, it creates a seamless ecosystem of devices and services - setting new benchmarks for user experience and innovation. Apple's Second Mouse strategy coupled with its focus on simplicity, performance and great design influences how we interact with the digital world."
+        "title": "Apple computing company",
+        "intro": "Apple has redefined technology and interaction many times with its innovative approach to hardware, software and design. From the stalwart Mac to iPhones and iPads, it creates a seamless ecosystem of devices and services. Apple's Second Mouse strategy coupled with its focus on simplicity, performance and great design influences how we interact with the digital world.",
+        "tagimage": "../img/posts/tag_apple.png"
+    },
+    {
+        "tag": "development",
+        "title": "Software development",
+        "intro": "Coding languages, frameworks, methodologies, libraries, platforms - all of these come together to help developers build software. From APIs and SaaS applications running in the cloud to firmware driving IoT devices, development is the creative problem-solving that sits at the heart of all of it.",
+        "tagimage": "../img/posts/tag_development.png"
+    },
+    {
+        "tag": "hardware",
+        "title": "Hardware: Inside the machine",
+        "intro": "Forming the backbone of all tech, hardware is the physical componentry that enable all other systems to function. Encompassing microcontollers, single board computers or advanced GPUs or servers, innovation in hardware fuels growth across the technology landscape.",
+        "tagimage": "../img/posts/tag_hardware.png"
     },
     {
         "tag": "mobile",
         "title": "Mobile technology",
-        "intro": "The way we work, communicate, and engage with the digital world has fundamentally changed as a result of mobile computing. As platforms develop, they continue to transform personal computing, enhance user experiences, and drive innovation across domains. From having a smartphone in every pocket to mobile networks enabling IoT, mobile tech plays a dominant role in shaping connectivity, accessibility and seamless interactions on the move."
+        "intro": "The way we work, communicate, and engage with the digital world has fundamentally changed as a result of mobile computing. As platforms develop, they continue to transform personal computing, enhance user experiences, and drive innovation across domains.",
+        "tagimage": "../img/posts/tag_mobile.png"
     },
     {
         "tag": "physical computing",
         "title": "Physical computing",
-        "intro": "Physical computing bridges the gaps between the digital and physical worlds, allowing the interaction of sensors, controllers and hardware interfaces. IoT devices and robotics are the obvious manifestation pf physical computing and are main drivers of innovation, however creative uses are also emerging around art and design. All of these use cases are expanding the boundaries of how we interact with technology and how it shapes our behaviour in turn."
+        "intro": "Physical computing bridges the gaps between the digital and physical worlds, allowing interaction with sensors, controllers and hardware interfaces. IoT devices and robotics are the obvious manifestation of physical computing and are drivers of innovation, however creative uses are emerging around art and design - expanding our interactions with technology and shaping our behaviours."
     },
     {
         "tag": "ubicomp",
         "title": "Ubiquitous computing",
-        "intro": "Imagining a world where technology seamlessly integrates into everday envionment is the heart of ubicomp. Ubiquitous computing seeks to make digital interactions virtually invisible, enabling devices to operate autonomously and adapting to users' needs without direct input. Ubicomp transforms how we engage with technology by embedding it into the objects and spaces that surround us, creating interconnected digital ecosystems that are efficient and are hyper-personalised."
+        "intro": "Imagining a world where technology seamlessly integrates into the everday envionment is the heart of ubicomp. Ubiquitous computing make digital interactions virtually invisible, enabling devices to operate autonomously and adapt to users' needs without direct input."
+    },
+    {
+        "tag": "web",
+        "title": "Web as platform",
+        "intro": "The web has constantly evolved from grey backgrounds and pixelated images to become the centre of our digital experiences. As every new computing innovation has arrived, the web platform absorbs it and becomes stronger - even if it takes some time."
     }
 ]

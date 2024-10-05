@@ -29,49 +29,33 @@ export const Head = ({location, params, data, pageContext}) => {
 
 export default function Template({ pageContext, data}) {
   const {tag} = pageContext;
-  const { featured, posts, tagdata } = data;
+  const { posts, tagdata } = data;
   const slug = `/tagged/${tag}`;
 
   const title = tagdata?.title || null;
   const intro = tagdata?.intro || null;
+  const tagimage = tagdata?.tagimage || null;
 
-  let featuredPost;
-  let filteredPosts = [];
-
-  if (featured?.edges.length > 0) {
-    featuredPost = featured.edges[0].node;
-    // filter the main posts so that the featured post is pulled out as it
-    // is going to be displayed separately. Do this just by taking the slug
-    // from the featured posts and then filtering the main post list against it
-    const featuredSlug = featuredPost.frontmatter?.slug;
-
-    filteredPosts = posts.edges.filter((post) => {
-      if (post.node.frontmatter?.slug !== featuredSlug) return true;
-      return false;
-    });
-  } else if (posts?.edges.length > 0) {
-    // get the first one from the list instead and shift it off the front of the
-    // main post list.
-    [featuredPost, ...filteredPosts] = posts?.edges;
-    featuredPost = featuredPost.node;
-  }
+  const filteredPosts = posts?.edges;
 
   const pluralPosts = (filteredPosts?.length > 1) ? 'posts' : 'post';
 
+  const tagFeature = {
+    frontmatter: {
+      excerpt: intro,
+      title: title || tag,
+      tagimage: tagimage,
+      postcount: filteredPosts.length,
+      large_title: true,
+    },
+    id: tag,
+    tagFeature: true,
+  };
+
   return (
-    <Layout slug={slug} featured={featuredPost}>
-      <h1>{title || tag}</h1>
-      {intro &&
-        <p class="tagintro">{intro}</p>
-      }
-      {filteredPosts.length > 0 ? (
-        <p class="tagintro">
-          If you enjoy this topic, here are {filteredPosts?.length || ''} more {pluralPosts} related to "{tag}" you might like to read.
-        </p>
-      ) : (
-        <p>There are no other posts tagged <strong>"{tag}"</strong>. Enjoy the one above or
-        some of those items linked below.</p>
-      )}
+    <Layout slug={slug} featured={tagFeature}>
+      <h2 class="list">Topic related {pluralPosts}</h2>
+
       <ListItems>
         {filteredPosts.map(({node}) => {
           const { slug, title, date,
@@ -103,44 +87,7 @@ export default function Template({ pageContext, data}) {
 };
 
 export const pageQuery = graphql`
-  query($tag: String) {
-    featured: allMarkdownRemark(
-      filter: {
-        fields:
-          {taglist: {in: [$tag]}},
-          frontmatter: {featured: {eq: true}}
-      }
-      sort: {frontmatter: {date: DESC}}
-      limit: 1
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            slug
-            title
-            date(formatString: "YYYY-MM-DD")
-            excerpt
-            featureimage {
-              childImageSharp {
-                gatsbyImageData(
-                  layout: FULL_WIDTH
-                )
-              }
-            }
-            imageby
-            imagelink
-            featureimage_position
-            small_title
-            large_title
-          }
-          wordCount {
-            words
-          }
-          timeToRead
-        }
-      }
-    }
+  query($tag: String!) {
     posts: allMarkdownRemark(
       filter: {fields: {taglist: {in: [$tag]}}}
       sort: {frontmatter: {date: DESC}}
@@ -185,6 +132,13 @@ export const pageQuery = graphql`
       tag
       title
       intro
+      tagimage {
+        childImageSharp {
+          gatsbyImageData(
+            layout: FULL_WIDTH
+          )
+        }
+      }
     }
   }
 `;

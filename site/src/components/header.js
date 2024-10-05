@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import humanize from 'humanize-plus';
 import moment from 'moment';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCamera, faClock } from '@fortawesome/free-solid-svg-icons';
+import { faCamera, faClock, faNewspaper } from '@fortawesome/free-solid-svg-icons';
 
 import { device } from './devices';
 
@@ -290,6 +290,7 @@ const Header = ({
   title, date, excerpt, url,
   featured=false,
   featuredimage, featuredImageBy,
+  tagimage=null, postcount=null,
   smalltitle, largetitle,
   readingTime=0, wordCount={} }) => {
 
@@ -302,14 +303,26 @@ const Header = ({
     const humanised_words = humanize.compactInteger(wordCount.words, 1) || 0;
 
     const PostHeader = (featuredimage === null) ? TextHeader : ImageHeader;
-    const postimage = getImage(featuredimage);
+
+    let headerimage;
+    if (featuredimage) {
+      headerimage = getImage(featuredimage);
+    } else if (tagimage) {
+      headerimage = getImage(tagimage);
+    }
+
+    let pluralArticle = postcount > 1 ? 'articles' : 'article';
 
     return (
       <PostHeader>
         { featuredimage !== null &&
-          <GatsbyImage image={postimage} alt={featuredImageBy} class="headerimage" />
+          <GatsbyImage image={headerimage} alt={featuredImageBy} class="headerimage" />
         }
-        { featuredimage === null &&
+        {
+          tagimage !== null &&
+          <GatsbyImage image={headerimage} class="headerimage" />
+        }
+        { featuredimage === null && tagimage === null &&
           <div class="imagefill" />
         }
         <Container className="wrapper">
@@ -341,6 +354,14 @@ const Header = ({
                 <FontAwesomeIcon icon={faCamera}/>
               </span>
               <span>{featuredImageBy}</span>
+            </PostData>
+          }
+          { postcount !== null &&
+            <PostData>
+              <span>
+                <FontAwesomeIcon icon={faNewspaper}/>
+              </span>
+              <span>Read {postcount} {pluralArticle} in this topic.</span>
             </PostData>
           }
         </Container>
