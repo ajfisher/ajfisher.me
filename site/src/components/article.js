@@ -34,8 +34,8 @@ const StyledListArticle = styled(Article)`
 
   & p {
     font-size: 2rem;
-
   }
+
   & p.tagintro {
     font-size: 1.8rem;
   }
