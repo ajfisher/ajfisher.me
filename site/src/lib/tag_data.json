@@ -1,9 +1,24 @@
 [
     {
+        "tag": "adobe",
+        "title": "Adobe technologies",
+        "intro": ""
+    },
+    {
+        "tag": "agents",
+        "title": "Software and AI Agents",
+        "intro": ""
+    },
+    {
         "tag": "ai",
         "title": "Artificial Intelligence (AI)",
         "intro": "Machines that can learn, adapt and automate processes are finally driving second order innovation as organisations take hold of these technologies and use them. While AI comes with great potential upsides that will benefit many, it is not without perils either.",
         "tagimage": "../img/posts/tag_ai.png"
+    },
+    {
+        "tag": "algorithms",
+        "title": "Alogorithms rule the world",
+        "intro": ""
     },
     {
         "tag": "android",
@@ -12,10 +27,66 @@
         "tagimage": "../img/posts/tag_android.png"
     },
     {
-        "tag": "Apple",
+        "tag": "apple",
         "title": "Apple computing company",
         "intro": "Apple has redefined technology and interaction many times with its innovative approach to hardware, software and design. From the stalwart Mac to iPhones and iPads, it creates a seamless ecosystem of devices and services. Apple's Second Mouse strategy coupled with its focus on simplicity, performance and great design influences how we interact with the digital world.",
         "tagimage": "../img/posts/tag_apple.png"
+    },
+    {
+        "tag": "arduino",
+        "title": "Arduino: open hardware done right",
+        "intro": "Prior to arduino, hardware was a mostly closed shop with proprietary tool chains, expensive development boards and long lead times for development. By creating the arduino, Massimo Banzi democratised access to hardware, getting it in the hands of students, hackers and artists. In so doing, it opened the floodgates for new devices and importantly, enabled the experimentation needed to usher in the IoT epoch."
+    },
+    {
+        "tag": "business",
+        "title": "Every business is a technology business",
+        "intro": "\"The customer comes first\" - no doubt, but who is the customer? What are they buying? What are their preferences? How do we talk to them? Modern businesses are enabled by adaptable technologies that support their goals and deliver customer experience.",
+        "tagimage": "../img/posts/tag_business.png"
+    },
+    {
+        "tag": "censorship",
+        "title": "Censorship",
+        "intro": ""
+    },
+    {
+        "tag": "cloud computing",
+        "title": "Cloud technologies",
+        "intro": "Also known as \"running your code on someone else's computer\", cloud computing has extended well beyond server hosting and content caching. As cloud technologies mature, more sophisticated workloads are delivered including just in time functions, full API microservices, complex data processing pipelines and increasingly, AI tasks."
+    },
+    {
+        "tag": "conference",
+        "title": "Conference synthesis and observation",
+        "intro": "A good conference gives you a boost of knowledge, downloading months or years of learning into your brain in a couple of days. A great conference gets your brain working overtime, thinking about all the new possibilities that you can pursue as a result of that knowledge. This is a distillation of various conferences, synthesising the key themes."
+    },
+    {
+        "tag": "consumer electronics",
+        "title": "Consumer electronics",
+        "intro": ""
+    },
+    {
+        "tag": "context",
+        "title": "Context oriented user experience design",
+        "intro": ""
+    },
+    {
+        "tag": "css",
+        "title": "Cascading Style Sheets (CSS)",
+        "intro": "Simple enough to get started, CSS is incredibly difficult to master. In the early age of the web many designers and developers were employed purely to do CSS - to coerce a design vision into something the browser could render. CSS has matured dramatically, as has its power and capability. In this age of CSS frameworks that make everything look the same, seeing what a true CSS master can accomplish is a thing of wonder."
+    },
+    {
+        "tag": "data science",
+        "title": "Data Science and Engineering",
+        "intro": ""
+    },
+    {
+        "tag": "design",
+        "title": "Customer experience design",
+        "intro": "Consistently great customer experiences consider all aspects of design including user experience, form and visual design. As our media landscape changes, so to do the needs of design - whether it is considering accessibility, differences in devices or the dynamism of personalisation."
+    },
+    {
+        "tag": "desktop",
+        "title": "Desktop computing",
+        "intro": ""
     },
     {
         "tag": "development",
@@ -24,10 +95,99 @@
         "tagimage": "../img/posts/tag_development.png"
     },
     {
+        "tag": "devops",
+        "title": "DevOps: modern development methods",
+        "intro": ""
+    },
+    {
+        "tag": "distributed computing",
+        "title": "Distributed Computing",
+        "intro": ""
+    },
+    {
+        "tag": "drm",
+        "title": "Digital Rights Management (DRM)",
+        "intro": ""
+    },
+    {
+        "tag": "ecommerce",
+        "title": "eCommerce and digital sales",
+        "intro": ""
+    },
+    {
+        "tag": "essay",
+        "title": "Longer form essays",
+        "intro": "This is a collection of long form pieces that cover topics in depth and with examples. Often these articles speak to design and strategy, particularly as it relates to consumer experiences or ask questions about how we use technologies or techniques."
+    },
+    {
+        "tag": "gaming",
+        "title": "Shall we play a game?",
+        "intro": "Sitting on a sofa in front of the TV, on a laptop in a beddroom, or with a portable device on the train, gaming is all around us and participated in by a large swathe of the population. As our devices change and digital media becomes more prevalent, our opportunities for gaming change too. No longer is it the sole domain of big game studios, with more experimental and physical games becoming far more commonplace.",
+        "tagimage": "../img/posts/tag_gaming.png"
+    },
+    {
+        "tag": "generative ai",
+        "title": "Generative Artificial Intelligence",
+        "intro": ""
+    },
+    {
+        "tag": "google",
+        "title": "Google - search++++++",
+        "intro": "The origins of this big tech behemoth seem quaint now, as does their mantra of 'do no evil'. Google's reach extends far beyond search to AI, cloud computing, mapping, operating systems, advertising platforms, media ecosystems, health tech and productivity software. How much further, only time will tell."
+    },
+    {
+        "tag": "government",
+        "title": "This is why we can't have nice things",
+        "intro": ""
+    },
+    {
+        "tag": "growth",
+        "title": "Growth strategy",
+        "intro": ""
+    },
+    {
         "tag": "hardware",
         "title": "Hardware: Inside the machine",
         "intro": "Forming the backbone of all tech, hardware is the physical componentry that enable all other systems to function. Encompassing microcontollers, single board computers or advanced GPUs or servers, innovation in hardware fuels growth across the technology landscape.",
         "tagimage": "../img/posts/tag_hardware.png"
+    },
+    {
+        "tag": "innovation",
+        "title": "Innovation: engine of growth",
+        "intro": ""
+    },
+    {
+        "tag": "internet",
+        "title": "Internet: the backbone of modernity",
+        "intro": "Now the intersection of media, communications, devices and culture, the internet has been the main enabler of the Information Age for much of the world. In the past, the internet and the web were synonymous but with more types of network connected data flowing then ever it encompasses devices, software agents, browsers and more.",
+        "tagimage": "../img/posts/tag_internet.png"
+    },
+    {
+        "tag": "ios",
+        "title": "iPhone, iPad, iOS",
+        "intro": ""
+    },
+    {
+        "tag": "iot",
+        "title": "The Internet of Things (IoT)",
+        "intro": "Anything can now be connected to the internet - computers, cameras, cars or coffee makers. As more devices become connected to the network, our designs need to change to account for the exponential increase in data as well as concerns around privacy, security and equity."
+    },
+    {
+        "tag": "javascript",
+        "title": "JavaScript is the toy that runs the world",
+        "intro": "Famously hacked together in a weekend, JavaScript is one of the most popular development languages, having a huge developer base and it runs well beyond the browser. Periodic predictions of JavaScript's demise are largely overblown as the language continues to evolve and enable ever more complex use cases for developers and organisations.",
+        "tagimage": "../img/posts/tag_javascript.png"
+    },
+    {
+        "tag": "linux",
+        "title": "Linux operating system",
+        "intro": "Starting as a discovery project by Linus Torvalds, the Linux operating system is now the most widely used OS on the planet. Running everything from desktops to servers to mobile phones and IoT devices, Linux provides a combination of extreme flexibility, security and openness for extension."
+    },
+    {
+        "tag": "media",
+        "title": "Media and Communications",
+        "intro": "Consumption of media moves ever more into our computing devices - especially due to the rise of streaming and video platforms and social media. In a generation, we've gone from radio and broadcast TV dominating our media, to a hyper-fragmented landscape where every niche, belief or conspiracy theory can be accommodated.",
+        "tagimage": "../img/posts/tag_media.png"
     },
     {
         "tag": "mobile",
@@ -36,9 +196,110 @@
         "tagimage": "../img/posts/tag_mobile.png"
     },
     {
+        "tag": "nodebots",
+        "title": "NodeJS + Robotics = NodeBots",
+        "intro": ""
+    },
+    {
+        "tag": "nodejs",
+        "title": "Node JS - JavaScript has left the browser",
+        "intro": "With the open sourcing of the V8 engine from Chrome, the opportunity to start using JavaScript in more places was evident. Immediately this opened up options around building server and desktop applications but increasingly this has enabled cloud and edge functions and IoT devices to flourish. In turn, the ecosystem of packages has soared, creating security headaches and immense opportunities for rapid, sophisticated development."
+    },
+    {
+        "tag": "nokia",
+        "title": "Nokia - the fallen angel of mobile",
+        "intro": ""
+    },
+    {
+        "tag": "open source",
+        "title": "Open Source technologies",
+        "intro": "Software that is free to use and modify is one of the greatest enablers of modern technology. Underpinning the Web, mobile computing and much of AI, without Open Source technology we would be either stuck 20 years back or stuck in corporate walled gardens with no interoperability."
+    },
+    {
+        "tag": "os",
+        "title": "Operating Systems (OS)",
+        "intro": "Providing a platform to join physical hardware to the applications that run on top, operating systems enable our interaction with technology - even if they are mostly overlooked. The 'big five' of Linux, Windows, iOS, Android and MacOS dominate, spanning servers, desktops, smartphones and edge devices however the innovation allows a multitude of applications to flourish."
+    },
+    {
         "tag": "physical computing",
         "title": "Physical computing",
         "intro": "Physical computing bridges the gaps between the digital and physical worlds, allowing interaction with sensors, controllers and hardware interfaces. IoT devices and robotics are the obvious manifestation of physical computing and are drivers of innovation, however creative uses are emerging around art and design - expanding our interactions with technology and shaping our behaviours."
+    },
+    {
+        "tag": "piracy",
+        "title": "A pirate's life",
+        "intro": ""
+    },
+    {
+        "tag": "podcast",
+        "title": "Lend me your ears",
+        "intro": ""
+    },
+    {
+        "tag": "predictions",
+        "title": "Predicting what comes next",
+        "intro": "The most surprising changes seem obvious in retrospect, the data was there all along. Sometimes, predictions are just about being able to see an outline in the fog to understand enough about what might happen.",
+        "tagimage": "../img/posts/tag_predictions.png"
+    },
+    {
+        "tag": "presentation",
+        "title": "Talks, presentations and workshops",
+        "intro": "This is a collection of various talks, presentations, workshops and panels I have been involved in over the years. All articles contain links to the presentation materials, transcripts, slides and often additional supporting information."
+    },
+    {
+        "tag": "privacy",
+        "title": "User privacy",
+        "intro": ""
+    },
+    {
+        "tag": "python",
+        "title": "Python powers our AI future",
+        "intro": ""
+    },
+    {
+        "tag": "rant",
+        "title": "Tell me what you really think...",
+        "intro": "An honest critique of things that need improvement. Sometimes the improvements are obvious, sometimes they are systemic and we might just need to burn the whole thing down and start again."
+    },
+    {
+        "tag": "responsive design",
+        "title": "Designing for all devices and contexts",
+        "intro": ""
+    },
+    {
+        "tag": "retail",
+        "title": "Are you being served?",
+        "intro": ""
+    },
+    {
+        "tag": "robotics",
+        "title": "Robots won't steal your job. Yet.",
+        "intro": ""
+    },
+    {
+        "tag": "security",
+        "title": "Secure your information",
+        "intro": "Data breaches are becoming ever more common and the security threat for most people, in this digital age is constant. How organisations take security seriously and how they design experiences that manage security for their users is becoming a critical capability of most businesses."
+    },
+    {
+        "tag": "standards",
+        "title": "There's a standard?",
+        "intro": ""
+    },
+    {
+        "tag": "strategy",
+        "title": "Business, technology and customer strategy",
+        "intro": "Strategy is the art of choosing what not to do out of the long list of things you could do in your organisation. Whether it's determining to pursue a particular market, create a new product, acquire a business or shut a division down, strategic thinking is critical to realise the organisational goals."
+    },
+    {
+        "tag": "supercomputers",
+        "title": "Supercomputing",
+        "intro": ""
+    },
+    {
+        "tag": "tablet",
+        "title": "Tablet computing",
+        "intro": ""
     },
     {
         "tag": "ubicomp",
@@ -46,8 +307,14 @@
         "intro": "Imagining a world where technology seamlessly integrates into the everday envionment is the heart of ubicomp. Ubiquitous computing make digital interactions virtually invisible, enabling devices to operate autonomously and adapt to users' needs without direct input."
     },
     {
+        "tag": "ux",
+        "title": "User experience design",
+        "intro": ""
+    },
+    {
         "tag": "web",
-        "title": "Web as platform",
-        "intro": "The web has constantly evolved from grey backgrounds and pixelated images to become the centre of our digital experiences. As every new computing innovation has arrived, the web platform absorbs it and becomes stronger - even if it takes some time."
+        "title": "The World Wide Web as platform",
+        "intro": "The web has constantly evolved from grey backgrounds and pixelated images to become the centre of our digital experiences. As every new computing innovation has arrived, the web platform absorbs it and becomes stronger - even if it takes some time.",
+        "tagimage": "../img/posts/tag_web.png"
     }
 ]
