@@ -5,7 +5,7 @@ layout: post.hbt
 slug: the-web-of-intent
 title: The web of intent
 large-title: true
-tags: internet, media, predictions, web
+tags: internet, media, predictions, web, essay
 listimage: ../../img/posts/will_you.jpg
 excerpt: >
     Web applications could handle common tasks such as sharing or pinning using

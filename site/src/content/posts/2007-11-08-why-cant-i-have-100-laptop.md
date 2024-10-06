@@ -4,7 +4,7 @@ date: 2007-11-08 10:51:00+00:00
 layout: post.hbt
 slug: why-cant-i-have-100-laptop
 title: Why can't I have $100 laptop
-tags: government, OLPC
+tags: government, hardware
 ---
 
 Don't you hate it when you can't get something you'd really like?

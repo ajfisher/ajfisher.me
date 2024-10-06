@@ -4,7 +4,7 @@ date: 2007-04-23 13:43:00+00:00
 layout: post.hbt
 slug: why-is-css-such-a-painful-tool
 title: Why is CSS such a painful tool?
-tags: css, W3C, development, standards
+tags: css, development, standards
 ---
 
 Looking at the title above you'd be expecting to see a rant covering the lines of CSS is rubbish, it doesn't work properly and why can't we go back to the days of nested tables and lots of little shim images.

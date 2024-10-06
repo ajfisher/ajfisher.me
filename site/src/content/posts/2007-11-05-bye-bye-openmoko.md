@@ -6,9 +6,7 @@ layout: post.hbt
 slug: bye-bye-openmoko
 title: Bye bye OpenMoko
 large-title: true
-categories:
-- mobile
-tags: google, mobile, nokia, phone, web
+tags: google, mobile, nokia, web, android, os, strategy
 ---
 
 Google announced today that they would be partnering up with a load of other companies including Samsung, Motorola and LG to produce a new phone "software stack". For those of us in the technology game this basically means Google plans to release mobile phone operating system to rival that of Microsoft, Symbian and the various Linux flavours out there already.

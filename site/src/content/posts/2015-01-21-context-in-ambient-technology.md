@@ -4,7 +4,7 @@ date: 2015-01-21 10:00:00+11:00
 layout: post
 slug: context-in-ambient-technology
 title: The role of context on ambient technologies
-tags: context, physical computing, ubicomp, web, IoT, thinking, essay
+tags: context, physical computing, ubicomp, web, iot, essay 
 excerpt: >
     Ambient technologies are very hard to design well. A blinking light for
     a new email is novel for a few minutes before quickly becoming

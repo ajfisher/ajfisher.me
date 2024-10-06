@@ -5,7 +5,7 @@ layout: post.hbt
 slug: why-im-interested-in-aws-spot-prices-for-ec2
 title: Why I'm interested in AWS Spot Prices for EC2
 small-title: true
-tags: AWS, cloud computing, commodities, development, sysadmin
+tags: cloud computing, development, devops
 ---
 
 There's been a lot of chatter going on around the intertubes over the last couple of weeks since [Amazon Web Services](http://aws.amazon.com) released their [Spot Instances](http://aws.amazon.com/ec2/spot-instances/) pricing model for EC2.

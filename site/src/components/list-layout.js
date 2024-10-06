@@ -14,17 +14,29 @@ const Layout = ({ children, featured={}, slug}) => {
     timeToRead, wordCount
   } = featured;
   const excerpt = frontmatter.excerpt || fields.excerpt || featured?.excerpt || '';
-  const url = `/${pathDate(frontmatter.date)}/${frontmatter.slug}/`;
+
+  // check if we're building a linkable page or not. If we're getting a featured
+  // post then this will evaluate to be true so it can link through. If it's a
+  // tag listing page then this won't be needed
+  let url;
+  if (frontmatter?.date && frontmatter?.slug) {
+    url = `/${pathDate(frontmatter.date)}/${frontmatter.slug}/`;
+  }
 
   const {title, date, imageby} = frontmatter;
   const featuredImage = frontmatter?.featureimage || null;
   const featurePost = frontmatter.featured || false;
+
+  // this is used for tag listing pages to set a header image and number of posts
+  const tagImage = frontmatter?.tagimage || null;
+  const postCount = frontmatter?.postcount || null;
 
   return (
     <>
       <Header featured={featurePost} title={title} date={date}
         excerpt={excerpt} url={url}
         featuredimage={featuredImage} featuredImageBy={imageby}
+        tagimage={tagImage} postcount={postCount}
         smalltitle={frontmatter.small_title} largetitle={frontmatter.large_title}
         readingTime={timeToRead} wordCount={wordCount} />
       <Main>

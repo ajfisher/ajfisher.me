@@ -4,7 +4,7 @@ date: 2011-01-10 11:43:30+00:00
 layout: post.hbt
 slug: computing-is-finally-becoming-personal
 title: Computers are finally becoming personal
-tags: Consumer Electronics, android, Apple, internet, media, mobile
+tags: consumer electronics, android, apple, internet, media, mobile
 listimage: ../../img/posts/zenith.jpg
 ---
 
@@ -14,9 +14,9 @@ For those two weeks I [searched](http://www.google.com), I [tweeted](http://twit
 
 This random change in behaviour was a result of several factors. First I wasn't working and wasn't on call, second I didn't do any programming or other origination of content, everything I did online via my mobile phone. For two weeks straddling 2010 and 2011 I had adopted a [Jobsian](http://en.wiktionary.org/wiki/Jobsian) approach to the use of my technology - one that was totally integrated into my daily life. <b>My computing had become first and foremost consumption driven but it required no "computer".</b>
 
-My dad  got a [Galaxy S Tab](http://www.samsung.com/au/smartphone/galaxy-tab/) for Christmas - something he said that I laughed off at the time has since been nagging me. His question? "What can I **DO** with this thing?" My reply at the time was a flippant, "nothing, it's a consumption device".
+My dad got a [Galaxy S Tab](http://www.samsung.com/au/smartphone/galaxy-tab/) for Christmas - something he said that I laughed off at the time has since been nagging me. His question? "What can I **DO** with this thing?" My reply at the time was a flippant, "nothing, it's a consumption device".
 
-The full meaning of this only came home after watching[ manufacturer after manufacturer](http://www.engadget.com/features/tablets-at-ces-2011/) parade a seemingly infinite number of tablet computing devices most of which were running [Android](http://www.android.com/) - as much a consumption oriented operating system as [Apple's iOS](http://www.apple.com/ipad/).
+The full meaning of this only came home after watching [manufacturer after manufacturer](http://www.engadget.com/features/tablets-at-ces-2011/) parade a seemingly infinite number of tablet computing devices, most of which were running [Android](http://www.android.com/) - as much a consumption oriented operating system as [Apple's iOS](http://www.apple.com/ipad/).
 
 ![First era personal computer terminal](../../img/posts/zenith.jpg)
 
@@ -37,4 +37,4 @@ This transition doesn't come without its challenges, the closed nature of most m
 
 As we make this shift, we will finally realise the idea of the Personal Computer - no longer an aspirational IBM marketing slogan that has eluded us for nearly 30 years. At the start of a new decade, computing has finally hit a point such that each person can have a personal computing device and experience tailored to their needs as a Creator, Prosumer or Consumer that goes way beyond the changing of a desktop wallpaper and a superficial choice of Operating System.
 
-_Update 9/Feb/2011: [Latest sales figures](http://unplugged.rcrwireless.com/index.php/20110208/news/6928/smartphone-sales-top-pc-sales-for-the-first-time/) show smart phones outselling PCs for the first quarter ever in 4Q10 - surely a sign that consumption oriented computing is becoming a mainstream phenomena._
+_Update 9/Feb/2011: [Latest sales figures](http://unplugged.rcrwireless.com/index.php/20110208/news/6928/smartphone-sales-top-pc-sales-for-the-first-time/) show smart phones outselling PCs for the first quarter ever in 4Q10 - surely a sign that consumption oriented computing is becoming a mainstream phenomena._

@@ -4,7 +4,7 @@ date: 2017-08-12 19:00:00+11:00
 layout: post
 slug: embodied-bots
 title: Building embodied bots with JavaScript
-tags: development, design, AI, robotics, philosophy, talks
+tags: development, design, ai, robotics, presentation, javascript
 excerpt: >
     Explorations of how to build bots with JavaScript that blend virtual and
     physical worlds, using chat interfaces like Slack to create embodied agents.

@@ -7,7 +7,7 @@ title: Let the new gaming witch hunt begin
 tags: censorship, gaming, government, media, rant
 ---
 
-I'm in my thirties now and I've been playing computer games from the age of about four when my dad first brought home the venerable Vic 20 - partly because he was doing a computer science degree at University but mostly because he wanted to tinker.
+I'm in my thirties now and I've been playing computer games from the age of about four when my dad first brought home the venerable VIC 20 - partly because he was doing a computer science degree at University but mostly because he wanted to tinker.
 
 Through my life I've borne witness to the rise of computer gaming as a media format to rival and now surpass film and I've seen countless witch hunts focus on computer games as being the root of many of society's teenage evils - everything from being the cause of the obesity epidemic to turning children into cold blooded murderers and violent criminals.
 

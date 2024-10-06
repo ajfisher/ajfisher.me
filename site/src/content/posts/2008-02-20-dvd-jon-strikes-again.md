@@ -5,7 +5,7 @@ layout: post.hbt
 slug: dvd-jon-strikes-again
 title: DVD Jon strikes again
 large-title: true
-tags: DRM, media, piracy, rant
+tags: drm, media, piracy, rant
 ---
 
 [DVD Jon or Jon Lech Johansen](http://en.wikipedia.org/wiki/Jon_Lech_Johansen) as he is more commonly known gets a lot of love here. This great Norwegian famously broke the DVD encryption put in place by the big firms with the release of some software primarily aimed at allowing DVDs to be played on computers and unlocking the regionality of DVDs and DVD players.

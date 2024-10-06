@@ -4,7 +4,7 @@ date: 2007-11-02 17:29:00+00:00
 layout: post.hbt
 slug: css-structure-what-a-mess
 title: CSS Structure - what a mess
-tags: css, W3C, web, standards, rant, development
+tags: css, web, standards, rant, development
 ---
 
 James posted a message on my blog some weeks ago and it's only now that a penny has dropped in my mind about what we need to deal with the issue of structure in CSS - the problem is we have none. As James points out you end up with a flat mess that with all the best will in the world definitions are hard to find.

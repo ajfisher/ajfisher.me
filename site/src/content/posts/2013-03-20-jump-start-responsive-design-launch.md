@@ -4,7 +4,7 @@ date: 2013-03-20 21:30:00+11:00
 layout: post.hbt
 slug: jump-start-responsive-design-launch
 title: Book launch of Jump Start Responsive Design
-tags: development, books, responsive design, design, web, launch
+tags: development, responsive design, design, web
 excerpt: >
     Working on my first book was quite good fun, though hard work, and today
     after all of that effort it's finally released.

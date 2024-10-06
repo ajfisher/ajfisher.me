@@ -4,7 +4,7 @@ date: 2012-02-24 10:50:41+00:00
 layout: post.hbt
 slug: humanising-the-internet-of-things
 title: Humanising the Internet of Things
-tags: internet, IoT, media, mobile, open source, predictions, presentation, arduino, product
+tags: internet, iot, media, mobile, open source, predictions, presentation, arduino
 listimage: ../../img/posts/network_cable.jpg
 featureimage: ../../img/posts/network_cable.jpg
 imageby: Open Grid Scheduler / Grid Engine

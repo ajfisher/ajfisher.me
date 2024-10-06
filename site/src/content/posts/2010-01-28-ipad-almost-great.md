@@ -7,7 +7,7 @@ layout: post.hbt
 slug: ipad-almost-great
 title: iPad - ALMOST great
 large-title: true
-tags: media, mobile, Apple, OS, tablet, iOS
+tags: media, mobile, apple, os, tablet, ios
 ---
 
 There's been a lot of chatter about the [iPad](http://www.apple.com/ipad) today and to put it out there from the start I was expecting outstanding things from [Apple](http://www.apple.com) with their tablet. What I wasn't really expecting was the tablet to be a large version iPhone but in retrospect that isn't too surprising.

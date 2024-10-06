@@ -9,7 +9,7 @@ small-title: true
 categories:
 - development
 - mobile
-tags: android, Apple, development, google, internet, iphone, media, mobile, phone, rant
+tags: android, development, google, internet, media, mobile, rant
 ---
 
 This is a post I've been mulling over for a while and it now seems the right time to put my thoughts down around the issue of [Android](http://www.android.com) Fragmentation. There has [been](http://arstechnica.com/open-source/news/2010/06/ars-explains-android-fragmentation.ars) [a lot](http://news.cnet.com/8301-30685_3-20023199-264.html) [of talk](http://blog.appboy.com/2011/01/android-fragmentation-in-cold-hard-numbers/) amongst the community about this and whilst some was fuelled by [Steve Jobs](http://techcrunch.com/2010/10/18/steve-jobs-android-audio/) (though they are remaining remarkably quiet currently) it seems like the fragmentation "issue" now has a life of it's own amongst devs.

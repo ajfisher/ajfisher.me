@@ -5,9 +5,9 @@ layout: post.hbt
 slug: security-101-the-user-should-be-able-to-authenticate
 title: 'Security 101 : The user should be able to authenticate'
 small-title: true
-tags: banking, data, security, rant
+tags: security, rant, ux
 excerpt: >
-    Security needs to be appropriate for the value of the asset it protects.
+    Security needs to be appropriate to the value of the asset it protects.
 ---
 
 Are you listening Barclays?

@@ -4,7 +4,7 @@ date: 2008-05-02 09:51:00+00:00
 layout: post.hbt
 slug: ubuntu-8-04-truly-desktop-linux
 title: Ubuntu 8.04 - truly desktop Linux
-tags: linux, OS, desktop
+tags: linux, os, desktop
 ---
 
 I'm quite an [Ubuntu](http://www.ubuntulinux.com/) fan, having followed the project since more or less it's original inception. Given the general lack of problems with it thus far you'll notice very few entries on this blog about it.

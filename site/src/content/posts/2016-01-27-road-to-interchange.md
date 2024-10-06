@@ -5,7 +5,7 @@ layout: post.hbt
 slug: road-to-interchange
 title: The meandering journey of NodeBots Interchange
 small-title: true
-tags: development, javascript, physical computing, ubicomp, web, internet, IoT, open source, johnny five, nodejs, hardware
+tags: development, javascript, physical computing, ubicomp, web, internet, iot, open source, nodejs, hardware
 excerpt: >
     What started as a plan to simply make components work a bit better with NodeBots
     turned into a way of managing any firmware using JavaScript.

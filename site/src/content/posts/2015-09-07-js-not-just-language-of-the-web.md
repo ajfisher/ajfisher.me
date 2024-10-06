@@ -4,7 +4,7 @@ date: 2015-09-07 12:30:00+11:00
 layout: post.hbt
 slug: js-not-just-language-of-the-web
 title: 'JavaScript: not just the language of the web'
-tags: physical computing, development, ubicomp, javascript, nodejs, nodebots
+tags: physical computing, development, ubicomp, javascript, nodejs, nodebots, robotics, conference, presentation
 excerpt: >
     JS is moving out of the browser and into all manner of places. My notes
     and slides from my talk on this topic at JSFoo 15.

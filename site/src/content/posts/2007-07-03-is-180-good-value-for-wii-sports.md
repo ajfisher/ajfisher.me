@@ -5,7 +5,7 @@ date: 2007-07-03 08:07:00+00:00
 layout: post.hbt
 slug: is-180-good-value-for-wii-sports
 title: Is £180 good value for Wii Sports?
-tags: gaming, nintendo
+tags: gaming, media, consumer electronics
 ---
 
 I am definitely a [Nintendo](http://www.nintendo.com/) fan boy. I've had every Nintendo console released on the market plus so many Game & Watches it's not funny. Call me sentimental but Nintendo has been a part of and is one of the definers of my life.
