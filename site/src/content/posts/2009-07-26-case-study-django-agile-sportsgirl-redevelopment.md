@@ -5,7 +5,7 @@ layout: post.hbt
 slug: case-study-django-agile-sportsgirl-redevelopment
 title: 'Case Study: Django + Agile = Sportsgirl redevelopment'
 small-title: true
-tags: development, web, python, retail, ecommerce, case study
+tags: development, web, python, retail, ecommerce 
 ---
 
 I've decided to write this one up because there isn't much on large scale and high speed Django development as yet and this is all still fresh in my head so it's worth getting down on paper (or screen as it were).

@@ -4,7 +4,7 @@ date: 2007-11-30 13:15:00+00:00
 layout: post.hbt
 slug: pci-dss-will-wreak-havoc-on-smes
 title: PCI DSS will wreak havoc on SMEs
-tags: rant, banking, security, business
+tags: rant, security, business
 ---
 
 One of my clients was asking me about [PCI DSS](http://www.pcisecuritystandards.org/) certification today. Coincidentally I also received our letter about compulsory compliance to the PCI DSS standard.
