@@ -138,7 +138,8 @@
     {
         "tag": "government",
         "title": "This is why we can't have nice things",
-        "intro": ""
+        "intro": "",
+        "tagimage": "../img/posts/tag_government.png"
     },
     {
         "tag": "growth",
@@ -254,7 +255,8 @@
     {
         "tag": "python",
         "title": "Python powers our AI future",
-        "intro": ""
+        "intro": "",
+        "tagimage": "../img/posts/tag_python.png"
     },
     {
         "tag": "rant",
@@ -269,12 +271,14 @@
     {
         "tag": "retail",
         "title": "Are you being served?",
-        "intro": ""
+        "intro": "",
+        "tagimage": "../img/posts/tag_retail.png"
     },
     {
         "tag": "robotics",
         "title": "Robots won't steal your job. Yet.",
-        "intro": ""
+        "intro": "",
+        "tagimage": "../img/posts/tag_robotics.png"
     },
     {
         "tag": "security",
@@ -309,7 +313,8 @@
     {
         "tag": "ux",
         "title": "User experience design",
-        "intro": ""
+        "intro": "",
+        "tagimage": "../img/posts/tag_ux.png"
     },
     {
         "tag": "web",
