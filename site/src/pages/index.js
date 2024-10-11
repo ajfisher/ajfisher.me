@@ -15,7 +15,7 @@ export const Head = () => {
     <>
       <PageHead
         title="Home | ajfisher.me"
-        description="Featured and recent posts from ajfisher"
+        description="Explore insights on technology, business and user experience at the intersection of AI, web, media and digital innovation."
         type="list"
       />
     </>
@@ -44,7 +44,7 @@ const HomePage = ({pageContext, data}) => {
   return (
     <Layout slug="/" featured={featured.edges[0].node}>
       <Intro>Observations, images and code from ajfisher</Intro>
-      <h2 className="home">Featured posts</h2>
+      <h1 className="home">Featured posts</h1>
       <ListItems>
         {featured.edges.map(({node}, index) => {
           // jump out on first as this will appear up top
@@ -75,7 +75,7 @@ const HomePage = ({pageContext, data}) => {
         })}
       </ListItems>
 
-      <h2 className="home">Recent posts</h2>
+      <h1 className="home">Recent posts</h1>
       <ListItems>
         {filtered_posts.map(({node}) => {
           const { slug, title, date,
