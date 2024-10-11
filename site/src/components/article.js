@@ -23,7 +23,11 @@ const StyledListArticle = styled(Article)`
     font-size: 3rem;
   }
 
-  & h2.home, h2.list {
+  & h1.home {
+    font-size: 4rem;
+  }
+
+  & h1.home, h2.list {
     margin: calc(0.5 * var(--gutter)) var(--gutter);
     display: block;
     background: none;
