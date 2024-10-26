@@ -35,7 +35,8 @@
     {
         "tag": "arduino",
         "title": "Arduino: open hardware done right",
-        "intro": "Prior to arduino, hardware was a mostly closed shop with proprietary tool chains, expensive development boards and long lead times for development. By creating the arduino, Massimo Banzi democratised access to hardware, getting it in the hands of students, hackers and artists. In so doing, it opened the floodgates for new devices and importantly, enabled the experimentation needed to usher in the IoT epoch."
+        "intro": "Prior to arduino, hardware was a mostly closed shop with proprietary tool chains, expensive development boards and long lead times for development. By creating the arduino, Massimo Banzi democratised access to hardware, getting it in the hands of students, hackers and artists. In so doing, it opened the floodgates for new devices and importantly, enabled the experimentation needed to usher in the IoT epoch.",
+        "tagimage": "../img/posts/tag_arduino.png"
     },
     {
         "tag": "business",
@@ -116,8 +117,9 @@
     },
     {
         "tag": "essay",
-        "title": "Longer form essays",
-        "intro": "This is a collection of long form pieces that cover topics in depth and with examples. Often these articles speak to design and strategy, particularly as it relates to consumer experiences or ask questions about how we use technologies or techniques."
+        "title": "Stay a while - the long reads await",
+        "intro": "This is a collection of long form pieces that cover topics in depth, many with examples. These articles speak to design and strategy, particularly as it relates to consumer experience, or ask questions about how we use technology.",
+        "tagimage": "../img/posts/tag_essay.png"
     },
     {
         "tag": "gaming",
@@ -133,7 +135,8 @@
     {
         "tag": "google",
         "title": "Google - search++++++",
-        "intro": "The origins of this big tech behemoth seem quaint now, as does their mantra of 'do no evil'. Google's reach extends far beyond search to AI, cloud computing, mapping, operating systems, advertising platforms, media ecosystems, health tech and productivity software. How much further, only time will tell."
+        "intro": "The origins of this big tech behemoth seem quaint now, as does their mantra of 'do no evil'. Google's reach extends far beyond search to AI, cloud computing, mapping, operating systems, advertising platforms, media ecosystems, health tech and productivity software. How much further, only time will tell.",
+        "tagimage": "../img/posts/tag_google.png"
     },
     {
         "tag": "government",
@@ -171,7 +174,8 @@
     {
         "tag": "iot",
         "title": "The Internet of Things (IoT)",
-        "intro": "Anything can now be connected to the internet - computers, cameras, cars or coffee makers. As more devices become connected to the network, our designs need to change to account for the exponential increase in data as well as concerns around privacy, security and equity."
+        "intro": "Anything can now be connected to the internet - computers, cameras, cars or coffee makers. As more devices become connected to the network, our designs need to change to account for the exponential increase in data as well as concerns around privacy, security and equity.",
+        "tagimage": "../img/posts/tag_iot.png"
     },
     {
         "tag": "javascript",
@@ -182,7 +186,8 @@
     {
         "tag": "linux",
         "title": "Linux operating system",
-        "intro": "Starting as a discovery project by Linus Torvalds, the Linux operating system is now the most widely used OS on the planet. Running everything from desktops to servers to mobile phones and IoT devices, Linux provides a combination of extreme flexibility, security and openness for extension."
+        "intro": "Starting as a discovery project by Linus Torvalds, the Linux operating system is now the most widely used OS on the planet. Running everything from desktops to servers to mobile phones and IoT devices, Linux provides a combination of extreme flexibility, security and openness for extension.",
+        "tagimage": "../img/posts/tag_linux.png"
     },
     {
         "tag": "media",
@@ -219,7 +224,8 @@
     {
         "tag": "os",
         "title": "Operating Systems (OS)",
-        "intro": "Providing a platform to join physical hardware to the applications that run on top, operating systems enable our interaction with technology - even if they are mostly overlooked. The 'big five' of Linux, Windows, iOS, Android and MacOS dominate, spanning servers, desktops, smartphones and edge devices however the innovation allows a multitude of applications to flourish."
+        "intro": "Providing a platform to join physical hardware to the applications that run on top, operating systems enable our interaction with technology - even if they are mostly overlooked. The 'big five' of Linux, Windows, iOS, Android and MacOS dominate, spanning servers, desktops, smartphones and edge devices however the innovation allows a multitude of applications to flourish.",
+        "tagimage": "../img/posts/tag_os.png"
     },
     {
         "tag": "physical computing",
@@ -245,7 +251,8 @@
     {
         "tag": "presentation",
         "title": "Talks, presentations and workshops",
-        "intro": "This is a collection of various talks, presentations, workshops and panels I have been involved in over the years. All articles contain links to the presentation materials, transcripts, slides and often additional supporting information."
+        "intro": "This is a collection of various talks, presentations, workshops and panels I have been involved in over the years. All articles contain links to the presentation materials, transcripts, slides and often additional supporting information.",
+        "tagimage": "../img/posts/tag_presentations.png"
     },
     {
         "tag": "privacy",
@@ -261,7 +268,8 @@
     {
         "tag": "rant",
         "title": "Tell me what you really think...",
-        "intro": "An honest critique of things that need improvement. Sometimes the improvements are obvious, sometimes they are systemic and we might just need to burn the whole thing down and start again."
+        "intro": "An honest critique of things that need improvement. Sometimes the improvements are obvious, sometimes they are systemic and we might just need to burn the whole thing down and start again.",
+        "tagimage": "../img/posts/tag_rant.png"
     },
     {
         "tag": "responsive design",
