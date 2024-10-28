@@ -167,6 +167,11 @@ article p span.gatsby-resp-image-wrapper + em {
     margin-top: calc(0.25 * var(--gutter));
 }
 
+article video {
+    width: 100%;
+}
+
+
 /* some elements for when you are in an aside in the article */
 article aside h2 {
     display: block;

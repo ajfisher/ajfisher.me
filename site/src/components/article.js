@@ -132,6 +132,11 @@ const StyledPostArticle = styled(Article)`
 
   & blockquote > p {
     padding: 0 !important;
+    font-family: var(--quote-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: normal;
+    font-size: 4rem;
+    color: var(--highlight);
   }
 
   & p.has-pullquote::before {

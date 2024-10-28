@@ -12,7 +12,7 @@ excerpt: >
 twitter_excerpt: >
     Explore how non-tech businesses can capitalise on recent tech layoffs to
     boost their own innovation and growth. Strategic insights for navigating
-    AI, talent and automation. 🚀📈 #RetailInnovation #Retail #AI #strategy
+    AI, talent and automation. 🚀📈 #RetailInnovation #retail #AI #strategy
 featureimage: ../../img/posts/retail-opportunity-dalle-2024-04-16212738.webp
 imageby: ajfisher - Retail Innovation Opportunities - Dall-E 3
 listimage: ../../img/posts/retail-opportunity-dalle-2024-04-16212738.webp
