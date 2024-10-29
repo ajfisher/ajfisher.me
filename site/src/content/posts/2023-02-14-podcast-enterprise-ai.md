@@ -15,7 +15,7 @@ twitter_excerpt: >
 featureimage: ../../img/posts/enterprise_ai_future.png
 imageby: "ajfisher: a business person looking into an AI environment - SDXL"
 listimage: ../../img/posts/enterprise_ai.jpg
-featured: true
+featured: false
 ---
 
 I was invited to sit down with some other technology leaders for a podcast
