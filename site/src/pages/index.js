@@ -6,8 +6,11 @@ import PageHead from '../components/page-head';
 import Layout from '../components/list-layout';
 import { ListItems, PostListItem } from '../components/list';
 
-const Intro = styled.p`
-  margin-top: var(--gutter) !important;
+const Intro = styled.h1`
+  margin: var(--gutter) 0 !important;
+  font-size: 2.2rem !important;
+  font: var(--main-font-family);
+  color: var(--dark-text-colour) !important;
 `;
 
 export const Head = () => {
@@ -43,12 +46,18 @@ const HomePage = ({pageContext, data}) => {
 
   return (
     <Layout slug="/" featured={featured.edges[0].node}>
-      <Intro>Observations, insights, images and code from ajfisher</Intro>
-      <h1 className="home">Featured posts</h1>
+      <Intro>
+        Observations, insights, images and code from ajfisher exploring the
+        intersection of AI, web, media and digital innovation.
+      </Intro>
+      <h2 className="home">Featured posts</h2>
       <ListItems>
         {featured.edges.map(({node}, index) => {
           // jump out on first as this will appear up top
-          if (index === 0) return null;
+          // jump out on last as this will appear in the footer
+          // This will force the second and third in the list under the
+          // featured posts header
+          if (index === 0 || index === 3 ) return null;
 
           const { slug, title, date,
             listimage, listimage_position } = node.frontmatter;
@@ -75,7 +84,7 @@ const HomePage = ({pageContext, data}) => {
         })}
       </ListItems>
 
-      <h1 className="home">Recent posts</h1>
+      <h2 className="home">Recent posts</h2>
       <ListItems>
         {filtered_posts.map(({node}) => {
           const { slug, title, date,
@@ -118,7 +127,7 @@ export const pageQuery = graphql`
         featured: {eq: true}
       }}
       sort: {frontmatter: {date: DESC}}
-      limit: 3
+      limit: 4
     ) {
       edges {
         node {
@@ -162,7 +171,7 @@ export const pageQuery = graphql`
         layout: {regex: "/^post/"}
       }}
       sort: {frontmatter: {date: DESC}}
-      limit: 13
+      limit: 14
     ) {
       edges {
         node {

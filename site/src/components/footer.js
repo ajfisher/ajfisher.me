@@ -141,7 +141,7 @@ const Footer = ({slug}) => {
   featuredPosts: allMarkdownRemark(
     filter: {frontmatter: {featured: {eq: true}}}
     sort: {frontmatter: {date: DESC}}
-    limit: 3
+    limit: 4
   ) {
     edges {
       node {
@@ -171,12 +171,25 @@ const Footer = ({slug}) => {
 
   let featured = featuredPosts[0]; // latest
 
+  // there's some logic to this:
+  // If we're on the URL of the post that is most recent, then we should
+  // choose the second post in the list instead.
+  // Similarly if we're on the home page then the most recent featured post
+  // will be at the top so we should get the 4th one from the list as it will
+  // be dropped off the top list
+  // Additionally, do a check to see if the post happens to be something we're
+  // also prioritising in the footer.
   // make sure we don't feature the current post on itself
-  if (featured.slug === slug) {
+  if (slug === '/') {
+    // home page - take the 4th item from the featured list
+    featured = featuredPosts[3];
+  } else if (featured.slug === slug) {
+    // we're on the same page so choose the next one
     featured = featuredPosts[1]; // second latest
-    if (featured.slug === 'podcast-enterprise-ai') {
-      featured = featuredPosts[2]; // last
-    }
+  }
+  // specifically test if we've landed on the same as the other post
+  if (featured.slug === 'podcast-enterprise-ai') {
+    featured = featuredPosts[2]; // take t
   }
 
   featured.url = `/${pathDate(featured.date)}/${featured.slug}/`;
