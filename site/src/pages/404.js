@@ -8,7 +8,7 @@ export const Head = () => {
   return (
     <>
       <PageHead
-        title="This page cannot be found | ajfisher.me"
+        title="This page cannot be found | ajfisher"
         description="The page you requested does not exist or has moved."
         type="website"
       />

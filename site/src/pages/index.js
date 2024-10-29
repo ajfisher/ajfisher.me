@@ -14,7 +14,7 @@ export const Head = () => {
   return (
     <>
       <PageHead
-        title="Home | ajfisher.me"
+        title="Home | ajfisher"
         description="Explore insights on technology, business and user experience at the intersection of AI, web, media and digital innovation."
         type="list"
       />
@@ -43,7 +43,7 @@ const HomePage = ({pageContext, data}) => {
 
   return (
     <Layout slug="/" featured={featured.edges[0].node}>
-      <Intro>Observations, images and code from ajfisher</Intro>
+      <Intro>Observations, insights, images and code from ajfisher</Intro>
       <h1 className="home">Featured posts</h1>
       <ListItems>
         {featured.edges.map(({node}, index) => {

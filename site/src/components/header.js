@@ -289,7 +289,7 @@ const Featured = styled.p`
 const Header = ({
   title, date, excerpt, url,
   featured=false,
-  featuredimage, featuredImageBy,
+  featuredimage=null, featuredImageBy,
   tagimage=null, postcount=null,
   smalltitle, largetitle,
   readingTime=0, wordCount={} }) => {
