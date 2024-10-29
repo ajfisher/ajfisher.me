@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
-// import styled from 'styled-components';
 import { Link, graphql } from 'gatsby';
 
 import PageHead from '../components/page-head';
 import Layout from '../components/post-layout';
-import { getFeaturedImageSources } from '../lib/utils';
 
 export const Head = () => {
   return (
     <>
       <PageHead
-        title="Leaders | ajfisher.me"
+        title="Leaders | ajfisher"
         description="Information for leaders"
         type="article"
       />
@@ -20,11 +18,9 @@ export const Head = () => {
 
 
 const LeadersPage = ({data}) => {
-  const {base, large, medium, small, wide, share} = data?.headimage?.nodes[0];
+  const { featureimage } = data?.headimage?.nodes[0];
 
-  const featuredImageSrc = getFeaturedImageSources({
-    small, medium, large, wide, share, base
-  });
+  const featuredImage = featureimage || null;
 
   const title = 'Resources, materials and links for Leaders';
   const slug = '/leaders';
@@ -80,7 +76,7 @@ const LeadersPage = ({data}) => {
 
   return (
     <Layout frontmatter={frontmatter} tags={tags}
-      path='/leaders' featuredimage={featuredImageSrc}
+      path='/leaders' featuredimage={featuredImage}
     >
       <PageHead title={title}/>
       <section class="content">
@@ -204,22 +200,7 @@ export const pageQuery = graphql`
     ) {
       nodes {
         id
-        base: gatsbyImageData(width: 400, quality: 100
-          transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000", opacity: 80}}
-        )
-        small: gatsbyImageData(width: 400, quality: 100
-          transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000", opacity: 80}}
-        )
-        medium: gatsbyImageData(width: 750, quality: 90
-          transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000", opacity: 80}}
-        )
-        large: gatsbyImageData(width: 1050, quality: 100
-          transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000", opacity: 80}}
-        )
-        wide: gatsbyImageData(width: 1600, quality: 100
-          transformOptions: {duotone: {highlight:"#FF5E9A", shadow:"#000000", opacity: 80}}
-        )
-        share: gatsbyImageData(width: 1200, quality: 90)
+        featureimage: gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }
