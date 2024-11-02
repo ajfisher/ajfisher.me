@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faInstagram, faGithub, faLinkedin, faBluesky } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
@@ -128,11 +128,11 @@ const NavItems = styled.ul`
     }
 
     @media only screen and ${device.large} {
-      font-size: 3.5rem;
+      font-size: 3rem;
     }
 
     @media only screen and ${device.wide} {
-      font-size: 4rem;
+      font-size: 3.2rem;
     }
 
     & a {
@@ -180,6 +180,9 @@ const Navigation = () => {
         </OutboundLink>
         <OutboundLink title="@ajfisher on Twitter" href="https://twitter.com/ajfisher" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faTwitter}/>
+        </OutboundLink>
+        <OutboundLink title="@ajfisher on Bluesky" href="https://bsky.app/profile/ajfisher.social" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faBluesky}/>
         </OutboundLink>
         <OutboundLink title="@ajfisher on LinkedIn" href="https://www.linkedin.com/in/andrewfisher/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedin}/>
