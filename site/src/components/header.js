@@ -245,11 +245,15 @@ const PostData = styled(Para)`
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: calc(0.5 * var(--gutter));
-  min-width: 90vw;
+  gap: calc(0.25 * var(--gutter));
+  min-width: 100%;
 
   @media only screen and ${device.medium} {
     font-size: 2rem;
+  }
+
+  @container (min-width: 400px) {
+    gap: calc(0.5 * var(--gutter));
   }
 `;
 
@@ -420,4 +424,4 @@ Header.defaultProps = {
 
 export default Header;
 
-export { OldHeader, Header };
+export { OldHeader, Header, PostData };

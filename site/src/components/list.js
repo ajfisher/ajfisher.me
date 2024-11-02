@@ -6,7 +6,10 @@ import humanize from 'humanize-plus';
 import moment from 'moment';
 
 import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClock } from '@fortawesome/free-solid-svg-icons';
 
+import { PostData } from './header';
 import { device } from './devices';
 import { pathDate } from '../lib/utils';
 
@@ -27,6 +30,7 @@ export const ListItems = styled.ul`
 const Item = styled.li`
   width: 100%;
   height: min-content;
+  container-type: inline-size;
 
   @media only screen and ${device.medium} {
     width: 49%;
@@ -139,23 +143,30 @@ export const PostListItem = ({title, image, position, excerpt, date,
     const rounded_time = Math.ceil(readingtime);
     const humanised_words = humanize.compactInteger(wordcount, 1);
     // work out if we should say An 8 minute or A 7 seven minute
-    const a_an = ([8,11,18].includes(rounded_time)) ? 'An' : 'A';
+    // const a_an = ([8,11,18].includes(rounded_time)) ? 'An' : 'A';
 
-    const reading_time = `${a_an} ${rounded_time} minute read (${humanised_words} words).`;
+    const reading_time = `${rounded_time} min (${humanised_words} words).`;
 
     return (
-      <Item>
+      <Item itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
         <ImageLink $position={position}>
-          <Link to={url}>
+          <Link to={url} itemprop="url">
             {listimage}
           </Link>
         </ImageLink>
-        <h2><Link to={url}>{title}</Link></h2>
-        <PostDate>{moment(date).format("dddd, MMMM Do YYYY")}</PostDate>
+        <h3 itemprop="headline"><Link to={url}>{title}</Link></h3>
+        <PostDate itemprop="datePublished" datetime={moment(date).format("YYYY-MM-DD")}>{moment(date).format("dddd, MMMM Do YYYY")}</PostDate>
         { excerpt.length > 0 &&
-          <p>{excerpt}</p>
+          <p itemprop="abstract" itemtype="https://schema.org/CreativeWork">{excerpt}</p>
         }
-        <p>{reading_time}</p>
+        <PostData aria-hidden="true" itemprop="timeRequired" content={`PT${rounded_time}M`}>
+          <span>
+            <FontAwesomeIcon icon={faClock}/>
+          </span>
+          <span>
+            {reading_time}
+          </span>
+        </PostData>
       </Item>
     );
 };
