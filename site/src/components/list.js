@@ -154,7 +154,7 @@ export const PostListItem = ({title, image, position, excerpt, date,
             {listimage}
           </Link>
         </ImageLink>
-        <h2 itemprop="headline"><Link to={url}>{title}</Link></h2>
+        <h3 itemprop="headline"><Link to={url}>{title}</Link></h3>
         <PostDate itemprop="datePublished" datetime={moment(date).format("YYYY-MM-DD")}>{moment(date).format("dddd, MMMM Do YYYY")}</PostDate>
         { excerpt.length > 0 &&
           <p itemprop="abstract" itemtype="https://schema.org/CreativeWork">{excerpt}</p>

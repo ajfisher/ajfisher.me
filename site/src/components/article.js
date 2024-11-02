@@ -45,7 +45,7 @@ const StyledListArticle = styled(Article)`
   }
 
   & li {
-    & h2 {
+    & h2, h3 {
       background: none;
       color: var(--dark-base);
       box-shadow: none;
