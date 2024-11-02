@@ -41,7 +41,7 @@ const Layout = ({ children, featured={}, slug}) => {
         readingTime={timeToRead} wordCount={wordCount} />
       <Main>
         <ListArticle>
-          <section>{children}</section>
+          <section itemscope="" itemtype="https://schema.org/Blog">{children}</section>
         </ListArticle>
         <Aside>
           <Nav/>
