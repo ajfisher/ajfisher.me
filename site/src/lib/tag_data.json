@@ -57,7 +57,8 @@
     {
         "tag": "conference",
         "title": "Conference synthesis and observation",
-        "intro": "A good conference gives you a boost of knowledge, downloading months or years of learning into your brain in a couple of days. A great conference gets your brain working overtime, thinking about all the new possibilities that you can pursue as a result of that knowledge. This is a distillation of various conferences, synthesising the key themes."
+        "intro": "A good conference gives you a boost of knowledge, downloading months or years of learning into your brain in a couple of days. A great conference gets your brain working overtime, thinking about all the new possibilities that you can pursue as a result of that knowledge. This is a distillation of various conferences, synthesising the key themes.",
+        "tagimage": "../img/posts/tag_conference.png"
     },
     {
         "tag": "consumer electronics",
@@ -291,7 +292,8 @@
     {
         "tag": "security",
         "title": "Secure your information",
-        "intro": "Data breaches are becoming ever more common and the security threat for most people, in this digital age is constant. How organisations take security seriously and how they design experiences that manage security for their users is becoming a critical capability of most businesses."
+        "intro": "Data breaches are becoming ever more common and the security threat for most people, in this digital age is constant. How organisations take security seriously and how they design experiences that manage security for their users is becoming a critical capability of most businesses.",
+        "tagimage": "../img/posts/tag_security.png"
     },
     {
         "tag": "standards",
@@ -301,7 +303,8 @@
     {
         "tag": "strategy",
         "title": "Business, technology and customer strategy",
-        "intro": "Strategy is the art of choosing what not to do out of the long list of things you could do in your organisation. Whether it's determining to pursue a particular market, create a new product, acquire a business or shut a division down, strategic thinking is critical to realise the organisational goals."
+        "intro": "Strategy is the art of choosing what not to do from the long list of things you could do in your organisation. Whether it's determining to pursue a particular market, create a new product, acquire a business or shut a division down, strategic thinking is critical to realise the organisational goals.",
+        "tagimage": "../img/posts/tag_strategy.png"
     },
     {
         "tag": "supercomputers",
