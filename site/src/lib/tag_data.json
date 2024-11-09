@@ -46,13 +46,15 @@
     },
     {
         "tag": "censorship",
-        "title": "Censorship",
-        "intro": ""
+        "title": "Censorship in the digital media age",
+        "intro": "Examining the challenges and implications of digital rights, internet regulation and free speech. Trying to make sense of the inevitable tension between control and open access in the digital ecosystem.",
+        "tagimage": "../img/posts/tag_censorship.png"
     },
     {
         "tag": "cloud computing",
         "title": "Cloud technologies",
-        "intro": "Also known as \"running your code on someone else's computer\", cloud computing has extended well beyond server hosting and content caching. As cloud technologies mature, more sophisticated workloads are delivered including just in time functions, full API microservices, complex data processing pipelines and increasingly, AI tasks."
+        "intro": "Also known as \"running your code on someone else's computer\", cloud computing has extended well beyond server hosting and content caching. As cloud technologies mature, more sophisticated workloads are delivered including just in time functions, full API microservices, complex data processing pipelines and increasingly, AI tasks.",
+        "tagimage": "../img/posts/tag_datacentre.png"
     },
     {
         "tag": "conference",
@@ -63,7 +65,7 @@
     {
         "tag": "consumer electronics",
         "title": "Consumer electronics",
-        "intro": ""
+        "intro": "Our personal gadgets and entertainment systems increasingly play a bigger role in our lives - providing the gateways to our digital existence. As the consumer electronics landscape changes, so to our digital culture evolves with it."
     },
     {
         "tag": "context",
@@ -142,7 +144,7 @@
     {
         "tag": "government",
         "title": "This is why we can't have nice things",
-        "intro": "",
+        "intro": "Government policies and regulation inherently impact innovation, privacy and accessibility and so help determine the technology ecosystem. How and what government chooses to set policy on affects everything from data protection to digital rights.",
         "tagimage": "../img/posts/tag_government.png"
     },
     {
@@ -257,13 +259,13 @@
     },
     {
         "tag": "privacy",
-        "title": "User privacy",
-        "intro": ""
+        "title": "Is digital privacy possible?",
+        "intro": "In an interconnected world, safeguarding user data and digital rights is of paramount importance and these posts explore the challenges and innovations to protect personal information as technology continues to evolve."
     },
     {
         "tag": "python",
         "title": "Python powers our AI future",
-        "intro": "",
+        "intro": "Python is an extremely versatile programming language used for everything from web development to building AI models. It is powerful, exensible and enables rapid, efficient software engineering.",
         "tagimage": "../img/posts/tag_python.png"
     },
     {
@@ -280,13 +282,13 @@
     {
         "tag": "retail",
         "title": "Are you being served?",
-        "intro": "",
+        "intro": "Retail technology is changing the shopping experiences. Evolution continues to occur in digital channels but technology increasingly plays a bigger role in physical channels too. Innovation in retail technology impacts consumer experiences as well as operational effectiveness leading to change on both sides of the register.",
         "tagimage": "../img/posts/tag_retail.png"
     },
     {
         "tag": "robotics",
         "title": "Robots won't steal your job. Yet.",
-        "intro": "",
+        "intro": "Robotics blend hardware and software together to create machines capable of interacting with the physical world. Whether this is a good idea or not, and what the implications are of this, we'll see.",
         "tagimage": "../img/posts/tag_robotics.png"
     },
     {
@@ -298,7 +300,8 @@
     {
         "tag": "standards",
         "title": "There's a standard?",
-        "intro": ""
+        "intro": "Standards are essential for building cohesive and scalable tech ecosystems by ensuring compatability and consistency across platforms. Sometimes it works, sometimes we just have a multitude of conflicting ways to do something.",
+        "tagimage": "../img/posts/tag_standards.png"
     },
     {
         "tag": "strategy",
@@ -324,7 +327,7 @@
     {
         "tag": "ux",
         "title": "User experience design",
-        "intro": "",
+        "intro": "From responsive design to accessibility, UX shapes how humans and technology interact in meaningful ways that are intuitive, engaging and user-centred.",
         "tagimage": "../img/posts/tag_ux.png"
     },
     {
