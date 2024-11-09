@@ -116,7 +116,8 @@
     {
         "tag": "ecommerce",
         "title": "eCommerce and digital sales",
-        "intro": ""
+        "intro": "",
+        "tagimage": "../img/posts/tag_ecommerce.png"
     },
     {
         "tag": "essay",
