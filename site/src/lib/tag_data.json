@@ -2,12 +2,12 @@
     {
         "tag": "adobe",
         "title": "Adobe technologies",
-        "intro": ""
+        "intro": "Over decades, Adobe has consistently played a pivotal role in creative software, whether graphics and video editing to digital experience. Adobe's influence touches every part of digital design and culture and it continues to evolve, even in the Generative AI era."
     },
     {
         "tag": "agents",
         "title": "Software and AI Agents",
-        "intro": ""
+        "intro": "Software and AI agents are used to automate tasks and make decisions and can be simple scripts or increasingly, complex AI-driven processes. Agent-based systems are starting to transform how workflows are delivered, creating efficiencies and enhancing digital interactions."
     },
     {
         "tag": "ai",
@@ -18,7 +18,7 @@
     {
         "tag": "algorithms",
         "title": "Alogorithms rule the world",
-        "intro": ""
+        "intro": "The foundational logic that power digital systems - algorithms drive decision-making and automation across the technology ecosystem. Sometimes, the lack of transparency or understanding about how they work, especially in AI and Machine Learning contexts, means they can be prone to bias."
     },
     {
         "tag": "android",
@@ -75,12 +75,13 @@
     {
         "tag": "css",
         "title": "Cascading Style Sheets (CSS)",
-        "intro": "Simple enough to get started, CSS is incredibly difficult to master. In the early age of the web many designers and developers were employed purely to do CSS - to coerce a design vision into something the browser could render. CSS has matured dramatically, as has its power and capability. In this age of CSS frameworks that make everything look the same, seeing what a true CSS master can accomplish is a thing of wonder."
+        "intro": "Simple enough to get started, CSS is incredibly difficult to master. In the early age of the web many designers and developers were employed purely to do CSS - to coerce a design vision into something the browser could render. CSS has matured dramatically, as has its power and capability. In this age of CSS frameworks that make everything look the same, seeing what a true CSS master can accomplish is a thing of wonder.",
+        "tagimage": "../img/posts/tag_css.png"
     },
     {
         "tag": "data science",
         "title": "Data Science and Engineering",
-        "intro": ""
+        "intro": "At one point considered the \"sexiest job in the world\" - by HBR at least - Data science has rapidly become a critical part of most businesses that are looking to maximise the potential of their data assets."
     },
     {
         "tag": "design",
@@ -90,7 +91,8 @@
     {
         "tag": "desktop",
         "title": "Desktop computing",
-        "intro": ""
+        "intro": "Desktop computing is still the bedrock of productivity, providing platforms for software development, design and other specialised tasks. While mobile and tablets have taken off, innovation is still occurring around desktop based computing and is being influenced heavily by these other modes.",
+        "tagimage": "../img/posts/tag_desktop.png"
     },
     {
         "tag": "development",
@@ -116,7 +118,7 @@
     {
         "tag": "ecommerce",
         "title": "eCommerce and digital sales",
-        "intro": "",
+        "intro": "Retail and direct to consumer sales continue to evolve in the ecommerce space. No longer is it just about sales on your .com site, there are a multitude of digital channels to think about and innovation continues to drive new strategies and opportunities.",
         "tagimage": "../img/posts/tag_ecommerce.png"
     },
     {
@@ -213,7 +215,8 @@
     {
         "tag": "nodejs",
         "title": "Node JS - JavaScript has left the browser",
-        "intro": "With the open sourcing of the V8 engine from Chrome, the opportunity to start using JavaScript in more places was evident. Immediately this opened up options around building server and desktop applications but increasingly this has enabled cloud and edge functions and IoT devices to flourish. In turn, the ecosystem of packages has soared, creating security headaches and immense opportunities for rapid, sophisticated development."
+        "intro": "With the open sourcing of the V8 engine from Chrome, the opportunity to start using JavaScript in more places was evident. Immediately this opened up options around building server and desktop applications but increasingly this has enabled cloud and edge functions and IoT devices to flourish. In turn, the ecosystem of packages has soared, creating security headaches and immense opportunities for rapid, sophisticated development.",
+        "tagimage": "../img/posts/tag_nodejs.png"
     },
     {
         "tag": "nokia",
