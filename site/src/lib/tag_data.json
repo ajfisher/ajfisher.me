@@ -113,7 +113,7 @@
     {
         "tag": "drm",
         "title": "Digital Rights Management (DRM)",
-        "intro": ""
+        "intro": "DRM technologies are designed to protect copyrighted content, but they often spark debate over user access and control. If you buy a movie on DVD do you have the right to digitise and put it on a USB drive for your own use? Even after over 20 years of digital media, these are still tricky questions that are continually evolving."
     },
     {
         "tag": "ecommerce",
@@ -175,7 +175,7 @@
     {
         "tag": "ios",
         "title": "iPhone, iPad, iOS",
-        "intro": ""
+        "intro": "iOS powers Apple's mobile ecosystem, enabling a seamless user experience across iPhones and iPads. Changes and innovations to the iOS operating system have far reaching impacts on user experience and the benchmarks for how users interact with mobile devices."
     },
     {
         "tag": "iot",
@@ -210,7 +210,7 @@
     {
         "tag": "nodebots",
         "title": "NodeJS + Robotics = NodeBots",
-        "intro": ""
+        "intro": "NodeBots combine NodeJS and Robotics, empowering developers to create hardware with JavaScript. Whether it is a simple script to toggle an LED when you get a message on social media or an autonomous vehicle, NodeBots opens up robotics and hardware development to a broader community to engage in."
     },
     {
         "tag": "nodejs",
@@ -221,7 +221,7 @@
     {
         "tag": "nokia",
         "title": "Nokia - the fallen angel of mobile",
-        "intro": ""
+        "intro": "Once a technology leader, and one of the \"Big Tech\" firms of the 90s, Nokia left a lasting impact on the mobile industry with its innovative designs, tech and influence on early mobile culture. Nokia's star might now have waned, but it leaves an impressive legacy and it continues to play a role in the evolution of underlying mobile technologies."
     },
     {
         "tag": "open source",
@@ -242,7 +242,7 @@
     {
         "tag": "piracy",
         "title": "A pirate's life",
-        "intro": ""
+        "intro": "Content sharing elicits strong reactions from average users and while the media industry has labelled individuals that share unauthorised content as pirates, they also caught many adjacent scenarios that might be considered fair use as well. This has led to a consumer backlash which has led to various legal battles, innovations and the evolution of digital rights and access."
     },
     {
         "tag": "podcast",
