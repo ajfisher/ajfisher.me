@@ -226,7 +226,8 @@
     {
         "tag": "open source",
         "title": "Open Source technologies",
-        "intro": "Software that is free to use and modify is one of the greatest enablers of modern technology. Underpinning the Web, mobile computing and much of AI, without Open Source technology we would be either stuck 20 years back or stuck in corporate walled gardens with no interoperability."
+        "intro": "Software that is free to use and modify is one of the greatest enablers of modern technology. Underpinning the Web, mobile computing and much of AI, without Open Source technology we would be either stuck 20 years back or stuck in corporate walled gardens with no interoperability.",
+        "tagimage": "../img/posts/tag_code.png"
     },
     {
         "tag": "os",
@@ -237,7 +238,8 @@
     {
         "tag": "physical computing",
         "title": "Physical computing",
-        "intro": "Physical computing bridges the gaps between the digital and physical worlds, allowing interaction with sensors, controllers and hardware interfaces. IoT devices and robotics are the obvious manifestation of physical computing and are drivers of innovation, however creative uses are emerging around art and design - expanding our interactions with technology and shaping our behaviours."
+        "intro": "Physical computing bridges the gaps between the digital and physical worlds, allowing interaction with sensors, controllers and hardware interfaces. IoT devices and robotics are the obvious manifestation of physical computing and are drivers of innovation, however creative uses are emerging around art and design - expanding our interactions with technology and shaping our behaviours.",
+        "tagimage": "../img/posts/tag_potplant.png"
     },
     {
         "tag": "piracy",
