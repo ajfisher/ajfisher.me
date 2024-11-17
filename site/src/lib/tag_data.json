@@ -65,12 +65,13 @@
     {
         "tag": "consumer electronics",
         "title": "Consumer electronics",
-        "intro": "Our personal gadgets and entertainment systems increasingly play a bigger role in our lives - providing the gateways to our digital existence. As the consumer electronics landscape changes, so to our digital culture evolves with it."
+        "intro": "Our personal gadgets and entertainment systems increasingly play a bigger role in our lives - providing the gateways to our digital existence. As the consumer electronics landscape changes, so to our digital culture evolves with it.",
+        "tagimage": "../img/posts/tag_gadgets.png"
     },
     {
         "tag": "context",
         "title": "Context oriented user experience design",
-        "intro": ""
+        "intro": "Context-driven design focuses on creating experiences that use data from a range of sources to understand the current state a user is in and adapt to that state. It might use time of day to reflect common tasks, search queries to guide literacy or language use or the type of technology they are using to access a service. All of these factors can contribute to more tuned user experiences that better meet the user where they are in their journey and capabilities."
     },
     {
         "tag": "css",
@@ -103,12 +104,12 @@
     {
         "tag": "devops",
         "title": "DevOps: modern development methods",
-        "intro": ""
+        "intro": "DevOps merges development and operations to streamline the way software and infrastructure are delivered and managed. With a complex set of tools, practices and methods that drive efficiency and collaboration, modern tech teams are able to deliver faster, more securely and drive scale for their organisations."
     },
     {
         "tag": "distributed computing",
         "title": "Distributed Computing",
-        "intro": ""
+        "intro": "Utilising the power of multiple systems working together to solve complex problems, distributed computing is used in everything from scientific research to blockchain networks and large scale applications. While the concepts have been around for decades, access to modern approaches such as large scale cloud compute capabilities have unlocked all kinds of innovation and scale as a result."
     },
     {
         "tag": "drm",
@@ -136,7 +137,7 @@
     {
         "tag": "generative ai",
         "title": "Generative Artificial Intelligence",
-        "intro": ""
+        "intro": "One of the newest aspects of AI, and one that has captured the world's attention in recent years, Generative AI leverages advanced algorithms to create code, content, design or audio. The technologies are contentious as a result of them being trained on the unlicensed work of creators, however the impacts across many industries are immense."
     },
     {
         "tag": "google",
@@ -153,7 +154,7 @@
     {
         "tag": "growth",
         "title": "Growth strategy",
-        "intro": ""
+        "intro": "Scaling, adapting to market changes, siezing opportunities for sustainable development - all of these growth strategies leverage thinking and innovation to drive success."
     },
     {
         "tag": "hardware",
@@ -164,7 +165,7 @@
     {
         "tag": "innovation",
         "title": "Innovation: engine of growth",
-        "intro": ""
+        "intro": "Innovation drives progress by transforming ideas into solutions that matter. Breakthroughs in technology and new strategies for fostering creativity all contribute to driving innovation forward."
     },
     {
         "tag": "internet",
@@ -175,7 +176,8 @@
     {
         "tag": "ios",
         "title": "iPhone, iPad, iOS",
-        "intro": "iOS powers Apple's mobile ecosystem, enabling a seamless user experience across iPhones and iPads. Changes and innovations to the iOS operating system have far reaching impacts on user experience and the benchmarks for how users interact with mobile devices."
+        "intro": "iOS powers Apple's mobile ecosystem, enabling a seamless user experience across iPhones and iPads. Changes and innovations to the iOS operating system have far reaching impacts on user experience and the benchmarks for how users interact with mobile devices.",
+        "tagimage": "../img/posts/tag_ios.png"
     },
     {
         "tag": "iot",
@@ -249,7 +251,7 @@
     {
         "tag": "podcast",
         "title": "Lend me your ears",
-        "intro": ""
+        "intro": "This is a collection of podcasts I've contributed to or thought were worth a listen over the years."
     },
     {
         "tag": "predictions",
@@ -283,7 +285,7 @@
     {
         "tag": "responsive design",
         "title": "Designing for all devices and contexts",
-        "intro": ""
+        "intro": "Responsive design isn't just a resizable website. At it's heart, responsive design creates adaptable experiences by understanding different devices and context and creating flexible design systems that enhance usability."
     },
     {
         "tag": "retail",
@@ -317,18 +319,19 @@
     },
     {
         "tag": "supercomputers",
-        "title": "Supercomputing",
-        "intro": ""
+        "title": "Supercomputing - pushing limits",
+        "intro": "From weather forecasting to nuclear modelling to brain simulation, super computers push the absolute limits of what is possible using a computer. Constant scaling and innovation continue to open up new research and innovation opportunities that and improve our understanding of the world."
     },
     {
         "tag": "tablet",
         "title": "Tablet computing",
-        "intro": ""
+        "intro": "Bridging the gap between mobile convenience and desktop power, tablet computers provide versatile platforms for work, play and creativity. With constant innovation in this space, the days of a tablet being purely for consumption are beginning to wane and are legitimate productivity devices in their own right - opening up a whole different class of use cases beyond mobile and desktop."
     },
     {
         "tag": "ubicomp",
         "title": "Ubiquitous computing",
-        "intro": "Imagining a world where technology seamlessly integrates into the everday envionment is the heart of ubicomp. Ubiquitous computing make digital interactions virtually invisible, enabling devices to operate autonomously and adapt to users' needs without direct input."
+        "intro": "Imagining a world where technology seamlessly integrates into the everday envionment is the heart of ubicomp. Ubiquitous computing make digital interactions virtually invisible, enabling devices to operate autonomously and adapt to users' needs without direct input.",
+        "tagimage": "../img/posts/tag_mirror.png"
     },
     {
         "tag": "ux",
