@@ -71,7 +71,8 @@
     {
         "tag": "context",
         "title": "Context oriented user experience design",
-        "intro": "Context-driven design focuses on creating experiences that use data from a range of sources to understand the current state a user is in and adapt to that state. It might use time of day to reflect common tasks, search queries to guide literacy or language use or the type of technology they are using to access a service. All of these factors can contribute to more tuned user experiences that better meet the user where they are in their journey and capabilities."
+        "intro": "Context-driven design focuses on creating experiences that use data from a range of sources to understand the current state a user is in and adapt to that state. It might use time of day to reflect common tasks, search queries to guide literacy or language use or the type of technology they are using to access a service. All of these factors can contribute to more tuned user experiences that better meet the user where they are in their journey and capabilities.",
+        "tagimage": "../img/posts/tag_context.png"
     },
     {
         "tag": "css",
@@ -212,7 +213,8 @@
     {
         "tag": "nodebots",
         "title": "NodeJS + Robotics = NodeBots",
-        "intro": "NodeBots combine NodeJS and Robotics, empowering developers to create hardware with JavaScript. Whether it is a simple script to toggle an LED when you get a message on social media or an autonomous vehicle, NodeBots opens up robotics and hardware development to a broader community to engage in."
+        "intro": "NodeBots combine NodeJS and Robotics, empowering developers to create hardware with JavaScript. Whether it is a simple script to toggle an LED when you get a message on social media or an autonomous vehicle, NodeBots opens up robotics and hardware development to a broader community to engage in.",
+        "tagimage": "../img/posts/tag_nodebot.png"
     },
     {
         "tag": "nodejs",
@@ -223,7 +225,8 @@
     {
         "tag": "nokia",
         "title": "Nokia - the fallen angel of mobile",
-        "intro": "Once a technology leader, and one of the \"Big Tech\" firms of the 90s, Nokia left a lasting impact on the mobile industry with its innovative designs, tech and influence on early mobile culture. Nokia's star might now have waned, but it leaves an impressive legacy and it continues to play a role in the evolution of underlying mobile technologies."
+        "intro": "Once a technology leader, and one of the \"Big Tech\" firms of the 90s, Nokia left a lasting impact on the mobile industry with its innovative designs, tech and influence on early mobile culture. Nokia's star might now have waned, but it leaves an impressive legacy and it continues to play a role in the evolution of underlying mobile technologies.",
+        "tagimage": "../img/posts/tag_nokia.png"
     },
     {
         "tag": "open source",
