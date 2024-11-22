@@ -254,7 +254,8 @@
     {
         "tag": "podcast",
         "title": "Lend me your ears",
-        "intro": "This is a collection of podcasts I've contributed to or thought were worth a listen over the years."
+        "intro": "This is a collection of podcasts I've contributed to or thought were worth a listen over the years.",
+        "tagimage": "../img/posts/tag_podcast.png"
     },
     {
         "tag": "predictions",
@@ -323,7 +324,8 @@
     {
         "tag": "supercomputers",
         "title": "Supercomputing - pushing limits",
-        "intro": "From weather forecasting to nuclear modelling to brain simulation, super computers push the absolute limits of what is possible using a computer. Constant scaling and innovation continue to open up new research and innovation opportunities that and improve our understanding of the world."
+        "intro": "From weather forecasting to nuclear modelling to brain simulation, super computers push the absolute limits of what is possible using a computer. Constant scaling and innovation continue to open up new research and innovation opportunities that and improve our understanding of the world.",
+        "tagimage": "../img/posts/tag_supercomputers.png"
     },
     {
         "tag": "tablet",
