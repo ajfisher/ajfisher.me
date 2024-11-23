@@ -88,7 +88,8 @@
     {
         "tag": "design",
         "title": "Customer experience design",
-        "intro": "Consistently great customer experiences consider all aspects of design including user experience, form and visual design. As our media landscape changes, so to do the needs of design - whether it is considering accessibility, differences in devices or the dynamism of personalisation."
+        "intro": "Consistently great customer experiences consider all aspects of design including user experience, form and visual design. As our media landscape changes, so to do the needs of design - whether it is considering accessibility, differences in devices or the dynamism of personalisation.",
+        "tagimage": "../img/posts/tag_design.png"
     },
     {
         "tag": "desktop",
@@ -249,7 +250,8 @@
     {
         "tag": "piracy",
         "title": "A pirate's life",
-        "intro": "Content sharing elicits strong reactions from average users and while the media industry has labelled individuals that share unauthorised content as pirates, they also caught many adjacent scenarios that might be considered fair use as well. This has led to a consumer backlash which has led to various legal battles, innovations and the evolution of digital rights and access."
+        "intro": "Content sharing elicits strong reactions from average users and while the media industry has labelled individuals that share unauthorised content as pirates, they also caught many adjacent scenarios that might be considered fair use as well. This has led to a consumer backlash which has led to various legal battles, innovations and the evolution of digital rights and access.",
+        "tagimage": "../img/posts/tag_piracy.png"
     },
     {
         "tag": "podcast",
@@ -272,7 +274,8 @@
     {
         "tag": "privacy",
         "title": "Is digital privacy possible?",
-        "intro": "In an interconnected world, safeguarding user data and digital rights is of paramount importance and these posts explore the challenges and innovations to protect personal information as technology continues to evolve."
+        "intro": "In an interconnected world, safeguarding user data and digital rights is of paramount importance and these posts explore the challenges and innovations to protect personal information as technology continues to evolve.",
+        "tagimage": "../img/posts/tag_privacy.png"
     },
     {
         "tag": "python",
