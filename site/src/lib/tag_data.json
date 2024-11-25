@@ -333,7 +333,8 @@
     {
         "tag": "tablet",
         "title": "Tablet computing",
-        "intro": "Bridging the gap between mobile convenience and desktop power, tablet computers provide versatile platforms for work, play and creativity. With constant innovation in this space, the days of a tablet being purely for consumption are beginning to wane and are legitimate productivity devices in their own right - opening up a whole different class of use cases beyond mobile and desktop."
+        "intro": "Bridging the gap between mobile convenience and desktop power, tablet computers provide versatile platforms for work, play and creativity. With constant innovation in this space, the days of a tablet being purely for consumption are beginning to wane and are legitimate productivity devices in their own right - opening up a whole different class of use cases beyond mobile and desktop.",
+        "tagimage": "../img/posts/tag_tablet.png"
     },
     {
         "tag": "ubicomp",
