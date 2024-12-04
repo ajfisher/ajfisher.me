@@ -18,7 +18,8 @@
     {
         "tag": "algorithms",
         "title": "Alogorithms rule the world",
-        "intro": "The foundational logic that power digital systems - algorithms drive decision-making and automation across the technology ecosystem. Sometimes, the lack of transparency or understanding about how they work, especially in AI and Machine Learning contexts, means they can be prone to bias."
+        "intro": "The foundational logic that power digital systems - algorithms drive decision-making and automation across the technology ecosystem. Sometimes, the lack of transparency or understanding about how they work, especially in AI and Machine Learning contexts, means they can be prone to bias.",
+        "tagimage":"../img/posts/tag_algorithms.png"
     },
     {
         "tag": "android",
@@ -106,17 +107,20 @@
     {
         "tag": "devops",
         "title": "DevOps: modern development methods",
-        "intro": "DevOps merges development and operations to streamline the way software and infrastructure are delivered and managed. With a complex set of tools, practices and methods that drive efficiency and collaboration, modern tech teams are able to deliver faster, more securely and drive scale for their organisations."
+        "intro": "DevOps merges development and operations to streamline the way software and infrastructure are delivered and managed. With a complex set of tools, practices and methods that drive efficiency and collaboration, modern tech teams are able to deliver faster, more securely and drive scale for their organisations.",
+        "tagimage":"../img/posts/tag_devops.png"
     },
     {
         "tag": "distributed computing",
         "title": "Distributed Computing",
-        "intro": "Utilising the power of multiple systems working together to solve complex problems, distributed computing is used in everything from scientific research to blockchain networks and large scale applications. While the concepts have been around for decades, access to modern approaches such as large scale cloud compute capabilities have unlocked all kinds of innovation and scale as a result."
+        "intro": "Utilising the power of multiple systems working together to solve complex problems, distributed computing is used in everything from scientific research to blockchain networks and large scale applications. While the concepts have been around for decades, access to modern approaches such as large scale cloud compute capabilities have unlocked all kinds of innovation and scale as a result.",
+        "tagimage":"../img/posts/tag_network.png"
     },
     {
         "tag": "drm",
         "title": "Digital Rights Management (DRM)",
-        "intro": "DRM technologies are designed to protect copyrighted content, but they often spark debate over user access and control. If you buy a movie on DVD do you have the right to digitise and put it on a USB drive for your own use? Even after over 20 years of digital media, these are still tricky questions that are continually evolving."
+        "intro": "DRM technologies are designed to protect copyrighted content, but they often spark debate over user access and control. If you buy a movie on DVD do you have the right to digitise and put it on a USB drive for your own use? Even after over 20 years of digital media, these are still tricky questions that are continually evolving.",
+        "tagimage": "../img/posts/tag_drm.png"
     },
     {
         "tag": "ecommerce",
@@ -139,7 +143,8 @@
     {
         "tag": "generative ai",
         "title": "Generative Artificial Intelligence",
-        "intro": "One of the newest aspects of AI, and one that has captured the world's attention in recent years, Generative AI leverages advanced algorithms to create code, content, design or audio. The technologies are contentious as a result of them being trained on the unlicensed work of creators, however the impacts across many industries are immense."
+        "intro": "One of the newest aspects of AI, and one that has captured the world's attention in recent years, Generative AI leverages advanced algorithms to create code, content, design or audio. The technologies are contentious as a result of them being trained on the unlicensed work of creators, however the impacts across many industries are immense.",
+        "tagimage": "../img/posts/tag_genai.png"
     },
     {
         "tag": "google",
@@ -156,7 +161,8 @@
     {
         "tag": "growth",
         "title": "Growth strategy",
-        "intro": "Scaling, adapting to market changes, siezing opportunities for sustainable development - all of these growth strategies leverage thinking and innovation to drive success."
+        "intro": "Scaling, adapting to market changes, siezing opportunities for sustainable development - all of these growth strategies leverage thinking and innovation to drive success.",
+        "tagimage": "../img/posts/tag_growth.png"
     },
     {
         "tag": "hardware",
@@ -167,7 +173,8 @@
     {
         "tag": "innovation",
         "title": "Innovation: engine of growth",
-        "intro": "Innovation drives progress by transforming ideas into solutions that matter. Breakthroughs in technology and new strategies for fostering creativity all contribute to driving innovation forward."
+        "intro": "Innovation drives progress by transforming ideas into solutions that matter. Breakthroughs in technology and new strategies for fostering creativity all contribute to driving innovation forward.",
+        "tagimage":"../img/posts/tag_innovation.png"
     },
     {
         "tag": "internet",
@@ -292,7 +299,8 @@
     {
         "tag": "responsive design",
         "title": "Designing for all devices and contexts",
-        "intro": "Responsive design isn't just a resizable website. At it's heart, responsive design creates adaptable experiences by understanding different devices and context and creating flexible design systems that enhance usability."
+        "intro": "Responsive design isn't just a resizable website. At it's heart, responsive design creates adaptable experiences by understanding different devices and context and creating flexible design systems that enhance usability.",
+        "tagimage":"../img/posts/tag_responsive.png"
     },
     {
         "tag": "retail",
