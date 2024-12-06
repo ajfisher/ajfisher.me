@@ -2,12 +2,14 @@
     {
         "tag": "adobe",
         "title": "Adobe technologies",
-        "intro": "Over decades, Adobe has consistently played a pivotal role in creative software, whether graphics and video editing to digital experience. Adobe's influence touches every part of digital design and culture and it continues to evolve, even in the Generative AI era."
+        "intro": "Over decades, Adobe has consistently played a pivotal role in creative software, whether graphics and video editing to digital experience. Adobe's influence touches every part of digital design and culture and it continues to evolve, even in the Generative AI era.",
+        "tagimage": "../img/posts/tag_adobe.png"
     },
     {
         "tag": "agents",
         "title": "Software and AI Agents",
-        "intro": "Software and AI agents are used to automate tasks and make decisions and can be simple scripts or increasingly, complex AI-driven processes. Agent-based systems are starting to transform how workflows are delivered, creating efficiencies and enhancing digital interactions."
+        "intro": "Software and AI agents are used to automate tasks and make decisions and can be simple scripts or increasingly, complex AI-driven processes. Agent-based systems are starting to transform how workflows are delivered, creating efficiencies and enhancing digital interactions.",
+        "tagimage": "../img/posts/tag_agentcube.png"
     },
     {
         "tag": "ai",
@@ -84,7 +86,8 @@
     {
         "tag": "data science",
         "title": "Data Science and Engineering",
-        "intro": "At one point considered the \"sexiest job in the world\" - by HBR at least - Data science has rapidly become a critical part of most businesses that are looking to maximise the potential of their data assets."
+        "intro": "At one point considered the \"sexiest job in the world\" - by HBR at least - Data science has rapidly become a critical part of most businesses that are looking to maximise the potential of their data assets.",
+        "tagimage":"../img/posts/tag_datascience.png"
     },
     {
         "tag": "design",
