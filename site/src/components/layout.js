@@ -135,12 +135,14 @@ export const Aside = styled.aside`
   }
 `;
 
-const Layout = ({ children, title, excerpt, largetitle, smalltitle, slug}) => {
+const Layout = ({ children, title, excerpt, featuredimage, largetitle, smalltitle, slug}) => {
 
   return (
     <>
       <Header title={title} excerpt={excerpt}
-        largetitle={largetitle} smalltitle={smalltitle}/>
+        largetitle={largetitle} smalltitle={smalltitle}
+        featuredimage={featuredimage}
+      />
       <Main>
         <Article>
           {children}
