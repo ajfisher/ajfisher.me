@@ -5,6 +5,8 @@ layout: page.hbt
 slug: dis-everything
 large-title: true
 title: Disclaimer & Disclosure
+featureimage: ../../img/posts/disclosure.png
+imageby: ajfisher - Flux.Dev
 ---
 
 As bloggers are generally quite anonymous I think we should disclose any of our
