@@ -3,7 +3,9 @@ author: ajfisher
 date: 2020-01-31 10:00:10+10:00
 layout: page
 slug: colophon
-title: Colophon
+title: Colophon - how this site was built.
+featureimage: ../../img/posts/colophon.png
+imageby: ajfisher - Flux.Dev
 ---
 
 If you want to know a little more about how this site is constructed, the
