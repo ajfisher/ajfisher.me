@@ -2,9 +2,11 @@
 author: ajfisher
 comments: true
 date: 2023-09-02 12:27:58+10:00
-layout: page.hbt
+layout: page
 slug: who
-title: Who is @ajfisher?
+title: Who is this @ajfisher person?
+featureimage: ../../img/posts/who.png
+imageby: ajfisher - Flux.Dev
 ---
 
 If you're interested, here's a bit more about me.
