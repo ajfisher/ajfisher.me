@@ -33,7 +33,6 @@ export const handler = async (event) => {
     request.uri += '/index.html';
   }
 
-  console.log(request.uri);
   return request;
 };
 
