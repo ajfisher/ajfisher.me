@@ -26,9 +26,7 @@ Repo layout
 - utils
 - Makefile
 
-
 Make commands
-
 
 Usage:
 

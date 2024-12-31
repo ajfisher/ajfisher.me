@@ -20,12 +20,20 @@ export const handler = async (event) => {
     request.uri = uri.replace('{authourl}', '');
   }
 
+  if (uri.endsWith('/tagged/sms/')) {
+    request.uri = '/tagged/mobile/';
+  }
+  if (uri.endsWith('/tagged/data/')) {
+    request.uri = '/tagged/data-science/';
+  }
+
   if (request.uri.endsWith('/')) {
     request.uri += 'index.html';
   } else if (!request.uri.includes('.')) {
     request.uri += '/index.html';
   }
 
+  console.log(request.uri);
   return request;
 };
 
