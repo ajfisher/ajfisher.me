@@ -20,6 +20,13 @@ export const handler = async (event) => {
     request.uri = uri.replace('{authourl}', '');
   }
 
+  if (uri.endsWith('/tagged/sms/')) {
+    request.uri = 'https://ajfisher.me/tagged/mobile/';
+  }
+  if (uri.endsWith('/tagged/data/')) {
+    request.uri = 'https://ajfisher.me/tagged/data-science/';
+  }
+
   if (request.uri.endsWith('/')) {
     request.uri += 'index.html';
   } else if (!request.uri.includes('.')) {
