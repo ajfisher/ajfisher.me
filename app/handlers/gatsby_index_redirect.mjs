@@ -21,10 +21,10 @@ export const handler = async (event) => {
   }
 
   if (uri.endsWith('/tagged/sms/')) {
-    request.uri = 'https://ajfisher.me/tagged/mobile/';
+    request.uri = '/tagged/mobile/';
   }
   if (uri.endsWith('/tagged/data/')) {
-    request.uri = 'https://ajfisher.me/tagged/data-science/';
+    request.uri = '/tagged/data-science/';
   }
 
   if (request.uri.endsWith('/')) {
@@ -33,6 +33,7 @@ export const handler = async (event) => {
     request.uri += '/index.html';
   }
 
+  console.log(request.uri);
   return request;
 };
 
