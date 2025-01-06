@@ -10,16 +10,16 @@ jobs:
 
         steps:
             - name: Checkout code
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             - name: Setup Node
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4
               with:
-                  node-version: 18
+                  node-version: 20
 
             - name: Cache site node modules
               id: cache-site-modules
-              uses: actions/cache@v3
+              uses: actions/cache@v4
               with:
                   path: ./site/node_modules
                   key: site-build-${{hashFiles('**/site/package-lock.json')}}
@@ -31,7 +31,7 @@ jobs:
 
             - name: Cache Tags plugin node modules
               id: cache-tags-modules
-              uses: actions/cache@v3
+              uses: actions/cache@v4
               with:
                   path: ${{env.GATSBY_TAGS_MODULES}}
                   key: site-tags-${{hashFiles('**/gatsby-transformer-remark-tags/package-lock.json')}}
@@ -43,7 +43,7 @@ jobs:
 
             - name: Cache pullquotes plugin node modules
               id: cache-pullquotes-modules
-              uses: actions/cache@v3
+              uses: actions/cache@v4
               with:
                   path: ${{env.GATSBY_PULLQUOTE_MODULES}}
                   key: site-tags-${{hashFiles('**/gatsby-remark-transformer-pullquotes/package-lock.json')}}
@@ -55,7 +55,7 @@ jobs:
 
             - name: Public output
               id: public-build
-              uses: actions/cache@v3
+              uses: actions/cache@v4
               with:
                   path: ./site/public
                   key: site-public-${{hashFiles('**/site/public/**')}}
@@ -63,7 +63,7 @@ jobs:
 
             - name: Gatsby Cache output
               id: cache-build
-              uses: actions/cache@v3
+              uses: actions/cache@v4
               with:
                   path: ./site/.cache
                   key: site-cache-${{hashFiles('**/site/.cache/**')}}
