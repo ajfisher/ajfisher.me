@@ -110,18 +110,6 @@ function PageHead({
   )
 }
 
-/**
- * PageHead.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-  tweet: ``,
-  image: ``,
-  readingTime: 0,
-  words: 0
-}
-**/
-
 PageHead.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,

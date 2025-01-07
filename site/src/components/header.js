@@ -282,11 +282,6 @@ const Title = ({
   }
 };
 
-/** Title.defaultProps = {
-  smalltitle: false,
-  largetitle: false
-};**/
-
 const Featured = styled.p`
   color: var(--highlight);
   margin: calc(0.5 * var(--gutter)) var(--gutter);
@@ -420,16 +415,6 @@ Header.propTypes = {
   title: PropTypes.string,
   excerpt: PropTypes.string,
 };
-
-/**Header.defaultProps = {
-  title: ``,
-  excerpt: ``,
-  readingTime: {},
-  smalltitle: false,
-  largetitle: false,
-  featured: false,
-  date: undefined
-};**/
 
 export default Header;
 
