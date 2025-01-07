@@ -1,3 +1,5 @@
+// note that need to pin these at V2 because they are ESM after that
+// and Gatsby doesn't support it.
 const visit = require('unist-util-visit');
 const toString = require('mdast-util-to-string');
 

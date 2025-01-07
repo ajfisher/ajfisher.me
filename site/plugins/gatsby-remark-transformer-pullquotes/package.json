@@ -1,6 +1,6 @@
 {
   "name": "gatsby-remark-transformer-pullquotes",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Pulls quotes from main text and then puts them into a data attribute to be used by CSS",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,8 @@
   },
   "author": "ajfisher",
   "license": "MIT",
-  "dependencies": {
-    "mdast-util-to-string": "^4.0.0",
-    "unist-util-visit": "^5.0.0"
+  "devDependencies": {
+    "mdast-util-to-string": "^2.0.0",
+    "unist-util-visit": "^2.0.3"
   }
 }
