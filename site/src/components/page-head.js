@@ -5,7 +5,17 @@ import { getSrc } from "gatsby-plugin-image"
 
 import humanize from 'humanize-plus';
 
-function PageHead({ description, meta, title, type, tweet, image, readingTime, words}) {
+function PageHead({
+  lang = `en`,
+  description = ``,
+  meta = [],
+  title = ``,
+  type = 'post',
+  tweet = '',
+  image,
+  readingTime = 0,
+  words = 0
+}) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -100,7 +110,8 @@ function PageHead({ description, meta, title, type, tweet, image, readingTime, w
   )
 }
 
-PageHead.defaultProps = {
+/**
+ * PageHead.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
@@ -109,6 +120,7 @@ PageHead.defaultProps = {
   readingTime: 0,
   words: 0
 }
+**/
 
 PageHead.propTypes = {
   description: PropTypes.string,

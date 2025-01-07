@@ -135,8 +135,15 @@ export const Aside = styled.aside`
   }
 `;
 
-const Layout = ({ children, title, excerpt, featuredimage, largetitle, smalltitle, slug}) => {
-
+const Layout = ({
+  children,
+  title = 'This page has no name',
+  excerpt = '',
+  featuredimage = null,
+  largetitle = false,
+  smalltitle = false,
+  slug = '/unknown'
+}) => {
   return (
     <>
       <Header title={title} excerpt={excerpt}
@@ -156,12 +163,12 @@ const Layout = ({ children, title, excerpt, featuredimage, largetitle, smalltitl
   )
 };
 
-Layout.defaultProps = {
+/**Layout.defaultProps = {
   title: 'This page has no name',
   slug: '/unknown',
   excerpt: '',
   largetitle: false,
   smalltitle: false
-};
+};**/
 
 export default Layout;

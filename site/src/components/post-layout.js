@@ -17,7 +17,7 @@ const Layout = ({
   path,
   readingTime,
   wordCount,
-  tags,
+  tags = {},
   relatedposts,
 }) => {
 
@@ -52,9 +52,6 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-Layout.defaultProps = {
-  tags: {},
-}
 
 const useSiteMetadata = () => {
   const { site } = useStaticQuery(
