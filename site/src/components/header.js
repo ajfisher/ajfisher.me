@@ -257,7 +257,12 @@ const PostData = styled(Para)`
   }
 `;
 
-const Title = ({children, url, smalltitle, largetitle}) => {
+const Title = ({
+  children,
+  url,
+  smalltitle = false,
+  largetitle = false
+}) => {
 
   let classname;
   if (smalltitle) {
@@ -277,11 +282,6 @@ const Title = ({children, url, smalltitle, largetitle}) => {
   }
 };
 
-Title.defaultProps = {
-  smalltitle: false,
-  largetitle: false
-};
-
 const Featured = styled.p`
   color: var(--highlight);
   margin: calc(0.5 * var(--gutter)) var(--gutter);
@@ -291,11 +291,15 @@ const Featured = styled.p`
 `;
 
 const Header = ({
-  title, date, excerpt, url,
+  title = ``,
+  date = undefined,
+  excerpt = ``,
+  url = ``,
   featured=false,
   featuredimage=null, featuredImageBy,
   tagimage=null, postcount=null,
-  smalltitle, largetitle,
+  smalltitle = false,
+  largetitle = false,
   readingTime=0, wordCount={} }) => {
 
     let formatted_date;
@@ -410,16 +414,6 @@ const OldHeader = ({ title, date, excerpt, url, featured=false, featuredimage,
 Header.propTypes = {
   title: PropTypes.string,
   excerpt: PropTypes.string,
-};
-
-Header.defaultProps = {
-  title: ``,
-  excerpt: ``,
-  readingTime: {},
-  smalltitle: false,
-  largetitle: false,
-  featured: false,
-  date: undefined
 };
 
 export default Header;
