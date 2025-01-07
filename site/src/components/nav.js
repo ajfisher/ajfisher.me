@@ -15,7 +15,7 @@ const NavButton = styled.button`
 
   display: inline-block;
   z-index: 103; // place above content
-  transform: ${({ isOpen }) => isOpen ? 'rotate(90deg)' : 'none'};
+  transform: ${({ $isopen }) => $isopen ? 'rotate(90deg)' : 'none'};
 
   position: fixed;
   top: calc(0.5 * var(--gutter));
@@ -41,7 +41,7 @@ const NavMenuOverlay = styled.div`
 
   // this puts in the overlay to darken the rest of the page
   // in order to focus the nav drawer
-  display: ${({ isOpen }) => isOpen ? 'block' : 'none'};
+  display: ${({ $isopen }) => $isopen ? 'block' : 'none'};
   position: fixed;
   top: 0;
   left: 0;
@@ -63,7 +63,7 @@ const NavDrawer = styled.nav`
   z-index: 102;
 
   top: 0;
-  right: ${({ isOpen }) => isOpen ? '0' : '-100%'};
+  right: ${({ $isopen }) => $isopen ? '0' : '-100%'};
   height: 100%;
   width: 75vw;
 
@@ -203,11 +203,11 @@ const Nav = () => {
 
   return (
     <>
-      <NavButton onClick={toggleMenu} isOpen={isOpen}>
+      <NavButton onClick={toggleMenu} $isopen={isOpen}>
         <FontAwesomeIcon icon={faBars}/>
       </NavButton>
-      <NavMenuOverlay isOpen={isOpen} onClick={toggleMenu}/>
-      <NavDrawer isOpen={isOpen}>
+      <NavMenuOverlay $isopen={isOpen} onClick={toggleMenu}/>
+      <NavDrawer $isopen={isOpen}>
         <Navigation/>
       </NavDrawer>
       <MainNavigation>
