@@ -15,7 +15,7 @@ twitter_excerpt: >
     break in the drought? 🌱📈 #business #retail #ecommerce #growth
 featureimage: ../../img/posts/retail_improvement.png
 imageby: ajfisher - Flux.Dev
-listimage: ../../img/posts/retail_improvement.png
+listimage: ../../img/posts/retail_improvement_list.png
 featured: false
 tags: business, retail, ecommerce, growth
 ---
