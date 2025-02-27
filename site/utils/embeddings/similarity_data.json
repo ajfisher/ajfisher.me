@@ -1145,6 +1145,11 @@
         "hash": "94b548b246e493b8ef4b2da5e4f49dbfffd110fff411d017352bb8b7cd45ea8e",
         "post_similarity": [
             {
+                "file": "2025-02-27-when-will-ai-disrupt-travel.md",
+                "slug": "when-will-ai-disrupt-travel",
+                "similarity": 0.7004345655441284
+            },
+            {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
                 "slug": "a-clickster-fail-of-epic-proportions",
                 "similarity": 0.52513188123703
@@ -1188,11 +1193,6 @@
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
                 "similarity": 0.41944044828414917
-            },
-            {
-                "file": "2012-02-24-humanising-the-internet-of-things.md",
-                "slug": "humanising-the-internet-of-things",
-                "similarity": 0.41507816314697266
             }
         ]
     },
@@ -1294,6 +1294,11 @@
                 "similarity": 0.29553407430648804
             },
             {
+                "file": "2025-02-27-when-will-ai-disrupt-travel.md",
+                "slug": "when-will-ai-disrupt-travel",
+                "similarity": 0.28073441982269287
+            },
+            {
                 "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
                 "slug": "thingstreams-the-future-of-brand-product-consumer-dialogue",
                 "similarity": 0.27775996923446655
@@ -1302,11 +1307,6 @@
                 "file": "2015-01-21-context-in-ambient-technology.md",
                 "slug": "context-in-ambient-technology",
                 "similarity": 0.2745084762573242
-            },
-            {
-                "file": "2012-02-24-humanising-the-internet-of-things.md",
-                "slug": "humanising-the-internet-of-things",
-                "similarity": 0.2727140188217163
             }
         ]
     },
@@ -1958,6 +1958,11 @@
                 "similarity": 0.5255371928215027
             },
             {
+                "file": "2025-02-27-when-will-ai-disrupt-travel.md",
+                "slug": "when-will-ai-disrupt-travel",
+                "similarity": 0.4179043471813202
+            },
+            {
                 "file": "2016-01-27-road-to-interchange.md",
                 "slug": "road-to-interchange",
                 "similarity": 0.3891274631023407
@@ -1986,11 +1991,6 @@
                 "file": "2015-09-07-js-not-just-language-of-the-web.md",
                 "slug": "js-not-just-language-of-the-web",
                 "similarity": 0.3667686879634857
-            },
-            {
-                "file": "2008-01-08-the-warm-glow-of-site-launch.md",
-                "slug": "the-warm-glow-of-site-launch",
-                "similarity": 0.3664097189903259
             }
         ]
     },
@@ -2387,9 +2387,9 @@
                 "similarity": 0.5574867725372314
             },
             {
-                "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
-                "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.5383924245834351
+                "file": "2025-02-27-when-will-ai-disrupt-travel.md",
+                "slug": "when-will-ai-disrupt-travel",
+                "similarity": 0.5448994636535645
             }
         ]
     },
@@ -3712,7 +3712,7 @@
             {
                 "file": "2025-02-03-retail-improvements-australia.md",
                 "slug": "retail-improvements-australia",
-                "similarity": 0.6125966310501099
+                "similarity": 0.6175286769866943
             },
             {
                 "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
@@ -4043,6 +4043,63 @@
                 "file": "2015-09-09-datatium-material-for-contextually-responsive-design.md",
                 "slug": "datatium-material-for-contextually-responsive-design",
                 "similarity": 0.37721002101898193
+            }
+        ]
+    },
+    {
+        "file": "2025-02-27-when-will-ai-disrupt-travel.md",
+        "slug": "when-will-ai-disrupt-travel",
+        "hash": "9c826b08e391135dfc54e340ad0aae3dd8c7f8d402066af9360130f834e07154",
+        "post_similarity": [
+            {
+                "file": "2007-11-19-fuzzy-logic-could-book-more-flights.md",
+                "slug": "fuzzy-logic-could-book-more-flights",
+                "similarity": 0.7004345655441284
+            },
+            {
+                "file": "2023-08-31-ai-works-now.md",
+                "slug": "ai-works-now",
+                "similarity": 0.5448994636535645
+            },
+            {
+                "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
+                "slug": "datatium-a-material-to-create-responsive-experiences",
+                "similarity": 0.5218148827552795
+            },
+            {
+                "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
+                "slug": "why-industries-can-still-be-revolutionised-on-the-web",
+                "similarity": 0.44889968633651733
+            },
+            {
+                "file": "2015-01-21-context-in-ambient-technology.md",
+                "slug": "context-in-ambient-technology",
+                "similarity": 0.44737881422042847
+            },
+            {
+                "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
+                "slug": "software-engineering-reimagined-ai-native-era",
+                "similarity": 0.4179043471813202
+            },
+            {
+                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
+                "slug": "now-or-never-growth-opportunities-in-retail",
+                "similarity": 0.40711989998817444
+            },
+            {
+                "file": "2017-08-12-embodied-bots.md",
+                "slug": "embodied-bots",
+                "similarity": 0.3986769914627075
+            },
+            {
+                "file": "2012-02-24-humanising-the-internet-of-things.md",
+                "slug": "humanising-the-internet-of-things",
+                "similarity": 0.37617194652557373
+            },
+            {
+                "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
+                "slug": "a-clickster-fail-of-epic-proportions",
+                "similarity": 0.3540598750114441
             }
         ]
     },
@@ -4847,57 +4904,57 @@
     {
         "file": "2025-02-03-retail-improvements-australia.md",
         "slug": "retail-improvements-australia",
-        "hash": "2e3a901cedb57069de9b487c0b985f38e5ae50cd760d786c5398a93bd86fc457",
+        "hash": "25574fd54ee0ea77529996ccf42bb674fd789950bbe26e6d29bd9f8041283590",
         "post_similarity": [
             {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
                 "slug": "a-clickster-fail-of-epic-proportions",
-                "similarity": 0.6125966310501099
+                "similarity": 0.6175286769866943
             },
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.5181074738502502
+                "similarity": 0.5179952383041382
             },
             {
                 "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
                 "slug": "the-golden-age-of-mobile-soon-maybe",
-                "similarity": 0.42284315824508667
+                "similarity": 0.4272086024284363
             },
             {
                 "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
                 "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
-                "similarity": 0.4001147747039795
+                "similarity": 0.3974263072013855
             },
             {
                 "file": "2008-01-31-the-state-of-oz-technology.md",
                 "slug": "the-state-of-oz-technology",
-                "similarity": 0.3875099718570709
+                "similarity": 0.3911930322647095
             },
             {
                 "file": "2010-06-27-a-telling-quarter-for-android.md",
                 "slug": "a-telling-quarter-for-android",
-                "similarity": 0.3682641386985779
+                "similarity": 0.3707742691040039
             },
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.3612818121910095
-            },
-            {
-                "file": "2007-12-19-sms-bamboozlement.md",
-                "slug": "sms-bamboozlement",
-                "similarity": 0.35693830251693726
+                "similarity": 0.3677372336387634
             },
             {
                 "file": "2010-10-07-i-like-where-i-think-sony-is-going.md",
                 "slug": "i-like-where-i-think-sony-is-going",
-                "similarity": 0.35495463013648987
+                "similarity": 0.3582615852355957
+            },
+            {
+                "file": "2007-12-19-sms-bamboozlement.md",
+                "slug": "sms-bamboozlement",
+                "similarity": 0.35679179430007935
             },
             {
                 "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
                 "slug": "why-industries-can-still-be-revolutionised-on-the-web",
-                "similarity": 0.34363698959350586
+                "similarity": 0.3423283100128174
             }
         ]
     },

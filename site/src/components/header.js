@@ -271,7 +271,7 @@ const Title = ({
     classname = 'enlarge';
   }
 
-  if (typeof(url) === 'undefined') {
+  if (typeof(url) === 'undefined' || url ==='' || url === null) {
     return(
       <StyledTitle className={classname}>{children}</StyledTitle>
     );
