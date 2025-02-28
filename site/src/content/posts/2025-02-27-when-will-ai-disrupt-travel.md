@@ -14,6 +14,9 @@ twitter_excerpt: >
     AI is all over travel, just not where you see it. Trip planning feels stuck
     in the past, but AI-native changes might be closer than you think. ✈️🌏
     #AI #travel #futureOfTravel
+featureimage: ../../img/posts/travel_hero.png
+imageby: ajfisher - Flux.Dev
+listimage: ../../img/posts/travel_list.webp
 featured: false
 tags: business, ai, growth, predictions, strategy, agents, innovation
 ---
