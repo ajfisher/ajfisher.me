@@ -21,8 +21,9 @@ featured: false
 tags: business, ai, growth, predictions, strategy, agents, innovation
 ---
 
-One of my colleagues posted an interesting question to our group chat this
-morning that got me thinking in more depth about this topic.
+One of [my colleagues](https://www.linkedin.com/in/jim-nelson-2881582b/) posted
+an interesting question to our group chat this morning that got me thinking in
+more depth about this topic.
 
 “Where is the AI lift in travel?”
 
@@ -38,7 +39,7 @@ Additionally, can you give some recommendations for places to stay in the
 Marais district?”
 
 Anyone who has done this will get an okay, but entirely beige travel itinerary
-that is pretty much designed for the cruise ship set over 60 full of
+that is pretty much designed for the cruise ship set over 75 full of
 wonderfully stereotypical suggestions for places to go. Louvre? check. Eiffel
 tower? check. Notre Dame, Place des Vosges, Musée d’Orsay? Check, check and
 check.
