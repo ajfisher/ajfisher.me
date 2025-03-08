@@ -3,21 +3,6 @@ import { render, screen } from "@testing-library/react";
 import Header from "../src/components/header.js";
 import { Title } from "../src/components/header.js";
 
-jest.mock("humanize-plus", () => ({
-  compactInteger: jest.fn().mockImplementation((num) => num?.toString() || "0"),
-}));
-
-jest.mock("moment", () => {
-  const mockMoment = jest.fn(() => ({
-    format: jest.fn(() => "Mon, Jan 1st 2024"),
-  }));
-  return mockMoment;
-});
-
-jest.mock("@fortawesome/react-fontawesome", () => ({
-  FontAwesomeIcon: jest.fn().mockImplementation(({ icon }) => <span data-testid={`icon-${icon.iconName}`} />),
-}));
-
 describe("Header Component", () => {
 
   afterEach(() => {
