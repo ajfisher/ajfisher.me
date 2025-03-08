@@ -255,3 +255,4 @@ const Footer = ({slug}) => {
 };
 
 export default Footer;
+export { PostItem };
