@@ -73,31 +73,6 @@ const ImageHeader = styled(BaseHeader)`
   /** this is a noop as sizing handled in base **/
 `;
 
-const OldImageHeader = styled(BaseHeader)`
-  background-color: var(--darkened-grey);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  background-image: url(${props => props.$featuredimage.base});
-
-  @media only screen and ${device.small} {
-    background-image: url(${props => props.$featuredimage.small});
-  }
-
-  @media only screen and ${device.medium} {
-    background-image: url(${props => props.$featuredimage.medium});
-  }
-
-  @media only screen and ${device.large} {
-    background-image: url(${props => props.$featuredimage.large});
-  }
-
-  @media only screen and ${device.wide} {
-    background-image: url(${props => props.$featuredimage.wide});
-  }
-`;
-
 const Container = styled.div`
   margin:0;
   width: 100vw;
@@ -291,7 +266,7 @@ const Featured = styled.p`
 `;
 
 const Header = ({
-  title = ``,
+  title,
   date = undefined,
   excerpt = ``,
   url = ``,
@@ -301,6 +276,10 @@ const Header = ({
   smalltitle = false,
   largetitle = false,
   readingTime=0, wordCount={} }) => {
+
+    if (!title) {
+      throw new Error('Header component requires a title prop');
+    }
 
     let formatted_date;
     if (typeof(date) !== 'undefined') {
@@ -324,14 +303,14 @@ const Header = ({
     return (
       <PostHeader>
         { featuredimage !== null &&
-          <GatsbyImage image={headerimage} alt={featuredImageBy} class="headerimage" />
+          <GatsbyImage image={headerimage} alt={featuredImageBy} className="headerimage" />
         }
         {
           tagimage !== null &&
-          <GatsbyImage image={headerimage} class="headerimage" />
+          <GatsbyImage image={headerimage} className="headerimage" />
         }
         { featuredimage === null && tagimage === null &&
-          <div class="imagefill" />
+          <div className="imagefill" />
         }
         <Container className="wrapper">
           <Title url={url} smalltitle={smalltitle} largetitle={largetitle}>{title}</Title>
@@ -378,10 +357,10 @@ const Header = ({
 };
 
 Header.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   excerpt: PropTypes.string,
 };
 
 export default Header;
 
-export { Header, PostData };
+export { Header, PostData, Title };
