@@ -7,6 +7,8 @@ const GatsbyImage = jest.fn().mockImplementation(({ alt }) => (
 
 const getImage = jest.fn().mockImplementation((image) => image);
 
-export { GatsbyImage, getImage };
+const StaticImage = jest.fn().mockImplementation(({ src }) => <img src={src} data-testid="static-image" alt="" />);
+
+export { GatsbyImage, getImage, StaticImage };
 
 
