@@ -377,40 +377,6 @@ const Header = ({
     );
 };
 
-const OldHeader = ({ title, date, excerpt, url, featured=false, featuredimage,
-  smalltitle, largetitle, readingTime={} }) => {
-
-    let formatted_date;
-    if (typeof(date) !== 'undefined') {
-      formatted_date = moment(date).format('dddd, MMMM Do YYYY');
-    }
-
-    const rounded_time = Math.ceil(readingTime.minutes) || 0;
-    const humanised_words = humanize.compactInteger(readingTime.words, 1) || 0;
-
-    const PostHeader = (typeof(featuredimage) === 'undefined') ? TextHeader : OldImageHeader;
-
-    return (
-      <PostHeader $featuredimage={featuredimage}>
-        <Container className="wrapper">
-          { featured &&
-            <Featured>Featured Post</Featured>
-          }
-          <Title url={url} smalltitle={smalltitle} largetitle={largetitle}>{title}</Title>
-          { typeof(date) !== 'undefined' &&
-            <PublishedDate className="date">Published: {formatted_date}</PublishedDate>
-          }
-          { excerpt != null && excerpt.length > 0 &&
-            <Lede>{excerpt}</Lede>
-          }
-          { rounded_time > 0 &&
-            <PostData className="postdata"><span className="worddata">A {rounded_time} minute read</span> {humanised_words} words</PostData>
-          }
-        </Container>
-      </PostHeader>
-    );
-};
-
 Header.propTypes = {
   title: PropTypes.string,
   excerpt: PropTypes.string,
@@ -418,4 +384,4 @@ Header.propTypes = {
 
 export default Header;
 
-export { OldHeader, Header, PostData };
+export { Header, PostData };
