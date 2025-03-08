@@ -3,14 +3,6 @@ import { render, screen } from "@testing-library/react";
 import Header from "../src/components/header.js";
 import { Title } from "../src/components/header.js";
 
-// Mock the required dependencies
-jest.mock("gatsby-plugin-image", () => {
-  return {
-    GatsbyImage: jest.fn().mockImplementation(({ alt }) => <img alt={alt} data-testid="gatsby-image" />),
-    getImage: jest.fn().mockImplementation((image) => image),
-  };
-});
-
 jest.mock("humanize-plus", () => ({
   compactInteger: jest.fn().mockImplementation((num) => num?.toString() || "0"),
 }));
