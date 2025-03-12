@@ -5,12 +5,6 @@ import { ListItems, PostListItem, RelatedListItem } from '../src/components/list
 import moment from 'moment';
 import { pathDate } from '../src/lib/utils';
 
-// For moment, if you need a predictable formatting, you could use the real moment or a custom mock.
-// Here we let moment work normally.
-//jest.mock('../src/lib/utils', () => ({
-//  pathDate: jest.fn(() => '2021/01/01'),
-//}));
-
 describe('ListItems Container', () => {
   it('renders its children correctly', () => {
     const { container } = render(
