@@ -258,7 +258,7 @@ export const Attribution = ({author, featuredImageBy,
           </Attribute>
         }
         <Attribute name="Author" showfull="false">
-          <a href="{authourl}">{author}</a>
+          {author}
         </Attribute>
         {featuredImageBy &&
           <Attribute name="Title image">
