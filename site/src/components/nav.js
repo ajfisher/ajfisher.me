@@ -11,7 +11,9 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import { device } from './devices';
 
-const NavButton = styled.button`
+const NavButton = styled.button.attrs(() => ({
+  'data-testid': 'nav-button',
+}))`
 
   display: inline-block;
   z-index: 103; // place above content
@@ -37,7 +39,9 @@ const NavButton = styled.button`
   }
 `;
 
-const NavMenuOverlay = styled.div`
+const NavMenuOverlay = styled.div.attrs(() => ({
+  'data-testid': 'nav-overlay',
+}))`
 
   // this puts in the overlay to darken the rest of the page
   // in order to focus the nav drawer
@@ -55,7 +59,9 @@ const NavMenuOverlay = styled.div`
   }
 `;
 
-const NavDrawer = styled.nav`
+const NavDrawer = styled.nav.attrs(() => ({
+  'data-testid': 'nav-drawer',
+}))`
   display: flex;
   flex-direction: column;
 
@@ -81,7 +87,9 @@ const NavDrawer = styled.nav`
   }
 `;
 
-const MainNavigation = styled.nav`
+const MainNavigation = styled.nav.attrs(() => ({
+  'data-testid': 'nav-main-navigation',
+}))`
 
   display: none;
 
