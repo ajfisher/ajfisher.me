@@ -6,7 +6,6 @@ import Nav from '../src/components/nav';
 describe('Nav Component', () => {
   it('initially renders with menu closed', () => {
     render(<Nav />);
-    const button = screen.getByTestId('nav-button');
     const overlay = screen.getByTestId('nav-overlay');
     const drawer = screen.getByTestId('nav-drawer');
 
