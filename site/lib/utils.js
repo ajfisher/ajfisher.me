@@ -1,8 +1,13 @@
 const moment = require('moment');
 
-exports.kebabCase = (str) => {
+exports.kebabCase = (str = '') => {
   // this takes a spaced bit of text and effectively kebab cases it
-  return (str.replace(' ', '-').toLowerCase());
+  if (!str) {
+    return '';
+  }
+
+  const regex = /\s+/g;
+  return (str.replaceAll(regex, '-').toLowerCase());
 };
 
 exports.pathDate = (date) => {
