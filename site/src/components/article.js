@@ -278,7 +278,13 @@ export const Attribution = ({author, featuredImageBy,
 
 export const PostArticle = ({children, featuredImageBy, featuredImageLink,
   title, url, relatedposts=[], date, tags}) => {
+
   const noPosts = 2;
+
+  // just handle specific scenario of having an object with nothing on it
+  // passed in as related posts
+  relatedposts = (relatedposts === null) ? [] : relatedposts;
+
   // filter any wrong posts first
   relatedposts = relatedposts.filter((item) => {
     return (item.post !== null);
@@ -322,11 +328,3 @@ export const ListArticle = ({children}) => {
     </StyledListArticle>
   );
 };
-
-const BaseArticle = ({children}) => {
-  return(
-    <Article>{children}</Article>
-  );
-}
-
-export default BaseArticle;
