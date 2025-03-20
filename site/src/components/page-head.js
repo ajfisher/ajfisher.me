@@ -34,12 +34,17 @@ function PageHead({
   const seo = {
     title: title || site.siteMetadata.defaultTitle,
     metaDescription: description || site.siteMetadata.description,
-    pageType: type || `website`,
+    pageType: type,
+  }
+
+  let pagetitle = seo.title;
+  if (pagetitle !== site.siteMetadata.defaultTitle) {
+    pagetitle = `${pagetitle} | ${site.siteMetadata.defaultTitle}`;
   }
 
   const card_meta = [];
 
-  if (image !== '') {
+  if (image !== undefined) {
     const image_url = `${site.siteMetadata.siteUrl}${getSrc(image)}`;
 
     card_meta.push({property: `og:image`, content: image_url });
@@ -47,14 +52,14 @@ function PageHead({
   }
 
   if (readingTime > 0) {
-    const rounded_time = Math.ceil(readingTime) || 0;
+    const rounded_time = Math.ceil(readingTime);
 
     card_meta.push({name: `twitter:label1`, content: `Reading Time`});
     card_meta.push({name: `twitter:data1`, content: `${rounded_time} minutes`});
   }
 
   if (words > 0) {
-    const humanised_words = humanize.compactInteger(words, 1) || 0;
+    const humanised_words = humanize.compactInteger(words, 1);
 
     card_meta.push({name: `twitter:label2`, content: `Words`});
     card_meta.push({name: `twitter:data2`, content: `${humanised_words}`});
@@ -102,7 +107,7 @@ function PageHead({
   return (
     <>
       <html lang="en"/>
-      <title>{`${seo.title} | ${site.siteMetadata.defaultTitle}`}</title>
+      <title>{`${pagetitle}`}</title>
       {
         meta.map(d => (<meta name={d.name} property={d.property} content={d.content} key={d.name || d.property} />) )
       }

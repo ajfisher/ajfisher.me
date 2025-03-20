@@ -27,9 +27,9 @@ export const Head = ({data, pageContext}) => {
   );
 };
 
-export default function Template({ pageContext, data}) {
-  const {tag} = pageContext;
+export default function Template({ data }) {
   const { posts, tagdata } = data;
+  const { tag } = tagdata
   const slug = `/tagged/${tag}`;
 
   const title = tagdata?.title || null;
@@ -65,7 +65,7 @@ export default function Template({ pageContext, data}) {
             words: node.wordCount.words
           };
 
-          const excerpt = node.frontmatter.excerpt || node.excerpt || null;
+          const excerpt = node.frontmatter.excerpt || node.excerpt;
 
           return (
             <PostListItem

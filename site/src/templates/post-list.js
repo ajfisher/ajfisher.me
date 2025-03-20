@@ -66,7 +66,7 @@ export default function Template({ pageContext, data}) {
             words: node.wordCount.words
           }
 
-          const excerpt = node.frontmatter.excerpt || node.excerpt || null;
+          const excerpt = node.frontmatter.excerpt || node.excerpt;
 
           return (
             <PostListItem
