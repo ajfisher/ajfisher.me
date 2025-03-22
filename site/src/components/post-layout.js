@@ -56,7 +56,7 @@ Layout.propTypes = {
       PropTypes.string,
       PropTypes.instanceOf(Date)
     ]).isRequired,
-    excerpt: PropTypes.string.isRequired,
+    excerpt: PropTypes.string,
     slug: PropTypes.string.isRequired,
     small_title: PropTypes.bool,
     large_title: PropTypes.bool,
@@ -66,13 +66,14 @@ Layout.propTypes = {
   featuredimage: PropTypes.any,
   path: PropTypes.string.isRequired,
   readingTime: PropTypes.number.isRequired,
+  excerpt: PropTypes.string,
   wordCount: PropTypes.shape({
     words: PropTypes.number.isRequired,
   }).isRequired,
   tags: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.string),
     PropTypes.object, // in case it's an object; adjust as needed
-  ]).isRequired,
+  ]),
   relatedposts: PropTypes.arrayOf(PropTypes.object),
 };
 
