@@ -18,13 +18,14 @@ describe('PostData Component', () => {
   const publicationDate = "2021-08-05T00:00:00.000Z";
   // Calculate the expected formatted date using moment.
   const formattedDate = moment(publicationDate).format("dddd, MMMM Do YYYY");
+  const tags = ["tag1", "tag2"];
 
   it('renders title, published info, and tags with default author', () => {
     render(
       <PostData
         title="Test Post"
         publicationDate={publicationDate}
-        tags="tag1, tag2"
+        tags={tags}
       />
     );
 
@@ -37,7 +38,8 @@ describe('PostData Component', () => {
     ).toBeInTheDocument();
 
     // Check that the tags are rendered via the mocked Tags component.
-    expect(screen.getByTestId("tags")).toHaveTextContent("tag1, tag2");
+    expect(screen.getByText(/tag1/)).toBeInTheDocument();
+    expect(screen.getByText(/tag2/)).toBeInTheDocument();
   });
 
   it('renders published info with provided author', () => {
@@ -45,7 +47,7 @@ describe('PostData Component', () => {
       <PostData
         title="Test Post"
         publicationDate={publicationDate}
-        tags="tag1"
+        tags={tags}
         excerpt="Excerpt"
         author="Jane Doe"
       />
