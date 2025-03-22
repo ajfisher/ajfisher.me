@@ -149,14 +149,14 @@ export const PostListItem = ({title, image, position, excerpt, date,
     const reading_time = `${rounded_time} min (${humanised_words} words).`;
 
     return (
-      <Item itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
+      <Item itemProp="blogPost" itemScope="" itemType="https://schema.org/BlogPosting">
         <ImageLink $position={position}>
-          <Link to={url} itemprop="url">
+          <Link to={url} itemProp="url">
             {listimage}
           </Link>
         </ImageLink>
         <h3 itemProp="headline"><Link to={url}>{title}</Link></h3>
-        <PostDate itemprop="datePublished" datetime={moment(date).format("YYYY-MM-DD")}>{moment(date).format("dddd, MMMM Do YYYY")}</PostDate>
+        <PostDate itemProp="datePublished" dateTime={moment(date).format("YYYY-MM-DD")}>{moment(date).format("dddd, MMMM Do YYYY")}</PostDate>
         { excerpt.length > 0 &&
           <p itemProp="abstract" itemType="https://schema.org/CreativeWork">{excerpt}</p>
         }
