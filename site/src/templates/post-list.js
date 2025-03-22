@@ -8,32 +8,38 @@ import PageHead from '../components/page-head';
 import { ListItems, PostListItem } from '../components/list';
 import { Paginate } from '../components/pagination.js';
 
-export const Head = ({_location, _params, _data, pageContext}) => {
-  const {currentPage} = pageContext;
-  const seo = {
-    title: `Article archive - page ${currentPage}`,
-    description: `Article archive page ${currentPage} from ajfisher.me`
-  };
+// need to use object.assign here due to the way arrow functions get hoisted
+// with the export. As we need to add the proptypes to the object that gets
+// hoisted we need to do this in one step then export it.
+export const Head = Object.assign(
+  ({_location, _params, _data, pageContext}) => {
+    const {currentPage} = pageContext;
+    const seo = {
+      title: `Article archive - page ${currentPage}`,
+      description: `Article archive page ${currentPage} from ajfisher.me`
+    };
 
-  return (
-    <>
-      <PageHead
-        title={seo.title}
-        description={seo.description}
-        type="list"
-      />
-    </>
-  );
-};
-
-Head.propTypes = {
-  _location: PropTypes.object,
-  _params: PropTypes.object,
-  _data: PropTypes.object,
-  pageContext: PropTypes.shape({
-    currentPage: PropTypes.number.isRequired,
-  }).isRequired,
-};
+    return (
+      <>
+        <PageHead
+          title={seo.title}
+          description={seo.description}
+          type="list"
+        />
+      </>
+    );
+  },
+  {
+    propTypes: {
+      _location: PropTypes.object,
+      _params: PropTypes.object,
+      _data: PropTypes.object,
+      pageContext: PropTypes.shape({
+        currentPage: PropTypes.number.isRequired,
+      }).isRequired,
+    }
+  }
+);
 
 export default function Template({ pageContext, data}) {
   const {numPages, currentPage} = pageContext;

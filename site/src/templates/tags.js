@@ -6,41 +6,47 @@ import Layout from '../components/list-layout';
 import PageHead from '../components/page-head';
 import { ListItems, PostListItem } from '../components/list';
 
-export const Head = ({data, pageContext}) => {
-  const {tag} = pageContext;
-  const {tagdata} = data;
+// need to use object.assign here due to the way arrow functions get hoisted
+// with the export. As we need to add the proptypes to the object that gets
+// hoisted we need to do this in one step then export it.
+export const Head = Object.assign(
+  ({data, pageContext}) => {
+    const {tag} = pageContext;
+    const {tagdata} = data;
 
-  const title = tagdata?.title || null;
+    const title = tagdata?.title || null;
 
-  const seo = {
-    title: `${title || tag} tagged posts`,
-    description: `Posts that are tagged ${tag} on ajfisher.me`
-  };
+    const seo = {
+      title: `${title || tag} tagged posts`,
+      description: `Posts that are tagged ${tag} on ajfisher.me`
+    };
 
-  return (
-    <>
-      <PageHead
-        title={seo.title}
-        description={seo.description}
-        type="list"
-      />
-    </>
-  );
-};
-
-Head.propTypes = {
-  data: PropTypes.shape({
-    tagdata: PropTypes.shape({
-      tag: PropTypes.string.isRequired,
-      title: PropTypes.string,
-      intro: PropTypes.string,
-      tagimage: PropTypes.any,
-    }).isRequired,
-  }).isRequired,
-  pageContext: PropTypes.shape({
-    tag: PropTypes.string.isRequired,
-  }).isRequired,
-};
+    return (
+      <>
+        <PageHead
+          title={seo.title}
+          description={seo.description}
+          type="list"
+        />
+      </>
+    );
+  },
+  {
+    propTypes: {
+      data: PropTypes.shape({
+        tagdata: PropTypes.shape({
+          tag: PropTypes.string.isRequired,
+          title: PropTypes.string,
+          intro: PropTypes.string,
+          tagimage: PropTypes.any,
+        }).isRequired,
+      }).isRequired,
+      pageContext: PropTypes.shape({
+        tag: PropTypes.string.isRequired,
+      }).isRequired,
+    }
+  }
+);
 
 export default function Template({ data }) {
   const { posts, tagdata } = data;
