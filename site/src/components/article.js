@@ -258,13 +258,13 @@ export const Attribution = ({author, featuredImageBy,
       <Attributes>
         <Attribute name="Title">&quot;{title}&quot;</Attribute>
         <Attribute name="Published on"
-          showfull="false">{moment(date).format("dddd, MMMM Do YYYY")}</Attribute>
+          showfull={false}>{moment(date).format("dddd, MMMM Do YYYY")}</Attribute>
         {tags &&
-          <Attribute name="Tags" showfull="false">
+          <Attribute name="Tags" showfull={false}>
             <TagList>{tags}</TagList>
           </Attribute>
         }
-        <Attribute name="Author" showfull="false">
+        <Attribute name="Author" showfull={false}>
           {author}
         </Attribute>
         {featuredImageBy &&
