@@ -307,7 +307,6 @@ const Header = ({
 
     let pluralArticle = postcount > 1 ? 'articles' : 'article';
 
-    console.log(`featured imnage byu ${featuredImageBy}`);
     return (
       <PostHeader>
         { featuredimage !== null &&
