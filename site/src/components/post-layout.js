@@ -46,12 +46,35 @@ const Layout = ({
       <Footer slug={slug}/>
     </>
   )
-}
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
-
+  frontmatter: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    date: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.instanceOf(Date)
+    ]).isRequired,
+    excerpt: PropTypes.string.isRequired,
+    slug: PropTypes.string.isRequired,
+    small_title: PropTypes.bool,
+    large_title: PropTypes.bool,
+    imageby: PropTypes.string,
+    imagelink: PropTypes.string,
+  }).isRequired,
+  featuredimage: PropTypes.any,
+  path: PropTypes.string.isRequired,
+  readingTime: PropTypes.number.isRequired,
+  wordCount: PropTypes.shape({
+    words: PropTypes.number.isRequired,
+  }).isRequired,
+  tags: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.string),
+    PropTypes.object, // in case it's an object; adjust as needed
+  ]).isRequired,
+  relatedposts: PropTypes.arrayOf(PropTypes.object),
+};
 
 const useSiteMetadata = () => {
   const { site } = useStaticQuery(

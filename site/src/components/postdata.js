@@ -1,5 +1,6 @@
 import moment from 'moment';
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { device } from './devices';
@@ -58,6 +59,16 @@ const PostData = ({author='ajfisher', title, tags, publicationDate}) => {
       <Tags>{tags}</Tags>
     </Section>
   );
+};
+
+PostData.propTypes = {
+  author: PropTypes.string, // defaults to "ajfisher" if not provided
+  title: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+  publicationDate: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.instanceOf(Date)
+  ]).isRequired,
 };
 
 export default PostData;

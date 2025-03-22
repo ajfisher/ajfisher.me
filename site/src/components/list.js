@@ -1,4 +1,5 @@
 import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -154,12 +155,12 @@ export const PostListItem = ({title, image, position, excerpt, date,
             {listimage}
           </Link>
         </ImageLink>
-        <h3 itemprop="headline"><Link to={url}>{title}</Link></h3>
+        <h3 itemProp="headline"><Link to={url}>{title}</Link></h3>
         <PostDate itemprop="datePublished" datetime={moment(date).format("YYYY-MM-DD")}>{moment(date).format("dddd, MMMM Do YYYY")}</PostDate>
         { excerpt.length > 0 &&
-          <p itemprop="abstract" itemtype="https://schema.org/CreativeWork">{excerpt}</p>
+          <p itemProp="abstract" itemType="https://schema.org/CreativeWork">{excerpt}</p>
         }
-        <PostData aria-hidden="true" itemprop="timeRequired" content={`PT${rounded_time}M`}>
+        <PostData aria-hidden="true" itemProp="timeRequired" content={`PT${rounded_time}M`}>
           <span>
             <FontAwesomeIcon icon={faClock}/>
           </span>
@@ -169,6 +170,20 @@ export const PostListItem = ({title, image, position, excerpt, date,
         </PostData>
       </Item>
     );
+};
+
+PostListItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  image: PropTypes.any, // could be refined
+  position: PropTypes.string, // expected as a string for object positioning (e.g. "50% 50%")
+  excerpt: PropTypes.string.isRequired,
+  date: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.instanceOf(Date)
+  ]).isRequired,
+  slug: PropTypes.string.isRequired,
+  readingtime: PropTypes.number.isRequired,
+  wordcount: PropTypes.number.isRequired,
 };
 
 export const RelatedList = styled(ListItems)`
@@ -209,4 +224,15 @@ export const RelatedListItem = ({title, image, position, date, slug}) => {
         <p><Link to={url}>{title}</Link></p>
       </Item>
     );
+};
+
+RelatedListItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  image: PropTypes.any, // or refine the expected shape
+  position: PropTypes.string,
+  date: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.instanceOf(Date)
+  ]).isRequired,
+  slug: PropTypes.string.isRequired,
 };
