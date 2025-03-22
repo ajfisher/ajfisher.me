@@ -31,7 +31,13 @@ export default defineConfig([
       ecmaVersion: "latest",
     },
     rules: {
-      "no-unused-vars": "warn",
+      "no-unused-vars": [
+        "warn",
+        {
+          varsIgnorePattern: "^_",
+          argsIgnorePattern: "^_",
+        }
+      ],
       "no-undef": "warn",
     }
   },
