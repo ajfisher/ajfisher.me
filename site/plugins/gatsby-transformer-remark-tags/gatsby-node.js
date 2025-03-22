@@ -1,9 +1,9 @@
 
 // takes a node, loads it all up and then tries to fix the frontmatter tags
 
-const matter = require('gray-matter');
+// const matter = require('gray-matter');
 
-exports.onCreateNode = async ({ node, actions, loadNodeContent }) => {
+exports.onCreateNode = async ({ node, actions, _loadNodeContent }) => {
 
   const { createNodeField } = actions;
   if (node.internal.type !== `MarkdownRemark`) {
