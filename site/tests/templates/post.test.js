@@ -3,6 +3,8 @@ import { render, screen } from '@testing-library/react';
 import Template, { Head } from '../../src/templates/post';
 import { useStaticQuery } from 'gatsby';
 
+// we use this due to the mocks and we have proper definitions elsewhere
+/* eslint-disable react/prop-types, react/display-name */
 
 jest.mock('../../src/components/footer', () => () => <nav data-testid="footer">Footer Mock</nav>);
 

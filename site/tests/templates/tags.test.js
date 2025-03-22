@@ -3,6 +3,9 @@ import { render, screen } from '@testing-library/react';
 import Template, { Head } from '../../src/templates/tags';
 import { useStaticQuery } from 'gatsby';
 
+// we use this due to the mocks and we have proper definitions elsewhere
+/* eslint-disable react/prop-types, react/display-name */
+
 // Mock sub-components so that you can inspect their props and rendered output.
 jest.mock('../../src/components/footer', () => () => <footer data-testid="footer">Footer Mock</footer>);
 jest.mock('../../src/components/nav', () => () => <nav data-testid="nav">Footer Mock</nav>);

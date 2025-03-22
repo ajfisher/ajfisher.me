@@ -3,6 +3,9 @@ import { render, screen } from '@testing-library/react';
 // import Layout, { Main, Article, Aside } from '../src/components/layout';
 import Layout from '../src/components/layout';
 
+// we use this due to the mocks and we have proper definitions elsewhere
+/* eslint-disable react/prop-types, react/display-name */
+
 // Mock sub-components so that you can inspect their props and rendered output.
 jest.mock('../src/components/header', () => (props) => {
   return (

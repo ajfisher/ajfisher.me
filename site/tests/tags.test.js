@@ -46,7 +46,7 @@ describe('TagList component', () => {
   it('returns null when children is null', () => {
     const { container } = render(
       <MemoryRouter>
-        <TagList children={null} />
+        <TagList />
       </MemoryRouter>
     );
     expect(container.firstChild).toBeNull();

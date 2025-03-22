@@ -3,6 +3,9 @@ import { render, screen } from '@testing-library/react';
 import Layout from '../src/components/post-layout';
 import { useStaticQuery } from 'gatsby';
 
+// we use this due to the mocks and we have proper definitions elsewhere
+/* eslint-disable react/prop-types, react/display-name */
+
 // Stub the child components so you can inspect the props that Layout passes in.
 jest.mock('../src/components/header', () => (props) => (
   <div

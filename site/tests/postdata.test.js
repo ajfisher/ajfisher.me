@@ -3,6 +3,9 @@ import { render, screen } from '@testing-library/react';
 import moment from 'moment';
 import PostData from '../src/components/postdata';
 
+// we use this due to the mocks and we have proper definitions elsewhere
+/* eslint-disable react/prop-types, react/display-name */
+
 // Since the PostData component imports the Tags component from './tags',
 // we can mock it here to simply render its children inside a <div>
 // with a test id for easier selection.
