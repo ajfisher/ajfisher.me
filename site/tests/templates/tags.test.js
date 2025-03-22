@@ -157,21 +157,27 @@ describe('Tags Template', () => {
   it('renders the tag as the title if no title is provided', () => {
     const removedTitlePosts = { ...samplePostsSingle };
     delete removedTitlePosts.tagdata.title;
-    render(<Template data={removedTitlePosts} />);
+    render(<Template data={removedTitlePosts}
+      pageContext={removedTitlePosts.tagdata}
+    />);
     expect(screen.getByText('tech')).toBeInTheDocument();
   });
 
   it('does not render an intro if none is provided', () => {
     const removedIntroPosts = { ...samplePostsSingle };
     delete removedIntroPosts.tagdata.intro;
-    render(<Template data={removedIntroPosts} />);
+    render(<Template data={removedIntroPosts}
+      pageContext={removedIntroPosts.tagdata}
+    />);
     expect(screen.queryByText('Tech intro')).not.toBeInTheDocument();
   });
 
   it('does not render an image if none is provided', () => {
     const removedImagePosts = { ...samplePostsSingle };
     delete removedImagePosts.tagdata.tagimage;
-    render(<Template data={removedImagePosts} />);
+    render(<Template data={removedImagePosts}
+      pageContext={removedImagePosts.tagdata}
+    />);
     expect(screen.queryByAltText('Technology')).not.toBeInTheDocument();
   });
 });
