@@ -64,7 +64,7 @@ const PostData = ({author='ajfisher', title, tags, publicationDate}) => {
 PostData.propTypes = {
   author: PropTypes.string, // defaults to "ajfisher" if not provided
   title: PropTypes.string.isRequired,
-  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string),
   publicationDate: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.instanceOf(Date)
