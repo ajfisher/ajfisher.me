@@ -278,7 +278,7 @@ const Header = ({
   excerpt = ``,
   url = ``,
   featured=false,
-  featuredimage=null, featuredImageBy,
+  featuredimage=null, featuredImageBy='',
   tagimage=null, postcount=null,
   smalltitle = false,
   largetitle = false,
@@ -307,6 +307,7 @@ const Header = ({
 
     let pluralArticle = postcount > 1 ? 'articles' : 'article';
 
+    console.log(`featured imnage byu ${featuredImageBy}`);
     return (
       <PostHeader>
         { featuredimage !== null &&
@@ -314,7 +315,7 @@ const Header = ({
         }
         {
           tagimage !== null &&
-          <GatsbyImage image={headerimage} className="headerimage" />
+          <GatsbyImage image={headerimage} alt="" className="headerimage" />
         }
         { featuredimage === null && tagimage === null &&
           <div className="imagefill" />
