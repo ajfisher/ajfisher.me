@@ -10,9 +10,9 @@ jest.mock('../../src/components/footer', () => () => <footer data-testid="footer
 jest.mock('../../src/components/nav', () => () => <nav data-testid="nav">Footer Mock</nav>);
 
 // Mock Layout so we can inspect its props
-jest.mock('../../src/components/post-layout', () => ({children, ...props}) => {
+jest.mock('../../src/components/post-layout', () => ({children, ..._props}) => {
   return (
-    <div data-testid="layout" {...props}>{children}</div>
+    <div data-testid="layout">{children}</div>
   );
 });
 
