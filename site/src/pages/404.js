@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
+import PropTypes from 'prop-types';
 
 import Layout from '../components/layout';
 import PageHead from '../components/page-head';
@@ -30,9 +31,9 @@ const NotFoundPage = ({location, data}) => {
       largetitle="true" featuredimage={featuredImage}
     >
       <PageHead title={title}/>
-      <section class="content">
+      <section className="content">
         <p>You made a request for <strong>{location.pathname}</strong>.</p>
-        <p>This page doesn't exist or has been moved permanently.</p>
+        <p>This page doesn&apos;t exist or has been moved permanently.</p>
 
         <h2>Where to next?</h2>
         <p>
@@ -50,6 +51,21 @@ const NotFoundPage = ({location, data}) => {
       </section>
     </Layout>
   );
+};
+
+NotFoundPage.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }).isRequired,
+  data: PropTypes.shape({
+    headimage: PropTypes.shape({
+      nodes: PropTypes.arrayOf(
+        PropTypes.shape({
+          featureimage: PropTypes.any, // refine if you know the image shape
+        })
+      ).isRequired,
+    }).isRequired,
+  }).isRequired,
 };
 
 export default NotFoundPage
