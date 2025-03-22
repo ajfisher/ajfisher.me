@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/list-layout';
@@ -7,7 +8,7 @@ import PageHead from '../components/page-head';
 import { ListItems, PostListItem } from '../components/list';
 import { Paginate } from '../components/pagination.js';
 
-export const Head = ({location, params, data, pageContext}) => {
+export const Head = ({_location, _params, _data, pageContext}) => {
   const {currentPage} = pageContext;
   const seo = {
     title: `Article archive - page ${currentPage}`,
@@ -23,6 +24,15 @@ export const Head = ({location, params, data, pageContext}) => {
       />
     </>
   );
+};
+
+Head.propTypes = {
+  _location: PropTypes.object,
+  _params: PropTypes.object,
+  _data: PropTypes.object,
+  pageContext: PropTypes.shape({
+    currentPage: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default function Template({ pageContext, data}) {
@@ -90,6 +100,44 @@ export default function Template({ pageContext, data}) {
       />
     </Layout>
   );
+};
+
+Template.propTypes = {
+  pageContext: PropTypes.shape({
+    currentPage: PropTypes.number.isRequired,
+    numPages: PropTypes.number.isRequired,
+  }).isRequired,
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.shape({
+      edges: PropTypes.arrayOf(
+        PropTypes.shape({
+          node: PropTypes.shape({
+            frontmatter: PropTypes.shape({
+              slug: PropTypes.string.isRequired,
+              title: PropTypes.string.isRequired,
+              date: PropTypes.oneOfType([
+                PropTypes.string,
+                PropTypes.instanceOf(Date),
+              ]).isRequired,
+              excerpt: PropTypes.string,
+              featured: PropTypes.bool,
+              featureimage: PropTypes.any,
+              featureimage_position: PropTypes.string,
+              small_title: PropTypes.bool,
+              large_title: PropTypes.bool,
+              listimage: PropTypes.any,
+              listimage_position: PropTypes.string,
+            }).isRequired,
+            timeToRead: PropTypes.number,
+            wordCount: PropTypes.shape({
+              words: PropTypes.number,
+            }),
+            excerpt: PropTypes.string,
+          }).isRequired,
+        })
+      ).isRequired,
+    }).isRequired,
+  }).isRequired,
 };
 
 export const pageQuery = graphql`

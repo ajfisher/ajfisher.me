@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/post-layout';
 import PageHead from '../components/page-head';
 
-export const Head = ({location, params, data, pageContext}) => {
+export const Head = ({_location, _params, data, _pageContext}) => {
   const { markdownRemark} = data;
   const { frontmatter} = markdownRemark;
 
@@ -20,6 +21,22 @@ export const Head = ({location, params, data, pageContext}) => {
       />
     </>
   );
+};
+
+Head.propTypes = {
+  _location: PropTypes.object,
+  _params: PropTypes.object,
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        excerpt: PropTypes.string,
+        twitter_excerpt: PropTypes.string,
+      }).isRequired,
+      excerpt: PropTypes.string,
+    }).isRequired,
+  }).isRequired,
+  _pageContext: PropTypes.object,
 };
 
 export default function Template({ data, location }) {
@@ -43,7 +60,39 @@ export default function Template({ data, location }) {
       />
     </Layout>
   )
-}
+};
+
+Template.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      html: PropTypes.string.isRequired,
+      timeToRead: PropTypes.number,
+      wordCount: PropTypes.shape({
+        words: PropTypes.number.isRequired,
+      }).isRequired,
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        date: PropTypes.oneOfType([PropTypes.string, PropTypes.instanceOf(Date)])
+          .isRequired,
+        slug: PropTypes.string.isRequired,
+        excerpt: PropTypes.string,
+        twitter_excerpt: PropTypes.string,
+        featureimage: PropTypes.any,
+        imageby: PropTypes.string,
+        imagelink: PropTypes.string,
+        small_title: PropTypes.bool,
+        large_title: PropTypes.bool,
+      }).isRequired,
+      fields: PropTypes.shape({
+        taglist: PropTypes.arrayOf(PropTypes.string),
+      }),
+      excerpt: PropTypes.string,
+    }).isRequired,
+  }).isRequired,
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export const pageQuery = graphql`
   query($slug: String!) {
