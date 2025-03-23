@@ -125,6 +125,23 @@ describe('Tags template head tests', () => {
     expect(pageHead).toHaveAttribute('data-description',
       `Posts that are tagged ${tag} on ajfisher.me`);
   });
+
+  it('renders Head when there is no title', () => {
+    const removedTitle = JSON.parse(JSON.stringify(samplePostsSingle));
+    delete removedTitle.tagdata.title;
+
+    render(<Head data={removedTitle}
+      pageContext={removedTitle.tagdata} />);
+
+    const { tag } = removedTitle.tagdata;
+
+    // Check that the PageHead component rendered with the correct props.
+    const pageHead = screen.getByTestId('pagehead');
+    expect(pageHead).toBeInTheDocument();
+    expect(pageHead).toHaveAttribute('data-title', `${tag} tagged posts`);
+    expect(pageHead).toHaveAttribute('data-description',
+      `Posts that are tagged ${tag} on ajfisher.me`);
+  });
 });
 
 describe('Tags Template', () => {
