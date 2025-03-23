@@ -63,7 +63,7 @@ describe('ListLayout Component', () => {
       featureimage: "dummy-feature-image",
       featured: true,
       tagimage: "dummy-tag-image",
-      postcount: "5",
+      postcount: 5,
       small_title: "true",
       large_title: "false",
       imageby: "Photographer"

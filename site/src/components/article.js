@@ -348,7 +348,7 @@ PostArticle.propTypes = {
   featuredImageLink: PropTypes.string,
   title: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
-  // relatedposts is expected to be an array of objects where each has a "post" property 
+  // relatedposts is expected to be an array of objects where each has a "post" property
   // whose "frontmatter" contains several fields:
   relatedposts: PropTypes.arrayOf(
     PropTypes.shape({
@@ -357,7 +357,10 @@ PostArticle.propTypes = {
           slug: PropTypes.string.isRequired,
           title: PropTypes.string.isRequired,
           date: PropTypes.string.isRequired,
-          listimage: PropTypes.object, // or refine this shape if desired
+          listimage: PropTypes.oneOfType([
+            PropTypes.string,
+            PropTypes.object, // or refine this shape if desired
+          ]),
           listimage_position: PropTypes.string,
           excerpt: PropTypes.string,
         }).isRequired,

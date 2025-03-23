@@ -66,8 +66,14 @@ Layout.propTypes = {
       slug: PropTypes.string,
       featureimage: PropTypes.any,
       featured: PropTypes.bool,
-      small_title: PropTypes.bool,
-      large_title: PropTypes.bool,
+      small_title: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.bool
+      ]),
+      large_title: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.bool
+      ]),
       tagimage: PropTypes.any,
       postcount: PropTypes.number,
     }),

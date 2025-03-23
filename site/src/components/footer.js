@@ -123,7 +123,10 @@ const PostItem = ({title, image, url, excerpt}) => {
 
 PostItem.propTypes = {
   title: PropTypes.string.isRequired,
-  image: PropTypes.object.isRequired,
+  image: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.string
+  ]).isRequired,
   url: PropTypes.string,
   excerpt: PropTypes.string.isRequired,
 }

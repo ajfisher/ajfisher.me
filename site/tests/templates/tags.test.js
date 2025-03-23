@@ -113,17 +113,17 @@ describe('Tags template head tests', () => {
   });
 
   it('renders Head with the correct title', () => {
-    render(<Head data={samplePostsMultiple.tagdata}
+    render(<Head data={samplePostsMultiple}
       pageContext={samplePostsMultiple.tagdata} />);
 
-      const { tag } = samplePostsMultiple.tagdata;
+    const { tag, title } = samplePostsMultiple.tagdata;
 
-      // Check that the PageHead component rendered with the correct props.
-      const pageHead = screen.getByTestId('pagehead');
-      expect(pageHead).toBeInTheDocument();
-      expect(pageHead).toHaveAttribute('data-title', `${tag} tagged posts`);
-      expect(pageHead).toHaveAttribute('data-description',
-        `Posts that are tagged ${tag} on ajfisher.me`);
+    // Check that the PageHead component rendered with the correct props.
+    const pageHead = screen.getByTestId('pagehead');
+    expect(pageHead).toBeInTheDocument();
+    expect(pageHead).toHaveAttribute('data-title', `${title} tagged posts`);
+    expect(pageHead).toHaveAttribute('data-description',
+      `Posts that are tagged ${tag} on ajfisher.me`);
   });
 });
 
@@ -136,6 +136,10 @@ describe('Tags Template', () => {
   });
 
   it('renders multiple posts with correct data', () => {
+    // Spy on console.error to suppress and capture output if needed.
+    // This is because of CSS container query parsing in RTL
+    const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+
     render(<Template data={samplePostsMultiple}
       pageContext={samplePostsMultiple.tagdata}
     />);
@@ -143,6 +147,12 @@ describe('Tags Template', () => {
     expect(screen.getByText('Tech intro')).toBeInTheDocument();
     expect(screen.getByText('Test Post 1')).toBeInTheDocument();
     expect(screen.getByText('Test Post 2')).toBeInTheDocument();
+
+    // check that the only error warning is due to CSS
+    expect(consoleErrorSpy).toHaveBeenCalled();
+    expect(consoleErrorSpy.mock.calls[0][0].type).toMatch(/css parsing/i);
+    // Restore console.error.
+    consoleErrorSpy.mockRestore();
   });
 
   it('renders single post with correct data', () => {

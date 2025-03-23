@@ -17,7 +17,7 @@ jest.mock('../../src/components/page-head', () => (props) => {
       data-description={props.description}
       data-image={props.image}
       data-tweet={props.tweet}
-      data-readingTime={props.readingTime}
+      data-readingtime={props.readingTime}
       data-words={props.words}
     >
       Page Head Mock
@@ -78,7 +78,7 @@ describe('Post.js Template', () => {
       expect(pageHead).toHaveAttribute('data-description', 'Test Head excerpt.');
       expect(pageHead).toHaveAttribute('data-image', 'dummyFeatureImageData');
       expect(pageHead).toHaveAttribute('data-tweet', 'Test Head Twitter excerpt.');
-      expect(pageHead).toHaveAttribute('data-readingTime', '5');
+      expect(pageHead).toHaveAttribute('data-readingtime', '5');
       expect(pageHead).toHaveAttribute('data-words', '500');
     });
 
@@ -197,6 +197,10 @@ describe('Post.js Template', () => {
     });
 
     it('renders Layout with the correct props and content', () => {
+      // Spy on console.error to suppress and capture output if needed.
+      // This is because of CSS container query parsing in RTL
+      const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+
       // Render the Template component with dummy data and location.
       render(<Template data={dummyTemplateData} location={dummyLocation} />);
 
@@ -205,6 +209,11 @@ describe('Post.js Template', () => {
       expect(contentSection).toBeInTheDocument();
       expect(contentSection.innerHTML).toBe(dummyTemplateData.markdownRemark.html);
 
+      // check that the only error warning is due to CSS
+      expect(consoleErrorSpy).toHaveBeenCalled();
+      expect(consoleErrorSpy.mock.calls[0][0].type).toMatch(/css parsing/i);
+      // Restore console.error.
+      consoleErrorSpy.mockRestore();
     });
 
     it('renders layout even if featureimage is missing', () => {
@@ -217,6 +226,10 @@ describe('Post.js Template', () => {
 
       delete dummyTemplateDataWithoutFeatureImage.markdownRemark.frontmatter.featureimage;
 
+      // Spy on console.error to suppress and capture output if needed.
+      // This is because of CSS container query parsing in RTL
+      const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+
       // Render the Template component with dummy data and location.
       render(<Template data={dummyTemplateDataWithoutFeatureImage} location={dummyLocation} />);
 
@@ -224,6 +237,12 @@ describe('Post.js Template', () => {
       const contentSection = document.querySelector('section.content');
       expect(contentSection).toBeInTheDocument();
       expect(contentSection.innerHTML).toBe(dummyTemplateData.markdownRemark.html);
+
+      // check that the only error warning is due to CSS
+      expect(consoleErrorSpy).toHaveBeenCalled();
+      expect(consoleErrorSpy.mock.calls[0][0].type).toMatch(/css parsing/i);
+      // Restore console.error.
+      consoleErrorSpy.mockRestore();
     });
 
 

@@ -53,7 +53,7 @@ Tags.propTypes = {
 
 export const TagList = ({children}) => {
   // provides a raw list of the tags unformatted
-  if (children === null) return null;
+  if (children === null || children === undefined) return null;
 
   const taglist = children.map((tagname) => {
     return <Tag href={`/tagged/${tagname}/`} key={tagname}>{tagname}</Tag>
@@ -63,7 +63,7 @@ export const TagList = ({children}) => {
 };
 
 TagList.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.string).isRequired,
+  children: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default Tags;

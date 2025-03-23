@@ -1,4 +1,3 @@
-// utils: we assume these are located at ../../src/lib/utils.js, adjust the paths as needed.
 import React from 'react';
 import { render } from '@testing-library/react';
 import PageHead from '../src/components/page-head';
@@ -21,7 +20,7 @@ describe('PageHead Component', () => {
   });
 
   it('renders a title tag with combined title', () => {
-    render(<PageHead title="Custom Title" />);
+    render(<PageHead title="Custom Title" />, {container: document.head});
     const titleTag = document.querySelector('title');
     expect(titleTag).toBeInTheDocument();
     expect(titleTag.textContent).toBe('Custom Title | Default Title');
@@ -111,19 +110,41 @@ describe('PageHead Component', () => {
   });
 
   it('renders no reading time if non number is provided', () => {
+    // Spy on console.error and suppress output for this test.
+    const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+
     render(<PageHead title="Custom Title" readingTime="text" />);
+
+    // Check that a PropTypes error was logged (the exact text may vary)
+    expect(consoleErrorSpy).toHaveBeenCalled();
+    // check that the error message contains a specific substring:
+    expect(consoleErrorSpy.mock.calls[0][2]).toMatch(/Invalid prop `readingTime` of type `string`/i);
+
     const data1 = document.querySelector('meta[name="twitter:data1"]');
     expect(data1).not.toBeInTheDocument();
+
+    // Restore the original console.error after the test.
+    consoleErrorSpy.mockRestore();
   });
 
   it('renders no words if non number is provided', () => {
+    // Spy on console.error and suppress output for this test.
+    const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+
     render(<PageHead title="Custom Title" words="text" />);
+
+    // Check that a PropTypes error was logged (the exact text may vary)
+    expect(consoleErrorSpy).toHaveBeenCalled();
+    // check that the error message contains a specific substring:
+    expect(consoleErrorSpy.mock.calls[0][2]).toMatch(/Invalid prop `words` of type `string`/i);
+
+    // Verify that the subcomponent (meta tag) is not rendered.
     const data2 = document.querySelector('meta[name="twitter:data2"]');
     expect(data2).not.toBeInTheDocument();
+
+    // Restore the original console.error after the test.
+    consoleErrorSpy.mockRestore();
   });
-
-
-
 
 });
 
