@@ -1,5 +1,5 @@
 /** This component provides the core layouts that are then used by the others **/
-
+import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -163,12 +163,14 @@ const Layout = ({
   )
 };
 
-/**Layout.defaultProps = {
-  title: 'This page has no name',
-  slug: '/unknown',
-  excerpt: '',
-  largetitle: false,
-  smalltitle: false
-};**/
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+  title: PropTypes.string,
+  excerpt: PropTypes.string,
+  featuredimage: PropTypes.any,
+  largetitle: PropTypes.bool,
+  smalltitle: PropTypes.bool,
+  slug: PropTypes.string,
+};
 
 export default Layout;

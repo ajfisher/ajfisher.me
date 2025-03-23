@@ -15,7 +15,16 @@ describe("Header Component", () => {
   });
 
   it("throws an error when title is not provided", () => {
-    expect(() => render(<Header />)).toThrow();
+    // Spy on console.error and suppress output for this test.
+    const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+
+    expect(() => render(<Header />)).toThrow('Header component requires a title prop');
+
+    // Check that a PropTypes error was logged (the exact text may vary)
+    expect(consoleErrorSpy).toHaveBeenCalled();
+
+    // Restore the original console.error after the test.
+    consoleErrorSpy.mockRestore();
   });
 
   it("renders with a link when URL is provided", () => {
@@ -44,9 +53,19 @@ describe("Header Component", () => {
   });
 
   it("renders reading time and word count when provided", () => {
+    // Spy on console.error to suppress and capture output if needed.
+    // This is because of CSS container query parsing in RTL
+    const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+
     render(<Header title="Post with Reading Stats" readingTime={5} wordCount={{ words: 1000 }} />);
     expect(screen.getByText(/5 min/)).toBeInTheDocument();
     expect(screen.getByText(/1000 words/)).toBeInTheDocument();
+
+    // check that the only error warning is due to CSS
+    expect(consoleErrorSpy).toHaveBeenCalled();
+    expect(consoleErrorSpy.mock.calls[0][0].type).toMatch(/css parsing/i);
+    // Restore console.error.
+    consoleErrorSpy.mockRestore();
   });
 
   it("renders featured image when provided", () => {

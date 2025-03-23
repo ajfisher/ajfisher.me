@@ -4,6 +4,9 @@ import { render, screen } from '@testing-library/react';
 import Footer, { PostItem } from '../src/components/footer';
 import { useStaticQuery } from 'gatsby';
 
+// we use this due to the mocks and we have proper definitions elsewhere
+/* eslint-disable react/prop-types */
+
 // Mock useStaticQuery for consistent data.
 const defaultData = {
   responsiveDesign: {
@@ -60,7 +63,7 @@ beforeEach(() => {
 
 // Mock pathDate so featured URLs become predictable.
 jest.mock('../lib/utils', () => ({
-  pathDate: (date) => '2021/01/01', // simple fixed return value for testing
+  pathDate: (_date) => '2021/01/01', // simple fixed return value for testing
 }));
 
 // Optionally, you can also mock OutboundLink if needed.

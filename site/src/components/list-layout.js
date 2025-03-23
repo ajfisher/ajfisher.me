@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Header from './header';
 import Nav from './nav';
 import Footer from './footer';
@@ -41,7 +42,7 @@ const Layout = ({ children, featured={}, slug}) => {
         readingTime={timeToRead} wordCount={wordCount} />
       <Main>
         <ListArticle>
-          <section itemscope="" itemtype="https://schema.org/Blog">{children}</section>
+          <section itemScope="" itemType="https://schema.org/Blog">{children}</section>
         </ListArticle>
         <Aside>
           <Nav/>
@@ -51,5 +52,41 @@ const Layout = ({ children, featured={}, slug}) => {
     </>
   )
 }
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+  featured: PropTypes.shape({
+    frontmatter: PropTypes.shape({
+      title: PropTypes.string,
+      date: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.instanceOf(Date)
+      ]),
+      excerpt: PropTypes.string,
+      slug: PropTypes.string,
+      featureimage: PropTypes.any,
+      featured: PropTypes.bool,
+      small_title: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.bool
+      ]),
+      large_title: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.bool
+      ]),
+      tagimage: PropTypes.any,
+      postcount: PropTypes.number,
+    }),
+    fields: PropTypes.shape({
+      excerpt: PropTypes.string,
+    }),
+    timeToRead: PropTypes.number,
+    wordCount: PropTypes.shape({
+      words: PropTypes.number,
+    }),
+    excerpt: PropTypes.string,
+  }),
+  slug: PropTypes.string,
+};
 
 export default Layout;

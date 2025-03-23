@@ -3,6 +3,9 @@ import { render, screen } from '@testing-library/react';
 import ListLayout from '../src/components/list-layout';
 import { pathDate } from '../src/lib/utils';
 
+// we use this due to the mocks and we have proper definitions elsewhere
+/* eslint-disable react/prop-types, react/display-name */
+
 // --- Mocks ---
 // Mock Header to render its props as data-attributes so we can assert on them.
 jest.mock('../src/components/header', () => (props) => {
@@ -60,7 +63,7 @@ describe('ListLayout Component', () => {
       featureimage: "dummy-feature-image",
       featured: true,
       tagimage: "dummy-tag-image",
-      postcount: "5",
+      postcount: 5,
       small_title: "true",
       large_title: "false",
       imageby: "Photographer"

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -87,5 +88,11 @@ export const Paginate = ({basepath, currentpage, numpages}) => {
       )}
     </Pagination>
   );
-}
+};
+
+Paginate.propTypes = {
+  basepath: PropTypes.string.isRequired,
+  currentpage: PropTypes.number.isRequired,
+  numpages: PropTypes.number.isRequired,
+};
 

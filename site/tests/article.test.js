@@ -1,11 +1,13 @@
-// article.test.js
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import ArticleComponent, {
+import {
   Attribution,
   PostArticle,
   ListArticle
 } from '../src/components/article';
+
+// we use this due to the mocks and we have proper definitions elsewhere
+/* eslint-disable react/prop-types */
 
 // --- Mocks ---
 // Mock the layout Article so that we can check for its presence.

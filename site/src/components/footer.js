@@ -1,4 +1,5 @@
 import { Link, useStaticQuery, graphql} from 'gatsby';
+import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
@@ -119,6 +120,16 @@ const PostItem = ({title, image, url, excerpt}) => {
     }
   </>;
 };
+
+PostItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  image: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.string
+  ]).isRequired,
+  url: PropTypes.string,
+  excerpt: PropTypes.string.isRequired,
+}
 
 const Footer = ({slug}) => {
 
@@ -253,6 +264,10 @@ const Footer = ({slug}) => {
     </StyledFooter>
   );
 };
+
+Footer.propTypes = {
+  slug: PropTypes.string.isRequired,
+}
 
 export default Footer;
 export { PostItem };

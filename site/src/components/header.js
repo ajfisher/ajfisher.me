@@ -257,6 +257,13 @@ const Title = ({
   }
 };
 
+Title.propTypes = {
+  children: PropTypes.node.isRequired,
+  url: PropTypes.string,
+  smalltitle: PropTypes.bool,
+  largetitle: PropTypes.bool,
+};
+
 const Featured = styled.p`
   color: var(--highlight);
   margin: calc(0.5 * var(--gutter)) var(--gutter);
@@ -271,7 +278,7 @@ const Header = ({
   excerpt = ``,
   url = ``,
   featured=false,
-  featuredimage=null, featuredImageBy,
+  featuredimage=null, featuredImageBy='',
   tagimage=null, postcount=null,
   smalltitle = false,
   largetitle = false,
@@ -307,7 +314,7 @@ const Header = ({
         }
         {
           tagimage !== null &&
-          <GatsbyImage image={headerimage} className="headerimage" />
+          <GatsbyImage image={headerimage} alt="" className="headerimage" />
         }
         { featuredimage === null && tagimage === null &&
           <div className="imagefill" />
@@ -358,7 +365,23 @@ const Header = ({
 
 Header.propTypes = {
   title: PropTypes.string.isRequired,
+  date: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.instanceOf(Date)
+  ]),
   excerpt: PropTypes.string,
+  url: PropTypes.string,
+  featured: PropTypes.bool,
+  featuredimage: PropTypes.any, // use a more specific shape if you know its structure
+  featuredImageBy: PropTypes.string,
+  tagimage: PropTypes.any,
+  postcount: PropTypes.number,
+  smalltitle: PropTypes.bool,
+  largetitle: PropTypes.bool,
+  readingTime: PropTypes.number,
+  wordCount: PropTypes.shape({
+    words: PropTypes.number
+  })
 };
 
 export default Header;

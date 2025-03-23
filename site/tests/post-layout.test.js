@@ -3,6 +3,9 @@ import { render, screen } from '@testing-library/react';
 import Layout from '../src/components/post-layout';
 import { useStaticQuery } from 'gatsby';
 
+// we use this due to the mocks and we have proper definitions elsewhere
+/* eslint-disable react/prop-types, react/display-name */
+
 // Stub the child components so you can inspect the props that Layout passes in.
 jest.mock('../src/components/header', () => (props) => (
   <div
@@ -14,31 +17,38 @@ jest.mock('../src/components/header', () => (props) => (
   />
 ));
 
-
 jest.mock('../src/components/article', () => ({
   PostArticle: (props) => (
-    <div data-testid="post-article" {...props}>
+    <div
+      data-testid="post-article"
+      data-url={props.url}
+    >
       {props.children}
     </div>
   ),
 }));
 
 jest.mock('../src/components/postdata', () => (props) => (
-  <div data-testid="post-data" {...props} />
+  <div data-testid="post-data"
+    data-publicationdate={props.publicationDate}
+    data-title={props.title}
+    data-tags={props.tags}
+  />
 ));
 
 jest.mock('../src/components/nav', () => () => <div data-testid="nav" />);
 
 jest.mock('../src/components/footer', () => (props) => (
-  <div data-testid="footer" {...props} />
+  <div data-testid="footer"
+    data-slug={props.slug}
+  />
 ));
 
 // Since post-layout.js imports Main and Aside from the layout file,
 // we can stub those too
-jest.mock('../src/components/layout', () => ({
-  Main: (props) => <main data-testid="main" {...props} />,
-  Aside: (props) => <aside data-testid="aside" {...props} />,
-}));
+//jest.mock('../src/components/layout', () => ({
+//  Aside: (props) => <aside data-testid="aside" {...props}/>,
+// }));
 
 // Provide a dummy site metadata via useStaticQuery.
 beforeEach(() => {
@@ -115,18 +125,18 @@ describe('PostLayout Component', () => {
     // Check that PostArticle receives the computed URL.
     const expectedUrl = 'https://example.com/test-post/';
     const postArticle = screen.getByTestId('post-article');
-    expect(postArticle).toHaveAttribute('url', expectedUrl);
+    expect(postArticle).toHaveAttribute('data-url', expectedUrl);
     // Also check that children are rendered inside PostArticle.
     expect(screen.getByTestId('content')).toBeInTheDocument();
 
     // Check that Aside contains PostData and Nav.
-    const aside = screen.getByTestId('aside');
+    const aside = document.querySelector('aside');
     expect(aside).toContainElement(screen.getByTestId('post-data'));
     expect(aside).toContainElement(screen.getByTestId('nav'));
 
     // Check that Footer is rendered with the correct slug.
     const footer = screen.getByTestId('footer');
-    expect(footer).toHaveAttribute('slug', frontmatter.slug);
+    expect(footer).toHaveAttribute('data-slug', frontmatter.slug);
   });
 
   it('defaults small_title and large_title to false when not provided', () => {

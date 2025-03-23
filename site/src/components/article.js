@@ -1,4 +1,5 @@
 import moment from 'moment';
+import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 import { device } from './devices';
@@ -232,6 +233,12 @@ const Attribute = ({name, showfull = true, children}) => {
   );
 };
 
+Attribute.propTypes = {
+  name: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  showfull: PropTypes.bool,
+}
+
 export const Attribution = ({author, featuredImageBy,
     featuredImageLink, title, pageurl, date, tags}) => {
   let imageAttribution;
@@ -249,15 +256,15 @@ export const Attribution = ({author, featuredImageBy,
     <StyledAttribution aria-label="Post attribution information">
       <h2>About this post</h2>
       <Attributes>
-        <Attribute name="Title">"{title}"</Attribute>
+        <Attribute name="Title">&quot;{title}&quot;</Attribute>
         <Attribute name="Published on"
-          showfull="false">{moment(date).format("dddd, MMMM Do YYYY")}</Attribute>
+          showfull={false}>{moment(date).format("dddd, MMMM Do YYYY")}</Attribute>
         {tags &&
-          <Attribute name="Tags" showfull="false">
+          <Attribute name="Tags" showfull={false}>
             <TagList>{tags}</TagList>
           </Attribute>
         }
-        <Attribute name="Author" showfull="false">
+        <Attribute name="Author" showfull={false}>
           {author}
         </Attribute>
         {featuredImageBy &&
@@ -275,6 +282,20 @@ export const Attribution = ({author, featuredImageBy,
     </StyledAttribution>
   );
 };
+
+Attribution.propTypes = {
+  author: PropTypes.string.isRequired,
+  featuredImageBy: PropTypes.string, // optional, if not provided no attribution will be shown
+  featuredImageLink: PropTypes.string, // optional, if not provided
+  title: PropTypes.string.isRequired,
+  pageurl: PropTypes.string.isRequired,
+  date: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.instanceOf(Date)
+  ]).isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string),
+};
+
 
 export const PostArticle = ({children, featuredImageBy, featuredImageLink,
   title, url, relatedposts=[], date, tags}) => {
@@ -321,10 +342,46 @@ export const PostArticle = ({children, featuredImageBy, featuredImageLink,
   );
 };
 
+PostArticle.propTypes = {
+  children: PropTypes.node, // allows any renderable content
+  featuredImageBy: PropTypes.string,
+  featuredImageLink: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  // relatedposts is expected to be an array of objects where each has a "post" property
+  // whose "frontmatter" contains several fields:
+  relatedposts: PropTypes.arrayOf(
+    PropTypes.shape({
+      post: PropTypes.shape({
+        frontmatter: PropTypes.shape({
+          slug: PropTypes.string.isRequired,
+          title: PropTypes.string.isRequired,
+          date: PropTypes.string.isRequired,
+          listimage: PropTypes.oneOfType([
+            PropTypes.string,
+            PropTypes.object, // or refine this shape if desired
+          ]),
+          listimage_position: PropTypes.string,
+          excerpt: PropTypes.string,
+        }).isRequired,
+      }).isRequired,
+    })
+  ),
+  date: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.instanceOf(Date)
+  ]).isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string),
+};
+
 export const ListArticle = ({children}) => {
   return(
     <StyledListArticle>
       {children}
     </StyledListArticle>
   );
+};
+
+ListArticle.propTypes = {
+  children: PropTypes.node.isRequired,
 };

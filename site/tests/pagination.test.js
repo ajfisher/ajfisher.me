@@ -5,6 +5,7 @@ import { MemoryRouter } from 'react-router-dom';
 
 // A simple wrapper to render our component within a router context.
 const renderWithRouter = (ui, { route = '/' } = {}) => {
+  /* eslint-disable-next-line no-undef */
   window.history.pushState({}, 'Test page', route);
   return render(ui, { wrapper: MemoryRouter });
 };

@@ -31,7 +31,12 @@ describe('PostListItem Component', () => {
   };
 
   it('renders correctly when an image is provided', () => {
+    // Spy on console.error to suppress and capture output if needed.
+    // This is because of CSS container query parsing in RTL
+    const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+
     render(<PostListItem {...defaultProps} />);
+
     const expectedUrl = `/${pathDate(defaultProps.date)}/${defaultProps.slug}/`;
     // Verify both the image link and the title link use the same URL.
     const links = screen.getAllByRole("link", { name: "Test Post" });
@@ -48,6 +53,12 @@ describe('PostListItem Component', () => {
     expect(screen.getByText(expectedReadingTime)).toBeInTheDocument();
     // Excerpt should be rendered
     expect(screen.getByText("This is a test excerpt.")).toBeInTheDocument();
+
+    // check that the only error warning is due to CSS
+    expect(consoleErrorSpy).toHaveBeenCalled();
+    expect(consoleErrorSpy.mock.calls[0][0].type).toMatch(/css parsing/i);
+    // Restore console.error.
+    consoleErrorSpy.mockRestore();
   });
 
   it('renders a placeholder image when image prop is empty', () => {

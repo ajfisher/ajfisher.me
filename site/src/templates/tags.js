@@ -1,31 +1,52 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/list-layout';
 import PageHead from '../components/page-head';
 import { ListItems, PostListItem } from '../components/list';
 
-export const Head = ({data, pageContext}) => {
-  const {tag} = pageContext;
-  const {tagdata} = data;
+// need to use object.assign here due to the way arrow functions get hoisted
+// with the export. As we need to add the proptypes to the object that gets
+// hoisted we need to do this in one step then export it.
+export const Head = Object.assign(
+  ({data, pageContext}) => {
+    const {tag} = pageContext;
+    const {tagdata} = data;
 
-  const title = tagdata?.title || null;
+    const title = tagdata?.title || null;
 
-  const seo = {
-    title: `${title || tag} tagged posts`,
-    description: `Posts that are tagged ${tag} on ajfisher.me`
-  };
+    const seo = {
+      title: `${title || tag} tagged posts`,
+      description: `Posts that are tagged ${tag} on ajfisher.me`
+    };
 
-  return (
-    <>
-      <PageHead
-        title={seo.title}
-        description={seo.description}
-        type="list"
-      />
-    </>
-  );
-};
+    return (
+      <>
+        <PageHead
+          title={seo.title}
+          description={seo.description}
+          type="list"
+        />
+      </>
+    );
+  },
+  {
+    propTypes: {
+      data: PropTypes.shape({
+        tagdata: PropTypes.shape({
+          tag: PropTypes.string.isRequired,
+          title: PropTypes.string,
+          intro: PropTypes.string,
+          tagimage: PropTypes.any,
+        }).isRequired,
+      }).isRequired,
+      pageContext: PropTypes.shape({
+        tag: PropTypes.string.isRequired,
+      }).isRequired,
+    }
+  }
+);
 
 export default function Template({ data }) {
   const { posts, tagdata } = data;
@@ -54,7 +75,7 @@ export default function Template({ data }) {
 
   return (
     <Layout slug={slug} featured={tagFeature}>
-      <h2 class="list">Topic related {pluralPosts}</h2>
+      <h2 className="list">Topic related {pluralPosts}</h2>
 
       <ListItems>
         {filteredPosts.map(({node}) => {
@@ -84,6 +105,50 @@ export default function Template({ data }) {
       </ListItems>
     </Layout>
   );
+};
+
+Template.propTypes = {
+  data: PropTypes.shape({
+    posts: PropTypes.shape({
+      edges: PropTypes.arrayOf(
+        PropTypes.shape({
+          node: PropTypes.shape({
+            id: PropTypes.string,
+            frontmatter: PropTypes.shape({
+              slug: PropTypes.string.isRequired,
+              title: PropTypes.string.isRequired,
+              listimage: PropTypes.any,
+              listimage_position: PropTypes.string,
+              date: PropTypes.oneOfType([
+                PropTypes.string,
+                PropTypes.instanceOf(Date),
+              ]).isRequired,
+              excerpt: PropTypes.string,
+              featured: PropTypes.bool,
+              featureimage: PropTypes.any,
+              imageby: PropTypes.string,
+              imagelink: PropTypes.string,
+              featureimage_position: PropTypes.string,
+            }).isRequired,
+            excerpt: PropTypes.string,
+            timeToRead: PropTypes.number,
+            wordCount: PropTypes.shape({
+              words: PropTypes.number,
+            }),
+          }).isRequired,
+        })
+      ).isRequired,
+    }).isRequired,
+    tagdata: PropTypes.shape({
+      tag: PropTypes.string.isRequired,
+      title: PropTypes.string,
+      intro: PropTypes.string,
+      tagimage: PropTypes.any,
+    }).isRequired,
+  }).isRequired,
+  pageContext: PropTypes.shape({
+    tag: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export const pageQuery = graphql`

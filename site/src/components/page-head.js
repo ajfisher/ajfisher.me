@@ -6,7 +6,6 @@ import { getSrc } from "gatsby-plugin-image"
 import humanize from 'humanize-plus';
 
 function PageHead({
-  lang = `en`,
   description = ``,
   meta = [],
   title = ``,
@@ -106,22 +105,23 @@ function PageHead({
 
   return (
     <>
-      <html lang="en"/>
       <title>{`${pagetitle}`}</title>
       {
         meta.map(d => (<meta name={d.name} property={d.property} content={d.content} key={d.name || d.property} />) )
       }
     </>
   )
-}
+};
 
 PageHead.propTypes = {
   description: PropTypes.string,
-  lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  type: PropTypes.string,      // added for "type"
+  tweet: PropTypes.string,     // added for "tweet"
+  image: PropTypes.any,        // added for "image", adjust to PropTypes.object if needed
   readingTime: PropTypes.number,
-  words: PropTypes.number
-}
+  words: PropTypes.number,
+};
 
 export default PageHead

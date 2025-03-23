@@ -6,8 +6,9 @@ help:
 	@echo "clean:           Completely clean everything up"
 	@echo "clean-site:      Clean node_modules for site only"
 	@echo "clean-meta:      Clean node_modules for meta only"
-	@echo "dev:           Run the development environment"
+	@echo "dev:             Run the development environment"
 	@echo "serve:           Serve web application"
+	@echo "lint:            Lint the application"
 	@echo "test:            Run tests."
 	@echo "pre-commit:      Run lint for site."
 	@echo "build:           Build web application"
@@ -37,6 +38,12 @@ install-site:
 install: install-site
 	npm install
 
+lint:
+	cd ./site && eslint
+
+test: lint
+	cd ./site && npm run test
+
 dev:
 	cd ./site && gatsby develop -H 0.0.0.0
 
@@ -45,9 +52,6 @@ serve:
 
 pre-commit:
 	echo "Not implemented"
-
-test:
-	cd ./site && npm run test
 
 build:
 	@echo "build: Build files for deploy"

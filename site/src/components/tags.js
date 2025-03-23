@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
@@ -29,6 +30,12 @@ const Tag = ({children, className, href}) => {
   return <><Link className={className} to={kebabCase(href)}>{children}</Link> </>
 };
 
+Tag.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+  href: PropTypes.string.isRequired,
+};
+
 const Tags = ({children}) => {
   if (children?.length > 0) {
     return (
@@ -39,15 +46,24 @@ const Tags = ({children}) => {
   return;
 };
 
+Tags.propTypes = {
+  // Expecting an array of tag names; you could also allow a single string or node if needed.
+  children: PropTypes.arrayOf(PropTypes.string),
+};
+
 export const TagList = ({children}) => {
   // provides a raw list of the tags unformatted
-  if (children === null) return null;
+  if (children === null || children === undefined) return null;
 
   const taglist = children.map((tagname) => {
     return <Tag href={`/tagged/${tagname}/`} key={tagname}>{tagname}</Tag>
   });
 
   return (<>{taglist}</>)
-}
+};
+
+TagList.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.string),
+};
 
 export default Tags;

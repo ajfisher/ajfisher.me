@@ -1,11 +1,11 @@
 const path = require(`path`);
 const { kebabCase, pathDate } = require('./lib/utils');
 
-exports.onCreateNode = ({ node }) => {
+exports.onCreateNode = ({ _node }) => {
   // this is to try and resolve the issues with the pathing
 };
 
-exports.createSchemaCustomization = ({ actions, schema }) => {
+exports.createSchemaCustomization = ({ actions, _schema }) => {
   const { createTypes } = actions;
   // create foreignkey link from the markdown node to pick up the
   // similarity items that come from the related posts. Also then traverse the

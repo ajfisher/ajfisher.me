@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 
 import PageHead from '../components/page-head';
@@ -49,17 +50,20 @@ const LeadersPage = ({data}) => {
 
     try {
 
+      // eslint-disable-next-line no-undef
       const response = await fetch(submitURL, {
         method: 'POST',
         mode: 'no-cors',
         headers:{
           'Content-Type': 'application/x-www-form-urlencoded'
         },
+        // eslint-disable-next-line no-undef
         body: new URLSearchParams({
           'entry.1670649209': email
         })
       });
 
+      // eslint-disable-next-line no-undef
       console.log(response.status);
       if (response.status === 0) {
         // lets assumer we're okay
@@ -79,15 +83,15 @@ const LeadersPage = ({data}) => {
       path='/leaders' featuredimage={featuredImage}
     >
       <PageHead title={title}/>
-      <section class="content">
-        <p>Thanks for attending my recent talk. Below you'll find some resources
+      <section className="content">
+        <p>Thanks for attending my recent talk. Below you&apos;ll find some resources
           that I think may be helpful for your leadership journey.</p>
 
         <p>You can view the slides from my talk below, or alternatively <a
           href="https://wdcl2024.ajf.io/">visit the site</a> for the large
           version.</p>
 
-        <p class="mediacontainer"><iframe title="Follow Me Slides"
+        <p className="mediacontainer"><iframe title="Follow Me Slides"
           src="https://wdcl2024.ajf.io/?embed"></iframe></p>
 
         <p>Slides from my recent talk at Web Directions Code Leaders, including
@@ -97,12 +101,12 @@ const LeadersPage = ({data}) => {
 
         <h3>Resources</h3>
 
-        <p>These are some resources that I've found that have been genuinely
+        <p>These are some resources that I&apos;ve found that have been genuinely
           helpful. If you come across something you think should be on here then
           please reach out to me and let me know</p>
 
         <h4>Articles and documents</h4>
-        <p>These are articles, documents or tools I've found helpful:</p>
+        <p>These are articles, documents or tools I&apos;ve found helpful:</p>
         <p>
           <ul>
             <li>Practical explanation on <a
@@ -152,10 +156,10 @@ const LeadersPage = ({data}) => {
         </p>
 
         <h3>Subscribe to find out more</h3>
-        <p>I'm still working out the details of what type of content makes most
-          sense, however if you'd like to get notified when I release some future
+        <p>I&apos;m still working out the details of what type of content makes most
+          sense, however if you&apos;d like to get notified when I release some future
           content relating to leadership then please pop your email address in
-          below and I'll let you know (definitely no spam).</p>
+          below and I&apos;ll let you know (definitely no spam).</p>
 
         <section>
           <form onSubmit={handleSubmit}>
@@ -187,6 +191,18 @@ const LeadersPage = ({data}) => {
       </section>
     </Layout>
   );
+};
+
+LeadersPage.propTypes = {
+  data: PropTypes.shape({
+    headimage: PropTypes.shape({
+      nodes: PropTypes.arrayOf(
+        PropTypes.shape({
+          featureimage: PropTypes.any,
+        })
+      ).isRequired,
+    }).isRequired,
+  }).isRequired,
 };
 
 export default LeadersPage;
