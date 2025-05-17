@@ -4,7 +4,7 @@
   "description": "AJ Fisher website",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
