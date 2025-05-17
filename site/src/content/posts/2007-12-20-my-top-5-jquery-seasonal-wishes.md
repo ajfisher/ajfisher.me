@@ -32,8 +32,8 @@ And finally,
 
 However sometimes the jQuery functions just aren't enough and we need to cast an object to real JavaScript to play with it - a simple method of doing this would mean the power of a great interrogation language along with the ability to cast to a real DOM object.
 
-I fully expect someone to come kick me now telling me I can do some or all of these things and indeed the functions I'm asking for exist aleady however the documentation as mentioned in number 5 is lacking in some areas so it isn't obvious if it is doable.
+I fully expect someone to come kick me now telling me I can do some or all of these things and indeed the functions I'm asking for exist already however the documentation as mentioned in number 5 is lacking in some areas so it isn't obvious if it is doable.
 
-Obviously this is a little toungue-in-cheek as if I was that worried about these issues I'd write the code myself and submit it to the team for inclusion in the next version. Indeed perhaps that could form the basis of one of my New Year's technology resolutions.
+Obviously this is a little tongue-in-cheek as if I was that worried about these issues I'd write the code myself and submit it to the team for inclusion in the next version. Indeed perhaps that could form the basis of one of my New Year's technology resolutions.
 
 Happy Holidays all.

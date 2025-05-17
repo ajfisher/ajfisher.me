@@ -42,7 +42,7 @@ Adobe's current rate of innovation is laughable and they continue to support and
 ![Graph of Adobe's historical profit per year](../../img/posts/shares_adobe.png)
 *Historical gross profit of Adobe corporation - Wolfram|Alpha*
 
-While I'm here it's worth pointing out that that profit is equal to about $45K per employee (compared to $70K per employee at Oracle or nearly $250K per employee at Google!)
+While I'm here it's worth pointing out that profit is equal to about $45K per employee (compared to $70K per employee at Oracle or nearly $250K per employee at Google!)
 
 ## Adobe - where to now?
 

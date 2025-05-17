@@ -43,7 +43,7 @@ The Internet of Things is being driven by both sides of the Moore's Law coin - o
 
 However high performance and inexpensive computation are not sufficient to drive the technological changes we're currently seeing. Along side this we need cheap, ubiquitous communications, and in many places around the world we now have this type of access in both WiFi and digital cellular networks.
 
-So what happens when you have cheap computational power in a physical object coupled with cheap and almost infinite processing power available via cloud services which are facilitated by ubiquitous networks both wired and wireless? What happens to the the world when the price of physical computation and networking drop to the point where it can be given away for free in a McDonalds Happy Meal toy?
+So what happens when you have cheap computational power in a physical object coupled with cheap and almost infinite processing power available via cloud services which are facilitated by ubiquitous networks both wired and wireless? What happens to the world when the price of physical computation and networking drop to the point where it can be given away for free in a McDonalds Happy Meal toy?
 
 Well, we're almost there now and I have some examples to share.
 

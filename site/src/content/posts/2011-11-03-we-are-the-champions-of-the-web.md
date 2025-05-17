@@ -38,7 +38,7 @@ When Nokia originally chose Opera and Mozilla as the core of their mobile web br
 
 When the big web properties said "no more IE6" and meant it, license was given to every web developer and designer on the planet to say to their clients they weren't going to support it any more - because just about every client uses at least one of Facebook, Twitter or Google at some point. So momentum built...
 
-Now Microsoft - who famously "embraced and extended" the web and produced IE5 & 6, can't even keep up with the innovation occuring due to the multitude of champions simply pushing the web further, day by day and month by month. With IE10 they will have just about caught up to the bar that has been set by Mozilla and Web Kit - after a decade of almost no innovation - controlling the web by fiat.
+Now Microsoft - who famously "embraced and extended" the web and produced IE5 & 6, can't even keep up with the innovation occurring due to the multitude of champions simply pushing the web further, day by day and month by month. With IE10 they will have just about caught up to the bar that has been set by Mozilla and Web Kit - after a decade of almost no innovation - controlling the web by fiat.
 
 And so the champions have prevailed - in an unruly, largely disorganised, bickering, chattering, tweeting mass - but still they have prevailed. In the same way that science, when exposed to the transparency of the scientific method consistently brings new discoveries and innovation.
 
