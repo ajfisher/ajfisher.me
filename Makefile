@@ -39,7 +39,7 @@ install: install-site
 	npm install
 
 lint:
-	cd ./site && eslint
+	cd ./site && ./node_modules/.bin/eslint
 
 test: lint
 	cd ./site && npm run test
