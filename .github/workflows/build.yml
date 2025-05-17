@@ -69,6 +69,9 @@ jobs:
                   key: site-cache-${{hashFiles('**/site/.cache/**')}}
                   restore-keys: site-cache-
 
+            - name: Lint and test
+              run: make test
+
             - name: Build output files
               run: make build
               env:
