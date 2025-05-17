@@ -54,9 +54,9 @@ within the law and we are starting to see this go down.
 The media companies will tell you that it's because of their anti-copy
 protection, however in reality it is because of better policing and it being
 viewed as a black market operation and it having been historically a move
-away from "hard crimes" that has occured over the last 20 years.
+away from "hard crimes" that has occurred over the last 20 years.
 
-This argument doesn't wash at all with consumers. Once I purchase a peice of
+This argument doesn't wash at all with consumers. Once I purchase a piece of
 media it is mine to use how I want on whatever device I choose.
 
 The barriers that are being put up by the media companies in their zero

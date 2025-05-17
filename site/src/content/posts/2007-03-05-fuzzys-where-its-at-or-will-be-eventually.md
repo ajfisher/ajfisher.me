@@ -7,7 +7,7 @@ title: Fuzzy's where it's at... or will be eventually
 tags: algorithms, retail, ecommerce
 excerpt: >
     Using fuzzy logic can create significantly better customer experience.
-    However it hasn't caught on on web circles yet but examples are starting.
+    However it hasn't caught on in web circles yet but examples are starting.
 featureimage: ../../img/posts/fuzzy_at_sd.png
 imageby: ajfisher Representation of fuzzy logic Stable Diffusion
 imagelink: https://ajfisher.me/

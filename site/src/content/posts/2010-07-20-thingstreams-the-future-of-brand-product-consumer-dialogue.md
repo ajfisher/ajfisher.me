@@ -34,7 +34,7 @@ This is where ThingStreams will change the way we interact with product and bran
 
 The idea of a ThingStream is that a stream of content is created and is attached to a real, physical thing - in most cases some kind of product. At the moment this is done with a barcode because this is one of the only ways we have to uniquely identify a physical "thing".
 
-Once a stream of content is bound to a thing I have a ThingStream that I can engage with. The content doesn't need to be a rating or a text review, it could be pictures, video or any type of media, all attached in ThingSpace around a product that I can start consuming to better understand customer opinion or I can create and add to to express my own.
+Once a stream of content is bound to a thing I have a ThingStream that I can engage with. The content doesn't need to be a rating or a text review, it could be pictures, video or any type of media, all attached in ThingSpace around a product that I can start consuming to better understand customer opinion or I can create and add to express my own.
 
 Brands be aware, every product you have will be subject to an anarchic wave of content that will be bound to your product forever, that doesn't require a customer to trawl the web looking for reviews and cruising support forums to see if there are issues. The Thing Stream will be activated through a UPC ([Universal Product Code](http://en.wikipedia.org/wiki/Universal_Product_Code)) lookup via a website or through a barcode scan off a mobile phone.
 
@@ -52,7 +52,7 @@ For many brands this is Yet Another Thing their marketing and PR teams need to t
 
 Pepsi is already operating in this space with campaigns running across all it's major products (including Lays) which is being run through StickyBits.
 
-If you're a brand manager you need to be looking at ThingSpace and ThingStreams right now and start getting used to holding conversation there. If you're the brand manager of [Corona beer](http://www.corona.com) I'd suggest getting involved in the very active conversation that is already occuring in StickyBits right now relating to your product.
+If you're a brand manager you need to be looking at ThingSpace and ThingStreams right now and start getting used to holding conversation there. If you're the brand manager of [Corona beer](http://www.corona.com) I'd suggest getting involved in the very active conversation that is already occurring in StickyBits right now relating to your product.
 
 
 ## The future of ThingSpace

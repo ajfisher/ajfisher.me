@@ -138,7 +138,7 @@ With infrastructure you can go and put your own servers in your own room and man
 
 Usually these are paid for based on some kind of metering such as GB of storage or hours of processing time.
 
-The consumer usually doesn't need to manage the the underlying infrastructure, they just put the pieces together and configure it as they like. Infrastructure Clouds have really taken off over the last 18 months or so because of the investment businesses such as Amazon, Go Grid and RackSpace are making in their User Interfaces making it quick and easy to provision storage or full servers or appliances.
+The consumer usually doesn't need to manage the underlying infrastructure, they just put the pieces together and configure it as they like. Infrastructure Clouds have really taken off over the last 18 months or so because of the investment businesses such as Amazon, Go Grid and RackSpace are making in their User Interfaces making it quick and easy to provision storage or full servers or appliances.
 
 #### AWS
 
@@ -464,7 +464,7 @@ Providing Data as a Service might lead you to discover additional revenue stream
 
 #### Process focussed business
 
-If you are a process oriented business then you need to look at starting with with small, low risk trials and projects.
+If you are a process oriented business then you need to look at starting with small, low risk trials and projects.
 
 Look at primarily Software services for a starting point.
 

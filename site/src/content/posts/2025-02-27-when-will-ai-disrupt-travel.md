@@ -180,7 +180,7 @@ right means for this.
 
 My sense is that you’d want some sort of custom interface that outlines the
 itinerary but provides summaries of information, highlighting where travel
-events versus activities versus accomodation etc.
+events versus activities versus accommodation etc.
 
 Behind the scenes, this orchestration system would need to calculate essentials
 like managing to budget, dates and times and also how long it takes to do an
@@ -204,13 +204,13 @@ requires an interface that clearly communicates tradeoffs. This is something
 far more nuanced and detailed than a chat thread.
 
 Having an approach like this would also provide a live interface into the
-workings of the sytem that would enable those crucial iteration steps that are
+workings of the system that would enable those crucial iteration steps that are
 needed when you build a travel itinerary.
 
 ## Looks good. Book it for me…
 
 The real killer part of this will be making all the reservations and booking
-things in in one go for the user. Some of this can easily be done by API
+things in one go for the user. Some of this can easily be done by API
 (flights, rail, hotels and some restaurants or activities). Other parts will be
 much more troublesome.
 

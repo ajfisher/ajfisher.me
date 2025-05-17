@@ -81,7 +81,7 @@ Now you understand a bit about web sockets let's talk about how we can use it to
 
 What's interesting about web sockets is that it's a protocol and as such anything that can talk it can become a publisher or a subscriber and work with messages. For example, we could have an arduino with a temperature sensor on it that broadcasts temperature readings every 100 milliseconds to the broker. The subscribers could be a real time logging database for later processing and a web client for real time graphing of the data.
 
-Now scale the arduino out and have 10 sensor nodes, 100, 1000 all producing data in real time that could be used by a dozen subscribers all doing different things with with the data.
+Now scale the arduino out and have 10 sensor nodes, 100, 1000 all producing data in real time that could be used by a dozen subscribers all doing different things with the data.
 
 As interesting as that facet is, I came here to talk about play. For play, then, we can turn all of this on it's head. So here's a view of the stack I use to do this.
 
