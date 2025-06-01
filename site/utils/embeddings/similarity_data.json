@@ -7,7 +7,7 @@
             {
                 "file": "2010-04-13-adobe-narayens-kingdom-for-a-plan.md",
                 "slug": "adobe-narayens-kingdom-for-a-plan",
-                "similarity": 0.6914530396461487
+                "similarity": 0.6947307586669922
             },
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
@@ -27,7 +27,7 @@
             {
                 "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
                 "slug": "web-directions-south-2009-cloud-sourcing-the-business",
-                "similarity": 0.6301075220108032
+                "similarity": 0.6289914846420288
             },
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
@@ -178,7 +178,7 @@
             {
                 "file": "2007-12-20-my-top-5-jquery-seasonal-wishes.md",
                 "slug": "my-top-5-jquery-seasonal-wishes",
-                "similarity": 0.4562540054321289
+                "similarity": 0.4594685137271881
             },
             {
                 "file": "2007-04-23-why-is-css-such-a-painful-tool.md",
@@ -369,12 +369,12 @@
             {
                 "file": "2007-12-20-my-top-5-jquery-seasonal-wishes.md",
                 "slug": "my-top-5-jquery-seasonal-wishes",
-                "similarity": 0.45749184489250183
+                "similarity": 0.45989692211151123
             },
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.4325594902038574
+                "similarity": 0.4329812228679657
             },
             {
                 "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
@@ -426,12 +426,7 @@
             {
                 "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
                 "slug": "web-directions-south-2009-cloud-sourcing-the-business",
-                "similarity": 0.47673967480659485
-            },
-            {
-                "file": "2012-02-24-humanising-the-internet-of-things.md",
-                "slug": "humanising-the-internet-of-things",
-                "similarity": 0.4766542911529541
+                "similarity": 0.4774922728538513
             },
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
@@ -441,7 +436,12 @@
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.47522833943367004
+                "similarity": 0.4754542112350464
+            },
+            {
+                "file": "2012-02-24-humanising-the-internet-of-things.md",
+                "slug": "humanising-the-internet-of-things",
+                "similarity": 0.4720894694328308
             },
             {
                 "file": "2012-06-10-is-this-the-end-of-windows-server.md",
@@ -520,7 +520,7 @@
             {
                 "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
                 "slug": "web-directions-south-2009-cloud-sourcing-the-business",
-                "similarity": 0.7051867246627808
+                "similarity": 0.7065528631210327
             },
             {
                 "file": "2010-06-23-why-google-is-a-more-typical-business-than-you-think.md",
@@ -563,9 +563,9 @@
                 "similarity": 0.4927491545677185
             },
             {
-                "file": "2012-02-24-humanising-the-internet-of-things.md",
-                "slug": "humanising-the-internet-of-things",
-                "similarity": 0.4721266031265259
+                "file": "2008-01-31-the-state-of-oz-technology.md",
+                "slug": "the-state-of-oz-technology",
+                "similarity": 0.47122153639793396
             }
         ]
     },
@@ -582,7 +582,7 @@
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.5388488173484802
+                "similarity": 0.5382424592971802
             },
             {
                 "file": "2015-05-04-pebble-controlled-leds.md",
@@ -634,7 +634,7 @@
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.5757384300231934
+                "similarity": 0.5772693157196045
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
@@ -659,7 +659,7 @@
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.47563040256500244
+                "similarity": 0.4770351052284241
             },
             {
                 "file": "2011-09-15-device-api-applications-of-devicemotion-and-deviceorientation.md",
@@ -691,7 +691,7 @@
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.6094224452972412
+                "similarity": 0.608695924282074
             },
             {
                 "file": "2011-09-15-device-api-applications-of-devicemotion-and-deviceorientation.md",
@@ -701,12 +701,12 @@
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.5409536361694336
+                "similarity": 0.5402872562408447
             },
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.5180281400680542
+                "similarity": 0.5216451287269592
             },
             {
                 "file": "2009-07-26-case-study-django-agile-sportsgirl-redevelopment.md",
@@ -773,12 +773,12 @@
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.5731537342071533
+                "similarity": 0.5722032785415649
             },
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.5728657245635986
+                "similarity": 0.5714845657348633
             },
             {
                 "file": "2007-11-05-bye-bye-openmoko.md",
@@ -857,57 +857,57 @@
     {
         "file": "2008-03-15-security-101-the-user-should-be-able-to-authenticate.md",
         "slug": "security-101-the-user-should-be-able-to-authenticate",
-        "hash": "d2d3391fee2381df89821d8429379ab22fa73784216745d80e41d013242108fd",
+        "hash": "61f7937236a825dc63d0bee15d70889f97145d7183532b3f1234442410dc4853",
         "post_similarity": [
             {
                 "file": "2007-11-30-pci-dss-will-wreak-havoc-on-smes.md",
                 "slug": "pci-dss-will-wreak-havoc-on-smes",
-                "similarity": 0.5762256383895874
+                "similarity": 0.5771577954292297
             },
             {
                 "file": "2007-11-21-why-was-data-being-passed-on-a-disc-and-what-was-eds-advice.md",
                 "slug": "why-was-data-being-passed-on-a-disc-and-what-was-eds-advice",
-                "similarity": 0.4923442006111145
+                "similarity": 0.4903934597969055
             },
             {
                 "file": "2008-04-22-phorm-over-function.md",
                 "slug": "phorm-over-function",
-                "similarity": 0.40367692708969116
+                "similarity": 0.40559279918670654
             },
             {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
                 "slug": "a-clickster-fail-of-epic-proportions",
-                "similarity": 0.3149219751358032
+                "similarity": 0.3166268765926361
             },
             {
                 "file": "2007-11-19-fuzzy-logic-could-book-more-flights.md",
                 "slug": "fuzzy-logic-could-book-more-flights",
-                "similarity": 0.31218767166137695
+                "similarity": 0.31183841824531555
             },
             {
                 "file": "2008-04-21-can-yahoo-really-get-things-so-wrong.md",
                 "slug": "can-yahoo-really-get-things-so-wrong",
-                "similarity": 0.3085430860519409
+                "similarity": 0.30792292952537537
             },
             {
                 "file": "2007-11-08-why-cant-i-have-100-laptop.md",
                 "slug": "why-cant-i-have-100-laptop",
-                "similarity": 0.28810471296310425
+                "similarity": 0.2883293032646179
             },
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.27897214889526367
+                "similarity": 0.28047019243240356
             },
             {
                 "file": "2008-02-20-dvd-jon-strikes-again.md",
                 "slug": "dvd-jon-strikes-again",
-                "similarity": 0.25549831986427307
+                "similarity": 0.25586268305778503
             },
             {
-                "file": "2007-04-24-the-things-we-take-for-granted.md",
-                "slug": "the-things-we-take-for-granted",
-                "similarity": 0.2529909610748291
+                "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
+                "slug": "web-directions-south-2009-cloud-sourcing-the-business",
+                "similarity": 0.2541165053844452
             }
         ]
     },
@@ -929,7 +929,7 @@
             {
                 "file": "2007-12-20-my-top-5-jquery-seasonal-wishes.md",
                 "slug": "my-top-5-jquery-seasonal-wishes",
-                "similarity": 0.2510789930820465
+                "similarity": 0.24922826886177063
             },
             {
                 "file": "2011-08-08-the-web-of-intent.md",
@@ -964,7 +964,7 @@
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.19431471824645996
+                "similarity": 0.19280368089675903
             }
         ]
     },
@@ -1021,64 +1021,64 @@
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.5289134979248047
+                "similarity": 0.5294687747955322
             }
         ]
     },
     {
         "file": "2007-12-20-my-top-5-jquery-seasonal-wishes.md",
         "slug": "my-top-5-jquery-seasonal-wishes",
-        "hash": "6b19ff9784260a5614f2fdbf90497353e8dd85386ce1ef569fbe138a456917d5",
+        "hash": "f9e4679a0a26a0db05352fd8b5424f7456767622c4777d12f493c0bbda994131",
         "post_similarity": [
             {
                 "file": "2007-08-25-jquery-saves-the-day.md",
                 "slug": "jquery-saves-the-day",
-                "similarity": 0.6471118927001953
+                "similarity": 0.6429592370986938
             },
             {
                 "file": "2007-10-14-jquery-slideshow.md",
                 "slug": "jquery-slideshow",
-                "similarity": 0.6116902828216553
+                "similarity": 0.6064531803131104
             },
             {
                 "file": "2007-04-23-why-is-css-such-a-painful-tool.md",
                 "slug": "why-is-css-such-a-painful-tool",
-                "similarity": 0.45749184489250183
+                "similarity": 0.45989692211151123
             },
             {
                 "file": "2016-02-11-moving-to-metalsmith.md",
                 "slug": "moving-to-metalsmith",
-                "similarity": 0.4562540054321289
+                "similarity": 0.4594685137271881
             },
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.44953233003616333
-            },
-            {
-                "file": "2015-09-07-js-not-just-language-of-the-web.md",
-                "slug": "js-not-just-language-of-the-web",
-                "similarity": 0.42928677797317505
+                "similarity": 0.4437243342399597
             },
             {
                 "file": "2007-04-29-when-css-goes-bad.md",
                 "slug": "when-css-goes-bad",
-                "similarity": 0.4244387149810791
+                "similarity": 0.4236779808998108
+            },
+            {
+                "file": "2015-09-07-js-not-just-language-of-the-web.md",
+                "slug": "js-not-just-language-of-the-web",
+                "similarity": 0.41917359828948975
             },
             {
                 "file": "2007-11-02-css-structure-what-a-mess.md",
                 "slug": "css-structure-what-a-mess",
-                "similarity": 0.40028154850006104
+                "similarity": 0.40155258774757385
             },
             {
                 "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
                 "slug": "datatium-a-material-to-create-responsive-experiences",
-                "similarity": 0.3605162501335144
+                "similarity": 0.35745394229888916
             },
             {
                 "file": "2015-08-08-ddd-jsiot-workshop.md",
                 "slug": "ddd-jsiot-workshop",
-                "similarity": 0.35762688517570496
+                "similarity": 0.3520711064338684
             }
         ]
     },
@@ -1147,7 +1147,7 @@
             {
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
                 "slug": "when-will-ai-disrupt-travel",
-                "similarity": 0.7004345655441284
+                "similarity": 0.7028559446334839
             },
             {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
@@ -1177,7 +1177,7 @@
             {
                 "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
                 "slug": "web-directions-south-2009-cloud-sourcing-the-business",
-                "similarity": 0.4461996257305145
+                "similarity": 0.44246619939804077
             },
             {
                 "file": "2009-12-22-why-im-interested-in-aws-spot-prices-for-ec2.md",
@@ -1190,9 +1190,9 @@
                 "similarity": 0.4230394959449768
             },
             {
-                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
-                "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.41944044828414917
+                "file": "2012-02-24-humanising-the-internet-of-things.md",
+                "slug": "humanising-the-internet-of-things",
+                "similarity": 0.42247873544692993
             }
         ]
     },
@@ -1204,7 +1204,7 @@
             {
                 "file": "2007-12-20-my-top-5-jquery-seasonal-wishes.md",
                 "slug": "my-top-5-jquery-seasonal-wishes",
-                "similarity": 0.6116902828216553
+                "similarity": 0.6064531803131104
             },
             {
                 "file": "2007-08-25-jquery-saves-the-day.md",
@@ -1232,19 +1232,19 @@
                 "similarity": 0.3568565249443054
             },
             {
-                "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
-                "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.3564615249633789
-            },
-            {
                 "file": "2011-10-04-on-a-post-flash-world-and-adobes-place-within-it.md",
                 "slug": "on-a-post-flash-world-and-adobes-place-within-it",
                 "similarity": 0.3547857105731964
             },
             {
+                "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
+                "slug": "web-facilitated-play-in-the-real-world",
+                "similarity": 0.3530036211013794
+            },
+            {
                 "file": "2010-04-13-adobe-narayens-kingdom-for-a-plan.md",
                 "slug": "adobe-narayens-kingdom-for-a-plan",
-                "similarity": 0.3484279215335846
+                "similarity": 0.34607312083244324
             },
             {
                 "file": "2015-05-04-pebble-controlled-leds.md",
@@ -1296,12 +1296,12 @@
             {
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
                 "slug": "when-will-ai-disrupt-travel",
-                "similarity": 0.28073441982269287
+                "similarity": 0.29195669293403625
             },
             {
                 "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
                 "slug": "thingstreams-the-future-of-brand-product-consumer-dialogue",
-                "similarity": 0.27775996923446655
+                "similarity": 0.2795252203941345
             },
             {
                 "file": "2015-01-21-context-in-ambient-technology.md",
@@ -1313,57 +1313,57 @@
     {
         "file": "2011-11-03-we-are-the-champions-of-the-web.md",
         "slug": "we-are-the-champions-of-the-web",
-        "hash": "c60d4ed15e17859f86e2f639694d6ad56d8512b5c2103249967b865e62ae46de",
+        "hash": "866f65b2691b9999b7631d122668b5299a7e572c41a45fb25e8067a621358591",
         "post_similarity": [
             {
                 "file": "2011-10-17-neo-futurism-in-the-information-age.md",
                 "slug": "neo-futurism-in-the-information-age",
-                "similarity": 0.6252747774124146
+                "similarity": 0.6251720190048218
             },
             {
                 "file": "2011-10-04-on-a-post-flash-world-and-adobes-place-within-it.md",
                 "slug": "on-a-post-flash-world-and-adobes-place-within-it",
-                "similarity": 0.6174780130386353
+                "similarity": 0.617207407951355
             },
             {
                 "file": "2007-04-24-the-things-we-take-for-granted.md",
                 "slug": "the-things-we-take-for-granted",
-                "similarity": 0.6057795882225037
+                "similarity": 0.6041535139083862
             },
             {
                 "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
                 "slug": "why-industries-can-still-be-revolutionised-on-the-web",
-                "similarity": 0.602129340171814
+                "similarity": 0.6025878190994263
             },
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.583993136882782
+                "similarity": 0.5843191742897034
             },
             {
                 "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
                 "slug": "the-golden-age-of-mobile-soon-maybe",
-                "similarity": 0.5820420384407043
+                "similarity": 0.5810995697975159
             },
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.5805046558380127
-            },
-            {
-                "file": "2010-01-03-2010-the-year-the-netbook-turns-into-the-web-book.md",
-                "slug": "2010-the-year-the-netbook-turns-into-the-web-book",
-                "similarity": 0.5728657245635986
+                "similarity": 0.5797146558761597
             },
             {
                 "file": "2010-04-13-adobe-narayens-kingdom-for-a-plan.md",
                 "slug": "adobe-narayens-kingdom-for-a-plan",
-                "similarity": 0.5710538625717163
+                "similarity": 0.5742504596710205
+            },
+            {
+                "file": "2010-01-03-2010-the-year-the-netbook-turns-into-the-web-book.md",
+                "slug": "2010-the-year-the-netbook-turns-into-the-web-book",
+                "similarity": 0.5714845657348633
             },
             {
                 "file": "2010-06-23-why-google-is-a-more-typical-business-than-you-think.md",
                 "slug": "why-google-is-a-more-typical-business-than-you-think",
-                "similarity": 0.5657804608345032
+                "similarity": 0.5660812258720398
             }
         ]
     },
@@ -1375,7 +1375,7 @@
             {
                 "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
                 "slug": "web-directions-south-2009-cloud-sourcing-the-business",
-                "similarity": 0.5963329076766968
+                "similarity": 0.5940378904342651
             },
             {
                 "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
@@ -1427,7 +1427,7 @@
     {
         "file": "2007-03-05-fuzzys-where-its-at-or-will-be-eventually.md",
         "slug": "fuzzys-where-its-at-or-will-be-eventually",
-        "hash": "ee0920aa2c75a6a4e975b3bdf787859e2e0498f451bd1e8ba67d5053321805c3",
+        "hash": "96a76a96ca9c85c50a1651c47ec6bb0992c029810d1038970f1657c1911bce59",
         "post_similarity": [
             {
                 "file": "2007-11-19-fuzzy-logic-could-book-more-flights.md",
@@ -1442,7 +1442,7 @@
             {
                 "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
                 "slug": "web-directions-south-2009-cloud-sourcing-the-business",
-                "similarity": 0.3955766558647156
+                "similarity": 0.3968096673488617
             },
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
@@ -1457,7 +1457,7 @@
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.3922768831253052
+                "similarity": 0.3908539116382599
             },
             {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
@@ -1549,14 +1549,14 @@
                 "similarity": 0.37092721462249756
             },
             {
-                "file": "2008-03-15-security-101-the-user-should-be-able-to-authenticate.md",
-                "slug": "security-101-the-user-should-be-able-to-authenticate",
-                "similarity": 0.3085430860519409
-            },
-            {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
                 "slug": "a-clickster-fail-of-epic-proportions",
                 "similarity": 0.30849480628967285
+            },
+            {
+                "file": "2008-03-15-security-101-the-user-should-be-able-to-authenticate.md",
+                "slug": "security-101-the-user-should-be-able-to-authenticate",
+                "similarity": 0.30792292952537537
             },
             {
                 "file": "2008-04-22-phorm-over-function.md",
@@ -1576,7 +1576,7 @@
             {
                 "file": "2007-05-03-drmed-for-life.md",
                 "slug": "drmed-for-life",
-                "similarity": 0.26370665431022644
+                "similarity": 0.2631685733795166
             },
             {
                 "file": "2010-06-23-why-google-is-a-more-typical-business-than-you-think.md",
@@ -1665,7 +1665,7 @@
             {
                 "file": "2007-05-03-drmed-for-life.md",
                 "slug": "drmed-for-life",
-                "similarity": 0.5364965200424194
+                "similarity": 0.537638783454895
             },
             {
                 "file": "2007-12-21-potent-messages-of-impotent-industries.md",
@@ -1680,7 +1680,7 @@
             {
                 "file": "2008-03-15-security-101-the-user-should-be-able-to-authenticate.md",
                 "slug": "security-101-the-user-should-be-able-to-authenticate",
-                "similarity": 0.4923442006111145
+                "similarity": 0.4903934597969055
             },
             {
                 "file": "2008-02-20-dvd-jon-strikes-again.md",
@@ -1727,7 +1727,7 @@
             {
                 "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
                 "slug": "web-directions-south-2009-cloud-sourcing-the-business",
-                "similarity": 0.6207336187362671
+                "similarity": 0.6213271021842957
             },
             {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
@@ -1750,14 +1750,14 @@
                 "similarity": 0.5484111309051514
             },
             {
-                "file": "2012-02-24-humanising-the-internet-of-things.md",
-                "slug": "humanising-the-internet-of-things",
-                "similarity": 0.5417072772979736
-            },
-            {
                 "file": "2010-04-13-adobe-narayens-kingdom-for-a-plan.md",
                 "slug": "adobe-narayens-kingdom-for-a-plan",
-                "similarity": 0.5392431020736694
+                "similarity": 0.5464911460876465
+            },
+            {
+                "file": "2012-02-24-humanising-the-internet-of-things.md",
+                "slug": "humanising-the-internet-of-things",
+                "similarity": 0.5357730388641357
             },
             {
                 "file": "2007-12-19-sms-bamboozlement.md",
@@ -1774,7 +1774,7 @@
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.45236194133758545
+                "similarity": 0.453227162361145
             },
             {
                 "file": "2007-12-19-sms-bamboozlement.md",
@@ -1799,7 +1799,7 @@
             {
                 "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
                 "slug": "thingstreams-the-future-of-brand-product-consumer-dialogue",
-                "similarity": 0.41324108839035034
+                "similarity": 0.4144127368927002
             },
             {
                 "file": "2007-04-24-the-things-we-take-for-granted.md",
@@ -1826,57 +1826,57 @@
     {
         "file": "2010-04-13-adobe-narayens-kingdom-for-a-plan.md",
         "slug": "adobe-narayens-kingdom-for-a-plan",
-        "hash": "1784dc742d4efc36c7c8b05984fdf9d52dd2951ba14833075264539b4f31481e",
+        "hash": "eb5405f186159c5332de670112ece9bad43add0d9434b8f844c6ac8079fb7afc",
         "post_similarity": [
             {
                 "file": "2011-10-04-on-a-post-flash-world-and-adobes-place-within-it.md",
                 "slug": "on-a-post-flash-world-and-adobes-place-within-it",
-                "similarity": 0.8613232970237732
+                "similarity": 0.8609764575958252
             },
             {
                 "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
                 "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
-                "similarity": 0.6914530396461487
+                "similarity": 0.6947307586669922
             },
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.5710538625717163
+                "similarity": 0.5742504596710205
             },
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.5538883209228516
+                "similarity": 0.5552483797073364
             },
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.5392431020736694
+                "similarity": 0.5464911460876465
             },
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.531602680683136
+                "similarity": 0.5352680683135986
             },
             {
                 "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
                 "slug": "why-industries-can-still-be-revolutionised-on-the-web",
-                "similarity": 0.5120432376861572
+                "similarity": 0.5172813534736633
             },
             {
                 "file": "2007-11-05-bye-bye-openmoko.md",
                 "slug": "bye-bye-openmoko",
-                "similarity": 0.494577556848526
-            },
-            {
-                "file": "2010-06-23-why-google-is-a-more-typical-business-than-you-think.md",
-                "slug": "why-google-is-a-more-typical-business-than-you-think",
-                "similarity": 0.4924996793270111
+                "similarity": 0.4952775835990906
             },
             {
                 "file": "2011-11-07-app-stores-are-delivery-channels-not-search-engines.md",
                 "slug": "app-stores-are-delivery-channels-not-search-engines",
-                "similarity": 0.49143272638320923
+                "similarity": 0.4949459731578827
+            },
+            {
+                "file": "2010-06-23-why-google-is-a-more-typical-business-than-you-think.md",
+                "slug": "why-google-is-a-more-typical-business-than-you-think",
+                "similarity": 0.4916878342628479
             }
         ]
     },
@@ -1888,7 +1888,7 @@
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.7993212938308716
+                "similarity": 0.8005106449127197
             },
             {
                 "file": "2014-05-04-device-api-safari.md",
@@ -1908,7 +1908,7 @@
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.5863244533538818
+                "similarity": 0.5902231931686401
             },
             {
                 "file": "2015-09-07-js-not-just-language-of-the-web.md",
@@ -1960,7 +1960,7 @@
             {
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
                 "slug": "when-will-ai-disrupt-travel",
-                "similarity": 0.4179043471813202
+                "similarity": 0.41818368434906006
             },
             {
                 "file": "2016-01-27-road-to-interchange.md",
@@ -2002,7 +2002,7 @@
             {
                 "file": "2010-04-13-adobe-narayens-kingdom-for-a-plan.md",
                 "slug": "adobe-narayens-kingdom-for-a-plan",
-                "similarity": 0.8613232970237732
+                "similarity": 0.8609764575958252
             },
             {
                 "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
@@ -2012,7 +2012,7 @@
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.6174780130386353
+                "similarity": 0.617207407951355
             },
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
@@ -2141,7 +2141,7 @@
             {
                 "file": "2007-05-03-drmed-for-life.md",
                 "slug": "drmed-for-life",
-                "similarity": 0.39289402961730957
+                "similarity": 0.3892749547958374
             },
             {
                 "file": "2007-12-19-sms-bamboozlement.md",
@@ -2151,7 +2151,7 @@
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.34172940254211426
+                "similarity": 0.3386799097061157
             },
             {
                 "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
@@ -2178,12 +2178,12 @@
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.6239123344421387
+                "similarity": 0.6181894540786743
             },
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.6071322560310364
+                "similarity": 0.6001075506210327
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
@@ -2198,7 +2198,7 @@
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.583993136882782
+                "similarity": 0.5843191742897034
             },
             {
                 "file": "2011-10-04-on-a-post-flash-world-and-adobes-place-within-it.md",
@@ -2235,7 +2235,7 @@
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.6798473000526428
+                "similarity": 0.6800581216812134
             },
             {
                 "file": "2010-01-28-ipad-almost-great.md",
@@ -2297,7 +2297,7 @@
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.629180371761322
+                "similarity": 0.6263394355773926
             },
             {
                 "file": "2011-09-15-device-api-applications-of-devicemotion-and-deviceorientation.md",
@@ -2312,7 +2312,7 @@
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.5225313901901245
+                "similarity": 0.5222755670547485
             },
             {
                 "file": "2014-05-04-device-api-safari.md",
@@ -2327,7 +2327,7 @@
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.45812588930130005
+                "similarity": 0.4567078649997711
             },
             {
                 "file": "2015-01-21-context-in-ambient-technology.md",
@@ -2349,7 +2349,7 @@
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.6664227247238159
+                "similarity": 0.6623845100402832
             },
             {
                 "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
@@ -2389,7 +2389,7 @@
             {
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
                 "slug": "when-will-ai-disrupt-travel",
-                "similarity": 0.5448994636535645
+                "similarity": 0.5493251085281372
             }
         ]
     },
@@ -2416,7 +2416,7 @@
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.34665513038635254
+                "similarity": 0.3433513045310974
             },
             {
                 "file": "2007-11-02-fah-goes-number-1-but-we-could-do-better.md",
@@ -2431,7 +2431,7 @@
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.28546229004859924
+                "similarity": 0.2817675471305847
             },
             {
                 "file": "2007-04-24-the-things-we-take-for-granted.md",
@@ -2501,9 +2501,9 @@
                 "similarity": 0.3664097189903259
             },
             {
-                "file": "2012-02-24-humanising-the-internet-of-things.md",
-                "slug": "humanising-the-internet-of-things",
-                "similarity": 0.35937339067459106
+                "file": "2007-04-24-the-things-we-take-for-granted.md",
+                "slug": "the-things-we-take-for-granted",
+                "similarity": 0.3580515384674072
             }
         ]
     },
@@ -2530,12 +2530,12 @@
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.5183101892471313
+                "similarity": 0.5134281516075134
             },
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.516348123550415
+                "similarity": 0.5109665393829346
             },
             {
                 "file": "2015-05-04-pebble-controlled-leds.md",
@@ -2577,7 +2577,7 @@
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.5289831161499023
+                "similarity": 0.5313766002655029
             },
             {
                 "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
@@ -2587,7 +2587,7 @@
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.5221157073974609
+                "similarity": 0.5207051634788513
             },
             {
                 "file": "2011-09-15-device-api-applications-of-devicemotion-and-deviceorientation.md",
@@ -2597,7 +2597,7 @@
             {
                 "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
                 "slug": "thingstreams-the-future-of-brand-product-consumer-dialogue",
-                "similarity": 0.4971228837966919
+                "similarity": 0.5028294324874878
             },
             {
                 "file": "2009-11-13-spdy-could-gain-acceptence-very-quickly-with-some-product-innovation.md",
@@ -2691,12 +2691,12 @@
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.519020676612854
+                "similarity": 0.5147945284843445
             },
             {
                 "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
                 "slug": "web-directions-south-2009-cloud-sourcing-the-business",
-                "similarity": 0.5125824213027954
+                "similarity": 0.5100621581077576
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
@@ -2743,7 +2743,7 @@
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.602129340171814
+                "similarity": 0.6025878190994263
             },
             {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
@@ -2840,7 +2840,7 @@
             {
                 "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
                 "slug": "thingstreams-the-future-of-brand-product-consumer-dialogue",
-                "similarity": 0.2472836822271347
+                "similarity": 0.24643102288246155
             },
             {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
@@ -2857,7 +2857,7 @@
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.5756244659423828
+                "similarity": 0.5747326016426086
             },
             {
                 "file": "2011-09-15-device-api-applications-of-devicemotion-and-deviceorientation.md",
@@ -2867,7 +2867,7 @@
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.536453127861023
+                "similarity": 0.5450067520141602
             },
             {
                 "file": "2010-01-28-ipad-almost-great.md",
@@ -2914,7 +2914,7 @@
             {
                 "file": "2007-05-03-drmed-for-life.md",
                 "slug": "drmed-for-life",
-                "similarity": 0.6962461471557617
+                "similarity": 0.6960752010345459
             },
             {
                 "file": "2008-02-20-dvd-jon-strikes-again.md",
@@ -2939,7 +2939,7 @@
             {
                 "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
                 "slug": "thingstreams-the-future-of-brand-product-consumer-dialogue",
-                "similarity": 0.4160909056663513
+                "similarity": 0.4212998151779175
             },
             {
                 "file": "2007-12-19-sms-bamboozlement.md",
@@ -3038,12 +3038,12 @@
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.6493055820465088
+                "similarity": 0.648706316947937
             },
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.6159917712211609
+                "similarity": 0.6175270080566406
             },
             {
                 "file": "2011-09-15-device-api-applications-of-devicemotion-and-deviceorientation.md",
@@ -3080,57 +3080,57 @@
     {
         "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
         "slug": "thingstreams-the-future-of-brand-product-consumer-dialogue",
-        "hash": "2c608fe7adad5e83450c8d8d32a0d23780fc92f07e0a5bf6735363198f1ba293",
+        "hash": "bc8dde6560f92058207e04eb64a19abeedc753f248c33e8a89292a16c9bff25e",
         "post_similarity": [
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.5399245619773865
+                "similarity": 0.5423415899276733
             },
             {
                 "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
                 "slug": "datatium-a-material-to-create-responsive-experiences",
-                "similarity": 0.5344299674034119
+                "similarity": 0.5309242010116577
             },
             {
                 "file": "2007-12-19-sms-bamboozlement.md",
                 "slug": "sms-bamboozlement",
-                "similarity": 0.5074294209480286
+                "similarity": 0.5071873664855957
             },
             {
                 "file": "2015-01-21-context-in-ambient-technology.md",
                 "slug": "context-in-ambient-technology",
-                "similarity": 0.5033029317855835
+                "similarity": 0.5045887231826782
             },
             {
                 "file": "2011-08-08-the-web-of-intent.md",
                 "slug": "the-web-of-intent",
-                "similarity": 0.4971228837966919
+                "similarity": 0.5028294324874878
             },
             {
                 "file": "2011-11-07-app-stores-are-delivery-channels-not-search-engines.md",
                 "slug": "app-stores-are-delivery-channels-not-search-engines",
-                "similarity": 0.4918079972267151
+                "similarity": 0.49150875210762024
             },
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.4694417715072632
-            },
-            {
-                "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
-                "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
-                "similarity": 0.4464152753353119
+                "similarity": 0.4653512239456177
             },
             {
                 "file": "2015-09-02-iot-mobile-practices.md",
                 "slug": "iot-mobile-practices",
-                "similarity": 0.444683313369751
+                "similarity": 0.44951194524765015
+            },
+            {
+                "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
+                "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
+                "similarity": 0.4429885447025299
             },
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.4342445731163025
+                "similarity": 0.4409130811691284
             }
         ]
     },
@@ -3147,7 +3147,7 @@
             {
                 "file": "2007-12-20-my-top-5-jquery-seasonal-wishes.md",
                 "slug": "my-top-5-jquery-seasonal-wishes",
-                "similarity": 0.4244387149810791
+                "similarity": 0.4236779808998108
             },
             {
                 "file": "2007-11-02-css-structure-what-a-mess.md",
@@ -3157,7 +3157,7 @@
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.4101598262786865
+                "similarity": 0.41040629148483276
             },
             {
                 "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
@@ -3229,7 +3229,7 @@
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.5341982841491699
+                "similarity": 0.5337445735931396
             },
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
@@ -3239,12 +3239,12 @@
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.5164756178855896
+                "similarity": 0.5101214647293091
             },
             {
                 "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
                 "slug": "thingstreams-the-future-of-brand-product-consumer-dialogue",
-                "similarity": 0.5074294209480286
+                "similarity": 0.5071873664855957
             }
         ]
     },
@@ -3266,7 +3266,7 @@
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.5357074737548828
+                "similarity": 0.5348960161209106
             },
             {
                 "file": "2015-09-02-iot-mobile-practices.md",
@@ -3291,7 +3291,7 @@
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.4282725155353546
+                "similarity": 0.4299107491970062
             },
             {
                 "file": "2010-01-03-2010-the-year-the-netbook-turns-into-the-web-book.md",
@@ -3316,11 +3316,6 @@
                 "similarity": 0.5624257326126099
             },
             {
-                "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
-                "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.5123728513717651
-            },
-            {
                 "file": "2014-05-04-device-api-safari.md",
                 "slug": "device-api-safari",
                 "similarity": 0.5086855292320251
@@ -3329,6 +3324,11 @@
                 "file": "2015-08-08-ddd-jsiot-workshop.md",
                 "slug": "ddd-jsiot-workshop",
                 "similarity": 0.5081670880317688
+            },
+            {
+                "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
+                "slug": "web-facilitated-play-in-the-real-world",
+                "similarity": 0.5077898502349854
             },
             {
                 "file": "2015-09-07-js-not-just-language-of-the-web.md",
@@ -3353,7 +3353,7 @@
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.42006444931030273
+                "similarity": 0.42113959789276123
             },
             {
                 "file": "2014-12-16-building-information-radiator.md",
@@ -3522,71 +3522,71 @@
                 "similarity": 0.18225589394569397
             },
             {
-                "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
-                "slug": "web-directions-south-2009-cloud-sourcing-the-business",
-                "similarity": 0.15900610387325287
-            },
-            {
                 "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
                 "slug": "datatium-a-material-to-create-responsive-experiences",
                 "similarity": 0.15885309875011444
+            },
+            {
+                "file": "2014-12-16-building-information-radiator.md",
+                "slug": "building-information-radiator",
+                "similarity": 0.15822647511959076
             }
         ]
     },
     {
         "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
         "slug": "web-directions-south-2009-cloud-sourcing-the-business",
-        "hash": "79a93494cfebf1ab1d45238fa1e73fbdbdea34e370fae74df55c7687e4edef82",
+        "hash": "cefc3b36e27ca150767ff3bd11e7dc4cd602b2783bddaacab217ddcd2bf7ee94",
         "post_similarity": [
             {
                 "file": "2012-06-10-is-this-the-end-of-windows-server.md",
                 "slug": "is-this-the-end-of-windows-server",
-                "similarity": 0.7051867246627808
+                "similarity": 0.7065528631210327
             },
             {
                 "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
                 "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
-                "similarity": 0.6301075220108032
+                "similarity": 0.6289914846420288
             },
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.6207336187362671
+                "similarity": 0.6213271021842957
             },
             {
                 "file": "2010-06-23-why-google-is-a-more-typical-business-than-you-think.md",
                 "slug": "why-google-is-a-more-typical-business-than-you-think",
-                "similarity": 0.6124458312988281
+                "similarity": 0.614860475063324
             },
             {
                 "file": "2009-12-22-why-im-interested-in-aws-spot-prices-for-ec2.md",
                 "slug": "why-im-interested-in-aws-spot-prices-for-ec2",
-                "similarity": 0.5963329076766968
-            },
-            {
-                "file": "2012-02-24-humanising-the-internet-of-things.md",
-                "slug": "humanising-the-internet-of-things",
-                "similarity": 0.5729993581771851
+                "similarity": 0.5940378904342651
             },
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.5709750652313232
+                "similarity": 0.5707604289054871
+            },
+            {
+                "file": "2012-02-24-humanising-the-internet-of-things.md",
+                "slug": "humanising-the-internet-of-things",
+                "similarity": 0.5688310265541077
             },
             {
                 "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
                 "slug": "the-golden-age-of-mobile-soon-maybe",
-                "similarity": 0.5285501480102539
+                "similarity": 0.5298768877983093
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
-                "similarity": 0.5233295559883118
+                "similarity": 0.5210386514663696
             },
             {
                 "file": "2007-11-02-fah-goes-number-1-but-we-could-do-better.md",
                 "slug": "fah-goes-number-1-but-we-could-do-better",
-                "similarity": 0.5125824213027954
+                "similarity": 0.5100621581077576
             }
         ]
     },
@@ -3660,12 +3660,12 @@
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.6795853972434998
+                "similarity": 0.6802851557731628
             },
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.6639810800552368
+                "similarity": 0.6649545431137085
             },
             {
                 "file": "2011-09-15-device-api-applications-of-devicemotion-and-deviceorientation.md",
@@ -3742,7 +3742,7 @@
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.5373350977897644
+                "similarity": 0.5384305715560913
             },
             {
                 "file": "2007-11-19-fuzzy-logic-could-book-more-flights.md",
@@ -3821,57 +3821,57 @@
     {
         "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
         "slug": "web-facilitated-play-in-the-real-world",
-        "hash": "3926c97bd93c9da9ba64257b3321f586d770da8eb3afcbd7864677b7e51caa82",
+        "hash": "1515285a1e17fcdcbb262dec00ff79649282c2a7ca8b3bfaea750f92df74858e",
         "post_similarity": [
             {
                 "file": "2011-09-15-device-api-applications-of-devicemotion-and-deviceorientation.md",
                 "slug": "device-api-applications-of-devicemotion-and-deviceorientation",
-                "similarity": 0.7993212938308716
+                "similarity": 0.8005106449127197
             },
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.6862524747848511
+                "similarity": 0.6890310049057007
             },
             {
                 "file": "2015-01-21-context-in-ambient-technology.md",
                 "slug": "context-in-ambient-technology",
-                "similarity": 0.6639810800552368
+                "similarity": 0.6649545431137085
             },
             {
                 "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
                 "slug": "datatium-a-material-to-create-responsive-experiences",
-                "similarity": 0.6493055820465088
+                "similarity": 0.648706316947937
             },
             {
                 "file": "2015-09-07-js-not-just-language-of-the-web.md",
                 "slug": "js-not-just-language-of-the-web",
-                "similarity": 0.629180371761322
+                "similarity": 0.6263394355773926
             },
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.6239123344421387
+                "similarity": 0.6181894540786743
             },
             {
                 "file": "2009-11-13-spdy-could-gain-acceptence-very-quickly-with-some-product-innovation.md",
                 "slug": "spdy-could-gain-acceptence-very-quickly-with-some-product-innovation",
-                "similarity": 0.6094224452972412
+                "similarity": 0.608695924282074
             },
             {
                 "file": "2017-08-12-embodied-bots.md",
                 "slug": "embodied-bots",
-                "similarity": 0.5757384300231934
+                "similarity": 0.5772693157196045
             },
             {
                 "file": "2015-06-01-building-portable-minecraft-server.md",
                 "slug": "building-portable-minecraft-server",
-                "similarity": 0.5756244659423828
+                "similarity": 0.5747326016426086
             },
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.5632950663566589
+                "similarity": 0.563291072845459
             }
         ]
     },
@@ -3903,7 +3903,7 @@
             {
                 "file": "2007-12-20-my-top-5-jquery-seasonal-wishes.md",
                 "slug": "my-top-5-jquery-seasonal-wishes",
-                "similarity": 0.40028154850006104
+                "similarity": 0.40155258774757385
             },
             {
                 "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
@@ -3928,7 +3928,7 @@
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.2747640609741211
+                "similarity": 0.2763330340385437
             }
         ]
     },
@@ -3940,7 +3940,7 @@
             {
                 "file": "2007-05-03-drmed-for-life.md",
                 "slug": "drmed-for-life",
-                "similarity": 0.5624948143959045
+                "similarity": 0.5628818869590759
             },
             {
                 "file": "2007-12-21-potent-messages-of-impotent-industries.md",
@@ -3985,7 +3985,7 @@
             {
                 "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
                 "slug": "thingstreams-the-future-of-brand-product-consumer-dialogue",
-                "similarity": 0.34439176321029663
+                "similarity": 0.3446509838104248
             }
         ]
     },
@@ -3997,7 +3997,7 @@
             {
                 "file": "2007-12-20-my-top-5-jquery-seasonal-wishes.md",
                 "slug": "my-top-5-jquery-seasonal-wishes",
-                "similarity": 0.6471118927001953
+                "similarity": 0.6429592370986938
             },
             {
                 "file": "2007-04-23-why-is-css-such-a-painful-tool.md",
@@ -4027,7 +4027,7 @@
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.4092966914176941
+                "similarity": 0.4091005325317383
             },
             {
                 "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
@@ -4049,57 +4049,57 @@
     {
         "file": "2025-02-27-when-will-ai-disrupt-travel.md",
         "slug": "when-will-ai-disrupt-travel",
-        "hash": "9c826b08e391135dfc54e340ad0aae3dd8c7f8d402066af9360130f834e07154",
+        "hash": "153f4374766e6460c959ab73efc78539ad42735e829659cdb17aeae216bdaf88",
         "post_similarity": [
             {
                 "file": "2007-11-19-fuzzy-logic-could-book-more-flights.md",
                 "slug": "fuzzy-logic-could-book-more-flights",
-                "similarity": 0.7004345655441284
+                "similarity": 0.7028559446334839
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
-                "similarity": 0.5448994636535645
+                "similarity": 0.5493251085281372
             },
             {
                 "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
                 "slug": "datatium-a-material-to-create-responsive-experiences",
-                "similarity": 0.5218148827552795
-            },
-            {
-                "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
-                "slug": "why-industries-can-still-be-revolutionised-on-the-web",
-                "similarity": 0.44889968633651733
+                "similarity": 0.5215181708335876
             },
             {
                 "file": "2015-01-21-context-in-ambient-technology.md",
                 "slug": "context-in-ambient-technology",
-                "similarity": 0.44737881422042847
+                "similarity": 0.4511992335319519
+            },
+            {
+                "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
+                "slug": "why-industries-can-still-be-revolutionised-on-the-web",
+                "similarity": 0.44254353642463684
             },
             {
                 "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
                 "slug": "software-engineering-reimagined-ai-native-era",
-                "similarity": 0.4179043471813202
-            },
-            {
-                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
-                "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.40711989998817444
+                "similarity": 0.41818368434906006
             },
             {
                 "file": "2017-08-12-embodied-bots.md",
                 "slug": "embodied-bots",
-                "similarity": 0.3986769914627075
+                "similarity": 0.4159635603427887
+            },
+            {
+                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
+                "slug": "now-or-never-growth-opportunities-in-retail",
+                "similarity": 0.4097985029220581
             },
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.37617194652557373
+                "similarity": 0.38353389501571655
             },
             {
-                "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
-                "slug": "a-clickster-fail-of-epic-proportions",
-                "similarity": 0.3540598750114441
+                "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
+                "slug": "web-facilitated-play-in-the-real-world",
+                "similarity": 0.3556317985057831
             }
         ]
     },
@@ -4181,6 +4181,11 @@
                 "similarity": 0.428764283657074
             },
             {
+                "file": "2012-02-24-humanising-the-internet-of-things.md",
+                "slug": "humanising-the-internet-of-things",
+                "similarity": 0.4166454076766968
+            },
+            {
                 "file": "2015-05-04-pebble-controlled-leds.md",
                 "slug": "pebble-controlled-leds",
                 "similarity": 0.41424065828323364
@@ -4191,11 +4196,6 @@
                 "similarity": 0.4106098413467407
             },
             {
-                "file": "2012-02-24-humanising-the-internet-of-things.md",
-                "slug": "humanising-the-internet-of-things",
-                "similarity": 0.41047704219818115
-            },
-            {
                 "file": "2015-09-02-iot-mobile-practices.md",
                 "slug": "iot-mobile-practices",
                 "similarity": 0.3942151367664337
@@ -4203,7 +4203,7 @@
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.3669852912425995
+                "similarity": 0.3623186945915222
             },
             {
                 "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
@@ -4211,9 +4211,9 @@
                 "similarity": 0.3592842221260071
             },
             {
-                "file": "2013-08-21-should-javascript-devs-build-real-things.md",
-                "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.3110806941986084
+                "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
+                "slug": "thingstreams-the-future-of-brand-product-consumer-dialogue",
+                "similarity": 0.3119247257709503
             }
         ]
     },
@@ -4225,7 +4225,7 @@
             {
                 "file": "2007-05-03-drmed-for-life.md",
                 "slug": "drmed-for-life",
-                "similarity": 0.5056847333908081
+                "similarity": 0.5040112137794495
             },
             {
                 "file": "2007-12-21-potent-messages-of-impotent-industries.md",
@@ -4235,7 +4235,7 @@
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.49756819009780884
+                "similarity": 0.4995047450065613
             },
             {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
@@ -4260,7 +4260,7 @@
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.444476842880249
+                "similarity": 0.4408385157585144
             },
             {
                 "file": "2007-04-24-the-things-we-take-for-granted.md",
@@ -4277,57 +4277,57 @@
     {
         "file": "2007-05-03-drmed-for-life.md",
         "slug": "drmed-for-life",
-        "hash": "944be521e37e43bdf1adcfa48b135339800633161f8d0ac32fd9ae869916ec4f",
+        "hash": "6c3485b689d3856d4a6799bcef74d070c2c0095b211207f6c77ee40dfcea1108",
         "post_similarity": [
             {
                 "file": "2007-12-21-potent-messages-of-impotent-industries.md",
                 "slug": "potent-messages-of-impotent-industries",
-                "similarity": 0.6962461471557617
+                "similarity": 0.6960752010345459
             },
             {
                 "file": "2008-02-20-dvd-jon-strikes-again.md",
                 "slug": "dvd-jon-strikes-again",
-                "similarity": 0.5624948143959045
+                "similarity": 0.5628818869590759
             },
             {
                 "file": "2007-11-21-why-was-data-being-passed-on-a-disc-and-what-was-eds-advice.md",
                 "slug": "why-was-data-being-passed-on-a-disc-and-what-was-eds-advice",
-                "similarity": 0.5364965200424194
+                "similarity": 0.537638783454895
             },
             {
                 "file": "2010-03-23-an-open-internet-call-to-arms.md",
                 "slug": "an-open-internet-call-to-arms",
-                "similarity": 0.5056847333908081
+                "similarity": 0.5040112137794495
             },
             {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
                 "slug": "a-clickster-fail-of-epic-proportions",
-                "similarity": 0.43010371923446655
+                "similarity": 0.4294385015964508
             },
             {
                 "file": "2007-12-19-sms-bamboozlement.md",
                 "slug": "sms-bamboozlement",
-                "similarity": 0.42917636036872864
+                "similarity": 0.4244287610054016
             },
             {
                 "file": "2008-04-22-phorm-over-function.md",
                 "slug": "phorm-over-function",
-                "similarity": 0.42227038741111755
+                "similarity": 0.42347484827041626
             },
             {
                 "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
                 "slug": "thingstreams-the-future-of-brand-product-consumer-dialogue",
-                "similarity": 0.4061167240142822
+                "similarity": 0.4080352783203125
             },
             {
                 "file": "2007-10-15-let-the-new-gaming-witch-hunt-begin.md",
                 "slug": "let-the-new-gaming-witch-hunt-begin",
-                "similarity": 0.39289402961730957
+                "similarity": 0.3892749547958374
             },
             {
                 "file": "2010-10-07-i-like-where-i-think-sony-is-going.md",
                 "slug": "i-like-where-i-think-sony-is-going",
-                "similarity": 0.3903481066226959
+                "similarity": 0.38917985558509827
             }
         ]
     },
@@ -4369,7 +4369,7 @@
             {
                 "file": "2010-04-13-adobe-narayens-kingdom-for-a-plan.md",
                 "slug": "adobe-narayens-kingdom-for-a-plan",
-                "similarity": 0.27016687393188477
+                "similarity": 0.27036526799201965
             },
             {
                 "file": "2007-11-08-why-cant-i-have-100-laptop.md",
@@ -4377,9 +4377,9 @@
                 "similarity": 0.2624744176864624
             },
             {
-                "file": "2011-11-03-we-are-the-champions-of-the-web.md",
-                "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.2545279264450073
+                "file": "2007-05-03-drmed-for-life.md",
+                "slug": "drmed-for-life",
+                "similarity": 0.25544703006744385
             },
             {
                 "file": "2009-07-26-case-study-django-agile-sportsgirl-redevelopment.md",
@@ -4396,12 +4396,12 @@
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.6381967067718506
+                "similarity": 0.6299978494644165
             },
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.6252747774124146
+                "similarity": 0.6251720190048218
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
@@ -4426,7 +4426,7 @@
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.48729008436203003
+                "similarity": 0.48693111538887024
             },
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
@@ -4488,7 +4488,7 @@
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.46212613582611084
+                "similarity": 0.46213796734809875
             },
             {
                 "file": "2011-09-15-device-api-applications-of-devicemotion-and-deviceorientation.md",
@@ -4496,9 +4496,9 @@
                 "similarity": 0.4612981379032135
             },
             {
-                "file": "2009-12-22-why-im-interested-in-aws-spot-prices-for-ec2.md",
-                "slug": "why-im-interested-in-aws-spot-prices-for-ec2",
-                "similarity": 0.4529525935649872
+                "file": "2010-04-13-adobe-narayens-kingdom-for-a-plan.md",
+                "slug": "adobe-narayens-kingdom-for-a-plan",
+                "similarity": 0.454769492149353
             }
         ]
     },
@@ -4510,7 +4510,7 @@
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.6818913221359253
+                "similarity": 0.6821331977844238
             },
             {
                 "file": "2015-01-21-context-in-ambient-technology.md",
@@ -4520,7 +4520,7 @@
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.4660106301307678
+                "similarity": 0.46676331758499146
             },
             {
                 "file": "2014-12-16-building-information-radiator.md",
@@ -4530,7 +4530,7 @@
             {
                 "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
                 "slug": "web-directions-south-2009-cloud-sourcing-the-business",
-                "similarity": 0.45833146572113037
+                "similarity": 0.4537982940673828
             },
             {
                 "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
@@ -4570,14 +4570,14 @@
                 "similarity": 0.6961473226547241
             },
             {
+                "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
+                "slug": "web-directions-south-2009-cloud-sourcing-the-business",
+                "similarity": 0.614860475063324
+            },
+            {
                 "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
                 "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
                 "similarity": 0.6144557595252991
-            },
-            {
-                "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
-                "slug": "web-directions-south-2009-cloud-sourcing-the-business",
-                "similarity": 0.6124458312988281
             },
             {
                 "file": "2012-06-10-is-this-the-end-of-windows-server.md",
@@ -4592,7 +4592,7 @@
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.5657804608345032
+                "similarity": 0.5660812258720398
             },
             {
                 "file": "2010-01-03-2010-the-year-the-netbook-turns-into-the-web-book.md",
@@ -4619,57 +4619,57 @@
     {
         "file": "2012-02-24-humanising-the-internet-of-things.md",
         "slug": "humanising-the-internet-of-things",
-        "hash": "76b35b1895dba6455264c4824092e2e1d18ef2e5c14d5fefdcfecb982c466c4e",
+        "hash": "e95862e008f132abdb36db722347685337d55f4898009b93e3e7b5bcae83692b",
         "post_similarity": [
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.6862524747848511
+                "similarity": 0.6890310049057007
             },
             {
                 "file": "2011-12-20-towards-a-sensor-commons.md",
                 "slug": "towards-a-sensor-commons",
-                "similarity": 0.6818913221359253
-            },
-            {
-                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
-                "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.6798473000526428
+                "similarity": 0.6821331977844238
             },
             {
                 "file": "2015-01-21-context-in-ambient-technology.md",
                 "slug": "context-in-ambient-technology",
-                "similarity": 0.6795853972434998
+                "similarity": 0.6802851557731628
+            },
+            {
+                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
+                "slug": "computing-is-finally-becoming-personal",
+                "similarity": 0.6800581216812134
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
-                "similarity": 0.6664227247238159
+                "similarity": 0.6623845100402832
             },
             {
                 "file": "2011-10-17-neo-futurism-in-the-information-age.md",
                 "slug": "neo-futurism-in-the-information-age",
-                "similarity": 0.6381967067718506
+                "similarity": 0.6299978494644165
             },
             {
                 "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
                 "slug": "datatium-a-material-to-create-responsive-experiences",
-                "similarity": 0.6159917712211609
+                "similarity": 0.6175270080566406
             },
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.6071322560310364
+                "similarity": 0.6001075506210327
             },
             {
                 "file": "2011-09-15-device-api-applications-of-devicemotion-and-deviceorientation.md",
                 "slug": "device-api-applications-of-devicemotion-and-deviceorientation",
-                "similarity": 0.5863244533538818
+                "similarity": 0.5902231931686401
             },
             {
                 "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
                 "slug": "the-golden-age-of-mobile-soon-maybe",
-                "similarity": 0.5822163224220276
+                "similarity": 0.5831254720687866
             }
         ]
     },
@@ -4701,7 +4701,7 @@
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.4564465880393982
+                "similarity": 0.45674195885658264
             },
             {
                 "file": "2007-04-24-the-things-we-take-for-granted.md",
@@ -4716,17 +4716,17 @@
             {
                 "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
                 "slug": "web-directions-south-2009-cloud-sourcing-the-business",
-                "similarity": 0.4383373260498047
+                "similarity": 0.4371225833892822
             },
             {
                 "file": "2007-05-03-drmed-for-life.md",
                 "slug": "drmed-for-life",
-                "similarity": 0.42227038741111755
+                "similarity": 0.42347484827041626
             },
             {
                 "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
                 "slug": "thingstreams-the-future-of-brand-product-consumer-dialogue",
-                "similarity": 0.4200054407119751
+                "similarity": 0.4230261743068695
             }
         ]
     },
@@ -4748,12 +4748,12 @@
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.5277987718582153
+                "similarity": 0.5239332318305969
             },
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.5085532665252686
+                "similarity": 0.5056670308113098
             },
             {
                 "file": "2015-09-09-datatium-material-for-contextually-responsive-design.md",
@@ -4778,7 +4778,7 @@
             {
                 "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
                 "slug": "thingstreams-the-future-of-brand-product-consumer-dialogue",
-                "similarity": 0.444683313369751
+                "similarity": 0.44951194524765015
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
@@ -4800,7 +4800,7 @@
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.6057795882225037
+                "similarity": 0.6041535139083862
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
@@ -4813,14 +4813,14 @@
                 "similarity": 0.5672512054443359
             },
             {
-                "file": "2012-02-24-humanising-the-internet-of-things.md",
-                "slug": "humanising-the-internet-of-things",
-                "similarity": 0.5659956336021423
-            },
-            {
                 "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
                 "slug": "datatium-a-material-to-create-responsive-experiences",
                 "similarity": 0.5631077289581299
+            },
+            {
+                "file": "2012-02-24-humanising-the-internet-of-things.md",
+                "slug": "humanising-the-internet-of-things",
+                "similarity": 0.5622615814208984
             },
             {
                 "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
@@ -4852,7 +4852,7 @@
             {
                 "file": "2008-03-15-security-101-the-user-should-be-able-to-authenticate.md",
                 "slug": "security-101-the-user-should-be-able-to-authenticate",
-                "similarity": 0.5762256383895874
+                "similarity": 0.5771577954292297
             },
             {
                 "file": "2007-11-21-why-was-data-being-passed-on-a-disc-and-what-was-eds-advice.md",
@@ -4872,7 +4872,7 @@
             {
                 "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
                 "slug": "web-directions-south-2009-cloud-sourcing-the-business",
-                "similarity": 0.3802490830421448
+                "similarity": 0.3806748390197754
             },
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
