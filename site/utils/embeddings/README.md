@@ -17,9 +17,10 @@ needed.
 ## Using
 
 This process will look at all of the markdown files in /site/src/content/posts
-and will create a set of vector embeddings of that data. This will be done using
-the `all-MiniLM-L6-v2` model from `sentence-transformers` and it will handle things
-like context chunking and averaging of the vectors.
+and will create a set of vector embeddings of that data. This is done using
+the `all-MiniLM-L6-v2` model from `sentence-transformers`. The process tokenises
+each document with the model's tokenizer, performs token based context
+chunking and averages the resulting chunk vectors.
 
 The end point is a file called similarity_data.json which contains each
 file and then the top 10 most similar objects related to it.

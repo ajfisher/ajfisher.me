@@ -28,14 +28,22 @@ def preprocess_markdown_file(file_path):
     return text
 
 def chunk_and_encode(text, model, chunk_size=256, overlap_size=32):
-    """
-    Breaks up a document into smaller chunks, with a small amount of overlap
-    between them. After that, take the average of the various chunks to determine
-    the overall embedding for the document
+    """Tokenise ``text`` with ``model.tokenizer`` and average the embeddings.
+    The document is split into overlapping chunks of ``chunk_size`` tokens with
+    a stride of ``chunk_size - overlap_size``. Each token chunk is decoded back
+    to text before being encoded. The mean of the chunk embeddings represents
+    the document.
     """
 
-    tokens = text.split()
-    chunks = [' '.join(tokens[i:i + chunk_size]) for i in range(0, len(tokens), chunk_size - overlap_size)]
+    token_ids = model.tokenizer.encode(text, add_special_tokens=False)
+    token_chunks = [
+        token_ids[i : i + chunk_size]
+        for i in range(0, len(token_ids), chunk_size - overlap_size)
+    ]
+    chunks = [model.tokenizer.decode(chunk) for chunk in token_chunks]
+
+    # tokens = text.split()
+    # chunks = [' '.join(tokens[i:i + chunk_size]) for i in range(0, len(tokens), chunk_size - overlap_size)]
 
     # now encode each of the chunks
     chunk_embeddings = model.encode(chunks)
