@@ -25,6 +25,11 @@ chunking and averages the resulting chunk vectors.
 The end point is a file called similarity_data.json which contains each
 file and then the top 10 most similar objects related to it.
 
+Embeddings are cached locally in a file called `embeddings_cache.json`. When
+`make build` runs, the script will load this cache and only recompute
+embeddings for markdown files that have changed since the last build. The cache
+is updated at the end of each run and stored next to `similarity_data.json`.
+
 To build the database run: `make build` and everything will generate. This might
 take up to 30 seconds.
 
@@ -56,7 +61,6 @@ post has been made. Therefore it won't auto-rebuild.
 
 ## What to commit
 
-The only element that needs to be committed other than the supporting code is
-the actual vector database which is the file called `similarity_data.json`
-
-
+The elements that need to be committed other than the supporting code are the
+vector database `similarity_data.json` and the embeddings cache file
+`embeddings_cache.json`.

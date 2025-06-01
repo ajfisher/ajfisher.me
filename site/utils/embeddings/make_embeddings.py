@@ -20,13 +20,6 @@ def remove_images_and_links(text):
     text = re.sub(r'<p class=\"caption\">.*?</p>', '', text, flags=re.DOTALL) # remove captions
     return text
 
-def preprocess_markdown_file(file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        text = file.read()
-    text = remove_front_matter(text)
-    text = remove_images_and_links(text)
-    return text
-
 def chunk_and_encode(text, model, chunk_size=256, overlap_size=32):
     """Tokenise ``text`` with ``model.tokenizer`` and average the embeddings.
     The document is split into overlapping chunks of ``chunk_size`` tokens with
@@ -96,17 +89,13 @@ def main():
 
     md_path = args.input
 
-    processed_texts_hashes = [
-        {
-            "file": f,
-            "text": preprocess_markdown_file(os.path.join(md_path, f)),
-            "hash": compute_hash(
-                open(os.path.join(md_path, f), "r", encoding="utf-8").read()
-            ),
-        }
-        for f in os.listdir(md_path)
-        if f.endswith(".md")
-    ]
+    # Load embeddings cache if it exists
+    cache_file = 'embeddings_cache.json'
+    if os.path.exists(cache_file):
+        with open(cache_file, 'r', encoding='utf-8') as f:
+            embeddings_cache = json.load(f)
+    else:
+        embeddings_cache = {}
 
 
     # build the embeddings from the documents.
@@ -114,19 +103,31 @@ def main():
     # and embedding complexity so that we get some decent similarity scoring.
     model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 
-    embeddings_list = [
-        {
-            'file': item['file'],
-            'embedding': chunk_and_encode(
-                item['text'],
-                model,
-                chunk_size=args.chunk_size,
-                overlap_size=args.overlap_size,
-            ),
-            'hash': item['hash'],
-        }
-        for item in processed_texts_hashes
-    ]
+    embeddings_list = []
+
+    for f in [f for f in os.listdir(md_path) if f.endswith('.md')]:
+        file_path = os.path.join(md_path, f)
+        with open(file_path, 'r', encoding='utf-8') as file:
+            content = file.read()
+        current_hash = compute_hash(content)
+
+        # Check cache to see if embedding exists and matches current hash
+        if f in embeddings_cache and embeddings_cache[f]['hash'] == current_hash:
+            embedding = np.array(embeddings_cache[f]['embedding'])
+        else:
+            text = remove_images_and_links(remove_front_matter(content))
+            embedding = chunk_and_encode(text, model)
+            embeddings_cache[f] = {
+                'hash': current_hash,
+                'embedding': embedding.tolist()
+            }
+
+        embeddings_list.append({
+            'file': f,
+            'embedding': embedding,
+            'hash': current_hash
+        })
+    # embeddings_list populated above via cache-aware loop
 
     # Now we make the similarity matrix between each document.
 
@@ -174,6 +175,9 @@ def main():
     with open(args.output, 'w') as f:
         json.dump(data, f, indent=4)
 
+    # Save updated embeddings cache
+    with open(cache_file, 'w') as f:
+        json.dump(embeddings_cache, f, indent=2)
 
 if __name__ == '__main__':
     main()
