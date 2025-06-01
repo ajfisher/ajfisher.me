@@ -20,13 +20,6 @@ def remove_images_and_links(text):
     text = re.sub(r'<p class=\"caption\">.*?</p>', '', text, flags=re.DOTALL) # remove captions
     return text
 
-# def preprocess_markdown_file(file_path):
-#     with open(file_path, 'r', encoding='utf-8') as file:
-#         text = file.read()
-#     text = remove_front_matter(text)
-#     text = remove_images_and_links(text)
-#     return text
-
 def chunk_and_encode(text, model, chunk_size=256, overlap_size=32):
     """Tokenise ``text`` with ``model.tokenizer`` and average the embeddings.
     The document is split into overlapping chunks of ``chunk_size`` tokens with
@@ -96,17 +89,6 @@ def main():
 
     md_path = args.input
 
-#    processed_texts_hashes = [
-#        {
-#            "file": f,
-#            "text": preprocess_markdown_file(os.path.join(md_path, f)),
-#            "hash": compute_hash(
-#                open(os.path.join(md_path, f), "r", encoding="utf-8").read()
-#            ),
-#        }
-#        for f in os.listdir(md_path)
-#        if f.endswith(".md")
-#    ]
     # Load embeddings cache if it exists
     cache_file = 'embeddings_cache.json'
     if os.path.exists(cache_file):
@@ -121,19 +103,6 @@ def main():
     # and embedding complexity so that we get some decent similarity scoring.
     model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 
-#    embeddings_list = [
-#        {
-#            'file': item['file'],
-#            'embedding': chunk_and_encode(
-#                item['text'],
-#                model,
-#                chunk_size=args.chunk_size,
-#                overlap_size=args.overlap_size,
-#            ),
-#            'hash': item['hash'],
-#        }
-#        for item in processed_texts_hashes
-#    ]
     embeddings_list = []
 
     for f in [f for f in os.listdir(md_path) if f.endswith('.md')]:
