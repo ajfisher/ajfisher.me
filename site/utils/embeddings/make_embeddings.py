@@ -92,7 +92,7 @@ def main():
     # Load embeddings cache if it exists
     cache_file = 'embeddings_cache.json'
     if os.path.exists(cache_file):
-        with open(cache_file, 'r') as f:
+        with open(cache_file, 'r', encoding='utf-8') as f:
             embeddings_cache = json.load(f)
     else:
         embeddings_cache = {}
