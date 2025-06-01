@@ -27,6 +27,23 @@ file and then the top 10 most similar objects related to it.
 To build the database run: `make build` and everything will generate. This might
 take up to 30 seconds.
 
+### Command line options
+
+`make_embeddings.py` accepts several flags so you can customise how the
+embedding data is produced:
+
+* `-i, --input` – directory containing markdown posts (default
+  `../../src/content/posts`)
+* `-o, --output` – where to write the JSON output (default
+  `similarity_data.json`)
+* `--chunk-size` – token count to use for each chunk (default `256`)
+* `--overlap-size` – number of overlapping tokens between chunks (default `32`)
+* `--related-count` – how many related posts to store per entry (default `10`)
+
+These values can also be overridden when running `make build` by setting the
+`INPUT_DIR`, `OUTPUT_JSON`, `CHUNK_SIZE`, `OVERLAP_SIZE` and `RELATED_COUNT`
+variables.
+
 ### Note when making new documents
 
 Currently there is no automated process for running this when a new content
