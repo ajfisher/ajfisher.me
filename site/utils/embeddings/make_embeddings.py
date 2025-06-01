@@ -42,9 +42,6 @@ def chunk_and_encode(text, model, chunk_size=256, overlap_size=32):
     ]
     chunks = [model.tokenizer.decode(chunk) for chunk in token_chunks]
 
-    # tokens = text.split()
-    # chunks = [' '.join(tokens[i:i + chunk_size]) for i in range(0, len(tokens), chunk_size - overlap_size)]
-
     # now encode each of the chunks
     chunk_embeddings = model.encode(chunks)
 
