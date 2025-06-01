@@ -26,10 +26,10 @@ install:
 	. venv/bin/activate; pip install -r requirements.txt
 
 build: install
-        @echo "building related document file"
-        . venv/bin/activate; python make_embeddings.py \
-                --input $(INPUT_DIR) \
-                --output $(OUTPUT_JSON) \
-                --chunk-size $(CHUNK_SIZE) \
-                --overlap-size $(OVERLAP_SIZE) \
-                --related-count $(RELATED_COUNT)
+	@echo "building related document file"
+	. venv/bin/activate; python make_embeddings.py \
+		--input $(INPUT_DIR) \
+		--output $(OUTPUT_JSON) \
+		--chunk-size $(CHUNK_SIZE) \
+		--overlap-size $(OVERLAP_SIZE) \
+		--related-count $(RELATED_COUNT)
