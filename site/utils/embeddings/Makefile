@@ -5,6 +5,8 @@ OUTPUT_JSON ?= similarity_data.json
 CHUNK_SIZE ?= 256
 OVERLAP_SIZE ?= 32
 RELATED_COUNT ?= 10
+TAG_WEIGHT ?= 0.1
+OVERLAP_BONUS ?= 0.05
 
 help:
 	@echo "install:         Install all the parts needed for local dev"
@@ -32,4 +34,6 @@ build: install
 		--output $(OUTPUT_JSON) \
 		--chunk-size $(CHUNK_SIZE) \
 		--overlap-size $(OVERLAP_SIZE) \
-		--related-count $(RELATED_COUNT)
+		--related-count $(RELATED_COUNT) \
+		--tag-weight $(TAG_WEIGHT) \
+		--overlap-bonus $(OVERLAP_BONUS)
