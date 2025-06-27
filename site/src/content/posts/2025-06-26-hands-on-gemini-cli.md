@@ -14,6 +14,9 @@ twitter_excerpt: >
     that brings Google up to par with the other players.
     #AI #development #code
 featured: false
+featureimage: ../../img/posts/gemini-cli-head.png
+imageby: Screenshot, Gemini CLI
+listimage: ../../img/posts/gemini-cli-list.png
 tags: ai, agents, development, generative ai
 ---
 
