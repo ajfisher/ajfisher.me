@@ -15,7 +15,7 @@ twitter_excerpt: >
     #qantas #dataBreach #privacy #cybersecurity #infosec
 featureimage: ../../img/posts/qantas_toxic_waste.png
 imageby: ajfisher - Flux.Dev
-listimage: ../../img/posts/scammer.png
+listimage: ../../img/posts/scammer_list.png
 featured: true
 tags: privacy, business, security
 ---
@@ -95,7 +95,6 @@ connection vs a potential love interest).
 
 ![Illustration of a scammer building up a target](../../img/posts/scammer.png)
 *The more data for personalisation the better for scammers. (cc) ajfisher - Flux.Dev*
-
 
 This data, along with that from other breaches, adds to the potential detail a
 scammer can draw on to craft a plan to make contact with, then swindle their
