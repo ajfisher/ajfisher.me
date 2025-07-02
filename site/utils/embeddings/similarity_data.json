@@ -927,6 +927,11 @@
                 "similarity": 0.757306194509026
             },
             {
+                "file": "2025-07-02-qantas-breach-toxic-waste.md",
+                "slug": "qantas-breach-toxic-waste",
+                "similarity": 0.6820283788477176
+            },
+            {
                 "file": "2008-04-22-phorm-over-function.md",
                 "slug": "phorm-over-function",
                 "similarity": 0.5225279662962952
@@ -960,11 +965,6 @@
                 "file": "2010-03-23-an-open-internet-call-to-arms.md",
                 "slug": "an-open-internet-call-to-arms",
                 "similarity": 0.35699865829886046
-            },
-            {
-                "file": "2008-02-20-dvd-jon-strikes-again.md",
-                "slug": "dvd-jon-strikes-again",
-                "similarity": 0.3492928464268323
             }
         ]
     },
@@ -1631,6 +1631,11 @@
                 "similarity": 0.42259442855061413
             },
             {
+                "file": "2025-07-02-qantas-breach-toxic-waste.md",
+                "slug": "qantas-breach-toxic-waste",
+                "similarity": 0.41911319965597593
+            },
+            {
                 "file": "2007-11-30-pci-dss-will-wreak-havoc-on-smes.md",
                 "slug": "pci-dss-will-wreak-havoc-on-smes",
                 "similarity": 0.40501967138945183
@@ -1644,11 +1649,6 @@
                 "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
                 "slug": "thingstreams-the-future-of-brand-product-consumer-dialogue",
                 "similarity": 0.3685279987781783
-            },
-            {
-                "file": "2007-05-03-drmed-for-life.md",
-                "slug": "drmed-for-life",
-                "similarity": 0.35343940569794335
             }
         ]
     },
@@ -1715,6 +1715,11 @@
         "hash": "3d9d0a8480dbf894d60f484cf1ad30ad848013ff3f8b7b58114676a7bebdb94c",
         "post_similarity": [
             {
+                "file": "2025-07-02-qantas-breach-toxic-waste.md",
+                "slug": "qantas-breach-toxic-waste",
+                "similarity": 0.8850317924550561
+            },
+            {
                 "file": "2008-03-15-security-101-the-user-should-be-able-to-authenticate.md",
                 "slug": "security-101-the-user-should-be-able-to-authenticate",
                 "similarity": 0.757306194509026
@@ -1758,11 +1763,6 @@
                 "file": "2007-11-08-why-cant-i-have-100-laptop.md",
                 "slug": "why-cant-i-have-100-laptop",
                 "similarity": 0.43992738585596725
-            },
-            {
-                "file": "2008-01-31-the-state-of-oz-technology.md",
-                "slug": "the-state-of-oz-technology",
-                "similarity": 0.434382395699968
             }
         ]
     },
@@ -4275,6 +4275,63 @@
         ]
     },
     {
+        "file": "2025-07-02-qantas-breach-toxic-waste.md",
+        "slug": "qantas-breach-toxic-waste",
+        "hash": "7efeb87bcd13861bbeb964f1bae2942af5dda994e96c66c26156bd9b5da7e33f",
+        "post_similarity": [
+            {
+                "file": "2007-11-21-why-was-data-being-passed-on-a-disc-and-what-was-eds-advice.md",
+                "slug": "why-was-data-being-passed-on-a-disc-and-what-was-eds-advice",
+                "similarity": 0.8850317924550561
+            },
+            {
+                "file": "2007-11-30-pci-dss-will-wreak-havoc-on-smes.md",
+                "slug": "pci-dss-will-wreak-havoc-on-smes",
+                "similarity": 0.7439479195134395
+            },
+            {
+                "file": "2008-04-22-phorm-over-function.md",
+                "slug": "phorm-over-function",
+                "similarity": 0.7199318583532722
+            },
+            {
+                "file": "2008-03-15-security-101-the-user-should-be-able-to-authenticate.md",
+                "slug": "security-101-the-user-should-be-able-to-authenticate",
+                "similarity": 0.6820283788477176
+            },
+            {
+                "file": "2008-01-31-the-state-of-oz-technology.md",
+                "slug": "the-state-of-oz-technology",
+                "similarity": 0.5063941522078148
+            },
+            {
+                "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
+                "slug": "web-directions-south-2009-cloud-sourcing-the-business",
+                "similarity": 0.49450496723972026
+            },
+            {
+                "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
+                "slug": "a-clickster-fail-of-epic-proportions",
+                "similarity": 0.4799165069635812
+            },
+            {
+                "file": "2007-04-24-the-things-we-take-for-granted.md",
+                "slug": "the-things-we-take-for-granted",
+                "similarity": 0.4563745856367492
+            },
+            {
+                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
+                "slug": "now-or-never-growth-opportunities-in-retail",
+                "similarity": 0.4509716690640275
+            },
+            {
+                "file": "2007-05-03-drmed-for-life.md",
+                "slug": "drmed-for-life",
+                "similarity": 0.443402709168452
+            }
+        ]
+    },
+    {
         "file": "2010-03-23-an-open-internet-call-to-arms.md",
         "slug": "an-open-internet-call-to-arms",
         "hash": "c2fabd60206d7b3f51859bf7d3cf720ee946d2690b5ad83182ec9a6b8f8926e8",
@@ -4736,6 +4793,11 @@
         "hash": "88ab1b871fadd4f733a73efe2770ab0aa92c61f9f3aca69cad6d6579b421c038",
         "post_similarity": [
             {
+                "file": "2025-07-02-qantas-breach-toxic-waste.md",
+                "slug": "qantas-breach-toxic-waste",
+                "similarity": 0.7199318583532722
+            },
+            {
                 "file": "2007-11-21-why-was-data-being-passed-on-a-disc-and-what-was-eds-advice.md",
                 "slug": "why-was-data-being-passed-on-a-disc-and-what-was-eds-advice",
                 "similarity": 0.6948611683105187
@@ -4779,18 +4841,13 @@
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
                 "similarity": 0.5545718994221808
-            },
-            {
-                "file": "2007-12-21-potent-messages-of-impotent-industries.md",
-                "slug": "potent-messages-of-impotent-industries",
-                "similarity": 0.5440714339779242
             }
         ]
     },
     {
         "file": "2025-06-26-hands-on-gemini-cli.md",
         "slug": "hands-on-gemini-cli",
-        "hash": "685699fa7b8bc717e2ce1105f2dae9322daa309092ae9a09f75f7854dee0c006",
+        "hash": "f1b21293f009b4571be2361c99d1a7f08d1f7d4d2618ab108f72c71291c39300",
         "post_similarity": [
             {
                 "file": "2023-08-31-ai-works-now.md",
@@ -4969,6 +5026,11 @@
                 "similarity": 0.7880369876279318
             },
             {
+                "file": "2025-07-02-qantas-breach-toxic-waste.md",
+                "slug": "qantas-breach-toxic-waste",
+                "similarity": 0.7439479195134395
+            },
+            {
                 "file": "2007-11-21-why-was-data-being-passed-on-a-disc-and-what-was-eds-advice.md",
                 "slug": "why-was-data-being-passed-on-a-disc-and-what-was-eds-advice",
                 "similarity": 0.7270023228439357
@@ -5007,11 +5069,6 @@
                 "file": "2007-12-19-sms-bamboozlement.md",
                 "slug": "sms-bamboozlement",
                 "similarity": 0.4060040314026237
-            },
-            {
-                "file": "2008-04-21-can-yahoo-really-get-things-so-wrong.md",
-                "slug": "can-yahoo-really-get-things-so-wrong",
-                "similarity": 0.40501967138945183
             }
         ]
     },
