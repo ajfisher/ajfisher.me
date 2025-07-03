@@ -19,12 +19,12 @@ listimage: ../../img/posts/retail-opportunity-dalle-2024-04-16212738.webp
 featured: true
 ---
 
-If you’re not part of Big-Tech or Big-Finance, or Australia’s  [Grocery
+If you’re not part of Big-Tech, Big-Finance, or Australia’s [Grocery
 Duopoly](https://www.abc.net.au/news/2024-02-23/a-history-of-the-duopoly-coles-woolworths/103494070),
 your business is likely navigating significant challenges. Investment in
 additional headcount, new systems, or process is probably quite a way down your
 list of priorities - behind a lot of optimisation, and just trading through the
-rough patch. However, for growth-minded organisations with some financial
+rough patch. However, for growth-minded orgs with some financial
 flexibility, there is an opportunity to acquire experienced talent to drive the
 next wave of growth and innovation for the business.
 
@@ -47,8 +47,8 @@ cycle, there is an opportunity for savvy Retail and Consumer organisations to
 benefit.
 
 If your business is profitable, but faces cyclical challenges, such as Retail -
-right now you are able to pick up some extraordinary talent from big-tech and
-finance. Point them at your hardest business problems to get the groundwork
+right now you are able to pick up some extraordinary talent.
+Point them at your hardest business problems to get the groundwork
 done, and you can capitalise as consumer sentiment improves and spending
 increases again.
 
@@ -57,7 +57,7 @@ and Services businesses as these are domains I know very well. Over the last six
 to nine months I have had many conversations with leaders in these sectors that
 have influenced my thinking on this topic.
 
-In this post, I’ll outline some of the challenges businesses have had to
+I'll outline some of the challenges businesses have had to
 navigate over the last couple of years, why tech firms are laying off staff, and
 what the opportunity is for organisations who can capitalise on it.
 
@@ -79,21 +79,21 @@ Unsplash](https://unsplash.com/photos/aerial-photography-of-four-cars-surrounded
 
 I highlight this pre-pandemic period because trying to hire into retail
 businesses was already challenging. Businesses didn’t have a lot of spare cash
-to invest in more headcount and candidates were already scarce. This was because
-Finance and Big Tech were already into their run up as they started to
+to invest in more headcount and candidates were scarce. This was because
+Finance and Big Tech were well into their run up, as they started to
 capitalise on technology advances to do with new architectural patterns (eg
 [micro-services](https://microservices.io/) and composable architecture) and the
 first shoots of AI and ML technologies showing benefits (eg voice, NLP,
 classifiers etc).
 
-The implication of this was that in consumer businesses, that were not digital
+The implications of this was that in consumer businesses, that weren't digital
 pure-plays, projects were already falling behind and teams had persistent
 vacancies that were challenging to fill. Some outsourcing occurred to keep
 projects moving, but this is not sustainable long term due to the cost.
 
 By March 2020, every consumer business in the world was facing the choice of
 willingly or begrudgingly expediting their entire digital transformation, or
-have almost certain collapse as a result of physical retail closing overnight.
+face almost certain collapse as a result of physical retail closing overnight.
 At the same time, Big-Tech saw a rapid increase in sales due to vast numbers of
 the population spending more time on screen and in their houses.
 
@@ -119,18 +119,16 @@ initiatives and managing costs ever-more aggressively - a necessary, but
 short-sighted strategy, given the long-term potential of these projects.
 
 In 2024, from my conversations and interactions with numerous organisations,
-this has become the dominant behaviour for many Direct to consumer businesses.
+this has become the dominant behaviour for many direct to consumer businesses.
 Deliver core business well, drive profitability and, focus on a smaller number
 of high-value opportunities.
 
-This all poses a question though: After an astonishing boom and the sustained
+This all poses a question: After an astonishing boom and the sustained
 dominance of Big Tech and Finance over the last half-decade, why are we now
 seeing continued layoffs in these sectors? This shift is not just a market
 correction for some COVID-19 over-hiring, but a signal of deeper changes afoot.
 
-In the next section, I delve into the reasons behind these layoffs and how these
-underlying shifts may open a golden opportunity for consumer businesses in the
-next business cycle.
+These shifts could be a golden opportunity in the next business cycle.
 
 ## Inside out - tech’s first target is itself
 
@@ -175,7 +173,7 @@ intervention.
 Despite an exponential increase in applications driven by these technologies and
 rising consumer demand, the workforce has not expanded at the same rate.
 Automation enables existing professionals to manage larger technology ecosystems
-more efficiently, thereby enhancing business value.
+more efficiently, thereby enhancing business value and profitability.
 
 In recent years, AI's viability has surged. <b>Before ChatGPT made headlines in
 late 2022, tech organisations were already leveraging early tools to automate</b>
@@ -195,7 +193,7 @@ are better retained in the organisation?
 In late 2022, the main factor was cost rationalisation. The boom that many tech
 companies had experienced was COVID related and those gains began to reverse.
 Many organisations decided to downsize for what looked like a recession and get
-ahead of that. In 2023, for many markets, this recession didn’t occur however
+ahead of that. In 2023, for many markets, this recession didn’t occur, however
 business conditions were more challenging and those businesses that shrank their
 workforces were considerably more profitable (eg Meta, Microsoft and Amazon).
 
@@ -226,8 +224,8 @@ These factors occurring concurrently provide opportunities for those
 businesses - particularly Retail - who are prepared to Zig while everyone else
 continues to Zag.
 
-In the final section, I explore how to take advantage of these opportunities now
-and race ahead while your competitors are still putting on their running shoes.
+All of this means that there's an opportunity take advantage of to get ahead
+while your competitors are still putting on their running shoes.
 
 ## Tech layoffs may be retail payoffs
 
@@ -243,7 +241,7 @@ increases but funding for innovation remains scarce?
 Quite simply, you need to invest smartly but you need to go now - and I mean
 right now - 2025 will be too late.
 
-Consumer and Retail businesses should seize the opportunity to strategically
+Consumer and Retail businesses should grab the opportunity to strategically
 hire experts in Architecture, Data, AI, and Automation. <b>Complementing these
 strategic hires with eager juniors currently struggling to find roles can
 maximise impact</b>.
@@ -266,13 +264,13 @@ in:
 To scale and innovate effectively, integrate enthusiastic early-career
 professionals into your team, supporting them with AI copilot tools and DevOps
 practices. This approach allows juniors to rapidly assume significant roles,
-driving forward your transformation objectives.
+driving forward your transformation goals.
 
 This addresses the hiring side, with a view of seeding these skills into the
 team. Alongside that needs to be a clear strategy that leveraging automation,
-utilising AI-based tooling and copilots and use of low or no-code solutions or
+utilising AI-based tooling and copilots, and use of low or no-code solutions or
 frameworks to achieve outcomes is critical to the ability of the organisation to
-execute.
+execute and scale efficiently.
 
 This focus on methods, and the change management required to support that in
 existing teams, should help to start to create momentum inside the organisation
@@ -284,7 +282,7 @@ and improve customer experiences.
 
 Done right, this will help free up valuable time from over stretched staff who
 can work on projects that further transformation, work on supporting higher
-value customers or helping expansion into new channels or markets.
+value customers, or helping expansion into new channels or markets.
 
 Additionally, the business should invest in low or no-code application platforms
 and extensively train business users in their use. Many of the market leading
@@ -299,24 +297,24 @@ platform creation.
 *[Create opportunities for organisational changes. Photo by Nick Fewings on
 Unsplash](https://unsplash.com/photos/a-black-and-white-photo-of-the-word-change-5RjdYvDRNpA)*
 
-While the outlined approach offers numerous benefits, it also carries inherent
-risks that must be carefully managed to ensure successful outcomes. Before
-embarking on this journey, here are some items to consider:
+This appraoch carries numerous benefits, however it also carries inherent
+risks that must be managed to ensure successful outcomes. Before
+going on this journey, here are some elements to think about:
 
 - Prioritise architecture and full-stack engineering if your organisation lacks
-  architectural maturity, such as insufficient micro-services or integration
+  architectural maturity such as insufficient micro-services or integration
   layers. This foundational work is critical in supporting the approaches
-  discussed in this post.
+  discussed above.
 - Implement clear guidelines for AI copilot usage, focusing on data safeguards
   and team responsibilities to prevent inadvertent data leaks. Proper training
   and governance are essential in ensuring safe and effective use.
 - Support junior team members with robust mentoring and onboarding programmes to
   integrate into their teams. Strong cultural processes are essential for their
-  success and future growth in the organisation.
+  success and their future growth in the organisation.
 - Ensure the accurate assessment of capabilities in prospective candidates by
   possibly engaging an external 'Advisory CTO' or similar expert for advanced
   domains. This expertise is vital for recruiting senior roles, who can then
-  assist in onboarding junior team members.
+  assist in onboarding more junior team members.
 
 Retail and consumer organisations, whilst they start behind, have a golden
 opportunity to bring to bear a number of significant trends coupled with a
@@ -325,9 +323,9 @@ business.
 
 ## In case of emergency, break glass
 
-The convergence of available talent, cutting-edge technologies, and urgent
-innovation needs presents a unique opportunity for retail and consumer
-businesses. Capitalise on this moment by strategically hiring experts in
+The convergence of available talent, cutting-edge tech, and urgent demand for
+innovation presents a unique opportunity for retail and consumer
+businesses. Capitalise on this by strategically hiring experts in
 architecture, data, AI, and automation, and support them with eager,
 early-career professionals. This combination will build a resilient,
 forward-thinking team ready for rapid innovation and deployment.
@@ -338,6 +336,6 @@ opportunity for generational leap-frogging that will help you quickly create new
 opportunities for profit or elevate your customer experience. Don’t hesitate;
 those who act decisively have an incredible opportunity at their feet.
 
-Imagine a future where your business not only survives but thrives, leading the
-rapidly evolving retail landscape. By acting now, you're not just adapting;
-you'll be setting the pace for innovation and success.
+Imagine a future where your business not only survives but thrives, leading a
+rapidly evolving retail landscape. By going now, you're not just adapting;
+you'll be setting the pace for innovation and success in retail.
