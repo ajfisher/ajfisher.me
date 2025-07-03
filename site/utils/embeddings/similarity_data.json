@@ -22,17 +22,12 @@
             {
                 "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
                 "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
-                "similarity": 0.7369518086905613
+                "similarity": 0.7353879678640005
             },
             {
                 "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
                 "slug": "why-industries-can-still-be-revolutionised-on-the-web",
                 "similarity": 0.7294591392761315
-            },
-            {
-                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
-                "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.7049939016791791
             },
             {
                 "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
@@ -53,6 +48,11 @@
                 "file": "2012-06-10-is-this-the-end-of-windows-server.md",
                 "slug": "is-this-the-end-of-windows-server",
                 "similarity": 0.6846525496569394
+            },
+            {
+                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
+                "slug": "android-fragmentation-really-not-a-big-deal",
+                "similarity": 0.6775017953710765
             }
         ]
     },
@@ -141,17 +141,17 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.8503124819064226
+                "similarity": 0.8452506765400464
+            },
+            {
+                "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
+                "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
+                "similarity": 0.7699933557752358
             },
             {
                 "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
                 "slug": "the-golden-age-of-mobile-soon-maybe",
                 "similarity": 0.7693565358079436
-            },
-            {
-                "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
-                "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
-                "similarity": 0.7651860721788631
             },
             {
                 "file": "2009-11-09-admob-purchase-by-google-paves-way-for-interesting-developer-funding.md",
@@ -240,7 +240,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 1.0135989281568167
+                "similarity": 1.0080322698343998
             },
             {
                 "file": "2009-07-29-an-unofficial-endorsement-of-the-android-platform.md",
@@ -250,7 +250,7 @@
             {
                 "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
                 "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
-                "similarity": 0.9270578632443839
+                "similarity": 0.9287233392128204
             },
             {
                 "file": "2011-11-07-app-stores-are-delivery-channels-not-search-engines.md",
@@ -297,7 +297,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.9969138863159923
+                "similarity": 1.0087976791323616
             },
             {
                 "file": "2011-11-07-app-stores-are-delivery-channels-not-search-engines.md",
@@ -312,7 +312,7 @@
             {
                 "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
                 "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
-                "similarity": 0.9609427374890639
+                "similarity": 0.9670875570773928
             },
             {
                 "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
@@ -421,7 +421,7 @@
             {
                 "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
                 "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
-                "similarity": 0.6254877574479661
+                "similarity": 0.6283560461892659
             },
             {
                 "file": "2012-06-10-is-this-the-end-of-windows-server.md",
@@ -530,7 +530,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.7873297676473726
+                "similarity": 0.7964069461872355
             },
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
@@ -550,7 +550,7 @@
             {
                 "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
                 "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
-                "similarity": 0.7191034881903974
+                "similarity": 0.7216050749045696
             },
             {
                 "file": "2009-07-29-an-unofficial-endorsement-of-the-android-platform.md",
@@ -610,14 +610,14 @@
                 "similarity": 0.6115586118321676
             },
             {
-                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
-                "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.5879561984186892
-            },
-            {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
                 "similarity": 0.5871982793611368
+            },
+            {
+                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
+                "slug": "android-fragmentation-really-not-a-big-deal",
+                "similarity": 0.5832360041971542
             },
             {
                 "file": "2008-01-31-the-state-of-oz-technology.md",
@@ -629,7 +629,7 @@
     {
         "file": "2014-05-04-device-api-safari.md",
         "slug": "device-api-safari",
-        "hash": "992348db8138de9650633668973298e03e5cf6145a684c075c6517adcb6c9aa9",
+        "hash": "d51e9bebadb99693977362dc41bc98e867bdb25780160aeaf3f29e3e90210949",
         "post_similarity": [
             {
                 "file": "2011-09-15-device-api-applications-of-devicemotion-and-deviceorientation.md",
@@ -766,14 +766,14 @@
                 "similarity": 0.6285551048150503
             },
             {
-                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
-                "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.6265693521970129
-            },
-            {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
                 "similarity": 0.6224034383375228
+            },
+            {
+                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
+                "slug": "android-fragmentation-really-not-a-big-deal",
+                "similarity": 0.6204339796305145
             },
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
@@ -828,14 +828,14 @@
                 "similarity": 0.7262418197607847
             },
             {
-                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
-                "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.7225842212621275
-            },
-            {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
                 "similarity": 0.7167540898297949
+            },
+            {
+                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
+                "slug": "android-fragmentation-really-not-a-big-deal",
+                "similarity": 0.7015765977304788
             },
             {
                 "file": "2012-06-10-is-this-the-end-of-windows-server.md",
@@ -857,57 +857,57 @@
     {
         "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
         "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
-        "hash": "87947b463582d139002609195db491f491a8e0e288494f1e13c2947e7a4b4da9",
+        "hash": "da51ac8c1d73322cb9943a4d25028a86bb4b772d7548140003bef8e2915265b6",
         "post_similarity": [
             {
                 "file": "2009-12-20-prediction-2010-will-be-the-year-apple-and-google-have-a-cage-fight.md",
                 "slug": "prediction-2010-will-be-the-year-apple-and-google-have-a-cage-fight",
-                "similarity": 0.9609427374890639
+                "similarity": 0.9670875570773928
             },
             {
                 "file": "2010-06-27-a-telling-quarter-for-android.md",
                 "slug": "a-telling-quarter-for-android",
-                "similarity": 0.9270578632443839
+                "similarity": 0.9287233392128204
             },
             {
                 "file": "2007-11-05-bye-bye-openmoko.md",
                 "slug": "bye-bye-openmoko",
-                "similarity": 0.9087325441806937
+                "similarity": 0.911078979910392
             },
             {
                 "file": "2007-02-15-please-nokia-slap-me-again-no-really.md",
                 "slug": "please-nokia-slap-me-again-no-really",
-                "similarity": 0.8845641802727496
+                "similarity": 0.91039427800369
             },
             {
                 "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
                 "slug": "the-golden-age-of-mobile-soon-maybe",
-                "similarity": 0.8347481538504474
+                "similarity": 0.840611993355513
             },
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.8246764297088729
+                "similarity": 0.8207680075478861
             },
             {
                 "file": "2009-07-29-an-unofficial-endorsement-of-the-android-platform.md",
                 "slug": "an-unofficial-endorsement-of-the-android-platform",
-                "similarity": 0.7651860721788631
+                "similarity": 0.7699933557752358
             },
             {
                 "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
                 "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
-                "similarity": 0.7369518086905613
+                "similarity": 0.7353879678640005
             },
             {
                 "file": "2010-10-07-i-like-where-i-think-sony-is-going.md",
                 "slug": "i-like-where-i-think-sony-is-going",
-                "similarity": 0.7191034881903974
+                "similarity": 0.7216050749045696
             },
             {
                 "file": "2009-11-09-admob-purchase-by-google-paves-way-for-interesting-developer-funding.md",
                 "slug": "admob-purchase-by-google-paves-way-for-interesting-developer-funding",
-                "similarity": 0.7016172225195471
+                "similarity": 0.7069861964481067
             }
         ]
     },
@@ -929,7 +929,7 @@
             {
                 "file": "2025-07-02-qantas-breach-toxic-waste.md",
                 "slug": "qantas-breach-toxic-waste",
-                "similarity": 0.6820283788477176
+                "similarity": 0.6806828073748313
             },
             {
                 "file": "2008-04-22-phorm-over-function.md",
@@ -1053,7 +1053,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.8744474349733313
+                "similarity": 0.8632711960582928
             },
             {
                 "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
@@ -1182,7 +1182,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.49047961381824573
+                "similarity": 0.5065792353055131
             },
             {
                 "file": "2007-11-08-why-cant-i-have-100-laptop.md",
@@ -1408,11 +1408,6 @@
                 "similarity": 0.7507698469701906
             },
             {
-                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
-                "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.7361958230960075
-            },
-            {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
                 "similarity": 0.729609383229047
@@ -1421,6 +1416,11 @@
                 "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
                 "slug": "why-industries-can-still-be-revolutionised-on-the-web",
                 "similarity": 0.7259854409593428
+            },
+            {
+                "file": "2007-12-19-sms-bamboozlement.md",
+                "slug": "sms-bamboozlement",
+                "similarity": 0.7244126794955192
             }
         ]
     },
@@ -1621,6 +1621,11 @@
                 "similarity": 0.4440256351569545
             },
             {
+                "file": "2025-07-02-qantas-breach-toxic-waste.md",
+                "slug": "qantas-breach-toxic-waste",
+                "similarity": 0.4400781784939701
+            },
+            {
                 "file": "2008-03-15-security-101-the-user-should-be-able-to-authenticate.md",
                 "slug": "security-101-the-user-should-be-able-to-authenticate",
                 "similarity": 0.4400088700316821
@@ -1629,11 +1634,6 @@
                 "file": "2007-12-21-potent-messages-of-impotent-industries.md",
                 "slug": "potent-messages-of-impotent-industries",
                 "similarity": 0.42259442855061413
-            },
-            {
-                "file": "2025-07-02-qantas-breach-toxic-waste.md",
-                "slug": "qantas-breach-toxic-waste",
-                "similarity": 0.41911319965597593
             },
             {
                 "file": "2007-11-30-pci-dss-will-wreak-havoc-on-smes.md",
@@ -1717,7 +1717,7 @@
             {
                 "file": "2025-07-02-qantas-breach-toxic-waste.md",
                 "slug": "qantas-breach-toxic-waste",
-                "similarity": 0.8850317924550561
+                "similarity": 0.8782873710942185
             },
             {
                 "file": "2008-03-15-security-101-the-user-should-be-able-to-authenticate.md",
@@ -1896,11 +1896,6 @@
                 "similarity": 0.7732417865469348
             },
             {
-                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
-                "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.709668614013011
-            },
-            {
                 "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
                 "slug": "why-industries-can-still-be-revolutionised-on-the-web",
                 "similarity": 0.6830808360110071
@@ -1914,6 +1909,11 @@
                 "file": "2010-06-23-why-google-is-a-more-typical-business-than-you-think.md",
                 "slug": "why-google-is-a-more-typical-business-than-you-think",
                 "similarity": 0.6769679853111302
+            },
+            {
+                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
+                "slug": "android-fragmentation-really-not-a-big-deal",
+                "similarity": 0.6670030187760309
             },
             {
                 "file": "2007-11-05-bye-bye-openmoko.md",
@@ -1955,7 +1955,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.8435419638146355
+                "similarity": 0.8367132958418927
             },
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
@@ -2067,11 +2067,6 @@
                 "similarity": 0.7977834817396046
             },
             {
-                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
-                "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.725827439121147
-            },
-            {
                 "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
                 "slug": "the-golden-age-of-mobile-soon-maybe",
                 "similarity": 0.7050229628732486
@@ -2085,6 +2080,11 @@
                 "file": "2011-10-17-neo-futurism-in-the-information-age.md",
                 "slug": "neo-futurism-in-the-information-age",
                 "similarity": 0.6996475718237395
+            },
+            {
+                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
+                "slug": "android-fragmentation-really-not-a-big-deal",
+                "similarity": 0.6980621065869712
             },
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
@@ -2111,17 +2111,17 @@
     {
         "file": "2007-11-05-bye-bye-openmoko.md",
         "slug": "bye-bye-openmoko",
-        "hash": "51010bae10b30c956c15eb102a58f90e2b0e5026193a82d5892960dc7f0ac8be",
+        "hash": "ae6f65a713adbf90c51b1dcfdc4caf6ca7314f5050281dd043aacc41d5052bbd",
         "post_similarity": [
+            {
+                "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
+                "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
+                "similarity": 0.911078979910392
+            },
             {
                 "file": "2010-06-23-why-google-is-a-more-typical-business-than-you-think.md",
                 "slug": "why-google-is-a-more-typical-business-than-you-think",
                 "similarity": 0.9098385166448901
-            },
-            {
-                "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
-                "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
-                "similarity": 0.9087325441806937
             },
             {
                 "file": "2009-12-20-prediction-2010-will-be-the-year-apple-and-google-have-a-cage-fight.md",
@@ -2139,14 +2139,14 @@
                 "similarity": 0.875180500535709
             },
             {
-                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
-                "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.8606075803366289
-            },
-            {
                 "file": "2009-07-29-an-unofficial-endorsement-of-the-android-platform.md",
                 "slug": "an-unofficial-endorsement-of-the-android-platform",
                 "similarity": 0.8591164307638173
+            },
+            {
+                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
+                "slug": "android-fragmentation-really-not-a-big-deal",
+                "similarity": 0.8509018031406148
             },
             {
                 "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
@@ -2156,7 +2156,7 @@
             {
                 "file": "2007-02-15-please-nokia-slap-me-again-no-really.md",
                 "slug": "please-nokia-slap-me-again-no-really",
-                "similarity": 0.7364783844769159
+                "similarity": 0.7731216587704128
             },
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
@@ -2290,14 +2290,14 @@
                 "similarity": 0.9180608618305753
             },
             {
-                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
-                "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.8941400672792219
-            },
-            {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
                 "similarity": 0.8901299651175344
+            },
+            {
+                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
+                "slug": "android-fragmentation-really-not-a-big-deal",
+                "similarity": 0.8788346288873994
             },
             {
                 "file": "2010-01-28-ipad-almost-great.md",
@@ -2706,7 +2706,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.6568054113093141
+                "similarity": 0.6705968190143196
             },
             {
                 "file": "2009-10-11-the-only-reason-why-linux-isnt-ready-for-prime-time-desktop.md",
@@ -3023,57 +3023,57 @@
     {
         "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
         "slug": "android-fragmentation-really-not-a-big-deal",
-        "hash": "3dbc3858ddaa76245c324676707d6f90060ad6ff792c8f5cef4e7fa01f84042c",
+        "hash": "006d43ce085da966b1710988537776d011deabf86d79f8213bc53e4e8ec990a7",
         "post_similarity": [
-            {
-                "file": "2010-06-27-a-telling-quarter-for-android.md",
-                "slug": "a-telling-quarter-for-android",
-                "similarity": 1.0135989281568167
-            },
             {
                 "file": "2009-12-20-prediction-2010-will-be-the-year-apple-and-google-have-a-cage-fight.md",
                 "slug": "prediction-2010-will-be-the-year-apple-and-google-have-a-cage-fight",
-                "similarity": 0.9969138863159923
+                "similarity": 1.0087976791323616
+            },
+            {
+                "file": "2010-06-27-a-telling-quarter-for-android.md",
+                "slug": "a-telling-quarter-for-android",
+                "similarity": 1.0080322698343998
             },
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.8941400672792219
+                "similarity": 0.8788346288873994
             },
             {
                 "file": "2011-11-07-app-stores-are-delivery-channels-not-search-engines.md",
                 "slug": "app-stores-are-delivery-channels-not-search-engines",
-                "similarity": 0.8744474349733313
+                "similarity": 0.8632711960582928
             },
             {
                 "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
                 "slug": "the-golden-age-of-mobile-soon-maybe",
-                "similarity": 0.862383683257004
+                "similarity": 0.8543376853660964
             },
             {
                 "file": "2007-11-05-bye-bye-openmoko.md",
                 "slug": "bye-bye-openmoko",
-                "similarity": 0.8606075803366289
+                "similarity": 0.8509018031406148
             },
             {
                 "file": "2009-07-29-an-unofficial-endorsement-of-the-android-platform.md",
                 "slug": "an-unofficial-endorsement-of-the-android-platform",
-                "similarity": 0.8503124819064226
+                "similarity": 0.8452506765400464
             },
             {
                 "file": "2011-09-15-device-api-applications-of-devicemotion-and-deviceorientation.md",
                 "slug": "device-api-applications-of-devicemotion-and-deviceorientation",
-                "similarity": 0.8435419638146355
+                "similarity": 0.8367132958418927
             },
             {
                 "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
                 "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
-                "similarity": 0.8246764297088729
+                "similarity": 0.8207680075478861
             },
             {
-                "file": "2010-01-28-ipad-almost-great.md",
-                "slug": "ipad-almost-great",
-                "similarity": 0.7950493292164119
+                "file": "2010-10-07-i-like-where-i-think-sony-is-going.md",
+                "slug": "i-like-where-i-think-sony-is-going",
+                "similarity": 0.7964069461872355
             }
         ]
     },
@@ -3289,11 +3289,6 @@
                 "similarity": 0.6950131879982435
             },
             {
-                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
-                "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.6933389296408041
-            },
-            {
                 "file": "2011-10-04-on-a-post-flash-world-and-adobes-place-within-it.md",
                 "slug": "on-a-post-flash-world-and-adobes-place-within-it",
                 "similarity": 0.6772284998562047
@@ -3302,6 +3297,11 @@
                 "file": "2011-10-17-neo-futurism-in-the-information-age.md",
                 "slug": "neo-futurism-in-the-information-age",
                 "similarity": 0.6745080200289525
+            },
+            {
+                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
+                "slug": "android-fragmentation-really-not-a-big-deal",
+                "similarity": 0.6654419667842685
             }
         ]
     },
@@ -3430,14 +3430,14 @@
                 "similarity": 0.8589733094758765
             },
             {
-                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
-                "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.7950493292164119
-            },
-            {
                 "file": "2010-01-03-2010-the-year-the-netbook-turns-into-the-web-book.md",
                 "slug": "2010-the-year-the-netbook-turns-into-the-web-book",
                 "similarity": 0.7947325097652781
+            },
+            {
+                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
+                "slug": "android-fragmentation-really-not-a-big-deal",
+                "similarity": 0.7752550513740979
             },
             {
                 "file": "2011-11-07-app-stores-are-delivery-channels-not-search-engines.md",
@@ -3693,14 +3693,14 @@
                 "similarity": 0.36368663066829443
             },
             {
-                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
-                "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.3569841851229985
-            },
-            {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
                 "similarity": 0.35494557322373677
+            },
+            {
+                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
+                "slug": "android-fragmentation-really-not-a-big-deal",
+                "similarity": 0.3281910057664377
             }
         ]
     },
@@ -3831,12 +3831,12 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.862383683257004
+                "similarity": 0.8543376853660964
             },
             {
                 "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
                 "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
-                "similarity": 0.8347481538504474
+                "similarity": 0.840611993355513
             },
             {
                 "file": "2010-06-27-a-telling-quarter-for-android.md",
@@ -4025,6 +4025,11 @@
                 "similarity": 0.519026212150005
             },
             {
+                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
+                "slug": "android-fragmentation-really-not-a-big-deal",
+                "similarity": 0.49349312632971787
+            },
+            {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
                 "slug": "a-clickster-fail-of-epic-proportions",
                 "similarity": 0.4916952439574571
@@ -4033,11 +4038,6 @@
                 "file": "2010-01-28-ipad-almost-great.md",
                 "slug": "ipad-almost-great",
                 "similarity": 0.48083022217912846
-            },
-            {
-                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
-                "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.47437599867386104
             },
             {
                 "file": "2008-04-22-phorm-over-function.md",
@@ -4163,57 +4163,57 @@
     {
         "file": "2007-02-15-please-nokia-slap-me-again-no-really.md",
         "slug": "please-nokia-slap-me-again-no-really",
-        "hash": "b0575de4a977ecccbce1ec11cc7939b00d75f5a35f6e40cab22d64233dbe0f72",
+        "hash": "0b858677ec4eb167acdeb6cc94865af8abd274f7cd2089ce2a68101a15e1897c",
         "post_similarity": [
             {
                 "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
                 "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
-                "similarity": 0.8845641802727496
+                "similarity": 0.91039427800369
             },
             {
                 "file": "2007-11-05-bye-bye-openmoko.md",
                 "slug": "bye-bye-openmoko",
-                "similarity": 0.7364783844769159
-            },
-            {
-                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
-                "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.7170145881499567
+                "similarity": 0.7731216587704128
             },
             {
                 "file": "2009-12-20-prediction-2010-will-be-the-year-apple-and-google-have-a-cage-fight.md",
                 "slug": "prediction-2010-will-be-the-year-apple-and-google-have-a-cage-fight",
-                "similarity": 0.715720872910644
+                "similarity": 0.7262233986784062
+            },
+            {
+                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
+                "slug": "android-fragmentation-really-not-a-big-deal",
+                "similarity": 0.7059295324597291
             },
             {
                 "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
                 "slug": "the-golden-age-of-mobile-soon-maybe",
-                "similarity": 0.6666470921411728
+                "similarity": 0.7058495948419338
             },
             {
                 "file": "2010-06-27-a-telling-quarter-for-android.md",
                 "slug": "a-telling-quarter-for-android",
-                "similarity": 0.6390709385448222
+                "similarity": 0.6546398696634076
             },
             {
                 "file": "2010-10-07-i-like-where-i-think-sony-is-going.md",
                 "slug": "i-like-where-i-think-sony-is-going",
-                "similarity": 0.6291146028393546
+                "similarity": 0.6307909634388194
             },
             {
                 "file": "2010-01-03-2010-the-year-the-netbook-turns-into-the-web-book.md",
                 "slug": "2010-the-year-the-netbook-turns-into-the-web-book",
-                "similarity": 0.6280251135567093
+                "similarity": 0.6193929478448192
             },
             {
-                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
-                "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.5799068576078843
+                "file": "2011-09-15-device-api-applications-of-devicemotion-and-deviceorientation.md",
+                "slug": "device-api-applications-of-devicemotion-and-deviceorientation",
+                "similarity": 0.6086931202938632
             },
             {
-                "file": "2007-12-19-sms-bamboozlement.md",
-                "slug": "sms-bamboozlement",
-                "similarity": 0.5730870951552803
+                "file": "2009-07-29-an-unofficial-endorsement-of-the-android-platform.md",
+                "slug": "an-unofficial-endorsement-of-the-android-platform",
+                "similarity": 0.5901195192758573
             }
         ]
     },
@@ -4277,57 +4277,57 @@
     {
         "file": "2025-07-02-qantas-breach-toxic-waste.md",
         "slug": "qantas-breach-toxic-waste",
-        "hash": "7efeb87bcd13861bbeb964f1bae2942af5dda994e96c66c26156bd9b5da7e33f",
+        "hash": "12739099ce6b6341f5a070375555643f96ac783090965cbe8d35bcb0a9a8c5fd",
         "post_similarity": [
             {
                 "file": "2007-11-21-why-was-data-being-passed-on-a-disc-and-what-was-eds-advice.md",
                 "slug": "why-was-data-being-passed-on-a-disc-and-what-was-eds-advice",
-                "similarity": 0.8850317924550561
+                "similarity": 0.8782873710942185
             },
             {
                 "file": "2007-11-30-pci-dss-will-wreak-havoc-on-smes.md",
                 "slug": "pci-dss-will-wreak-havoc-on-smes",
-                "similarity": 0.7439479195134395
+                "similarity": 0.7439233162026576
             },
             {
                 "file": "2008-04-22-phorm-over-function.md",
                 "slug": "phorm-over-function",
-                "similarity": 0.7199318583532722
+                "similarity": 0.733571081245291
             },
             {
                 "file": "2008-03-15-security-101-the-user-should-be-able-to-authenticate.md",
                 "slug": "security-101-the-user-should-be-able-to-authenticate",
-                "similarity": 0.6820283788477176
+                "similarity": 0.6806828073748313
             },
             {
                 "file": "2008-01-31-the-state-of-oz-technology.md",
                 "slug": "the-state-of-oz-technology",
-                "similarity": 0.5063941522078148
+                "similarity": 0.5186194350071629
             },
             {
                 "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
                 "slug": "web-directions-south-2009-cloud-sourcing-the-business",
-                "similarity": 0.49450496723972026
+                "similarity": 0.5037250575268104
             },
             {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
                 "slug": "a-clickster-fail-of-epic-proportions",
-                "similarity": 0.4799165069635812
+                "similarity": 0.4809345419458175
             },
             {
                 "file": "2007-04-24-the-things-we-take-for-granted.md",
                 "slug": "the-things-we-take-for-granted",
-                "similarity": 0.4563745856367492
+                "similarity": 0.4681198149531033
             },
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.4509716690640275
+                "similarity": 0.45956324453953945
             },
             {
-                "file": "2007-05-03-drmed-for-life.md",
-                "slug": "drmed-for-life",
-                "similarity": 0.443402709168452
+                "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
+                "slug": "why-industries-can-still-be-revolutionised-on-the-web",
+                "similarity": 0.4449773506496937
             }
         ]
     },
@@ -4795,7 +4795,7 @@
             {
                 "file": "2025-07-02-qantas-breach-toxic-waste.md",
                 "slug": "qantas-breach-toxic-waste",
-                "similarity": 0.7199318583532722
+                "similarity": 0.733571081245291
             },
             {
                 "file": "2007-11-21-why-was-data-being-passed-on-a-disc-and-what-was-eds-advice.md",
@@ -5028,7 +5028,7 @@
             {
                 "file": "2025-07-02-qantas-breach-toxic-waste.md",
                 "slug": "qantas-breach-toxic-waste",
-                "similarity": 0.7439479195134395
+                "similarity": 0.7439233162026576
             },
             {
                 "file": "2007-11-21-why-was-data-being-passed-on-a-disc-and-what-was-eds-advice.md",
@@ -5118,14 +5118,14 @@
                 "similarity": 0.4713374311795217
             },
             {
+                "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
+                "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
+                "similarity": 0.44960472650092204
+            },
+            {
                 "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
                 "slug": "web-directions-south-2009-cloud-sourcing-the-business",
                 "similarity": 0.44739142914758656
-            },
-            {
-                "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
-                "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
-                "similarity": 0.44663998434564883
             }
         ]
     },
@@ -5150,11 +5150,6 @@
                 "similarity": 0.7490594723110572
             },
             {
-                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
-                "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.7180434026801558
-            },
-            {
                 "file": "2009-12-20-prediction-2010-will-be-the-year-apple-and-google-have-a-cage-fight.md",
                 "slug": "prediction-2010-will-be-the-year-apple-and-google-have-a-cage-fight",
                 "similarity": 0.7077713432161034
@@ -5162,12 +5157,17 @@
             {
                 "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
                 "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
-                "similarity": 0.7016172225195471
+                "similarity": 0.7069861964481067
             },
             {
                 "file": "2011-10-04-on-a-post-flash-world-and-adobes-place-within-it.md",
                 "slug": "on-a-post-flash-world-and-adobes-place-within-it",
                 "similarity": 0.6933784857943762
+            },
+            {
+                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
+                "slug": "android-fragmentation-really-not-a-big-deal",
+                "similarity": 0.692515302206123
             },
             {
                 "file": "2007-11-05-bye-bye-openmoko.md",
