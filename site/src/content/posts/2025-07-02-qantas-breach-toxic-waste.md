@@ -14,7 +14,7 @@ twitter_excerpt: >
     Breaches aren't "if", it's "when" & we need to design accordingly.
     #qantas #dataBreach #privacy #cybersecurity #infosec
 featureimage: ../../img/posts/toxic_river.png
-imageby: ajfisher - Flux.Dev
+imageby: ajfisher - Dall.E/cGPT
 listimage: ../../img/posts/scammer_list.png
 featured: true
 tags: privacy, business, security

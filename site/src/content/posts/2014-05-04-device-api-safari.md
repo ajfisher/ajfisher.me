@@ -1,7 +1,7 @@
 ---
 author: ajfisher
 date: 2014-05-04 18:30:00+11:00
-layout: post.hbt
+layout: post
 slug: device-api-safari
 title: A Device API safari
 large-title: true
@@ -12,7 +12,7 @@ excerpt: >
 featureimage: ../../img/posts/lauren-george-K0sCNAKfmhc-unsplash.jpg
 imageby: Lauren George on Unsplash
 imagelink: https://unsplash.com/photos/K0sCNAKfmhc 
-listimage: ../../img/posts/lauren-george-K0sCNAKfmhc-unsplash.jpg
+listimage: ../../img/posts/device_jungle.png
 
 ---
 
