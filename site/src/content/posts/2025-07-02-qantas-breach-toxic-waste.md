@@ -13,7 +13,7 @@ twitter_excerpt: >
     The Qantas data breach highlights the need to rethink personal data handling.
     Breaches aren't "if", it's "when" & we need to design accordingly.
     #qantas #dataBreach #privacy #cybersecurity #infosec
-featureimage: ../../img/posts/qantas_toxic_waste.png
+featureimage: ../../img/posts/toxic_river.png
 imageby: ajfisher - Flux.Dev
 listimage: ../../img/posts/scammer_list.png
 featured: true
@@ -123,8 +123,11 @@ Yes, there are tradeoffs inherent in this decision but in many organisations
 the desire for more data, "just in case", is a powerful force driving that
 discussion.
 
+![Data is a form of toxic byproduct](../../img/posts/data_waste.png)
+*Consider long term PII as a toxic byproduct of our systems*
+
 Qantas clearly care about the security of personal information so much that
-<b>they let a third party have access</b> (noted by them) to personal details of 6
+they let a third party have access (noted by them) to personal details of 6
 million customers.
 
 I suspect the reason for this is entirely mundane, and is something like
