@@ -27,10 +27,9 @@ const AIEngPage = ({data}) => {
   const slug = '/aieng';
   const date = '2024-06-16 14:00:00+1000';
   const excerpt = `Slides, links and other resources you'll be able to find
-    below. Don't forget to sign up if you want to get more information about
-    additional content.
+    below.
   `;
-  const tags = ['thinking', 'business', 'innovation'];
+  const tags = ['thinking', 'business', 'innovation', 'ai', 'development'];
 
   const frontmatter = {
     title,
