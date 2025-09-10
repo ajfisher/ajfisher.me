@@ -58,7 +58,7 @@ const AIEngPage = ({data}) => {
         <p>Slides from my talk at Web Directions AI Engineering 2025, including
           notes, are <a
             href="https://aieng.ajf.io/static/scaling_coding_agents.pdf">available here for
-          download (PDF 60MB)</a>.</p>
+          download (PDF 47MB)</a>.</p>
 
         <h3>Resources</h3>
 
