@@ -23,7 +23,7 @@ const AIEngPage = ({data}) => {
 
   const featuredImage = featureimage || null;
 
-  const title = 'Resources, materials and links for AI Engineering';
+  const title = 'Resources, materials and links for AI coding agents';
   const slug = '/aieng';
   const date = '2025-09-12 14:00:00+1000';
   const excerpt = `Slides, links and other resources you might find useful in
