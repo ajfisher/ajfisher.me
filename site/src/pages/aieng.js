@@ -48,6 +48,16 @@ const AIEngPage = ({data}) => {
           that I think may be helpful as it relates to scaling Code Agent use
           in your engineering team.</p>
 
+        <h3>Survey: understanding AI usage in engineering teams</h3>
+
+        <p>I&apos;m currently doing some research on how engineering teams are
+          using AI in practice today. If you have a few minutes to fill out a
+          <a href="https://tally.so/r/3xW4gv"> quick survey</a> I would really
+          appreciate it. I will share the results back to the community when
+          they are ready.</p>
+
+        <h3>Talk slides and notes</h3>
+
         <p>You can view the slides from my talk below, or alternatively <a
           href="https://aieng.ajf.io/">visit the site</a> for the large
           version.</p>
@@ -143,7 +153,10 @@ const AIEngPage = ({data}) => {
         </p>
 
         <h4>Where to next?</h4>
-
+        <p>If you got this far then thanks for reading and a reminder about the
+          <a href="https://tally.so/r/3xW4gv"> survey</a> I&apos;m running to
+          understand how teams are using AI in practice today. It only take a few
+          minutes and I would really appreciate it.</p>
         <p>The <Link to="/">home page</Link> will give you featured
           articles and recent posts.</p>
         <p>You can also check out <Link to="/blog">the full
