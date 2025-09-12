@@ -128,6 +128,7 @@ const AIEngPage = ({data}) => {
             <li>Research paper suggesting ways to build in <a href="https://arxiv.org/abs/2505.03574">real-time analysis and defence for coding agents</a> to mitigate risk (LlamaFirewall)</li>
             <li><a href="https://dev.to/aws-builders/common-security-pitfalls-using-vibe-coding-264b">Recommendation checklists on validation flows</a> needed for agent produced code (especially vibe coding scenarios but applies more generally too)</li>
             <li>Silly but fun way to <a href="https://worksonmymachine.ai/p/make-reviewing-ai-output-fun">make code reviewing fun by generating images</a></li>
+            <li>A detailed case study showing how <a href="https://taylor.town/diggit-000">Claude Code was used to build a real tool with minimal prompts</a>, including lessons on planning, scaffolding, and vibing through development</li>
           </ul>
         </p>
 
