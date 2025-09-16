@@ -97,6 +97,8 @@ const AIEngPage = ({data}) => {
               repo - <a href="https://agents.md/">Agents.md</a></li>
             <li>How <a href="https://medium.com/lifefunk/documentation-driven-development-how-good-docs-become-your-ai-pair-programming-superpower-e0e574db2f3b">documentation supports </a>
               better pair programming with code agents and assistants</li>
+            <li>using AI can help <a
+              href="https://newsletter.getdx.com/p/ai-cuts-developer-onboarding-time-in-half">reduce onboarding time for new developers</a></li>
           </ul>
         </p>
 
