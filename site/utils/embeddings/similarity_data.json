@@ -7,7 +7,7 @@
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.8623433017776397
+                "similarity": 0.8589596194924891
             },
             {
                 "file": "2010-04-13-adobe-narayens-kingdom-for-a-plan.md",
@@ -461,9 +461,14 @@
         "hash": "5615c0a7a306b4d4958215c5a66954decbc7160ff1034938333d7c9324908e4a",
         "post_similarity": [
             {
+                "file": "2025-11-05-strategy-ai.md",
+                "slug": "strategy-ai",
+                "similarity": 0.7155553251361266
+            },
+            {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.7263690954613008
+                "similarity": 0.7072127761087859
             },
             {
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
@@ -504,11 +509,6 @@
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
                 "similarity": 0.4492071967682347
-            },
-            {
-                "file": "2011-10-17-neo-futurism-in-the-information-age.md",
-                "slug": "neo-futurism-in-the-information-age",
-                "similarity": 0.4474857964807383
             }
         ]
     },
@@ -1316,6 +1316,11 @@
         "hash": "3821163045b79f200f3bbb23274f85759f860465416c8c417a4f9a05882a04fa",
         "post_similarity": [
             {
+                "file": "2025-11-05-strategy-ai.md",
+                "slug": "strategy-ai",
+                "similarity": 0.5598143456482436
+            },
+            {
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
                 "similarity": 0.5212290571079369
@@ -1328,7 +1333,7 @@
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.43689857336781557
+                "similarity": 0.43526164341572715
             },
             {
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
@@ -1359,11 +1364,6 @@
                 "file": "2025-06-26-hands-on-gemini-cli.md",
                 "slug": "hands-on-gemini-cli",
                 "similarity": 0.3299640595003138
-            },
-            {
-                "file": "2011-10-04-on-a-post-flash-world-and-adobes-place-within-it.md",
-                "slug": "on-a-post-flash-world-and-adobes-place-within-it",
-                "similarity": 0.31939129258752746
             }
         ]
     },
@@ -1457,7 +1457,7 @@
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.49866446654124447
+                "similarity": 0.498369763655184
             },
             {
                 "file": "2010-06-23-why-google-is-a-more-typical-business-than-you-think.md",
@@ -1499,7 +1499,7 @@
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.5668111906331685
+                "similarity": 0.5663665118536977
             },
             {
                 "file": "2025-02-03-retail-improvements-australia.md",
@@ -1769,57 +1769,57 @@
     {
         "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
         "slug": "now-or-never-growth-opportunities-in-retail",
-        "hash": "5434eeabcd542cb2aa9ad13d1d0521f741c47404912c7d0de0c3bfa368af2280",
+        "hash": "201ac54fcde1e410e428c02102873ed63ae3cce4a60f45c6cd5287ed64ab18a9",
         "post_similarity": [
+            {
+                "file": "2025-11-05-strategy-ai.md",
+                "slug": "strategy-ai",
+                "similarity": 0.8857048108528458
+            },
             {
                 "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
                 "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
-                "similarity": 0.8623433017776397
+                "similarity": 0.8589596194924891
             },
             {
                 "file": "2025-02-03-retail-improvements-australia.md",
                 "slug": "retail-improvements-australia",
-                "similarity": 0.8234247594438255
+                "similarity": 0.8344802429142755
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
-                "similarity": 0.7842362654849723
+                "similarity": 0.769700839932648
             },
             {
                 "file": "2024-06-19-follow-me-i-think-i-know-what-im-doing.md",
                 "slug": "follow-me-i-think-i-know-what-im-doing",
-                "similarity": 0.7263690954613008
+                "similarity": 0.7072127761087859
             },
             {
                 "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
                 "slug": "web-directions-south-2009-cloud-sourcing-the-business",
-                "similarity": 0.6970651607719824
+                "similarity": 0.7048270426608576
             },
             {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
                 "slug": "a-clickster-fail-of-epic-proportions",
-                "similarity": 0.69022776617283
-            },
-            {
-                "file": "2025-02-27-when-will-ai-disrupt-travel.md",
-                "slug": "when-will-ai-disrupt-travel",
-                "similarity": 0.6901502482225444
+                "similarity": 0.6873660985250456
             },
             {
                 "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
                 "slug": "why-industries-can-still-be-revolutionised-on-the-web",
-                "similarity": 0.6856152550735061
+                "similarity": 0.6873064836237602
+            },
+            {
+                "file": "2025-02-27-when-will-ai-disrupt-travel.md",
+                "slug": "when-will-ai-disrupt-travel",
+                "similarity": 0.6768672193057641
             },
             {
                 "file": "2010-06-23-why-google-is-a-more-typical-business-than-you-think.md",
                 "slug": "why-google-is-a-more-typical-business-than-you-think",
-                "similarity": 0.6662390746454956
-            },
-            {
-                "file": "2010-04-13-adobe-narayens-kingdom-for-a-plan.md",
-                "slug": "adobe-narayens-kingdom-for-a-plan",
-                "similarity": 0.642522222693526
+                "similarity": 0.671042470017975
             }
         ]
     },
@@ -1926,14 +1926,14 @@
                 "similarity": 0.6480223238318442
             },
             {
-                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
-                "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.642522222693526
-            },
-            {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
                 "similarity": 0.6397674273287096
+            },
+            {
+                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
+                "slug": "now-or-never-growth-opportunities-in-retail",
+                "similarity": 0.6391007333173688
             }
         ]
     },
@@ -2015,9 +2015,14 @@
                 "similarity": 0.7287948920130224
             },
             {
+                "file": "2025-11-05-strategy-ai.md",
+                "slug": "strategy-ai",
+                "similarity": 0.6262160803522036
+            },
+            {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.5949775518693088
+                "similarity": 0.5759107949343389
             },
             {
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
@@ -2043,11 +2048,6 @@
                 "file": "2016-01-27-road-to-interchange.md",
                 "slug": "road-to-interchange",
                 "similarity": 0.47663404693798184
-            },
-            {
-                "file": "2015-01-21-context-in-ambient-technology.md",
-                "slug": "context-in-ambient-technology",
-                "similarity": 0.4300651214852735
             }
         ]
     },
@@ -2399,19 +2399,24 @@
         "hash": "8cabbe19621270d763f648f3133c9b270e5adb2fc3cbc559e11feb9e3393843b",
         "post_similarity": [
             {
-                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
-                "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.7842362654849723
-            },
-            {
                 "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
                 "slug": "software-engineering-reimagined-ai-native-era",
                 "similarity": 0.7780560712136624
             },
             {
+                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
+                "slug": "now-or-never-growth-opportunities-in-retail",
+                "similarity": 0.769700839932648
+            },
+            {
                 "file": "2025-06-26-hands-on-gemini-cli.md",
                 "slug": "hands-on-gemini-cli",
                 "similarity": 0.7559247472756506
+            },
+            {
+                "file": "2025-11-05-strategy-ai.md",
+                "slug": "strategy-ai",
+                "similarity": 0.7304652956649743
             },
             {
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
@@ -2442,11 +2447,6 @@
                 "file": "2015-09-07-js-not-just-language-of-the-web.md",
                 "slug": "js-not-just-language-of-the-web",
                 "similarity": 0.5905046679329513
-            },
-            {
-                "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
-                "slug": "datatium-a-material-to-create-responsive-experiences",
-                "similarity": 0.566533536717538
             }
         ]
     },
@@ -2464,6 +2464,11 @@
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
                 "similarity": 0.4973750310523005
+            },
+            {
+                "file": "2025-11-05-strategy-ai.md",
+                "slug": "strategy-ai",
+                "similarity": 0.45851989327944853
             },
             {
                 "file": "2025-06-26-hands-on-gemini-cli.md",
@@ -2493,17 +2498,12 @@
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.318697057880909
+                "similarity": 0.31959469535775664
             },
             {
                 "file": "2007-03-05-fuzzys-where-its-at-or-will-be-eventually.md",
                 "slug": "fuzzys-where-its-at-or-will-be-eventually",
                 "similarity": 0.3147999937607878
-            },
-            {
-                "file": "2011-10-17-neo-futurism-in-the-information-age.md",
-                "slug": "neo-futurism-in-the-information-age",
-                "similarity": 0.3058112016073477
             }
         ]
     },
@@ -2550,7 +2550,7 @@
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.43010332975129745
+                "similarity": 0.4247925305342416
             },
             {
                 "file": "2010-04-13-adobe-narayens-kingdom-for-a-plan.md",
@@ -2776,6 +2776,11 @@
                 "similarity": 0.48182759946794285
             },
             {
+                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
+                "slug": "now-or-never-growth-opportunities-in-retail",
+                "similarity": 0.4794907512269371
+            },
+            {
                 "file": "2008-05-09-eeepcs-power-is-in-the-network-not-the-machine.md",
                 "slug": "eeepcs-power-is-in-the-network-not-the-machine",
                 "similarity": 0.4768698909614734
@@ -2784,11 +2789,6 @@
                 "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
                 "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
                 "similarity": 0.4751089482122951
-            },
-            {
-                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
-                "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.47477406799715144
             }
         ]
     },
@@ -2835,7 +2835,7 @@
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.6856152550735061
+                "similarity": 0.6873064836237602
             },
             {
                 "file": "2010-04-13-adobe-narayens-kingdom-for-a-plan.md",
@@ -3613,7 +3613,7 @@
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.6970651607719824
+                "similarity": 0.7048270426608576
             },
             {
                 "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
@@ -3644,6 +3644,63 @@
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
                 "similarity": 0.5682365438112722
+            }
+        ]
+    },
+    {
+        "file": "2025-11-05-strategy-ai.md",
+        "slug": "strategy-ai",
+        "hash": "0741252004e05562505eee4d94bc0922db5cf92eb83b409ce035d51cf9abbbd4",
+        "post_similarity": [
+            {
+                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
+                "slug": "now-or-never-growth-opportunities-in-retail",
+                "similarity": 0.8857048108528458
+            },
+            {
+                "file": "2025-02-27-when-will-ai-disrupt-travel.md",
+                "slug": "when-will-ai-disrupt-travel",
+                "similarity": 0.7743627411139454
+            },
+            {
+                "file": "2023-08-31-ai-works-now.md",
+                "slug": "ai-works-now",
+                "similarity": 0.7304652956649743
+            },
+            {
+                "file": "2024-06-19-follow-me-i-think-i-know-what-im-doing.md",
+                "slug": "follow-me-i-think-i-know-what-im-doing",
+                "similarity": 0.7155553251361266
+            },
+            {
+                "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
+                "slug": "software-engineering-reimagined-ai-native-era",
+                "similarity": 0.6262160803522036
+            },
+            {
+                "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
+                "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
+                "similarity": 0.5746300524140577
+            },
+            {
+                "file": "2023-02-14-podcast-enterprise-ai.md",
+                "slug": "podcast-enterprise-ai",
+                "similarity": 0.5598143456482436
+            },
+            {
+                "file": "2025-06-26-hands-on-gemini-cli.md",
+                "slug": "hands-on-gemini-cli",
+                "similarity": 0.4764955446715427
+            },
+            {
+                "file": "2007-04-30-super-computer-required-to-simulate-half-a-mouse-brain.md",
+                "slug": "super-computer-required-to-simulate-half-a-mouse-brain",
+                "similarity": 0.45851989327944853
+            },
+            {
+                "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
+                "slug": "why-industries-can-still-be-revolutionised-on-the-web",
+                "similarity": 0.4289993759594998
             }
         ]
     },
@@ -3799,7 +3856,7 @@
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.69022776617283
+                "similarity": 0.6873660985250456
             },
             {
                 "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
@@ -4109,6 +4166,11 @@
         "hash": "153f4374766e6460c959ab73efc78539ad42735e829659cdb17aeae216bdaf88",
         "post_similarity": [
             {
+                "file": "2025-11-05-strategy-ai.md",
+                "slug": "strategy-ai",
+                "similarity": 0.7743627411139454
+            },
+            {
                 "file": "2007-11-19-fuzzy-logic-could-book-more-flights.md",
                 "slug": "fuzzy-logic-could-book-more-flights",
                 "similarity": 0.7261723504609578
@@ -4121,7 +4183,7 @@
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.6901502482225444
+                "similarity": 0.6768672193057641
             },
             {
                 "file": "2025-06-26-hands-on-gemini-cli.md",
@@ -4152,11 +4214,6 @@
                 "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
                 "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
                 "similarity": 0.46303890295481376
-            },
-            {
-                "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
-                "slug": "thingstreams-the-future-of-brand-product-consumer-dialogue",
-                "similarity": 0.4375819406773054
             }
         ]
     },
@@ -4322,7 +4379,7 @@
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.45956324453953945
+                "similarity": 0.4656267462603569
             },
             {
                 "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
@@ -4706,7 +4763,7 @@
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.6662390746454956
+                "similarity": 0.671042470017975
             },
             {
                 "file": "2008-05-02-ubuntu-8-04-truly-desktop-linux.md",
@@ -4867,12 +4924,17 @@
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.5160652777615558
+                "similarity": 0.5047880960618392
             },
             {
                 "file": "2016-01-27-road-to-interchange.md",
                 "slug": "road-to-interchange",
                 "similarity": 0.4892781533808185
+            },
+            {
+                "file": "2025-11-05-strategy-ai.md",
+                "slug": "strategy-ai",
+                "similarity": 0.4764955446715427
             },
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
@@ -4893,11 +4955,6 @@
                 "file": "2015-09-07-js-not-just-language-of-the-web.md",
                 "slug": "js-not-just-language-of-the-web",
                 "similarity": 0.41842616729122495
-            },
-            {
-                "file": "2007-11-19-fuzzy-logic-could-book-more-flights.md",
-                "slug": "fuzzy-logic-could-book-more-flights",
-                "similarity": 0.41497461827222487
             }
         ]
     },
@@ -5058,7 +5115,7 @@
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.4331086842351248
+                "similarity": 0.43293790554769374
             },
             {
                 "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
@@ -5080,7 +5137,7 @@
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.8234247594438255
+                "similarity": 0.8344802429142755
             },
             {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
