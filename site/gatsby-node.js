@@ -1,5 +1,9 @@
+const fs = require('fs');
 const path = require(`path`);
+const moment = require('moment');
 const { kebabCase, pathDate } = require('./lib/utils');
+
+const { mkdir, writeFile } = fs.promises;
 
 exports.onCreateNode = ({ _node }) => {
   // this is to try and resolve the issues with the pathing
@@ -104,4 +108,67 @@ exports.createPages = async ({ actions, graphql }) => {
       }
     });
   }
+}
+
+exports.onPostBuild = async ({ graphql, reporter }) => {
+  const result = await graphql(`
+    {
+      allMarkdownRemark {
+        nodes {
+          rawMarkdownBody
+          frontmatter {
+            slug
+            layout
+            title
+            date(formatString: "YYYY-MM-DD")
+          }
+        }
+      }
+    }
+  `);
+
+  if (result.errors) {
+    reporter.panicOnBuild('Error loading MarkdownRemark data for Markdown export', result.errors);
+    return;
+  }
+
+  const nodes = result?.data?.allMarkdownRemark?.nodes ?? [];
+
+  await Promise.all(nodes.map(async (node) => {
+    const { rawMarkdownBody, frontmatter = {} } = node;
+    const { slug, layout, date, title } = frontmatter;
+
+    if (!slug || !layout) {
+      return;
+    }
+
+    const normalizedSlug = slug.replace(/^\/+/g, '').replace(/\/+$/g, '');
+    let permalink;
+
+    if (layout.startsWith('page')) {
+      permalink = `${normalizedSlug}/`;
+    } else {
+      permalink = `${pathDate(date)}/${normalizedSlug}/`;
+    }
+
+    const outputDir = path.join('public', permalink);
+    await mkdir(outputDir, { recursive: true });
+    const outputPath = path.join(outputDir, 'index.md');
+
+    const sections = [];
+
+    if (title) {
+      sections.push(`# ${title}`);
+    }
+
+    if (date) {
+      sections.push(`Published: ${moment(date).format('ddd, MMM DD YYYY')}`);
+    }
+
+    if (rawMarkdownBody) {
+      sections.push(rawMarkdownBody);
+    }
+
+    await writeFile(outputPath, sections.join('\n\n'), 'utf8');
+  }));
 }
