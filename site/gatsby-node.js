@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require(`path`);
+const moment = require('moment');
 const { kebabCase, pathDate } = require('./lib/utils');
 
 const { mkdir, writeFile } = fs.promises;
@@ -118,6 +119,7 @@ exports.onPostBuild = async ({ graphql, reporter }) => {
           frontmatter {
             slug
             layout
+            title
             date(formatString: "YYYY-MM-DD")
           }
         }
@@ -134,7 +136,7 @@ exports.onPostBuild = async ({ graphql, reporter }) => {
 
   await Promise.all(nodes.map(async (node) => {
     const { rawMarkdownBody, frontmatter = {} } = node;
-    const { slug, layout, date } = frontmatter;
+    const { slug, layout, date, title } = frontmatter;
 
     if (!slug || !layout) {
       return;
@@ -152,6 +154,21 @@ exports.onPostBuild = async ({ graphql, reporter }) => {
     const outputDir = path.join('public', permalink);
     await mkdir(outputDir, { recursive: true });
     const outputPath = path.join(outputDir, 'index.md');
-    await writeFile(outputPath, rawMarkdownBody || '', 'utf8');
+
+    const sections = [];
+
+    if (title) {
+      sections.push(`# ${title}`);
+    }
+
+    if (date) {
+      sections.push(`Published: ${moment(date).format('ddd, MMM DD YYYY')}`);
+    }
+
+    if (rawMarkdownBody) {
+      sections.push(rawMarkdownBody);
+    }
+
+    await writeFile(outputPath, sections.join('\n\n'), 'utf8');
   }));
 }

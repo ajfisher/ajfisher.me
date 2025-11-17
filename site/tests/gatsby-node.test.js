@@ -1,4 +1,5 @@
 const path = require('path');
+const moment = require('moment');
 
 jest.mock('fs', () => {
   const actual = jest.requireActual('fs');
@@ -33,6 +34,7 @@ describe('onPostBuild markdown export', () => {
                 slug: 'my-post',
                 layout: 'post-default',
                 date: postDate,
+                title: 'My Post',
               },
             },
             {
@@ -40,6 +42,7 @@ describe('onPostBuild markdown export', () => {
               frontmatter: {
                 slug: '/about/',
                 layout: 'page',
+                title: 'About page',
               },
             },
           ],
@@ -53,9 +56,13 @@ describe('onPostBuild markdown export', () => {
     const pageDir = path.join('public', 'about/');
 
     expect(mkdir).toHaveBeenCalledWith(postDir, { recursive: true });
-    expect(writeFile).toHaveBeenCalledWith(path.join(postDir, 'index.md'), '# Hello world', 'utf8');
+    const formattedDate = moment(postDate).format('ddd, MMM DD YYYY');
+    const expectedPostContent = ['# My Post', `Published: ${formattedDate}`, '# Hello world'].join('\n\n');
+
+    expect(writeFile).toHaveBeenCalledWith(path.join(postDir, 'index.md'), expectedPostContent, 'utf8');
 
     expect(mkdir).toHaveBeenCalledWith(pageDir, { recursive: true });
-    expect(writeFile).toHaveBeenCalledWith(path.join(pageDir, 'index.md'), 'Just a page', 'utf8');
+    const expectedPageContent = ['# About page', 'Just a page'].join('\n\n');
+    expect(writeFile).toHaveBeenCalledWith(path.join(pageDir, 'index.md'), expectedPageContent, 'utf8');
   });
 });
