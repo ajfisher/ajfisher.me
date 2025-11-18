@@ -4,11 +4,20 @@ import { graphql } from 'gatsby';
 import Layout from '../components/post-layout';
 import PageHead from '../components/page-head';
 
+const buildMarkdownHref = (pathname = '') => {
+  if (!pathname) {
+    return null;
+  }
+
+  const normalizedPath = pathname.endsWith('/') ? pathname : `${pathname}/`;
+  return `${normalizedPath}index.md`;
+};
+
 // need to use object.assign here due to the way arrow functions get hoisted
 // with the export. As we need to add the proptypes to the object that gets
 // hoisted we need to do this in one step then export it.
 export const Head = Object.assign(
-  ({data}) => {
+  ({data, location}) => {
     const { markdownRemark} = data;
     const { frontmatter, timeToRead, wordCount} = markdownRemark;
 
@@ -16,6 +25,7 @@ export const Head = Object.assign(
     const twitter_excerpt = frontmatter.twitter_excerpt || excerpt;
 
     const featuredImage = frontmatter?.featureimage || '';
+    const markdownHref = buildMarkdownHref(location?.pathname);
 
     return (
       <>
@@ -28,6 +38,9 @@ export const Head = Object.assign(
           readingTime={timeToRead}
           words={wordCount.words}
         />
+        {markdownHref && (
+          <link rel="alternate" type="text/markdown" href={markdownHref} />
+        )}
       </>
     );
   },
@@ -48,6 +61,9 @@ export const Head = Object.assign(
           }).isRequired,
         }).isRequired,
       }).isRequired,
+      location: PropTypes.shape({
+        pathname: PropTypes.string,
+      }),
     }
   }
 );
