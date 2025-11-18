@@ -46,6 +46,7 @@ resource "aws_cloudfront_distribution" "web_app" {
 
     forwarded_values {
       query_string = false
+      headers      = ["Accept", "Prefer"]
 
       cookies {
         forward = "none"
