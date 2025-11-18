@@ -7,9 +7,10 @@ resource "aws_cloudfront_cache_policy" "web_app_cache_policy" {
   name    = "ajfisher-web-app-cache-policy"
   comment = "Forward Accept and Prefer headers so Markdown and HTML variants stay isolated"
 
+  # Keep TTLs at zero so Lambda@Edge and origin headers exclusively control caching
   min_ttl     = 0
   default_ttl = 0
-  max_ttl     = 31536000
+  max_ttl     = 0
 
   parameters_in_cache_key_and_forwarded_to_origin {
     cookies_config {
