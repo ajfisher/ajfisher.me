@@ -3,6 +3,38 @@ resource "aws_cloudfront_origin_access_identity" "origin_access_identity" {
   comment = "cloudfront origin access identity"
 }
 
+resource "aws_cloudfront_cache_policy" "web_app_cache_policy" {
+  name    = "ajfisher-web-app-cache-policy"
+  comment = "Forward Accept and Prefer headers so Markdown and HTML variants stay isolated"
+
+  # AWS requires caching be enabled (non-zero default/max TTL) to forward custom headers
+  # even though Lambda@Edge/origin response headers govern cache duration.
+  # Keep the window to 1s so CloudFront revalidates almost immediately.
+  min_ttl     = 0
+  default_ttl = 1
+  max_ttl     = 1
+
+  parameters_in_cache_key_and_forwarded_to_origin {
+    cookies_config {
+      cookie_behavior = "none"
+    }
+
+    headers_config {
+      header_behavior = "whitelist"
+      headers {
+        items = ["Accept", "Prefer"]
+      }
+    }
+
+    query_strings_config {
+      query_string_behavior = "none"
+    }
+
+    enable_accept_encoding_brotli = true
+    enable_accept_encoding_gzip   = true
+  }
+}
+
 resource "aws_cloudfront_distribution" "web_app" {
   enabled             = true
   is_ipv6_enabled     = true
@@ -33,6 +65,7 @@ resource "aws_cloudfront_distribution" "web_app" {
     allowed_methods  = ["GET", "HEAD"]
     cached_methods   = ["GET", "HEAD"]
     target_origin_id = "origin-web-app-${aws_s3_bucket.website_code.id}"
+    cache_policy_id  = aws_cloudfront_cache_policy.web_app_cache_policy.id
 
     // don't allow any cache set in cf - it should all come from response
     // headers of origin - this is from lambda as well
@@ -43,14 +76,6 @@ resource "aws_cloudfront_distribution" "web_app" {
     // This redirects any HTTP request to HTTPS. Security first!
     viewer_protocol_policy = "redirect-to-https"
     compress               = true
-
-    forwarded_values {
-      query_string = false
-
-      cookies {
-        forward = "none"
-      }
-    }
 
     # redirect the request if needed
     lambda_function_association {
