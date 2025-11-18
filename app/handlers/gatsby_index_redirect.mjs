@@ -4,6 +4,63 @@
 // rerouting of the URL so that S3 can retrieve the right file and respond
 // correctly.
 
+const MARKDOWN_PAGE_SLUGS = new Set(['who', 'colophon', 'dis-everything']);
+
+const getHeaderValue = (headers = {}, headerName) => {
+  if (!headerName) {
+    return '';
+  }
+
+  const normalized = headerName.toLowerCase();
+
+  // CloudFront canonicalises header names to lowercase but tests sometimes
+  // refer to the original casing. Check the common permutations before
+  // falling back to the header being absent altogether.
+  const headerEntries =
+    headers[normalized] || headers[headerName] || headers[normalized.toUpperCase()];
+
+  if (!headerEntries || !headerEntries.length) {
+    return '';
+  }
+
+  return headerEntries[0].value?.toLowerCase() ?? '';
+};
+
+const wantsMarkdown = (headers) => {
+  const acceptHeader = getHeaderValue(headers, 'accept');
+  if (acceptHeader.includes('text/markdown')) {
+    return true;
+  }
+
+  const preferHeader = getHeaderValue(headers, 'prefer');
+  return preferHeader.includes('markdown');
+};
+
+const isPostPath = (uri = '') => /^\/\d{4}\/\d{2}\/\d{2}\/[^/.]+\/?$/.test(uri);
+
+const isMarkdownPagePath = (uri = '') => {
+  const trimmed = uri.replace(/^\/+|\/+$/g, '');
+  if (!trimmed || trimmed.includes('/')) {
+    return false;
+  }
+
+  return MARKDOWN_PAGE_SLUGS.has(trimmed);
+};
+
+const needsMarkdown = (uri, headers) => wantsMarkdown(headers) && (isPostPath(uri) || isMarkdownPagePath(uri));
+
+const ensureIndexFile = (uri, filename) => {
+  if (uri.endsWith('/')) {
+    return `${uri}${filename}`;
+  }
+
+  if (!uri.includes('.')) {
+    return `${uri}/${filename}`;
+  }
+
+  return uri;
+};
+
 export const handler = async (event) => {
   const request = event.Records[0].cf.request;
   const { uri } = request;
@@ -27,7 +84,11 @@ export const handler = async (event) => {
     request.uri = '/tagged/data-science/';
   }
 
-  if (request.uri.endsWith('/')) {
+  const serveMarkdown = needsMarkdown(request.uri, request.headers);
+
+  if (serveMarkdown) {
+    request.uri = ensureIndexFile(request.uri, 'index.md');
+  } else if (request.uri.endsWith('/')) {
     request.uri += 'index.html';
   } else if (!request.uri.includes('.')) {
     request.uri += '/index.html';
