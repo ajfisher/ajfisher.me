@@ -8,13 +8,23 @@ import PageHead from '../components/page-head';
 // need to use object.assign here due to the way arrow functions get hoisted
 // with the export. As we need to add the proptypes to the object that gets
 // hoisted we need to do this in one step then export it.
+const buildMarkdownHref = (pathname = '') => {
+  if (!pathname) {
+    return null;
+  }
+
+  const normalizedPath = pathname.endsWith('/') ? pathname : `${pathname}/`;
+  return `${normalizedPath}index.md`;
+};
+
 export const Head = Object.assign(
-  ({_location, _params, data, _pageContext}) => {
+  ({location, _params, data, _pageContext}) => {
     const { markdownRemark} = data;
     const { frontmatter} = markdownRemark;
 
     const excerpt = frontmatter.excerpt || markdownRemark.excerpt || '';
     const twitter_excerpt = frontmatter.twitter_excerpt || excerpt;
+    const markdownHref = buildMarkdownHref(location?.pathname);
     return (
       <>
         <PageHead
@@ -23,12 +33,17 @@ export const Head = Object.assign(
           type="article"
           tweet={twitter_excerpt}
         />
+        {markdownHref && (
+          <link rel="alternate" type="text/markdown" href={markdownHref} />
+        )}
       </>
     );
   },
   {
     propTypes: {
-      _location: PropTypes.object,
+      location: PropTypes.shape({
+        pathname: PropTypes.string,
+      }),
       _params: PropTypes.object,
       data: PropTypes.shape({
         markdownRemark: PropTypes.shape({
