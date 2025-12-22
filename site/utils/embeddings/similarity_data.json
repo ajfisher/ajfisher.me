@@ -10,6 +10,11 @@
                 "similarity": 0.8589596194924891
             },
             {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.7743759498180481
+            },
+            {
                 "file": "2010-04-13-adobe-narayens-kingdom-for-a-plan.md",
                 "slug": "adobe-narayens-kingdom-for-a-plan",
                 "similarity": 0.7732417865469348
@@ -48,11 +53,6 @@
                 "file": "2012-06-10-is-this-the-end-of-windows-server.md",
                 "slug": "is-this-the-end-of-windows-server",
                 "similarity": 0.6846525496569394
-            },
-            {
-                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
-                "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.6775017953710765
             }
         ]
     },
@@ -471,6 +471,11 @@
                 "similarity": 0.7072127761087859
             },
             {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.5652067073407733
+            },
+            {
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
                 "slug": "when-will-ai-disrupt-travel",
                 "similarity": 0.5618569212620385
@@ -504,11 +509,6 @@
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
                 "similarity": 0.4794087037439501
-            },
-            {
-                "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
-                "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.4492071967682347
             }
         ]
     },
@@ -610,6 +610,11 @@
                 "similarity": 0.6115586118321676
             },
             {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.5938604279811595
+            },
+            {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
                 "similarity": 0.5871982793611368
@@ -618,11 +623,6 @@
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
                 "similarity": 0.5832360041971542
-            },
-            {
-                "file": "2008-01-31-the-state-of-oz-technology.md",
-                "slug": "the-state-of-oz-technology",
-                "similarity": 0.575946611215505
             }
         ]
     },
@@ -1331,6 +1331,11 @@
                 "similarity": 0.5016791894260428
             },
             {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.477902410687989
+            },
+            {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
                 "similarity": 0.43526164341572715
@@ -1359,11 +1364,6 @@
                 "file": "2014-05-04-device-api-safari.md",
                 "slug": "device-api-safari",
                 "similarity": 0.3600131537002541
-            },
-            {
-                "file": "2025-06-26-hands-on-gemini-cli.md",
-                "slug": "hands-on-gemini-cli",
-                "similarity": 0.3299640595003138
             }
         ]
     },
@@ -1455,6 +1455,11 @@
                 "similarity": 0.5350667531880863
             },
             {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.53381524203692
+            },
+            {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
                 "similarity": 0.498369763655184
@@ -1473,11 +1478,6 @@
                 "file": "2007-11-19-fuzzy-logic-could-book-more-flights.md",
                 "slug": "fuzzy-logic-could-book-more-flights",
                 "similarity": 0.436435375615129
-            },
-            {
-                "file": "2016-01-27-road-to-interchange.md",
-                "slug": "road-to-interchange",
-                "similarity": 0.42736156316548957
             }
         ]
     },
@@ -1527,14 +1527,14 @@
                 "similarity": 0.47089413465669683
             },
             {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.4694181626065416
+            },
+            {
                 "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
                 "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
                 "similarity": 0.462522764536361
-            },
-            {
-                "file": "2010-06-23-why-google-is-a-more-typical-business-than-you-think.md",
-                "slug": "why-google-is-a-more-typical-business-than-you-think",
-                "similarity": 0.4371868928950745
             }
         ]
     },
@@ -1772,6 +1772,11 @@
         "hash": "201ac54fcde1e410e428c02102873ed63ae3cce4a60f45c6cd5287ed64ab18a9",
         "post_similarity": [
             {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 1.077598746543481
+            },
+            {
                 "file": "2025-11-05-strategy-ai.md",
                 "slug": "strategy-ai",
                 "similarity": 0.8857048108528458
@@ -1815,11 +1820,6 @@
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
                 "slug": "when-will-ai-disrupt-travel",
                 "similarity": 0.6768672193057641
-            },
-            {
-                "file": "2010-06-23-why-google-is-a-more-typical-business-than-you-think.md",
-                "slug": "why-google-is-a-more-typical-business-than-you-think",
-                "similarity": 0.671042470017975
             }
         ]
     },
@@ -1926,14 +1926,14 @@
                 "similarity": 0.6480223238318442
             },
             {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.6465442453199738
+            },
+            {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
                 "similarity": 0.6397674273287096
-            },
-            {
-                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
-                "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.6391007333173688
             }
         ]
     },
@@ -2015,6 +2015,11 @@
                 "similarity": 0.7287948920130224
             },
             {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.6449599285917527
+            },
+            {
                 "file": "2025-11-05-strategy-ai.md",
                 "slug": "strategy-ai",
                 "similarity": 0.6262160803522036
@@ -2043,11 +2048,6 @@
                 "file": "2015-09-07-js-not-just-language-of-the-web.md",
                 "slug": "js-not-just-language-of-the-web",
                 "similarity": 0.4828674166641603
-            },
-            {
-                "file": "2016-01-27-road-to-interchange.md",
-                "slug": "road-to-interchange",
-                "similarity": 0.47663404693798184
             }
         ]
     },
@@ -2399,6 +2399,11 @@
         "hash": "8cabbe19621270d763f648f3133c9b270e5adb2fc3cbc559e11feb9e3393843b",
         "post_similarity": [
             {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.8599510451878811
+            },
+            {
                 "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
                 "slug": "software-engineering-reimagined-ai-native-era",
                 "similarity": 0.7780560712136624
@@ -2442,11 +2447,6 @@
                 "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
                 "slug": "web-directions-south-2009-cloud-sourcing-the-business",
                 "similarity": 0.597737108315016
-            },
-            {
-                "file": "2015-09-07-js-not-just-language-of-the-web.md",
-                "slug": "js-not-just-language-of-the-web",
-                "similarity": 0.5905046679329513
             }
         ]
     },
@@ -2481,6 +2481,11 @@
                 "similarity": 0.3983146134563607
             },
             {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.37544303373580584
+            },
+            {
                 "file": "2017-08-12-embodied-bots.md",
                 "slug": "embodied-bots",
                 "similarity": 0.3462689793354483
@@ -2499,11 +2504,6 @@
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
                 "similarity": 0.31959469535775664
-            },
-            {
-                "file": "2007-03-05-fuzzys-where-its-at-or-will-be-eventually.md",
-                "slug": "fuzzys-where-its-at-or-will-be-eventually",
-                "similarity": 0.3147999937607878
             }
         ]
     },
@@ -2746,6 +2746,11 @@
                 "similarity": 0.541116928486047
             },
             {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.5356468911347457
+            },
+            {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
                 "similarity": 0.5327140281173791
@@ -2784,11 +2789,6 @@
                 "file": "2008-05-09-eeepcs-power-is-in-the-network-not-the-machine.md",
                 "slug": "eeepcs-power-is-in-the-network-not-the-machine",
                 "similarity": 0.4768698909614734
-            },
-            {
-                "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
-                "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
-                "similarity": 0.4751089482122951
             }
         ]
     },
@@ -3621,6 +3621,11 @@
                 "similarity": 0.6946478436543108
             },
             {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.6551336879906356
+            },
+            {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
                 "similarity": 0.6215781292221086
@@ -3639,11 +3644,6 @@
                 "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
                 "slug": "why-industries-can-still-be-revolutionised-on-the-web",
                 "similarity": 0.5744612055475523
-            },
-            {
-                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
-                "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.5682365438112722
             }
         ]
     },
@@ -3656,6 +3656,11 @@
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
                 "similarity": 0.8857048108528458
+            },
+            {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.8477565727269984
             },
             {
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
@@ -3696,11 +3701,6 @@
                 "file": "2007-04-30-super-computer-required-to-simulate-half-a-mouse-brain.md",
                 "slug": "super-computer-required-to-simulate-half-a-mouse-brain",
                 "similarity": 0.45851989327944853
-            },
-            {
-                "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
-                "slug": "why-industries-can-still-be-revolutionised-on-the-web",
-                "similarity": 0.4289993759594998
             }
         ]
     },
@@ -4176,6 +4176,11 @@
                 "similarity": 0.7261723504609578
             },
             {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.7242534829838894
+            },
+            {
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
                 "similarity": 0.6903233893787365
@@ -4209,11 +4214,6 @@
                 "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
                 "slug": "datatium-a-material-to-create-responsive-experiences",
                 "similarity": 0.49749476463333003
-            },
-            {
-                "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
-                "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
-                "similarity": 0.46303890295481376
             }
         ]
     },
@@ -4367,6 +4367,11 @@
                 "similarity": 0.5037250575268104
             },
             {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.4957167585269476
+            },
+            {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
                 "slug": "a-clickster-fail-of-epic-proportions",
                 "similarity": 0.4809345419458175
@@ -4380,11 +4385,6 @@
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
                 "similarity": 0.4656267462603569
-            },
-            {
-                "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
-                "slug": "why-industries-can-still-be-revolutionised-on-the-web",
-                "similarity": 0.4449773506496937
             }
         ]
     },
@@ -4771,6 +4771,11 @@
                 "similarity": 0.6621875769179527
             },
             {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.6409426891644863
+            },
+            {
                 "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
                 "slug": "why-industries-can-still-be-revolutionised-on-the-web",
                 "similarity": 0.6360689360291769
@@ -4779,11 +4784,6 @@
                 "file": "2011-11-07-app-stores-are-delivery-channels-not-search-engines.md",
                 "slug": "app-stores-are-delivery-channels-not-search-engines",
                 "similarity": 0.6352980689631903
-            },
-            {
-                "file": "2008-05-09-eeepcs-power-is-in-the-network-not-the-machine.md",
-                "slug": "eeepcs-power-is-in-the-network-not-the-machine",
-                "similarity": 0.6343275128434714
             }
         ]
     },
@@ -4917,6 +4917,11 @@
                 "similarity": 0.7287948920130224
             },
             {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.6462304925045904
+            },
+            {
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
                 "slug": "when-will-ai-disrupt-travel",
                 "similarity": 0.5672514128401714
@@ -4950,11 +4955,6 @@
                 "file": "2009-07-26-case-study-django-agile-sportsgirl-redevelopment.md",
                 "slug": "case-study-django-agile-sportsgirl-redevelopment",
                 "similarity": 0.44209184447867184
-            },
-            {
-                "file": "2015-09-07-js-not-just-language-of-the-web.md",
-                "slug": "js-not-just-language-of-the-web",
-                "similarity": 0.41842616729122495
             }
         ]
     },
@@ -5108,6 +5108,11 @@
                 "similarity": 0.49446183305780045
             },
             {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.4525445679573482
+            },
+            {
                 "file": "2007-05-03-drmed-for-life.md",
                 "slug": "drmed-for-life",
                 "similarity": 0.4338998235434826
@@ -5121,11 +5126,63 @@
                 "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
                 "slug": "web-directions-south-2009-cloud-sourcing-the-business",
                 "similarity": 0.42143415272585827
+            }
+        ]
+    },
+    {
+        "file": "2025-12-22-ai-incentives-power.md",
+        "slug": "ai-incentives-power",
+        "hash": "8a85fce6850d243070b27c829344a0dabd1d3ca72548e1708d0d90ca888872af",
+        "post_similarity": [
+            {
+                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
+                "slug": "now-or-never-growth-opportunities-in-retail",
+                "similarity": 1.077598746543481
             },
             {
-                "file": "2007-12-19-sms-bamboozlement.md",
-                "slug": "sms-bamboozlement",
-                "similarity": 0.4060040314026237
+                "file": "2023-08-31-ai-works-now.md",
+                "slug": "ai-works-now",
+                "similarity": 0.8599510451878811
+            },
+            {
+                "file": "2025-11-05-strategy-ai.md",
+                "slug": "strategy-ai",
+                "similarity": 0.8477565727269984
+            },
+            {
+                "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
+                "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
+                "similarity": 0.7743759498180481
+            },
+            {
+                "file": "2025-02-27-when-will-ai-disrupt-travel.md",
+                "slug": "when-will-ai-disrupt-travel",
+                "similarity": 0.7242534829838894
+            },
+            {
+                "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
+                "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
+                "similarity": 0.6790583010656543
+            },
+            {
+                "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
+                "slug": "the-golden-age-of-mobile-soon-maybe",
+                "similarity": 0.6600461494212394
+            },
+            {
+                "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
+                "slug": "web-directions-south-2009-cloud-sourcing-the-business",
+                "similarity": 0.6551336879906356
+            },
+            {
+                "file": "2011-10-04-on-a-post-flash-world-and-adobes-place-within-it.md",
+                "slug": "on-a-post-flash-world-and-adobes-place-within-it",
+                "similarity": 0.6535791676906172
+            },
+            {
+                "file": "2009-12-20-prediction-2010-will-be-the-year-apple-and-google-have-a-cage-fight.md",
+                "slug": "prediction-2010-will-be-the-year-apple-and-google-have-a-cage-fight",
+                "similarity": 0.649377109371718
             }
         ]
     },
@@ -5148,6 +5205,11 @@
                 "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
                 "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
                 "similarity": 0.6166418260178148
+            },
+            {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.6002401052761979
             },
             {
                 "file": "2007-03-05-fuzzys-where-its-at-or-will-be-eventually.md",
@@ -5178,11 +5240,6 @@
                 "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
                 "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
                 "similarity": 0.44960472650092204
-            },
-            {
-                "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
-                "slug": "web-directions-south-2009-cloud-sourcing-the-business",
-                "similarity": 0.44739142914758656
             }
         ]
     },
