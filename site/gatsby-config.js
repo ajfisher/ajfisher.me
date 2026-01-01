@@ -19,14 +19,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `image`,
-        path: `${__dirname}/src/img`,
+        path: `${__dirname}/../content/img`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `content`,
-        path: `${__dirname}/src/content`,
+        path: `${__dirname}/../content/text`,
         ignore: [`**/.*`],
       },
     },
@@ -41,7 +41,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `tagdata`,
-        path: `${__dirname}/src/lib/tag_data.json`,
+        path: `${__dirname}/../content/lib/tag_data.json`,
       },
     },
     `gatsby-plugin-image`,
@@ -113,7 +113,7 @@ module.exports = {
         background_color: `#FF5E9A`,
         theme_color: `#FF5E9A`,
         display: `minimal-ui`,
-        icon: `src/img/ajfisher_large.jpg`, // This path is relative to the root of the site.
+        icon: `../content/img/ajfisher_large.jpg`, // This path is relative to the root of the site.
       },
     },
     {
