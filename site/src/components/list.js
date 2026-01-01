@@ -83,41 +83,41 @@ const ListItemPlaceholderImage = () => {
 
   switch (Math.floor(Math.random() * noPlaceholders)) {
     case 1:
-      return(<StaticImage src="../img/posts/listimages/li1.png"
+      return(<StaticImage src="../../../content/img/posts/listimages/li1.png"
         placeholder="blurred" layout="fullWidth" alt="" />);
     case 2:
-      return(<StaticImage src="../img/posts/listimages/li2.png"
+      return(<StaticImage src="../../../content/img/posts/listimages/li2.png"
         placeholder="blurred" layout="fullWidth" alt=""/>);
     case 3:
-      return(<StaticImage src="../img/posts/listimages/li3.png"
+      return(<StaticImage src="../../../content/img/posts/listimages/li3.png"
         placeholder="blurred" layout="fullWidth" alt=""/>);
     case 4:
-      return(<StaticImage src="../img/posts/listimages/li4.png"
+      return(<StaticImage src="../../../content/img/posts/listimages/li4.png"
         placeholder="blurred" layout="fullWidth" alt=""/>);
     case 5:
-      return(<StaticImage src="../img/posts/listimages/li5.png"
+      return(<StaticImage src="../../../content/img/posts/listimages/li5.png"
         placeholder="blurred" layout="fullWidth" alt=""/>);
     case 6:
-      return(<StaticImage src="../img/posts/listimages/li6.png"
+      return(<StaticImage src="../../../content/img/posts/listimages/li6.png"
         placeholder="blurred" layout="fullWidth" alt=""/>);
     case 7:
-      return(<StaticImage src="../img/posts/listimages/li7.png"
+      return(<StaticImage src="../../../content/img/posts/listimages/li7.png"
         placeholder="blurred" layout="fullWidth" alt=""/>);
     case 8:
-      return(<StaticImage src="../img/posts/listimages/li8.png"
+      return(<StaticImage src="../../../content/img/posts/listimages/li8.png"
         placeholder="blurred" layout="fullWidth" alt=""/>);
     case 9:
-      return(<StaticImage src="../img/posts/listimages/li9.png"
+      return(<StaticImage src="../../../content/img/posts/listimages/li9.png"
         placeholder="blurred" layout="fullWidth" alt=""/>);
     case 10:
-      return(<StaticImage src="../img/posts/listimages/li10.png"
+      return(<StaticImage src="../../../content/img/posts/listimages/li10.png"
         placeholder="blurred" layout="fullWidth" alt=""/>);
     case 11:
-      return(<StaticImage src="../img/posts/listimages/li11.png"
+      return(<StaticImage src="../../../content/img/posts/listimages/li11.png"
         placeholder="blurred" layout="fullWidth" alt=""/>);
     default:
       // this conveniently handles a result of 0 as well.
-      return(<StaticImage src="../img/posts/listimages/li0.png"
+      return(<StaticImage src="../../../content/img/posts/listimages/li0.png"
         placeholder="blurred" layout="fullWidth" alt=""/>);
   }
 };
