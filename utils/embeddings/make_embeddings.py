@@ -69,7 +69,7 @@ def main():
     parser.add_argument(
         "-i",
         "--input",
-        default="../../src/content/posts",
+        default="../../site/src/content/posts",
         help="Directory containing markdown posts",
     )
     parser.add_argument(
@@ -222,4 +222,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
