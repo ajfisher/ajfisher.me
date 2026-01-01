@@ -1,6 +1,6 @@
 .PHONY: help lint test build
 
-INPUT_DIR ?= ../../src/content/posts
+INPUT_DIR ?= ../../site/src/content/posts
 OUTPUT_JSON ?= similarity_data.json
 CHUNK_SIZE ?= 256
 OVERLAP_SIZE ?= 32
@@ -12,9 +12,6 @@ help:
 	@echo "install:         Install all the parts needed for local dev"
 	@echo "clean:           Completely clean everything up"
 	@echo "clean-env:       Remove the virtual environment as well"
-	@echo "dev:             Run the development environment"
-	@echo "test:            Run tests."
-	@echo "pre-commit:      Run lint for site."
 	@echo "build:           Build the related documents file"
 
 clean-env:

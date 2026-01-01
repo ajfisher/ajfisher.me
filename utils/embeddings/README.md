@@ -43,7 +43,7 @@ take up to 30 seconds.
 embedding data is produced:
 
 - `-i, --input` – directory containing markdown posts (default
-  `../../src/content/posts`)
+  `../../site/src/content/posts`)
 - `-o, --output` – where to write the JSON output (default
   `similarity_data.json`)
 - `--chunk-size` – token count to use for each chunk (default `256`)
