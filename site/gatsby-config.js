@@ -34,7 +34,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `related-posts`,
-        path: `${__dirname}/utils/embeddings/similarity_data.json`,
+        path: `${__dirname}/../utils/embeddings/similarity_data.json`,
       },
     },
     {
