@@ -1,0 +1,13 @@
+{
+  "extends": "astro/tsconfigs/base",
+  "exclude": [
+    "node_modules",
+    "dist",
+    "public"
+  ],
+  "compilerOptions": {
+    "checkJs": false,
+    "strict": false,
+    "noImplicitAny": false
+  }
+}

@@ -40,9 +40,9 @@ const relatedPosts = allPosts.filter(p => relatedSlugs.includes(p.data.slug));
   <aside>
     <h2>Tags</h2>
     <ul>
-      {entry.data.tags.map(tag =>
-        <li><a href=`/tagged/${tag.slug}/`>{tag.name}</li>
-      )}
+      {entry.data.tags.map(tag => (
+        <li><a href=`/tagged/${tag.slug}/`>{tag.name}</a></li>
+        ))}
     </ul>
   </aside>
   {relatedPosts.length > 0 && (
