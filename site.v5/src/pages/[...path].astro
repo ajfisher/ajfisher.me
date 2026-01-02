@@ -18,7 +18,6 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 
 // Related posts logic
-console.log('Finding related posts for:', entry.data.slug);
 const currentSlug = entry.data.slug;
 const similarityData = similarityScores.find(item => item.slug === currentSlug);
 const relatedSlugs = similarityData

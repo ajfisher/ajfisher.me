@@ -25,7 +25,7 @@ const { page } = Astro.props;
   <section class="post-list">
     {page.data.map((post) => (
       <article>
-        <h2><a href={`/${post.data.uri}/`}>{post.data.title}</a></h2>
+        <h2><a href={`/${post.data.uri}`}>{post.data.title}</a></h2>
         <time>{post.data.date.toLocaleDateString()}</time>
         <p>{post.data.excerpt}</p>
       </article>
