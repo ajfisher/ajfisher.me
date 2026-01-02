@@ -1,0 +1,52 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths({ paginate }) {
+  const allPosts = await getCollection('posts');
+
+  // Sort by date descending
+  const sortedPosts = allPosts.sort((a, b) =>
+    b.data.date.valueOf() - a.data.date.valueOf()
+  );
+
+  // Requirement: Paginate into groups of 11
+  return paginate(sortedPosts, { pageSize: 11 });
+}
+
+// All paginated data is passed via the "page" prop
+const { page } = Astro.props;
+---
+
+<BaseLayout title={`Blog Archive - Page ${page.currentPage}`}>
+  <h1>Blog Archive</h1>
+
+  <section class="post-list">
+    {page.data.map((post) => (
+      <article>
+        <h2><a href={`/${post.data.uri}/`}>{post.data.title}</a></h2>
+        <time>{post.data.date.toLocaleDateString()}</time>
+        <p>{post.data.excerpt}</p>
+      </article>
+    ))}
+  </section>
+
+  <nav class="pagination">
+    {page.url.prev ? <a href={page.url.prev}>&larr; Newer</a> : null}
+
+    <span>Page {page.currentPage} of {page.lastPage}</span>
+
+    {page.url.next ? <a href={page.url.next}>Older &rarr;</a> : null}
+  </nav>
+</BaseLayout>
+
+<style>
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+  }
+</style>
