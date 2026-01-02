@@ -41,8 +41,8 @@ metadata.tagimage = imageTransform(metadata.tagimage);
 ---
 <BaseLayout title={metadata.title}>
   <h1>{metadata.title}</h1>
+  <img src={metadata.tagimage} alt={tagName} style="width: 100%"/>
   <p>{metadata.intro}</p>
-  <img src={metadata.tagimage} alt={tagName} />
 
   <ul>
     {posts.map(post => (

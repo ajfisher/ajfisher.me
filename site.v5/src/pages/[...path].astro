@@ -34,9 +34,10 @@ entry.data.featureimage = imageTransform(entry.data.featureimage);
 <BaseLayout title={entry.data.title}>
   <article>
     <header>
+      <h1>{entry.data.title}</h1>
       <p><img src={entry.data.featureimage} style="width: 100%"/></p>
+      <p>{entry.data.excerpt}</p>
     </header>
-    <h1>{entry.data.title}</h1>
     <Content />
   </article>
   <aside>
