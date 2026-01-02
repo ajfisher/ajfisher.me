@@ -1,7 +1,7 @@
 import { defineCollection } from 'astro:content';
 import { glob, _file } from 'astro/loaders';
 import { z } from 'astro/zod';
-import { imageTransform } from './src/lib/utils.mjs';
+// import { imageTransform } from './lib/utils.mjs';
 
 // use this to make the tags URL-friendly
 const slugifyTag = (tag) => tag
@@ -30,8 +30,8 @@ const baseSchema = z.object({
   twitter_excerpt: z.string().optional(),
 
   // image path
-  featureimage: z.string().optional().transform(imageTransform),
-  listimage: z.string().optional().transform(imageTransform),
+  featureimage: z.string().optional(),
+  listimage: z.string().optional(),
   imageby: z.string().optional(),
 
   featured: z.boolean().optional().default(false),
