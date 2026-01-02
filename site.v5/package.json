@@ -1,0 +1,21 @@
+{
+  "name": "site.v5",
+  "version": "5.0.0",
+  "description": "astro port of the website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "astro": "^5.16.6",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.6",
+    "typescript": "^5.9.3"
+  }
+}
