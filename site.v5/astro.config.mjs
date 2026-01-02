@@ -1,6 +1,9 @@
-import { defineConfig } from 'astro/config';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+
+import { defineConfig } from 'astro/config';
+import rehypeRaw from 'rehype-raw';
+import remarkPullQuotes from './src/lib/remark-pullquotes.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -15,4 +18,8 @@ export default defineConfig({
     format: 'directory', // Ensures /path/to/page/ index.html structure
   },
   trailingSlash: 'always',
+  markdown: {
+    remarkPlugins: [remarkPullQuotes],
+    rehypePlugins: [rehypeRaw],
+  },
 });
