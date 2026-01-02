@@ -1,0 +1,48 @@
+---
+// This is the "Frontmatter" of the Astro component
+// Logic here runs only at build time.
+const { title = "AJ Fisher" } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <style is:global>
+      /* Replace your GlobalStyledComponents here */
+      :root {
+        --bg: #fff;
+        --text: #333;
+        --accent: #ff5500;
+      }
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: system-ui, sans-serif;
+        line-height: 1.5;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      a { color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/">Home</a> |
+        <a href="/blog/">Article archive</a> |
+        <a href="/who/">Who is @ajfisher</a> |
+        <a href="/colphon/">Colophon</a> |
+        <a href="/dis-everything/">Disclaimer & Disclosure</a>
+      </nav>
+    </header>
+
+    <main>
+      <slot /> </main>
+
+    <footer>
+      <p>&copy; {new Date().getFullYear()} AJ Fisher</p>
+    </footer>
+  </body>
+</html>

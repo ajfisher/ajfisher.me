@@ -1,0 +1,50 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import tagMetadata from '../../../../content/lib/tag_data.json';
+
+export async function getStaticPaths() {
+  const posts = (await getCollection('posts')).sort(
+    (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+  );
+  // Get unique tags by their SLUG to avoid duplicates
+  const tagMap = new Map();
+  posts.forEach(post => {
+    post.data.tags.forEach(t => {
+      tagMap.set(t.slug, t.name);
+    });
+  });
+
+  return Array.from(tagMap.entries()).map(([slug, name]) => {
+    const tagPosts = posts.filter(post =>
+      post.data.tags.some(t => t.slug === slug)
+      );
+
+    const metadata = tagMetadata.find(item => item.tag.toLowerCase() === name.toLowerCase()) || {
+      tag: name,
+      title: name,
+      intro: `Archives for the ${name} category.`
+    };
+
+    metadata.tagimage = metadata.tagimage.replace(/^.*\/img/, '/img/');
+
+    return {
+      params: { tag: slug },
+      props: { tagName: name, posts: tagPosts, metadata },
+    };
+  });
+}
+
+const { tagName, posts, metadata } = Astro.props;
+---
+<BaseLayout title={metadata.title}>
+  <h1>{metadata.title}</h1>
+  <p>{metadata.intro}</p>
+  <img src={metadata.tagimage} alt={tagName} />
+
+  <ul>
+    {posts.map(post => (
+      <li><a href={`/${post.data.uri}`}>{post.data.title}</a></li>
+    ))}
+  </ul>
+</BaseLayout>
