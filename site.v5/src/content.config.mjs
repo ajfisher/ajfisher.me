@@ -1,8 +1,7 @@
 import { defineCollection } from 'astro:content';
-import { glob, file } from 'astro/loaders';
+import { glob, _file } from 'astro/loaders';
 import { z } from 'astro/zod';
-
-const imageTransform = (val) => val ? val.replace(/^.*\/img/, '/img/') : val;
+import { imageTransform } from './src/lib/utils.mjs';
 
 // use this to make the tags URL-friendly
 const slugifyTag = (tag) => tag
@@ -32,7 +31,7 @@ const baseSchema = z.object({
 
   // image path
   featureimage: z.string().optional().transform(imageTransform),
-  listimage: z.string().optional(),
+  listimage: z.string().optional().transform(imageTransform),
   imageby: z.string().optional(),
 
   featured: z.boolean().optional().default(false),

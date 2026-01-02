@@ -7,17 +7,29 @@ const featured = (
   ).sort(
     (a,b) => b.data.date.valueOf() - a.data.date.valueOf()
   );
-const recent = (await getCollection('posts')).sort((a,b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 15);
+const recent = (await getCollection('posts'))
+  .sort((a,b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 15);
 ---
 
 <BaseLayout title="AJ Fisher">
   <h1>Featured</h1>
   <ul>
-    {featured.map(p => <li><a href={`/${p.data.uri}`}>{p.data.title}</a></li>)}
+    {featured.map(p =>
+      <li>
+        <img src={p.data.listimage} style="width: 100%"/>
+        <h3><a href={`/${p.data.uri}`}>{p.data.title}</a></h3>
+      </li>
+    )}
   </ul>
 
   <h1>Recent</h1>
   <ul>
-    {recent.map(p => <li><a href={`/${p.data.uri}`}>{p.data.title}</a></li>)}
+    {recent.map(p =>
+      <li>
+        <img src={p.data.listimage} style="width: 100%"/>
+        <h3><a href={`/${p.data.uri}`}>{p.data.title}</a></h3>
+      </li>
+    )}
   </ul>
 </BaseLayout>

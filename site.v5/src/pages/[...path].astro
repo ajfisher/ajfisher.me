@@ -32,7 +32,7 @@ const relatedPosts = allPosts.filter(p => relatedSlugs.includes(p.data.slug));
 <BaseLayout title={entry.data.title}>
   <article>
     <header>
-      <p><img src={entry.data.featureimage}/></p>
+      <p><img src={entry.data.featureimage} style="width: 100%"/></p>
     </header>
     <h1>{entry.data.title}</h1>
     <Content />
@@ -40,14 +40,20 @@ const relatedPosts = allPosts.filter(p => relatedSlugs.includes(p.data.slug));
   <aside>
     <h2>Tags</h2>
     <ul>
-      {entry.data.tags.map(tag => <li><a href=`/tagged/${tag.slug}/`>{tag.name}</li>)}
+      {entry.data.tags.map(tag =>
+        <li><a href=`/tagged/${tag.slug}/`>{tag.name}</li>
+      )}
     </ul>
   </aside>
   {relatedPosts.length > 0 && (
     <aside>
       <h3>Related Reading</h3>
       <ul>
-        {relatedPosts.map(p => <li><a href={`/${p.data.uri}`}>{p.data.title}</a></li>)}
+        {relatedPosts.map(p =>
+          <li>
+            <a href={`/${p.data.uri}`}>{p.data.title}</a>
+          </li>
+        )}
       </ul>
     </aside>
   )}
