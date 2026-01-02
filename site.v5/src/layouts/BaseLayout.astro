@@ -1,7 +1,8 @@
 ---
-// This is the "Frontmatter" of the Astro component
-// Logic here runs only at build time.
+// Base layout component for the site to hook all the other pages into
+
 const { title = "AJ Fisher" } = Astro.props;
+
 ---
 <html lang="en">
   <head>
@@ -33,13 +34,14 @@ const { title = "AJ Fisher" } = Astro.props;
         <a href="/">Home</a> |
         <a href="/blog/">Article archive</a> |
         <a href="/who/">Who is @ajfisher</a> |
-        <a href="/colphon/">Colophon</a> |
+        <a href="/colophon/">Colophon</a> |
         <a href="/dis-everything/">Disclaimer & Disclosure</a>
       </nav>
     </header>
 
     <main>
-      <slot /> </main>
+      <slot />
+    </main>
 
     <footer>
       <p>&copy; {new Date().getFullYear()} AJ Fisher</p>
