@@ -35,44 +35,6 @@ const LeadersPage = ({data}) => {
     large_title: false,
   };
 
-  const submitURL = 'https://docs.google.com/forms/d/e/1FAIpQLSei22e0iBvHq5b3wrhOTetsVk_srB4a1pLzotYPKnGmi2dNYg/formResponse';
-
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    try {
-
-      // eslint-disable-next-line no-undef
-      const response = await fetch(submitURL, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers:{
-          'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        // eslint-disable-next-line no-undef
-        body: new URLSearchParams({
-          'entry.1670649209': email
-        })
-      });
-
-      // eslint-disable-next-line no-undef
-      console.log(response.status);
-      if (response.status === 0) {
-        // lets assumer we're okay
-        setMessage("Email submitted successfully!");
-        setEmail("");
-      } else {
-        setMessage("Submission failed. Please try again.");
-      }
-
-    } catch (error) {
-      setMessage("An error occurred: " + error.message);
-    }
-  };
-
   return (
     <Layout frontmatter={frontmatter} tags={tags}
       path='/leaders' featuredimage={featuredImage}
