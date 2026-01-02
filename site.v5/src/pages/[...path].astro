@@ -1,0 +1,63 @@
+---
+import { getCollection, render } from 'astro:content';
+import similarityScores from '../../../utils/embeddings/similarity_data.json';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { imageTransform } from '../lib/utils.mjs';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  const pages = await getCollection('pages');
+
+  // Combine both collections into one set of routes
+  return [...posts, ...pages].map((entry) => ({
+    params: { path: entry.data.uri }, // Using the transformed URI
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+// Related posts logic
+const currentSlug = entry.data.slug;
+const similarityData = similarityScores.find(item => item.slug === currentSlug);
+const relatedSlugs = similarityData
+  ? similarityData.post_similarity.slice(0, 3).map(p => p.slug)
+  : [];
+
+const allPosts = await getCollection('posts');
+const relatedPosts = allPosts.filter(p => relatedSlugs.includes(p.data.slug));
+
+entry.data.featureimage = imageTransform(entry.data.featureimage);
+
+---
+<BaseLayout title={entry.data.title}>
+  <article>
+    <header>
+      <h1>{entry.data.title}</h1>
+      <p><img src={entry.data.featureimage} style="width: 100%"/></p>
+      <p>{entry.data.excerpt}</p>
+    </header>
+    <Content />
+  </article>
+  <aside>
+    <h2>Tags</h2>
+    <ul>
+      {entry.data.tags.map(tag => (
+        <li><a href=`/tagged/${tag.slug}/`>{tag.name}</a></li>
+        ))}
+    </ul>
+  </aside>
+  {relatedPosts.length > 0 && (
+    <aside>
+      <h3>Related Reading</h3>
+      <ul>
+        {relatedPosts.map(p =>
+          <li>
+            <a href={`/${p.data.uri}`}>{p.data.title}</a>
+          </li>
+        )}
+      </ul>
+    </aside>
+  )}
+</BaseLayout>

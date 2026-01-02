@@ -1,0 +1,35 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { imageTransform } from '../lib/utils.mjs';
+
+const featured = (
+    await getCollection('posts', ({ data }) => data.featured === true))
+  .sort((a,b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 5);
+const recent = (await getCollection('posts'))
+  .sort((a,b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 15);
+---
+
+<BaseLayout title="AJ Fisher">
+  <h1>Featured</h1>
+  <ul>
+    {featured.map(p =>
+      <li>
+        <img src={imageTransform(p.data.listimage)} style="width: 100%"/>
+        <h3><a href={`/${p.data.uri}`}>{p.data.title}</a></h3>
+      </li>
+    )}
+  </ul>
+
+  <h1>Recent</h1>
+  <ul>
+    {recent.map(p =>
+      <li>
+        <img src={imageTransform(p.data.listimage)} style="width: 100%"/>
+        <h3><a href={`/${p.data.uri}`}>{p.data.title}</a></h3>
+      </li>
+    )}
+  </ul>
+</BaseLayout>
