@@ -12,7 +12,7 @@ const recent = (await getCollection('posts'))
   .slice(0, 15);
 ---
 
-<BaseLayout title="AJ Fisher">
+<BaseLayout title="AJ Fisher" slug="/">
   <h1>Featured</h1>
   <ul>
     {featured.map(p =>
