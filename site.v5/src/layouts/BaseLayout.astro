@@ -1,32 +1,24 @@
 ---
 // Base layout component for the site to hook all the other pages into
+import '../styles/global.css';
 
-const { title = "AJ Fisher" } = Astro.props;
+import Header from '../components/Header.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
 
+const {
+  title = "AJ Fisher",
+  slug = '/',
+} = Astro.props;
+
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).toString() : undefined;
 ---
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>{title}</title>
-    <style is:global>
-      /* Replace your GlobalStyledComponents here */
-      :root {
-        --bg: #fff;
-        --text: #333;
-        --accent: #ff5500;
-      }
-      body {
-        background: var(--bg);
-        color: var(--text);
-        font-family: system-ui, sans-serif;
-        line-height: 1.5;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 2rem;
-      }
-      a { color: var(--accent); }
-    </style>
+    {canonical && <link rel="canonical" href={canonical} />}
   </head>
   <body>
     <header>
@@ -40,11 +32,11 @@ const { title = "AJ Fisher" } = Astro.props;
     </header>
 
     <main>
-      <slot />
+      <article>
+        <slot />
+      </article>
     </main>
 
-    <footer>
-      <p>&copy; {new Date().getFullYear()} AJ Fisher</p>
-    </footer>
+    <Footer slug={slug} />
   </body>
 </html>
