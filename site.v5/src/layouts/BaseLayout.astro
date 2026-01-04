@@ -129,7 +129,16 @@ const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).toString(
           }
         }
 
+        & p:has(img) {
+          border: 1px solid red;
+          margin-bottom: 0px;
+          padding: 0;
+          margin-left: 0px !important;
+          margin-right: 0px !important;
+        }
+
         & p img {
+          max-width: 1000px !important;
           width: 100%;
           height: auto;
         }

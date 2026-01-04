@@ -124,17 +124,6 @@ article h5 {
 }
 
 /** # TODO: review these styles as no gatsby **/
-article p img {
-    /** margin: 0 calc(-1 * var(--gutter)) !important;**/
-    max-width: 1000px !important;
-}
-
-article p:has(img) {
-    margin-bottom: 0px;
-    padding: 0;
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-}
 
 article p.caption,
 article p img + em {
