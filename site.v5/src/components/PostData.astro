@@ -1,0 +1,25 @@
+---
+/** used to pull in the post data for the supporting sidebar information **/
+
+import { longDate } from '../lib/utils.mjs';
+
+
+const {
+  title = "This is a title",
+  author = 'ajfisher',
+  tags = [],
+  date: publicationDate = new Date(),
+} = Astro.props;
+---
+
+  <h2>{title}</h2>
+  <p class="published">
+    Published on {longDate(publicationDate)} by {author}
+  </p>
+  <p class="tags">
+    Tags:<br/>
+    {tags.map(tag => (
+      <a href=`/tagged/${tag.slug}/`>{tag.name}</a>
+    ))}
+  </p>
+

@@ -170,6 +170,50 @@ const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).toString(
           order: 2;
         }
       }
+
+      /** post data styles **/
+      & section {
+        padding: 0 var(--gutter);
+
+        @media only screen and (min-width: 821px) {
+          padding: 0;
+        }
+
+        & h2 {
+          display: none;
+
+          @media only screen and (min-width: 821px) {
+            display: block;
+            font-size: 3rem;
+            color: var(--dark-base);
+            margin: var(--gutter) 0;
+            line-height: 0.9;
+          }
+
+          @media only screen and (min-width: 1051px) {
+            font-size: 4rem;
+          }
+        }
+
+        & p.published {
+          display: none;
+
+          @media only screen and (min-width: 821px) {
+            display: inline;
+
+            font-size: 2rem;
+            color: var(--light-text-colour);
+            background: var(--dark-grey);
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+
+            box-shadow: none;
+            padding: 0.5rem;
+            border-bottom: 0.4rem solid var(--light-base);
+            border-radius: 0.2rem;
+          }
+        }
+      }
     }
   }
 </style>
