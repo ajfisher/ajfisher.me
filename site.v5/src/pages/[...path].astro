@@ -2,6 +2,8 @@
 import { getCollection, render } from 'astro:content';
 import similarityScores from '../../../utils/embeddings/similarity_data.json';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import PostData from '../components/PostData.astro';
+
 import { imageTransform } from '../lib/utils.mjs';
 
 export async function getStaticPaths() {
@@ -39,25 +41,20 @@ entry.data.featureimage = imageTransform(entry.data.featureimage);
   </Fragment>
   <section class="content">
     <Content />
+    {relatedPosts.length > 0 && (
+      <aside>
+        <h3>Related Reading</h3>
+        <ul>
+          {relatedPosts.map(p =>
+            <li>
+              <a href={`/${p.data.uri}`}>{p.data.title}</a>
+            </li>
+          )}
+        </ul>
+      </aside>
+    )}
   </section>
-  {relatedPosts.length > 0 && (
-    <aside>
-      <h3>Related Reading</h3>
-      <ul>
-        {relatedPosts.map(p =>
-          <li>
-            <a href={`/${p.data.uri}`}>{p.data.title}</a>
-          </li>
-        )}
-      </ul>
-    </aside>
-  )}
-  <aside>
-    <h2>Tags</h2>
-    <ul>
-      {entry.data.tags.map(tag => (
-        <li><a href=`/tagged/${tag.slug}/`>{tag.name}</a></li>
-        ))}
-    </ul>
-  </aside>
+  <Fragment slot="postdata">
+      <PostData { ...entry.data } />
+  </Fragment>
 </BaseLayout>
