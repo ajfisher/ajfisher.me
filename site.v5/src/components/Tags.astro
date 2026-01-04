@@ -1,0 +1,33 @@
+---
+const {
+  tags = [],
+} = Astro.props;
+
+---
+  <p class="tags">
+    Tags:<br/>
+    {tags.map(tag => (
+      <Fragment><a href=`/tagged/${tag.slug}/`>{tag.name}</a> </Fragment>
+    ))}
+  </p>
+<style is:global>
+  p.tags {
+    display: none;
+
+    @media only screen and (min-width: 821px) {
+      display: block;
+      margin-bottom: var(--gutter);
+
+      & a {
+        font-size: 2rem;
+        background: var(--dark-grey);
+        padding: 0 0.5rem;
+        border-radius: 0.2rem;
+      }
+
+      & a:hover, a:visited:hover {
+        color: var(--light-base);
+      }
+    }
+  }
+</style>
