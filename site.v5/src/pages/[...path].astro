@@ -32,28 +32,26 @@ entry.data.featureimage = imageTransform(entry.data.featureimage);
 
 ---
 <BaseLayout title={entry.data.title} slug={entry.data.slug}>
-  <article>
-    <header>
-      <h1>{entry.data.title}</h1>
-      <p><img src={entry.data.featureimage} style="width: 100%"/></p>
-      <p>{entry.data.excerpt}</p>
-    </header>
-    <section class="content">
-      <Content />
-    </section>
-    {relatedPosts.length > 0 && (
-      <aside>
-        <h3>Related Reading</h3>
-        <ul>
-          {relatedPosts.map(p =>
-            <li>
-              <a href={`/${p.data.uri}`}>{p.data.title}</a>
-            </li>
-          )}
-        </ul>
-      </aside>
-    )}
-  </article>
+  <Fragment slot="header">
+    <h1>{entry.data.title}</h1>
+    <p><img src={entry.data.featureimage} style="width: 100%"/></p>
+    <p>{entry.data.excerpt}</p>
+  </Fragment>
+  <section class="content">
+    <Content />
+  </section>
+  {relatedPosts.length > 0 && (
+    <aside>
+      <h3>Related Reading</h3>
+      <ul>
+        {relatedPosts.map(p =>
+          <li>
+            <a href={`/${p.data.uri}`}>{p.data.title}</a>
+          </li>
+        )}
+      </ul>
+    </aside>
+  )}
   <aside>
     <h2>Tags</h2>
     <ul>
