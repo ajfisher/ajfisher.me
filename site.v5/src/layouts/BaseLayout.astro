@@ -22,9 +22,7 @@ const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).toString(
   </head>
   <body>
     {Astro.slots.has('header') && (
-      <header>
-        <slot name="header" />
-      </header>
+      <slot name="header" />
     )}
     <main>
       <article>

@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import similarityScores from '../../../utils/embeddings/similarity_data.json';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
 import PostData from '../components/PostData.astro';
 
 import { imageTransform } from '../lib/utils.mjs';
@@ -31,13 +32,10 @@ const allPosts = await getCollection('posts');
 const relatedPosts = allPosts.filter(p => relatedSlugs.includes(p.data.slug));
 
 entry.data.featureimage = imageTransform(entry.data.featureimage);
-
 ---
 <BaseLayout title={entry.data.title} slug={entry.data.slug}>
-  <Fragment slot="header">
-    <h1>{entry.data.title}</h1>
-    <p><img src={entry.data.featureimage} style="width: 100%"/></p>
-    <p>{entry.data.excerpt}</p>
+  <Fragment slot="header" { ...entry.data }>
+    <Header { ...entry.data } />
   </Fragment>
   <section class="content">
     <Content />
