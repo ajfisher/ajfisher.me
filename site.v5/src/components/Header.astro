@@ -61,26 +61,31 @@ const {
             box-shadow: 0 0.65rem 0.8rem #aaa;
 
     .headerimage, .imagefill {
-      min-height: 60vh;
+      width: 100%;
       overflow: hidden;
-      object-position: center;
-
+      min-height: 60vh;
+      height: 60vh;
+      height: clamp(60vh, 55vw, 70vh);
+      /**
+              // may not need these any more with clamp()
       @media only screen and (min-width: 501px) {
         min-height: 60vh;
       }
 
       @media only screen and (min-width: 601px) {
         min-height: 65vh;
+        height: 65vh;
       }
 
       @media only screen and (min-width: 821px) {
-        min-height: 40vh;
         max-height: 60vh;
+        height: 60vh;
       }
 
       @media only screen and (min-width: 1051px) {
         max-height: 70vh;
-      }
+        height: 70vh;
+      }**/
     }
 
     .imagefill {
@@ -90,9 +95,11 @@ const {
     }
 
     .headerimage img {
+      display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center;
     }
 
     & div.wrapper {
@@ -126,6 +133,8 @@ const {
         font-size: 4rem;
         line-height: 4rem;
         margin: 0;
+        display: flex;
+        align-items: center;
 
         &.enlarge {
           font-size: 5rem;
@@ -244,8 +253,9 @@ const {
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        gap: calc(0.25 * var(--gutter));
+        gap: calc(0.20 * var(--gutter));
         min-width: 100%;
+        margin-left: -0.2em;
 
         @media only screen and (min-width: 601px) {
           font-size: 2rem;
