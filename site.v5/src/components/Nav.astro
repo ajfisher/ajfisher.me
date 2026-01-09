@@ -31,7 +31,7 @@ import { Icon } from 'astro-icon/components';
   </ul>
 </nav>
 
-<style>
+<style is:global>
   ul {
 
     margin: 0;
@@ -60,28 +60,33 @@ import { Icon } from 'astro-icon/components';
     }
 
     & li.icons {
-      font-size: 4.2rem;
-      line-height: 6rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: calc(-0.20 * var(--gutter));
+      /**gap: calc(0.10 * var(--gutter));**/
+      min-width: 100%;
+      font-size: 5.2rem;
 
-      @media only screen and (min-width: 601px) {
-        font-size: 5rem;
+      @media only screen and (min-width: 681px) {
+        font-size: 6rem;
       }
 
       @media only screen and (min-width: 821px) {
-        font-size: 3rem;
+        font-size: 3.6rem;
       }
 
       @media only screen and (min-width: 1051px) {
-        font-size: 3.2rem;
+        font-size: 4.2rem;
       }
 
-      & a {
-        padding-right: calc(var(--gutter));
+      /**
+      & [data-icon] {
+        font-size: 4.2rem;
+        display: inline-block;
 
-        @media only screen and (min-width: 821px) {
-          padding-right: calc(0.5 * var(--gutter));
-        }
-      }
+      }**/
     }
 
     & a {
