@@ -1,0 +1,267 @@
+---
+import { Icon } from 'astro-icon/components';
+import { longDate } from '../lib/utils.mjs';
+
+const {
+  title = "This is a title",
+  featureimage = '',
+  excerpt = '',
+  featured = false,
+  date,
+  imageby = '',
+} = Astro.props;
+---
+<header>
+  {featureimage && (
+    <div class="headerimage">
+      <img src={featureimage} loading="lazy" />
+    </div>
+  )}
+  {!featureimage && (
+    <div class="imagefill"></div>
+  )}
+  <div class="wrapper">
+    <h1>{title}</h1>
+    { excerpt && (
+      <p class="lede">{excerpt}</p>
+      )}
+    { typeof(date) !== 'undefined' && (
+      <p class="date">Published: {longDate(date)}</p>
+    )}
+    <p class="postdata">
+      <span>
+        <Icon name="fa7-solid:clock"/>
+      </span>
+      <span>14 mins (3.7k words)</span>
+    </p>
+    { typeof(featureimage) !== '' && imageby !== '' && (
+      <p class="postdata">
+        <span>
+          <Icon name="fa7-solid:camera"/>
+        </span>
+        <span>{imageby}</span>
+      </p>
+    )}
+  </div>
+</header>
+<style is:global>
+  header {
+    background: var(--darkened-grey);
+    background: -moz-radial-gradient(circle, var(--dark-grey) 0%, var(--darkened-grey) 100% );
+    background: -webkit-radial-gradient(circle, var(--dark-grey) 0%, var(--darkened-grey) 100% );
+    background: radial-gradient(circle, var(--dark-grey) 0%, var(--darkened-grey) 100% );
+
+    box-sizing: border-box;
+    border-bottom: 2px solid var(--highlight);
+
+    margin: 0;
+
+    -webkit-box-shadow: 0 0.5rem 0.8rem #aaa;
+       -moz-box-shadow: 0 0.5rem 0.8rem #aaa;
+            box-shadow: 0 0.65rem 0.8rem #aaa;
+
+    .headerimage, .imagefill {
+      min-height: 60vh;
+      overflow: hidden;
+      object-position: center;
+
+      @media only screen and (min-width: 501px) {
+        min-height: 60vh;
+      }
+
+      @media only screen and (min-width: 601px) {
+        min-height: 65vh;
+      }
+
+      @media only screen and (min-width: 821px) {
+        min-height: 40vh;
+        max-height: 60vh;
+      }
+
+      @media only screen and (min-width: 1051px) {
+        max-height: 70vh;
+      }
+    }
+
+    .imagefill {
+      /** Put the background gradient in**/
+      background-color: var(--darkened-grey);
+      background: linear-gradient(45deg, var(--dark-base) 30%, var(--highlight) 100%);
+    }
+
+    .headerimage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    & div.wrapper {
+      margin:0;
+      width: 100vw;
+      margin-top: -10rem;
+      padding-top: 0rem;
+      padding-bottom: var(--gutter);
+      position: relative;
+      z-index: 2;
+
+      @media only screen and (min-width: 501px) {
+        margin-top: -12rem;
+        padding-bottom: calc(0.5 * var(--gutter));
+      }
+
+      @media only screen and (min-width: 1051px) {
+        max-width: 1020px;
+        margin: 0 auto;
+        margin-top: -15rem;
+      }
+
+      & h1 {
+        background-color: var(--light-base);
+        padding: var(--gutter);
+        color: var(--dark-base);
+        width: min-content;
+        min-width: 90vw;
+        min-height: 14rem;
+        box-sizing: border-box;
+        font-size: 4rem;
+        line-height: 4rem;
+        margin: 0;
+
+        &.enlarge {
+          font-size: 5rem;
+          line-height: 5rem;
+
+          @media only screen and (min-width: 601px) {
+            font-size: 6rem;
+            line-height: 6rem;
+          }
+
+          @media only screen and (min-width: 821px) {
+            font-size: 7rem;
+            line-height: 7rem;
+          }
+        }
+
+        &.shrink {
+
+          @media only screen and (min-width: 601px) {
+            font-size: 4.5rem;
+            line-height: 4.5rem;
+          }
+
+          @media only screen and (min-width: 821px) {
+            font-size: 5rem;
+            line-height: 5rem;
+          }
+        }
+
+        & a, & a:visited {
+          background: none;
+          padding: 0;
+          color: inherit;
+        }
+
+        & a:hover, & a:visited:hover {
+          color: var(--dark-grey);
+        }
+
+        @media only screen and (min-width: 501px) {
+          min-width: 80vw;
+        }
+
+        @media only screen and (min-width: 601px) {
+          padding: var(--gutter);
+          max-width: 70vw;
+          font-size: 5rem;
+          line-height: 5rem;
+        }
+
+        @media only screen and (min-width: 821px) {
+          font-size: 6rem;
+          line-height: 6rem;
+          width: 61vw;
+          max-height: 40vh;
+          min-width: 70vw;
+        }
+
+        @media only screen and (min-width: 1051px) {
+          min-width: 67%;
+          width: 67%;
+        }
+      }
+
+      & p {
+        color: var(--light-text-colour);
+        padding: 0 var(--gutter);
+        font-size: 1.8rem;
+        margin: var(--gutter) 0;
+        margin-block-end: 0;
+        box-sizing: border-box;
+        width: min-content;
+        min-width: 70vw;
+
+        @media only screen and (min-width: 601px) {
+          font-size: 2rem;
+          padding: 0 var(--gutter);
+          margin: calc(0.5 * var(--gutter)) 0;
+        }
+
+        @media only screen and (min-width: 821px) {
+          font-size: 2.2rem;
+          max-width: 61vw;
+        }
+
+        @media only screen and (min-width: 1051px) {
+          min-width: 67%;
+        }
+      }
+
+      & p.featured {
+        color: var(--highlight);
+        margin: calc(0.5 * var(--gutter)) var(--gutter);
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        text-decoration: underline;
+      }
+
+      & p.lede {
+        font-size: 1.8rem;
+        font-weight: normal;
+
+        @media only screen and (min-width: 601px) {
+          font-size: 2.2rem;
+        }
+      }
+
+      & p.date {
+        color: var(--light-base);
+      }
+
+      & p.postdata {
+        font-size: 1.8rem;
+        color: var(--lightened-grey);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: calc(0.25 * var(--gutter));
+        min-width: 100%;
+
+        @media only screen and (min-width: 601px) {
+          font-size: 2rem;
+        }
+
+        @container (min-width: 400px) {
+          gap: calc(0.5 * var(--gutter));
+        }
+
+        & span {
+          & svg {
+            font-size: 2.5rem;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+</style>
