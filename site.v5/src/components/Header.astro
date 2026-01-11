@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
 import { longDate } from '../lib/utils.mjs';
 
@@ -10,11 +11,13 @@ const {
   date,
   imageby = '',
 } = Astro.props;
+
 ---
 <header>
   {featureimage && (
     <div class="headerimage">
-      <img src={featureimage} loading="lazy" />
+      <Image src={featureimage} loading="lazy" alt=""
+        layout="full-width" width="1200" height="800" />
     </div>
   )}
   {!featureimage && (
@@ -34,7 +37,7 @@ const {
       </span>
       <span>14 mins (3.7k words)</span>
     </p>
-    { typeof(featureimage) !== '' && imageby !== '' && (
+    { featureimage !== '' && imageby !== '' && (
       <p class="postdata">
         <span>
           <Icon name="fa7-solid:camera"/>
