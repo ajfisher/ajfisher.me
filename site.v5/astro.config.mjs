@@ -5,6 +5,7 @@ import { defineConfig } from 'astro/config';
 import icon from "astro-icon";
 import rehypeRaw from 'rehype-raw';
 import remarkPullQuotes from './src/lib/remark-pullquotes.mjs';
+import { remarkReadingTime } from './src/lib/remark-reading-time.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -20,7 +21,7 @@ export default defineConfig({
   },
   trailingSlash: 'always',
   markdown: {
-    remarkPlugins: [remarkPullQuotes],
+    remarkPlugins: [remarkPullQuotes, remarkReadingTime],
     rehypePlugins: [rehypeRaw],
   },
   integrations: [icon()],
