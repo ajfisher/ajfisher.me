@@ -32,6 +32,11 @@ const allPosts = await getCollection('posts');
 const relatedPosts = allPosts.filter(p => relatedSlugs.includes(p.data.slug));
 
 entry.data.featureimage = imageTransform(entry.data.featureimage);
+
+// add reading time and word count to entry data
+entry.data.readingTime = entry.rendered.metadata.frontmatter.readingTime;
+entry.data.wordCount = entry.rendered.metadata.frontmatter.wordCount;
+
 ---
 <BaseLayout title={entry.data.title} slug={entry.data.slug}>
   <Fragment slot="header" { ...entry.data }>
