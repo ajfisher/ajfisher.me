@@ -64,11 +64,12 @@ import { Icon } from 'astro-icon/components';
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-      /**gap: calc(0.10 * var(--gutter));**/
+      gap: calc(0.15 * var(--gutter));
       min-width: 100%;
       font-size: 5.2rem;
+      margin-left: -0.4rem;
 
-      @media only screen and (min-width: 681px) {
+      @media only screen and (min-width: 601px) {
         font-size: 6rem;
       }
 
@@ -79,13 +80,6 @@ import { Icon } from 'astro-icon/components';
       @media only screen and (min-width: 1051px) {
         font-size: 4.2rem;
       }
-
-      /**
-      & [data-icon] {
-        font-size: 4.2rem;
-        display: inline-block;
-
-      }**/
     }
 
     & a {
