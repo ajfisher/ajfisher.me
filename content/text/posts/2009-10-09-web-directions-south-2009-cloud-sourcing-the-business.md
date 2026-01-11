@@ -4,7 +4,7 @@ date: 2009-10-09 02:26:00+00:00
 layout: post.hbt
 slug: web-directions-south-2009-cloud-sourcing-the-business
 title: Web Directions South 2009 - Cloud Sourcing the Business
-small-title: true
+smalltitle: true
 tags: cloud computing, presentation, conference, business
 ---
 

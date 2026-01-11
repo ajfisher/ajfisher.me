@@ -4,7 +4,7 @@ date: 2010-07-20 14:06:04+00:00
 layout: post.hbt
 slug: thingstreams-the-future-of-brand-product-consumer-dialogue
 title: Thingstreams - the future of product / consumer dialogue
-small-title: true
+smalltitle: true
 tags: internet, media, mobile, predictions, web, essay
 excerpt: >
     As consumers engage more directly with each other, how to brands understand

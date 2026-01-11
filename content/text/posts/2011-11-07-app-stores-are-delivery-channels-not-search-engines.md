@@ -4,7 +4,7 @@ date: 2011-11-07 11:24:03+00:00
 layout: post.hbt
 slug: app-stores-are-delivery-channels-not-search-engines
 title: App stores are delivery channels not search engines
-small-title: true
+smalltitle: true
 tags: android, internet, ios, mobile, web, apple, google, os
 excerpt: >
     The main purpose of the app store is not discovery, it's to simplify the

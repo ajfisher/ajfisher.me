@@ -4,7 +4,7 @@ date: 2016-02-13 12:00:00+11:00
 layout: post.hbt
 slug: moving-to-metalsmith
 title: Making the move to metalsmith
-large-title: true
+largetitle: true
 tags: development, javascript, web, internet, open source, nodejs
 featureimage: ../../img/posts/forging.png
 featureimage-position: 100% 100%

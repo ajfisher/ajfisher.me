@@ -4,7 +4,7 @@ date: 2008-04-22 07:43:00+00:00
 layout: post.hbt
 slug: phorm-over-function
 title: Phorm over function?
-large-title: true
+largetitle: true
 tags: internet, media, privacy, security, web
 ---
 

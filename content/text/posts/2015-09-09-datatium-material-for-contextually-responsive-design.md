@@ -4,7 +4,7 @@ date: 2015-09-09 13:00:00+11:00
 layout: post.hbt
 slug: datatium-material-for-contextually-responsive-design
 title: Datatium - data as material for contextually responsive design
-small-title: true
+smalltitle: true
 tags: development, data science, responsive design, design, web, mobile, context, ux
 excerpt: >
     Responsive design is still very screen size focussed where as we should be

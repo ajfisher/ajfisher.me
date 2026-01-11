@@ -4,7 +4,7 @@ date: 2016-01-27 10:00:00+11:00
 layout: post.hbt
 slug: road-to-interchange
 title: The meandering journey of NodeBots Interchange
-small-title: true
+smalltitle: true
 tags: development, javascript, physical computing, ubicomp, web, internet, iot, open source, nodejs, hardware
 excerpt: >
     What started as a plan to simply make components work a bit better with NodeBots

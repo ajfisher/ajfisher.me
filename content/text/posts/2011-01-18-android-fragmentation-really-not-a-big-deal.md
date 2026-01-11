@@ -4,7 +4,6 @@ date: 2011-01-18 12:02:07+00:00
 layout: post
 slug: android-fragmentation-really-not-a-big-deal
 title: 'Android fragmentation: really not a big deal'
-small-title: false
 featureimage: ../../img/posts/android_diversity.png
 imageby: ajfisher, Imagen
 listimage: ../../img/posts/android_diversity.png

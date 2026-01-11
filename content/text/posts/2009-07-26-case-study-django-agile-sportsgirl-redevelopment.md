@@ -4,7 +4,7 @@ date: 2009-07-26 12:46:00+00:00
 layout: post.hbt
 slug: case-study-django-agile-sportsgirl-redevelopment
 title: 'Case Study: Django + Agile = Sportsgirl redevelopment'
-small-title: true
+smalltitle: true
 tags: development, web, python, retail, ecommerce 
 ---
 

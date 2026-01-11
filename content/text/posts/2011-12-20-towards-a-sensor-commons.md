@@ -4,7 +4,7 @@ date: 2011-12-20 10:50:31+00:00
 layout: post.hbt
 slug: towards-a-sensor-commons
 title: Towards a sensor commons
-large-title: true
+largetitle: true
 tags: open source, ubicomp, physical computing, internet, iot, essay
 excerpt: >
     A quiet revolution is taking place in the Internet of Things world and it
