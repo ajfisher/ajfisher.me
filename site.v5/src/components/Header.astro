@@ -13,6 +13,9 @@ const {
   largetitle = false,
   smalltitle = false
 } = Astro.props;
+
+const titleClass = largetitle ? 'enlarge' : smalltitle ? 'shrink' : '';
+
 ---
 <header>
   {featureimage && (
@@ -25,7 +28,7 @@ const {
     <div class="imagefill"></div>
   )}
   <div class="wrapper">
-    <h1>{title}</h1>
+    <h1 class={titleClass}>{title}</h1>
     { excerpt && (
       <p class="lede">{excerpt}</p>
       )}
