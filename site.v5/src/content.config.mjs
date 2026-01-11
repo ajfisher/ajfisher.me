@@ -34,7 +34,10 @@ const baseSchema = z.object({
   listimage: z.string().optional(),
   imageby: z.string().optional(),
 
+  // flag directives
   featured: z.boolean().optional().default(false),
+  smalltitle: z.boolean().optional().default(false),
+  largetitle: z.boolean().optional().default(false),
 
   // Convert "tag1, tag2" into ["tag1", "tag2"]
   tags: z.string()
