@@ -11,7 +11,9 @@ const {
   date,
   imageby = '',
   largetitle = false,
-  smalltitle = false
+  smalltitle = false,
+  readingTime = 0,
+  wordCount = 0
 } = Astro.props;
 
 const titleClass = largetitle ? 'enlarge' : smalltitle ? 'shrink' : '';
@@ -35,12 +37,14 @@ const titleClass = largetitle ? 'enlarge' : smalltitle ? 'shrink' : '';
     { typeof(date) !== 'undefined' && (
       <p class="date">Published: {longDate(date)}</p>
     )}
-    <p class="postdata">
-      <span>
-        <Icon name="fa7-solid:clock"/>
-      </span>
-      <span>14 mins (3.7k words)</span>
-    </p>
+    { readingTime > 0 && wordCount > 0 && (
+      <p class="postdata">
+        <span>
+          <Icon name="fa7-solid:clock"/>
+        </span>
+        <span>{readingTime} mins ({wordCount} words)</span>
+      </p>
+    )}
     { featureimage !== '' && imageby !== '' && (
       <p class="postdata">
         <span>
