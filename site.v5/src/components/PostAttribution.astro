@@ -1,0 +1,108 @@
+---
+import { longDate } from '../lib/utils.mjs';
+
+const {
+  title = "This is a title",
+  author = 'ajfisher',
+  date,
+  imageby = '',
+  uri = '',
+  tags = [],
+} = Astro.props;
+
+const pageurl = `https://ajfisher.me/${uri}`;
+
+const attributes = [
+  { label: 'Title', value: `"${title}"` },
+  { label: 'Published on', value: longDate(date), showfull:false },
+  { label: 'Author', value: author, showfull:false },
+];
+
+---
+<aside aria-label="Post attribution information" class="attribution">
+  <h2>About this post</h2>
+  <dl>
+    { attributes.map(attribute => (
+      <Fragment>
+        <dt class={attribute.showfull === false ? 'displaysmall' : ''}>{attribute.label}</dt>
+        <dd class={attribute.showfull === false ? 'displaysmall' : ''}>{attribute.value}</dd>
+      </Fragment>
+    ))}
+
+    { tags && tags.length > 0 && (
+      <dt class="displaysmall">Tags</dt>
+      <dd class="displaysmall">
+        {tags.map((tag) => (
+          <Fragment><a href=`/tagged/${tag.slug}/`>{tag.name}</a> </Fragment>
+        ))}
+
+      </dd>
+    )}
+
+    { imageby !== '' && (
+      <dt class="displaysmall">Title image</dt>
+      <dd class="displaysmall">{imageby}</dd>
+    )}
+    <dt>License</dt>
+    <dd>
+      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC
+        BY-NC-SA 4.0 International License
+      </a>
+    </dd>
+    <dt>Permanent source</dt>
+    <dd><a href={pageurl}>{pageurl}</a></dd>
+  </dl>
+</aside>
+
+<style>
+  aside.attribution {
+    padding: calc(0.25 * var(--gutter)) 0;
+    background: var(--light-bg-tint);
+    border-bottom: 0.4rem solid var(--light-base);
+
+    @media only screen and (min-width: 821px) {
+      border-radius: 0.2rem;
+      border-bottom: none;
+      border-top: 0.4rem solid var(--light-base);
+      margin-bottom: var(--gutter);
+    }
+    & dl {
+      margin: calc(0.5 * var(--gutter)) var(--gutter);
+      display: grid;
+
+      grid-template-rows: auto;
+
+      @media only screen and (min-width: 601px) {
+        grid-template-columns: 20% auto;
+      }
+
+      & dt {
+        font-weight: bold;
+        font-size: 1.8rem;
+
+        @media only screen and (min-width: 601px) {
+          font-weight: normal;
+        }
+      }
+
+      & dd {
+        margin: 0;
+        margin-bottom: var(--gutter);
+        font-size: 1.5rem;
+        min-height: 2.4rem;
+
+        @media only screen and (min-width: 601px) {
+          margin-left: var(--gutter);
+          margin-bottom: 0;
+          font-size: 1.8rem;
+        }
+      }
+
+      & dt.displaysmall, dd.displaysmall {
+        @media only screen and (min-width: 821px) {
+          display: none;
+        }
+      }
+    }
+  }
+</style>

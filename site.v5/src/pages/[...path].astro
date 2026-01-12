@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import similarityScores from '../../../utils/embeddings/similarity_data.json';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
+import PostAttribution from '../components/PostAttribution.astro';
 import PostData from '../components/PostData.astro';
 
 import { imageTransform } from '../lib/utils.mjs';
@@ -44,19 +45,21 @@ entry.data.wordCount = remarkPluginFrontmatter.wordCount;
   </Fragment>
   <section class="content">
     <Content />
-    {relatedPosts.length > 0 && (
-      <aside>
-        <h3>Related Reading</h3>
-        <ul>
-          {relatedPosts.map(p =>
-            <li>
-              <a href={`/${p.data.uri}`}>{p.data.title}</a>
-            </li>
-          )}
-        </ul>
-      </aside>
-    )}
   </section>
+  {relatedPosts.length > 0 && (
+    <aside aria-label="Related content">
+      <h3>Similar posts you might like</h3>
+      <ul>
+        {relatedPosts.map(p =>
+          <li>
+            <a href={`/${p.data.uri}`}>{p.data.title}</a>
+          </li>
+        )}
+      </ul>
+    </aside>
+  )}
+  <PostAttribution {...entry.data} />
+
   <Fragment slot="postdata">
       <PostData { ...entry.data } />
   </Fragment>
