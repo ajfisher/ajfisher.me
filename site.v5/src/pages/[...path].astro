@@ -19,7 +19,7 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content } = await render(entry);
+const { Content, remarkPluginFrontmatter } = await render(entry);
 
 // Related posts logic
 const currentSlug = entry.data.slug;
@@ -34,8 +34,8 @@ const relatedPosts = allPosts.filter(p => relatedSlugs.includes(p.data.slug));
 entry.data.featureimage = imageTransform(entry.data.featureimage);
 
 // add reading time and word count to entry data
-entry.data.readingTime = entry.rendered.metadata.frontmatter.readingTime;
-entry.data.wordCount = entry.rendered.metadata.frontmatter.wordCount;
+entry.data.readingTime = remarkPluginFrontmatter.readingTime;
+entry.data.wordCount = remarkPluginFrontmatter.wordCount;
 
 ---
 <BaseLayout title={entry.data.title} slug={entry.data.slug}>
