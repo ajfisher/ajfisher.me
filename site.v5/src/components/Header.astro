@@ -1,6 +1,9 @@
 ---
 import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
+
+import humanize from 'humanize-plus';
+
 import { longDate } from '../lib/utils.mjs';
 
 const {
@@ -17,7 +20,7 @@ const {
 } = Astro.props;
 
 const titleClass = largetitle ? 'enlarge' : smalltitle ? 'shrink' : '';
-
+const humanisedWordCount = humanize.compactInteger(wordCount, 1);
 ---
 <header>
   {featureimage && (
@@ -42,7 +45,7 @@ const titleClass = largetitle ? 'enlarge' : smalltitle ? 'shrink' : '';
         <span>
           <Icon name="fa7-solid:clock"/>
         </span>
-        <span>{readingTime} mins ({wordCount} words)</span>
+        <span>{readingTime} mins ({humanize.compactInteger(wordCount, 1)} words)</span>
       </p>
     )}
     { featureimage !== '' && imageby !== '' && (
