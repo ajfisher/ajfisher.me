@@ -137,8 +137,8 @@ HomePage.propTypes = {
               imageby: PropTypes.string,
               imagelink: PropTypes.string,
               featureimage_position: PropTypes.string,
-              small_title: PropTypes.bool,
-              large_title: PropTypes.bool,
+              smalltitle: PropTypes.bool,
+              largetitle: PropTypes.bool,
               listimage_position: PropTypes.string,
               listimage: PropTypes.any,
             }).isRequired,
@@ -165,8 +165,8 @@ HomePage.propTypes = {
               ]).isRequired,
               excerpt: PropTypes.string,
               featured: PropTypes.bool,
-              small_title: PropTypes.bool,
-              large_title: PropTypes.bool,
+              smalltitle: PropTypes.bool,
+              largetitle: PropTypes.bool,
             }),
             excerpt: PropTypes.string,
             timeToRead: PropTypes.number,
@@ -211,8 +211,8 @@ export const pageQuery = graphql`
             imageby
             imagelink
             featureimage_position
-            small_title
-            large_title
+            smalltitle
+            largetitle
             listimage_position
             listimage {
               childImageSharp {
@@ -253,8 +253,8 @@ export const pageQuery = graphql`
             date(formatString: "YYYY-MM-DD")
             excerpt
             featured
-            small_title
-            large_title
+            smalltitle
+            largetitle
           }
           excerpt(pruneLength: 220)
           wordCount {

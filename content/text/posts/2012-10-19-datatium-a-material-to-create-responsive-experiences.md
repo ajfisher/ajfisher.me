@@ -6,7 +6,7 @@ title: Datatium - a material to create responsive experiences
 slug: datatium-a-material-to-create-responsive-experiences
 tags: media, mobile, responsive design, ux, web, context, data science, conference
 collection: featured
-small-title: true
+smalltitle: true
 featured: true
 featureimage: ../../img/posts/datatium_bling_material.jpg
 imageby: neekoh.fi

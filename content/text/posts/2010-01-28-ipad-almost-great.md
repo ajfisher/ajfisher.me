@@ -6,7 +6,7 @@ excerpt: The iPad hardware is outstanding in its simplicity but is a little weak
 layout: post.hbt
 slug: ipad-almost-great
 title: iPad - ALMOST great
-large-title: true
+largetitle: true
 tags: media, mobile, apple, os, tablet, ios
 ---
 

@@ -101,8 +101,8 @@ Template.propTypes = {
         featureimage: PropTypes.any,
         imageby: PropTypes.string,
         imagelink: PropTypes.string,
-        small_title: PropTypes.bool,
-        large_title: PropTypes.bool,
+        smalltitle: PropTypes.bool,
+        largetitle: PropTypes.bool,
       }).isRequired,
       fields: PropTypes.shape({
         taglist: PropTypes.arrayOf(PropTypes.string),
@@ -134,8 +134,8 @@ export const pageQuery = graphql`
         }
         imageby
         imagelink
-        small_title
-        large_title
+        smalltitle
+        largetitle
       }
       excerpt(pruneLength: 220)
       wordCount {

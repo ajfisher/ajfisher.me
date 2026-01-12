@@ -129,8 +129,8 @@ Template.propTypes = {
               featured: PropTypes.bool,
               featureimage: PropTypes.any,
               featureimage_position: PropTypes.string,
-              small_title: PropTypes.bool,
-              large_title: PropTypes.bool,
+              smalltitle: PropTypes.bool,
+              largetitle: PropTypes.bool,
               listimage: PropTypes.any,
               listimage_position: PropTypes.string,
             }).isRequired,
@@ -179,8 +179,8 @@ export const pageQuery = graphql`
               }
             }
             featureimage_position
-            small_title
-            large_title
+            smalltitle
+            largetitle
           }
           excerpt(pruneLength: 220)
           wordCount {

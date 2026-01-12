@@ -10,3 +10,16 @@ export const imageTransform = (val) => {
 
   return transformed;
 }
+
+export const longDate = (date) => {
+  const d = new Date(date);
+  const weekday = d.toLocaleDateString('en-GB', { weekday: 'long' });
+  const month = d.toLocaleDateString('en-GB', { month: 'long' });
+  const year = d.getFullYear();
+
+  // Manual ordinal logic to match output as it's not supported natively
+  const day = d.getDate();
+  const suffix = ["th", "st", "nd", "rd"][(day % 10 > 3 || Math.floor(day % 100 / 10) === 1) ? 0 : day % 10];
+
+  return `${weekday}, ${month} ${day}${suffix} ${year}`;
+};

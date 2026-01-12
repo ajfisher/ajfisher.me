@@ -4,7 +4,7 @@ date: 2010-01-03 23:37:00+00:00
 layout: post.hbt
 slug: 2010-the-year-the-netbook-turns-into-the-web-book
 title: '2010: The year the Netbook turns into the Web-book'
-small-title: true
+smalltitle: true
 tags: internet, mobile, predictions, tablet, consumer electronics
 listimage: ../../img/posts/webbook.jpg
 ---

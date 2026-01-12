@@ -4,7 +4,7 @@ date: 2011-10-17 11:50:16+00:00
 layout: post.hbt
 slug: neo-futurism-in-the-information-age
 title: Neo-Futurism in the Information Age
-small-title: true
+smalltitle: true
 tags: development, internet, media, mobile, web, conference
 excerpt: >
     Finally the gloom of the GFC appears past and the web community are attempting

@@ -1,0 +1,176 @@
+---
+import { getCollection } from 'astro:content';
+import { imageTransform } from '../lib/utils.mjs';
+
+// 1. Logic: Equivalent of your slug prop
+const { slug = '/' } = Astro.props;
+
+// 2. Data: Equivalent of your GraphQL query
+const allPosts = await getCollection('posts');
+const featuredPosts = allPosts
+  .filter(p => p.data.featured)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+// 3. Selection Logic: Preserving your specific featured post rules
+let featured = featuredPosts[0];
+
+if (slug === '/') {
+  featured = featuredPosts[3] || featuredPosts[0];
+} else if (featured.data.slug === slug) {
+  featured = featuredPosts[1] || featuredPosts[0];
+}
+
+// Ensure the image path is corrected for our publicDir
+const featuredImg = imageTransform(featured.data.listimage);
+---
+
+<footer>
+  <div>
+    <section>
+      <h2>Featured Post</h2>
+      <div class="image-link">
+        <a href={`/${featured.data.uri}`}>
+          <div class="image-wrapper"><img src={featuredImg} alt={featured.data.title} /></div>
+        </a>
+      </div>
+      <p><a href={`/${featured.data.uri}`}>{featured.data.title}</a></p>
+      <p>{featured.data.excerpt}</p>
+    </section>
+
+    <section>
+      <h2>Recent Media</h2>
+      <div class="image-link">
+        <a href="/2023/02/13/podcast-enterprise-ai/">
+          <img src="/img/posts/enterprise_ai.jpg" alt="Illustration of an office" />
+        </a>
+      </div>
+      <p>
+        <a href="/2023/02/13/podcast-enterprise-ai/">
+          ChatGPT and Generative AI in the enterprise
+        </a>
+      </p>
+      <p>
+        Sitting down with other technology leaders, we discuss what risks
+        and rewards may exist as AI enters the workplace at scale.
+      </p>
+    </section>
+
+    <section>
+      <h2>My Books</h2>
+      <div class="image-link" style={`--image-position: ${"50% 100%"}`}>
+        <a href="https://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
+          <img src="/img/posts/make_js_robots.jpg" alt="Make JavaScript Robotics Book Cover" />
+        </a>
+      </div>
+      <p>
+        <a href="https://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">Make: JavaScript Robotics</a>
+      </p>
+      <div class="image-link" style={`--image-position: ${"50% 85%"}`}>
+        <a href="https://www.amazon.com/Jump-Start-Responsive-Web-Design/dp/0987332163/">
+          <img src="/img/posts/responsive_design.jpg" alt="Jump Start Responsive Design Book Cover" />
+        </a>
+      </div>
+      <p>
+        <a href="https://www.amazon.com/Jump-Start-Responsive-Web-Design/dp/0987332163/">Make: JavaScript Robotics</a>
+      </p>
+    </section>
+  </div>
+</footer>
+
+<style>
+  /* 4. Styles: Conversion from Styled Components */
+  footer {
+    box-sizing: border-box;
+    border-top: 2px solid var(--highlight);
+    margin: 0;
+    padding-bottom: var(--gutter);
+
+    /** Put the background gradient in**/
+    background: var(--darkened-grey);
+    background: -moz-radial-gradient(circle, var(--dark-grey) 0%, var(--darkened-grey) 100% );
+    background: -webkit-radial-gradient(circle, var(--dark-grey) 0%, var(--darkened-grey) 100% );
+    background: radial-gradient(circle, var(--dark-grey) 0%, var(--darkened-grey) 100% );
+
+    & ::selection {
+      background: var(--light-base);
+    }
+  }
+
+  footer > div {
+    margin:0;
+    width: 100vw;
+    padding-top: 0rem;
+
+    color: var(--light-text-colour);
+
+    @media only screen and (min-width: 601px) {
+    }
+
+    @media only screen and (min-width: 821px) {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      justify-content: space-between;
+
+    }
+
+    @media only screen and (min-width: 1051px) {
+      max-width: 1020px;
+    }
+
+    & section {
+      padding: 0 var(--gutter);
+
+      @media only screen and (min-width: 821px) {
+        align-self: flex-start;
+        width: 30%;
+      }
+
+      & p {
+        font-size: 2rem;
+        margin: var(--gutter) 0;
+
+        @media only screen and (min-width: 821px) {
+          margin: calc(0.5 * var(--gutter)) 0;
+        }
+
+        & a, & a:visited {
+          background: none;
+          padding: 0;
+        }
+      }
+
+      & div {
+
+        & a, & a:visited {
+          background: none;
+          padding: 0;
+        }
+      }
+
+      & div.image-link {
+        border-bottom: 0.5rem solid var(--highlight);
+        border-radius: 0.2rem;
+
+        :hover {
+          border-bottom: 0.5rem solid var(--light-base);
+          border-radius: 0.2rem;
+        }
+      }
+    }
+  }
+
+
+  h2 {
+    color: var(--highlight);
+    font-size: 3rem;
+    margin: var(--gutter) 0;
+
+    @media only screen and (min-width: 821px) {
+      margin: calc(0.5 * var(--gutter)) 0;
+    }
+  }
+
+</style>

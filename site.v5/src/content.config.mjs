@@ -34,7 +34,14 @@ const baseSchema = z.object({
   listimage: z.string().optional(),
   imageby: z.string().optional(),
 
+  // flag directives
   featured: z.boolean().optional().default(false),
+  smalltitle: z.boolean().optional().default(false),
+  largetitle: z.boolean().optional().default(false),
+
+  // reading time and word count derived from remark plugin
+  wordCount: z.number().optional().default(0),
+  readingTime: z.number().optional().default(0),
 
   // Convert "tag1, tag2" into ["tag1", "tag2"]
   tags: z.string()

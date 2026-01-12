@@ -2,6 +2,9 @@
 import { getCollection, render } from 'astro:content';
 import similarityScores from '../../../utils/embeddings/similarity_data.json';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import PostData from '../components/PostData.astro';
+
 import { imageTransform } from '../lib/utils.mjs';
 
 export async function getStaticPaths() {
@@ -16,7 +19,7 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content } = await render(entry);
+const { Content, remarkPluginFrontmatter } = await render(entry);
 
 // Related posts logic
 const currentSlug = entry.data.slug;
@@ -30,34 +33,31 @@ const relatedPosts = allPosts.filter(p => relatedSlugs.includes(p.data.slug));
 
 entry.data.featureimage = imageTransform(entry.data.featureimage);
 
+// add reading time and word count to entry data
+entry.data.readingTime = remarkPluginFrontmatter.readingTime;
+entry.data.wordCount = remarkPluginFrontmatter.wordCount;
+
 ---
-<BaseLayout title={entry.data.title}>
-  <article>
-    <header>
-      <h1>{entry.data.title}</h1>
-      <p><img src={entry.data.featureimage} style="width: 100%"/></p>
-      <p>{entry.data.excerpt}</p>
-    </header>
+<BaseLayout title={entry.data.title} slug={entry.data.slug}>
+  <Fragment slot="header" { ...entry.data }>
+    <Header { ...entry.data } />
+  </Fragment>
+  <section class="content">
     <Content />
-  </article>
-  <aside>
-    <h2>Tags</h2>
-    <ul>
-      {entry.data.tags.map(tag => (
-        <li><a href=`/tagged/${tag.slug}/`>{tag.name}</a></li>
-        ))}
-    </ul>
-  </aside>
-  {relatedPosts.length > 0 && (
-    <aside>
-      <h3>Related Reading</h3>
-      <ul>
-        {relatedPosts.map(p =>
-          <li>
-            <a href={`/${p.data.uri}`}>{p.data.title}</a>
-          </li>
-        )}
-      </ul>
-    </aside>
-  )}
+    {relatedPosts.length > 0 && (
+      <aside>
+        <h3>Related Reading</h3>
+        <ul>
+          {relatedPosts.map(p =>
+            <li>
+              <a href={`/${p.data.uri}`}>{p.data.title}</a>
+            </li>
+          )}
+        </ul>
+      </aside>
+    )}
+  </section>
+  <Fragment slot="postdata">
+      <PostData { ...entry.data } />
+  </Fragment>
 </BaseLayout>

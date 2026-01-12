@@ -4,7 +4,7 @@ date: 2008-02-20 01:38:00+00:00
 layout: post.hbt
 slug: dvd-jon-strikes-again
 title: DVD Jon strikes again
-large-title: true
+largetitle: true
 tags: drm, media, piracy, rant
 ---
 

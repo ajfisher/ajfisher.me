@@ -5,7 +5,7 @@ date: 2007-11-05 10:26:00+00:00
 layout: post
 slug: bye-bye-openmoko
 title: Bye bye OpenMoko
-large-title: true
+largetitle: true
 featureimage: ../../img/posts/bye_openmoko.png
 imageby: ajfisher - Imagen/Gemini
 listimage: ../../img/posts/bye_openmoko.png

@@ -106,8 +106,8 @@ Template.propTypes = {
         slug: PropTypes.string.isRequired,
         excerpt: PropTypes.string,
         twitter_excerpt: PropTypes.string,
-        small_title: PropTypes.bool,
-        large_title: PropTypes.bool,
+        smalltitle: PropTypes.bool,
+        largetitle: PropTypes.bool,
         featureimage: PropTypes.any,
         imageby: PropTypes.string,
         imagelink: PropTypes.string,
@@ -154,8 +154,8 @@ export const pageQuery = graphql`
         title
         excerpt
         twitter_excerpt
-        small_title
-        large_title
+        smalltitle
+        largetitle
         featureimage {
           childImageSharp {
             gatsbyImageData(
