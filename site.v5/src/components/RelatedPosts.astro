@@ -1,0 +1,11 @@
+---
+import ListItems from './ListItems.astro';
+
+const { relatedPosts } = Astro.props;
+---
+{relatedPosts.length >= 2 && (
+  <aside aria-label="Related content">
+    <h2>Similar posts you might like</h2>
+    <ListItems items={relatedPosts} compact={true} />
+  </aside>
+)}

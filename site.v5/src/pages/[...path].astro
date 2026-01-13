@@ -3,7 +3,9 @@ import { getCollection, render } from 'astro:content';
 import similarityScores from '../../../utils/embeddings/similarity_data.json';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
+import PostAttribution from '../components/PostAttribution.astro';
 import PostData from '../components/PostData.astro';
+import RelatedPosts from '../components/RelatedPosts.astro';
 
 import { imageTransform } from '../lib/utils.mjs';
 
@@ -23,9 +25,10 @@ const { Content, remarkPluginFrontmatter } = await render(entry);
 
 // Related posts logic
 const currentSlug = entry.data.slug;
-const similarityData = similarityScores.find(item => item.slug === currentSlug);
+const similarityData = similarityScores.find(item => item.slug === currentSlug)
 const relatedSlugs = similarityData
-  ? similarityData.post_similarity.slice(0, 3).map(p => p.slug)
+  ? similarityData.post_similarity.sort((a, b) => b.similarity - a.similarity)
+    .slice(0, 2).map(p => p.slug)
   : [];
 
 const allPosts = await getCollection('posts');
@@ -44,19 +47,9 @@ entry.data.wordCount = remarkPluginFrontmatter.wordCount;
   </Fragment>
   <section class="content">
     <Content />
-    {relatedPosts.length > 0 && (
-      <aside>
-        <h3>Related Reading</h3>
-        <ul>
-          {relatedPosts.map(p =>
-            <li>
-              <a href={`/${p.data.uri}`}>{p.data.title}</a>
-            </li>
-          )}
-        </ul>
-      </aside>
-    )}
   </section>
+  <RelatedPosts { ...{ relatedPosts } } />
+  <PostAttribution {...entry.data} />
   <Fragment slot="postdata">
       <PostData { ...entry.data } />
   </Fragment>

@@ -1,0 +1,30 @@
+---
+import { imageTransform } from '../lib/utils.mjs';
+
+const {
+  title = "This is a title",
+  uri = "",
+  listimage = "",
+  excerpt = "",
+  compact = false,
+} = Astro.props;
+
+
+---
+<li class="listitem" itemscope="blogPost" itemtype="https://schema.org/BlogPosting">
+  <div>
+    <a itemprop="url" href={`/${uri}`}>
+      <img src={imageTransform(listimage)} alt={title} />
+    </a>
+  </div>
+  { compact && (
+    <p itemprop="headline">
+      <a href={`/${uri}`}>{title}</a>
+    </p>
+  )}
+</li>
+
+
+<style>
+
+</style>
