@@ -25,9 +25,10 @@ const { Content, remarkPluginFrontmatter } = await render(entry);
 
 // Related posts logic
 const currentSlug = entry.data.slug;
-const similarityData = similarityScores.find(item => item.slug === currentSlug);
+const similarityData = similarityScores.find(item => item.slug === currentSlug)
 const relatedSlugs = similarityData
-  ? similarityData.post_similarity.slice(0, 2).map(p => p.slug)
+  ? similarityData.post_similarity.sort((a, b) => b.similarity - a.similarity)
+    .slice(0, 2).map(p => p.slug)
   : [];
 
 const allPosts = await getCollection('posts');
