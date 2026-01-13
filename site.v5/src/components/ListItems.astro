@@ -1,0 +1,100 @@
+---
+import ListItem from './ListItem.astro';
+
+const {
+  items,
+  compact = false,
+} = Astro.props;
+
+const compactStyle = compact ? 'compact' : '';
+---
+<ul class={`listitems ${compactStyle}`}>
+  {items.map(p =>
+    <ListItem {...p.data} compact={compact} />
+  )}
+</ul>
+
+<style>
+  ul.listitems {
+    list-style: none;
+    padding: 0;
+    margin: 0 var(--gutter) !important;
+
+    @media only screen and (min-width: 601px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: stretch;
+      justify-content: space-between;
+    }
+
+    > li.listitem {
+      width: 100%;
+      height: min-content;
+      container-type: inline-size;
+
+      @media only screen and (min-width: 601px) {
+        width: 49%;
+      }
+
+      @media only screen and (min-width: 821px) {
+        width: 45%;
+      }
+
+      > div {
+        height: 25rem;
+
+        border-bottom: 0.5rem solid var(--light-base);
+        border-radius: 0.2rem;
+        margin-bottom: calc(0.5 * var(--gutter));
+        transition: all 0.8s ease;
+
+        :hover {
+          border-bottom: 0.5rem solid var(--dark-grey);
+          border-radius: 0.2rem;
+        }
+
+        @media only screen and (min-width: 821px) {
+          height: 17rem;
+        }
+
+        & img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+
+        /** TODO: fix this to take local variables like others.
+        & img {
+          object-position: ${props => props.$position} !important;
+        }**/
+      }
+    }
+  }
+
+  ul.listitems.compact {
+
+    > li {
+      line-height: normal;
+    }
+
+    > li.listitem p {
+      padding: 0;
+      font-size: 2.2rem;
+      margin: var(--gutter) 0;
+
+      @media only screen and (min-width: 821px) {
+        margin: calc(0.5 * var(--gutter)) 0;
+      }
+
+      & a, & a:visited {
+        color: var(--base);
+      }
+
+      & a:hover, & a:visited:hover {
+        color: var(--dark-grey);
+      }
+    }
+  }
+</style>
+
