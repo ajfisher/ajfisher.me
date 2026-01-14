@@ -75,8 +75,6 @@ import Navigation from './Navigation.astro';
     }
   }
 
-
-
   /* When open */
   nav#nav-menu:popover-open {
     opacity: 1;
@@ -114,6 +112,14 @@ import Navigation from './Navigation.astro';
     nav#nav-menu[popover]::backdrop,
     nav#site-nav:popover-open button.nav-close {
       transition: none;
+    }
+  }
+
+  nav#side-nav {
+    display: none;
+
+    @media only screen and (min-width: 821px) {
+      display: block;
     }
   }
 </style>
