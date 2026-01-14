@@ -139,6 +139,37 @@ const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).toString(
           height: auto;
         }
       }
+
+      /** used for listing pages like tags, home etc **/
+      & section.list {
+        > h2 {
+          font-size: 3rem;
+        }
+
+        & h2.home {
+          font-size: 4rem;
+        }
+
+        & h2.home,
+        > h3,
+        > h2 {
+          margin: calc(0.5 * var(--gutter)) var(--gutter);
+          display: block;
+          background: none;
+          color: var(--dark-base);
+          box-shadow: none;
+          padding: 0;
+        }
+
+        & p {
+          font-size: 2rem;
+        }
+
+        /** not sure this is needed any more
+        & p.tagintro {
+          font-size: 1.8rem;
+        }**/
+      }
     }
     > aside {
       /** Aside is a flex item **/

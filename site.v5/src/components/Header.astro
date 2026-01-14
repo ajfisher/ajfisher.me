@@ -15,7 +15,8 @@ const {
   largetitle = false,
   smalltitle = false,
   readingTime = 0,
-  wordCount = 0
+  wordCount = 0,
+  postCount = 0
 } = Astro.props;
 
 const titleClass = largetitle ? 'enlarge' : smalltitle ? 'shrink' : '';
@@ -52,6 +53,14 @@ const titleClass = largetitle ? 'enlarge' : smalltitle ? 'shrink' : '';
           <Icon name="fa7-solid:camera"/>
         </span>
         <span>{imageby}</span>
+      </p>
+    )}
+    { postCount > 0 && (
+      <p class="postdata">
+        <span>
+          <Icon name="fa7-regular:newspaper"/>
+        </span>
+        <span>Read {postCount} {humanize.pluralize(postCount, "article")} in this topic</span>
       </p>
     )}
   </div>

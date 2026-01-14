@@ -1,20 +1,37 @@
 ---
-import { imageTransform } from '../lib/utils.mjs';
+import { Icon } from 'astro-icon/components';
+
+import humanize from 'humanize-plus';
+
+import { imageTransform, longDate } from '../lib/utils.mjs';
 
 const {
   title = "This is a title",
   uri = "",
   listimage = "",
+  featureimage = "",
   excerpt = "",
+  date,
+  readingTime = 0,
+  wordCount = 0,
   compact = false,
 } = Astro.props;
 
+// get a random placeholder image if none is supplied.
+const noPlaceholders = 12;
+const randomImage = Math.floor(Math.random() * noPlaceholders);
 
+const placeholderImage = `../../img/posts/listimages/li${randomImage}.png`;
+
+const image = listimage || featureimage || placeholderImage;
+
+// convert date to yyyy-mm-dd for metadata info
+const publishDate = (new Date(date)).toISOString().slice(0,10);
 ---
 <li class="listitem" itemscope="blogPost" itemtype="https://schema.org/BlogPosting">
   <div>
     <a itemprop="url" href={`/${uri}`}>
-      <img src={imageTransform(listimage)} alt={title} />
+      <img src={imageTransform(image)} alt={title} />
     </a>
   </div>
   { compact && (
@@ -22,8 +39,20 @@ const {
       <a href={`/${uri}`}>{title}</a>
     </p>
   )}
+  { !compact && (
+    <h3 itemprop="headline"><a href={`/${uri}`}>{title}</a></h3>
+    <p class="postdate">
+      <time itemprop="datePublished" datetime={publishDate}>{longDate(date)}</time></p>
+    <p itemprop="abstract" itemtype="https://schema.org/CreativeWork">{excerpt}</p>
+    <p class="postdata" aria-hidden="true">
+      <meta itemprop="timeRequired" content={`PT${readingTime}M`} />
+      <span>
+        <Icon name="fa7-solid:clock"/>
+      </span>
+      <span>{readingTime} mins ({humanize.compactInteger(wordCount, 1)} words)</span>
+    </p>
+  )}
 </li>
-
 
 <style>
 
