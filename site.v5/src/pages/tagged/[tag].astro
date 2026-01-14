@@ -1,8 +1,12 @@
 ---
 // @ts-nocheck
 import { getCollection } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
+
 import tagMetadata from '../../../../content/lib/tag_data.json';
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+
 import { imageTransform } from '../../lib/utils.mjs';
 
 export async function getStaticPaths() {
@@ -20,12 +24,13 @@ export async function getStaticPaths() {
   return Array.from(tagMap.entries()).map(([slug, name]) => {
     const tagPosts = posts.filter(post =>
       post.data.tags.some(t => t.slug === slug)
-      );
+    );
 
     const metadata = tagMetadata.find(item => item.tag.toLowerCase() === name.toLowerCase()) || {
       tag: name,
       title: name,
-      intro: `Archives for the ${name} category.`
+      intro: `Archives for the ${name} category.`,
+      uri: slug,
     };
 
     return {
@@ -36,13 +41,20 @@ export async function getStaticPaths() {
 }
 
 const { tagName, posts, metadata } = Astro.props;
-metadata.tagimage = imageTransform(metadata.tagimage);
 
+const headerData = {
+  title: metadata.title || tagName,
+  excerpt: metadata.intro,
+  featureimage: imageTransform(metadata.tagimage),
+  postCount: posts.length
+}
+
+console.log('tag page', Astro.props.metadata);
 ---
 <BaseLayout title={metadata.title}>
-  <h1>{metadata.title}</h1>
-  <img src={metadata.tagimage} alt={tagName} style="width: 100%"/>
-  <p>{metadata.intro}</p>
+  <Fragment slot="header" { ...headerData }>
+    <Header { ...headerData } largetitle={true} />
+  </Fragment>
 
   <ul>
     {posts.map(post => (
