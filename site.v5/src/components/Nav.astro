@@ -1,99 +1,125 @@
 ---
 import { Icon } from 'astro-icon/components';
+
+import Navigation from './Navigation.astro';
 ---
-<nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/blog/">Article archive</a></li>
-    <li><a href="/who/">Who is @ajfisher</a></li>
-    <li><a href="/colophon/">Colophon</a></li>
-    <li><a href="/dis-everything/">Disclaimer & Disclosure</a></li>
-    <li class="icons">
-      <a title="@ajfisher on Github" href="https://github.com/ajfisher" target="_blank" rel="noopener noreferrer">
-        <Icon name="fa7-brands:github"/>
-      </a>
-      <a title="@ajfisher on Instagram" href="https://instagram.com/andrewjfisher" target="_blank" rel="noopener noreferrer">
-        <Icon name="fa7-brands:instagram"/>
-      </a>
-      <a title="Send ajfisher an email" href="mailto:ajfisher.td@gmail.com" target="_blank" rel="noopener noreferrer">
-        <Icon name="fa7-regular:envelope"/>
-      </a>
-      <a title="@ajfisher on Twitter" href="https://twitter.com/ajfisher" target="_blank" rel="noopener noreferrer">
-        <Icon name="fa7-brands:twitter"/>
-      </a>
-      <a title="@ajfisher on Bluesky" href="https://bsky.app/profile/ajfisher.social" target="_blank" rel="noopener noreferrer">
-        <Icon name="fa7-brands:bluesky"/>
-      </a>
-      <a title="@ajfisher on LinkedIn" href="https://www.linkedin.com/in/andrewfisher/" target="_blank" rel="noopener noreferrer">
-        <Icon name="fa7-brands:linkedin"/>
-      </a>
-    </li>
-  </ul>
+<button
+  class="nav-menu-toggle"
+  type="button"
+  aria-label="Open navigation"
+  popovertarget="nav-menu"
+  popovertargetaction="toggle"
+>
+  <Icon name="fa7-solid:bars"/>
+</button>
+<nav id="nav-menu" popover="auto">
+  <button
+    class="nav-menu-toggle nav-close"
+    type="button"
+    aria-label="Close navigation"
+    popovertarget="nav-menu"
+    popovertargetaction="hide"
+  >
+    <Icon name="fa7-solid:bars"/>
+  </button>
+  <Navigation />
+</nav>
+<nav id="side-nav">
+  <Navigation />
 </nav>
 
 <style>
-  ul {
+  button.nav-menu-toggle {
+    position: fixed;
+    top: calc(0.25 * var(--gutter));
+    right: calc(0.5 * var(--gutter));
+    border: none;
 
+    background-color: transparent;
+    font-size: 3.5rem;
+    color: var(--base);
+
+    &:hover {
+      color: var(--dark-text-colour);
+    }
+
+    @media only screen and (min-width: 821px) {
+      display: none;
+    }
+  }
+
+  nav#nav-menu {
+    & button.nav-close {
+      transform: none;
+      transition: transform 0.5s ease-in-out;
+      transition-behavior: allow-discrete;
+    }
+  }
+
+  nav#nav-menu[popover] {
+    position: fixed;
+    inset: 0 0 0 auto;      /* right side drawer */
+    height: 100dvh;
+    width: 75vw;
     margin: 0;
-    padding: 0;
+    padding: var(--gutter);
+    background: var(--light-text-colour);
+    border: none;
 
-    list-style-type: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    transition-behavior: allow-discrete;
 
-    & li {
-      font-size: 3rem;
-      line-height: 5rem;
-      margin: 0;
+    @media only screen and (min-width: 601px) {
+      width: 60vw;
+    }
+  }
 
-      @media only screen and (min-width: 601px) {
-        font-size: 3.5rem;
-        line-height: 4.8rem;
-      }
+  /* When open */
+  nav#nav-menu:popover-open {
+    opacity: 1;
+  }
 
-      @media only screen and (min-width: 821px) {
-        font-size: 2.8rem;
-        line-height: 3.5rem;
-      }
+  nav#nav-menu[popover]::backdrop {
+    background: rgba(0, 0, 0, 0.0);
+    transition: background 520ms ease;
+    transition-behavior: allow-discrete;
+  }
+
+  nav#nav-menu:popover-open::backdrop {
+    background: rgba(0,0,0,.7);
+  }
+
+  nav#nav-menu:popover-open button.nav-close {
+    transform: rotate(-90deg);
+  }
+
+  @starting-style {
+    nav#nav-menu:popover-open {
+      opacity: 0;
+    }
+    nav#nav-menu:popover-open::backdrop {
+      background: rgba(0,0,0,.0);
     }
 
-    & li:first-child {
-      margin-top: 0;
+    nav#nav-menu:popover-open button.nav-close {
+      transform: none;
     }
+  }
 
-    & li.icons {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      gap: calc(0.15 * var(--gutter));
-      min-width: 100%;
-      font-size: 5.2rem;
-      margin-left: -0.4rem;
-
-      @media only screen and (min-width: 601px) {
-        font-size: 6rem;
-      }
-
-      @media only screen and (min-width: 821px) {
-        font-size: 3.6rem;
-      }
-
-      @media only screen and (min-width: 1051px) {
-        font-size: 4.2rem;
-      }
+  @media (prefers-reduced-motion: reduce) {
+    nav#nav-menu[popover],
+    nav#nav-menu[popover]::backdrop,
+    nav#site-nav:popover-open button.nav-close {
+      transition: none;
     }
+  }
 
-    & a {
-      text-decoration: none;
-      color: var(--dark-grey);
-      font-family: var(--heading-font-family);
-      font-weight: var(--heading-font-weight);
-      background: none;
-      padding: 0;
-    }
+  nav#side-nav {
+    display: none;
 
-    & a:hover, & a:visited:hover {
-      background: none;
-      color: var(--dark-base);
+    @media only screen and (min-width: 821px) {
+      display: block;
     }
   }
 </style>
