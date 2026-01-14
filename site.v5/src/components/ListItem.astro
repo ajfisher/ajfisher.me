@@ -41,9 +41,11 @@ const publishDate = (new Date(date)).toISOString().slice(0,10);
   )}
   { !compact && (
     <h3 itemprop="headline"><a href={`/${uri}`}>{title}</a></h3>
-    <p class="postdate" itemprop="datePublished" datetime={publishDate}>{longDate(date)}</p>
+    <p class="postdate">
+      <time itemprop="datePublished" datetime={publishDate}>{longDate(date)}</time></p>
     <p itemprop="abstract" itemtype="https://schema.org/CreativeWork">{excerpt}</p>
-    <p class="postdata" aria-hidden="true" itemprop="timeRequired" content={`PT${readingTime}M`}>
+    <p class="postdata" aria-hidden="true">
+      <meta itemprop="timeRequired" content={`PT${readingTime}M`} />
       <span>
         <Icon name="fa7-solid:clock"/>
       </span>
