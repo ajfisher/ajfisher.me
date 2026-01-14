@@ -1,7 +1,25 @@
 ---
 import { Icon } from 'astro-icon/components';
 ---
-<nav>
+<button
+  class="nav-toggle"
+  type="button"
+  aria-label="Open navigation"
+  popovertarget="site-nav"
+  popovertargetaction="toggle"
+>
+  <Icon name="fa7-solid:bars"/>
+</button>
+<nav id="site-nav" popover="auto">
+  <button
+    class="nav-toggle nav-close"
+    type="button"
+    aria-label="Close navigation"
+    popovertarget="site-nav"
+    popovertargetaction="hide"
+  >
+    <Icon name="fa7-solid:bars"/>
+  </button>
   <ul>
     <li><a href="/">Home</a></li>
     <li><a href="/blog/">Article archive</a></li>
@@ -32,6 +50,90 @@ import { Icon } from 'astro-icon/components';
 </nav>
 
 <style>
+  button.nav-close {
+    transform: none;
+    transition: transform 0.5s ease-in-out;
+    transition-behavior: allow-discrete;
+  }
+
+  button.nav-toggle {
+    position: fixed;
+    top: calc(0.25 * var(--gutter));
+    right: calc(0.5 * var(--gutter));
+    border: none;
+
+    background-color: transparent;
+    font-size: 3.5rem;
+    color: var(--base);
+
+    &:hover {
+      color: var(--dark-text-colour);
+    }
+
+    @media only screen and (min-width: 821px) {
+      display: none;
+    }
+  }
+
+  nav#site-nav[popover] {
+    position: fixed;
+    inset: 0 0 0 auto;      /* right side drawer */
+    height: 100dvh;
+    width: 75vw;
+    margin: 0;
+    padding: var(--gutter);
+    background: var(--light-text-colour);
+    border: none;
+
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    transition-behavior: allow-discrete;
+
+    @media only screen and (min-width: 601px) {
+      width: 60vw;
+    }
+  }
+
+  /* When open */
+  nav#site-nav:popover-open {
+    opacity: 1;
+  }
+
+  nav#site-nav[popover]::backdrop {
+    background: rgba(0, 0, 0, 0.0);
+    transition: background 520ms ease;
+    transition-behavior: allow-discrete;
+  }
+
+  nav#site-nav:popover-open::backdrop {
+    background: rgba(0,0,0,.7);
+  }
+
+  nav#site-nav:popover-open button.nav-close {
+    transform: rotate(-90deg);
+  }
+
+  @starting-style {
+    nav#site-nav:popover-open {
+      opacity: 0;
+    }
+    nav#site-nav:popover-open::backdrop {
+      background: rgba(0,0,0,.0);
+    }
+
+    nav#site-nav:popover-open button.nav-close {
+      transform: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    nav#site-nav[popover],
+    nav#site-nav[popover]::backdrop,
+    nav#site-nav:popover-open button.nav-close {
+      transition: none;
+    }
+  }
+
   ul {
 
     margin: 0;
