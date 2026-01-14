@@ -6,6 +6,7 @@ import tagMetadata from '../../../../content/lib/tag_data.json';
 
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
+import ListItems from '../../components/ListItems.astro';
 
 import { imageTransform } from '../../lib/utils.mjs';
 
@@ -49,16 +50,13 @@ const headerData = {
   postCount: posts.length
 }
 
-console.log('tag page', Astro.props.metadata);
 ---
 <BaseLayout title={metadata.title}>
   <Fragment slot="header" { ...headerData }>
     <Header { ...headerData } largetitle={true} />
   </Fragment>
-
-  <ul>
-    {posts.map(post => (
-      <li><a href={`/${post.data.uri}`}>{post.data.title}</a></li>
-    ))}
-  </ul>
+  <section itemtype="https://schema.org/Blog" class="list">
+    <h2>Topic related posts</h2>
+    <ListItems items={posts} />
+  </section>
 </BaseLayout>

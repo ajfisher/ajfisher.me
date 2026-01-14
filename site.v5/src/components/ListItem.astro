@@ -1,14 +1,20 @@
 ---
-import { imageTransform } from '../lib/utils.mjs';
+import { Icon } from 'astro-icon/components';
+
+import humanize from 'humanize-plus';
+
+import { imageTransform, longDate } from '../lib/utils.mjs';
 
 const {
   title = "This is a title",
   uri = "",
   listimage = "",
   excerpt = "",
+  date,
+  readingTime = 0,
+  wordCount = 0,
   compact = false,
 } = Astro.props;
-
 
 ---
 <li class="listitem" itemscope="blogPost" itemtype="https://schema.org/BlogPosting">
@@ -22,8 +28,18 @@ const {
       <a href={`/${uri}`}>{title}</a>
     </p>
   )}
+  { !compact && (
+    <h3 itemprop="headline"><a href={`/${uri}`}>{title}</a></h3>
+    <p class="postdate" itemprop="datePublished">{longDate(date)}</p>
+    <p itemprop="abstract" itemtype="https://schema.org/CreativeWork">{excerpt}</p>
+    <p class="postdata" aria-hidden="true" itemprop="timeRequired" content={`PT${readingTime}M`}>
+      <span>
+        <Icon name="fa7-solid:clock"/>
+      </span>
+      <span>{readingTime} mins ({humanize.compactInteger(wordCount, 1)} words)</span>
+    </p>
+  )}
 </li>
-
 
 <style>
 
