@@ -1,11 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
+import PostAttribution from '../components/PostAttribution.astro';
+import PostData from '../components/PostData.astro';
 
 import { imageTransform } from '../lib/utils.mjs';
 
 const title = 'Resources, materials and links for AI coding agents';
-const slug = '/aieng';
+const slug = 'aieng/';
 const date = '2025-09-12 14:00:00+1000';
 const excerpt = `Slides, links and other resources you might find useful in
   for scaling AI Code agent usage in engineering teams.`;
@@ -19,6 +21,8 @@ const data = {
   slug,
   featureimage,
   large_title: false,
+  tags,
+  uri: slug,
 };
 ---
 <BaseLayout title="AI Engineering Resources">
@@ -148,4 +152,8 @@ const data = {
       list of articles</a> that have ever been published.</p>
 
   </section>
+  <PostAttribution {...data} />
+  <Fragment slot="postdata">
+      <PostData { ...data } />
+  </Fragment>
 </BaseLayout>
