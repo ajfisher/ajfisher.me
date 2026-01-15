@@ -38,7 +38,7 @@ const titleClass = largetitle ? 'enlarge' : smalltitle ? 'shrink' : '';
       <h1 class={titleClass}>{title}</h1>
     )}
     { isFeatured && (
-    <h2 class={titleClass}><a href=`/${uri}`>{title}</a></h2>
+      <h2 class={titleClass}><a href=`/${uri}`>{title}</a></h2>
       <p class="featured">Featured post</p>
     )}
     { excerpt && (
