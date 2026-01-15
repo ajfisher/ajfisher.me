@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import ListItems from '../../components/ListItems.astro';
+import Pagination from '../../components/Pagination.astro';
 
 import { imageTransform } from '../../lib/utils.mjs';
 
@@ -71,23 +72,9 @@ if (featuredPost) {
   <section itemtype="https://schema.org/Blog" class="list">
     <h1>Article archive - page {page.currentPage}</h1>
     <ListItems items={posts} />
+    <Pagination { ...{ page } } />
   </section>
-  <nav class="pagination">
-    {page.url.prev ? <a href={page.url.prev}>&larr; Newer</a> : null}
-
-    <span>Page {page.currentPage} of {page.lastPage}</span>
-
-    {page.url.next ? <a href={page.url.next}>Older &rarr;</a> : null}
-  </nav>
 </BaseLayout>
 
 <style>
-  .pagination {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 1px solid #eee;
-  }
 </style>
