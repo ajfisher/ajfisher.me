@@ -142,6 +142,17 @@ const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).toString(
 
       /** used for listing pages like tags, home etc **/
       & section.list {
+        > h1 {
+          color: var(--dark-base);
+          font-size: 3.5rem;
+          padding: 0 var(--gutter);
+          margin-bottom: 0;
+        }
+
+        > h1::first-letter {
+          text-transform: uppercase;
+        }
+
         > h2 {
           font-size: 3rem;
         }
