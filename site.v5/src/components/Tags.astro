@@ -4,13 +4,15 @@ const {
 } = Astro.props;
 
 ---
+{ tags.length > 0 && (
   <p class="tags">
     Tags:<br/>
     {tags.map(tag => (
       <Fragment><a href=`/tagged/${tag.slug}/`>{tag.name}</a> </Fragment>
     ))}
   </p>
-<style is:global>
+)}
+<style>
   p.tags {
     display: none;
 
