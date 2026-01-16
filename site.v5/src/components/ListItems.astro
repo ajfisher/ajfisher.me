@@ -21,26 +21,10 @@ const compactStyle = compact ? 'compact' : '';
     padding: 0;
     margin: 0 var(--gutter) !important;
 
-    @media only screen and (min-width: 601px) {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: stretch;
-      justify-content: space-between;
-    }
-
     > li {
       width: 100%;
       height: min-content;
       container-type: inline-size;
-
-      @media only screen and (min-width: 601px) {
-        width: 49%;
-      }
-
-      @media only screen and (min-width: 821px) {
-        width: 45%;
-      }
 
       > div {
         height: 25rem;
@@ -84,6 +68,7 @@ const compactStyle = compact ? 'compact' : '';
       & p {
         font-size: 1.8rem;
         padding: 0;
+        margin: calc(0.25 * var(--gutter)) 0;
       }
 
       & a, & a:visited {
@@ -125,6 +110,25 @@ const compactStyle = compact ? 'compact' : '';
     }
   }
 
+  ul.listitems:not(.compact) {
+    @media only screen and (min-width: 601px) {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: var(--gutter);
+      grid-auto-rows: auto;
+      align-items: start;
+    }
+
+    > li {
+      @media only screen and (min-width: 601px) {
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+  }
+
   ul.listitems.compact {
 
     > li {
@@ -150,4 +154,3 @@ const compactStyle = compact ? 'compact' : '';
     }
   }
 </style>
-
