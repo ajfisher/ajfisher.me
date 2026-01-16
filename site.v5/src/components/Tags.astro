@@ -5,10 +5,10 @@ const {
 
 ---
 { tags.length > 0 && (
+  <p>Tags:</p>
   <p class="tags">
-    Tags:<br/>
     {tags.map(tag => (
-      <Fragment><a href=`/tagged/${tag.slug}/`>{tag.name}</a> </Fragment>
+      <a href=`/tagged/${tag.slug}/`>{tag.name}</a>
     ))}
   </p>
 )}
@@ -17,8 +17,15 @@ const {
     display: none;
 
     @media only screen and (min-width: 821px) {
-      display: block;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: row;
+      gap: calc(0.25 * var(--gutter));
+
       margin-bottom: var(--gutter);
+      margin-top: calc(-1 * var(--gutter));
+
 
       & a {
         font-size: 2rem;
