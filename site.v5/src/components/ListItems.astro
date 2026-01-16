@@ -21,10 +21,25 @@ const compactStyle = compact ? 'compact' : '';
     padding: 0;
     margin: 0 var(--gutter) !important;
 
+    @media only screen and (min-width: 601px) {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: var(--gutter);
+      grid-auto-rows: auto;
+      align-items: start;
+    }
+
     > li {
       width: 100%;
       height: min-content;
       container-type: inline-size;
+
+      @media only screen and (min-width: 601px) {
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+      }
 
       > div {
         height: 25rem;
@@ -106,25 +121,6 @@ const compactStyle = compact ? 'compact' : '';
             display: inline-block;
           }
         }
-      }
-    }
-  }
-
-  ul.listitems:not(.compact) {
-    @media only screen and (min-width: 601px) {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      column-gap: var(--gutter);
-      grid-auto-rows: auto;
-      align-items: start;
-    }
-
-    > li {
-      @media only screen and (min-width: 601px) {
-        width: auto;
-        height: auto;
-        display: grid;
-        grid-template-columns: minmax(0, 1fr);
       }
     }
   }
