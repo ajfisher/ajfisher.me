@@ -4,7 +4,7 @@ import { Icon } from 'astro-icon/components';
 
 import humanize from 'humanize-plus';
 
-import { longDate } from '../lib/utils.mjs';
+import { longDate, imageTransform } from '../lib/utils.mjs';
 
 const {
   title = "This is a title",
@@ -16,7 +16,9 @@ const {
   smalltitle = false,
   readingTime = 0,
   wordCount = 0,
-  postCount = 0
+  postCount = 0,
+  isFeatured = false,
+  uri,
 } = Astro.props;
 
 const titleClass = largetitle ? 'enlarge' : smalltitle ? 'shrink' : '';
@@ -24,7 +26,7 @@ const titleClass = largetitle ? 'enlarge' : smalltitle ? 'shrink' : '';
 <header>
   {featureimage && (
     <div class="headerimage">
-      <Image src={featureimage} loading="lazy" alt=""
+      <Image src={imageTransform(featureimage)} loading="lazy" alt=""
         layout="full-width" width="1200" height="800" />
     </div>
   )}
@@ -32,7 +34,13 @@ const titleClass = largetitle ? 'enlarge' : smalltitle ? 'shrink' : '';
     <div class="imagefill"></div>
   )}
   <div class="wrapper">
-    <h1 class={titleClass}>{title}</h1>
+    { !isFeatured && (
+      <h1 class={titleClass}>{title}</h1>
+    )}
+    { isFeatured && (
+      <h2 class={titleClass}><a href=`/${uri}`>{title}</a></h2>
+      <p class="featured">Featured post</p>
+    )}
     { excerpt && (
       <p class="lede">{excerpt}</p>
       )}
@@ -47,7 +55,7 @@ const titleClass = largetitle ? 'enlarge' : smalltitle ? 'shrink' : '';
         <span>{readingTime} mins ({humanize.compactInteger(wordCount, 1)} words)</span>
       </p>
     )}
-    { featureimage !== '' && imageby !== '' && (
+    { featureimage !== '' && imageby !== '' && !isFeatured && (
       <p class="postdata">
         <span>
           <Icon name="fa7-solid:camera"/>
@@ -143,7 +151,7 @@ const titleClass = largetitle ? 'enlarge' : smalltitle ? 'shrink' : '';
         margin-top: -15rem;
       }
 
-      & h1 {
+      & h1, & h2 {
         background-color: var(--light-base);
         padding: var(--gutter);
         color: var(--dark-base);
@@ -248,7 +256,6 @@ const titleClass = largetitle ? 'enlarge' : smalltitle ? 'shrink' : '';
 
       & p.featured {
         color: var(--highlight);
-        margin: calc(0.5 * var(--gutter)) var(--gutter);
         text-transform: uppercase;
         font-size: 1.8rem;
         text-decoration: underline;

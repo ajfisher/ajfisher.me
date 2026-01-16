@@ -1,45 +1,34 @@
 ---
-/**
-export const Head = () => {
-  return (
-    <>
-      <PageHead
-        title="AI Engineering | ajfisher"
-        description="Information for software engineers using AI agents"
-        type="article"
-      />
-    </>
-  );
-};
-
-
-const AIEngPage = ({data}) => {
-  const { featureimage } = data?.headimage?.nodes[0];
-
-  const featuredImage = featureimage || null;
-
-  const title = 'Resources, materials and links for AI coding agents';
-  const slug = '/aieng';
-  const date = '2025-09-12 14:00:00+1000';
-  const excerpt = `Slides, links and other resources you might find useful in
-    for scaling AI Code agent usage in engineering teams.`;
-  const tags = ['thinking', 'business', 'innovation', 'ai', 'development'];
-
-  const frontmatter = {
-    title,
-    date,
-    excerpt,
-    slug,
-    large_title: false,
-  };
-<BaseLayout frontmatter={frontmatter} tags={tags}
-  path='/aieng' featuredimage={featuredImage}
->
-  <PageHead title={title}/>
-  **/
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import PostAttribution from '../components/PostAttribution.astro';
+import PostData from '../components/PostData.astro';
+
+import { imageTransform } from '../lib/utils.mjs';
+
+const title = 'Resources, materials and links for AI coding agents';
+const slug = 'aieng/';
+const date = '2025-09-12 14:00:00+1000';
+const excerpt = `Slides, links and other resources you might find useful in
+  for scaling AI Code agent usage in engineering teams.`;
+const tags = ['thinking', 'business', 'innovation', 'ai', 'development'];
+const featureimage = imageTransform('../img/posts/presentations/aieng/goldfish.png');
+
+const data = {
+  title,
+  date,
+  excerpt,
+  slug,
+  featureimage,
+  large_title: false,
+  tags,
+  uri: slug,
+};
 ---
 <BaseLayout title="AI Engineering Resources">
+  <Fragment slot="header" { ...data }>
+    <Header { ...data } />
+  </Fragment>
   <section class="content">
     <p>Thanks for attending my recent talk. Below you&apos;ll find some resources
       that I think may be helpful as it relates to scaling Code Agent use
@@ -163,4 +152,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       list of articles</a> that have ever been published.</p>
 
   </section>
+  <PostAttribution {...data} />
+  <Fragment slot="postdata">
+      <PostData { ...data } />
+  </Fragment>
 </BaseLayout>

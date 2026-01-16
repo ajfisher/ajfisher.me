@@ -4,6 +4,11 @@
 export const imageTransform = (val) => {
   if (!val) return val;
 
+  if (typeof val !== 'string') {
+    // this means it's probably alread converted to a static import by astro
+    return val;
+  }
+
   // get rid of relative paths in image URLs
   let transformed = val.replace('../../img/', '/img/');
   transformed = transformed.replace('../img/', '/img/');

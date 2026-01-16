@@ -7,8 +7,8 @@ export function remarkReadingTime() {
     const textOnPage = toString(tree);
     const words = textOnPage.split(/\s+/).length;
 
-    // Average reading speed: 200 words per minute
-    const readingTime = Math.ceil(words / 230);
+    // Average reading speed: 250 words per minute
+    const readingTime = Math.ceil(words / 250);
 
     // This injects the data into the frontmatter object accessible in Astro
     data.astro.frontmatter.readingTime = readingTime;

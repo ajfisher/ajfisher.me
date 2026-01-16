@@ -1,49 +1,36 @@
 ---
-/**
-export const Head = () => {
-  return (
-    <>
-      <PageHead
-        title="Leaders | ajfisher"
-        description="Information for leaders"
-        type="article"
-      />
-    </>
-  );
-};
-
-
-const LeadersPage = ({data}) => {
-  const { featureimage } = data?.headimage?.nodes[0];
-
-  const featuredImage = featureimage || null;
-
-  const title = 'Resources, materials and links for Leaders';
-  const slug = '/leaders';
-  const date = '2024-06-16 14:00:00+1000';
-  const excerpt = `Slides, links and other resources you'll be able to find
-    below. Don't forget to sign up if you want to get more information about
-    additional content.
-  `;
-  const tags = ['thinking', 'business', 'innovation'];
-
-  const frontmatter = {
-    title,
-    date,
-    excerpt,
-    slug,
-    large_title: false,
-  };
-
-  return (
-    <Layout frontmatter={frontmatter} tags={tags}
-      path='/leaders' featuredimage={featuredImage}
-    >
-      <PageHead title={title}/>
-  **/
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import PostAttribution from '../components/PostAttribution.astro';
+import PostData from '../components/PostData.astro';
+
+import { imageTransform } from '../lib/utils.mjs';
+
+const title = 'Resources, materials and links for Leaders';
+const slug = 'leaders/';
+const date = '2024-06-16 14:00:00+1000';
+const excerpt = `Slides, links and other resources you'll be able to find
+  below. Don't forget to sign up if you want to get more information about
+  additional content.
+`;
+const tags = ['thinking', 'business', 'innovation'];
+const featureimage = imageTransform('../img/posts/enterprise_ai_future.png');
+
+const data = {
+  title,
+  date,
+  excerpt,
+  slug,
+  large_title: false,
+  featureimage,
+  tags,
+  uri: slug,
+};
 ---
 <BaseLayout title="Resources for Leaders | AJ Fisher">
+  <Fragment slot="header" { ...data }>
+    <Header { ...data } />
+  </Fragment>
   <section class="content">
     <p>Thanks for attending my recent talk. Below you&apos;ll find some resources
       that I think may be helpful for your leadership journey.</p>
@@ -124,5 +111,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       list of articles</a> that have ever been published.</p>
 
   </section>
+  <PostAttribution {...data} />
+  <Fragment slot="postdata">
+      <PostData { ...data } />
+  </Fragment>
 </BaseLayout>
 

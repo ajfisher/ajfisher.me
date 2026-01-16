@@ -1,0 +1,86 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const { page } = Astro.props;
+console.log(page);
+
+const archivePages = [];
+for (let i = 1; i <= page.lastPage; i++) {
+  const archivePage = {
+    page: i,
+    uri: i=== 1 ? `/blog/` : `/blog/${i}/`,
+    current: i === page.currentPage,
+  };
+
+  archivePages.push(archivePage);
+}
+---
+<nav class="pagination" aria-label="Pagination navigation">
+  { page.url.prev && (
+    <a href={page.url.prev} rel="prev">
+      <Icon name="fa7-solid:angle-left" />
+    </a>
+  )}
+
+  { archivePages.map(archivePage => (
+    <a
+      href={archivePage.uri}
+      class={archivePage.current ? 'current' : ''}
+      aria-current={archivePage.current ? 'page' : null}
+    >
+      {archivePage.page}
+    </a>
+  )) }
+
+  { page.url.next && (
+    <a href={page.url.next} rel="next">
+      <Icon name="fa7-solid:angle-right" />
+    </a>
+  )}
+</nav>
+<style>
+  nav.pagination {
+    padding: var(--gutter);
+    flex-flow: row wrap;
+    justify-content: center;
+    display: flex;
+
+    & a {
+      margin: 0 calc(0.25 * var(--gutter));
+      padding: calc(0.25 * var(--gutter)) calc(1 * var(--gutter));
+
+      background-color: inherit;
+      color: var(--dark-base);
+
+      @media only screen and (min-width: 601px) {
+        margin: 0 calc(0.25 * var(--gutter));
+        padding: calc(0.25 * var(--gutter)) calc(0.5 * var(--gutter));
+      }
+
+      @media only screen and (min-width: 821px) {
+        padding: calc(0.25 * var(--gutter)) calc(0.25 * var(--gutter));
+      }
+    }
+
+    & a:first-child {
+      margin-left: 0;
+    }
+
+    & a:last-child {
+      margin-right: 0;
+    }
+
+    & a:hover {
+      color: var(--dark-text-colour);
+    }
+
+    & a.current {
+      background-color: var(--dark-base);
+      color: var(--light-text-colour);
+    }
+
+    & a.current:hover {
+      color: var(--light-base);
+    }
+  }
+</style>
