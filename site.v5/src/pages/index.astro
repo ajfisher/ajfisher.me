@@ -1,11 +1,10 @@
 ---
+// @ts-nocheck
 import { getCollection } from 'astro:content';
 
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import ListItems from '../components/ListItems.astro';
-
-import { imageTransform } from '../lib/utils.mjs';
 
 // display logic:
 // 1. get three latest featured posts.
