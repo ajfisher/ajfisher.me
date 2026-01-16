@@ -6,8 +6,6 @@ import Header from '../../components/Header.astro';
 import ListItems from '../../components/ListItems.astro';
 import Pagination from '../../components/Pagination.astro';
 
-import { imageTransform } from '../../lib/utils.mjs';
-
 export async function getStaticPaths({ paginate }) {
   const allPosts = await getCollection('posts');
 
