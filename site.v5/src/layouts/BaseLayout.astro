@@ -91,6 +91,10 @@ const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).toString(
         & p, & pre {
           padding: 0 var(--gutter);
 
+          > code {
+            font-size: 1.5rem;
+          }
+
           & b {
             font-weight: inherit;
           }
@@ -137,6 +141,38 @@ const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).toString(
           max-width: 1000px !important;
           width: 100%;
           height: auto;
+        }
+
+        /** pullquote and blockquote styles **/
+        & blockquote, & p.has-pullquote::before {
+          font-style: italic;
+          margin: auto var(--margin-indent);
+          margin-right: 0;
+          padding: 0 calc(var(--gutter) - var(--margin-indent) - 2px);
+          padding-right: var(--gutter);
+          border-left: 2px solid var(--accent);
+        }
+
+        & blockquote > p {
+          padding: 0 !important;
+          font-family: var(--quote-font-family);
+          font-weight: var(--heading-font-weight);
+          font-style: normal;
+          font-size: 4rem;
+          color: var(--highlight);
+        }
+
+        & p.has-pullquote::before {
+          content: attr(data-pullquote);
+          display: block;
+          font-family: var(--quote-font-family);
+          font-weight: var(--heading-font-weight);
+          font-style: normal;
+          font-size: 4rem;
+          color: var(--highlight);
+
+          margin: inherit !important;
+          margin-left: calc(-1 * var(--gutter) + var(--margin-indent)) !important;
         }
       }
 
