@@ -5,6 +5,7 @@ layout: page.hbt
 slug: dis-everything
 large-title: true
 title: Disclaimer & Disclosure
+excerpt: A disclosure of my interests, affiliations, and commitments related to what I publish here.
 featureimage: ../../img/posts/disclosure.png
 imageby: ajfisher - Flux.Dev
 ---
