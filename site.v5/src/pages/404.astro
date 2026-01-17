@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import { imageTransform } from '../lib/utils.mjs';
+
+const title = 'This page cannot be found';
+const pageTitle = `${title} | AJ Fisher`;
+const slug = '404/';
+const excerpt = `Hmmm, this is awkward. The page you're looking for vanished into the ether or never existed in the first place. Either way, it's not here. Let's find you something better!`;
+const featureimage = imageTransform('../img/posts/404_page.png');
+const requestedPath = Astro.url?.pathname ?? '/404/';
+
+const data = {
+  title,
+  excerpt,
+  slug,
+  featureimage,
+  largetitle: true,
+};
+---
+<BaseLayout title={pageTitle} slug={slug}>
+  <Fragment slot="header" { ...data }>
+    <Header { ...data } />
+  </Fragment>
+  <section class="content">
+    <p>You made a request for <strong><span data-request-path>{requestedPath}</span></strong>.</p>
+    <p>This page doesn&apos;t exist or has been moved permanently.</p>
+
+    <h2>Where to next?</h2>
+    <p>
+      1. <a href="/">Go to the home page</a>: Check out recent articles
+      and featured content.
+    </p>
+    <p>
+      2. <a href="/who/">Learn more about ajfisher</a>: Find out what I
+      do and how I do it.
+    </p>
+    <p>
+      3. <a href="/blog/">Explore all articles</a>: Peruse the complete
+      archive of published content.
+    </p>
+  </section>
+</BaseLayout>
+
+<script>
+  const path = document.querySelector('[data-request-path]');
+  if (path && window?.location?.pathname) {
+    path.textContent = window.location.pathname;
+  }
+</script>
