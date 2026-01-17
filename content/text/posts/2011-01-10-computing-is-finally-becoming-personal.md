@@ -5,6 +5,10 @@ layout: post.hbt
 slug: computing-is-finally-becoming-personal
 title: Computers are finally becoming personal
 tags: consumer electronics, android, apple, internet, media, mobile
+excerpt: >
+    A holiday without a laptop highlighted how computing has shifted to
+    personal, consumption-first devices. Reflections on the rise of
+    tablets and smartphones and what that means for creators and openness.
 listimage: ../../img/posts/zenith.jpg
 ---
 

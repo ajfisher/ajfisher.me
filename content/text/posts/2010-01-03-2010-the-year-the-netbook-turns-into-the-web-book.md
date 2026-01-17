@@ -6,6 +6,10 @@ slug: 2010-the-year-the-netbook-turns-into-the-web-book
 title: '2010: The year the Netbook turns into the Web-book'
 smalltitle: true
 tags: internet, mobile, predictions, tablet, consumer electronics
+excerpt: >
+    Netbooks are drifting away from their lightweight roots, so 2010 should
+    belong to web books and tablets. What are the traits of these
+    network-first devices, and why they will reshape consumer computing?
 listimage: ../../img/posts/webbook.jpg
 ---
 

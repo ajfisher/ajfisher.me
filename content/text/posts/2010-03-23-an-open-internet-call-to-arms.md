@@ -5,8 +5,11 @@ layout: post.hbt
 slug: an-open-internet-call-to-arms
 title: An Open Internet call to arms
 tags: censorship, government, internet, media, rant
+excerpt: >
+    Australia's proposed internet filter is winning the emotional argument, not
+    the technical one. We need a voluntary one-day 'censor the net'
+    demonstration to show the public what's at stake.
 listimage: ../../img/posts/taped_shut.png
-
 ---
 
 Having watched the trainwreck that is the Australian Internet Filter and Senator Conroy's single minded obsession to go down in history as the "man who removed free speech from Australia" I can't help but notice two things:

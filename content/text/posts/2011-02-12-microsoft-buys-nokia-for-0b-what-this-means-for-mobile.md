@@ -10,6 +10,10 @@ featureimage: ../../img/posts/nokia_cheque.png
 imageby: ajfisher - imagen/Gemini
 listimage: ../../img/posts/nokia_cheque.png
 tags: nokia, mobile, business, strategy
+excerpt: >
+    Nokia's partnership with Microsoft is a bid to re-enter the smartphone race,
+    but timing and developer mindshare are critical. Assessing the risks involved
+    and some pragmatic guidance for mobile strategy.
 ---
 
 Windows Mobile 7 is the latest incarnation of the Microsoft mobile platform

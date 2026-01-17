@@ -6,6 +6,10 @@ slug: why-im-interested-in-aws-spot-prices-for-ec2
 title: Why I'm interested in AWS Spot Prices for EC2
 smalltitle: true
 tags: cloud computing, development, devops
+excerpt: >
+    EC2 spot pricing turns compute into a real market, and that changes
+    architecture choices. This is a sketch of a self-healing system that blends spot
+    and on-demand instances to chase value.
 ---
 
 There's been a lot of chatter going on around the intertubes over the last couple of weeks since [Amazon Web Services](http://aws.amazon.com) released their [Spot Instances](http://aws.amazon.com/ec2/spot-instances/) pricing model for EC2.

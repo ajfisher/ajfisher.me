@@ -5,6 +5,10 @@ layout: post.hbt
 slug: ubuntu-8-04-truly-desktop-linux
 title: Ubuntu 8.04 - truly desktop Linux
 tags: linux, os, desktop
+excerpt: >
+    Ubuntu 8.04 finally delivers a Linux desktop that just works, even on
+    finicky laptops. With Vista faltering, it feels like the first truly viable
+    moment for mainstream Linux adoption.
 ---
 
 I'm quite an [Ubuntu](http://www.ubuntulinux.com/) fan, having followed the project since more or less it's original inception. Given the general lack of problems with it thus far you'll notice very few entries on this blog about it.

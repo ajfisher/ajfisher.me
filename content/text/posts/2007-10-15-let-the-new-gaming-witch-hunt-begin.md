@@ -5,6 +5,10 @@ layout: post.hbt
 slug: let-the-new-gaming-witch-hunt-begin
 title: Let the new gaming witch hunt begin
 tags: censorship, gaming, government, media, rant
+excerpt: >
+    Another moral panic around games misses the real issue of parenting and
+    supervision. Blaming the industry ignores how adults choose, buy and
+    monitor the content their kids consume.
 ---
 
 I'm in my thirties now and I've been playing computer games from the age of about four when my dad first brought home the venerable VIC 20 - partly because he was doing a computer science degree at University but mostly because he wanted to tinker.

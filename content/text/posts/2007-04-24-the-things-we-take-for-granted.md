@@ -5,6 +5,10 @@ layout: post.hbt
 slug: the-things-we-take-for-granted
 title: The things we take for granted
 tags: ux, design
+excerpt: >
+    A simple moment watching a friend discover the mouse scroll wheel highlights
+    how much tech literacy we take for granted. Designers must remember the
+    shift of the average user and avoid widening the digital divide.
 ---
 
 I had one of those amazing moments as a techie last night where you get so gobsmacked by something that you think about it even a day or so later.

@@ -6,6 +6,10 @@ slug: spdy-could-gain-acceptence-very-quickly-with-some-product-innovation
 title: SPDY could gain acceptence - with some innovation
 smalltitle: true
 tags: google, internet, web
+excerpt: >
+    Google's SPDY could speed up the web, but browser upgrades alone are too
+    slow. Gateway and router-level proxies are needed to accelerate
+    adoption and deliver benefits to all sooner.
 ---
 
 Google have announced some early findings about their research into a faster protocol to reduce latency times due to good old fashioned HTTP. HTTP was designed as a really simple protocol to delivery (primarily) text content over the Internet and thus was born the Web.

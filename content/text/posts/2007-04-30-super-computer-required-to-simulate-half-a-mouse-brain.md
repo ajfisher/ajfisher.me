@@ -5,6 +5,10 @@ layout: post.hbt
 slug: super-computer-required-to-simulate-half-a-mouse-brain
 title: Super computer required to simulate half a mouse brain
 tags: ai, supercomputers
+excerpt: >
+    Blue Gene L can barely simulate half a mouse brain, a reminder of how far we
+    are from human-scale neural models. Small, specialized neural networks are
+    likely more practical than brute-force brain simulations.
 ---
 
 Scientists have published that the've used the [IBM Blue Gene L supercomputer](http://www.llnl.gov/asc/computing_resources/bluegenel/bluegene_home.html) to simulate half of a typical mouse's brain. More accurately they've simulated about half the neurons and just over half the number of synaptic connections for 10 seconds - which because the simulation was running at about a tenth of normal speed showed about 1 second's worth of realtime information.

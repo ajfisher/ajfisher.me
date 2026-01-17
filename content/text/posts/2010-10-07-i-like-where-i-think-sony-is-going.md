@@ -5,6 +5,10 @@ layout: post.hbt
 slug: i-like-where-i-think-sony-is-going
 title: I like where I think Sony is going
 tags: android, consumer electronics, mobile, predictions
+excerpt: >
+    Sony could regain consumer electronics leadership by turning its Android
+    phones into a hub for movies, gaming and home displays. This is a
+    speculative roadmap that links Xperia, Crackle and a possible PSP successor.
 ---
 
 This is one of my speculation fueled posts so I'm admitting that a lot of it is based on rumour, hearsay, wild prognostication and adding up 2+2+2+2 to equal 63. With that in mind on with the rest...

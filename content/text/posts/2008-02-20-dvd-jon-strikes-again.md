@@ -6,6 +6,9 @@ slug: dvd-jon-strikes-again
 title: DVD Jon strikes again
 largetitle: true
 tags: drm, media, piracy, rant
+excerpt: >
+    DVD Jon's latest hack targets iTunes lock-in and revives the argument that
+    purchased media should be playable anywhere. 
 ---
 
 [DVD Jon or Jon Lech Johansen](http://en.wikipedia.org/wiki/Jon_Lech_Johansen)

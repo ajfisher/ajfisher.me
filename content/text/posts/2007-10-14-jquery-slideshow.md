@@ -6,6 +6,10 @@ layout: post.hbt
 slug: jquery-slideshow
 title: JQuery Slideshow
 tags: css, javascript, development, web
+excerpt: >
+    A client request for a simple, maintainable slideshow led to a jQuery-based
+    fade sequence instead of Flash. This walkthrough explains the setup and why
+    jQuery's animation API makes the solution quick and reusable.
 ---
 
 It seems JQuery is definitely gaining some traction as a useful library - not least because of the development of the [ThickBox Gallery library ](http://jquery.com/demo/thickbox/)by [Cody Lindley](http://www.codylindley.com/) which is seeing huge amounts of use around the web at the moment as a means for displaying galleries for product or photos without being constrained by the page template you are building for and by maintaining the semantic integrity of the HTML you have put into the page. The last cool feature is that you don't have to use the dreaded pop up which brings into play the whole pop-up-blocker issues.

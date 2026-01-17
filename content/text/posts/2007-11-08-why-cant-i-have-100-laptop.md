@@ -5,6 +5,10 @@ layout: post.hbt
 slug: why-cant-i-have-100-laptop
 title: Why can't I have $100 laptop
 tags: government, hardware
+excerpt: >
+    The OLPC project finally delivered the $100 laptop, but availability is
+    frustratingly limited. It should be sold more widely and embraced by
+    schools, not confined to North America.
 ---
 
 Don't you hate it when you can't get something you'd really like?

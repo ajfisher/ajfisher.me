@@ -8,6 +8,10 @@ featureimage: ../../img/posts/android_diversity.png
 imageby: ajfisher, Imagen
 listimage: ../../img/posts/android_diversity.png
 tags: android, development, google, internet, media, mobile, rant
+excerpt: >
+    Android fragmentation is real but manageable, and hardly unique in software
+    history. How did we get here and what practical tactics can developers use
+    to cope with device diversity?
 ---
 
 This is a post I've been mulling over for a while and it now seems the right
