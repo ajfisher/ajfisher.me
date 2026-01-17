@@ -7,6 +7,7 @@ import humanize from 'humanize-plus';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import { imageTransform } from '../lib/utils.mjs';
+import { ICON_SIZES, faviconPath, iconPath } from '../lib/icon-meta.mjs';
 import { SITE_META } from '../lib/site-meta.mjs';
 
 const {
@@ -77,6 +78,12 @@ const sitemapUrl = siteUrl ? new URL('/sitemap-index.xml', siteUrl).toString() :
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#FF5E9A" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" type="image/png" href={faviconPath} />
+    {ICON_SIZES.map((size) => (
+      <link rel="apple-touch-icon" sizes={`${size}x${size}`} href={iconPath(size)} />
+    ))}
     <title>{titleTag}</title>
     {canonical && <link rel="canonical" href={canonical} />}
     <link rel="sitemap" type="application/xml" title="Sitemap" href={sitemapUrl} />
