@@ -5,6 +5,10 @@ layout: post.hbt
 slug: pci-dss-will-wreak-havoc-on-smes
 title: PCI DSS will wreak havoc on SMEs
 tags: rant, security, business
+excerpt: >
+    PCI DSS compliance makes sense in theory, but for small merchants it becomes
+    an expensive, confusing audit industry. In its current form, it fails to address
+    real-world fraud while pushing SMEs toward costly consultants.
 ---
 
 One of my clients was asking me about [PCI DSS](http://www.pcisecuritystandards.org/) certification today. Coincidentally I also received our letter about compulsory compliance to the PCI DSS standard.

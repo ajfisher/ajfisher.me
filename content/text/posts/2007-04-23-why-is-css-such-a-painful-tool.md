@@ -5,6 +5,11 @@ layout: post.hbt
 slug: why-is-css-such-a-painful-tool
 title: Why is CSS such a painful tool?
 tags: css, development, standards
+excerpt: >
+    CSS is powerful but painfully repetitive, especially when themes require the
+    same colours and borders to be retyped everywhere. Variables and better
+    developer-focused standards would enable styling that can be structured and
+    maintainable.
 ---
 
 Looking at the title above you'd be expecting to see a rant covering the lines of CSS is rubbish, it doesn't work properly and why can't we go back to the days of nested tables and lots of little shim images.

@@ -5,6 +5,10 @@ layout: post.hbt
 slug: why-industries-can-still-be-revolutionised-on-the-web
 title: Why industries can still be revolutionised on the web
 tags: media, rant, design, web, ux, business, strategy
+excerpt: >
+    Too many industries still ship broken, confusing websites, which means basic
+    design and information architecture can still be disruptive. The web still
+    has plenty of room to be rebuilt.
 ---
 
 I'm a bit of a cynic really. Anyone that's trawled through the depths of this blog will know that I have a fairly acid tongue when it comes to technology. I am a walking example of the phrase "familiarity breeds contempt".

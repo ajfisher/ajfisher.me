@@ -6,6 +6,10 @@ slug: prediction-2010-will-be-the-year-apple-and-google-have-a-cage-fight
 title: 2010 will be the year Apple and Google have a cage fight
 smalltitle: true
 tags: android, apple, google, internet, ios, mobile, predictions, business
+excerpt: >
+    2010 is going to be a cage match between Apple and Google for mobile
+    dominance. With Android's rapid growth and iPhone's ecosystem pressures, the
+    battle lines are clearly being drawn.
 listimage: ../../img/posts/cagefight.jpg
 featureimage: ../../img/posts/fighters.png
 imageby: ajfisher - Fighters in a ring - FLUX.dev

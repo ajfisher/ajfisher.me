@@ -6,6 +6,10 @@ slug: case-study-django-agile-sportsgirl-redevelopment
 title: 'Case Study: Django + Agile = Sportsgirl redevelopment'
 smalltitle: true
 tags: development, web, python, retail, ecommerce 
+excerpt: >
+    A rapid Sportsgirl community rebuild used Django, Pinax and an agile
+    workflow to ship in under eight weeks. The case study covers the stack,
+    cloud deployment and performance tuning that made it work at scale.
 ---
 
 I've decided to write this one up because there isn't much on large scale and high speed Django development as yet and this is all still fresh in my head so it's worth getting down on paper (or screen as it were).

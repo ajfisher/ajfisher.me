@@ -5,6 +5,10 @@ layout: post.hbt
 slug: net-xslt-and-how-to-import-an-external-xml-document
 title: .NET / XSLT and how to import an external XML document
 tags: development, web
+excerpt: >
+    Loading external XML in XSLT on .NET is harder than it should be. This note
+    explains the resolver you need and the document() approach that returns a
+    proper nodeset instead of just text.
 ---
 
 I work with XML and XSLT every day of the week. Indeed working for a company called [XML Infinity ](http://www.xmlinfinity.com/)you can imagine how much we use it. I had one of those incredibly frustrating moments this afternoon that one typically when dealing with badly documented parts of .NET or XSLT.

@@ -5,6 +5,10 @@ layout: post.hbt
 slug: adobe-narayens-kingdom-for-a-plan
 title: Adobe - Narayen's kingdom for a plan...
 tags: adobe, apple, google, media, strategy, web
+excerpt: >
+    Adobe's Flash-era dominance is crumbling under mobile pressure and a lack of
+    strategic focus. Adobe needs a hard reset. Drop bloated products, focus on
+    core tools, and innovate fast.
 listimage: ../../img/posts/fortune_cookie.jpg
 ---
 

@@ -5,6 +5,10 @@ layout: post.hbt
 slug: potent-messages-of-impotent-industries
 title: Potent messages of impotent industries
 tags: rant, censorship, distributed computing, drm, media, piracy
+excerpt: >
+    The TorrentSpy case is another skirmish in the MPAA's war on file sharing,
+    but the lawsuits only spur new tools. The real fix is better distribution
+    and pricing, not courtroom victories.
 ---
 
 I should probably know better than to open my mouth but the obvious has to be stated on this one. For anyone that is net Savvy enough to know what BitTorrent is, the news that TorrentSpy has just lost its court case against the MPAA isn't exactly surprising.

@@ -5,6 +5,10 @@ layout: post.hbt
 slug: the-golden-age-of-mobile-soon-maybe
 title: The Golden Age of mobile? Soon maybe...
 tags: mobile, predictions, web
+excerpt: >
+    With smartphones, data plans and app stores exploding in 2009, it feels like
+    the golden age of mobile is near but not here yet. The real shift will
+    come with contextual and augmented reality experiences.
 ---
 
 Some would say that it's already been - during the heady days of GSM Data and WAP, some would say it stalled when European clients pulled all funding from mobile internet apps in the post-dot-com-crash GPRS days, some would say that with the advent of the iPhone we're there in all it's shiny-coverflow-enabled-finger-waggling-goodness.

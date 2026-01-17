@@ -5,6 +5,10 @@ layout: post
 slug: please-nokia-slap-me-again-no-really
 title: Please nokia slap me again - no really
 tags: mobile, nokia, business
+excerpt: >
+    Years of loyalty to Nokia is being tested by a string of buggy phones and poor
+    support, culminating in an N73 that crashes during calls. Despite these
+    frustrations, new hardware makes it hard to walk away.
 ---
 
 I love Nokia phones. In fact you could probably say that I have had a love

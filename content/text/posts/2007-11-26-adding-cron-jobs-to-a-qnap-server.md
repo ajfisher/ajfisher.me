@@ -5,6 +5,10 @@ layout: post.hbt
 slug: adding-cron-jobs-to-a-qnap-server
 title: Adding Cron Jobs to a QNAP server
 tags: development, linux, devops
+excerpt: >
+    QNAP NAS boxes are Linux-based but reboot to a clean state, so custom cron
+    jobs disappear. This guide shows how to hook into the startup process and
+    persist your own scheduled tasks.
 ---
 
 If you haven't come across them yet[ QNAP](http://www.qnap.co.uk/) make these amazing little NAS boxes that are perfect for home or SME use. I've got mine running as a home server but might get one for the office as our old server is on it's last legs and a fully tricked out 1U dell server is a bit of overkill for a glorified file server.

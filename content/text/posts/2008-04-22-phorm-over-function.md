@@ -6,6 +6,10 @@ slug: phorm-over-function
 title: Phorm over function?
 largetitle: true
 tags: internet, media, privacy, security, web
+excerpt: >
+    Phorm's ISP-level tracking raises serious privacy concerns even if the data
+    is anonymous. Opt-out tracking erodes trust and could spark a privacy-first
+    backlash or new laws.
 ---
 
 Phorm is, and will continue to be for some time I think a hugely divisive issue online. [BBC have another story today about it](http://news.bbc.co.uk/1/hi/technology/7359024.stm), this time having spoken to the various security companies like F-Secure, McAffee etc about whether they will flag a message to the user about whether Phorm has been enabled or not.

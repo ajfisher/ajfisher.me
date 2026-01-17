@@ -6,6 +6,10 @@ layout: post.hbt
 slug: drmed-for-life
 title: DRMed for Life
 tags: drm, media, piracy, rant
+excerpt: >
+    The DRM arms race punishes legitimate buyers who just want to use media
+    across their devices. Studios should drop restrictive locks, focus on
+    better content and policing, and stop treating customers as pirates.
 ---
 
 In the news recently has been the whole thing about not only the copy

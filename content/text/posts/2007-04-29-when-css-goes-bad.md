@@ -6,6 +6,11 @@ slug: when-css-goes-bad
 title: When CSS goes bad
 largetitle: true
 tags: development, css, standards
+excerpt: >
+    An IE peekaboo bug turns a simple hover effect into a disappearing page and
+    exposes how hard CSS bugs are to search for. Better classification and
+    shared knowledge of browser quirks could make debugging less of a guessing
+    game.
 ---
 
 If you do a lot of CSS work you'll have seen particular bugs time after time and how to deal with them, however when things do go wrong [and they will trust me] finding bug related information can be a nightmare.

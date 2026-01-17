@@ -6,11 +6,14 @@ slug: how-to-avoid-the-audiencepresenter-disconnect
 title: 'How to avoid the Audience : Presenter Disconnect'
 smalltitle: true
 tags: presentation, essay
+excerpt: >
+    Twitter backchannels can amplify a speaker's success or failure in real
+    time. A view on why audiences turn negative and some practical ways
+    presenters can keep the room engaged.
 featureimage: ../../img/posts/concert.jpg
 imageby: Martin Fisch
 imagelink: https://www.flickr.com/photos/marfis75/2459533929
 listimage: ../../img/posts/concert.jpg
-
 ---
 
 I've just finished two fantastic days at [Web Directions South](http://south10.webdirections.org/), a conference that has great organisers, great participants and largely informative and inspirational presentations from experts in their respective Web disciplines from around the world.

@@ -5,6 +5,10 @@ layout: post.hbt
 slug: can-yahoo-really-get-things-so-wrong
 title: Can Yahoo really get things so wrong?
 tags: censorship, internet, privacy, rant, web
+excerpt: >
+    Yahoo's spam filters began deleting legitimate customer emails with no clear
+    appeal path. Debugging the trail of why, and the frustration of opaque
+    email filtering.
 ---
 
 Yahoo are one of the original dotcoms. They've been around for a **long** time so they should know their business. Imagine my surprise when one of my clients starts complaining that their confirmation emails to yahoo email accounts are permanently being binned as is everything else they send - including personal communications.

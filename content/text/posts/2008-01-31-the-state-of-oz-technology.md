@@ -6,6 +6,10 @@ layout: post.hbt
 slug: the-state-of-oz-technology
 title: The state of Oz technology
 tags: linux, mobile, security, web
+excerpt: >
+    From mobile data to broadband and open-source adoption, Australia's tech
+    scene feels stuck compared to Europe. Why progress is stalled and it needs
+    a reset.
 ---
 
 Rarely does an entire country entice me to start ranting (and at this point I'll point out I am in fact Australian) but by crikey Australian technology hasn't really moved in the last 5 years.

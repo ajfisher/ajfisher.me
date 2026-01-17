@@ -6,6 +6,10 @@ layout: post.hbt
 slug: jquery-saves-the-day
 title: JQuery saves the day?
 tags: css, javascript, web
+excerpt: >
+    jQuery's selector engine brings CSS-like power to JavaScript and solves
+    real-world layout problems without littering HTML with extra classes. Used
+    sparingly, it enhances interfaces while keeping pages accessible.
 ---
 
 If you haven't come across it yet there is a javascript library called [JQuery](http://jquery.com/) which is being developed as an open source project, designed to give us better control over our web pages and the things we can do with them.

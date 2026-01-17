@@ -6,6 +6,10 @@ slug: an-unofficial-endorsement-of-the-android-platform
 title: An unofficial endorsement of the Android platform?
 smalltitle: true
 tags: android, google, ios, mobile, os
+excerpt: >
+    Facebook's official Android app signals that the platform is now a serious
+    iPhone rival. It removes a key Apple differentiator, and sets up a fierce
+    Android vs iOS battle.
 ---
 
 As [TechCrunch](http://www.techcrunch.com/) reported: [Pigs Fly as Facebook and Google work together on an Android  App](http://www.techcrunch.com/2009/07/28/pigs-fly-as-facebook-and-google-work-together-on-an-android-app/) - there's been a few indicators that this might be  happening, particularly with some random mentions here and there on [Twitter](http://search.twitter.com/search?max_id=2901309107&page=15&q=android+facebook) but no one was really expecting anything to occur given the competitiveness between the two businesses.

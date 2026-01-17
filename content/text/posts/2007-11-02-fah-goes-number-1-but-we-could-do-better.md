@@ -6,6 +6,10 @@ layout: post.hbt
 slug: fah-goes-number-1-but-we-could-do-better
 title: FAH goes number 1 but we could do better
 tags: distributed computing, gaming, supercomputers
+excerpt: >
+    Folding@home hitting a petaflop shows the power of distributed computing,
+    especially with consoles in the mix. What if we had  an open framework
+    that lets any project tap spare processing capacity?
 ---
 
 [Folding at home](http://folding.stanford.edu/) (FAH) has taken the [Guiness World Record ](http://www.guinnessworldrecords.com/)for being the most powerful distributed computing network with a top speed of over 1 petaflop - (a thousand trillion calculations per second).

@@ -5,6 +5,10 @@ layout: post.hbt
 slug: why-was-data-being-passed-on-a-disc-and-what-was-eds-advice
 title: Why was data being passed on a disc and what was EDS' advice?
 tags: rant, privacy, government, security
+excerpt: >
+    The HMRC data loss scandal shows how weak government data practices and
+    contractor incentives can be. Basic safeguards like encryption,
+    least-privilege data extracts, and real accountability are needed.
 ---
 
 Readers in the UK will be aware of a Data Protection Act train crash that we have been watching unfold in front of us over the last few days. It turns out that 25 million records of a database managed by [HMRC](http://www.hmrc.gov.uk/) have been lost in the post because they were sent on a couple of disks using unrecorded mail.

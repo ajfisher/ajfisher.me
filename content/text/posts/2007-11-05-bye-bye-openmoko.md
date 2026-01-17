@@ -10,6 +10,10 @@ featureimage: ../../img/posts/bye_openmoko.png
 imageby: ajfisher - Imagen/Gemini
 listimage: ../../img/posts/bye_openmoko.png
 tags: google, mobile, nokia, web, android, os, strategy
+excerpt: >
+    Google's new mobile OS feels like a missed opportunity to support existing
+    open-source platforms such as OpenMoko. It adds more fragmentation to an
+    already messy mobile ecosystem.
 ---
 
 Google announced today that they would be partnering up with a load of other
