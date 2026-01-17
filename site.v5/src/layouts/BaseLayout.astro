@@ -76,6 +76,8 @@ const canonical = siteUrl ? new URL(Astro.url.pathname, siteUrl).toString() : un
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#FF5E9A" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <title>{titleTag}</title>
     {canonical && <link rel="canonical" href={canonical} />}
     {metaTags.map((tag) => <meta {...tag} />)}
