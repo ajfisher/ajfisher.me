@@ -81,6 +81,17 @@ const sitemapUrl = siteUrl ? new URL('/sitemap-index.xml', siteUrl).toString() :
     {canonical && <link rel="canonical" href={canonical} />}
     <link rel="sitemap" type="application/xml" title="Sitemap" href={sitemapUrl} />
     {metaTags.map((tag) => <meta {...tag} />)}
+    { import.meta.env.PROD && (
+      <Fragment>
+        <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-CPBBDZJVXJ"></script>
+        <script is:inline>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-CPBBDZJVXJ');
+        </script>
+      </Fragment>
+    )}
   </head>
   <body>
     {Astro.slots.has('header') && (
