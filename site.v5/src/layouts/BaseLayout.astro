@@ -2,22 +2,83 @@
 // Base layout component for the site to hook all the other pages into
 import '../styles/global.css';
 
+import humanize from 'humanize-plus';
+
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import { imageTransform } from '../lib/utils.mjs';
+import { SITE_META } from '../lib/site-meta.mjs';
 
 const {
-  title = "AJ Fisher",
+  title: rawTitle = SITE_META.defaultTitle,
   slug = '/',
+  seo = {},
 } = Astro.props;
 
-const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).toString() : undefined;
+const siteUrl = Astro.site ?? SITE_META.siteUrl;
+const pageTitle = seo.title ?? rawTitle ?? SITE_META.defaultTitle;
+const description = seo.description ?? SITE_META.description;
+const pageType = seo.type ?? 'post';
+const tweet = seo.tweet ?? '';
+const readingTime = seo.readingTime ?? 0;
+const words = seo.words ?? 0;
+const extraMeta = Array.isArray(seo.meta) ? seo.meta : [];
+
+const resolveImagePath = (value) => {
+  if (!value) return undefined;
+  if (typeof value === 'string') return imageTransform(value);
+  if (typeof value === 'object' && value.src) return value.src;
+  return undefined;
+};
+
+const imagePath = resolveImagePath(seo.image);
+const imageUrl = imagePath && siteUrl ? new URL(imagePath, siteUrl).toString() : undefined;
+
+let titleTag = pageTitle || SITE_META.defaultTitle;
+if (titleTag !== SITE_META.defaultTitle) {
+  titleTag = `${titleTag} | ${SITE_META.defaultTitle}`;
+}
+
+const cardMeta = [];
+
+if (imageUrl) {
+  cardMeta.push({ property: 'og:image', content: imageUrl });
+  cardMeta.push({ name: 'twitter:image', content: imageUrl });
+}
+
+if (readingTime > 0) {
+  const roundedTime = Math.ceil(readingTime);
+  cardMeta.push({ name: 'twitter:label1', content: 'Reading Time' });
+  cardMeta.push({ name: 'twitter:data1', content: `${roundedTime} minutes` });
+}
+
+if (words > 0) {
+  const humanisedWords = humanize.compactInteger(words, 1);
+  cardMeta.push({ name: 'twitter:label2', content: 'Words' });
+  cardMeta.push({ name: 'twitter:data2', content: `${humanisedWords}` });
+}
+
+const metaTags = [
+  { name: 'description', content: description },
+  { property: 'og:title', content: pageTitle },
+  { property: 'og:description', content: description },
+  { property: 'og:type', content: pageType },
+  { name: 'twitter:card', content: 'summary_large_image' },
+  { name: 'twitter:creator', content: SITE_META.author },
+  { name: 'twitter:site', content: SITE_META.author },
+  { name: 'twitter:title', content: pageTitle },
+  { name: 'twitter:description', content: tweet || description },
+].concat(extraMeta).concat(cardMeta);
+
+const canonical = siteUrl ? new URL(Astro.url.pathname, siteUrl).toString() : undefined;
 ---
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>{title}</title>
+    <title>{titleTag}</title>
     {canonical && <link rel="canonical" href={canonical} />}
+    {metaTags.map((tag) => <meta {...tag} />)}
   </head>
   <body>
     {Astro.slots.has('header') && (

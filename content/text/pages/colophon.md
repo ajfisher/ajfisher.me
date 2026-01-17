@@ -4,6 +4,7 @@ date: 2020-01-31 10:00:10+10:00
 layout: page
 slug: colophon
 title: Colophon - how this site was built.
+excerpt: How this site is built, the tools behind it, and the infrastructure that keeps it running.
 featureimage: ../../img/posts/colophon.png
 imageby: ajfisher - Flux.Dev
 ---

@@ -42,16 +42,23 @@ export async function getStaticPaths() {
 }
 
 const { tagName, posts, metadata } = Astro.props;
+const tagTitle = metadata.title || tagName;
 
 const headerData = {
-  title: metadata.title || tagName,
+  title: tagTitle,
   excerpt: metadata.intro,
   featureimage: imageTransform(metadata.tagimage),
   postCount: posts.length
 }
 
+const seo = {
+  title: `${tagTitle} tagged posts`,
+  description: `Posts that are tagged ${tagName} on ajfisher.me`,
+  type: 'list',
+};
+
 ---
-<BaseLayout title={metadata.title}>
+<BaseLayout title={tagTitle} seo={seo}>
   <Fragment slot="header" { ...headerData }>
     <Header { ...headerData } largetitle={true} />
   </Fragment>

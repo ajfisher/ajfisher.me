@@ -26,8 +26,14 @@ const data = {
   tags,
   uri: slug,
 };
+
+const seo = {
+  title: 'Leaders | ajfisher',
+  description: 'Information for leaders',
+  type: 'article',
+};
 ---
-<BaseLayout title="Resources for Leaders | AJ Fisher">
+<BaseLayout title="Resources for Leaders | AJ Fisher" slug={slug} seo={seo}>
   <Fragment slot="header" { ...data }>
     <Header { ...data } />
   </Fragment>
@@ -116,4 +122,3 @@ const data = {
       <PostData { ...data } />
   </Fragment>
 </BaseLayout>
-

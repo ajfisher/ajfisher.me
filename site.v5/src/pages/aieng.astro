@@ -24,8 +24,14 @@ const data = {
   tags,
   uri: slug,
 };
+
+const seo = {
+  title: 'AI Engineering | ajfisher',
+  description: 'Information for software engineers using AI agents',
+  type: 'article',
+};
 ---
-<BaseLayout title="AI Engineering Resources">
+<BaseLayout title="AI Engineering Resources" slug={slug} seo={seo}>
   <Fragment slot="header" { ...data }>
     <Header { ...data } />
   </Fragment>

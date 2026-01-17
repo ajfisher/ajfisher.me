@@ -4,7 +4,6 @@ import Header from '../components/Header.astro';
 import { imageTransform } from '../lib/utils.mjs';
 
 const title = 'This page cannot be found';
-const pageTitle = `${title} | AJ Fisher`;
 const slug = '404/';
 const excerpt = `Hmmm, this is awkward. The page you're looking for vanished into the ether or never existed in the first place. Either way, it's not here. Let's find you something better!`;
 const featureimage = imageTransform('../img/posts/404_page.png');
@@ -17,8 +16,14 @@ const data = {
   featureimage,
   largetitle: true,
 };
+
+const seo = {
+  title,
+  description: 'The page you requested does not exist or has moved.',
+  type: 'website',
+};
 ---
-<BaseLayout title={pageTitle} slug={slug}>
+<BaseLayout title={title} slug={slug} seo={seo}>
   <Fragment slot="header" { ...data }>
     <Header { ...data } />
   </Fragment>

@@ -34,9 +34,14 @@ recent = recentFiltered.slice(0, 10);
 const headerPost = featured[0];
 featured = featured.slice(1, 3);
 
+const seo = {
+  title: 'Home | ajfisher',
+  description: 'Explore insights on technology, business and user experience at the intersection of AI, web, media and digital innovation.',
+  type: 'list',
+};
 ---
 
-<BaseLayout title="AJ Fisher" slug="/">
+<BaseLayout title="AJ Fisher" slug="/" seo={seo}>
   <Fragment slot="header">
     <Header { ...{...headerPost.data, ...headerPost.rendered.metadata.frontmatter} }
       isFeatured={true}

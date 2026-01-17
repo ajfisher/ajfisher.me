@@ -5,6 +5,7 @@ date: 2023-09-02 12:27:58+10:00
 layout: page
 slug: who
 title: Who is this @ajfisher person?
+excerpt: If you're interested, here's a bit more about me, my work, and the projects and communities I contribute to.
 featureimage: ../../img/posts/who.png
 imageby: ajfisher - Flux.Dev
 ---
