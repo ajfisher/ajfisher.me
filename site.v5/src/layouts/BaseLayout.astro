@@ -71,6 +71,7 @@ const metaTags = [
 ].concat(extraMeta).concat(cardMeta);
 
 const canonical = siteUrl ? new URL(Astro.url.pathname, siteUrl).toString() : undefined;
+const sitemapUrl = siteUrl ? new URL('/sitemap-index.xml', siteUrl).toString() : '/sitemap-index.xml';
 ---
 <html lang="en">
   <head>
@@ -78,6 +79,7 @@ const canonical = siteUrl ? new URL(Astro.url.pathname, siteUrl).toString() : un
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>{titleTag}</title>
     {canonical && <link rel="canonical" href={canonical} />}
+    <link rel="sitemap" type="application/xml" title="Sitemap" href={sitemapUrl} />
     {metaTags.map((tag) => <meta {...tag} />)}
   </head>
   <body>
