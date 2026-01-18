@@ -73,6 +73,7 @@ const metaTags = [
 
 const canonical = siteUrl ? new URL(Astro.url.pathname, siteUrl).toString() : undefined;
 const sitemapUrl = siteUrl ? new URL('/sitemap-index.xml', siteUrl).toString() : '/sitemap-index.xml';
+const rssUrl = siteUrl ? new URL('/rss.xml', siteUrl).toString() : '/rss.xml';
 ---
 <html lang="en">
   <head>
@@ -87,6 +88,7 @@ const sitemapUrl = siteUrl ? new URL('/sitemap-index.xml', siteUrl).toString() :
     <title>{titleTag}</title>
     {canonical && <link rel="canonical" href={canonical} />}
     <link rel="sitemap" type="application/xml" title="Sitemap" href={sitemapUrl} />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href={rssUrl} />
     {metaTags.map((tag) => <meta {...tag} />)}
     { import.meta.env.PROD && (
       <Fragment>
