@@ -1,17 +1,8 @@
 import { defineCollection } from 'astro:content';
 import { glob, _file } from 'astro/loaders';
 import { z } from 'astro/zod';
-// import { imageTransform } from './lib/utils.mjs';
 
-// use this to make the tags URL-friendly
-const slugifyTag = (tag) => tag
-  .toLowerCase()
-  .trim()
-  .replace(/\s+/g, '-')          // Replace spaces with -
-  .replace(/[^\w-]+/g, '')       // Remove all non-word chars
-  .replace(/--+/g, '-')          // Replace multiple - with single -
-  .replace(/^-+/, '')            // Trim - from start
-  .replace(/-+$/, '');           // Trim - from end
+import { slugifyTag } from './lib/utils.mjs';
 
 const baseSchema = z.object({
   title: z.string(),

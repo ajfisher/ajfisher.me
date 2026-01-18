@@ -28,3 +28,13 @@ export const longDate = (date) => {
 
   return `${weekday}, ${month} ${day}${suffix} ${year}`;
 };
+
+// use this to make the tags URL-friendly
+export const slugifyTag = (tag) => tag
+  .toLowerCase()
+  .trim()
+  .replace(/\s+/g, '-')          // Replace spaces with -
+  .replace(/[^\w-]+/g, '')       // Remove all non-word chars
+  .replace(/--+/g, '-')          // Replace multiple - with single -
+  .replace(/^-+/, '')            // Trim - from start
+  .replace(/-+$/, '');           // Trim - from end
