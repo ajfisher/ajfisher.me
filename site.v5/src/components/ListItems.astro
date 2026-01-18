@@ -1,5 +1,6 @@
 ---
 import ListItem from './ListItem.astro';
+import { mergeEntryData } from '../lib/content-utils.mjs';
 
 const {
   items,
@@ -8,18 +9,7 @@ const {
 
 const compactStyle = compact ? 'compact' : '';
 
-const resolveEntryProps = (entry) => {
-  const frontmatter = entry?.rendered?.metadata?.frontmatter ?? {};
-
-  return {
-    ...entry.data,
-    ...frontmatter,
-    featureimage: entry.data.featureimage ?? frontmatter.featureimage,
-    listimage: entry.data.listimage ?? frontmatter.listimage,
-  };
-};
-
-const resolvedItems = items.map(resolveEntryProps);
+const resolvedItems = items.map(mergeEntryData);
 
 ---
 <ul class={`listitems ${compactStyle}`}>

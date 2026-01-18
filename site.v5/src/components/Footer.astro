@@ -2,6 +2,9 @@
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 import { imageTransform } from '../lib/utils.mjs';
+import enterpriseAiImage from '../../../content/img/posts/enterprise_ai.jpg';
+import roboticsBookImage from '../../../content/img/posts/make_js_robots.jpg';
+import responsiveDesignImage from '../../../content/img/posts/responsive_design.jpg';
 
 // 1. Logic: Equivalent of your slug prop
 const { slug = '/' } = Astro.props;
@@ -43,7 +46,7 @@ const featuredImg = imageTransform(featured.data.listimage);
       <h2>Recent Media</h2>
       <div class="image-link">
         <a href="/2023/02/13/podcast-enterprise-ai/">
-          <Image src="/img/posts/enterprise_ai.jpg" alt="Illustration of an office" width="750" height="250"/>
+          <Image src={enterpriseAiImage} alt="Illustration of an office" width="750" height="250"/>
         </a>
       </div>
       <p>
@@ -61,7 +64,7 @@ const featuredImg = imageTransform(featured.data.listimage);
       <h2>My Books</h2>
       <div class="image-link" style={`--image-position: ${"50% 100%"}`}>
         <a href="https://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
-          <Image src="/img/posts/make_js_robots.jpg" alt="Make JavaScript Robotics Book Cover" width="750" height="250"/>
+          <Image src={roboticsBookImage} alt="Make JavaScript Robotics Book Cover" width="750" height="250"/>
         </a>
       </div>
       <p>
@@ -69,7 +72,7 @@ const featuredImg = imageTransform(featured.data.listimage);
       </p>
       <div class="image-link" style={`--image-position: ${"50% 85%"}`}>
         <a href="https://www.amazon.com/Jump-Start-Responsive-Web-Design/dp/0987332163/">
-          <Image src="/img/posts/responsive_design.jpg" alt="Jump Start Responsive Design Book Cover" width="750" height="250"/>
+          <Image src={responsiveDesignImage} alt="Jump Start Responsive Design Book Cover" width="750" height="250"/>
         </a>
       </div>
       <p>

@@ -5,6 +5,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import ListItems from '../../components/ListItems.astro';
 import Pagination from '../../components/Pagination.astro';
+import { mergeEntryData } from '../../lib/content-utils.mjs';
 
 export async function getStaticPaths({ paginate }) {
   const allPosts = await getCollection('posts');
@@ -27,16 +28,6 @@ const seo = {
   type: 'list',
 };
 
-const mergeEntryData = (entry) => {
-  const frontmatter = entry?.rendered?.metadata?.frontmatter ?? {};
-
-  return {
-    ...entry.data,
-    ...frontmatter,
-    featureimage: entry.data.featureimage ?? frontmatter.featureimage,
-    listimage: entry.data.listimage ?? frontmatter.listimage,
-  };
-};
 
 // The logic here is this:
 // 1. Find the most recent featured post of the posts supplied unless we are
