@@ -1,7 +1,21 @@
 ---
+import { slugifyTag } from '../lib/utils.mjs';
+
 const {
   tags = [],
 } = Astro.props;
+
+if (tags && tags.length > 0) {
+  // Catch situations where tags is an array of strings instead of objects
+  for (let i = 0; i < tags.length; i++) {
+    if (!tags[i].slug) {
+      tags[i] = {
+        name: tags[i],
+        slug: slugifyTag(tags[i])
+      }
+    }
+  }
+}
 
 ---
 { tags.length > 0 && (
@@ -24,7 +38,7 @@ const {
       gap: calc(0.25 * var(--gutter));
 
       margin-bottom: var(--gutter);
-      margin-top: calc(-1 * var(--gutter));
+      margin-top: calc(-0.5 * var(--gutter));
 
 
       & a {
