@@ -10,6 +10,23 @@ import ListItems from '../../components/ListItems.astro';
 
 import { imageTransform } from '../../lib/utils.mjs';
 
+const tagImages = import.meta.glob('../../../../content/img/posts/*.{png,jpg,jpeg,webp}', {
+  eager: true,
+});
+
+const resolveTagImage = (value) => {
+  if (!value) return undefined;
+
+  const normalized = value.replace(/^..\/img\//, '../../../../content/img/');
+  const match = tagImages[normalized];
+
+  if (match) {
+    return match.default ?? match;
+  }
+
+  return imageTransform(value);
+};
+
 export async function getStaticPaths() {
   const posts = (await getCollection('posts')).sort(
     (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
@@ -47,7 +64,7 @@ const tagTitle = metadata.title || tagName;
 const headerData = {
   title: tagTitle,
   excerpt: metadata.intro,
-  featureimage: imageTransform(metadata.tagimage),
+  featureimage: resolveTagImage(metadata.tagimage),
   postCount: posts.length
 }
 

@@ -1,12 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
-import { imageTransform } from '../lib/utils.mjs';
+import notFoundImage from '../../../content/img/posts/404_page.png';
 
 const title = 'This page cannot be found';
 const slug = '404/';
 const excerpt = `Hmmm, this is awkward. The page you're looking for vanished into the ether or never existed in the first place. Either way, it's not here. Let's find you something better!`;
-const featureimage = imageTransform('../img/posts/404_page.png');
+const featureimage = notFoundImage;
 const requestedPath = Astro.url?.pathname ?? '/404/';
 
 const data = {

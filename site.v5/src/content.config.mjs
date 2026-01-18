@@ -4,7 +4,7 @@ import { z } from 'astro/zod';
 
 import { slugifyTag } from './lib/utils.mjs';
 
-const baseSchema = z.object({
+const buildBaseSchema = (image) => z.object({
   title: z.string(),
 
   // Explicit slug as required
@@ -21,8 +21,8 @@ const baseSchema = z.object({
   twitter_excerpt: z.string().optional(),
 
   // image path
-  featureimage: z.string().optional(),
-  listimage: z.string().optional(),
+  featureimage: image().optional(),
+  listimage: image().optional(),
   imageby: z.string().optional(),
 
   // flag directives
@@ -51,7 +51,7 @@ const baseSchema = z.object({
 // 4. Define collections
 const posts = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./../content/text/posts" }),
-  schema: baseSchema.transform((data) => {
+  schema: ({ image }) => buildBaseSchema(image).transform((data) => {
     const d = data.date;
     const y = d.getUTCFullYear();
     const m = String(d.getUTCMonth() + 1).padStart(2, '0');
@@ -66,7 +66,7 @@ const posts = defineCollection({
 
 const pages = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./../content/text/pages" }),
-  schema: baseSchema.transform((data) => {
+  schema: ({ image }) => buildBaseSchema(image).transform((data) => {
     return {
       ...data,
       // Pages just get the top-level slug

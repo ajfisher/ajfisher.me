@@ -5,6 +5,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import ListItems from '../../components/ListItems.astro';
 import Pagination from '../../components/Pagination.astro';
+import { mergeEntryData } from '../../lib/content-utils.mjs';
 
 export async function getStaticPaths({ paginate }) {
   const allPosts = await getCollection('posts');
@@ -26,6 +27,7 @@ const seo = {
   description: `Article archive page ${page.currentPage} from ajfisher.me`,
   type: 'list',
 };
+
 
 // The logic here is this:
 // 1. Find the most recent featured post of the posts supplied unless we are
@@ -69,7 +71,7 @@ if (featuredPost) {
 
 <BaseLayout title={`Blog Archive - Page ${page.currentPage}`} seo={seo}>
   <Fragment slot="header">
-    <Header { ...{...featuredPost.data, ...featuredPost.rendered.metadata.frontmatter} }
+    <Header { ...mergeEntryData(featuredPost) }
       isFeatured={true}
     />
   </Fragment>
