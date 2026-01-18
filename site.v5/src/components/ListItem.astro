@@ -19,10 +19,14 @@ const {
 } = Astro.props;
 
 // get a random placeholder image if none is supplied.
-const noPlaceholders = 12;
-const randomImage = Math.floor(Math.random() * noPlaceholders);
+const placeholderModules = import.meta.glob('../../../content/img/posts/listimages/*.{png,jpg,jpeg,webp}', {
+  eager: true,
+});
+const placeholderImages = Object.values(placeholderModules).map((mod) => mod.default ?? mod);
+const placeholderCount = placeholderImages.length || 12;
+const randomImage = Math.floor(Math.random() * placeholderCount);
 
-const placeholderImage = `../../img/posts/listimages/li${randomImage}.png`;
+const placeholderImage = placeholderImages[randomImage] ?? `../../img/posts/listimages/li${randomImage}.png`;
 
 const image = listimage || featureimage || placeholderImage;
 
