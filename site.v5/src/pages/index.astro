@@ -50,11 +50,14 @@ const seo = {
   <section itemtype="https://schema.org/Blog" class="list home">
     <h1>Observations, insights, images and code from ajfisher exploring the
       intersection of AI, web, media and digital innovation.</h1>
+
     <h2>Featured posts</h2>
     <ListItems items={featured} />
 
     <h2>Recent posts</h2>
     <ListItems items={recent} />
+
+    <p><a href="/blog/">See all posts</a></p>
   </section>
 </BaseLayout>
 
@@ -69,6 +72,14 @@ const seo = {
 
     > h2 {
       font-size: 4rem;
+    }
+
+    > p {
+      font-size: 2rem;
+
+      @media only screen and (min-width: 821px) {
+        font-size: 2.3rem;
+      }
     }
   }
 </style>
