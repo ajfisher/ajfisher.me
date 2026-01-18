@@ -27,7 +27,7 @@ const titleClass = largetitle ? 'enlarge' : smalltitle ? 'shrink' : '';
   {featureimage && (
     <div class="headerimage">
       <Image src={imageTransform(featureimage)} loading="lazy" alt=""
-        layout="full-width" width="1200" height="800" />
+        layout="constrained" width="1200" height="800" />
     </div>
   )}
   {!featureimage && (

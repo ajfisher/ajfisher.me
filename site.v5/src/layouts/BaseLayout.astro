@@ -2,6 +2,8 @@
 // Base layout component for the site to hook all the other pages into
 import '../styles/global.css';
 
+import { getImage } from 'astro:assets';
+
 import humanize from 'humanize-plus';
 
 import Nav from '../components/Nav.astro';
@@ -33,7 +35,13 @@ const resolveImagePath = (value) => {
 };
 
 const imagePath = resolveImagePath(seo.image);
-const imageUrl = imagePath && siteUrl ? new URL(imagePath, siteUrl).toString() : undefined;
+const optimisedImage = await getImage({
+  src: imagePath,
+  width: 900,
+  height: 600,
+  format: 'webp',
+}).catch(() => null);
+const imageUrl = optimisedImage?.options?.src && siteUrl ? new URL(optimisedImage?.options?.src, siteUrl).toString() : undefined;
 
 let titleTag = pageTitle || SITE_META.defaultTitle;
 if (titleTag !== SITE_META.defaultTitle) {
