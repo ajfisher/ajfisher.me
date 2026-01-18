@@ -27,6 +27,17 @@ const seo = {
   type: 'list',
 };
 
+const mergeEntryData = (entry) => {
+  const frontmatter = entry?.rendered?.metadata?.frontmatter ?? {};
+
+  return {
+    ...entry.data,
+    ...frontmatter,
+    featureimage: entry.data.featureimage ?? frontmatter.featureimage,
+    listimage: entry.data.listimage ?? frontmatter.listimage,
+  };
+};
+
 // The logic here is this:
 // 1. Find the most recent featured post of the posts supplied unless we are
 // on page 1 of the archive in which case we want to get the second most recent
@@ -69,7 +80,7 @@ if (featuredPost) {
 
 <BaseLayout title={`Blog Archive - Page ${page.currentPage}`} seo={seo}>
   <Fragment slot="header">
-    <Header { ...{...featuredPost.data, ...featuredPost.rendered.metadata.frontmatter} }
+    <Header { ...mergeEntryData(featuredPost) }
       isFeatured={true}
     />
   </Fragment>

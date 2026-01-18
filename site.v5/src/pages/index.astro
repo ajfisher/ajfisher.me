@@ -39,11 +39,24 @@ const seo = {
   description: 'Explore insights on technology, business and user experience at the intersection of AI, web, media and digital innovation.',
   type: 'list',
 };
+
+const mergeEntryData = (entry) => {
+  const frontmatter = entry?.rendered?.metadata?.frontmatter ?? {};
+
+  return {
+    ...entry.data,
+    ...frontmatter,
+    featureimage: entry.data.featureimage ?? frontmatter.featureimage,
+    listimage: entry.data.listimage ?? frontmatter.listimage,
+  };
+};
+
+const headerData = headerPost ? mergeEntryData(headerPost) : {};
 ---
 
 <BaseLayout title="AJ Fisher" slug="/" seo={seo}>
   <Fragment slot="header">
-    <Header { ...{...headerPost.data, ...headerPost.rendered.metadata.frontmatter} }
+    <Header { ...headerData }
       isFeatured={true}
     />
   </Fragment>
