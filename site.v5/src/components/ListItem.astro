@@ -1,5 +1,4 @@
 ---
-import type { ImageMetadata } from 'astro';
 import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
 
@@ -20,13 +19,11 @@ const {
 } = Astro.props;
 
 // get a random placeholder image if none is supplied.
-const placeholderModules = import.meta.glob<{ default: ImageMetadata }>(
-  '../../../content/img/posts/listimages/*.{png,jpg,jpeg,webp}',
-  {
+const placeholderModules = import.meta.glob('../../../content/img/posts/listimages/*.{png,jpg,jpeg,webp}', {
   eager: true,
-  }
-);
-const placeholderImages = Object.values(placeholderModules).map((mod) => mod.default);
+  import: 'default',
+});
+const placeholderImages = Object.values(placeholderModules);
 const placeholderCount = placeholderImages.length || 12;
 const randomImage = Math.floor(Math.random() * placeholderCount);
 
