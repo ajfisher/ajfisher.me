@@ -24,6 +24,7 @@ const buildBaseSchema = (image) => z.object({
   featureimage: image().optional(),
   listimage: image().optional(),
   imageby: z.string().optional(),
+  imagelink: z.string().optional(),
 
   // flag directives
   featured: z.boolean().optional().default(false),

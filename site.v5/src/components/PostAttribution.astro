@@ -6,6 +6,7 @@ const {
   author = 'ajfisher',
   date,
   imageby = '',
+  imagelink = '',
   uri = '',
   tags = [],
 } = Astro.props;
@@ -17,7 +18,6 @@ const attributes = [
   { label: 'Published on', value: longDate(date), showfull:false },
   { label: 'Author', value: author, showfull:false },
 ];
-
 ---
 <aside aria-label="Post attribution information" class="attribution">
   <h2>About this post</h2>
@@ -40,8 +40,15 @@ const attributes = [
     )}
 
     { imageby !== '' && (
-      <dt class="displaysmall">Title image</dt>
-      <dd class="displaysmall">{imageby}</dd>
+      <Fragment>
+        <dt>Title image</dt>
+        { imagelink !== '' && (
+          <dd><a href={imagelink} target="_blank">{imageby}</a></dd>
+        )}
+        { imagelink === '' && (
+          <dd>{imageby}</dd>
+        )}
+      </Fragment>
     )}
     <dt>License</dt>
     <dd>
