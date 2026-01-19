@@ -3,8 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import PostAttribution from '../components/PostAttribution.astro';
 import PostData from '../components/PostData.astro';
-
-import { imageTransform } from '../lib/utils.mjs';
+import featureImage from '../../../content/img/posts/enterprise_ai_future.png';
 
 const title = 'Resources, materials and links for Leaders';
 const slug = 'leaders/';
@@ -14,7 +13,7 @@ const excerpt = `Slides, links and other resources you'll be able to find
   additional content.
 `;
 const tags = ['thinking', 'business', 'innovation'];
-const featureimage = imageTransform('../img/posts/enterprise_ai_future.png');
+const featureimage = featureImage;
 
 const data = {
   title,
