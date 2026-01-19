@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
 
 import humanize from 'humanize-plus';
@@ -18,10 +19,15 @@ const {
 } = Astro.props;
 
 // get a random placeholder image if none is supplied.
-const noPlaceholders = 12;
-const randomImage = Math.floor(Math.random() * noPlaceholders);
+const placeholderModules = import.meta.glob('../../../content/img/posts/listimages/*.{png,jpg,jpeg,webp}', {
+  eager: true,
+  import: 'default',
+});
+const placeholderImages = Object.values(placeholderModules);
+const placeholderCount = placeholderImages.length || 12;
+const randomImage = Math.floor(Math.random() * placeholderCount);
 
-const placeholderImage = `../../img/posts/listimages/li${randomImage}.png`;
+const placeholderImage = placeholderImages[randomImage] ?? `../../img/posts/listimages/li${randomImage}.png`;
 
 const image = listimage || featureimage || placeholderImage;
 
@@ -31,7 +37,9 @@ const publishDate = (new Date(date)).toISOString().slice(0,10);
 <li class="listitem" itemscope="blogPost" itemtype="https://schema.org/BlogPosting">
   <div>
     <a itemprop="url" href={`/${uri}`}>
-      <img src={imageTransform(image)} alt={title} />
+      <Image src={imageTransform(image)} alt={title}
+        layout="constrained"
+        width="600" height="250" loading="lazy"/>
     </a>
   </div>
   { compact && (
