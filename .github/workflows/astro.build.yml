@@ -45,8 +45,19 @@ jobs:
                   restore-keys: sitev5-cache-
 
             - name: Lint and astro check
-              run: cd site.v5 && npx eslint . && npx astro check
+              run: cd site.v5 && make lint && make check
 
             - name: Build output files
-              run: cd site.v5 && npx astro sync && npx astro build
+              run: cd site.v5 && make sync && make build
 
+            - name: Configure AWS CLI
+              uses: aws-actions/configure-aws-credentials@v4
+              with:
+                aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+                aws-region: ap-southeast-2
+              if: github.ref == 'refs/heads/master'
+
+            - name: Sync files to S3
+              run: aws s3 sync ./site/public/ s3://aj-web-ajfisher-me-prod/ --delete
+              if: github.ref == 'refs/heads/master'
