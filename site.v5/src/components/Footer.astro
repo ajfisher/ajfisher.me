@@ -35,7 +35,7 @@ const featuredImg = imageTransform(featured.data.listimage);
       <div class="image-link">
         <a href={`/${featured.data.uri}`}>
           <div class="image-wrapper"><Image src={featuredImg} alt={featured.data.title}
-            width="750" height="250"/></div>
+            width="750" height="400"/></div>
         </a>
       </div>
       <p><a href={`/${featured.data.uri}`}>{featured.data.title}</a></p>
@@ -46,7 +46,8 @@ const featuredImg = imageTransform(featured.data.listimage);
       <h2>Recent Media</h2>
       <div class="image-link">
         <a href="/2023/02/13/podcast-enterprise-ai/">
-          <Image src={enterpriseAiImage} alt="Illustration of an office" width="750" height="250"/>
+          <Image src={enterpriseAiImage} alt="Illustration of an office"
+            width="750" height="300" position="center"/>
         </a>
       </div>
       <p>
@@ -62,17 +63,19 @@ const featuredImg = imageTransform(featured.data.listimage);
 
     <section>
       <h2>My Books</h2>
-      <div class="image-link" style={`--image-position: ${"50% 100%"}`}>
+      <div class="image-link" style={`--image-position: ${"50% 10%"}`}>
         <a href="https://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">
-          <Image src={roboticsBookImage} alt="Make JavaScript Robotics Book Cover" width="750" height="250"/>
+          <Image src={roboticsBookImage} alt="Make JavaScript Robotics Book Cover"
+            width="750" height="400" position="bottom"/>
         </a>
       </div>
       <p>
         <a href="https://www.amazon.com/JavaScript-Robotics-Johnny-Five-Raspberry-BeagleBone/dp/1457186950/">Make: JavaScript Robotics</a>
       </p>
-      <div class="image-link" style={`--image-position: ${"50% 85%"}`}>
+      <div class="image-link" style={`--image-position: ${"50% 28%"}`}>
         <a href="https://www.amazon.com/Jump-Start-Responsive-Web-Design/dp/0987332163/">
-          <Image src={responsiveDesignImage} alt="Jump Start Responsive Design Book Cover" width="750" height="250"/>
+          <Image src={responsiveDesignImage} alt="Jump Start Responsive Design Book Cover"
+            width="750" height="500" position="bottom"/>
         </a>
       </div>
       <p>
