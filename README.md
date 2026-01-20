@@ -2,8 +2,8 @@
 
 Website for ajfisher.me
 
-The site is built with [Gatsby](https://www.gatsbyjs.com/) and requires a
-modern Node.js runtime. Node 20 is used in CI so use that or a newer release.
+The site is built with [Astro](https://astro.build/) and lives in `site.v5/`.
+Node 20 is used in CI so use that or a newer release.
 
 ## Install
 
@@ -50,5 +50,5 @@ site to S3. If you have AWS credentials configured you can also run:
 make deploy
 ```
 
-For information on content front matter and additional details
-see [site.v5/README.md](site.v5/README.md).
+For front matter schema details and content notes see
+[site.v5/README.md](site.v5/README.md).
