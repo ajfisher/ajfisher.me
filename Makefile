@@ -1,28 +1,26 @@
-.PHONY: help lint test build
+.PHONY: help install install-site clean clean-site clean-meta dev preview lint test pre-commit build deploy
 
 help:
 	@echo "install:         Install all the parts needed for local dev"
 	@echo "install-site:    Install all the parts needed for the site"
 	@echo "clean:           Completely clean everything up"
-	@echo "clean-site:      Clean node_modules for site only"
-	@echo "clean-meta:      Clean node_modules for meta only"
-	@echo "dev:             Run the development environment"
-	@echo "serve:           Serve web application"
-	@echo "lint:            Lint the application"
-	@echo "test:            Run tests."
-	@echo "pre-commit:      Run lint for site."
-	@echo "build:           Build web application"
-	@echo "deploy-app:      Deploy the front end application"
+	@echo "clean-site:      Clean build artifacts and dependencies for site"
+	@echo "clean-meta:      Clean root node_modules"
+	@echo "dev:             Run the Astro development server"
+	@echo "preview:         Preview the production build"
+	@echo "lint:            Lint the site"
+	@echo "test:            Run lint and Astro type checks"
+	@echo "pre-commit:      Run lint for site"
+	@echo "build:           Build the site for deploy"
+	@echo "deploy:          Deploy the site to S3"
 
 clean-site:
-	@echo 'Cleans all of the api files up'
-	cd ./site  && gatsby clean && rm -rf node_modules && rm -rf coverage
-	cd ./site/plugins/gatsby-transformer-remark-tags && rm -rf node_modules
-	cd ./site/plugins/gatsby-remark-transformer-pullquotes && rm -rf node_modules
+	@echo 'Cleans all site build artifacts and dependencies'
+	cd ./site.v5 && make clean
 	@echo 'Files cleaned up'
 
 clean-meta:
-	@echo 'Cleans all of the app files up'
+	@echo 'Cleans root node_modules'
 	rm -rf node_modules
 	@echo 'Files cleaned up'
 
@@ -30,33 +28,31 @@ clean: clean-site clean-meta
 
 install-site:
 	@echo 'Installs the site dependencies'
-	cd ./site && npm install
-	cd ./site/plugins/gatsby-transformer-remark-tags && npm install
-	cd ./site/plugins/gatsby-remark-transformer-pullquotes && npm install
+	cd ./site.v5 && make install
 	@echo 'Site dependencies installed'
 
 install: install-site
 	npm install
 
 lint:
-	cd ./site && ./node_modules/.bin/eslint
+	cd ./site.v5 && make lint
 
-test: lint
-	cd ./site && npm run test
+test:
+	cd ./site.v5 && make test
 
 dev:
-	cd ./site && gatsby develop -H 0.0.0.0
+	cd ./site.v5 && make dev
 
-serve:
-	cd ./site && gatsby serve -H 0.0.0.0
+preview:
+	cd ./site.v5 && make preview
 
 pre-commit:
-	echo "Not implemented"
+	@$(MAKE) lint
 
-build:
+build: test
 	@echo "build: Build files for deploy"
-	cd ./site && ./node_modules/.bin/gatsby build --log-pages
+	cd ./site.v5 && make build
 
 deploy:
 	@echo "Deploying the application"
-	cd ./site/public && aws s3 sync . s3://aj-web-ajfisher-me-prod/ --delete
+	cd ./site.v5/dist/ && aws s3 sync . s3://aj-web-ajfisher-me-prod/ --delete
