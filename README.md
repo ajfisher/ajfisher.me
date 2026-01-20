@@ -2,7 +2,8 @@
 
 Website for ajfisher.me
 
-The site is built with [Gatsby](https://www.gatsbyjs.com/) and requires a modern Node.js runtime. Node 20 is used in CI so use that or a newer release.
+The site is built with [Gatsby](https://www.gatsbyjs.com/) and requires a
+modern Node.js runtime. Node 20 is used in CI so use that or a newer release.
 
 ## Install
 
@@ -30,7 +31,7 @@ To generate the production build run:
 make build
 ```
 
-Artifacts are written to `site/public`.
+Artifacts are written to `site.v5/dist`.
 
 ## Cleaning
 
@@ -42,10 +43,12 @@ make clean
 
 ## Deployment
 
-Deployments are normally performed by GitHub Actions which sync the built site to S3. If you have AWS credentials configured you can also run:
+Deployments are normally performed by GitHub Actions which sync the built
+site to S3. If you have AWS credentials configured you can also run:
 
 ```bash
 make deploy
 ```
 
-For information on content front matter and additional details see [site/README.md](site/README.md).
+For information on content front matter and additional details
+see [site.v5/README.md](site.v5/README.md).
