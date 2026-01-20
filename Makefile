@@ -16,9 +16,7 @@ help:
 
 clean-site:
 	@echo 'Cleans all of the api files up'
-	cd ./site  && gatsby clean && rm -rf node_modules && rm -rf coverage
-	cd ./site/plugins/gatsby-transformer-remark-tags && rm -rf node_modules
-	cd ./site/plugins/gatsby-remark-transformer-pullquotes && rm -rf node_modules
+	cd ./site.v5 && make clean
 	@echo 'Files cleaned up'
 
 clean-meta:
@@ -30,33 +28,31 @@ clean: clean-site clean-meta
 
 install-site:
 	@echo 'Installs the site dependencies'
-	cd ./site && npm install
-	cd ./site/plugins/gatsby-transformer-remark-tags && npm install
-	cd ./site/plugins/gatsby-remark-transformer-pullquotes && npm install
+	cd ./site.v5 && make install
 	@echo 'Site dependencies installed'
 
 install: install-site
 	npm install
 
 lint:
-	cd ./site && ./node_modules/.bin/eslint
+	cd ./site.v5 && make lint
 
-test: lint
-	cd ./site && npm run test
+test:
+	cd ./site.v5 && make test
 
 dev:
-	cd ./site && gatsby develop -H 0.0.0.0
+	cd ./site.v5 && make dev
 
-serve:
-	cd ./site && gatsby serve -H 0.0.0.0
+preview:
+	cd ./site.v5 && make preview
 
 pre-commit:
 	echo "Not implemented"
 
-build:
+build: test
 	@echo "build: Build files for deploy"
-	cd ./site && ./node_modules/.bin/gatsby build --log-pages
+	cd ./site.v5 && make build
 
 deploy:
 	@echo "Deploying the application"
-	cd ./site/public && aws s3 sync . s3://aj-web-ajfisher-me-prod/ --delete
+	cd ./site.v5/dist/ && aws s3 sync . s3://aj-web-ajfisher-me-prod/ --delete
