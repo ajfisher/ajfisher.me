@@ -29,6 +29,8 @@ release locally.
 
 - Ensure `make test` passes before committing. This runs ESLint and Astro type
 checks.
+- Ensure `make build` passes before committing. This runs the Astro build process
+and will validate the site can be built. 
 - Keep infrastructure and build scripts up to date and consistent with Terraform
 and Astro best practices.
 - Try to keep line length to 80 characters where possible for terminal editors
