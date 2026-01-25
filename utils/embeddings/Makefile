@@ -1,6 +1,6 @@
 .PHONY: help lint test build
 
-INPUT_DIR ?= ../../site/src/content/posts
+INPUT_DIR ?= ../../content/text/posts
 OUTPUT_JSON ?= similarity_data.json
 CHUNK_SIZE ?= 256
 OVERLAP_SIZE ?= 32
