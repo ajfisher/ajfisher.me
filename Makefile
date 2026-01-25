@@ -11,6 +11,7 @@ help:
 	@echo "lint:            Lint the site"
 	@echo "test:            Run lint and Astro type checks"
 	@echo "pre-commit:      Run lint for site"
+	@echo "embeddings:      Run the embeddings similarity script"
 	@echo "build:           Build the site for deploy"
 	@echo "deploy:          Deploy the site to S3"
 
@@ -45,6 +46,9 @@ dev:
 
 preview:
 	cd ./site.v5 && make preview
+
+embeddings:
+	cd ./utils/embeddings && make build
 
 pre-commit:
 	@$(MAKE) lint
