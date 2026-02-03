@@ -1046,6 +1046,11 @@
                 "similarity": 0.40498182142129385
             },
             {
+                "file": "2026-02-03-openclaw-raspberrypi-howto.md",
+                "slug": "openclaw-raspberrypi-howto",
+                "similarity": 0.39413443556179995
+            },
+            {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
                 "similarity": 0.3929840482170891
@@ -1074,11 +1079,6 @@
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
                 "similarity": 0.3623865329012287
-            },
-            {
-                "file": "2007-10-14-jquery-slideshow.md",
-                "slug": "jquery-slideshow",
-                "similarity": 0.35079818671217966
             }
         ]
     },
@@ -1341,6 +1341,11 @@
                 "similarity": 0.5059960440056946
             },
             {
+                "file": "2026-02-03-openclaw-raspberrypi-howto.md",
+                "slug": "openclaw-raspberrypi-howto",
+                "similarity": 0.4941580039699097
+            },
+            {
                 "file": "2008-04-22-phorm-over-function.md",
                 "slug": "phorm-over-function",
                 "similarity": 0.44640019529708896
@@ -1359,11 +1364,6 @@
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
                 "similarity": 0.4382044802364658
-            },
-            {
-                "file": "2009-12-22-why-im-interested-in-aws-spot-prices-for-ec2.md",
-                "slug": "why-im-interested-in-aws-spot-prices-for-ec2",
-                "similarity": 0.4364353034531269
             }
         ]
     },
@@ -2243,6 +2243,11 @@
                 "similarity": 0.728794875573793
             },
             {
+                "file": "2026-02-03-openclaw-raspberrypi-howto.md",
+                "slug": "openclaw-raspberrypi-howto",
+                "similarity": 0.6541667874759998
+            },
+            {
                 "file": "2025-12-22-ai-incentives-power.md",
                 "slug": "ai-incentives-power",
                 "similarity": 0.6449598673786096
@@ -2271,11 +2276,6 @@
                 "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
                 "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
                 "similarity": 0.4836123960269072
-            },
-            {
-                "file": "2015-09-07-js-not-just-language-of-the-web.md",
-                "slug": "js-not-just-language-of-the-web",
-                "similarity": 0.4828675144495792
             }
         ]
     },
@@ -2662,6 +2662,11 @@
                 "similarity": 0.6614330033414819
             },
             {
+                "file": "2026-02-03-openclaw-raspberrypi-howto.md",
+                "slug": "openclaw-raspberrypi-howto",
+                "similarity": 0.63794777956328
+            },
+            {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
                 "similarity": 0.6195205358105993
@@ -2670,11 +2675,6 @@
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
                 "similarity": 0.6156225666772468
-            },
-            {
-                "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
-                "slug": "web-directions-south-2009-cloud-sourcing-the-business",
-                "similarity": 0.5977370425410928
             }
         ]
     },
@@ -3807,14 +3807,71 @@
                 "similarity": 0.4053138508171591
             },
             {
+                "file": "2026-02-03-openclaw-raspberrypi-howto.md",
+                "slug": "openclaw-raspberrypi-howto",
+                "similarity": 0.39842682154589665
+            },
+            {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
                 "similarity": 0.3688934424007039
-            },
+            }
+        ]
+    },
+    {
+        "file": "2026-02-03-openclaw-raspberrypi-howto.md",
+        "slug": "openclaw-raspberrypi-howto",
+        "hash": "ee0d7f444a746c727c7e445839f4566a0a2d89cb178081a761478f9b1e0e5750",
+        "post_similarity": [
             {
                 "file": "2025-06-26-hands-on-gemini-cli.md",
                 "slug": "hands-on-gemini-cli",
-                "similarity": 0.34472971980668365
+                "similarity": 0.7889500944110678
+            },
+            {
+                "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
+                "slug": "software-engineering-reimagined-ai-native-era",
+                "similarity": 0.6541667874759998
+            },
+            {
+                "file": "2025-02-27-when-will-ai-disrupt-travel.md",
+                "slug": "when-will-ai-disrupt-travel",
+                "similarity": 0.6385683144979339
+            },
+            {
+                "file": "2023-08-31-ai-works-now.md",
+                "slug": "ai-works-now",
+                "similarity": 0.63794777956328
+            },
+            {
+                "file": "2013-08-21-should-javascript-devs-build-real-things.md",
+                "slug": "should-javascript-devs-build-real-things",
+                "similarity": 0.549382338714468
+            },
+            {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.538387906908355
+            },
+            {
+                "file": "2016-01-27-road-to-interchange.md",
+                "slug": "road-to-interchange",
+                "similarity": 0.526793369528198
+            },
+            {
+                "file": "2017-08-12-embodied-bots.md",
+                "slug": "embodied-bots",
+                "similarity": 0.5145473299145177
+            },
+            {
+                "file": "2009-07-26-case-study-django-agile-sportsgirl-redevelopment.md",
+                "slug": "case-study-django-agile-sportsgirl-redevelopment",
+                "similarity": 0.49428548842032277
+            },
+            {
+                "file": "2007-11-19-fuzzy-logic-could-book-more-flights.md",
+                "slug": "fuzzy-logic-could-book-more-flights",
+                "similarity": 0.4941580039699097
             }
         ]
     },
@@ -3823,6 +3880,11 @@
         "slug": "adding-cron-jobs-to-a-qnap-server",
         "hash": "716fcbd80a013c179eda9656609e4fb70401dd3ac2ee5574320e170f11033fe2",
         "post_similarity": [
+            {
+                "file": "2026-02-03-openclaw-raspberrypi-howto.md",
+                "slug": "openclaw-raspberrypi-howto",
+                "similarity": 0.3795837544526848
+            },
             {
                 "file": "2016-01-27-road-to-interchange.md",
                 "slug": "road-to-interchange",
@@ -3867,11 +3929,6 @@
                 "file": "2014-12-16-building-information-radiator.md",
                 "slug": "building-information-radiator",
                 "similarity": 0.23101920877613574
-            },
-            {
-                "file": "2025-06-26-hands-on-gemini-cli.md",
-                "slug": "hands-on-gemini-cli",
-                "similarity": 0.2216640913470208
             }
         ]
     },
@@ -4590,6 +4647,11 @@
                 "similarity": 0.6768672219821246
             },
             {
+                "file": "2026-02-03-openclaw-raspberrypi-howto.md",
+                "slug": "openclaw-raspberrypi-howto",
+                "similarity": 0.6385683144979339
+            },
+            {
                 "file": "2025-06-26-hands-on-gemini-cli.md",
                 "slug": "hands-on-gemini-cli",
                 "similarity": 0.5672513945137021
@@ -4608,11 +4670,6 @@
                 "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
                 "slug": "software-engineering-reimagined-ai-native-era",
                 "similarity": 0.5061635005419359
-            },
-            {
-                "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
-                "slug": "datatium-a-material-to-create-responsive-experiences",
-                "similarity": 0.4974946227635696
             }
         ]
     },
@@ -5306,6 +5363,11 @@
         "hash": "f1b21293f009b4571be2361c99d1a7f08d1f7d4d2618ab108f72c71291c39300",
         "post_similarity": [
             {
+                "file": "2026-02-03-openclaw-raspberrypi-howto.md",
+                "slug": "openclaw-raspberrypi-howto",
+                "similarity": 0.7889500944110678
+            },
+            {
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
                 "similarity": 0.7559247423787221
@@ -5349,11 +5411,6 @@
                 "file": "2017-08-12-embodied-bots.md",
                 "slug": "embodied-bots",
                 "similarity": 0.4469150026677462
-            },
-            {
-                "file": "2009-07-26-case-study-django-agile-sportsgirl-redevelopment.md",
-                "slug": "case-study-django-agile-sportsgirl-redevelopment",
-                "similarity": 0.44209182044811907
             }
         ]
     },
