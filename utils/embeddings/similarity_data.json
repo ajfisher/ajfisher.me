@@ -1,5 +1,62 @@
 [
     {
+        "file": "2024-02-24-mixtral-8x7b-anxiety.md",
+        "slug": "mixtral-8x7b-anxiety",
+        "hash": "a1a0387aeb69a67db7d258fc046078abac11ff16a3c391b53c2649ac19a85ec0",
+        "post_similarity": [
+            {
+                "file": "2025-12-08-llm-advisory-group-local-subscriptions.md",
+                "slug": "llm-advisory-group-local-subscriptions",
+                "similarity": 0.6134505433709239
+            },
+            {
+                "file": "2025-01-31-mistral-3-small-local-ai.md",
+                "slug": "mistral-3-small-local-ai",
+                "similarity": 0.584067464874304
+            },
+            {
+                "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
+                "slug": "software-engineering-reimagined-ai-native-era",
+                "similarity": 0.5461252319827763
+            },
+            {
+                "file": "2025-01-28-deepseek-r1-geography-bias.md",
+                "slug": "deepseek-r1-geography-bias",
+                "similarity": 0.5193366030802613
+            },
+            {
+                "file": "2025-11-19-make-web-development-fun-again.md",
+                "slug": "make-web-development-fun-again",
+                "similarity": 0.5121474043570279
+            },
+            {
+                "file": "2024-09-05-flux-loras-comicbook-experiments.md",
+                "slug": "flux-loras-comicbook-experiments",
+                "similarity": 0.5081069911148326
+            },
+            {
+                "file": "2023-08-31-ai-works-now.md",
+                "slug": "ai-works-now",
+                "similarity": 0.505951449384337
+            },
+            {
+                "file": "2025-12-17-ai-infographic-wars-chatgpt-gemini.md",
+                "slug": "ai-infographic-wars-chatgpt-gemini",
+                "similarity": 0.5054689235186248
+            },
+            {
+                "file": "2025-06-26-hands-on-gemini-cli.md",
+                "slug": "hands-on-gemini-cli",
+                "similarity": 0.48112215460337315
+            },
+            {
+                "file": "2022-12-06-chatgpt-style-transfer-experiments.md",
+                "slug": "chatgpt-style-transfer-experiments",
+                "similarity": 0.4578231850114974
+            }
+        ]
+    },
+    {
         "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
         "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
         "hash": "9f636c4d665460f379cedc666e7a1687ffb85535a8810a9c174c701cc87947ee",
@@ -30,6 +87,11 @@
                 "similarity": 0.7618262628824728
             },
             {
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.760128189688175
+            },
+            {
                 "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
                 "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
                 "similarity": 0.7353879579969544
@@ -48,11 +110,6 @@
                 "file": "2010-06-27-a-telling-quarter-for-android.md",
                 "slug": "a-telling-quarter-for-android",
                 "similarity": 0.6930969733204204
-            },
-            {
-                "file": "2011-10-04-on-a-post-flash-world-and-adobes-place-within-it.md",
-                "slug": "on-a-post-flash-world-and-adobes-place-within-it",
-                "similarity": 0.6857656721608737
             }
         ]
     },
@@ -456,10 +513,129 @@
         ]
     },
     {
+        "file": "2024-09-05-flux-loras-comicbook-experiments.md",
+        "slug": "flux-loras-comicbook-experiments",
+        "hash": "234894ac1e621cfcf26c1700c224b83b889523471d0d30c0e912cc5a2170da18",
+        "post_similarity": [
+            {
+                "file": "2025-03-26-chatgpt-4o-image-generation-update.md",
+                "slug": "chatgpt-4o-image-generation-update",
+                "similarity": 0.7982945465024345
+            },
+            {
+                "file": "2025-12-17-ai-infographic-wars-chatgpt-gemini.md",
+                "slug": "ai-infographic-wars-chatgpt-gemini",
+                "similarity": 0.7877538741428446
+            },
+            {
+                "file": "2022-12-06-chatgpt-style-transfer-experiments.md",
+                "slug": "chatgpt-style-transfer-experiments",
+                "similarity": 0.6950049207365416
+            },
+            {
+                "file": "2024-06-15-bias-in-generative-image-models.md",
+                "slug": "bias-in-generative-image-models",
+                "similarity": 0.6922613043444584
+            },
+            {
+                "file": "2023-08-31-ai-works-now.md",
+                "slug": "ai-works-now",
+                "similarity": 0.6833755163757231
+            },
+            {
+                "file": "2023-02-28-generative-ai-vfx-workflows.md",
+                "slug": "generative-ai-vfx-workflows",
+                "similarity": 0.6804394876889751
+            },
+            {
+                "file": "2025-01-31-mistral-3-small-local-ai.md",
+                "slug": "mistral-3-small-local-ai",
+                "similarity": 0.6239364130584844
+            },
+            {
+                "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
+                "slug": "software-engineering-reimagined-ai-native-era",
+                "similarity": 0.5762304532958137
+            },
+            {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.5721941839889102
+            },
+            {
+                "file": "2025-06-26-hands-on-gemini-cli.md",
+                "slug": "hands-on-gemini-cli",
+                "similarity": 0.5700715359595964
+            }
+        ]
+    },
+    {
+        "file": "2025-12-05-chrome-split-view-tabs.md",
+        "slug": "chrome-split-view-tabs",
+        "hash": "9131e2131f13f3857b9dbae82ba40a23af6f8db5078ff438ee5befe0b045d6a4",
+        "post_similarity": [
+            {
+                "file": "2010-06-23-why-google-is-a-more-typical-business-than-you-think.md",
+                "slug": "why-google-is-a-more-typical-business-than-you-think",
+                "similarity": 0.5680938594853354
+            },
+            {
+                "file": "2011-08-08-the-web-of-intent.md",
+                "slug": "the-web-of-intent",
+                "similarity": 0.48292793879780577
+            },
+            {
+                "file": "2009-10-11-the-only-reason-why-linux-isnt-ready-for-prime-time-desktop.md",
+                "slug": "the-only-reason-why-linux-isnt-ready-for-prime-time-desktop",
+                "similarity": 0.42621807487544106
+            },
+            {
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.41323343242818267
+            },
+            {
+                "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
+                "slug": "web-facilitated-play-in-the-real-world",
+                "similarity": 0.39641142811093544
+            },
+            {
+                "file": "2011-10-04-on-a-post-flash-world-and-adobes-place-within-it.md",
+                "slug": "on-a-post-flash-world-and-adobes-place-within-it",
+                "similarity": 0.3952568193600984
+            },
+            {
+                "file": "2011-11-03-we-are-the-champions-of-the-web.md",
+                "slug": "we-are-the-champions-of-the-web",
+                "similarity": 0.37990571428191944
+            },
+            {
+                "file": "2009-11-13-spdy-could-gain-acceptence-very-quickly-with-some-product-innovation.md",
+                "slug": "spdy-could-gain-acceptence-very-quickly-with-some-product-innovation",
+                "similarity": 0.3726043264396255
+            },
+            {
+                "file": "2007-11-05-bye-bye-openmoko.md",
+                "slug": "bye-bye-openmoko",
+                "similarity": 0.3682329452782717
+            },
+            {
+                "file": "2011-09-15-device-api-applications-of-devicemotion-and-deviceorientation.md",
+                "slug": "device-api-applications-of-devicemotion-and-deviceorientation",
+                "similarity": 0.3625512458629498
+            }
+        ]
+    },
+    {
         "file": "2024-06-19-follow-me-i-think-i-know-what-im-doing.md",
         "slug": "follow-me-i-think-i-know-what-im-doing",
         "hash": "5615c0a7a306b4d4958215c5a66954decbc7160ff1034938333d7c9324908e4a",
         "post_similarity": [
+            {
+                "file": "2025-12-18-organisational-capabilities-aspirational.md",
+                "slug": "organisational-capabilities-aspirational",
+                "similarity": 0.7683325837538892
+            },
             {
                 "file": "2025-11-05-strategy-ai.md",
                 "slug": "strategy-ai",
@@ -501,14 +677,9 @@
                 "similarity": 0.5341840607731703
             },
             {
-                "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
-                "slug": "web-directions-south-2009-cloud-sourcing-the-business",
-                "similarity": 0.4853200411356394
-            },
-            {
-                "file": "2023-08-31-ai-works-now.md",
-                "slug": "ai-works-now",
-                "similarity": 0.47940865934716465
+                "file": "2025-12-08-llm-advisory-group-local-subscriptions.md",
+                "slug": "llm-advisory-group-local-subscriptions",
+                "similarity": 0.5059153272688536
             }
         ]
     },
@@ -684,6 +855,120 @@
         ]
     },
     {
+        "file": "2025-12-17-ai-infographic-wars-chatgpt-gemini.md",
+        "slug": "ai-infographic-wars-chatgpt-gemini",
+        "hash": "333e96b89f22876de3f0cc91b5d55dddded4a596711a5223c3d0c3a7da87f02e",
+        "post_similarity": [
+            {
+                "file": "2025-03-26-chatgpt-4o-image-generation-update.md",
+                "slug": "chatgpt-4o-image-generation-update",
+                "similarity": 0.8656171436259916
+            },
+            {
+                "file": "2022-12-06-chatgpt-style-transfer-experiments.md",
+                "slug": "chatgpt-style-transfer-experiments",
+                "similarity": 0.8036474414734869
+            },
+            {
+                "file": "2024-09-05-flux-loras-comicbook-experiments.md",
+                "slug": "flux-loras-comicbook-experiments",
+                "similarity": 0.7877538741428446
+            },
+            {
+                "file": "2023-02-28-generative-ai-vfx-workflows.md",
+                "slug": "generative-ai-vfx-workflows",
+                "similarity": 0.7234756191569212
+            },
+            {
+                "file": "2023-08-31-ai-works-now.md",
+                "slug": "ai-works-now",
+                "similarity": 0.6946665140025357
+            },
+            {
+                "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
+                "slug": "software-engineering-reimagined-ai-native-era",
+                "similarity": 0.6557482265154436
+            },
+            {
+                "file": "2025-11-20-gemini-3-initial-thoughts.md",
+                "slug": "gemini-3-initial-thoughts",
+                "similarity": 0.6495675520036017
+            },
+            {
+                "file": "2024-06-15-bias-in-generative-image-models.md",
+                "slug": "bias-in-generative-image-models",
+                "similarity": 0.6260367965644207
+            },
+            {
+                "file": "2025-06-26-hands-on-gemini-cli.md",
+                "slug": "hands-on-gemini-cli",
+                "similarity": 0.5829101435316747
+            },
+            {
+                "file": "2023-02-14-podcast-enterprise-ai.md",
+                "slug": "podcast-enterprise-ai",
+                "similarity": 0.5316288126056019
+            }
+        ]
+    },
+    {
+        "file": "2025-01-28-deepseek-r1-geography-bias.md",
+        "slug": "deepseek-r1-geography-bias",
+        "hash": "e607cdbd271494c82fb46909b3ee34c1aa0fd371783d42ba9b5ac610f1d6bd31",
+        "post_similarity": [
+            {
+                "file": "2025-01-31-mistral-3-small-local-ai.md",
+                "slug": "mistral-3-small-local-ai",
+                "similarity": 0.9457394795037539
+            },
+            {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.7026177978423281
+            },
+            {
+                "file": "2023-08-31-ai-works-now.md",
+                "slug": "ai-works-now",
+                "similarity": 0.6579972105267207
+            },
+            {
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.6181671485869692
+            },
+            {
+                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
+                "slug": "now-or-never-growth-opportunities-in-retail",
+                "similarity": 0.5907541348077248
+            },
+            {
+                "file": "2025-11-05-strategy-ai.md",
+                "slug": "strategy-ai",
+                "similarity": 0.5809760026290494
+            },
+            {
+                "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
+                "slug": "software-engineering-reimagined-ai-native-era",
+                "similarity": 0.5496052637241652
+            },
+            {
+                "file": "2025-11-19-make-web-development-fun-again.md",
+                "slug": "make-web-development-fun-again",
+                "similarity": 0.546440893624828
+            },
+            {
+                "file": "2024-12-03-nous-research-distributed-llm-training.md",
+                "slug": "nous-research-distributed-llm-training",
+                "similarity": 0.5315463913989037
+            },
+            {
+                "file": "2024-09-05-flux-loras-comicbook-experiments.md",
+                "slug": "flux-loras-comicbook-experiments",
+                "similarity": 0.5289180278468242
+            }
+        ]
+    },
+    {
         "file": "2017-08-12-embodied-bots.md",
         "slug": "embodied-bots",
         "hash": "767243d68539a28eebdf899bc75aa483561724249a9f881a7c8e002f385b22d6",
@@ -709,9 +994,24 @@
                 "similarity": 0.659925436723157
             },
             {
+                "file": "2023-02-28-generative-ai-vfx-workflows.md",
+                "slug": "generative-ai-vfx-workflows",
+                "similarity": 0.6378016237791012
+            },
+            {
+                "file": "2025-11-19-make-web-development-fun-again.md",
+                "slug": "make-web-development-fun-again",
+                "similarity": 0.6001403590146055
+            },
+            {
                 "file": "2015-04-15-make-js-robotics-launch.md",
                 "slug": "make-js-robotics-launch",
                 "similarity": 0.5643171576147067
+            },
+            {
+                "file": "2022-12-06-chatgpt-style-transfer-experiments.md",
+                "slug": "chatgpt-style-transfer-experiments",
+                "similarity": 0.5622427617740025
             },
             {
                 "file": "2015-05-04-pebble-controlled-leds.md",
@@ -722,21 +1022,6 @@
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
                 "similarity": 0.5375499969836285
-            },
-            {
-                "file": "2015-09-09-datatium-material-for-contextually-responsive-design.md",
-                "slug": "datatium-material-for-contextually-responsive-design",
-                "similarity": 0.5343779699686332
-            },
-            {
-                "file": "2011-10-17-neo-futurism-in-the-information-age.md",
-                "slug": "neo-futurism-in-the-information-age",
-                "similarity": 0.5180522352823849
-            },
-            {
-                "file": "2011-09-15-device-api-applications-of-devicemotion-and-deviceorientation.md",
-                "slug": "device-api-applications-of-devicemotion-and-deviceorientation",
-                "similarity": 0.5152909612737762
             }
         ]
     },
@@ -1046,11 +1331,6 @@
                 "similarity": 0.40498182142129385
             },
             {
-                "file": "2026-02-03-openclaw-raspberrypi-howto.md",
-                "slug": "openclaw-raspberrypi-howto",
-                "similarity": 0.39413443556179995
-            },
-            {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
                 "similarity": 0.3929840482170891
@@ -1059,6 +1339,11 @@
                 "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
                 "slug": "software-engineering-reimagined-ai-native-era",
                 "similarity": 0.3900353947441481
+            },
+            {
+                "file": "2026-02-03-openclaw-raspberrypi-howto.md",
+                "slug": "openclaw-raspberrypi-howto",
+                "similarity": 0.38984569270200925
             },
             {
                 "file": "2007-12-20-my-top-5-jquery-seasonal-wishes.md",
@@ -1217,9 +1502,19 @@
                 "similarity": 0.435128135003065
             },
             {
+                "file": "2025-01-28-deepseek-r1-geography-bias.md",
+                "slug": "deepseek-r1-geography-bias",
+                "similarity": 0.4322786141653019
+            },
+            {
                 "file": "2007-11-05-bye-bye-openmoko.md",
                 "slug": "bye-bye-openmoko",
                 "similarity": 0.41146614744945986
+            },
+            {
+                "file": "2025-01-31-mistral-3-small-local-ai.md",
+                "slug": "mistral-3-small-local-ai",
+                "similarity": 0.4113743184789257
             },
             {
                 "file": "2011-12-20-towards-a-sensor-commons.md",
@@ -1240,16 +1535,6 @@
                 "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
                 "slug": "thingstreams-the-future-of-brand-product-consumer-dialogue",
                 "similarity": 0.37724579642071326
-            },
-            {
-                "file": "2011-10-17-neo-futurism-in-the-information-age.md",
-                "slug": "neo-futurism-in-the-information-age",
-                "similarity": 0.369989055074523
-            },
-            {
-                "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
-                "slug": "why-industries-can-still-be-revolutionised-on-the-web",
-                "similarity": 0.3663164502086502
             }
         ]
     },
@@ -1311,6 +1596,63 @@
         ]
     },
     {
+        "file": "2025-11-19-make-web-development-fun-again.md",
+        "slug": "make-web-development-fun-again",
+        "hash": "befa5f75874383fbb5227a455332d83ca1091f0204d56bd9b93a9373a5674db6",
+        "post_similarity": [
+            {
+                "file": "2013-08-21-should-javascript-devs-build-real-things.md",
+                "slug": "should-javascript-devs-build-real-things",
+                "similarity": 0.6953942485854889
+            },
+            {
+                "file": "2023-08-31-ai-works-now.md",
+                "slug": "ai-works-now",
+                "similarity": 0.6657682699662093
+            },
+            {
+                "file": "2023-02-28-generative-ai-vfx-workflows.md",
+                "slug": "generative-ai-vfx-workflows",
+                "similarity": 0.6570749344631661
+            },
+            {
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.6528206112426438
+            },
+            {
+                "file": "2025-11-05-strategy-ai.md",
+                "slug": "strategy-ai",
+                "similarity": 0.6262279002212336
+            },
+            {
+                "file": "2011-10-17-neo-futurism-in-the-information-age.md",
+                "slug": "neo-futurism-in-the-information-age",
+                "similarity": 0.6195690233239283
+            },
+            {
+                "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
+                "slug": "software-engineering-reimagined-ai-native-era",
+                "similarity": 0.6159161491867485
+            },
+            {
+                "file": "2017-08-12-embodied-bots.md",
+                "slug": "embodied-bots",
+                "similarity": 0.6001403590146055
+            },
+            {
+                "file": "2025-01-31-mistral-3-small-local-ai.md",
+                "slug": "mistral-3-small-local-ai",
+                "similarity": 0.5981282017463682
+            },
+            {
+                "file": "2015-09-07-js-not-just-language-of-the-web.md",
+                "slug": "js-not-just-language-of-the-web",
+                "similarity": 0.5963460013009562
+            }
+        ]
+    },
+    {
         "file": "2007-11-19-fuzzy-logic-could-book-more-flights.md",
         "slug": "fuzzy-logic-could-book-more-flights",
         "hash": "94b548b246e493b8ef4b2da5e4f49dbfffd110fff411d017352bb8b7cd45ea8e",
@@ -1343,7 +1685,12 @@
             {
                 "file": "2026-02-03-openclaw-raspberrypi-howto.md",
                 "slug": "openclaw-raspberrypi-howto",
-                "similarity": 0.4941580039699097
+                "similarity": 0.48875540443586557
+            },
+            {
+                "file": "2025-12-08-llm-advisory-group-local-subscriptions.md",
+                "slug": "llm-advisory-group-local-subscriptions",
+                "similarity": 0.4670900358434494
             },
             {
                 "file": "2008-04-22-phorm-over-function.md",
@@ -1359,11 +1706,6 @@
                 "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
                 "slug": "why-industries-can-still-be-revolutionised-on-the-web",
                 "similarity": 0.43843657060539604
-            },
-            {
-                "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
-                "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.4382044802364658
             }
         ]
     },
@@ -1430,9 +1772,39 @@
         "hash": "3821163045b79f200f3bbb23274f85759f860465416c8c417a4f9a05882a04fa",
         "post_similarity": [
             {
+                "file": "2023-02-28-generative-ai-vfx-workflows.md",
+                "slug": "generative-ai-vfx-workflows",
+                "similarity": 0.7564194859947494
+            },
+            {
+                "file": "2025-03-26-chatgpt-4o-image-generation-update.md",
+                "slug": "chatgpt-4o-image-generation-update",
+                "similarity": 0.5796407173024308
+            },
+            {
+                "file": "2022-12-06-chatgpt-style-transfer-experiments.md",
+                "slug": "chatgpt-style-transfer-experiments",
+                "similarity": 0.5746506897838903
+            },
+            {
                 "file": "2025-11-05-strategy-ai.md",
                 "slug": "strategy-ai",
                 "similarity": 0.5598143758994611
+            },
+            {
+                "file": "2024-06-15-bias-in-generative-image-models.md",
+                "slug": "bias-in-generative-image-models",
+                "similarity": 0.534195578275181
+            },
+            {
+                "file": "2025-12-17-ai-infographic-wars-chatgpt-gemini.md",
+                "slug": "ai-infographic-wars-chatgpt-gemini",
+                "similarity": 0.5316288126056019
+            },
+            {
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.5252601700775137
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
@@ -1448,36 +1820,6 @@
                 "file": "2025-12-22-ai-incentives-power.md",
                 "slug": "ai-incentives-power",
                 "similarity": 0.47790252285366863
-            },
-            {
-                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
-                "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.43526165832857266
-            },
-            {
-                "file": "2025-02-27-when-will-ai-disrupt-travel.md",
-                "slug": "when-will-ai-disrupt-travel",
-                "similarity": 0.4178759234209922
-            },
-            {
-                "file": "2011-10-17-neo-futurism-in-the-information-age.md",
-                "slug": "neo-futurism-in-the-information-age",
-                "similarity": 0.38497640258214605
-            },
-            {
-                "file": "2015-09-07-js-not-just-language-of-the-web.md",
-                "slug": "js-not-just-language-of-the-web",
-                "similarity": 0.3714555695186022
-            },
-            {
-                "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
-                "slug": "software-engineering-reimagined-ai-native-era",
-                "similarity": 0.36822886867598714
-            },
-            {
-                "file": "2014-05-04-device-api-safari.md",
-                "slug": "device-api-safari",
-                "similarity": 0.36001300947940373
             }
         ]
     },
@@ -1559,6 +1901,11 @@
                 "similarity": 0.6485341111100758
             },
             {
+                "file": "2024-12-03-nous-research-distributed-llm-training.md",
+                "slug": "nous-research-distributed-llm-training",
+                "similarity": 0.5650118357807282
+            },
+            {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
                 "slug": "a-clickster-fail-of-epic-proportions",
                 "similarity": 0.5618047341382248
@@ -1587,11 +1934,6 @@
                 "file": "2010-06-23-why-google-is-a-more-typical-business-than-you-think.md",
                 "slug": "why-google-is-a-more-typical-business-than-you-think",
                 "similarity": 0.48397309235735675
-            },
-            {
-                "file": "2007-11-02-fah-goes-number-1-but-we-could-do-better.md",
-                "slug": "fah-goes-number-1-but-we-could-do-better",
-                "similarity": 0.44033763595701797
             }
         ]
     },
@@ -1626,6 +1968,11 @@
                 "similarity": 0.4901323166685353
             },
             {
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.4863525916460009
+            },
+            {
                 "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
                 "slug": "why-industries-can-still-be-revolutionised-on-the-web",
                 "similarity": 0.4816313605284476
@@ -1644,11 +1991,6 @@
                 "file": "2025-12-22-ai-incentives-power.md",
                 "slug": "ai-incentives-power",
                 "similarity": 0.4694180734309062
-            },
-            {
-                "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
-                "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
-                "similarity": 0.4625226937532344
             }
         ]
     },
@@ -2015,6 +2357,11 @@
                 "similarity": 0.858959586475707
             },
             {
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.8389516235906829
+            },
+            {
                 "file": "2025-02-03-retail-improvements-australia.md",
                 "slug": "retail-improvements-australia",
                 "similarity": 0.8344802436648728
@@ -2030,6 +2377,11 @@
                 "similarity": 0.7072127576668995
             },
             {
+                "file": "2025-01-31-mistral-3-small-local-ai.md",
+                "slug": "mistral-3-small-local-ai",
+                "similarity": 0.7070624093694968
+            },
+            {
                 "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
                 "slug": "web-directions-south-2009-cloud-sourcing-the-business",
                 "similarity": 0.7048269525069436
@@ -2038,16 +2390,6 @@
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
                 "slug": "a-clickster-fail-of-epic-proportions",
                 "similarity": 0.6873660453820779
-            },
-            {
-                "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
-                "slug": "why-industries-can-still-be-revolutionised-on-the-web",
-                "similarity": 0.6873064625865289
-            },
-            {
-                "file": "2008-07-17-mobile-dominance-on-track.md",
-                "slug": "mobile-dominance-on-track",
-                "similarity": 0.6771631996720024
             }
         ]
     },
@@ -2124,6 +2466,11 @@
                 "similarity": 0.7732417720637118
             },
             {
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.695261939559864
+            },
+            {
                 "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
                 "slug": "why-industries-can-still-be-revolutionised-on-the-web",
                 "similarity": 0.6830807378112019
@@ -2157,11 +2504,6 @@
                 "file": "2025-12-22-ai-incentives-power.md",
                 "slug": "ai-incentives-power",
                 "similarity": 0.646544145125318
-            },
-            {
-                "file": "2013-08-21-should-javascript-devs-build-real-things.md",
-                "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.6397673780388552
             }
         ]
     },
@@ -2243,9 +2585,9 @@
                 "similarity": 0.728794875573793
             },
             {
-                "file": "2026-02-03-openclaw-raspberrypi-howto.md",
-                "slug": "openclaw-raspberrypi-howto",
-                "similarity": 0.6541667874759998
+                "file": "2025-12-17-ai-infographic-wars-chatgpt-gemini.md",
+                "slug": "ai-infographic-wars-chatgpt-gemini",
+                "similarity": 0.6557482265154436
             },
             {
                 "file": "2025-12-22-ai-incentives-power.md",
@@ -2253,29 +2595,86 @@
                 "similarity": 0.6449598673786096
             },
             {
+                "file": "2026-02-03-openclaw-raspberrypi-howto.md",
+                "slug": "openclaw-raspberrypi-howto",
+                "similarity": 0.6316920510176325
+            },
+            {
+                "file": "2022-12-06-chatgpt-style-transfer-experiments.md",
+                "slug": "chatgpt-style-transfer-experiments",
+                "similarity": 0.6302349914666919
+            },
+            {
                 "file": "2025-11-05-strategy-ai.md",
                 "slug": "strategy-ai",
                 "similarity": 0.6262159127557614
             },
             {
-                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
-                "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.5759107522912615
+                "file": "2025-11-19-make-web-development-fun-again.md",
+                "slug": "make-web-development-fun-again",
+                "similarity": 0.6159161491867485
+            },
+            {
+                "file": "2025-12-08-llm-advisory-group-local-subscriptions.md",
+                "slug": "llm-advisory-group-local-subscriptions",
+                "similarity": 0.6092548167722818
+            }
+        ]
+    },
+    {
+        "file": "2025-12-08-llm-advisory-group-local-subscriptions.md",
+        "slug": "llm-advisory-group-local-subscriptions",
+        "hash": "7df312967b0231d64d73669b3c3a541886d355370fcb74a9bf06e31a6d2e8246",
+        "post_similarity": [
+            {
+                "file": "2026-02-03-openclaw-raspberrypi-howto.md",
+                "slug": "openclaw-raspberrypi-howto",
+                "similarity": 0.7431658811817405
+            },
+            {
+                "file": "2025-06-26-hands-on-gemini-cli.md",
+                "slug": "hands-on-gemini-cli",
+                "similarity": 0.7359084306256972
+            },
+            {
+                "file": "2025-01-31-mistral-3-small-local-ai.md",
+                "slug": "mistral-3-small-local-ai",
+                "similarity": 0.6446480339548768
+            },
+            {
+                "file": "2023-08-31-ai-works-now.md",
+                "slug": "ai-works-now",
+                "similarity": 0.6428448043971845
             },
             {
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
                 "slug": "when-will-ai-disrupt-travel",
-                "similarity": 0.5061635005419359
+                "similarity": 0.626442049696768
             },
             {
-                "file": "2017-08-12-embodied-bots.md",
-                "slug": "embodied-bots",
-                "similarity": 0.5052966818528704
+                "file": "2024-02-24-mixtral-8x7b-anxiety.md",
+                "slug": "mixtral-8x7b-anxiety",
+                "similarity": 0.6134505433709239
             },
             {
-                "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
-                "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
-                "similarity": 0.4836123960269072
+                "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
+                "slug": "software-engineering-reimagined-ai-native-era",
+                "similarity": 0.6092548167722818
+            },
+            {
+                "file": "2025-11-05-strategy-ai.md",
+                "slug": "strategy-ai",
+                "similarity": 0.5591360280143314
+            },
+            {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.5517741439716486
+            },
+            {
+                "file": "2025-12-18-organisational-capabilities-aspirational.md",
+                "slug": "organisational-capabilities-aspirational",
+                "similarity": 0.546423915613061
             }
         ]
     },
@@ -2642,9 +3041,24 @@
                 "similarity": 0.7697007958321471
             },
             {
+                "file": "2023-02-28-generative-ai-vfx-workflows.md",
+                "slug": "generative-ai-vfx-workflows",
+                "similarity": 0.7564995610184521
+            },
+            {
                 "file": "2025-06-26-hands-on-gemini-cli.md",
                 "slug": "hands-on-gemini-cli",
                 "similarity": 0.7559247423787221
+            },
+            {
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.7400977992288029
+            },
+            {
+                "file": "2025-01-31-mistral-3-small-local-ai.md",
+                "slug": "mistral-3-small-local-ai",
+                "similarity": 0.7318385794717627
             },
             {
                 "file": "2025-11-05-strategy-ai.md",
@@ -2652,29 +3066,14 @@
                 "similarity": 0.7304651035215027
             },
             {
+                "file": "2025-12-17-ai-infographic-wars-chatgpt-gemini.md",
+                "slug": "ai-infographic-wars-chatgpt-gemini",
+                "similarity": 0.6946665140025357
+            },
+            {
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
                 "slug": "when-will-ai-disrupt-travel",
                 "similarity": 0.6903232895081419
-            },
-            {
-                "file": "2011-10-17-neo-futurism-in-the-information-age.md",
-                "slug": "neo-futurism-in-the-information-age",
-                "similarity": 0.6614330033414819
-            },
-            {
-                "file": "2026-02-03-openclaw-raspberrypi-howto.md",
-                "slug": "openclaw-raspberrypi-howto",
-                "similarity": 0.63794777956328
-            },
-            {
-                "file": "2012-02-24-humanising-the-internet-of-things.md",
-                "slug": "humanising-the-internet-of-things",
-                "similarity": 0.6195205358105993
-            },
-            {
-                "file": "2013-08-21-should-javascript-devs-build-real-things.md",
-                "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.6156225666772468
             }
         ]
     },
@@ -2699,39 +3098,39 @@
                 "similarity": 0.45851981000513703
             },
             {
+                "file": "2022-12-06-chatgpt-style-transfer-experiments.md",
+                "slug": "chatgpt-style-transfer-experiments",
+                "similarity": 0.45192027062471435
+            },
+            {
+                "file": "2024-09-05-flux-loras-comicbook-experiments.md",
+                "slug": "flux-loras-comicbook-experiments",
+                "similarity": 0.4483773672239066
+            },
+            {
+                "file": "2025-12-17-ai-infographic-wars-chatgpt-gemini.md",
+                "slug": "ai-infographic-wars-chatgpt-gemini",
+                "similarity": 0.41522188321887005
+            },
+            {
                 "file": "2025-06-26-hands-on-gemini-cli.md",
                 "slug": "hands-on-gemini-cli",
                 "similarity": 0.4116463921210192
             },
             {
+                "file": "2024-12-03-nous-research-distributed-llm-training.md",
+                "slug": "nous-research-distributed-llm-training",
+                "similarity": 0.40704312228727085
+            },
+            {
+                "file": "2023-02-28-generative-ai-vfx-workflows.md",
+                "slug": "generative-ai-vfx-workflows",
+                "similarity": 0.40326487402411587
+            },
+            {
                 "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
                 "slug": "software-engineering-reimagined-ai-native-era",
                 "similarity": 0.3983145578717869
-            },
-            {
-                "file": "2025-12-22-ai-incentives-power.md",
-                "slug": "ai-incentives-power",
-                "similarity": 0.3754430007137843
-            },
-            {
-                "file": "2017-08-12-embodied-bots.md",
-                "slug": "embodied-bots",
-                "similarity": 0.3462689359060935
-            },
-            {
-                "file": "2012-02-24-humanising-the-internet-of-things.md",
-                "slug": "humanising-the-internet-of-things",
-                "similarity": 0.3456754080250991
-            },
-            {
-                "file": "2013-08-21-should-javascript-devs-build-real-things.md",
-                "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.34341521685618925
-            },
-            {
-                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
-                "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.31959464830750206
             }
         ]
     },
@@ -3021,10 +3420,72 @@
         ]
     },
     {
+        "file": "2023-02-28-generative-ai-vfx-workflows.md",
+        "slug": "generative-ai-vfx-workflows",
+        "hash": "f924ca706804657a1eb62de3e8f9607445e4b173d0e3aad8d3688c977ab7e969",
+        "post_similarity": [
+            {
+                "file": "2025-03-26-chatgpt-4o-image-generation-update.md",
+                "slug": "chatgpt-4o-image-generation-update",
+                "similarity": 0.7637128500081284
+            },
+            {
+                "file": "2023-08-31-ai-works-now.md",
+                "slug": "ai-works-now",
+                "similarity": 0.7564995610184521
+            },
+            {
+                "file": "2023-02-14-podcast-enterprise-ai.md",
+                "slug": "podcast-enterprise-ai",
+                "similarity": 0.7564194859947494
+            },
+            {
+                "file": "2025-12-17-ai-infographic-wars-chatgpt-gemini.md",
+                "slug": "ai-infographic-wars-chatgpt-gemini",
+                "similarity": 0.7234756191569212
+            },
+            {
+                "file": "2024-09-05-flux-loras-comicbook-experiments.md",
+                "slug": "flux-loras-comicbook-experiments",
+                "similarity": 0.6804394876889751
+            },
+            {
+                "file": "2025-11-05-strategy-ai.md",
+                "slug": "strategy-ai",
+                "similarity": 0.6679833292854056
+            },
+            {
+                "file": "2025-11-19-make-web-development-fun-again.md",
+                "slug": "make-web-development-fun-again",
+                "similarity": 0.6570749344631661
+            },
+            {
+                "file": "2017-08-12-embodied-bots.md",
+                "slug": "embodied-bots",
+                "similarity": 0.6378016237791012
+            },
+            {
+                "file": "2022-12-06-chatgpt-style-transfer-experiments.md",
+                "slug": "chatgpt-style-transfer-experiments",
+                "similarity": 0.6274512494321174
+            },
+            {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.6264533034457835
+            }
+        ]
+    },
+    {
         "file": "2007-11-02-fah-goes-number-1-but-we-could-do-better.md",
         "slug": "fah-goes-number-1-but-we-could-do-better",
         "hash": "ff59b3f9ee68e743b3e72ebaabc51a59f65b90abf6b9da563438c826b78b6d69",
         "post_similarity": [
+            {
+                "file": "2024-12-03-nous-research-distributed-llm-training.md",
+                "slug": "nous-research-distributed-llm-training",
+                "similarity": 0.5933729031690707
+            },
             {
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
@@ -3069,11 +3530,63 @@
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
                 "similarity": 0.47949067626498426
+            }
+        ]
+    },
+    {
+        "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+        "slug": "atlas-ai-browser-strategy-divide",
+        "hash": "8c2fe0ca6a8ec6ed91c3eed61747f8cd846aa206067d7812c1ef1f38878c63ed",
+        "post_similarity": [
+            {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.9087533831431988
             },
             {
-                "file": "2008-05-09-eeepcs-power-is-in-the-network-not-the-machine.md",
-                "slug": "eeepcs-power-is-in-the-network-not-the-machine",
-                "similarity": 0.47686983472354544
+                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
+                "slug": "now-or-never-growth-opportunities-in-retail",
+                "similarity": 0.8389516235906829
+            },
+            {
+                "file": "2025-11-05-strategy-ai.md",
+                "slug": "strategy-ai",
+                "similarity": 0.8352741443520963
+            },
+            {
+                "file": "2010-06-23-why-google-is-a-more-typical-business-than-you-think.md",
+                "slug": "why-google-is-a-more-typical-business-than-you-think",
+                "similarity": 0.8300761422233076
+            },
+            {
+                "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
+                "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
+                "similarity": 0.760128189688175
+            },
+            {
+                "file": "2025-01-31-mistral-3-small-local-ai.md",
+                "slug": "mistral-3-small-local-ai",
+                "similarity": 0.7442172484804485
+            },
+            {
+                "file": "2023-08-31-ai-works-now.md",
+                "slug": "ai-works-now",
+                "similarity": 0.7400977992288029
+            },
+            {
+                "file": "2007-11-05-bye-bye-openmoko.md",
+                "slug": "bye-bye-openmoko",
+                "similarity": 0.7027478025781592
+            },
+            {
+                "file": "2010-04-13-adobe-narayens-kingdom-for-a-plan.md",
+                "slug": "adobe-narayens-kingdom-for-a-plan",
+                "similarity": 0.695261939559864
+            },
+            {
+                "file": "2025-11-19-make-web-development-fun-again.md",
+                "slug": "make-web-development-fun-again",
+                "similarity": 0.6528206112426438
             }
         ]
     },
@@ -3135,6 +3648,63 @@
         ]
     },
     {
+        "file": "2025-12-18-organisational-capabilities-aspirational.md",
+        "slug": "organisational-capabilities-aspirational",
+        "hash": "a6b82ee6d8e7853b7bd323c0559fdb003a98cce4a7e61e13f991aadadf535214",
+        "post_similarity": [
+            {
+                "file": "2024-06-19-follow-me-i-think-i-know-what-im-doing.md",
+                "slug": "follow-me-i-think-i-know-what-im-doing",
+                "similarity": 0.7683325837538892
+            },
+            {
+                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
+                "slug": "now-or-never-growth-opportunities-in-retail",
+                "similarity": 0.628145548330775
+            },
+            {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.6099430726872055
+            },
+            {
+                "file": "2025-11-05-strategy-ai.md",
+                "slug": "strategy-ai",
+                "similarity": 0.5738064087741737
+            },
+            {
+                "file": "2025-12-08-llm-advisory-group-local-subscriptions.md",
+                "slug": "llm-advisory-group-local-subscriptions",
+                "similarity": 0.546423915613061
+            },
+            {
+                "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
+                "slug": "why-industries-can-still-be-revolutionised-on-the-web",
+                "similarity": 0.5328997154450786
+            },
+            {
+                "file": "2025-02-27-when-will-ai-disrupt-travel.md",
+                "slug": "when-will-ai-disrupt-travel",
+                "similarity": 0.5207486813527623
+            },
+            {
+                "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
+                "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
+                "similarity": 0.47444791659888974
+            },
+            {
+                "file": "2007-11-30-pci-dss-will-wreak-havoc-on-smes.md",
+                "slug": "pci-dss-will-wreak-havoc-on-smes",
+                "similarity": 0.455864927744585
+            },
+            {
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.44797626533687884
+            }
+        ]
+    },
+    {
         "file": "2008-04-27-easy-product-or-class-rating-system.md",
         "slug": "easy-product-or-class-rating-system",
         "hash": "14c2bc8430766e1fb2915c430c66aec628214acdbe8c5936857f1acd5610ca03",
@@ -3188,6 +3758,63 @@
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
                 "similarity": 0.31408191986624756
+            }
+        ]
+    },
+    {
+        "file": "2024-01-16-retail-numbers-are-fine.md",
+        "slug": "retail-numbers-are-fine",
+        "hash": "f659f331551afde1d27df4ef8bf2254b5298eabab1d5eef55e8f3608e9f33e3d",
+        "post_similarity": [
+            {
+                "file": "2025-02-03-retail-improvements-australia.md",
+                "slug": "retail-improvements-australia",
+                "similarity": 1.0302413080099235
+            },
+            {
+                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
+                "slug": "now-or-never-growth-opportunities-in-retail",
+                "similarity": 0.664770016735972
+            },
+            {
+                "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
+                "slug": "a-clickster-fail-of-epic-proportions",
+                "similarity": 0.6498630814013784
+            },
+            {
+                "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
+                "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
+                "similarity": 0.5750860821673227
+            },
+            {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.4877181893602194
+            },
+            {
+                "file": "2008-07-01-mobile-more-interesting-in-germany.md",
+                "slug": "mobile-more-interesting-in-germany",
+                "similarity": 0.4575982673098504
+            },
+            {
+                "file": "2007-03-05-fuzzys-where-its-at-or-will-be-eventually.md",
+                "slug": "fuzzys-where-its-at-or-will-be-eventually",
+                "similarity": 0.45660954590024616
+            },
+            {
+                "file": "2025-12-18-organisational-capabilities-aspirational.md",
+                "slug": "organisational-capabilities-aspirational",
+                "similarity": 0.4235819325993948
+            },
+            {
+                "file": "2010-06-27-a-telling-quarter-for-android.md",
+                "slug": "a-telling-quarter-for-android",
+                "similarity": 0.4109601570769491
+            },
+            {
+                "file": "2024-06-19-follow-me-i-think-i-know-what-im-doing.md",
+                "slug": "follow-me-i-think-i-know-what-im-doing",
+                "similarity": 0.40353573159363554
             }
         ]
     },
@@ -3648,6 +4275,63 @@
         ]
     },
     {
+        "file": "2025-11-20-gemini-3-initial-thoughts.md",
+        "slug": "gemini-3-initial-thoughts",
+        "hash": "5e247e326f61e24f299c874b16914ceaf9a25b674b6601e4d6ab64e11b6f5336",
+        "post_similarity": [
+            {
+                "file": "2025-12-17-ai-infographic-wars-chatgpt-gemini.md",
+                "slug": "ai-infographic-wars-chatgpt-gemini",
+                "similarity": 0.6495675520036017
+            },
+            {
+                "file": "2025-03-26-chatgpt-4o-image-generation-update.md",
+                "slug": "chatgpt-4o-image-generation-update",
+                "similarity": 0.6227077893193369
+            },
+            {
+                "file": "2024-09-05-flux-loras-comicbook-experiments.md",
+                "slug": "flux-loras-comicbook-experiments",
+                "similarity": 0.5122467428622738
+            },
+            {
+                "file": "2025-06-26-hands-on-gemini-cli.md",
+                "slug": "hands-on-gemini-cli",
+                "similarity": 0.49240634673432937
+            },
+            {
+                "file": "2023-02-28-generative-ai-vfx-workflows.md",
+                "slug": "generative-ai-vfx-workflows",
+                "similarity": 0.44223525324754753
+            },
+            {
+                "file": "2022-12-06-chatgpt-style-transfer-experiments.md",
+                "slug": "chatgpt-style-transfer-experiments",
+                "similarity": 0.43379105517164146
+            },
+            {
+                "file": "2024-02-24-mixtral-8x7b-anxiety.md",
+                "slug": "mixtral-8x7b-anxiety",
+                "similarity": 0.43081905026580164
+            },
+            {
+                "file": "2024-06-15-bias-in-generative-image-models.md",
+                "slug": "bias-in-generative-image-models",
+                "similarity": 0.4304876680725153
+            },
+            {
+                "file": "2023-02-14-podcast-enterprise-ai.md",
+                "slug": "podcast-enterprise-ai",
+                "similarity": 0.38970636570055045
+            },
+            {
+                "file": "2023-08-31-ai-works-now.md",
+                "slug": "ai-works-now",
+                "similarity": 0.35568052392368965
+            }
+        ]
+    },
+    {
         "file": "2015-05-04-pebble-controlled-leds.md",
         "slug": "pebble-controlled-leds",
         "hash": "77f33a557d71cb9cfb397fc554bc1ec0e4b9098503f1a60c25153e0000f54030",
@@ -3802,6 +4486,11 @@
                 "similarity": 0.4768006849585046
             },
             {
+                "file": "2025-11-19-make-web-development-fun-again.md",
+                "slug": "make-web-development-fun-again",
+                "similarity": 0.4353079767322844
+            },
+            {
                 "file": "2015-05-04-pebble-controlled-leds.md",
                 "slug": "pebble-controlled-leds",
                 "similarity": 0.4053138508171591
@@ -3809,69 +4498,64 @@
             {
                 "file": "2026-02-03-openclaw-raspberrypi-howto.md",
                 "slug": "openclaw-raspberrypi-howto",
-                "similarity": 0.39842682154589665
-            },
-            {
-                "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
-                "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.3688934424007039
+                "similarity": 0.3957231986178436
             }
         ]
     },
     {
         "file": "2026-02-03-openclaw-raspberrypi-howto.md",
         "slug": "openclaw-raspberrypi-howto",
-        "hash": "ee0d7f444a746c727c7e445839f4566a0a2d89cb178081a761478f9b1e0e5750",
+        "hash": "9bcd14a34f6aaa737f1db963498be3592d6b6c4ceab82b713c453065c92ca85c",
         "post_similarity": [
             {
                 "file": "2025-06-26-hands-on-gemini-cli.md",
                 "slug": "hands-on-gemini-cli",
-                "similarity": 0.7889500944110678
+                "similarity": 0.7763479524900032
             },
             {
-                "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
-                "slug": "software-engineering-reimagined-ai-native-era",
-                "similarity": 0.6541667874759998
+                "file": "2025-12-08-llm-advisory-group-local-subscriptions.md",
+                "slug": "llm-advisory-group-local-subscriptions",
+                "similarity": 0.7431658811817405
             },
             {
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
                 "slug": "when-will-ai-disrupt-travel",
-                "similarity": 0.6385683144979339
+                "similarity": 0.6317511983833317
+            },
+            {
+                "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
+                "slug": "software-engineering-reimagined-ai-native-era",
+                "similarity": 0.6316920510176325
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
-                "similarity": 0.63794777956328
+                "similarity": 0.6306812653869186
+            },
+            {
+                "file": "2025-01-31-mistral-3-small-local-ai.md",
+                "slug": "mistral-3-small-local-ai",
+                "similarity": 0.5635792782974682
             },
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.549382338714468
+                "similarity": 0.5507127669002699
+            },
+            {
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.5339395143583225
             },
             {
                 "file": "2025-12-22-ai-incentives-power.md",
                 "slug": "ai-incentives-power",
-                "similarity": 0.538387906908355
+                "similarity": 0.5264668271123675
             },
             {
-                "file": "2016-01-27-road-to-interchange.md",
-                "slug": "road-to-interchange",
-                "similarity": 0.526793369528198
-            },
-            {
-                "file": "2017-08-12-embodied-bots.md",
-                "slug": "embodied-bots",
-                "similarity": 0.5145473299145177
-            },
-            {
-                "file": "2009-07-26-case-study-django-agile-sportsgirl-redevelopment.md",
-                "slug": "case-study-django-agile-sportsgirl-redevelopment",
-                "similarity": 0.49428548842032277
-            },
-            {
-                "file": "2007-11-19-fuzzy-logic-could-book-more-flights.md",
-                "slug": "fuzzy-logic-could-book-more-flights",
-                "similarity": 0.4941580039699097
+                "file": "2025-11-19-make-web-development-fun-again.md",
+                "slug": "make-web-development-fun-again",
+                "similarity": 0.524444598760585
             }
         ]
     },
@@ -3883,7 +4567,7 @@
             {
                 "file": "2026-02-03-openclaw-raspberrypi-howto.md",
                 "slug": "openclaw-raspberrypi-howto",
-                "similarity": 0.3795837544526848
+                "similarity": 0.37817388067679547
             },
             {
                 "file": "2016-01-27-road-to-interchange.md",
@@ -3899,6 +4583,11 @@
                 "file": "2009-12-22-why-im-interested-in-aws-spot-prices-for-ec2.md",
                 "slug": "why-im-interested-in-aws-spot-prices-for-ec2",
                 "similarity": 0.3370805694287286
+            },
+            {
+                "file": "2025-12-08-llm-advisory-group-local-subscriptions.md",
+                "slug": "llm-advisory-group-local-subscriptions",
+                "similarity": 0.30211391613762284
             },
             {
                 "file": "2008-05-09-eeepcs-power-is-in-the-network-not-the-machine.md",
@@ -3924,11 +4613,6 @@
                 "file": "2012-06-10-is-this-the-end-of-windows-server.md",
                 "slug": "is-this-the-end-of-windows-server",
                 "similarity": 0.23262659354819007
-            },
-            {
-                "file": "2014-12-16-building-information-radiator.md",
-                "slug": "building-information-radiator",
-                "similarity": 0.23101920877613574
             }
         ]
     },
@@ -3973,6 +4657,11 @@
                 "similarity": 0.6551335871377277
             },
             {
+                "file": "2024-12-03-nous-research-distributed-llm-training.md",
+                "slug": "nous-research-distributed-llm-training",
+                "similarity": 0.6222211515964433
+            },
+            {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
                 "similarity": 0.621578024847179
@@ -3981,11 +4670,6 @@
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
                 "similarity": 0.5977370425410928
-            },
-            {
-                "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
-                "slug": "a-clickster-fail-of-epic-proportions",
-                "similarity": 0.5856840987788887
             }
         ]
     },
@@ -4005,6 +4689,11 @@
                 "similarity": 0.8477565676375992
             },
             {
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.8352741443520963
+            },
+            {
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
                 "slug": "when-will-ai-disrupt-travel",
                 "similarity": 0.7743625949582706
@@ -4020,29 +4709,24 @@
                 "similarity": 0.7155551450185842
             },
             {
+                "file": "2023-02-28-generative-ai-vfx-workflows.md",
+                "slug": "generative-ai-vfx-workflows",
+                "similarity": 0.6679833292854056
+            },
+            {
+                "file": "2025-01-31-mistral-3-small-local-ai.md",
+                "slug": "mistral-3-small-local-ai",
+                "similarity": 0.6449948229380141
+            },
+            {
+                "file": "2025-11-19-make-web-development-fun-again.md",
+                "slug": "make-web-development-fun-again",
+                "similarity": 0.6262279002212336
+            },
+            {
                 "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
                 "slug": "software-engineering-reimagined-ai-native-era",
                 "similarity": 0.6262159127557614
-            },
-            {
-                "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
-                "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
-                "similarity": 0.5746300062170985
-            },
-            {
-                "file": "2023-02-14-podcast-enterprise-ai.md",
-                "slug": "podcast-enterprise-ai",
-                "similarity": 0.5598143758994611
-            },
-            {
-                "file": "2025-06-26-hands-on-gemini-cli.md",
-                "slug": "hands-on-gemini-cli",
-                "similarity": 0.476495459416295
-            },
-            {
-                "file": "2007-04-30-super-computer-required-to-simulate-half-a-mouse-brain.md",
-                "slug": "super-computer-required-to-simulate-half-a-mouse-brain",
-                "similarity": 0.45851981000513703
             }
         ]
     },
@@ -4139,6 +4823,16 @@
                 "similarity": 0.6485341111100758
             },
             {
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.6210167015416
+            },
+            {
+                "file": "2024-12-03-nous-research-distributed-llm-training.md",
+                "slug": "nous-research-distributed-llm-training",
+                "similarity": 0.6151010860329512
+            },
+            {
                 "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
                 "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
                 "similarity": 0.5787204232663109
@@ -4147,16 +4841,6 @@
                 "file": "2008-07-17-mobile-dominance-on-track.md",
                 "slug": "mobile-dominance-on-track",
                 "similarity": 0.561915720169478
-            },
-            {
-                "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
-                "slug": "a-clickster-fail-of-epic-proportions",
-                "similarity": 0.5272190830469339
-            },
-            {
-                "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
-                "slug": "the-golden-age-of-mobile-soon-maybe",
-                "similarity": 0.5146081355671739
             }
         ]
     },
@@ -4218,6 +4902,63 @@
         ]
     },
     {
+        "file": "2025-01-31-mistral-3-small-local-ai.md",
+        "slug": "mistral-3-small-local-ai",
+        "hash": "6c8dfefa3b983887188fe5a70c9170064ba87d73d4dd6485badfcfff5d2a985b",
+        "post_similarity": [
+            {
+                "file": "2025-01-28-deepseek-r1-geography-bias.md",
+                "slug": "deepseek-r1-geography-bias",
+                "similarity": 0.9457394795037539
+            },
+            {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.7758118375321973
+            },
+            {
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.7442172484804485
+            },
+            {
+                "file": "2023-08-31-ai-works-now.md",
+                "slug": "ai-works-now",
+                "similarity": 0.7318385794717627
+            },
+            {
+                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
+                "slug": "now-or-never-growth-opportunities-in-retail",
+                "similarity": 0.7070624093694968
+            },
+            {
+                "file": "2025-11-05-strategy-ai.md",
+                "slug": "strategy-ai",
+                "similarity": 0.6449948229380141
+            },
+            {
+                "file": "2025-12-08-llm-advisory-group-local-subscriptions.md",
+                "slug": "llm-advisory-group-local-subscriptions",
+                "similarity": 0.6446480339548768
+            },
+            {
+                "file": "2025-06-26-hands-on-gemini-cli.md",
+                "slug": "hands-on-gemini-cli",
+                "similarity": 0.6396543546246559
+            },
+            {
+                "file": "2024-12-03-nous-research-distributed-llm-training.md",
+                "slug": "nous-research-distributed-llm-training",
+                "similarity": 0.6253623315891941
+            },
+            {
+                "file": "2024-09-05-flux-loras-comicbook-experiments.md",
+                "slug": "flux-loras-comicbook-experiments",
+                "similarity": 0.6239364130584844
+            }
+        ]
+    },
+    {
         "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
         "slug": "a-clickster-fail-of-epic-proportions",
         "hash": "bcad6ca3bbfdcb82024f5dccd74099c7b15a69333b554d407d3bc585465e796d",
@@ -4263,14 +5004,14 @@
                 "similarity": 0.6568941457038973
             },
             {
+                "file": "2024-01-16-retail-numbers-are-fine.md",
+                "slug": "retail-numbers-are-fine",
+                "similarity": 0.6498630814013784
+            },
+            {
                 "file": "2010-03-23-an-open-internet-call-to-arms.md",
                 "slug": "an-open-internet-call-to-arms",
                 "similarity": 0.632051453222835
-            },
-            {
-                "file": "2010-04-13-adobe-narayens-kingdom-for-a-plan.md",
-                "slug": "adobe-narayens-kingdom-for-a-plan",
-                "similarity": 0.6314303703476946
             }
         ]
     },
@@ -4446,6 +5187,63 @@
         ]
     },
     {
+        "file": "2024-06-15-bias-in-generative-image-models.md",
+        "slug": "bias-in-generative-image-models",
+        "hash": "8e061db6b366a18e961717d3a5fb5ec4eaadc33bd61b62ab5633e402f4c40b49",
+        "post_similarity": [
+            {
+                "file": "2024-09-05-flux-loras-comicbook-experiments.md",
+                "slug": "flux-loras-comicbook-experiments",
+                "similarity": 0.6922613043444584
+            },
+            {
+                "file": "2022-12-06-chatgpt-style-transfer-experiments.md",
+                "slug": "chatgpt-style-transfer-experiments",
+                "similarity": 0.6546170824921383
+            },
+            {
+                "file": "2025-03-26-chatgpt-4o-image-generation-update.md",
+                "slug": "chatgpt-4o-image-generation-update",
+                "similarity": 0.6468561814126823
+            },
+            {
+                "file": "2025-12-17-ai-infographic-wars-chatgpt-gemini.md",
+                "slug": "ai-infographic-wars-chatgpt-gemini",
+                "similarity": 0.6260367965644207
+            },
+            {
+                "file": "2023-08-31-ai-works-now.md",
+                "slug": "ai-works-now",
+                "similarity": 0.5924775441690211
+            },
+            {
+                "file": "2023-02-28-generative-ai-vfx-workflows.md",
+                "slug": "generative-ai-vfx-workflows",
+                "similarity": 0.5646155718861421
+            },
+            {
+                "file": "2023-02-14-podcast-enterprise-ai.md",
+                "slug": "podcast-enterprise-ai",
+                "similarity": 0.534195578275181
+            },
+            {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.4918408389072673
+            },
+            {
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.4578493386444559
+            },
+            {
+                "file": "2025-11-05-strategy-ai.md",
+                "slug": "strategy-ai",
+                "similarity": 0.4569511342932775
+            }
+        ]
+    },
+    {
         "file": "2007-11-02-css-structure-what-a-mess.md",
         "slug": "css-structure-what-a-mess",
         "hash": "35e292ce1bab9bef0910751a846897c0bd7d066d55b2c3a63dfae5319bcd0faa",
@@ -4499,6 +5297,63 @@
                 "file": "2015-09-09-datatium-material-for-contextually-responsive-design.md",
                 "slug": "datatium-material-for-contextually-responsive-design",
                 "similarity": 0.4260358827702565
+            }
+        ]
+    },
+    {
+        "file": "2022-12-06-chatgpt-style-transfer-experiments.md",
+        "slug": "chatgpt-style-transfer-experiments",
+        "hash": "d40b45b7856669901c75ae4eab9c9ccca28df37ec0d285dbb339963347c4ca62",
+        "post_similarity": [
+            {
+                "file": "2025-12-17-ai-infographic-wars-chatgpt-gemini.md",
+                "slug": "ai-infographic-wars-chatgpt-gemini",
+                "similarity": 0.8036474414734869
+            },
+            {
+                "file": "2025-03-26-chatgpt-4o-image-generation-update.md",
+                "slug": "chatgpt-4o-image-generation-update",
+                "similarity": 0.7424208942388845
+            },
+            {
+                "file": "2024-09-05-flux-loras-comicbook-experiments.md",
+                "slug": "flux-loras-comicbook-experiments",
+                "similarity": 0.6950049207365416
+            },
+            {
+                "file": "2024-06-15-bias-in-generative-image-models.md",
+                "slug": "bias-in-generative-image-models",
+                "similarity": 0.6546170824921383
+            },
+            {
+                "file": "2023-08-31-ai-works-now.md",
+                "slug": "ai-works-now",
+                "similarity": 0.636866179142642
+            },
+            {
+                "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
+                "slug": "software-engineering-reimagined-ai-native-era",
+                "similarity": 0.6302349914666919
+            },
+            {
+                "file": "2023-02-28-generative-ai-vfx-workflows.md",
+                "slug": "generative-ai-vfx-workflows",
+                "similarity": 0.6274512494321174
+            },
+            {
+                "file": "2023-02-14-podcast-enterprise-ai.md",
+                "slug": "podcast-enterprise-ai",
+                "similarity": 0.5746506897838903
+            },
+            {
+                "file": "2017-08-12-embodied-bots.md",
+                "slug": "embodied-bots",
+                "similarity": 0.5622427617740025
+            },
+            {
+                "file": "2025-11-05-strategy-ai.md",
+                "slug": "strategy-ai",
+                "similarity": 0.5174754550921669
             }
         ]
     },
@@ -4649,27 +5504,84 @@
             {
                 "file": "2026-02-03-openclaw-raspberrypi-howto.md",
                 "slug": "openclaw-raspberrypi-howto",
-                "similarity": 0.6385683144979339
+                "similarity": 0.6317511983833317
+            },
+            {
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.6287591811508481
+            },
+            {
+                "file": "2025-12-08-llm-advisory-group-local-subscriptions.md",
+                "slug": "llm-advisory-group-local-subscriptions",
+                "similarity": 0.626442049696768
+            },
+            {
+                "file": "2023-03-17-ai-dating-digital-twins.md",
+                "slug": "ai-dating-digital-twins",
+                "similarity": 0.5675690934742442
             },
             {
                 "file": "2025-06-26-hands-on-gemini-cli.md",
                 "slug": "hands-on-gemini-cli",
                 "similarity": 0.5672513945137021
+            }
+        ]
+    },
+    {
+        "file": "2023-03-17-ai-dating-digital-twins.md",
+        "slug": "ai-dating-digital-twins",
+        "hash": "b13f189b17d10bc02be22f692f11c62358cedddba5f5f8815fd17f9ffde38a55",
+        "post_similarity": [
+            {
+                "file": "2023-08-31-ai-works-now.md",
+                "slug": "ai-works-now",
+                "similarity": 0.6462709302592328
             },
             {
-                "file": "2024-06-19-follow-me-i-think-i-know-what-im-doing.md",
-                "slug": "follow-me-i-think-i-know-what-im-doing",
-                "similarity": 0.5618567768585666
+                "file": "2012-02-24-humanising-the-internet-of-things.md",
+                "slug": "humanising-the-internet-of-things",
+                "similarity": 0.6169947849915277
             },
             {
-                "file": "2008-02-12-why-industries-can-still-be-revolutionised-on-the-web.md",
-                "slug": "why-industries-can-still-be-revolutionised-on-the-web",
-                "similarity": 0.5559479419780641
+                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
+                "slug": "computing-is-finally-becoming-personal",
+                "similarity": 0.5982451344043955
             },
             {
-                "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
-                "slug": "software-engineering-reimagined-ai-native-era",
-                "similarity": 0.5061635005419359
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.593772210567821
+            },
+            {
+                "file": "2023-02-28-generative-ai-vfx-workflows.md",
+                "slug": "generative-ai-vfx-workflows",
+                "similarity": 0.5694512232353798
+            },
+            {
+                "file": "2025-02-27-when-will-ai-disrupt-travel.md",
+                "slug": "when-will-ai-disrupt-travel",
+                "similarity": 0.5675690934742442
+            },
+            {
+                "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
+                "slug": "the-golden-age-of-mobile-soon-maybe",
+                "similarity": 0.5639083702230713
+            },
+            {
+                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
+                "slug": "now-or-never-growth-opportunities-in-retail",
+                "similarity": 0.5566172902621103
+            },
+            {
+                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
+                "slug": "android-fragmentation-really-not-a-big-deal",
+                "similarity": 0.5453098406871969
+            },
+            {
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.5177850860324286
             }
         ]
     },
@@ -5187,6 +6099,63 @@
         ]
     },
     {
+        "file": "2025-03-26-chatgpt-4o-image-generation-update.md",
+        "slug": "chatgpt-4o-image-generation-update",
+        "hash": "58cbccc6ab311d8b4f161ca1e146c91582b5e17fd8300db5e1763d395e8a4bfb",
+        "post_similarity": [
+            {
+                "file": "2025-12-17-ai-infographic-wars-chatgpt-gemini.md",
+                "slug": "ai-infographic-wars-chatgpt-gemini",
+                "similarity": 0.8656171436259916
+            },
+            {
+                "file": "2024-09-05-flux-loras-comicbook-experiments.md",
+                "slug": "flux-loras-comicbook-experiments",
+                "similarity": 0.7982945465024345
+            },
+            {
+                "file": "2023-02-28-generative-ai-vfx-workflows.md",
+                "slug": "generative-ai-vfx-workflows",
+                "similarity": 0.7637128500081284
+            },
+            {
+                "file": "2022-12-06-chatgpt-style-transfer-experiments.md",
+                "slug": "chatgpt-style-transfer-experiments",
+                "similarity": 0.7424208942388845
+            },
+            {
+                "file": "2024-06-15-bias-in-generative-image-models.md",
+                "slug": "bias-in-generative-image-models",
+                "similarity": 0.6468561814126823
+            },
+            {
+                "file": "2023-08-31-ai-works-now.md",
+                "slug": "ai-works-now",
+                "similarity": 0.6326518978040847
+            },
+            {
+                "file": "2025-11-20-gemini-3-initial-thoughts.md",
+                "slug": "gemini-3-initial-thoughts",
+                "similarity": 0.6227077893193369
+            },
+            {
+                "file": "2023-02-14-podcast-enterprise-ai.md",
+                "slug": "podcast-enterprise-ai",
+                "similarity": 0.5796407173024308
+            },
+            {
+                "file": "2025-06-26-hands-on-gemini-cli.md",
+                "slug": "hands-on-gemini-cli",
+                "similarity": 0.5565033672838285
+            },
+            {
+                "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
+                "slug": "software-engineering-reimagined-ai-native-era",
+                "similarity": 0.5497545025118998
+            }
+        ]
+    },
+    {
         "file": "2010-06-23-why-google-is-a-more-typical-business-than-you-think.md",
         "slug": "why-google-is-a-more-typical-business-than-you-think",
         "hash": "af527416816ac78b0af23e6ef4e2e2b9db9d576ce3a42e9f1ec002e1f0d22fd9",
@@ -5200,6 +6169,11 @@
                 "file": "2012-06-10-is-this-the-end-of-windows-server.md",
                 "slug": "is-this-the-end-of-windows-server",
                 "similarity": 0.8482237756598897
+            },
+            {
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.8300761422233076
             },
             {
                 "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
@@ -5235,11 +6209,6 @@
                 "file": "2008-07-17-mobile-dominance-on-track.md",
                 "slug": "mobile-dominance-on-track",
                 "similarity": 0.6425448975174591
-            },
-            {
-                "file": "2025-12-22-ai-incentives-power.md",
-                "slug": "ai-incentives-power",
-                "similarity": 0.6409425427213568
             }
         ]
     },
@@ -5297,6 +6266,63 @@
                 "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
                 "slug": "the-golden-age-of-mobile-soon-maybe",
                 "similarity": 0.7335756775828505
+            }
+        ]
+    },
+    {
+        "file": "2024-12-03-nous-research-distributed-llm-training.md",
+        "slug": "nous-research-distributed-llm-training",
+        "hash": "fe043809ae19eb9aead3542f403cea8d5724b3ff5b5e4e132cc15c34541371cb",
+        "post_similarity": [
+            {
+                "file": "2023-08-31-ai-works-now.md",
+                "slug": "ai-works-now",
+                "similarity": 0.6710201189825657
+            },
+            {
+                "file": "2025-01-31-mistral-3-small-local-ai.md",
+                "slug": "mistral-3-small-local-ai",
+                "similarity": 0.6253623315891941
+            },
+            {
+                "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
+                "slug": "web-directions-south-2009-cloud-sourcing-the-business",
+                "similarity": 0.6222211515964433
+            },
+            {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.6187156248566226
+            },
+            {
+                "file": "2009-01-08-sun-acquires-qlayer-for-cloud.md",
+                "slug": "sun-acquires-qlayer-for-cloud",
+                "similarity": 0.6151010860329512
+            },
+            {
+                "file": "2025-11-05-strategy-ai.md",
+                "slug": "strategy-ai",
+                "similarity": 0.6081076213616431
+            },
+            {
+                "file": "2007-11-02-fah-goes-number-1-but-we-could-do-better.md",
+                "slug": "fah-goes-number-1-but-we-could-do-better",
+                "similarity": 0.5933729031690707
+            },
+            {
+                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
+                "slug": "now-or-never-growth-opportunities-in-retail",
+                "similarity": 0.5743915559452368
+            },
+            {
+                "file": "2009-12-22-why-im-interested-in-aws-spot-prices-for-ec2.md",
+                "slug": "why-im-interested-in-aws-spot-prices-for-ec2",
+                "similarity": 0.5650118357807282
+            },
+            {
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.5558341801754079
             }
         ]
     },
@@ -5365,12 +6391,17 @@
             {
                 "file": "2026-02-03-openclaw-raspberrypi-howto.md",
                 "slug": "openclaw-raspberrypi-howto",
-                "similarity": 0.7889500944110678
+                "similarity": 0.7763479524900032
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
                 "similarity": 0.7559247423787221
+            },
+            {
+                "file": "2025-12-08-llm-advisory-group-local-subscriptions.md",
+                "slug": "llm-advisory-group-local-subscriptions",
+                "similarity": 0.7359084306256972
             },
             {
                 "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
@@ -5383,34 +6414,29 @@
                 "similarity": 0.6462304754194709
             },
             {
+                "file": "2025-01-31-mistral-3-small-local-ai.md",
+                "slug": "mistral-3-small-local-ai",
+                "similarity": 0.6396543546246559
+            },
+            {
+                "file": "2025-12-17-ai-infographic-wars-chatgpt-gemini.md",
+                "slug": "ai-infographic-wars-chatgpt-gemini",
+                "similarity": 0.5829101435316747
+            },
+            {
+                "file": "2024-09-05-flux-loras-comicbook-experiments.md",
+                "slug": "flux-loras-comicbook-experiments",
+                "similarity": 0.5700715359595964
+            },
+            {
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
                 "slug": "when-will-ai-disrupt-travel",
                 "similarity": 0.5672513945137021
             },
             {
-                "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
-                "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.5047881104545235
-            },
-            {
-                "file": "2016-01-27-road-to-interchange.md",
-                "slug": "road-to-interchange",
-                "similarity": 0.4892780858957111
-            },
-            {
-                "file": "2025-11-05-strategy-ai.md",
-                "slug": "strategy-ai",
-                "similarity": 0.476495459416295
-            },
-            {
-                "file": "2013-08-21-should-javascript-devs-build-real-things.md",
-                "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.45565988800784646
-            },
-            {
-                "file": "2017-08-12-embodied-bots.md",
-                "slug": "embodied-bots",
-                "similarity": 0.4469150026677462
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.5614687127668837
             }
         ]
     },
@@ -5574,14 +6600,14 @@
                 "similarity": 0.4563533536340613
             },
             {
+                "file": "2025-12-18-organisational-capabilities-aspirational.md",
+                "slug": "organisational-capabilities-aspirational",
+                "similarity": 0.455864927744585
+            },
+            {
                 "file": "2025-12-22-ai-incentives-power.md",
                 "slug": "ai-incentives-power",
                 "similarity": 0.4525445159986706
-            },
-            {
-                "file": "2007-05-03-drmed-for-life.md",
-                "slug": "drmed-for-life",
-                "similarity": 0.43389975040433065
             }
         ]
     },
@@ -5596,6 +6622,11 @@
                 "similarity": 1.07759869284331
             },
             {
+                "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
+                "slug": "atlas-ai-browser-strategy-divide",
+                "similarity": 0.9087533831431988
+            },
+            {
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
                 "similarity": 0.8599510470838662
@@ -5604,6 +6635,11 @@
                 "file": "2025-11-05-strategy-ai.md",
                 "slug": "strategy-ai",
                 "similarity": 0.8477565676375992
+            },
+            {
+                "file": "2025-01-31-mistral-3-small-local-ai.md",
+                "slug": "mistral-3-small-local-ai",
+                "similarity": 0.7758118375321973
             },
             {
                 "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
@@ -5616,6 +6652,11 @@
                 "similarity": 0.7242535025263459
             },
             {
+                "file": "2025-01-28-deepseek-r1-geography-bias.md",
+                "slug": "deepseek-r1-geography-bias",
+                "similarity": 0.7026177978423281
+            },
+            {
                 "file": "2008-07-17-mobile-dominance-on-track.md",
                 "slug": "mobile-dominance-on-track",
                 "similarity": 0.6903657865773908
@@ -5624,21 +6665,6 @@
                 "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
                 "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
                 "similarity": 0.6790582463429367
-            },
-            {
-                "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
-                "slug": "the-golden-age-of-mobile-soon-maybe",
-                "similarity": 0.6600461522821996
-            },
-            {
-                "file": "2009-10-09-web-directions-south-2009-cloud-sourcing-the-business.md",
-                "slug": "web-directions-south-2009-cloud-sourcing-the-business",
-                "similarity": 0.6551335871377277
-            },
-            {
-                "file": "2011-10-04-on-a-post-flash-world-and-adobes-place-within-it.md",
-                "slug": "on-a-post-flash-world-and-adobes-place-within-it",
-                "similarity": 0.6535790760020079
             }
         ]
     },
@@ -5647,6 +6673,11 @@
         "slug": "retail-improvements-australia",
         "hash": "25574fd54ee0ea77529996ccf42bb674fd789950bbe26e6d29bd9f8041283590",
         "post_similarity": [
+            {
+                "file": "2024-01-16-retail-numbers-are-fine.md",
+                "slug": "retail-numbers-are-fine",
+                "similarity": 1.0302413080099235
+            },
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
@@ -5691,11 +6722,6 @@
                 "file": "2010-06-27-a-telling-quarter-for-android.md",
                 "slug": "a-telling-quarter-for-android",
                 "similarity": 0.4885771494205778
-            },
-            {
-                "file": "2008-07-17-mobile-dominance-on-track.md",
-                "slug": "mobile-dominance-on-track",
-                "similarity": 0.4818539240085524
             }
         ]
     },
