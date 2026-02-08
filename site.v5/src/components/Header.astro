@@ -52,7 +52,8 @@ const titleClass = largetitle ? 'enlarge' : smalltitle ? 'shrink' : '';
         <span>
           <Icon name="fa7-solid:clock"/>
         </span>
-        <span>{readingTime} mins ({humanize.compactInteger(wordCount, 1)} words)</span>
+        <span>{readingTime} {humanize.pluralize(readingTime, "min", "mins")}
+        ({humanize.compactInteger(wordCount, 1)} words)</span>
       </p>
     )}
     { featureimage !== '' && imageby !== '' && !isFeatured && (
