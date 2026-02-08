@@ -11,6 +11,9 @@ twitter_excerpt: >
     ChatGPT style-transfer prompts are a fun way to explain complex
     topics inside strict constraints. #ai #generativeai
 tags: ai, generative ai
+listimage: ../../img/posts/chatgpt-glitch.png
+featureimage: ../../img/posts/chatgpt-glitch.png
+imageby: ajfisher - chatGPT
 ---
 
 Having an afternoon cup of tea and playing with [ChatGPT](https://chatgpt.com)
