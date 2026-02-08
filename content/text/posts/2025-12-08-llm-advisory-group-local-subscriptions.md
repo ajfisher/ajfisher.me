@@ -10,7 +10,7 @@ excerpt: >
 twitter_excerpt: >
     Built a local LLM council that reuses existing subscriptions and
     converges on answers through multi-model review. #ai #agents
-tags: ai, agents, development
+tags: ai, agents, development, anthropic
 listimage: ../../img/posts/llm-judge.png
 featureimage: ../../img/posts/llm-advisors.png
 imageby: ajfisher - Gemini

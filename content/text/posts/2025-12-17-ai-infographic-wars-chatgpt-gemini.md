@@ -11,7 +11,7 @@ excerpt: >
 twitter_excerpt: >
     ChatGPT's new image model is squaring up against Gemini, and it's now
     good enough to turn process docs into instant explainers. #ai #genai
-tags: ai, generative ai
+tags: ai, generative ai, openai
 featureimage: ../../img/posts/infographic-moon-process.png
 imageby: ajfisher - ChatGPT
 listimage: ../../img/posts/infographic-tea-process.png

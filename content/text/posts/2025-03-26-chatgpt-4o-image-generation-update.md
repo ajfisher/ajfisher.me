@@ -10,7 +10,7 @@ excerpt: >
 twitter_excerpt: >
     ChatGPT-4o image generation now supports multi-modal context and
     iterative edits. Big step forward. #ai #genai
-tags: ai, generative ai
+tags: ai, generative ai, openai
 listimage: ../../img/posts/4o-robot-sunset.png
 featureimage: ../../img/posts/4o-robot-sunset.png
 imageby: ajfisher - ChatGPT / Dall.E

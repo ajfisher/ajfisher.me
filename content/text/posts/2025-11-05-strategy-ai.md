@@ -16,7 +16,7 @@ featureimage: ../../img/posts/close_team_collaboration.png
 imageby: ajfisher - Dall.E/cGPT
 listimage: ../../img/posts/team_collaboration.png
 featured: false
-tags: business, strategy, growth, ai, innovation
+tags: business, strategy, growth, ai, innovation, leadership, operating model
 ---
 
 For someone who spends a lot of time working with AI and building AI / ML
