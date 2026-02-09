@@ -4,7 +4,7 @@ date: 2024-06-19 19:00:00+11:00
 layout: post
 slug: follow-me-i-think-i-know-what-im-doing
 title: "Follow me. I know what I'm doing... (I think)"
-tags: strategy, business, growth, presentation, conference
+tags: strategy, business, growth, presentation, conference, leadership, operating model
 excerpt: >
     Stepping suddenly from practice to enterprise leader can be daunting.
     This talk, given at WDC Leaders 24 explores how to navigate one of the most

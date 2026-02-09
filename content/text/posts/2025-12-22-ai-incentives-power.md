@@ -16,7 +16,7 @@ featureimage: ../../img/posts/predictions_crystal_ball.png
 imageby: ajfisher - chatGPT
 listimage: ../../img/posts/predictions_convergence.png
 featured: true
-tags: business, strategy, ai, predictions
+tags: business, strategy, ai, predictions, openai, anthropic, microsoft, operating model
 ---
 
 The back part of 2025 feels like change is happening on multiple fronts at the
