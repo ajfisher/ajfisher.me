@@ -30,6 +30,12 @@
         "tagimage": "../img/posts/tag_android.png"
     },
     {
+        "tag": "anthropic",
+        "title": "Anthropic AI research company",
+        "intro": "Anthropic has become one of the key companies shaping frontier AI model capabilities and enterprise usage patterns. Its work on model safety, evaluation and practical deployments provide a strong reference guide to the wider AI community and helps frame how organisations should adopt these systems responsibly.",
+        "tagimage": "../img/posts/tag_anthropic.png"
+    },
+    {
         "tag": "apple",
         "title": "Apple computing company",
         "intro": "Apple has redefined technology and interaction many times with its innovative approach to hardware, software and design. From the stalwart Mac to iPhones and iPads, it creates a seamless ecosystem of devices and services. Apple's Second Mouse strategy coupled with its focus on simplicity, performance and great design influences how we interact with the digital world.",
@@ -210,10 +216,22 @@
         "tagimage": "../img/posts/tag_linux.png"
     },
     {
+        "tag": "leadership",
+        "title": "Are you leading or simply organising?",
+        "intro": "Leadership requires balancing product ambition, operational reality and people capability over time. Effective leaders create clarity, make tradeoffs explicit and shape an environment where teams can deliver outcomes not just activity.",
+        "tagimage": "../img/posts/presentations/wdcl2024/large-team-perspective.webp"
+    },
+    {
         "tag": "media",
         "title": "Media and Communications",
         "intro": "Consumption of media moves ever more into our computing devices - especially due to the rise of streaming and video platforms and social media. In a generation, we've gone from radio and broadcast TV dominating our media, to a hyper-fragmented landscape where every niche, belief or conspiracy theory can be accommodated.",
         "tagimage": "../img/posts/tag_media.png"
+    },
+    {
+        "tag": "microsoft",
+        "title": "Microsoft - software, cloud, hardware, AI, gaming...",
+        "intro": "Microsoft's empire starts with productivity software and developer tooling and extends to cloud infrastructure, AI partnerships alongside hardware and gaming platforms. Its has been able to take platform shifts and turn them into enterprise-friendly products and continues to shape how organisations use technology at scale.",
+        "tagimage": "../img/posts/tag_microsoft.png"
     },
     {
         "tag": "mobile",
@@ -244,6 +262,18 @@
         "title": "Open Source technologies",
         "intro": "Software that is free to use and modify is one of the greatest enablers of modern technology. Underpinning the Web, mobile computing and much of AI, without Open Source technology we would be either stuck 20 years back or stuck in corporate walled gardens with no interoperability.",
         "tagimage": "../img/posts/tag_code.png"
+    },
+    {
+        "tag": "openai",
+        "title": "OpenAI - research lab turned AI products company",
+        "intro": "OpenAI has accelerated mainstream adoption of large language models and improved understanding of what AI can do in everyday situations. Its rapid progress on models, tooling and products has upended competition and forced many orgs to revisit their own AI strategy.",
+        "tagimage": "../img/posts/tag_openai.png"
+    },
+    {
+        "tag": "operating model",
+        "title": "Operating models: how strategy turns into execution",
+        "intro": "An operating model defines how strategy turns into execution through structure, governance, funding and decision rights. Strong operating models reduce ambiguity, improve accountability and make it easier for teams to move from intent to outcomes repeatedly.",
+        "tagimage": "../img/posts/tag_opmodel.png"
     },
     {
         "tag": "os",
