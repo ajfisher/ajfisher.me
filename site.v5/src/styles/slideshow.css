@@ -139,7 +139,7 @@
 .ss .ss-status {
   position: absolute;
   right: 0.9rem;
-  bottom: 0.8rem;
+  top: 0.8rem;
   z-index: 6;
   margin: 0;
   font-size: 1.6rem;
@@ -195,7 +195,7 @@
 
   .ss .ss-status {
     font-size: 1.4rem;
-    bottom: 0.6rem;
+    top: 0.6rem;
     right: 0.6rem;
   }
 }
