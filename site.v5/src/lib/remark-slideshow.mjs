@@ -96,6 +96,21 @@ const isCloseMarkerParagraph = (node) => {
 
 const isUnorderedList = (node) => node?.type === 'list' && node.ordered !== true;
 
+const buildIconNode = (iconName, classNames = []) =>
+  elementNode(
+    'svg',
+    {
+      className: ['ss-icon', ...classNames],
+      width: '1em',
+      height: '1em',
+      viewBox: '0 0 640 640',
+      'data-icon': `fa7-solid:${iconName}`,
+      'aria-hidden': 'true',
+      focusable: 'false',
+    },
+    [elementNode('use', { href: `#ai:fa7-solid:${iconName}` }, [])]
+  );
+
 const buildControlsNode = (trackId) =>
   elementNode(
     'div',
@@ -113,7 +128,7 @@ const buildControlsNode = (trackId) =>
           'aria-controls': trackId,
           'aria-label': 'Previous slide',
         },
-        [textNode('Prev')]
+        [buildIconNode('angle-left')]
       ),
       elementNode(
         'button',
@@ -124,8 +139,12 @@ const buildControlsNode = (trackId) =>
           'aria-controls': trackId,
           'aria-pressed': 'false',
           'aria-label': 'Pause slideshow',
+          'data-ss-state': 'playing',
         },
-        [textNode('Pause')]
+        [
+          buildIconNode('play', ['ss-icon-play']),
+          buildIconNode('pause', ['ss-icon-pause']),
+        ]
       ),
       elementNode(
         'button',
@@ -136,7 +155,7 @@ const buildControlsNode = (trackId) =>
           'aria-controls': trackId,
           'aria-label': 'Next slide',
         },
-        [textNode('Next')]
+        [buildIconNode('angle-right')]
       ),
     ]
   );

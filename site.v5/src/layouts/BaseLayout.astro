@@ -3,6 +3,7 @@
 import '../styles/global.css';
 
 import { getImage } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
 
 import humanize from 'humanize-plus';
 
@@ -111,6 +112,15 @@ const rssUrl = siteUrl ? new URL('/rss.xml', siteUrl).toString() : '/rss.xml';
     )}
   </head>
   <body>
+    <div
+      aria-hidden="true"
+      style="position:absolute;width:0;height:0;overflow:hidden;opacity:0;pointer-events:none;"
+    >
+      <Icon name="fa7-solid:angle-left" />
+      <Icon name="fa7-solid:angle-right" />
+      <Icon name="fa7-solid:play" />
+      <Icon name="fa7-solid:pause" />
+    </div>
     {Astro.slots.has('header') && (
       <slot name="header" />
     )}

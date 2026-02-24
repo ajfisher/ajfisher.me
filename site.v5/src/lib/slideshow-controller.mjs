@@ -2,6 +2,7 @@ const DEFAULT_DELAY = 5000;
 const MIN_DELAY = 2000;
 const MAX_DELAY = 20000;
 const SETTLE_DELAY_MS = 90;
+const SVG_NAMESPACE = 'http://www.w3.org/2000/svg';
 
 const clampDelay = (value) => {
   const parsedValue = Number.parseInt(String(value), 10);
@@ -68,6 +69,47 @@ const buildLoopSlides = (track, originalSlides) => {
   };
 };
 
+const createControlIcon = (iconName, classNames = []) => {
+  const icon = document.createElementNS(SVG_NAMESPACE, 'svg');
+  const use = document.createElementNS(SVG_NAMESPACE, 'use');
+
+  icon.classList.add('ss-icon', ...classNames);
+  icon.setAttribute('width', '1em');
+  icon.setAttribute('height', '1em');
+  icon.setAttribute('viewBox', '0 0 640 640');
+  icon.setAttribute('data-icon', `fa7-solid:${iconName}`);
+  icon.setAttribute('aria-hidden', 'true');
+  icon.setAttribute('focusable', 'false');
+
+  use.setAttribute('href', `#ai:fa7-solid:${iconName}`);
+  icon.append(use);
+
+  return icon;
+};
+
+const ensureControlIcon = (button, iconName) => {
+  if (!button || button.querySelector('.ss-icon')) {
+    return;
+  }
+
+  button.textContent = '';
+  button.append(createControlIcon(iconName));
+};
+
+const ensureToggleIcons = (button) => {
+  if (!button) {
+    return;
+  }
+
+  if (button.querySelector('.ss-icon-play') && button.querySelector('.ss-icon-pause')) {
+    return;
+  }
+
+  button.textContent = '';
+  button.append(createControlIcon('play', ['ss-icon-play']));
+  button.append(createControlIcon('pause', ['ss-icon-pause']));
+};
+
 const initSlideshow = (gallery) => {
   if (!gallery || gallery.dataset.ssEnhanced === 'true') {
     return;
@@ -81,6 +123,10 @@ const initSlideshow = (gallery) => {
   const totalIndicator = gallery.querySelector('[data-ss-total]');
   const statusIndicator = gallery.querySelector('.ss-status');
   let progressBar = gallery.querySelector('.ss-status-progress');
+
+  ensureControlIcon(prevButton, 'angle-left');
+  ensureControlIcon(nextButton, 'angle-right');
+  ensureToggleIcons(toggleButton);
 
   if (!progressBar && statusIndicator) {
     progressBar = document.createElement('span');
@@ -158,7 +204,7 @@ const initSlideshow = (gallery) => {
     }
 
     const userPaused = pausedByUser;
-    toggleButton.textContent = userPaused ? 'Resume' : 'Pause';
+    toggleButton.dataset.ssState = userPaused ? 'paused' : 'playing';
     toggleButton.setAttribute('aria-pressed', userPaused ? 'true' : 'false');
     toggleButton.setAttribute(
       'aria-label',
