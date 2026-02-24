@@ -2,6 +2,7 @@ const DEFAULT_DELAY = 5000;
 const MIN_DELAY = 2000;
 const MAX_DELAY = 20000;
 const SETTLE_DELAY_MS = 90;
+const TOUCH_CONTROLS_HIDE_DELAY_MS = 2200;
 const SVG_NAMESPACE = 'http://www.w3.org/2000/svg';
 
 const clampDelay = (value) => {
@@ -163,6 +164,8 @@ const initSlideshow = (gallery) => {
   let pausedByUser = false;
   let pausedForContext = false;
   let controlsVisible = false;
+  let touchControlsTimer = null;
+  let manualTouchScroll = false;
 
   const hoverSupported = window.matchMedia('(hover: hover)').matches;
   const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -189,6 +192,13 @@ const initSlideshow = (gallery) => {
     reducedMotionQuery.matches ||
     originalSlides.length <= 1;
 
+  const clearTouchControlsTimer = () => {
+    if (touchControlsTimer !== null) {
+      window.clearTimeout(touchControlsTimer);
+      touchControlsTimer = null;
+    }
+  };
+
   const setPausedState = () => {
     gallery.dataset.ssPaused = isAutoplayPaused() ? 'true' : 'false';
   };
@@ -196,6 +206,29 @@ const initSlideshow = (gallery) => {
   const setControlsVisible = (visible) => {
     controlsVisible = visible;
     gallery.dataset.ssControlsVisible = visible ? 'true' : 'false';
+
+    if (!visible) {
+      clearTouchControlsTimer();
+    }
+  };
+
+  const scheduleTouchControlsHide = () => {
+    if (hoverSupported || !controlsVisible) {
+      return;
+    }
+
+    clearTouchControlsTimer();
+    touchControlsTimer = window.setTimeout(() => {
+      touchControlsTimer = null;
+
+      if (gallery.matches(':focus-within')) {
+        scheduleTouchControlsHide();
+        return;
+      }
+
+      setControlsVisible(false);
+      scheduleAutoplay();
+    }, TOUCH_CONTROLS_HIDE_DELAY_MS);
   };
 
   const updateToggleButton = () => {
@@ -307,6 +340,8 @@ const initSlideshow = (gallery) => {
   };
 
   const settleFromScroll = () => {
+    const shouldResetAfterManualTouchScroll = manualTouchScroll;
+    manualTouchScroll = false;
     visualIndex = findClosestSlideIndex(track, slides);
 
     if (hasLoop) {
@@ -322,6 +357,10 @@ const initSlideshow = (gallery) => {
     currentIndex = toCurrentIndex(visualIndex);
     updateStatus();
     updateActiveHeight();
+
+    if (shouldResetAfterManualTouchScroll) {
+      scheduleAutoplay();
+    }
   };
 
   const scheduleAutoplay = () => {
@@ -365,14 +404,17 @@ const initSlideshow = (gallery) => {
   const showControlsAndPause = () => {
     setControlsVisible(true);
     pausedByUser = true;
+    manualTouchScroll = false;
     updateToggleButton();
     scheduleAutoplay();
+    scheduleTouchControlsHide();
   };
 
   if (prevButton) {
     prevButton.addEventListener('click', (event) => {
       event.stopPropagation();
       goByStep(-1);
+      scheduleTouchControlsHide();
     });
   }
 
@@ -380,6 +422,7 @@ const initSlideshow = (gallery) => {
     nextButton.addEventListener('click', (event) => {
       event.stopPropagation();
       goByStep(1);
+      scheduleTouchControlsHide();
     });
   }
 
@@ -389,8 +432,25 @@ const initSlideshow = (gallery) => {
       pausedByUser = !pausedByUser;
       updateToggleButton();
       scheduleAutoplay();
+      scheduleTouchControlsHide();
     });
   }
+
+  track.addEventListener(
+    'touchstart',
+    () => {
+      manualTouchScroll = false;
+    },
+    { passive: true }
+  );
+
+  track.addEventListener(
+    'touchmove',
+    () => {
+      manualTouchScroll = true;
+    },
+    { passive: true }
+  );
 
   track.addEventListener(
     'scroll',
@@ -437,11 +497,21 @@ const initSlideshow = (gallery) => {
       setControlsVisible(false);
     }
 
+    if (!hoverSupported) {
+      setControlsVisible(false);
+    }
+
     scheduleAutoplay();
   });
 
   track.addEventListener('click', (event) => {
     if (event.target instanceof Element && event.target.closest('button')) {
+      return;
+    }
+
+    if (!hoverSupported && controlsVisible) {
+      setControlsVisible(false);
+      scheduleAutoplay();
       return;
     }
 
