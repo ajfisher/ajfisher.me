@@ -153,17 +153,15 @@ const buildStatusNode = (slideCount) =>
       elementNode('span', { 'data-ss-current': '' }, [textNode('1')]),
       textNode(' / '),
       elementNode('span', { 'data-ss-total': '' }, [textNode(String(slideCount))]),
+      elementNode(
+        'span',
+        {
+          className: ['ss-status-progress'],
+          'aria-hidden': 'true',
+        },
+        []
+      ),
     ]
-  );
-
-const buildProgressNode = () =>
-  elementNode(
-    'div',
-    {
-      className: ['ss-progress'],
-      'aria-hidden': 'true',
-    },
-    [elementNode('span', { className: ['ss-progress-bar'] }, [])]
   );
 
 const applySlideMetadata = (listNode) => {
@@ -219,7 +217,6 @@ const createSlideshowNode = (listNode, slideshowIndex, options) => {
       listNode,
       buildControlsNode(trackId),
       buildStatusNode(listNode.children.length),
-      buildProgressNode(),
     ]
   );
 };

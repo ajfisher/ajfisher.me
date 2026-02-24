@@ -79,7 +79,7 @@ const initSlideshow = (gallery) => {
   const toggleButton = gallery.querySelector('[data-ss-action="toggle"]');
   const currentIndicator = gallery.querySelector('[data-ss-current]');
   const totalIndicator = gallery.querySelector('[data-ss-total]');
-  const progressBar = gallery.querySelector('.ss-progress-bar');
+  const progressBar = gallery.querySelector('.ss-status-progress');
 
   if (!track) {
     return;
