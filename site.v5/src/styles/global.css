@@ -1,4 +1,5 @@
 @import url('./theme.css');
+@import url('./slideshow.css');
 
 html, body {
     height: 100%;

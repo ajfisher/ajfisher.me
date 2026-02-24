@@ -1,0 +1,203 @@
+.ss {
+  margin: var(--gutter) 0;
+  position: relative;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  --ss-delay: 5000ms;
+}
+
+.ss .ss-track {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  gap: 0;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  touch-action: pan-x;
+}
+
+.ss .ss-track::-webkit-scrollbar {
+  height: 0.6rem;
+}
+
+.ss .ss-track::-webkit-scrollbar-thumb {
+  background: var(--light-base);
+  border-radius: 0.8rem;
+}
+
+.ss .ss-slide {
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-width: 0;
+  scroll-snap-align: center;
+}
+
+.ss .ss-slide::marker {
+  content: none;
+}
+
+.ss .ss-slide > p {
+  margin: 0;
+  padding: 0 !important;
+}
+
+.ss .ss-slide > img,
+.ss .ss-slide > p > img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ss .ss-slide > p + p {
+  margin-top: calc(0.25 * var(--gutter));
+}
+
+.ss .ss-slide > img + em,
+.ss .ss-slide > em,
+.ss .ss-slide > p > img + em,
+.ss .ss-slide > p + p > em:only-child {
+  font-size: 1.8rem;
+  font-style: normal;
+  background-color: var(--dark-grey);
+  color: var(--light-text-colour);
+  display: inline-block;
+  border-radius: 0.2rem;
+  border-bottom: 0.4rem solid var(--light-base);
+  padding: 0.2rem 0.5rem;
+}
+
+.ss .ss-controls {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.ss .ss-controls button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+
+  border: none;
+  border-radius: 0.2rem;
+  border-bottom: 0.4rem solid var(--light-base);
+  background: color-mix(in srgb, var(--dark-grey) 82%, transparent);
+  color: var(--light-text-colour);
+  font-size: 1.6rem;
+  line-height: 1;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+}
+
+.ss .ss-prev {
+  left: 1rem;
+}
+
+.ss .ss-toggle {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ss .ss-next {
+  right: 1rem;
+}
+
+.ss[data-ss-enhanced='true']:hover .ss-controls button,
+.ss[data-ss-enhanced='true']:focus-within .ss-controls button,
+.ss[data-ss-controls-visible='true'] .ss-controls button {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.ss .ss-controls button:hover {
+  background: var(--highlight);
+}
+
+.ss .ss-controls button:focus-visible {
+  outline: 2px solid var(--highlight);
+  outline-offset: 2px;
+}
+
+.ss .ss-controls button:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.ss .ss-status {
+  position: absolute;
+  right: 0.9rem;
+  bottom: 0.8rem;
+  z-index: 6;
+  margin: 0;
+  font-size: 1.6rem;
+  color: var(--light-text-colour);
+  background: color-mix(in srgb, var(--dark-grey) 78%, transparent);
+  border-bottom: 0.3rem solid var(--light-base);
+  border-radius: 0.2rem;
+  padding: 0.2rem 0.6rem;
+}
+
+.ss .ss-progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+  height: 0.2rem;
+  background: color-mix(in srgb, var(--dark-grey) 72%, transparent);
+}
+
+.ss .ss-progress-bar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-origin: left center;
+  transform: scaleX(1);
+  background: var(--light-base);
+}
+
+.ss[data-ss-enhanced='false'] .ss-progress {
+  display: none;
+}
+
+.ss[data-ss-paused='true'] .ss-progress-bar {
+  animation-play-state: paused;
+}
+
+@keyframes ss-progress-countdown {
+  from {
+    transform: scaleX(1);
+  }
+
+  to {
+    transform: scaleX(0);
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .ss .ss-controls button {
+    font-size: 1.4rem;
+    padding: 0.7rem 0.9rem;
+  }
+
+  .ss .ss-status {
+    font-size: 1.4rem;
+    bottom: 0.6rem;
+    right: 0.6rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ss .ss-track {
+    scroll-behavior: auto;
+  }
+}
