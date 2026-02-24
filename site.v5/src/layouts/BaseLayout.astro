@@ -6,6 +6,7 @@ import { getImage } from 'astro:assets';
 
 import humanize from 'humanize-plus';
 
+import SlideshowAssets from '../components/SlideshowAssets.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import { imageTransform } from '../lib/utils.mjs';
@@ -16,6 +17,7 @@ const {
   title: rawTitle = SITE_META.defaultTitle,
   slug = '/',
   seo = {},
+  hasSlideshow = false,
 } = Astro.props;
 
 const siteUrl = Astro.site ?? SITE_META.siteUrl;
@@ -111,6 +113,7 @@ const rssUrl = siteUrl ? new URL('/rss.xml', siteUrl).toString() : '/rss.xml';
     )}
   </head>
   <body>
+    {hasSlideshow && <SlideshowAssets />}
     {Astro.slots.has('header') && (
       <slot name="header" />
     )}

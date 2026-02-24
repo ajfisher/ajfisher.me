@@ -34,17 +34,16 @@ to pop culture heroes. These were quick to produce and without any clean up -
 which speaks to how impressive Flux is as a step up from the original Stable
 Diffusion and newer SDXL models.
 
-![Spiderman](../../img/posts/flux-spiderman.png)
+[ss delay=5000]
 
-![Spidergirl](../../img/posts/flux-gwen.png)
+- ![Spiderman](../../img/posts/flux-spiderman.png)
+- ![Spidergirl](../../img/posts/flux-gwen.png)
+- ![Hulk](../../img/posts/flux-hulk.png)
+- ![Deadpool](../../img/posts/flux-deadpool.png)
+- ![Ironman](../../img/posts/flux-ironman.png)
+- ![Black Panther](../../img/posts/flux-black-panther.png)
 
-![Hulk](../../img/posts/flux-hulk.png)
-
-![Deadpool](../../img/posts/flux-deadpool.png)
-
-![Ironman](../../img/posts/flux-ironman.png)
-
-![Black Panther](../../img/posts/flux-black-panther.png)
+[/ss]
 
 The next few months are going to be interesting, as the full weight of
 community creators starts experimenting with these new image generation

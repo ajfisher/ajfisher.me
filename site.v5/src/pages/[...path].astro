@@ -52,9 +52,15 @@ const seo = {
   readingTime: isPost ? entry.data.readingTime : 0,
   words: isPost ? entry.data.wordCount : 0,
 };
+const hasSlideshow = Boolean(remarkPluginFrontmatter.hasSlideshow);
 
 ---
-<BaseLayout title={entry.data.title} slug={entry.data.slug} seo={seo}>
+<BaseLayout
+  title={entry.data.title}
+  slug={entry.data.slug}
+  seo={seo}
+  hasSlideshow={hasSlideshow}
+>
   <Fragment slot="header" { ...entry.data }>
     <Header { ...entry.data } />
   </Fragment>

@@ -6,6 +6,7 @@ import icon from "astro-icon";
 import sitemap from '@astrojs/sitemap';
 import rehypeRaw from 'rehype-raw';
 import remarkPullQuotes from './src/lib/remark-pullquotes.mjs';
+import remarkSlideshow from './src/lib/remark-slideshow.mjs';
 import { remarkReadingTime } from './src/lib/remark-reading-time.mjs';
 import { generateIcons } from './scripts/generate-icons.mjs';
 
@@ -35,7 +36,7 @@ export default defineConfig({
   },
   trailingSlash: 'always',
   markdown: {
-    remarkPlugins: [remarkPullQuotes, remarkReadingTime],
+    remarkPlugins: [remarkPullQuotes, remarkSlideshow, remarkReadingTime],
     rehypePlugins: [rehypeRaw],
   },
   integrations: [

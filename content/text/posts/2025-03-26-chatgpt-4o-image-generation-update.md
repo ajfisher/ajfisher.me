@@ -43,14 +43,16 @@ The images below show a starting image I created and then asked it to update
 it into different styles. As you can see, it maintains image composition,
 structure etc all pretty well as it recreates each one.
 
-![An illustration of a massive robot](../../img/posts/4o-robot-2.webp)
-*A huge robot with a sunset in an illustrative style*
+[ss delay=5000]
 
-![An illustration of a massive robot](../../img/posts/4o-robot-1.png)
-*A huge robot with a sunset in a cinematic style*
+- ![An illustration of a massive robot](../../img/posts/4o-robot-2.webp)
+  *A huge robot with a sunset in an illustrative style*
+- ![An illustration of a massive robot](../../img/posts/4o-robot-1.png)
+  *A huge robot with a sunset in a cinematic style*
+- ![An illustration of a massive robot](../../img/posts/4o-robot-3.png)
+  *the same robot but translated into an Unreal Engine game style*
 
-![An illustration of a massive robot](../../img/posts/4o-robot-3.png)
-*the same robot but translated into an Unreal Engine game style*
+[/ss]
 
 Overall, this is a big update and should be interesting to see how you can blend
 uploaded information and generative capabilities together.
