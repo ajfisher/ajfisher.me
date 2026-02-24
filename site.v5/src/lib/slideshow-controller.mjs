@@ -168,6 +168,9 @@ const initSlideshow = (gallery) => {
   let manualTouchScroll = false;
 
   const hoverSupported = window.matchMedia('(hover: hover)').matches;
+  const coarsePointerSupported = window.matchMedia('(pointer: coarse)').matches;
+  const touchCapable = coarsePointerSupported || navigator.maxTouchPoints > 0;
+  const tapControlsEnabled = !hoverSupported || touchCapable;
   const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 
   const toCurrentIndex = (index) => {
@@ -213,7 +216,7 @@ const initSlideshow = (gallery) => {
   };
 
   const scheduleTouchControlsHide = () => {
-    if (hoverSupported || !controlsVisible) {
+    if (!tapControlsEnabled || !controlsVisible) {
       return;
     }
 
@@ -221,11 +224,20 @@ const initSlideshow = (gallery) => {
     touchControlsTimer = window.setTimeout(() => {
       touchControlsTimer = null;
 
-      if (gallery.matches(':focus-within')) {
+      if (!tapControlsEnabled && gallery.matches(':focus-within')) {
         scheduleTouchControlsHide();
         return;
       }
 
+      if (
+        tapControlsEnabled &&
+        document.activeElement instanceof HTMLElement &&
+        gallery.contains(document.activeElement)
+      ) {
+        document.activeElement.blur();
+      }
+
+      pausedForContext = false;
       setControlsVisible(false);
       scheduleAutoplay();
     }, TOUCH_CONTROLS_HIDE_DELAY_MS);
@@ -497,7 +509,7 @@ const initSlideshow = (gallery) => {
       setControlsVisible(false);
     }
 
-    if (!hoverSupported) {
+    if (tapControlsEnabled) {
       setControlsVisible(false);
     }
 
@@ -509,7 +521,7 @@ const initSlideshow = (gallery) => {
       return;
     }
 
-    if (!hoverSupported && controlsVisible) {
+    if (tapControlsEnabled && controlsVisible) {
       setControlsVisible(false);
       scheduleAutoplay();
       return;
