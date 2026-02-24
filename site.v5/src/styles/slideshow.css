@@ -126,7 +126,7 @@
   left: 1rem;
 }
 
-.ss .ss-toggle {
+.ss .ss-controls .ss-toggle {
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -182,7 +182,7 @@
   height: 0.2rem;
   transform-origin: left center;
   transform: scaleX(1);
-  background: var(--light-base);
+  background: var(--highlight);
   pointer-events: none;
 }
 
