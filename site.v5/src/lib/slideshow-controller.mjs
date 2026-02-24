@@ -79,7 +79,15 @@ const initSlideshow = (gallery) => {
   const toggleButton = gallery.querySelector('[data-ss-action="toggle"]');
   const currentIndicator = gallery.querySelector('[data-ss-current]');
   const totalIndicator = gallery.querySelector('[data-ss-total]');
-  const progressBar = gallery.querySelector('.ss-status-progress');
+  const statusIndicator = gallery.querySelector('.ss-status');
+  let progressBar = gallery.querySelector('.ss-status-progress');
+
+  if (!progressBar && statusIndicator) {
+    progressBar = document.createElement('span');
+    progressBar.className = 'ss-status-progress';
+    progressBar.setAttribute('aria-hidden', 'true');
+    statusIndicator.append(progressBar);
+  }
 
   if (!track) {
     return;

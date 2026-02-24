@@ -157,6 +157,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 1;
   display: block;
   height: 0.2rem;
   transform-origin: left center;
