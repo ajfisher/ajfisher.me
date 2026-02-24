@@ -105,6 +105,7 @@ const initSlideshow = (gallery) => {
   let currentIndex = 0;
   let autoplayTimer = null;
   let settleTimer = null;
+  let scrollBehaviorResetFrame = null;
   let pausedByUser = false;
   let pausedForContext = false;
   let controlsVisible = false;
@@ -167,6 +168,41 @@ const initSlideshow = (gallery) => {
     }
   };
 
+  const updateActiveHeight = () => {
+    const activeSlide = slides[visualIndex];
+
+    if (!activeSlide) {
+      return;
+    }
+
+    const nextHeight = Math.ceil(activeSlide.getBoundingClientRect().height);
+
+    if (nextHeight > 0) {
+      gallery.style.setProperty('--ss-active-height', `${nextHeight}px`);
+    }
+  };
+
+  const forceInstantScrollTo = (left) => {
+    if (scrollBehaviorResetFrame !== null) {
+      window.cancelAnimationFrame(scrollBehaviorResetFrame);
+      scrollBehaviorResetFrame = null;
+    }
+
+    const previousInlineBehavior = track.style.scrollBehavior;
+    track.style.scrollBehavior = 'auto';
+    track.scrollLeft = left;
+
+    scrollBehaviorResetFrame = window.requestAnimationFrame(() => {
+      if (previousInlineBehavior) {
+        track.style.scrollBehavior = previousInlineBehavior;
+      } else {
+        track.style.removeProperty('scroll-behavior');
+      }
+
+      scrollBehaviorResetFrame = null;
+    });
+  };
+
   const goToVisualIndex = (index, smooth) => {
     const targetSlide = slides[index];
 
@@ -174,10 +210,17 @@ const initSlideshow = (gallery) => {
       return;
     }
 
-    track.scrollTo({
-      left: targetSlide.offsetLeft,
-      behavior: smooth ? 'smooth' : 'auto',
-    });
+    const targetLeft = targetSlide.offsetLeft;
+
+    if (smooth) {
+      track.scrollTo({
+        left: targetLeft,
+        behavior: 'smooth',
+      });
+      return;
+    }
+
+    forceInstantScrollTo(targetLeft);
   };
 
   const restartProgress = () => {
@@ -224,6 +267,7 @@ const initSlideshow = (gallery) => {
 
     currentIndex = toCurrentIndex(visualIndex);
     updateStatus();
+    updateActiveHeight();
   };
 
   const scheduleAutoplay = () => {
@@ -257,6 +301,7 @@ const initSlideshow = (gallery) => {
     visualIndex = nextVisualIndex;
     currentIndex = toCurrentIndex(visualIndex);
     updateStatus();
+    updateActiveHeight();
 
     if (!fromAutoplay) {
       scheduleAutoplay();
@@ -349,6 +394,20 @@ const initSlideshow = (gallery) => {
     showControlsAndPause();
   });
 
+  track.querySelectorAll('img').forEach((image) => {
+    if (image.complete) {
+      return;
+    }
+
+    image.addEventListener('load', () => {
+      updateActiveHeight();
+    });
+  });
+
+  window.addEventListener('resize', () => {
+    updateActiveHeight();
+  });
+
   reducedMotionQuery.addEventListener('change', () => {
     scheduleAutoplay();
   });
@@ -377,6 +436,7 @@ const initSlideshow = (gallery) => {
 
     currentIndex = toCurrentIndex(visualIndex);
     updateStatus();
+    updateActiveHeight();
     updateToggleButton();
     setPausedState();
     setControlsVisible(false);
