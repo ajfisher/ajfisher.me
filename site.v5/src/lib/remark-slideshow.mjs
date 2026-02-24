@@ -123,7 +123,6 @@ const buildControlsNode = (trackId) =>
         'button',
         {
           type: 'button',
-          className: ['ss-prev'],
           'data-ss-action': 'prev',
           'aria-controls': trackId,
           'aria-label': 'Previous slide',
@@ -134,7 +133,6 @@ const buildControlsNode = (trackId) =>
         'button',
         {
           type: 'button',
-          className: ['ss-toggle'],
           'data-ss-action': 'toggle',
           'aria-controls': trackId,
           'aria-pressed': 'false',
@@ -150,7 +148,6 @@ const buildControlsNode = (trackId) =>
         'button',
         {
           type: 'button',
-          className: ['ss-next'],
           'data-ss-action': 'next',
           'aria-controls': trackId,
           'aria-label': 'Next slide',
@@ -242,6 +239,7 @@ const createSlideshowNode = (listNode, slideshowIndex, options) => {
 
 const transformTree = (tree) => {
   let slideshowIndex = 0;
+  let hasSlideshows = false;
 
   const walk = (node) => {
     if (!node || !Array.isArray(node.children)) {
@@ -255,6 +253,7 @@ const transformTree = (tree) => {
 
       if (isMarkerParagraph(currentNode) && isUnorderedList(nextNode)) {
         slideshowIndex += 1;
+        hasSlideshows = true;
         const options = parseMarkerOptions(currentNode);
         const slideshowNode = createSlideshowNode(
           nextNode,
@@ -272,10 +271,19 @@ const transformTree = (tree) => {
   };
 
   walk(tree);
+  return hasSlideshows;
 };
 
 export default function remarkSlideshow() {
-  return (tree) => {
-    transformTree(tree);
+  return (tree, file) => {
+    const hasSlideshows = transformTree(tree);
+
+    if (!hasSlideshows || !file || !file.data) {
+      return;
+    }
+
+    file.data.astro = file.data.astro ?? {};
+    file.data.astro.frontmatter = file.data.astro.frontmatter ?? {};
+    file.data.astro.frontmatter.hasSlideshow = true;
   };
 }
