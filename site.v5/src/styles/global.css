@@ -163,6 +163,27 @@ article video {
     width: 100%;
 }
 
+article table {
+    box-sizing: content-box;
+    margin: var(--gutter);
+    width: 90%;
+    font-size: 1.8rem;
+    font-family: var(--main-font-family);
+    border-collapse: collapse;
+
+    & thead {
+
+        & th {
+            text-align: left;
+            padding-right: calc(0.25 * var(--gutter));
+        }
+    }
+
+    & td {
+        padding-right: 0 calc(0.25 * var(--gutter));
+    }
+}
+
 /* some elements for when you are in an aside in the article */
 article aside h2 {
     display: block;

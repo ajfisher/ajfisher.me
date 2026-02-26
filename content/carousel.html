@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Image Carousel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Basic reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .carousel-wrapper {
+      position: relative;
+      width: 90%;
+      max-width: 800px;
+    }
+
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 1rem;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,.1);
+      scrollbar-width: none; /* Firefox */
+    }
+    .carousel::-webkit-scrollbar { display: none; } /* WebKit */
+
+    .carousel li {
+      flex: 0 0 100%;
+      scroll-snap-align: start;
+      list-style: none;
+    }
+
+    .carousel img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 0.5rem;
+      object-fit: cover;
+    }
+
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255,255,255,0.7);
+      border: none;
+      border-radius: 9999px;
+      padding: 0.5rem;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,.2);
+      transition: background .2s;
+    }
+    .nav-btn:hover { background: #fff; }
+
+    .nav-btn:disabled {
+      opacity: 0.4;
+      cursor: default;
+    }
+
+    .prev-btn { left: 0.5rem; }
+    .next-btn { right: 0.5rem; }
+  </style>
+</head>
+<body>
+
+  <section class="carousel-wrapper">
+    <button class="nav-btn prev-btn" id="prevBtn" aria-label="Previous slide">
+      <img src="https://unpkg.com/lucide-static@latest/icons/chevron-left.svg"
+           alt="prev" width="24" height="24">
+    </button>
+
+    <ul class="carousel" id="carousel">
+      <!-- Replace src with your own images -->
+      <li><img src="https://picsum.photos/id/1015/800/400" alt="Slide 1"></li>
+      <li><img src="https://picsum.photos/id/1025/800/400" alt="Slide 2"></li>
+      <li><img src="https://picsum.photos/id/1035/800/400" alt="Slide 3"></li>
+      <li><img src="https://picsum.photos/id/1045/800/400" alt="Slide 4"></li>
+      <li><img src="https://picsum.photos/id/1055/800/400" alt="Slide 5"></li>
+    </ul>
+
+    <button class="nav-btn next-btn" id="nextBtn" aria-label="Next slide">
+      <img src="https://unpkg.com/lucide-static@latest/icons/chevron-right.svg"
+           alt="next" width="24" height="24">
+    </button>
+  </section>
+
+  <script>
+    const carousel = document.getElementById('carousel');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    // Width of a single slide (including gap)
+    const slideWidth = () => {
+      const first = carousel.querySelector('li');
+      const style = getComputedStyle(first);
+      const margin = parseFloat(style.marginRight) + parseFloat(style.marginLeft);
+      return first.offsetWidth + margin;
+    };
+
+    prevBtn.addEventListener('click', () => {
+      carousel.scrollBy({ left: -slideWidth(), behavior: 'smooth' });
+    });
+    nextBtn.addEventListener('click', () => {
+      carousel.scrollBy({ left: slideWidth(), behavior: 'smooth' });
+    });
+
+    // Disable buttons at edges
+    const updateButtons = () => {
+      const max = carousel.scrollWidth - carousel.clientWidth;
+      prevBtn.disabled = carousel.scrollLeft <= 0;
+      nextBtn.disabled = carousel.scrollLeft >= max - 1;
+    };
+    carousel.addEventListener('scroll', updateButtons);
+    // Initial state
+    updateButtons();
+  </script>
+</body>
+</html>
