@@ -70,18 +70,25 @@ running on a simple Raspberry Pi.
 
 ## Device specs
 
-This was just a raspberry PI I had laying around, but I’m lucky enough to have
-a lot of these and some additional elements that make this better than a Pi out
-of the box. But you can do this with a 4GB+ RPi4+ and an SD card if you just
-want to play.
+I used an 8GB Raspberry PI 5 I had laying around, but I’m lucky enough to have
+a lot of these and some additional elements that make this better than a regular
+Pi out of the box. 
 
-Base items needed:
+Can you use an RPi 4 and SD card?
 
-- Raspberry Pi 5, 8GB RAM
-- SD card (64GB+ though you could probably go smaller)
+Yes, it's absolutely possible if you want to have a play and just see what this OpenClaw
+stuff is all about. In heavy use you'll see some swapping which will slow things down
+a fair amount and it will look like it's "hanging". For a smoother experience, I'd
+suggest RPi5 and 8GB of RAM.
+
+Base specs:
+
+- Raspberry Pi 5, 8GB RAM (Minimum: Rasperry Pi 4, 4GB RAM)
+- SD card 64GB+ (Minimum: 32GB)
+- Trixie Lite OS (don't use full desktop mode as you'll use up RAM)
 - Raspberry Pi (or similar rated) power supply
 - Wifi / wired network connection
-- Discord, Telegram or other chat account you can have admin access to
+- Discord, Telegram or other chat account you have admin access to
 
 Optionally (and what I used):
 
@@ -224,6 +231,12 @@ things locally that don’t require going off to ChatGPT or Gemini or similar.
 Be realistic with your expectations here - this is for orchestration and light
 tooling, not local inference. For simple things it works well but keep it small.
 
+Note for Raspberry Pi 4 users:
+
+Don't install ollama, even small models will use up too much memory and your agent
+will grind to a halt or start swapping to disk. Just skip this and use cloud
+models instead via API or sign in.
+
 ```sh
 # get ollama itself all set up
 curl -fsSL https://ollama.com/install.sh | sh
@@ -277,6 +290,10 @@ The command line tools are very well set up and easily navigable via a TUI so I
 would generally recommend working with them that way. The web interface is
 genuinely rough at the moment and isn’t clear what you’re editing - just avoid
 it and use the CLI.
+
+*Note:* If it pauses here for a couple of minutes it's just thinking and configuring.
+Don't panic and reboot. If it's still doing nothing after 10-15 mins then that's
+more likely a crash.
 
 ## Things to set up immediately
 
@@ -445,3 +462,6 @@ So yes, install OpenClaw. Don’t put it on your daily computer, don’t give it
 access to all your sensitive information but do give it agency to do things and
 potentially trash the system it lives in - you might be surprised at the things
 it suggests and does.
+
+_Update 2026-02-27:_ provided some additional troubleshooting notes and added
+some detail around Raspberry Pi 4 and Raspberry Pi 5 and minimum RAM requirements.
