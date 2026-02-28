@@ -49,6 +49,21 @@ const isMarkdownPagePath = (uri = '') => {
 
 const needsMarkdown = (uri, headers) => wantsMarkdown(headers) && (isPostPath(uri) || isMarkdownPagePath(uri));
 
+const toMarkdownUri = (uri = '') => {
+  const postMatch = uri.match(/^\/(\d{4})\/(\d{2})\/(\d{2})\/([^/.]+)\/?$/);
+  if (postMatch) {
+    const [, year, month, day, slug] = postMatch;
+    return `/text/posts/${year}-${month}-${day}-${slug}.md`;
+  }
+
+  const trimmed = uri.replace(/^\/+|\/+$/g, '');
+  if (MARKDOWN_PAGE_SLUGS.has(trimmed)) {
+    return `/text/pages/${trimmed}.md`;
+  }
+
+  return uri;
+};
+
 const ensureIndexFile = (uri, filename) => {
   if (uri.endsWith('/')) {
     return `${uri}${filename}`;
@@ -87,7 +102,7 @@ export const handler = async (event) => {
   const serveMarkdown = needsMarkdown(request.uri, request.headers);
 
   if (serveMarkdown) {
-    request.uri = ensureIndexFile(request.uri, 'index.md');
+    request.uri = toMarkdownUri(request.uri);
   } else if (request.uri.endsWith('/')) {
     request.uri += 'index.html';
   } else if (!request.uri.includes('.')) {
@@ -96,4 +111,3 @@ export const handler = async (event) => {
 
   return request;
 };
-
