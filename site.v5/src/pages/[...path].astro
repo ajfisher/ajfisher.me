@@ -26,6 +26,28 @@ const excerpt = entry.data.excerpt || '';
 const twitterExcerpt = entry.data.twitter_excerpt || excerpt || '';
 const isPost = entry.collection === 'posts' || entry.data.layout?.startsWith('post');
 
+const buildMarkdownHref = (entryData, entryCollection) => {
+  const uri = entryData?.uri?.replace(/^\/+|\/+$/g, '') ?? '';
+  if (!uri) {
+    return undefined;
+  }
+
+  if (entryCollection === 'posts') {
+    const parts = uri.split('/');
+    if (parts.length === 4) {
+      const [year, month, day, slug] = parts;
+      return `/text/posts/${year}-${month}-${day}-${slug}.md`;
+    }
+    return undefined;
+  }
+
+  if (entryCollection === 'pages') {
+    return `/text/pages/${uri}.md`;
+  }
+
+  return undefined;
+};
+
 // Related posts logic
 const currentSlug = entry.data.slug;
 const similarityData = similarityScores.find(item => item.slug === currentSlug)
@@ -53,6 +75,7 @@ const seo = {
   words: isPost ? entry.data.wordCount : 0,
 };
 const hasSlideshow = Boolean(remarkPluginFrontmatter.hasSlideshow);
+const markdownHref = buildMarkdownHref(entry.data, entry.collection);
 
 ---
 <BaseLayout
@@ -60,6 +83,7 @@ const hasSlideshow = Boolean(remarkPluginFrontmatter.hasSlideshow);
   slug={entry.data.slug}
   seo={seo}
   hasSlideshow={hasSlideshow}
+  markdownHref={markdownHref}
 >
   <Fragment slot="header" { ...entry.data }>
     <Header { ...entry.data } />
