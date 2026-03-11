@@ -330,6 +330,13 @@ expertise in this space.
 
 This may just be the first chapter in the Diffusion LLM story of 2026.
 
+_Update March 11, 2026_: Looks like the second chapter has been opened. Andrej
+Karpathy just dropped [Auto Research](https://github.com/karpathy/autoresearch)
+which, to a large extent proves this thesis. His approach is more like
+evolutionary algorithms / stochastic hill climbing but it proves that if you
+have a very quick validation process then your iteration loop shrinks and your
+overall cycle time improves. Thus you can iterate at pace.
+
 [^1]: By ‘System 2’ here I mostly mean longer internal deliberation, not human
 cognition per se.
 
