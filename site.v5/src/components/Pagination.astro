@@ -1,5 +1,6 @@
 ---
 import { Icon } from 'astro-icon/components';
+import { withBase } from '../lib/utils.mjs';
 
 const { page } = Astro.props;
 
@@ -16,14 +17,14 @@ for (let i = 1; i <= page.lastPage; i++) {
 ---
 <nav class="pagination" aria-label="Pagination navigation">
   { page.url.prev && (
-    <a href={page.url.prev} rel="prev">
+    <a href={withBase(page.url.prev)} rel="prev">
       <Icon name="fa7-solid:angle-left" />
     </a>
   )}
 
   { archivePages.map(archivePage => (
     <a
-      href={archivePage.uri}
+      href={withBase(archivePage.uri)}
       class={archivePage.current ? 'current' : ''}
       aria-current={archivePage.current ? 'page' : null}
     >
@@ -32,7 +33,7 @@ for (let i = 1; i <= page.lastPage; i++) {
   )) }
 
   { page.url.next && (
-    <a href={page.url.next} rel="next">
+    <a href={withBase(page.url.next)} rel="next">
       <Icon name="fa7-solid:angle-right" />
     </a>
   )}

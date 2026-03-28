@@ -1,4 +1,5 @@
 ---
+import { withBase } from '../lib/utils.mjs';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import PostAttribution from '../components/PostAttribution.astro';
@@ -151,9 +152,9 @@ const seo = {
       <a href="https://tally.so/r/3xW4gv"> survey</a> I&apos;m running to
       understand how teams are using AI in practice today. It only take a few
       minutes and I would really appreciate it.</p>
-    <p>The <a href="/">home page</a> will give you featured
+    <p>The <a href={withBase('/')}>home page</a> will give you featured
       articles and recent posts.</p>
-    <p>You can also check out <a href="/blog/">the full
+    <p>You can also check out <a href={withBase('/blog/')}>the full
       list of articles</a> that have ever been published.</p>
 
   </section>

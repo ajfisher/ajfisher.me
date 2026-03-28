@@ -7,7 +7,7 @@ import PostAttribution from '../components/PostAttribution.astro';
 import PostData from '../components/PostData.astro';
 import RelatedPosts from '../components/RelatedPosts.astro';
 
-import { imageTransform } from '../lib/utils.mjs';
+import { imageTransform, withBase } from '../lib/utils.mjs';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
@@ -36,13 +36,13 @@ const buildMarkdownHref = (entryData, entryCollection) => {
     const parts = uri.split('/');
     if (parts.length === 4) {
       const [year, month, day, slug] = parts;
-      return `/text/posts/${year}-${month}-${day}-${slug}.md`;
+      return withBase(`/text/posts/${year}-${month}-${day}-${slug}.md`);
     }
     return undefined;
   }
 
   if (entryCollection === 'pages') {
-    return `/text/pages/${uri}.md`;
+    return withBase(`/text/pages/${uri}.md`);
   }
 
   return undefined;

@@ -4,7 +4,7 @@ import { Icon } from 'astro-icon/components';
 
 import humanize from 'humanize-plus';
 
-import { imageTransform, longDate } from '../lib/utils.mjs';
+import { imageTransform, longDate, withBase } from '../lib/utils.mjs';
 
 const {
   title = "This is a title",
@@ -36,7 +36,7 @@ const publishDate = (new Date(date)).toISOString().slice(0,10);
 ---
 <li class="listitem" itemscope="blogPost" itemtype="https://schema.org/BlogPosting">
   <div>
-    <a itemprop="url" href={`/${uri}`}>
+    <a itemprop="url" href={withBase(`/${uri}`)}>
       <Image src={imageTransform(image)} alt={title}
         layout="constrained"
         width="600" height="250" loading="lazy"/>
@@ -44,11 +44,11 @@ const publishDate = (new Date(date)).toISOString().slice(0,10);
   </div>
   { compact && (
     <p itemprop="headline">
-      <a href={`/${uri}`}>{title}</a>
+      <a href={withBase(`/${uri}`)}>{title}</a>
     </p>
   )}
   { !compact && (
-    <h3 itemprop="headline"><a href={`/${uri}`}>{title}</a></h3>
+    <h3 itemprop="headline"><a href={withBase(`/${uri}`)}>{title}</a></h3>
     <p class="postdate">
       <time itemprop="datePublished" datetime={publishDate}>{longDate(date)}</time></p>
     <p itemprop="abstract" itemtype="https://schema.org/CreativeWork">{excerpt}</p>

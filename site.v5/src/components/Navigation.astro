@@ -1,12 +1,13 @@
 ---
 import { Icon } from 'astro-icon/components';
+import { withBase } from '../lib/utils.mjs';
 ---
 <ul>
-  <li><a href="/">Home</a></li>
-  <li><a href="/blog/">Article archive</a></li>
-  <li><a href="/who/">Who is @ajfisher</a></li>
-  <li><a href="/colophon/">Colophon</a></li>
-  <li><a href="/dis-everything/">Disclaimer & Disclosure</a></li>
+  <li><a href={withBase('/')}>Home</a></li>
+  <li><a href={withBase('/blog/')}>Article archive</a></li>
+  <li><a href={withBase('/who/')}>Who is @ajfisher</a></li>
+  <li><a href={withBase('/colophon/')}>Colophon</a></li>
+  <li><a href={withBase('/dis-everything/')}>Disclaimer & Disclosure</a></li>
   <li class="icons">
     <a  title="@ajfisher on Github"
         href="https://github.com/ajfisher"
