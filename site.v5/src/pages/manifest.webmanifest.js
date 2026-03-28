@@ -1,11 +1,12 @@
 import { ICON_SIZES, iconPath } from '../lib/icon-meta.mjs';
+import { basePath } from '../lib/utils.mjs';
 
 export const prerender = true;
 
 const MANIFEST = {
   name: 'ajfisher website',
   short_name: 'ajfisher',
-  start_url: '/',
+  start_url: basePath,
   display: 'minimal-ui',
   background_color: '#FF5E9A',
   theme_color: '#FF5E9A',

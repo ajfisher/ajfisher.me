@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
-import { imageTransform } from '../lib/utils.mjs';
+import { imageTransform, withBase } from '../lib/utils.mjs';
 import enterpriseAiImage from '../../../content/img/posts/enterprise_ai.jpg';
 import roboticsBookImage from '../../../content/img/posts/make_js_robots.jpg';
 import responsiveDesignImage from '../../../content/img/posts/responsive_design.jpg';
@@ -33,25 +33,25 @@ const featuredImg = imageTransform(featured.data.listimage);
     <section>
       <h2>Featured Post</h2>
       <div class="image-link">
-        <a href={`/${featured.data.uri}`}>
+        <a href={withBase(`/${featured.data.uri}`)}>
           <div class="image-wrapper"><Image src={featuredImg} alt={featured.data.title}
             width="750" height="400"/></div>
         </a>
       </div>
-      <p><a href={`/${featured.data.uri}`}>{featured.data.title}</a></p>
+      <p><a href={withBase(`/${featured.data.uri}`)}>{featured.data.title}</a></p>
       <p>{featured.data.excerpt}</p>
     </section>
 
     <section>
       <h2>Recent Media</h2>
       <div class="image-link">
-        <a href="/2023/02/13/podcast-enterprise-ai/">
+        <a href={withBase('/2023/02/13/podcast-enterprise-ai/')}>
           <Image src={enterpriseAiImage} alt="Illustration of an office"
             width="750" height="300" position="center"/>
         </a>
       </div>
       <p>
-        <a href="/2023/02/13/podcast-enterprise-ai/">
+        <a href={withBase('/2023/02/13/podcast-enterprise-ai/')}>
           ChatGPT and Generative AI in the enterprise
         </a>
       </p>

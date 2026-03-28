@@ -1,5 +1,5 @@
 ---
-import { slugifyTag } from '../lib/utils.mjs';
+import { slugifyTag, withBase } from '../lib/utils.mjs';
 
 const {
   tags = [],
@@ -22,7 +22,7 @@ if (tags && tags.length > 0) {
   <p>Tags:</p>
   <p class="tags">
     {tags.map(tag => (
-      <a href=`/tagged/${tag.slug}/`>{tag.name}</a>
+      <a href={withBase(`/tagged/${tag.slug}/`)}>{tag.name}</a>
     ))}
   </p>
 )}

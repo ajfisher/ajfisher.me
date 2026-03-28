@@ -12,6 +12,18 @@ import { generateIcons } from './scripts/generate-icons.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+const normalizeBase = (value) => {
+  if (!value) return '/';
+  let v = String(value).trim();
+  if (!v || v === '/') return '/';
+  if (!v.startsWith('/')) v = `/${v}`;
+  if (!v.endsWith('/')) v = `${v}/`;
+  return v;
+};
+
+const previewBase = normalizeBase(process.env.PREVIEW_BASE);
+const siteUrl = new URL(previewBase, process.env.SITE_URL || 'https://ajfisher.me').toString();
+
 const iconGenerator = () => ({
   name: 'icon-generator',
   hooks: {
@@ -25,7 +37,8 @@ const iconGenerator = () => ({
 });
 
 export default defineConfig({
-  site: 'https://ajfisher.me',
+  site: siteUrl,
+  base: previewBase,
   srcDir: './src',
 
   // Static assets (favicons, etc) usually live in public/

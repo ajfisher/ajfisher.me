@@ -1,5 +1,5 @@
 ---
-import { longDate } from '../lib/utils.mjs';
+import { longDate, withBase } from '../lib/utils.mjs';
 
 const {
   title = "This is a title",
@@ -11,7 +11,8 @@ const {
   tags = [],
 } = Astro.props;
 
-const pageurl = `https://ajfisher.me/${uri}`;
+const siteUrl = Astro.site ?? 'https://ajfisher.me';
+const pageurl = new URL(withBase(`/${uri}`), siteUrl).toString();
 
 const attributes = [
   { label: 'Title', value: `"${title}"` },
@@ -33,7 +34,7 @@ const attributes = [
       <dt class="displaysmall">Tags</dt>
       <dd class="displaysmall">
         {tags.map((tag) => (
-          <Fragment><a href=`/tagged/${tag.slug}/`>{tag.name}</a> </Fragment>
+          <Fragment><a href={withBase(`/tagged/${tag.slug}/`)}>{tag.name}</a> </Fragment>
         ))}
 
       </dd>
