@@ -1,0 +1,271 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import PostAttribution from '../components/PostAttribution.astro';
+import PostData from '../components/PostData.astro';
+import featureImage from '../../../content/img/posts/presentations/aieng26/brain-bunny-tradeoff-background-v2.png';
+
+const title = 'Fail fast, fix faster: AI Engineer Melbourne 2026 resources';
+const slug = 'aieng26/';
+const date = '2026-06-03 12:30:00+1000';
+const excerpt = `Slides, benchmark code, model cards and references for
+  Fail fast, fix faster at AI Engineer Melbourne 2026.`;
+const tags = ['thinking', 'ai', 'development', 'agents', 'presentation'];
+const featureimage = featureImage;
+
+const data = {
+  title,
+  date,
+  excerpt,
+  slug,
+  featureimage,
+  large_title: false,
+  tags,
+  uri: slug,
+};
+
+const seo = {
+  title: 'Fail fast, fix faster | AI Engineer Melbourne 2026',
+  description: 'Resources for AJ Fisher\'s AI Engineer Melbourne 2026 talk.',
+  image: featureImage,
+  type: 'article',
+};
+---
+<BaseLayout title="AI Engineer 2026 Resources" slug={slug} seo={seo}>
+  <Fragment slot="header" { ...data }>
+    <Header { ...data } />
+  </Fragment>
+  <section class="content">
+    <p>Thanks for attending my AI Engineer Melbourne 2026 talk, <em>Fail fast,
+      fix faster</em>. Below you&apos;ll find the slides, benchmark materials,
+      model references and extra reading around the core idea: once a model is
+      competent enough, loop speed and validation quality start to matter as
+      much as raw intelligence.</p>
+
+    <h3>Talk slides and notes</h3>
+
+    <p>You can view the slides below, or <a
+      href="https://aieng26.ajf.io/">visit the slide site</a> for the large
+      version.</p>
+
+    <p class="mediacontainer"><iframe title="Fail fast, fix faster slides"
+      src="https://aieng26.ajf.io/?embed"></iframe></p>
+
+    <p>Slides made with <a href="https://github.com/ajfisher/presso">presso</a></p>
+
+    <p>The rest of this page collects the context, benchmark materials, model
+      references and follow-on reading from the talk.</p>
+
+    <h3>Resources</h3>
+
+    <p>Start with the context links if you want the narrative, or jump to the
+      benchmark materials if you want the code, results and model references.</p>
+
+    <h4>Talk context</h4>
+
+    <p>These links give the framing for the talk, including the conference
+      info, the article that started the experiment, and the loop-oriented
+      thinking behind the benchmark design.</p>
+
+    <ul>
+      <li><a
+        href="https://webdirections.org/ai-engineer/speakers/aj-fisher.php"
+        >Web Directions AI Engineer listing</a> for the talk and conference
+        details.</li>
+      <li><a
+        href="/2026/02/26/mercury-2-diffusion-agents/">Mercury 2
+        won&apos;t outthink frontier models but diffusion might out-iterate
+        them</a>, the original article that kicked off the talk.</li>
+      <li><a href="https://ghuntley.com/loop/">Everything is a Ralph loop</a>
+        by Geoffrey Huntley, which framed the persistent agent loop pattern
+        used in the benchmark.</li>
+      <li><a href="https://github.com/karpathy/autoresearch">AutoResearch</a>
+        by Andrej Karpathy, which explores a similar cheap-experiment,
+        measurable-feedback loop in model training.</li>
+    </ul>
+
+    <h4>Benchmark materials</h4>
+
+    <p>The benchmark uses a small quote approval API task with an OpenAPI
+      contract and a fast validation harness. Each model gets up to 15 turns,
+      receives targeted failure feedback, and is scored across repeated runs.</p>
+
+    <ul>
+      <li><a
+        href="https://github.com/ajfisher/demo-dumb-fast-agents">Benchmark
+        repository: ajfisher/demo-dumb-fast-agents</a></li>
+      <li><a
+        href="https://github.com/ajfisher/demo-dumb-fast-agents/blob/main/agent/evals/talk-master-summary.md"
+        >Talk benchmark summary</a></li>
+      <li><a
+        href="https://github.com/ajfisher/demo-dumb-fast-agents/blob/main/agent/evals/matrix.talk-battery.json"
+        >Final talk benchmark matrix</a></li>
+      <li><a
+        href="https://github.com/ajfisher/demo-dumb-fast-agents/blob/main/docs/spec.md"
+        >Quote approval API task specification</a></li>
+    </ul>
+
+    <h4>Headline benchmark results</h4>
+
+    <p>The headline result is not that Mercury 2 is the smartest model,
+      but that a fast enough model can compound improvement loops very quickly
+      when the validation harness is tight.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>Pass</th>
+          <th>Median turns</th>
+          <th>Mean time to pass</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mercury 2</td>
+          <td>10/10</td>
+          <td>2</td>
+          <td>6s</td>
+        </tr>
+        <tr>
+          <td>GPT-5.4 mini</td>
+          <td>10/10</td>
+          <td>1</td>
+          <td>41s</td>
+        </tr>
+        <tr>
+          <td>GPT-5.4</td>
+          <td>10/10</td>
+          <td>1</td>
+          <td>88s</td>
+        </tr>
+        <tr>
+          <td>GPT-4.1 mini</td>
+          <td>10/10</td>
+          <td>2</td>
+          <td>54s</td>
+        </tr>
+        <tr>
+          <td>Gemini 2.5 Flash</td>
+          <td>8/10</td>
+          <td>4</td>
+          <td>77s</td>
+        </tr>
+        <tr>
+          <td>Gemma 4 31B cloud</td>
+          <td>10/10</td>
+          <td>5</td>
+          <td>133s</td>
+        </tr>
+        <tr>
+          <td>Qwen3 Coder 480B cloud</td>
+          <td>7/10</td>
+          <td>5</td>
+          <td>611s</td>
+        </tr>
+        <tr>
+          <td>Orthrus Qwen3 8B MLX</td>
+          <td>0/5</td>
+          <td>n/a</td>
+          <td>n/a</td>
+        </tr>
+        <tr>
+          <td>Phi3</td>
+          <td>0/5</td>
+          <td>n/a</td>
+          <td>n/a</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4>Model cards and provider docs</h4>
+
+    <p>These are the model and provider references for the systems included in
+      the benchmark runs.</p>
+
+    <ul>
+      <li><a href="https://www.inceptionlabs.ai/models">Mercury 2</a> from
+        Inception Labs.</li>
+      <li><a href="https://developers.openai.com/api/docs/models/gpt-5.4/"
+        >GPT-5.4</a> and the <a
+        href="https://openai.com/index/gpt-5-4-thinking-system-card/">GPT-5.4
+        Thinking system card</a>.</li>
+      <li><a
+        href="https://developers.openai.com/api/docs/models/gpt-5.4-mini"
+        >GPT-5.4 mini</a>.</li>
+      <li><a
+        href="https://developers.openai.com/api/docs/models/gpt-4.1-mini"
+        >GPT-4.1 mini</a>.</li>
+      <li><a href="https://ai.google.dev/gemini-api/docs/models">Gemini 2.5
+        Flash</a>.</li>
+      <li><a href="https://ollama.com/library/gemma4%3A31b-cloud">Gemma 4
+        31B cloud on Ollama</a> and the <a
+        href="https://deepmind.google/models/gemma/gemma-4/">Gemma 4 model
+        page</a>.</li>
+      <li><a href="https://ollama.com/library/qwen3-coder">Qwen3 Coder 480B
+        cloud on Ollama</a> and the <a
+        href="https://qwenlm.github.io/blog/qwen3-coder/">Qwen3 Coder launch
+        post</a>.</li>
+      <li><a href="https://huggingface.co/chiennv/Orthrus-Qwen3-8B">Orthrus
+        Qwen3 8B</a>, plus the <a
+        href="https://github.com/chiennv2000/orthrus">Orthrus code</a> and
+        <a href="https://arxiv.org/abs/2605.12825">paper</a>.</li>
+      <li><a href="https://ollama.com/library/phi3">Phi3 on Ollama</a> and
+        the <a
+        href="https://huggingface.co/microsoft/Phi-3-mini-128k-instruct">Phi-3
+        Mini 128K Instruct model card</a>.</li>
+    </ul>
+
+    <h4>Mercury and diffusion LLM references</h4>
+
+    <p>These cover the Mercury launch material and the underlying diffusion
+      language model work that makes the fast iteration loop interesting.</p>
+
+    <ul>
+      <li><a href="https://www.inceptionlabs.ai/blog/introducing-mercury-2"
+        >Introducing Mercury 2</a> from Inception Labs.</li>
+      <li><a href="https://www.inceptionlabs.ai/blog/introducing-mercury"
+        >Introducing Mercury</a>, the earlier Mercury Coder launch post.</li>
+      <li><a href="https://arxiv.org/abs/2506.17298">Mercury: Ultra-Fast
+        Language Models Based on Diffusion</a>.</li>
+      <li><a
+        href="https://www.inceptionlabs.ai/blog/rise-of-realtime-subagents"
+        >Mercury 2 and the Rise of Real-time Subagents</a>.</li>
+    </ul>
+
+    <h4>Extra references worth reading</h4>
+
+    <p>These are useful additions if you want to go deeper on agent
+      evaluation, repeatable workflows and feedback-driven optimisation.</p>
+
+    <ul>
+      <li><a href="https://inspect.aisi.org.uk/">Inspect</a>, the UK AI
+        Security Institute evaluation framework, for thinking about repeatable
+        LLM and agent evals.</li>
+      <li><a href="https://www.swebench.com/">SWE-bench</a> and <a
+        href="https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified"
+        >SWE-bench Verified</a>, useful references for repository-level
+        coding agent evaluation.</li>
+      <li><a href="https://github.com/openai/evals">OpenAI Evals</a>, useful
+        as a reference point for building repeatable, code-backed eval suites.</li>
+      <li><a
+        href="https://www.anthropic.com/engineering/claude-code-best-practices"
+        >Claude Code best practices</a>, especially the parts on context,
+        verification and repeatable workflows.</li>
+      <li><a href="https://dspy.ai/">DSPy</a>, which is relevant when you want
+        to optimise an LLM workflow against a metric rather than hand-tune
+        prompts forever.</li>
+    </ul>
+
+    <h4>Where to next?</h4>
+
+    <p>The <a href="/">home page</a> will give you featured articles and recent
+      posts.</p>
+    <p>You can also check out <a href="/blog/">the full list of articles</a>
+      that have ever been published.</p>
+  </section>
+  <PostAttribution {...data} />
+  <Fragment slot="postdata">
+      <PostData { ...data } />
+  </Fragment>
+</BaseLayout>
