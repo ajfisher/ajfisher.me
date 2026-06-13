@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diffusion Stream</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    background: transparent;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    min-height: 0;
+    font-family: monospace;
+  }
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+</head>
+<body>
+
+<svg id="terminal" viewBox="0 0 680 460" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="680" height="460" rx="10" fill="#1c1c1c"/>
+
+  <!-- Title bar -->
+  <rect width="680" height="36" rx="10" fill="#2a2a2a"/>
+  <rect y="26" width="680" height="10" fill="#2a2a2a"/>
+  <circle cx="20" cy="18" r="6" fill="#3a3a3a"/>
+  <circle cx="40" cy="18" r="6" fill="#3a3a3a"/>
+  <circle cx="60" cy="18" r="6" fill="#3a3a3a"/>
+  <text x="340" y="23" text-anchor="middle" fill="#666" font-family="monospace" font-size="11">mercury — diffusion stream</text>
+  <circle cx="626" cy="18" r="3.5" fill="#FF5E9A" opacity="0.6"/>
+
+  <!-- Separator -->
+  <line x1="0" y1="36" x2="680" y2="36" stroke="#333" stroke-width="1"/>
+
+  <!-- Prompt line -->
+  <text x="20" y="62" fill="#888" font-family="monospace" font-size="12">
+    <tspan fill="#555">user@local</tspan>
+    <tspan fill="#444">:</tspan>
+    <tspan fill="#666">~</tspan>
+    <tspan fill="#444">$ </tspan>
+    <tspan fill="#999">generate --model mercury-2 "build me a landing page"</tspan>
+  </text>
+
+  <!-- Model info -->
+  <text x="20" y="86" fill="#555" font-family="monospace" font-size="11">▸ mercury-2  mode: masked-diffusion  steps: 64</text>
+  <line x1="20" y1="92" x2="660" y2="92" stroke="#2e2e2e" stroke-width="1"/>
+
+  <!-- Content rendered by JS -->
+  <g id="stream-content"></g>
+
+  <!-- Bottom status bar -->
+  <rect x="0" y="434" width="680" height="26" fill="#222"/>
+  <rect x="0" y="434" width="680" height="1" fill="#333"/>
+  <rect x="0" y="434" width="3" height="26" fill="#FF5F31" opacity="0.7"/>
+  <text x="12" y="451" fill="#FF825E" font-family="monospace" font-size="10" id="status-text">● initialising noise</text>
+  <text x="660" y="451" text-anchor="end" fill="#444" font-family="monospace" font-size="10" id="step-count">step 0 / 64</text>
+</svg>
+
+<script>
+// ─── Target text ────────────────────────────────────────────────────────────
+const TARGET = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Launch</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #0a0a0a;
+      color: #f0f0f0;
+      margin: 0;
+    }
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 { font-size: 4rem; }
+    p { opacity: 0.6; }
+    .cta {
+      margin-top: 2rem;
+      padding: 1rem 2.5rem;
+      background: #fff;
+      color: #000;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>Ship faster.</h1>
+    <p>Built for teams that move.</p>
+    <button class="cta">Get started</button>
+  </section>
+</body>
+</html>`;
+
+// ─── Config ──────────────────────────────────────────────────────────────────
+const TOTAL_STEPS  = 64;
+const STEP_MS      = 80;       // ms between denoising steps
+const CHARS        = '░▒▓█▄▀■□▪▫◆◇○●◉⬡⬢╱╲╳±×÷¿¡~`^*#@$%&_=+[]{}|<>?/\\!';
+const CHAR_WIDTH   = 7.2;
+const LINE_HEIGHT  = 16;
+const X_START      = 20;
+const Y_START      = 112;
+const MAX_CHARS    = 91;
+const MAX_LINES    = 20;
+
+// ─── Wrap target into display lines ─────────────────────────────────────────
+function wrapText(str) {
+  const lines = [];
+  for (const rawLine of str.split('\n')) {
+    if (rawLine.length === 0) {
+      lines.push('');
+    } else {
+      let pos = 0;
+      while (pos < rawLine.length) {
+        lines.push(rawLine.slice(pos, pos + MAX_CHARS));
+        pos += MAX_CHARS;
+      }
+    }
+  }
+  // Keep last MAX_LINES
+  return lines.slice(-MAX_LINES);
+}
+
+const targetLines = wrapText(TARGET);
+// Build flat char array from target lines (space-pad to equal length)
+const maxLen = Math.max(...targetLines.map(l => l.length));
+const targetFlat = targetLines.map(l => l.padEnd(maxLen, ' '));
+
+// ─── State: one char per cell ─────────────────────────────────────────────
+// Each cell: { ch, locked, confidence }
+// confidence 0→1 drives opacity of the character (noisy = dim, locked = bright)
+const numLines = targetFlat.length;
+const numCols  = maxLen;
+let cells = [];
+
+function randomNoise() {
+  return CHARS[Math.floor(Math.random() * CHARS.length)];
+}
+
+// Initialise full noise
+for (let r = 0; r < numLines; r++) {
+  cells.push([]);
+  for (let c = 0; c < numCols; c++) {
+    const isSpace = targetFlat[r][c] === ' ';
+    cells[r].push({
+      ch: isSpace ? ' ' : randomNoise(),
+      locked: false,
+      confidence: 0.05 + Math.random() * 0.2
+    });
+  }
+}
+
+// ─── Diffusion schedule ──────────────────────────────────────────────────────
+// At each step, a fraction of still-noisy cells get resolved ("denoised").
+// Early steps: low probability per cell → sparse locks
+// Late steps:  high probability → rapid convergence
+// Follows a cosine noise schedule (high noise early, rapid clean-up late)
+
+function lockFraction(step) {
+  // cosine schedule: fraction of remaining noisy cells to lock this step
+  const t = step / TOTAL_STEPS;
+  // more locks per step as we approach end
+  return 0.04 + 0.18 * Math.pow(t, 1.6);
+}
+
+// ─── SVG rendering ──────────────────────────────────────────────────────────
+const streamEl    = document.getElementById('stream-content');
+const statusEl    = document.getElementById('status-text');
+const stepCountEl = document.getElementById('step-count');
+
+// Pre-create text elements for each row — much faster than rebuilding
+const rowEls = [];
+for (let r = 0; r < numLines; r++) {
+  const g = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+  g.setAttribute('x', X_START);
+  g.setAttribute('y', Y_START + r * LINE_HEIGHT);
+  g.setAttribute('font-family', 'monospace');
+  g.setAttribute('font-size', '12');
+  // Each char is its own tspan so we can colour individually
+  for (let c = 0; c < numCols; c++) {
+    const span = document.createElementNS('http://www.w3.org/2000/svg', 'tspan');
+    span.textContent = ' ';
+    g.appendChild(span);
+  }
+  streamEl.appendChild(g);
+  rowEls.push(g);
+}
+
+function render() {
+  for (let r = 0; r < numLines; r++) {
+    const spans = rowEls[r].childNodes;
+    for (let c = 0; c < numCols; c++) {
+      const cell = cells[r][c];
+      const span = spans[c];
+      span.textContent = cell.ch;
+      if (cell.locked) {
+        span.setAttribute('fill', '#e8e8e8');
+        span.setAttribute('opacity', '1');
+      } else if (cell.ch === ' ') {
+        span.setAttribute('fill', '#e8e8e8');
+        span.setAttribute('opacity', '0');
+      } else {
+        // noisy cell: orange tint, dim
+        const op = (cell.confidence * 0.55 + 0.1).toFixed(2);
+        span.setAttribute('fill', '#FF825E');
+        span.setAttribute('opacity', op);
+      }
+    }
+  }
+}
+
+// ─── Denoising step ─────────────────────────────────────────────────────────
+let step = 0;
+let noisyCells = []; // flat list of [r,c] that aren't locked yet
+
+// Build initial noisy cell index
+for (let r = 0; r < numLines; r++) {
+  for (let c = 0; c < numCols; c++) {
+    if (targetFlat[r][c] !== ' ') noisyCells.push([r, c]);
+  }
+}
+
+// Shuffle helper
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+}
+
+function resetDiffusion() {
+  step = 0;
+  cells = [];
+  for (let r = 0; r < numLines; r++) {
+    cells.push([]);
+    for (let c = 0; c < numCols; c++) {
+      const isSpace = targetFlat[r][c] === ' ';
+      cells[r].push({
+        ch: isSpace ? ' ' : randomNoise(),
+        locked: false,
+        confidence: 0.05 + Math.random() * 0.2
+      });
+    }
+  }
+  noisyCells = [];
+  for (let r = 0; r < numLines; r++)
+    for (let c = 0; c < numCols; c++)
+      if (targetFlat[r][c] !== ' ') noisyCells.push([r, c]);
+
+  statusEl.textContent = '● initialising noise';
+  statusEl.setAttribute('fill', '#FF825E');
+  stepCountEl.textContent = `step 0 / ${TOTAL_STEPS}`;
+  render();
+}
+
+function denoise() {
+  if (step >= TOTAL_STEPS || noisyCells.length === 0) {
+    for (const [r, c] of noisyCells) {
+      cells[r][c].ch = targetFlat[r][c];
+      cells[r][c].locked = true;
+      cells[r][c].confidence = 1;
+    }
+    noisyCells = [];
+    render();
+    statusEl.textContent = '✓ denoised';
+    statusEl.setAttribute('fill', '#FF5E9A');
+    stepCountEl.textContent = `step ${TOTAL_STEPS} / ${TOTAL_STEPS}`;
+    setTimeout(() => { resetDiffusion(); setTimeout(denoise, 400); }, 2000);
+    return;
+  }
+
+  step++;
+  const frac = lockFraction(step);
+  const numToLock = Math.max(1, Math.floor(noisyCells.length * frac));
+
+  // Shuffle so locks are spatially random (not sequential)
+  shuffle(noisyCells);
+
+  const toKeep = [];
+  for (let i = 0; i < noisyCells.length; i++) {
+    const [r, c] = noisyCells[i];
+    if (i < numToLock) {
+      // Lock this cell to its target
+      cells[r][c].ch = targetFlat[r][c];
+      cells[r][c].locked = true;
+      cells[r][c].confidence = 1;
+    } else {
+      // Still noisy — flicker to new random char with some probability
+      if (Math.random() < 0.45) {
+        cells[r][c].ch = randomNoise();
+      }
+      // Confidence drifts upward as we approach end (model getting more certain)
+      cells[r][c].confidence = Math.min(0.9, cells[r][c].confidence + (step / TOTAL_STEPS) * 0.15);
+      toKeep.push([r, c]);
+    }
+  }
+  noisyCells = toKeep;
+
+  render();
+
+  const pct = Math.round(((numLines * numCols - noisyCells.length) / (numLines * numCols)) * 100);
+  statusEl.textContent = `● denoising  ${pct}% resolved`;
+  stepCountEl.textContent = `step ${step} / ${TOTAL_STEPS}`;
+
+  // Variable step timing — slightly faster in early chaos, slows mid, speeds at end
+  let delay = STEP_MS;
+  if (step < 10) delay = 55;
+  else if (step > 50) delay = 45;
+
+  setTimeout(denoise, delay);
+}
+
+// Initial render then begin
+render();
+setTimeout(denoise, 800);
+</script>
+</body>
+</html>

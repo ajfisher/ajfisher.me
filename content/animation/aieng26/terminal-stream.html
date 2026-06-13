@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Token Stream</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    background: transparent;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    min-height: 0;
+    font-family: monospace;
+  }
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+</head>
+<body>
+
+<svg id="terminal" viewBox="0 0 680 460" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="680" height="460" rx="10" fill="#1c1c1c"/>
+
+  <!-- Title bar -->
+  <rect width="680" height="36" rx="10" fill="#2a2a2a"/>
+  <rect y="26" width="680" height="10" fill="#2a2a2a"/>
+  <circle cx="20" cy="18" r="6" fill="#3a3a3a"/>
+  <circle cx="40" cy="18" r="6" fill="#3a3a3a"/>
+  <circle cx="60" cy="18" r="6" fill="#3a3a3a"/>
+  <text x="340" y="23" text-anchor="middle" fill="#666" font-family="monospace" font-size="11">claude — response stream</text>
+  <circle cx="626" cy="18" r="3.5" fill="#FF5E9A" opacity="0.6"/>
+
+  <!-- Separator line -->
+  <line x1="0" y1="36" x2="680" y2="36" stroke="#333" stroke-width="1"/>
+
+  <!-- Prompt line -->
+  <text x="20" y="62" fill="#888" font-family="monospace" font-size="12">
+    <tspan fill="#555">user@local</tspan>
+    <tspan fill="#444">:</tspan>
+    <tspan fill="#666">~</tspan>
+    <tspan fill="#444">$ </tspan>
+    <tspan fill="#999">generate --stream "build me a landing page"</tspan>
+  </text>
+
+  <!-- Model response label -->
+  <text x="20" y="86" fill="#555" font-family="monospace" font-size="11">▸ claude-sonnet  tokens/s: 47  latency: 312ms</text>
+  <line x1="20" y1="92" x2="660" y2="92" stroke="#2e2e2e" stroke-width="1"/>
+
+  <!-- Streaming content area — rendered via JS -->
+  <g id="stream-content"></g>
+
+  <!-- Cursor -->
+  <rect id="cursor" x="20" y="106" width="8" height="14" fill="#FF5E9A" opacity="1">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Bottom status bar -->
+  <rect x="0" y="434" width="680" height="26" rx="0" fill="#222"/>
+  <rect x="0" y="434" width="680" height="1" fill="#333"/>
+  <!-- Orange left accent line -->
+  <rect x="0" y="434" width="3" height="26" fill="#FF5F31" opacity="0.7"/>
+  <text x="12" y="451" fill="#FF825E" font-family="monospace" font-size="10" id="status-text">● streaming</text>
+  <text x="660" y="451" text-anchor="end" fill="#444" font-family="monospace" font-size="10" id="token-count">0 tokens</text>
+</svg>
+
+<script>
+const CONTENT = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Launch</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #0a0a0a;
+      color: #f0f0f0;
+      margin: 0;
+    }
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 { font-size: 4rem; }
+    p { opacity: 0.6; }
+    .cta {
+      margin-top: 2rem;
+      padding: 1rem 2.5rem;
+      background: #fff;
+      color: #000;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>Ship faster.</h1>
+    <p>Built for teams that move.</p>
+    <button class="cta">Get started</button>
+  </section>
+</body>
+</html>`;
+
+// Tokenise — split on whitespace boundaries keeping them attached
+function tokenise(str) {
+  const tokens = [];
+  let i = 0;
+  while (i < str.length) {
+    // grab a word+trailing-space chunk, or just the char
+    let end = i + 1;
+    while (end < str.length && str[end] !== ' ' && str[end] !== '\n' && str[end] !== '<') end++;
+    // include trailing space/newline
+    if (end < str.length && (str[end] === ' ' || str[end] === '\n')) end++;
+    tokens.push(str.slice(i, end));
+    i = end;
+  }
+  return tokens;
+}
+
+const tokens = tokenise(CONTENT);
+
+const LINE_HEIGHT = 16;
+const CHAR_WIDTH  = 7.2;
+const X_START     = 20;
+const Y_START     = 112;
+const MAX_CHARS   = 91; // chars per line before wrap
+const MAX_LINES   = 20; // visible lines before scroll
+
+const streamEl  = document.getElementById('stream-content');
+const cursorEl  = document.getElementById('cursor');
+const statusEl  = document.getElementById('status-text');
+const tokenCountEl = document.getElementById('token-count');
+
+let lines = [''];   // array of strings
+let tokenIdx = 0;
+let totalTokens = 0;
+let done = false;
+
+function currentLine() { return lines[lines.length - 1]; }
+
+function addText(text) {
+  for (const ch of text) {
+    if (ch === '\n') {
+      lines.push('');
+    } else {
+      lines[lines.length - 1] += ch;
+      if (lines[lines.length - 1].length > MAX_CHARS) {
+        // soft wrap
+        lines.push('');
+      }
+    }
+  }
+  // keep only last MAX_LINES
+  if (lines.length > MAX_LINES) lines = lines.slice(lines.length - MAX_LINES);
+}
+
+function render() {
+  // clear
+  while (streamEl.firstChild) streamEl.removeChild(streamEl.firstChild);
+
+  lines.forEach((line, i) => {
+    if (!line && i === lines.length - 1) return; // skip trailing empty (cursor handles it)
+    const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    t.setAttribute('x', X_START);
+    t.setAttribute('y', Y_START + i * LINE_HEIGHT);
+    t.setAttribute('fill', '#e0e0e0');
+    t.setAttribute('font-family', 'monospace');
+    t.setAttribute('font-size', '12');
+    t.textContent = line;
+    streamEl.appendChild(t);
+  });
+
+  // place cursor after last char on last line
+  const lastLine = lines[lines.length - 1];
+  const cx = X_START + lastLine.length * CHAR_WIDTH;
+  const cy = Y_START + (lines.length - 1) * LINE_HEIGHT - 12;
+  cursorEl.setAttribute('x', cx);
+  cursorEl.setAttribute('y', cy);
+}
+
+// Variable inter-token delay to mimic real streaming jitter
+function nextDelay() {
+  // short tokens fast, longer tokens slightly slower, occasional pause
+  const r = Math.random();
+  if (r < 0.05) return 180 + Math.random() * 200; // rare hesitation
+  return 18 + Math.random() * 45;
+}
+
+function reset() {
+  lines = [''];
+  tokenIdx = 0;
+  totalTokens = 0;
+  done = false;
+  while (streamEl.firstChild) streamEl.removeChild(streamEl.firstChild);
+  cursorEl.setAttribute('width', '8');
+  cursorEl.setAttribute('height', '14');
+  cursorEl.querySelector('animate').setAttribute('dur', '1s');
+  cursorEl.setAttribute('x', X_START);
+  cursorEl.setAttribute('y', Y_START - 12);
+  statusEl.textContent = '● streaming';
+  statusEl.setAttribute('fill', '#FF825E');
+  tokenCountEl.textContent = '0 tokens';
+}
+
+function step() {
+  if (tokenIdx >= tokens.length) {
+    done = true;
+    statusEl.textContent = '✓ complete';
+    statusEl.setAttribute('fill', '#FF5E9A');
+    cursorEl.setAttribute('width', '6');
+    cursorEl.setAttribute('height', '2');
+    cursorEl.querySelector('animate').setAttribute('dur', '9999s');
+    setTimeout(() => { reset(); setTimeout(step, 600); }, 2000);
+    return;
+  }
+
+  const token = tokens[tokenIdx++];
+  addText(token);
+  totalTokens++;
+  tokenCountEl.textContent = totalTokens + ' tokens';
+  render();
+
+  setTimeout(step, nextDelay());
+}
+
+// Small startup delay
+setTimeout(step, 600);
+</script>
+</body>
+</html>
