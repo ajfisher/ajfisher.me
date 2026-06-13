@@ -184,6 +184,73 @@ article table {
     }
 }
 
+article .benchmark-results-table + table {
+    box-sizing: border-box;
+    margin: var(--gutter);
+    width: calc(100% - (2 * var(--gutter)));
+    font-size: 1.45rem;
+    line-height: 1.15;
+}
+
+article .benchmark-results-table + table thead {
+    background-color: var(--base);
+    color: var(--light-text-colour);
+}
+
+article .benchmark-results-table + table th,
+article .benchmark-results-table + table td {
+    padding: 0.35rem 0.45rem;
+    vertical-align: top;
+}
+
+article .benchmark-results-table + table th {
+    background-color: var(--base);
+    color: var(--light-text-colour);
+}
+
+article .benchmark-results-table + table td {
+    white-space: nowrap;
+}
+
+article .benchmark-results-table + table th:nth-child(n+3),
+article .benchmark-results-table + table td:nth-child(n+3) {
+    text-align: right;
+}
+
+article .benchmark-results-table + table th:nth-child(-n+2),
+article .benchmark-results-table + table td:nth-child(-n+2) {
+    text-align: left;
+}
+
+@media only screen and (max-width: 700px) {
+    article .benchmark-results-table + table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+article .latency-animation-pair {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: calc(0.5 * var(--gutter));
+    margin: var(--gutter);
+    width: calc(100% - (2 * var(--gutter)));
+}
+
+article .latency-animation-pair iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 680 / 460;
+    border: 0;
+    background: #080808;
+}
+
+@media only screen and (max-width: 700px) {
+    article .latency-animation-pair {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* some elements for when you are in an aside in the article */
 article aside h2 {
     display: block;

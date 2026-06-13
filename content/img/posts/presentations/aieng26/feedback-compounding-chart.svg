@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+<title id="title">Completion score by elapsed time</title>
+<desc id="desc">Completion over five minutes using score equals 1 minus 1 minus r to the n. SOTA improves 65 percent once per minute. Fast 15 percent and Fast 30 percent improve every six seconds. A subtle pass zone begins at 95 percent completion.</desc>
+<defs>
+  <radialGradient id="slide-bg" cx="50%" cy="50%" r="70%">
+    <stop offset="0%" stop-color="#3f3f3f"/>
+    <stop offset="100%" stop-color="#262626"/>
+  </radialGradient>
+  <marker id="turn-sota" markerWidth="8" markerHeight="8" refX="4" refY="4" markerUnits="userSpaceOnUse">
+    <path d="M2 2 L6 6 M6 2 L2 6" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+  </marker>
+  <marker id="turn-fast-30" markerWidth="8" markerHeight="8" refX="4" refY="4" markerUnits="userSpaceOnUse">
+    <path d="M2 2 L6 6 M6 2 L2 6" stroke="#ff825e" stroke-width="1.6" stroke-linecap="round"/>
+  </marker>
+  <marker id="turn-fast-15" markerWidth="8" markerHeight="8" refX="4" refY="4" markerUnits="userSpaceOnUse">
+    <path d="M2 2 L6 6 M6 2 L2 6" stroke="#ffbfd7" stroke-width="1.6" stroke-linecap="round"/>
+  </marker>
+</defs>
+<style>
+  .axis { font: 400 22px Rokkitt, Georgia, serif; fill: #ffffff; }
+  .tick { font: 400 18px Rokkitt, Georgia, serif; fill: #d8d8d8; }
+  .legend { font: 400 21px Rokkitt, Georgia, serif; fill: #ffffff; }
+  .callout { font: 400 21px Rokkitt, Georgia, serif; }
+  .series { fill: none; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
+  .sota { stroke: #ffffff; }
+  .fast30 { stroke: #ff825e; }
+  .fast15 { stroke: #ffbfd7; }
+  .sotaText { fill: #ffffff; }
+  .fast30Text { fill: #ffcebf; }
+  .fast15Text { fill: #ffbfd7; }
+</style>
+
+<rect width="1280" height="720" fill="url(#slide-bg)"/>
+<rect x="96" y="58" width="1088" height="28.5" fill="#bfffdd" opacity="0.09"/>
+
+<g stroke="#ffffff" stroke-width="1" opacity="0.16">
+  <line x1="96" y1="628" x2="1184" y2="628"/>
+  <line x1="96" y1="485.5" x2="1184" y2="485.5"/>
+  <line x1="96" y1="343" x2="1184" y2="343"/>
+  <line x1="96" y1="200.5" x2="1184" y2="200.5"/>
+  <line x1="96" y1="86.5" x2="1184" y2="86.5"/>
+  <line x1="96" y1="58" x2="1184" y2="58"/>
+  <line x1="96" y1="58" x2="96" y2="628"/>
+  <line x1="313.6" y1="58" x2="313.6" y2="628"/>
+  <line x1="531.2" y1="58" x2="531.2" y2="628"/>
+  <line x1="748.8" y1="58" x2="748.8" y2="628"/>
+  <line x1="966.4" y1="58" x2="966.4" y2="628"/>
+  <line x1="1184" y1="58" x2="1184" y2="628"/>
+</g>
+
+<line x1="96" y1="628" x2="1184" y2="628" stroke="#ffffff" stroke-width="2" opacity="0.28"/>
+<line x1="96" y1="58" x2="96" y2="628" stroke="#ffffff" stroke-width="2" opacity="0.28"/>
+
+<g class="tick">
+  <text x="80" y="634" text-anchor="end">0%</text>
+  <text x="80" y="491.5" text-anchor="end">25%</text>
+  <text x="80" y="349" text-anchor="end">50%</text>
+  <text x="80" y="206.5" text-anchor="end">75%</text>
+  <text x="80" y="92.5" text-anchor="end">95%</text>
+  <text x="80" y="64" text-anchor="end">100%</text>
+  <text x="96" y="660" text-anchor="middle">0m</text>
+  <text x="313.6" y="660" text-anchor="middle">1m</text>
+  <text x="531.2" y="660" text-anchor="middle">2m</text>
+  <text x="748.8" y="660" text-anchor="middle">3m</text>
+  <text x="966.4" y="660" text-anchor="middle">4m</text>
+  <text x="1184" y="660" text-anchor="middle">5m</text>
+</g>
+
+<text class="axis" x="640" y="693" text-anchor="middle">elapsed time</text>
+<text class="axis" transform="translate(30 343) rotate(-90)" text-anchor="middle">completion score</text>
+
+<polyline class="series sota" marker-mid="url(#turn-sota)" marker-end="url(#turn-sota)" points="96,628 313.6,257.5 531.2,127.8 748.8,82.4 966.4,66.6 1184,61"/>
+<polyline class="series fast15" marker-mid="url(#turn-fast-15)" marker-end="url(#turn-fast-15)" points="96,628 117.8,542.5 139.5,469.8 161.3,408.1 183,355.5 204.8,310.9 226.6,273 248.3,240.7 270.1,213.3 291.8,190 313.6,170.2 335.4,153.4 357.1,139.1 378.9,126.9 400.6,116.6 422.4,107.8 444.2,100.3 465.9,94 487.7,88.6 509.4,84 531.2,80.1 553,76.8 574.7,74 596.5,71.6 618.2,69.5 640,67.8 661.8,66.3 683.5,65.1 705.3,64 727,63.1 748.8,62.3 770.6,61.7 792.3,61.1 814.1,60.7 835.8,60.3 857.6,59.9 879.4,59.6 901.1,59.4 922.9,59.2 944.6,59 966.4,58.9 988.2,58.7 1009.9,58.6 1031.7,58.5 1053.4,58.4 1075.2,58.4 1097,58.3 1118.7,58.3 1140.5,58.2 1162.2,58.2 1184,58.2"/>
+<polyline class="series fast30" marker-mid="url(#turn-fast-30)" marker-end="url(#turn-fast-30)" points="96,628 117.8,457 139.5,337.3 161.3,253.5 183,194.9 204.8,153.8 226.6,125.1 248.3,104.9 270.1,90.9 291.8,81 313.6,74.1 335.4,69.3 357.1,65.9 378.9,63.5 400.6,61.9 422.4,60.7 444.2,59.9 465.9,59.3 487.7,58.9 509.4,58.6 531.2,58.5 553,58.3 574.7,58.2 596.5,58.2 618.2,58.1 640,58.1 661.8,58.1 683.5,58 705.3,58 727,58 748.8,58 770.6,58 792.3,58 814.1,58 835.8,58 857.6,58 879.4,58 901.1,58 922.9,58 944.6,58 966.4,58 988.2,58 1009.9,58 1031.7,58 1053.4,58 1075.2,58 1097,58 1118.7,58 1140.5,58 1162.2,58 1184,58"/>
+
+<g opacity="0.52" stroke-width="1.5" stroke-dasharray="5 7">
+  <line x1="291.8" y1="86.5" x2="291.8" y2="628" stroke="#ff825e"/>
+  <line x1="509.4" y1="86.5" x2="509.4" y2="628" stroke="#ffbfd7"/>
+  <line x1="748.8" y1="86.5" x2="748.8" y2="628" stroke="#ffffff"/>
+</g>
+
+<circle cx="291.8" cy="81" r="6.5" fill="#ff825e" stroke="#3f3f3f" stroke-width="2.5"/>
+<circle cx="509.4" cy="84" r="6.5" fill="#ffbfd7" stroke="#3f3f3f" stroke-width="2.5"/>
+<circle cx="748.8" cy="82.4" r="6.5" fill="#ffffff" stroke="#3f3f3f" stroke-width="2.5"/>
+
+<text class="callout fast30Text" x="218" y="112" text-anchor="end">n=9 / 54s</text>
+<text class="callout fast15Text" x="494" y="145" text-anchor="end">n=19 / 114s</text>
+<text class="callout sotaText" x="764" y="178">n=3 / 3m</text>
+
+<g class="legend" transform="translate(790 548)">
+  <line x1="0" y1="0" x2="56" y2="0" class="series sota"/>
+  <circle cx="28" cy="0" r="3" fill="#ffffff"/>
+  <text x="76" y="7">SOTA</text>
+  <line x1="0" y1="34" x2="56" y2="34" class="series fast30"/>
+  <circle cx="28" cy="34" r="3" fill="#ff825e"/>
+  <text x="76" y="41">Fast 30%</text>
+  <line x1="0" y1="68" x2="56" y2="68" class="series fast15"/>
+  <circle cx="28" cy="68" r="3" fill="#ffbfd7"/>
+  <text x="76" y="75">Fast 15%</text>
+</g>
+</svg>
