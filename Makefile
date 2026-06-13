@@ -9,7 +9,7 @@ help:
 	@echo "dev:             Run the Astro development server"
 	@echo "preview:         Preview the production build"
 	@echo "lint:            Lint the site"
-	@echo "test:            Run lint and Astro type checks"
+	@echo "test:            Run app tests, lint, and Astro type checks"
 	@echo "pre-commit:      Run lint for site"
 	@echo "embeddings:      Run the embeddings similarity script"
 	@echo "build:           Build the site for deploy"
@@ -39,6 +39,7 @@ lint:
 	cd ./site.v5 && make lint
 
 test:
+	node --test app/tests/*.test.mjs
 	cd ./site.v5 && make test
 
 dev:

@@ -8,8 +8,10 @@ export const handler = async (event) => {
   const request = event.Records[0].cf.request;
   const response = event.Records[0].cf.response;
   const headers = response.headers;
+  const uri = request.uri;
+  const frameOptions = uri.startsWith('/animation/') ? 'SAMEORIGIN' : 'DENY';
 
-  if (request.uri.startsWith('/static/')) {
+  if (uri.startsWith('/static/')) {
     headers['cache-control'] = [
       {
         key: 'Cache-Control',
@@ -26,7 +28,6 @@ export const handler = async (event) => {
       ];
     } else {
       let cache = false;
-      const uri = request.uri;
       if (uri.startsWith('/styles-') && uri.endsWith('.css')) {
         // cache built CSS files
         cache = true;
@@ -81,7 +82,7 @@ export const handler = async (event) => {
     },
     {
       key: 'X-Frame-Options',
-      value: 'deny'
+      value: frameOptions
     },
     {
       key: 'X-XSS-Protection',
