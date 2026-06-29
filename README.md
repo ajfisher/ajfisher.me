@@ -3,7 +3,9 @@
 Website for ajfisher.me
 
 The site is built with [Astro](https://astro.build/) and lives in `site.v5/`.
-Node 20 is used in CI so use that or a newer release.
+Astro 6 requires Node `>=22.12.0`; CI builds the site with Node 22.
+The Lambda@Edge handlers in `app/` still run on `nodejs20.x` as configured in
+`infra/application/lambda.tf`.
 
 ## Install
 

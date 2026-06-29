@@ -22,8 +22,13 @@ all targets. The most frequently used ones are:
 - `make build` – produce a production build to `site.v5/dist`.
 - `make deploy` – sync the built site to S3 (normally handled by CI).
 
-Node 20 is the reference runtime version and is used in CI. Use this or a newer
-release locally.
+Runtime versions are intentionally split:
+
+- Use Node `>=22.12.0` for `site.v5/` development, tests, and builds. Astro 6
+  requires this, and CI uses Node 22 for the site build workflow.
+- The Lambda@Edge handlers in `app/` still target Node 20 because Terraform sets
+  their runtime to `nodejs20.x` in `infra/application/lambda.tf`. Do not change
+  that infrastructure runtime unless the task explicitly asks for it.
 
 ## Code quality
 
