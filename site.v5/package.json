@@ -12,9 +12,9 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@astrojs/rss": "^4.0.15",
+    "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.0",
-    "astro": "^5.18.1",
+    "astro": "^6.4.6",
     "astro-icon": "^1.1.5",
     "humanize-plus": "^1.8.2",
     "install": "^0.13.0",
