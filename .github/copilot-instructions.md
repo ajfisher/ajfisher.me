@@ -1,143 +1,81 @@
 # GitHub Copilot Instructions for ajfisher.me
 
-**Always reference these instructions first and fallback to search or bash commands only when you encounter unexpected information that does not match the info here.**
+Always reference these instructions first, then inspect the repository when
+details appear to have changed.
 
 ## Repository Overview
 
-This is a Gatsby-based personal website and blog for ajfisher.me. The repository is split across several key directories:
+This repository contains the Astro-based personal website for `ajfisher.me`
+plus the CloudFront Lambda@Edge handlers and Terraform infrastructure.
 
-- `site/` – Main Gatsby website with tests and custom plugins
-- `app/` – Lambda@Edge handlers for CloudFront
-- `infra/` – Terraform infrastructure configuration  
-- `utils/` – Deployment scripts and utilities
-- `.github/workflows/` – CI/CD pipeline configuration
+- `site.v5/` - Astro 6 static site.
+- `content/` - Shared markdown content, images, and static assets.
+- `app/` - Lambda@Edge handlers for CloudFront.
+- `infra/` - Terraform infrastructure configuration.
+- `utils/` - Deployment and maintenance scripts.
+- `.github/workflows/` - CI/CD workflow configuration.
+
+## Runtime Versions
+
+The site build runtime and edge handler runtime are intentionally different.
+
+- Use Node `>=22.12.0` for `site.v5/` development, tests, and builds. Astro 6
+  requires this, and `.github/workflows/astro.build.yml` uses Node 22.
+- The Lambda@Edge handlers in `app/` still target Node 20 because
+  `infra/application/lambda.tf` sets their runtime to `nodejs20.x`.
+- Do not change the Lambda runtime when updating site dependencies unless the
+  task explicitly asks for an infrastructure runtime migration.
 
 ## Working Effectively
 
-### Installation Process
-Bootstrap the repository with these exact commands:
+Bootstrap the repository with:
+
 ```bash
-cd /path/to/repository
 make install
 ```
-This installs dependencies for the main site and two custom plugins. **Installation takes ~75 seconds** and will show deprecation warnings (this is expected and does not affect functionality).
 
-### Essential Development Commands
-**CRITICAL: Use these exact command paths or they will fail:**
+Common commands from the repository root:
 
-- **Development server**: `cd site && ./node_modules/.bin/gatsby develop -H 0.0.0.0`
-  - **NEVER CANCEL**: Development server startup takes ~60 seconds. Set timeout to 120+ seconds.
-  - Access at `http://localhost:8000` and GraphiQL at `http://localhost:8000/___graphql`
-  
-- **Production build**: `make build` 
-  - **NEVER CANCEL**: Build takes ~7 minutes. Set timeout to 15+ minutes.
-  - Creates optimized site in `site/public/`
-  
-- **Linting and testing**: `make test`
-  - **Timing**: Takes ~8 seconds. Set timeout to 30+ seconds.
-  - Runs ESLint followed by Jest tests with 100% coverage requirement
-  - **Must pass before committing** or CI will fail
-
-### Development Workflow Requirements
-
-**Node Version**: Use Node 20 (confirmed available and required for CI compatibility).
-
-**Build Process**: 
-1. Run `make install` (first time or after dependency changes)
-2. Run `make test` to ensure code quality
-3. Run `make build` to create production artifacts
-4. Optionally use `make dev` for development server (requires manual path fix - see below)
-
-### Known Issues and Workarounds
-
-**Makefile Command Issue**: The `make dev` and `make serve` commands fail because `gatsby` is not in PATH. Use this workaround:
 ```bash
-# Instead of: make dev
-cd site && ./node_modules/.bin/gatsby develop -H 0.0.0.0
-
-# Instead of: make serve  
-cd site && ./node_modules/.bin/gatsby serve -H 0.0.0.0
+make dev       # Run the Astro development server
+make lint      # Run ESLint across the site
+make test      # Run app tests, site lint, and Astro type checks
+make build     # Build the production site into site.v5/dist
+make preview   # Preview the production build
 ```
 
-**Package Security Warnings**: npm install shows 30+ vulnerabilities and deprecation warnings. These are expected from Gatsby dependencies and do not affect functionality. Do not attempt to fix these unless specifically required.
+Useful site-local commands:
+
+```bash
+cd site.v5
+make sync      # Sync Astro content collections/types
+make check     # Run Astro type checks
+make build     # Build the static site
+```
 
 ## Validation Requirements
 
-**Always validate changes by testing these complete scenarios:**
+Before publishing code changes:
 
-1. **Build Validation**: 
-   - Run `make test` (must show 100% coverage)
-   - Run `make build` (must complete without errors)
-   - Verify `site/public/` contains built artifacts
+1. Run `make test` from the repository root.
+2. Run `make build` for site or content changes.
+3. For RSS-related changes, verify `site.v5/dist/rss.xml` is generated.
+4. For Lambda handler changes, keep the Node 20 runtime target in mind and add
+   focused tests under `app/tests/` when behavior changes.
 
-2. **Development Server Validation**:
-   - Start dev server with proper timeout
-   - Navigate to `http://localhost:8000`
-   - Click through to individual blog posts
-   - Verify navigation, images, and styling work correctly
-   - Test at least one complete user journey (home → post → navigation)
+## Site Notes
 
-3. **Code Quality**: 
-   - ESLint must pass (part of `make test`)
-   - Jest tests must maintain 100% coverage
-   - Run `cd site && npm run format` before committing
+- Astro source lives in `site.v5/src/`.
+- Build output is `site.v5/dist/`.
+- Static assets are served from `content/` because `site.v5/astro.config.mjs`
+  maps `publicDir` there.
+- Content collections are configured in `site.v5/src/content.config.mjs`.
+- The RSS endpoint lives at `site.v5/src/pages/rss.xml.js`.
 
-## Repository Structure Details
+## Infrastructure Notes
 
-### Site Directory (`site/`)
-- **Main Gatsby application** with React components and content
-- **Custom plugins**: `gatsby-transformer-remark-tags/` and `gatsby-remark-transformer-pullquotes/`
-- **Tests**: Located in `site/tests/` using Jest and React Testing Library
-- **Content**: Markdown posts in `site/src/content/posts/`
-- **Configuration**: Uses CommonJS modules (gatsby-config.js, gatsby-node.js)
+- Deployments are normally performed by GitHub Actions on pushes to `master`.
+- The site deploy syncs `site.v5/dist/` to S3.
+- Lambda@Edge runtime configuration lives in `infra/application/lambda.tf`.
 
-### Testing Framework
-- **Jest** with 100% coverage requirement in all areas
-- **React Testing Library** for component testing  
-- **ESLint** with React and Jest plugins
-- Test files follow pattern: `*.test.js` in `tests/` directory
-
-### Build Artifacts
-- **Development**: `.cache/` directory (excluded from git)
-- **Production**: `site/public/` directory with static assets
-- **Images**: Processed by gatsby-plugin-sharp (adds significant build time)
-
-## Common File Locations
-
-**Configuration Files**:
-- `site/gatsby-config.js` - Gatsby configuration
-- `site/jest.config.js` - Jest testing configuration  
-- `site/eslint.config.mjs` - ESLint configuration
-- `Makefile` - Build automation scripts
-
-**Key Source Files**:
-- `site/src/components/` - React components
-- `site/src/templates/` - Gatsby page templates  
-- `site/src/content/posts/` - Blog post markdown files
-- `site/tests/` - All test files
-
-**Infrastructure**:
-- `.github/workflows/build.yml` - CI/CD pipeline
-- `infra/` - Terraform configuration for AWS deployment
-- `app/` - Lambda@Edge functions
-
-## Deployment Notes
-
-**CI/CD**: Automated via GitHub Actions on push to master branch
-**Target**: AWS S3 + CloudFront distribution  
-**Manual Deploy**: `make deploy` (requires AWS credentials)
-
-## Troubleshooting
-
-**Common Issues**:
-1. **gatsby command not found**: Use full path `./node_modules/.bin/gatsby`
-2. **Build timeouts**: Increase timeout to 15+ minutes for builds, 2+ minutes for dev server
-3. **Test failures**: Ensure 100% coverage is maintained when modifying code
-4. **Install issues**: Clean with `make clean` then `make install`
-
-**Performance Notes**:
-- Image processing during build is the primary time consumer
-- Development server warm-up includes image optimization
-- Gatsby caching significantly improves subsequent builds
-
-Follow these instructions precisely to work effectively with this codebase. The timing requirements and command paths are critical for success.
+Follow the current `Makefile` targets rather than older command paths.
