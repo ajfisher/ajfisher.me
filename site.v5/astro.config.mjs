@@ -2,6 +2,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { defineConfig } from 'astro/config';
+import { unified } from '@astrojs/markdown-remark';
 import icon from "astro-icon";
 import sitemap from '@astrojs/sitemap';
 import rehypeRaw from 'rehype-raw';
@@ -36,8 +37,10 @@ export default defineConfig({
   },
   trailingSlash: 'always',
   markdown: {
-    remarkPlugins: [remarkPullQuotes, remarkSlideshow, remarkReadingTime],
-    rehypePlugins: [rehypeRaw],
+    processor: unified({
+      remarkPlugins: [remarkPullQuotes, remarkSlideshow, remarkReadingTime],
+      rehypePlugins: [rehypeRaw],
+    }),
   },
   integrations: [
     icon(),
