@@ -15,6 +15,20 @@ make install
 npm install
 ```
 
+## Preview builds (subpath)
+
+To build the site for a preview path such as `/pr-123/`, set `PREVIEW_BASE` when running the build:
+
+```bash
+PREVIEW_BASE=/pr-123/ make build
+# or
+PREVIEW_BASE=/preview-master/ npm run build
+```
+
+If `PREVIEW_BASE` is unset, the site builds normally for `/`.
+
+Optional: override `SITE_URL` too if you want canonical/sitemap generation to target a different host during preview builds.
+
 ## Common commands (Makefile)
 
 ```bash

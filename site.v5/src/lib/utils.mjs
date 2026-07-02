@@ -1,5 +1,16 @@
 // A set of utility functions for various common tasks
 
+export const basePath = import.meta.env.BASE_URL || '/';
+
+export const withBase = (val = '/') => {
+  const base = basePath.endsWith('/') ? basePath.slice(0, -1) : basePath;
+  const path = String(val || '/');
+  if (!path || path === '/') return base || '/';
+  if (/^https?:\/\//.test(path) || path.startsWith('mailto:')) return path;
+  const normalized = path.startsWith('/') ? path : `/${path}`;
+  return `${base}${normalized}` || normalized;
+};
+
 // allows to transform image URLs to a format that suits astro set up on images
 export const imageTransform = (val) => {
   if (!val) return val;
@@ -12,6 +23,10 @@ export const imageTransform = (val) => {
   // get rid of relative paths in image URLs
   let transformed = val.replace('../../img/', '/img/');
   transformed = transformed.replace('../img/', '/img/');
+
+  if (transformed.startsWith('/img/')) {
+    return withBase(transformed);
+  }
 
   return transformed;
 }

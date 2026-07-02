@@ -1,4 +1,5 @@
 ---
+import { withBase } from '../lib/utils.mjs';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import notFoundImage from '../../../content/img/posts/404_page.png';
@@ -33,15 +34,15 @@ const seo = {
 
     <h2>Where to next?</h2>
     <p>
-      1. <a href="/">Go to the home page</a>: Check out recent articles
+      1. <a href={withBase('/')}>Go to the home page</a>: Check out recent articles
       and featured content.
     </p>
     <p>
-      2. <a href="/who/">Learn more about ajfisher</a>: Find out what I
+      2. <a href={withBase('/who/')}>Learn more about ajfisher</a>: Find out what I
       do and how I do it.
     </p>
     <p>
-      3. <a href="/blog/">Explore all articles</a>: Peruse the complete
+      3. <a href={withBase('/blog/')}>Explore all articles</a>: Peruse the complete
       archive of published content.
     </p>
   </section>
