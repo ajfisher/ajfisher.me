@@ -15,34 +15,11 @@ jobs:
               uses: actions/setup-node@v4
               with:
                   node-version: 22
-
-            - name: Cache site node modules
-              id: cache-sitev5-modules
-              uses: actions/cache@v4
-              with:
-                  path: ./site.v5/node_modules
-                  key: sitev5-build-${{hashFiles('**/site.v5/package-lock.json')}}
-                  restore-keys: sitev5-build-${{hashFiles('**/site.v5/package-lock.json')}}
+                  cache: npm
+                  cache-dependency-path: site.v5/package-lock.json
 
             - name: Install astro site deps
-              if: steps.cache-sitev5-modules.outputs.cache-hit != 'true'
-              run: cd site.v5 && npm install
-
-            - name: Dist output
-              id: astro-build
-              uses: actions/cache@v4
-              with:
-                  path: ./site.v5/dist
-                  key: sitev5-dist-${{hashFiles('**/site.v5/dist/**')}}
-                  restore-keys: sitev5-dist-
-
-            - name: Astro Cache output
-              id: astro-cache-build
-              uses: actions/cache@v4
-              with:
-                  path: ./site.v5/.astro
-                  key: sitev5-cache-${{hashFiles('**/site.v5/.astro/**')}}
-                  restore-keys: sitev5-cache-
+              run: cd site.v5 && npm ci
 
             - name: Lint and astro check
               run: cd site.v5 && make lint && make check
