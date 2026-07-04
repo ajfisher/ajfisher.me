@@ -9,7 +9,7 @@ The Lambda@Edge handlers in `app/` still run on `nodejs20.x` as configured in
 
 ## Install
 
-Clone the repo and install all dependencies:
+Clone the repo and install the site dependencies:
 
 ```bash
 git clone https://github.com/ajfisher/ajfisher.me

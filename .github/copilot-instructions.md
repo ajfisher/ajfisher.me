@@ -28,7 +28,7 @@ The site build runtime and edge handler runtime are intentionally different.
 
 ## Working Effectively
 
-Bootstrap the repository with:
+Bootstrap the site dependencies from the repository root with:
 
 ```bash
 make install
