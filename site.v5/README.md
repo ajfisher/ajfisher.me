@@ -4,7 +4,7 @@ Astro-based site for ajfisher.me that lives in `site.v5/`.
 
 ## Requirements
 
-- Node.js `>=22.12.0` (Astro 6 requirement; CI uses Node 22)
+- Node.js `>=22.12.0` (Astro 7 requirement; CI uses Node 22)
 - npm
 
 ## Install

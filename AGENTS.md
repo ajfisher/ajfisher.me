@@ -24,7 +24,7 @@ all targets. The most frequently used ones are:
 
 Runtime versions are intentionally split:
 
-- Use Node `>=22.12.0` for `site.v5/` development, tests, and builds. Astro 6
+- Use Node `>=22.12.0` for `site.v5/` development, tests, and builds. Astro 7
   requires this, and CI uses Node 22 for the site build workflow.
 - The Lambda@Edge handlers in `app/` still target Node 20 because Terraform sets
   their runtime to `nodejs20.x` in `infra/application/lambda.tf`. Do not change

@@ -8,7 +8,7 @@ details appear to have changed.
 This repository contains the Astro-based personal website for `ajfisher.me`
 plus the CloudFront Lambda@Edge handlers and Terraform infrastructure.
 
-- `site.v5/` - Astro 6 static site.
+- `site.v5/` - Astro 7 static site.
 - `content/` - Shared markdown content, images, and static assets.
 - `app/` - Lambda@Edge handlers for CloudFront.
 - `infra/` - Terraform infrastructure configuration.
@@ -19,7 +19,7 @@ plus the CloudFront Lambda@Edge handlers and Terraform infrastructure.
 
 The site build runtime and edge handler runtime are intentionally different.
 
-- Use Node `>=22.12.0` for `site.v5/` development, tests, and builds. Astro 6
+- Use Node `>=22.12.0` for `site.v5/` development, tests, and builds. Astro 7
   requires this, and `.github/workflows/astro.build.yml` uses Node 22.
 - The Lambda@Edge handlers in `app/` still target Node 20 because
   `infra/application/lambda.tf` sets their runtime to `nodejs20.x`.

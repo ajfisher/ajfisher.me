@@ -36,6 +36,7 @@ export default defineConfig({
     format: 'directory', // Ensures /path/to/page/ index.html structure
   },
   trailingSlash: 'always',
+  compressHTML: true,
   markdown: {
     processor: unified({
       remarkPlugins: [remarkPullQuotes, remarkSlideshow, remarkReadingTime],
