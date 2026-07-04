@@ -15,7 +15,7 @@ is split across several key directories:
 Use the provided `Makefile` to perform common tasks. Run `make help` to list
 all targets. The most frequently used ones are:
 
-- `make install` – install all dependencies (root + site).
+- `make install` – install site dependencies.
 - `make dev` – run the Astro development server.
 - `make lint` – run ESLint across the site.
 - `make test` – run linting and Astro type checks.
