@@ -9,40 +9,17 @@ jobs:
 
         steps:
             - name: Checkout code
-              uses: actions/checkout@v4
+              uses: actions/checkout@v7
 
             - name: Setup Node
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@v6
               with:
                   node-version: 22
-
-            - name: Cache site node modules
-              id: cache-sitev5-modules
-              uses: actions/cache@v4
-              with:
-                  path: ./site.v5/node_modules
-                  key: sitev5-build-${{hashFiles('**/site.v5/package-lock.json')}}
-                  restore-keys: sitev5-build-${{hashFiles('**/site.v5/package-lock.json')}}
+                  cache: npm
+                  cache-dependency-path: site.v5/package-lock.json
 
             - name: Install astro site deps
-              if: steps.cache-sitev5-modules.outputs.cache-hit != 'true'
-              run: cd site.v5 && npm install
-
-            - name: Dist output
-              id: astro-build
-              uses: actions/cache@v4
-              with:
-                  path: ./site.v5/dist
-                  key: sitev5-dist-${{hashFiles('**/site.v5/dist/**')}}
-                  restore-keys: sitev5-dist-
-
-            - name: Astro Cache output
-              id: astro-cache-build
-              uses: actions/cache@v4
-              with:
-                  path: ./site.v5/.astro
-                  key: sitev5-cache-${{hashFiles('**/site.v5/.astro/**')}}
-                  restore-keys: sitev5-cache-
+              run: cd site.v5 && npm ci
 
             - name: Lint and astro check
               run: cd site.v5 && make lint && make check
@@ -51,7 +28,7 @@ jobs:
               run: cd site.v5 && make sync && make build
 
             - name: Configure AWS CLI
-              uses: aws-actions/configure-aws-credentials@v4
+              uses: aws-actions/configure-aws-credentials@v6
               with:
                 aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
                 aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
