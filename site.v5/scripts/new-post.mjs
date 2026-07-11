@@ -42,17 +42,59 @@ export const normalizeTags = (tags = '') => String(tags ?? '')
   .filter(Boolean)
   .join(', ');
 
-export const datePrefixFromPostDate = (date) => {
+const parsePostDate = (date) => {
   const dateString = String(date ?? '');
-  const match = dateString.match(/^(\d{4})-(\d{2})-(\d{2})(?:\s|T|$)/);
+  const match = dateString.match(
+    /^(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}):(\d{2}):(\d{2})(Z|[+-]\d{2}:\d{2}))?$/,
+  );
 
-  if (!match || Number.isNaN(Date.parse(dateString.replace(' ', 'T')))) {
+  if (!match) {
     throw new Error(
-      'Date must begin with YYYY-MM-DD and be parseable by JavaScript Date.',
+      'Date must be YYYY-MM-DD or YYYY-MM-DD HH:mm:ss+tz.',
     );
   }
 
-  return `${match[1]}-${match[2]}-${match[3]}`;
+  const [, yearValue, monthValue, dayValue, hourValue, minuteValue, secondValue] =
+    match;
+  const year = Number(yearValue);
+  const month = Number(monthValue);
+  const day = Number(dayValue);
+  const calendarDate = new Date(Date.UTC(year, month - 1, day));
+
+  if (
+    calendarDate.getUTCFullYear() !== year
+    || calendarDate.getUTCMonth() !== month - 1
+    || calendarDate.getUTCDate() !== day
+  ) {
+    throw new Error('Date must contain a valid calendar day.');
+  }
+
+  if (hourValue !== undefined) {
+    const hour = Number(hourValue);
+    const minute = Number(minuteValue);
+    const second = Number(secondValue);
+
+    if (hour > 23 || minute > 59 || second > 59) {
+      throw new Error('Date time must contain a valid clock time.');
+    }
+  }
+
+  const parsedDate = new Date(dateString.replace(' ', 'T'));
+
+  if (Number.isNaN(parsedDate.getTime())) {
+    throw new Error('Date must be parseable by JavaScript Date.');
+  }
+
+  return parsedDate;
+};
+
+export const datePrefixFromPostDate = (date) => {
+  const parsedDate = parsePostDate(date);
+  const year = parsedDate.getUTCFullYear();
+  const month = pad(parsedDate.getUTCMonth() + 1);
+  const day = pad(parsedDate.getUTCDate());
+
+  return `${year}-${month}-${day}`;
 };
 
 const quoteYamlString = (value) => JSON.stringify(value);
@@ -69,7 +111,7 @@ export const renderPostMarkdown = ({ title, date, slug, tags }) => {
   ];
 
   if (normalizedTags) {
-    lines.push(`tags: ${normalizedTags}`);
+    lines.push(`tags: ${quoteYamlString(normalizedTags)}`);
   }
 
   lines.push('---', '');

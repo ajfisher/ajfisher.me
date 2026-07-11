@@ -48,6 +48,10 @@ npm run new-post
 npm run new-post -- --title "My Post" --tags "ai, development"
 ```
 
+The scaffold filename uses the same UTC date basis as generated post URLs, so
+early-morning local dates with a positive timezone offset may produce a previous
+day filename to keep source links aligned.
+
 ## Content and assets
 
 - Static assets are served from `../content` because `publicDir` is mapped

@@ -49,7 +49,7 @@ date: 2026-07-11 12:00:00+10:00
 layout: post
 slug: my-post
 title: "My Post"
-tags: ai, development
+tags: "ai, development"
 ---
 
 `,
@@ -80,10 +80,21 @@ test('builds the post path from the date and slug', () => {
   assert.equal(
     buildPostPath({
       repoRoot: '/repo',
-      date: '2026-07-11 12:00:00+10:00',
+      date: '2026-07-11 08:00:00+10:00',
       slug: 'my-post',
     }),
-    path.join('/repo', 'content', 'text', 'posts', '2026-07-11-my-post.md'),
+    path.join('/repo', 'content', 'text', 'posts', '2026-07-10-my-post.md'),
+  );
+});
+
+test('rejects invalid calendar dates', () => {
+  assert.throws(
+    () => buildPostPath({
+      repoRoot: '/repo',
+      date: '2026-02-31 12:00:00+10:00',
+      slug: 'bad-date',
+    }),
+    /valid calendar day/,
   );
 });
 
