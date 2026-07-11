@@ -25,6 +25,16 @@ Start the development server with:
 make dev
 ```
 
+Create a new post scaffold with:
+
+```bash
+npm run new-post
+# or
+npm run new-post -- --title "My Post" --tags "ai, development"
+# or
+make post
+```
+
 ## Build
 
 To generate the production build run:

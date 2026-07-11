@@ -1,4 +1,4 @@
-.PHONY: help install install-site clean clean-site clean-meta dev preview lint test pre-commit build deploy
+.PHONY: help install install-site clean clean-site clean-meta dev preview post lint test pre-commit build deploy
 
 help:
 	@echo "install:         Install site dependencies"
@@ -8,8 +8,9 @@ help:
 	@echo "clean-meta:      Remove stale root node_modules"
 	@echo "dev:             Run the Astro development server"
 	@echo "preview:         Preview the production build"
+	@echo "post:            Scaffold a new post"
 	@echo "lint:            Lint the site"
-	@echo "test:            Run app tests, lint, and Astro type checks"
+	@echo "test:            Run app tests, script tests, lint, and Astro type checks"
 	@echo "pre-commit:      Run lint for site"
 	@echo "embeddings:      Run the embeddings similarity script"
 	@echo "build:           Build the site for deploy"
@@ -46,6 +47,9 @@ dev:
 
 preview:
 	cd ./site.v5 && make preview
+
+post:
+	npm run new-post -- $(ARGS)
 
 embeddings:
 	cd ./utils/embeddings && make build
