@@ -13,6 +13,7 @@ const {
   featureimage = "",
   excerpt = "",
   date,
+  author = "ajfisher",
   readingTime = 0,
   wordCount = 0,
   compact = false,
@@ -36,12 +37,15 @@ const publishDate = (new Date(date)).toISOString().slice(0,10);
 ---
 <li
   class:list={['listitem', { compact }]}
-  itemscope="blogPost"
+  itemprop="blogPost"
+  itemscope
   itemtype="https://schema.org/BlogPosting"
 >
+  <meta itemprop="author" content={author} />
   <div>
     <a itemprop="url" href={`/${uri}`}>
       <Image src={imageTransform(image)} alt={title}
+        itemprop="image"
         layout="constrained"
         width="600" height="250" loading="lazy"/>
     </a>
@@ -55,7 +59,7 @@ const publishDate = (new Date(date)).toISOString().slice(0,10);
     <h3 itemprop="headline"><a href={`/${uri}`}>{title}</a></h3>
     <p class="postdate">
       <time itemprop="datePublished" datetime={publishDate}>{longDate(date)}</time></p>
-    <p itemprop="abstract" itemtype="https://schema.org/CreativeWork">{excerpt}</p>
+    <p itemprop="abstract">{excerpt}</p>
     <p class="postdata" aria-hidden="true">
       <meta itemprop="timeRequired" content={`PT${readingTime}M`} />
       <span>
