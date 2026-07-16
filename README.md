@@ -54,3 +54,7 @@ make deploy
 
 For front matter schema details and content notes see
 [site.v5/README.md](site.v5/README.md).
+
+Search indexing conventions, the current legacy URL review, and Search Console
+follow-up steps are recorded in
+[docs/search-console.md](docs/search-console.md).
