@@ -2,7 +2,7 @@
 title: "When does travel planning get seriously upended by AI?"
 slug: when-will-ai-disrupt-travel
 author: ajfisher
-date: 2025-02-27 10:30:00+11:00
+date: 2025-02-26 12:00:00+11:00
 layout: post
 excerpt: >
     AI is everywhere in the travel industry - just not where most travellers

@@ -2,7 +2,7 @@
 title: "Gemini 3: initial usage thoughts"
 slug: gemini-3-initial-thoughts
 author: ajfisher
-date: 2025-11-20 09:17:07+11:00
+date: 2025-11-19 12:00:00+11:00
 layout: post
 excerpt: >
     Gemini 3 feels tighter, more consistent in long responses, and more

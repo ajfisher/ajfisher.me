@@ -1,6 +1,6 @@
 ---
 author: ajfisher
-date: 2015-01-21 10:00:00+11:00
+date: 2015-01-20 12:00:00+11:00
 layout: post
 slug: context-in-ambient-technology
 title: The role of context on ambient technologies

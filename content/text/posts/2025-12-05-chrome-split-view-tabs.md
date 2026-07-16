@@ -2,7 +2,7 @@
 title: "Chrome finally adds split view tabs"
 slug: chrome-split-view-tabs
 author: ajfisher
-date: 2025-12-05 09:38:21+11:00
+date: 2025-12-04 12:00:00+11:00
 layout: post
 excerpt: >
     Split View for tabs arrives in Chrome, making side-by-side work and
