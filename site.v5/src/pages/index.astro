@@ -1,4 +1,5 @@
 ---
+import { withBase } from '../lib/utils.mjs';
 // @ts-nocheck
 import { getCollection } from 'astro:content';
 
@@ -60,7 +61,7 @@ const headerData = headerPost ? mergeEntryData(headerPost) : {};
     <h2>Recent posts</h2>
     <ListItems items={recent} />
 
-    <p><a href="/blog/">See all posts</a></p>
+    <p><a href={withBase('/blog/')}>See all posts</a></p>
   </section>
 </BaseLayout>
 
