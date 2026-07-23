@@ -1,4 +1,4 @@
-.PHONY: help install clean clean-build clean-deps dev build preview lint sync check test
+.PHONY: help install clean clean-build clean-deps dev build preview post lint sync check script-test test
 
 help:
 	@echo "install:         Install dependencies"
@@ -8,10 +8,12 @@ help:
 	@echo "dev:             Run the Astro development server"
 	@echo "build:           Build the site"
 	@echo "preview:         Preview the production build"
+	@echo "post:            Scaffold a new post"
 	@echo "lint:            Run ESLint"
 	@echo "sync:            Sync Astro content collections/types"
 	@echo "check:           Run Astro type check"
-	@echo "test:            Run lint and type check"
+	@echo "script-test:     Run Node script tests"
+	@echo "test:            Run script tests, lint, and type check"
 
 install:
 	@echo "Installing dependencies"
@@ -36,6 +38,9 @@ build:
 preview:
 	npm run preview
 
+post:
+	npm run new-post -- $(ARGS)
+
 lint:
 	npm run lint
 
@@ -45,4 +50,7 @@ sync:
 check:
 	./node_modules/.bin/astro check
 
-test: lint check
+script-test:
+	node --test scripts/*.test.mjs
+
+test: script-test lint check

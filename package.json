@@ -4,6 +4,7 @@
   "description": "AJ Fisher website",
   "main": "index.js",
   "scripts": {
+    "new-post": "node site.v5/scripts/new-post.mjs",
     "test": "make test"
   },
   "repository": {

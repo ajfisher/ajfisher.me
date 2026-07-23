@@ -21,10 +21,11 @@ npm install
 make dev        # Start the Astro dev server
 make build      # Build the production site (outputs to dist/)
 make preview    # Preview the production build
+make post       # Scaffold a new post
 make lint       # Run ESLint
 make sync       # Sync Astro content collections/types
 make check      # Run Astro type check
-make test       # Run lint + type check
+make test       # Run script tests + lint + type check
 ```
 
 ## npm scripts and Astro CLI
@@ -33,11 +34,23 @@ make test       # Run lint + type check
 npm run dev
 npm run build
 npm run preview
+npm run new-post
 npm run lint
 
 npx astro sync
 npx astro check
 ```
+
+From the repository root, the preferred post scaffold command is:
+
+```bash
+npm run new-post
+npm run new-post -- --title "My Post" --tags "ai, development"
+```
+
+The scaffold filename uses the same UTC date basis as generated post URLs, so
+early-morning local dates with a positive timezone offset may produce a previous
+day filename to keep source links aligned.
 
 ## Content and assets
 
