@@ -2,7 +2,7 @@
 title: "Retail numbers are \"fine\" (but margins less so)"
 slug: retail-numbers-are-fine
 author: ajfisher
-date: 2024-01-16 09:19:08+11:00
+date: 2024-01-15 12:00:00+11:00
 layout: post
 excerpt: >
     Retail revenues are stabilising, but heavy discounting is pulling

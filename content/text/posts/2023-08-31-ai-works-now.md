@@ -1,6 +1,6 @@
 ---
 author: ajfisher
-date: 2023-08-31 10:00:00+11:00
+date: 2023-08-30 12:00:00+10:00
 layout: post
 slug: ai-works-now
 title: AI in 2023 - it works well enough now

@@ -1,6 +1,6 @@
 ---
 author: ajfisher
-date: 2016-01-27 10:00:00+11:00
+date: 2016-01-26 12:00:00+11:00
 layout: post.hbt
 slug: road-to-interchange
 title: The meandering journey of NodeBots Interchange
@@ -301,4 +301,3 @@ dive in further:
 * [Ping sensor](https://github.com/ajfisher/nodebots-hcsr04)
 * [How to build a nodebots backpack](https://github.com/ajfisher/interchange-arduino)
 * [Using a backpack - by Derek Wheelden](http://omit.io/2015/08/20/beginners-guide-to-backpacks/)
-

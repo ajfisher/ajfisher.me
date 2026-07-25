@@ -1,6 +1,6 @@
 ---
 author: ajfisher
-date: 2023-02-13 10:00:00+11:00
+date: 2023-02-12 12:00:00+11:00
 layout: post
 slug: podcast-enterprise-ai
 title: ChatGPT and Generative AI in the enterprise

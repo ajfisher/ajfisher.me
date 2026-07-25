@@ -2,7 +2,7 @@
 title: "ChatGPT-4o image generation improvements"
 slug: chatgpt-4o-image-generation-update
 author: ajfisher
-date: 2025-03-26 10:13:50+11:00
+date: 2025-03-25 12:00:00+11:00
 layout: post
 excerpt: >
     ChatGPT-4o's new image capabilities add multi-modal context and

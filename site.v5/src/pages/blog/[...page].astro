@@ -75,7 +75,7 @@ if (featuredPost) {
       isFeatured={true}
     />
   </Fragment>
-  <section itemtype="https://schema.org/Blog" class="list">
+  <section itemscope itemtype="https://schema.org/Blog" class="list">
     <h1>Article archive - page {page.currentPage}</h1>
     <ListItems items={posts} />
     <Pagination { ...{ page } } />

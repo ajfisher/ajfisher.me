@@ -45,7 +45,10 @@ export default defineConfig({
   },
   integrations: [
     icon(),
-    sitemap({ changefreq: 'daily', priority: 0.7 }),
+    // Let search engines decide crawl frequency and relative priority. Applying
+    // the same values to every page makes old posts look as volatile as the
+    // homepage and does not provide a useful signal.
+    sitemap(),
     iconGenerator(),
   ],
   image: {

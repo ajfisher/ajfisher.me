@@ -14,7 +14,11 @@ excerpt: >
 listimage: ../../img/posts/fuzzy_flights.png 
 ---
 
-I've talked about fuzzy logic for use by the retail sector [in the past](2007/03/fuzzys-where-its-at-or-will-be) and the project I'm involved in there is maturing nicely. This week I've really realised how, as software engineers we need to grasp the nettle and move a lot of service based software toward fuzzy systems for usability reasons.
+I've talked about fuzzy logic for use by the retail sector
+[in the past](/2007/03/05/fuzzys-where-its-at-or-will-be-eventually/) and the
+project I'm involved in there is maturing nicely. This week I've really
+realised how, as software engineers we need to grasp the nettle and move a lot
+of service based software toward fuzzy systems for usability reasons.
 
 Nearly everyone these days has booked a flight online and when it came time to booking a holiday to Australia this winter, the first thing I did was fire up a browser and head to [expedia](http://www.expedia.co.uk/) and [travelocity](http://www.travelocity.co.uk/).
 
