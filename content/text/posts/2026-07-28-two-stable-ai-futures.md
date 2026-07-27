@@ -17,6 +17,7 @@ imageby: ajfisher - ChatGPT Images
 featureimage: ../../img/posts/ai-futures-hero.png
 largetitle: true
 tags: ai, security, strategy, government
+featured: true
 ---
 
 In my recent essay, I explored what happens if the effective AI capability
