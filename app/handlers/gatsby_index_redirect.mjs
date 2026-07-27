@@ -1,10 +1,51 @@
-// this handler looks for requests that are effectively for directories
-// coming through cloudfront. As it doesn't know that that means to serve
-// the index file, it just throws a 404. This will perform the appropriate
-// rerouting of the URL so that S3 can retrieve the right file and respond
-// correctly.
+// This handler resolves directory-style routes to their S3 index files and
+// returns permanent responses for legacy URLs with clear replacements.
 
 const MARKDOWN_PAGE_SLUGS = new Set(['who', 'colophon', 'dis-everything']);
+
+const PERMANENT_REDIRECTS = new Map([
+  [
+    '/2023/02/13/podcast-enterprise-ai/',
+    '/2023/02/12/podcast-enterprise-ai/'
+  ],
+  [
+    '/2007/11/19/fuzzy-logic-could-book-more-flights/2007/03/' +
+      'fuzzys-where-its-at-or-will-be/',
+    '/2007/03/05/fuzzys-where-its-at-or-will-be-eventually/'
+  ],
+  ['/tagged/johnny-five/', '/tagged/nodebots/'],
+  ['/2011/12/20/', '/2011/12/20/towards-a-sensor-commons/'],
+  ['/2011/12/20/towards-/', '/2011/12/20/towards-a-sensor-commons/'],
+  [
+    '/2007/11/27/adding-cron-jobs-to-a-qnap-server/',
+    '/2007/11/26/adding-cron-jobs-to-a-qnap-server/'
+  ],
+  ['/tagged/sms/', '/tagged/mobile/'],
+  ['/tagged/data/', '/tagged/data-science/'],
+]);
+
+const redirectLookupPath = (uri = '') => {
+  if (uri.endsWith('/') || uri.includes('.')) {
+    return uri;
+  }
+
+  return `${uri}/`;
+};
+
+const permanentRedirect = (location, querystring = '') => ({
+  status: '301',
+  statusDescription: 'Moved Permanently',
+  headers: {
+    location: [{
+      key: 'Location',
+      value: querystring ? `${location}?${querystring}` : location,
+    }],
+    'cache-control': [{
+      key: 'Cache-Control',
+      value: 'public, max-age=31536000',
+    }],
+  },
+});
 
 const getHeaderValue = (headers = {}, headerName) => {
   if (!headerName) {
@@ -79,6 +120,12 @@ const ensureIndexFile = (uri, filename) => {
 export const handler = async (event) => {
   const request = event.Records[0].cf.request;
   const { uri } = request;
+  const method = request.method ?? 'GET';
+  const redirectTarget = PERMANENT_REDIRECTS.get(redirectLookupPath(uri));
+
+  if ((method === 'GET' || method === 'HEAD') && redirectTarget) {
+    return permanentRedirect(redirectTarget, request.querystring);
+  }
 
   if (uri.endsWith('%7Bauthourl%7D')) {
     // this is dealing with a bunch of the 404 errors we see where there's a
@@ -90,13 +137,6 @@ export const handler = async (event) => {
     // this is dealing with a bunch of the 404 errors we see where there's a
     // {authourl} appended to the end of the request - just remove this
     request.uri = uri.replace('{authourl}', '');
-  }
-
-  if (uri.endsWith('/tagged/sms/')) {
-    request.uri = '/tagged/mobile/';
-  }
-  if (uri.endsWith('/tagged/data/')) {
-    request.uri = '/tagged/data-science/';
   }
 
   const serveMarkdown = needsMarkdown(request.uri, request.headers);
