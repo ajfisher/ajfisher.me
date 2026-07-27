@@ -81,7 +81,7 @@ Many of those in their 30s got their first intro to programming by doing this:
 >run
 ```
 
-Immediacy of feedback is a powerful learning step and one that simply cannot be replicated by languages like C. Download and install your build tools, create make files, do your compilation and linking steps. Oops, syntax error! Now go back and do this all again once you fix it. Even as a seasoned embedded developer I **HATE** going through this process a bajillion times a day.
+Immediacy of feedback is a powerful learning step and one that simply cannot be replicated by languages like C. Download and install your build tools, create make files, do your compilation and linking steps. Oops, syntax error! Now go back and do this all again once you fix it. Even as a seasoned embedded developer I *HATE* going through this process a bajillion times a day.
 
 As for accessibility, JavaScript is accessible through the sheer amount of it out there. As a web language there's lots of it documented, web developers love to blog about it and there are libraries, snippets and howtos by the million.
 
@@ -132,7 +132,7 @@ I've been playing around with web controlled "things" for years. For most of tha
 
 I used [Web Sockets to talk to hardware devices](https://github.com/ajfisher/django-arduino-socketio) very early on and was consistently dismissed (even ridiculed) because HTTP & WS are heavy protocols and there are technically better ways to do it (there are eg [MQTT](http://mqtt.org/)). Now this is nowhere near an extreme position for these types of comms. Why? Because immediacy gives you the ability to prototype rapidly. A web sockets server in JS can be implemented in 15 lines of code plus "npm install express socketio firmata"). Accessibility means that you can find a LOT of developers who can do exactly that code above and actually know how it's going to work even without hardware knowledge. Try and do the same thing with tech like MQTT or [Protocol Buffers](http://en.wikipedia.org/wiki/Protocol_Buffers) and your pool of talent drops spectacularly.
 
-So as this hardware has become more accessible, more developers are attempting to work with it. This is a **GOOD THING** because through exploration of a design space we get more coverage with the more practitioners. This is why the web has taken over just about every facet of our lives, because we have designers and developers tinkering on new ways of doing things or new ways of conveying information all the time. This effect should not be underestimated and we are only at the start of it.
+So as this hardware has become more accessible, more developers are attempting to work with it. This is a *GOOD THING* because through exploration of a design space we get more coverage with the more practitioners. This is why the web has taken over just about every facet of our lives, because we have designers and developers tinkering on new ways of doing things or new ways of conveying information all the time. This effect should not be underestimated and we are only at the start of it.
 
 One of my more contentious views is that your average web developer or designer in 2013 would have been a cabinet-maker, smith or instrument maker in 1913. I won't get into all the details of this but suffice to say that most developers and designers who work with the web have an intrinsic desire to "make" things. Most of them even refer to web work as a "craft" as much as a profession.
 

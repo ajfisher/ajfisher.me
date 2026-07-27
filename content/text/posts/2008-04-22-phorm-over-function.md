@@ -24,7 +24,7 @@ Tim Berners-Lee came out saying he would move ISP if he found out they were usin
 
 For me this is a case of the slow erosion of privacy at the hands of our ISPs. In a massively competitive market where margins are being squeezed ever tighter, the sale of their user data to Phorm must have seemed like the proverbial golden goose.
 
-It won't take long for someone to cotton onto the flip side of this and market aggressively on the privacy front. Talk Talk made huge inroads as an ISP on the back of their "The Internet should be free" campaign with regard to price (being bundled as it was with other services). Who will be the first to play the "Internet should be private" card and sign up to a deal **not** using Phorm or other tracking software?
+It won't take long for someone to cotton onto the flip side of this and market aggressively on the privacy front. Talk Talk made huge inroads as an ISP on the back of their "The Internet should be free" campaign with regard to price (being bundled as it was with other services). Who will be the first to play the "Internet should be private" card and sign up to a deal *not* using Phorm or other tracking software?
 
 In my cynical world view, I think the security firms have realised this and it is 99% of the reason for why they are looking at it all as the anti-spy, -mal and -virus software is worth billions.
 

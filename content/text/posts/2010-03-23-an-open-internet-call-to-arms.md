@@ -46,7 +46,7 @@ Parent: "Yes I agree, we must protect our children from this type of content"
 
 I've seen this exact argument play out at least twice now with friends and family. The problem we have is it's too easy for the Filter Lobby to recruit the average population into the fold and I suspect this is where Conroy's getting his base from. The only way to overturn this scheme is to get the average person involved, and to do that the technical arguments need to support but not dominate the conversation.
 
-The only way I see of getting out of this mess is to **SHOW** the average person what the extent of this scheme could do.
+The only way I see of getting out of this mess is to *SHOW* the average person what the extent of this scheme could do.
 
 ### A call to arms
 
