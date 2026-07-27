@@ -99,7 +99,7 @@ which is not insignificant - and a lot more than 10% are using iPhone 3G and
 3Gs' so there's hardware concerns as well as software ones to consider.
 
 Just about every developer with some degree of experience has to deal with a
-fragmentation issue at some point. If you want to see **real** fragmentation in
+fragmentation issue at some point. If you want to see *real* fragmentation in
 action, become a PC game developer for 18 months - just about every component
 can be changed in a PC and cause the computer to have very different
 capabilities and developer headaches.

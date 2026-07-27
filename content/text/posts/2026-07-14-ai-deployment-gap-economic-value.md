@@ -38,8 +38,8 @@ particularly given the growing appetite among governments and model companies
 for greater control over access and capability.
 
 But I’ve arrived at the same question from a different direction - the ability
-of organisations to absorb and realise the benefits of **the AI that is already
-available.**
+of organisations to absorb and realise the benefits of the AI that is already
+available.
 
 If we leave aside the uncertainty of model improvement for a moment, we can ask
 a new question.

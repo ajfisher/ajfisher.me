@@ -18,7 +18,7 @@ For those two weeks I [searched](http://www.google.com), I [tweeted](http://twit
 
 This random change in behaviour was a result of several factors. First I wasn't working and wasn't on call, second I didn't do any programming or other origination of content, everything I did online via my mobile phone. For two weeks straddling 2010 and 2011 I had adopted a [Jobsian](http://en.wiktionary.org/wiki/Jobsian) approach to the use of my technology - one that was totally integrated into my daily life. <b>My computing had become first and foremost consumption driven but it required no "computer".</b>
 
-My dad got a [Galaxy S Tab](http://www.samsung.com/au/smartphone/galaxy-tab/) for Christmas - something he said that I laughed off at the time has since been nagging me. His question? "What can I **DO** with this thing?" My reply at the time was a flippant, "nothing, it's a consumption device".
+My dad got a [Galaxy S Tab](http://www.samsung.com/au/smartphone/galaxy-tab/) for Christmas - something he said that I laughed off at the time has since been nagging me. His question? "What can I *DO* with this thing?" My reply at the time was a flippant, "nothing, it's a consumption device".
 
 The full meaning of this only came home after watching [manufacturer after manufacturer](http://www.engadget.com/features/tablets-at-ces-2011/) parade a seemingly infinite number of tablet computing devices, most of which were running [Android](http://www.android.com/) - as much a consumption oriented operating system as [Apple's iOS](http://www.apple.com/ipad/).
 

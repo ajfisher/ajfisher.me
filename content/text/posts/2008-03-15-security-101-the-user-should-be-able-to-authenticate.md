@@ -14,7 +14,7 @@ Are you listening Barclays?
 
 I like security - particularly data security and in very particular data security that protects my personal information ([unlike a certain Uk government department a few months back](http://technologytreason.blogspot.com/2007/11/why-was-data-being-passed-on-disc-and.html)).
 
-However, I've been around this game long enough, worked for a [bank](http://www.citibank.com/) long enough and built more web applications capturing user data for long enough that I know there is one fundamental truth when it comes to data security and that is: **pragmatism**.
+However, I've been around this game long enough, worked for a [bank](http://www.citibank.com/) long enough and built more web applications capturing user data for long enough that I know there is one fundamental truth when it comes to data security and that is: *pragmatism*.
 
 When I was at Uni I was told, "The only secure system is one that has no network connection, no keyboard or mouse and most of all no users" (and I apologise [Dr Fekete](http://www.it.usyd.edu.au/about/people/staff/fekete.shtml) for bastardising your phrase but you can't have done a bad job for me to remember it 15 years later!).
 

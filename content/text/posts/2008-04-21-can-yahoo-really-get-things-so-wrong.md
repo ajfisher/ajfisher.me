@@ -11,7 +11,7 @@ excerpt: >
     email filtering.
 ---
 
-Yahoo are one of the original dotcoms. They've been around for a **long** time so they should know their business. Imagine my surprise when one of my clients starts complaining that their confirmation emails to yahoo email accounts are permanently being binned as is everything else they send - including personal communications.
+Yahoo are one of the original dotcoms. They've been around for a *long* time so they should know their business. Imagine my surprise when one of my clients starts complaining that their confirmation emails to yahoo email accounts are permanently being binned as is everything else they send - including personal communications.
 
 Like most mail providers, free or otherwise, Yahoo have a spam policy that will look at an inbound email and then drop it in your inbox or spam folder depending on how it is classified.
 
