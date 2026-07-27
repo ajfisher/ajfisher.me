@@ -20,7 +20,8 @@
     "humanize-plus": "^1.8.2",
     "mdast-util-to-string": "^4.0.0",
     "rehype-raw": "^7.0.0",
-    "unist-util-visit": "^5.0.0"
+    "unist-util-visit": "^5.0.0",
+    "yaml": "^2.8.2"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.6",

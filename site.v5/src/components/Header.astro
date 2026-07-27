@@ -11,6 +11,7 @@ const {
   featureimage = '',
   excerpt = '',
   date,
+  updated,
   imageby = '',
   largetitle = false,
   smalltitle = false,
@@ -46,6 +47,9 @@ const titleClass = largetitle ? 'enlarge' : smalltitle ? 'shrink' : '';
       )}
     { typeof(date) !== 'undefined' && (
       <p class="date">Published: {longDate(date)}</p>
+    )}
+    { typeof(updated) !== 'undefined' && (
+      <p class="date">Updated: {longDate(updated)}</p>
     )}
     { readingTime > 0 && wordCount > 0 && (
       <p class="postdata">

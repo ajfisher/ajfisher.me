@@ -10,8 +10,12 @@ import remarkPullQuotes from './src/lib/remark-pullquotes.mjs';
 import remarkSlideshow from './src/lib/remark-slideshow.mjs';
 import { remarkReadingTime } from './src/lib/remark-reading-time.mjs';
 import { generateIcons } from './scripts/generate-icons.mjs';
+import { loadSearchPolicy } from './scripts/load-search-policy.mjs';
+import { createSitemapSerializer } from './src/lib/search-policy.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const contentDirectory = path.resolve(__dirname, '../content');
+const searchPolicy = await loadSearchPolicy({ contentDirectory });
 
 const iconGenerator = () => ({
   name: 'icon-generator',
@@ -48,7 +52,9 @@ export default defineConfig({
     // Let search engines decide crawl frequency and relative priority. Applying
     // the same values to every page makes old posts look as volatile as the
     // homepage and does not provide a useful signal.
-    sitemap(),
+    sitemap({
+      serialize: createSitemapSerializer(searchPolicy),
+    }),
     iconGenerator(),
   ],
   image: {
