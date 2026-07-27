@@ -123,6 +123,11 @@ article h5 {
     color: var(--dark-text-colour);
 }
 
+article p strong {
+    font-family: var(--heading-font-family);
+    color: var(--dark-text-colour);
+}
+
 /** # TODO: review these styles as no gatsby **/
 
 article p.caption,
