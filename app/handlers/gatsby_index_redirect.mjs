@@ -47,6 +47,16 @@ const permanentRedirect = (location, querystring = '') => ({
   },
 });
 
+const isRedirectMethod = (method) => method === 'GET' || method === 'HEAD';
+
+const trailingSlashTarget = (uri = '') => {
+  if (!uri || uri === '/' || uri.endsWith('/') || uri.includes('.')) {
+    return undefined;
+  }
+
+  return `${uri}/`;
+};
+
 const getHeaderValue = (headers = {}, headerName) => {
   if (!headerName) {
     return '';
@@ -123,7 +133,7 @@ export const handler = async (event) => {
   const method = request.method ?? 'GET';
   const redirectTarget = PERMANENT_REDIRECTS.get(redirectLookupPath(uri));
 
-  if ((method === 'GET' || method === 'HEAD') && redirectTarget) {
+  if (isRedirectMethod(method) && redirectTarget) {
     return permanentRedirect(redirectTarget, request.querystring);
   }
 
@@ -137,6 +147,11 @@ export const handler = async (event) => {
     // this is dealing with a bunch of the 404 errors we see where there's a
     // {authourl} appended to the end of the request - just remove this
     request.uri = uri.replace('{authourl}', '');
+  }
+
+  const canonicalTarget = trailingSlashTarget(request.uri);
+  if (isRedirectMethod(method) && canonicalTarget) {
+    return permanentRedirect(canonicalTarget, request.querystring);
   }
 
   const serveMarkdown = needsMarkdown(request.uri, request.headers);

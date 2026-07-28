@@ -78,6 +78,33 @@ test('does not redirect unsafe request methods', async () => {
   assert.equal(request.uri, '/tagged/johnny-five/index.html');
 });
 
+test('redirects extensionless routes to their trailing-slash canonical', async () => {
+  for (const method of ['GET', 'HEAD']) {
+    const response = await handler(eventFor('/who', { method }));
+
+    assert.equal(response.status, '301');
+    assert.equal(response.headers.location[0].value, '/who/');
+  }
+});
+
+test('keeps explicit legacy redirects ahead of slash canonicalisation', async () => {
+  const response = await handler(eventFor('/tagged/data'));
+
+  assert.equal(response.status, '301');
+  assert.equal(
+    response.headers.location[0].value,
+    '/tagged/data-science/'
+  );
+});
+
+test('does not canonicalise file paths or unsafe methods', async () => {
+  const fileRequest = await handler(eventFor('/sitemap-index.xml'));
+  const postRequest = await handler(eventFor('/who', { method: 'POST' }));
+
+  assert.equal(fileRequest.uri, '/sitemap-index.xml');
+  assert.equal(postRequest.uri, '/who/index.html');
+});
+
 test('rewrites directory routes to their index file', async () => {
   const request = await handler(eventFor('/who/'));
 
