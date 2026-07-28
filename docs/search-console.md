@@ -27,19 +27,18 @@ Submitting a sitemap helps discovery but does not guarantee indexing.
 ## Canonical URLs and trailing slashes
 
 The canonical form is HTTPS on the apex domain with a trailing slash. A URL
-without its trailing slash should continue to work for people, but the ideal
-HTTP behaviour is:
+without its trailing slash continues to work for people through a permanent
+redirect:
 
 ```text
 /path -> 301 or 308 -> /path/
 /path/ -> 200
 ```
 
-No Search Console setting is required. A permanent redirect consolidates the
-signals before Search Console sees the page. The current edge handler instead
-rewrites both forms to the same S3 object, so both return `200`; the canonical
-tag then has to do the consolidation. This is valid but less clear and creates
-duplicate crawl paths.
+No Search Console setting is required. The edge handler returns the redirect
+before rewriting the canonical path to its S3 object, consolidating signals
+before Search Console sees the page. File-like paths and the site root are not
+affected.
 
 Query-string variants can remain `200` when they represent the same content,
 provided their canonical points to the clean URL. Search Console's
