@@ -50,7 +50,7 @@ slow?](../../img/posts/presentations/aieng26/brain-bunny-tradeoff-background-v2.
 *Does smart mean slow? (cc) ajfisher - ChatGPT Images 2.0*
 
 For [a while now I've had this
-idea](../posts/2026-02-26-mercury-2-diffusion-agents.md) that instead of
+idea](/2026/02/26/mercury-2-diffusion-agents/) that instead of
 focussing on how well a model performs a task, what happens when a model gets
 good enough you expect it to succeed, and instead, benefit lies in how quickly
 can it achieve a result.
