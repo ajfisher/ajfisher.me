@@ -2,6 +2,7 @@ import { defineCollection } from 'astro:content';
 import { glob, _file } from 'astro/loaders';
 import { z } from 'astro/zod';
 
+import { pageUri, postUri } from './lib/content-route.mjs';
 import { slugifyTag } from './lib/utils.mjs';
 
 const buildBaseSchema = (image) => z.object({
@@ -12,6 +13,7 @@ const buildBaseSchema = (image) => z.object({
 
   // Handles the YYYY-MM-dd hh:mm:ss+tz format automatically
   date: z.coerce.date(),
+  updated: z.coerce.date().optional(),
   author: z.string().optional().default('ajfisher'),
 
   // Requirement: enum
@@ -19,6 +21,8 @@ const buildBaseSchema = (image) => z.object({
 
   excerpt: z.string().optional(),
   twitter_excerpt: z.string().optional(),
+  seo_title: z.string().optional(),
+  index: z.boolean().optional().default(true),
 
   // image path
   featureimage: image().optional(),
@@ -53,14 +57,9 @@ const buildBaseSchema = (image) => z.object({
 const posts = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./../content/text/posts" }),
   schema: ({ image }) => buildBaseSchema(image).transform((data) => {
-    const d = data.date;
-    const y = d.getUTCFullYear();
-    const m = String(d.getUTCMonth() + 1).padStart(2, '0');
-    const day = String(d.getUTCDate()).padStart(2, '0');
-
     return {
       ...data,
-      uri: `${y}/${m}/${day}/${data.slug}/`
+      uri: postUri(data.date, data.slug)
     };
   }),
 });
@@ -71,7 +70,7 @@ const pages = defineCollection({
     return {
       ...data,
       // Pages just get the top-level slug
-      uri: `${data.slug}/`
+      uri: pageUri(data.slug)
     };
   }),
 });

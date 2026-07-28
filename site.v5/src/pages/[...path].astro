@@ -67,12 +67,21 @@ entry.data.wordCount = remarkPluginFrontmatter.wordCount;
 
 const seo = {
   title: entry.data.title,
+  documentTitle: entry.data.seo_title || entry.data.title,
   description: excerpt,
   type: 'article',
   tweet: twitterExcerpt,
   image: isPost ? entry.data.featureimage : undefined,
   readingTime: isPost ? entry.data.readingTime : 0,
   words: isPost ? entry.data.wordCount : 0,
+  index: entry.data.index,
+  structuredData: isPost ? {
+    type: 'BlogPosting',
+    headline: entry.data.title,
+    author: entry.data.author,
+    datePublished: entry.data.date,
+    dateModified: entry.data.updated,
+  } : undefined,
 };
 const hasSlideshow = Boolean(remarkPluginFrontmatter.hasSlideshow);
 const markdownHref = buildMarkdownHref(entry.data, entry.collection);

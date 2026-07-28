@@ -19,11 +19,8 @@ history and other signals.
 16 July 2026. Google accepted the submission, but the report initially showed
 "Couldn't fetch" while it awaited processing.
 
-After deploying the repository change:
-
-1. Confirm that the sitemap index succeeds and reports discovered URLs.
-2. Remove the stale `sitemap-0.xml` submission that Search Console currently
-   reports as "Couldn't fetch".
+The stale direct `sitemap-0.xml` submission has been removed from Search
+Console. The index remains the only submitted sitemap.
 
 Submitting a sitemap helps discovery but does not guarantee indexing.
 
@@ -70,7 +67,7 @@ For a URL that should be indexed, the desired state is:
 Do not add `noindex` merely to make the exclusion report smaller. Use it only
 when the site owner has decided a page should not appear in search.
 
-### Recommended configurable model
+### Configurable model
 
 Indexing should be explicit rather than based on a blanket post-count rule:
 
@@ -80,9 +77,21 @@ Indexing should be explicit rather than based on a blanket post-count rule:
 - drive both the robots meta tag and sitemap exclusion from the same policy;
 - keep a noindexed URL crawlable until Google has observed the directive.
 
-This should be implemented as a shared search policy rather than separate
-hard-coded lists in the layout and sitemap config. No tags have been noindexed
-as part of this change.
+The shared search policy implements this contract. Posts and pages accept
+these optional frontmatter properties:
+
+```yaml
+seo_title: A search-specific document title
+updated: 2026-07-27
+index: false
+```
+
+`seo_title` changes the document title without changing the editorial heading.
+`updated` supplies the visible update date, sitemap `lastmod`, and structured
+data modification date. `index: false` emits `noindex, follow` and removes the
+URL from the sitemap. Tag metadata supports the same `index` property.
+
+No existing content or tags were noindexed when this model was introduced.
 
 ## Legacy URL review
 
@@ -90,7 +99,7 @@ Only redirect a missing URL when there is a clear equivalent. Obsolete files
 with no replacement should remain `404` or deliberately become `410`; they
 should not redirect to the home page.
 
-| Search Console URL | Recommended outcome | Reason |
+| Search Console URL | Redirect target or outcome | Reason |
 | --- | --- | --- |
 | `/2023/02/13/podcast-enterprise-ai/` | Redirect to `/2023/02/12/podcast-enterprise-ai/` | Current canonical article |
 | `/2007/11/19/fuzzy-logic-could-book-more-flights/2007/03/fuzzys-where-its-at-or-will-be` | Redirect to `/2007/03/05/fuzzys-where-its-at-or-will-be-eventually/` | Malformed historical internal link; the source link is now fixed |
@@ -103,9 +112,9 @@ should not redirect to the home page.
 | `/wdc/singletouch.html` | Retain `404` unless the demo can be restored | No current equivalent found |
 | `/code/deviceapi-normaliser/examples/data.html` | Retain `404` unless the demo can be restored | No current equivalent found |
 
-The redirect implementation should return a real permanent response instead
-of silently rewriting to another S3 object. It also needs unit tests before the
-Lambda@Edge function changes.
+Clear equivalents return tested `301` responses from Lambda@Edge rather than
+silently rewriting to another S3 object. The existing `sms` and `data` tag
+aliases use the same redirect mechanism.
 
 ## Publication dates and existing URLs
 
@@ -139,9 +148,15 @@ The corrected shape is:
 ```
 
 The item now also exposes its author and image, and the invalid `itemtype` on
-the abstract paragraph has been removed. A future enhancement can add complete
-`BlogPosting` JSON-LD on article detail pages, including canonical URL,
-publication/modification dates, author, headline, description, and image.
+the abstract paragraph has been removed. Article detail pages expose complete
+`BlogPosting` JSON-LD, including canonical URL, publication and optional
+modification dates, author, headline, description, and image.
+
+## Document titles
+
+The layout appends the site name exactly once. Page-level SEO titles should
+therefore contain only the page-specific portion. For example, the homepage
+uses `Home`, which renders as `Home | ajfisher`.
 
 ## Search performance and titles
 

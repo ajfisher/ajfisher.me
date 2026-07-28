@@ -39,6 +39,7 @@ lint:
 
 test:
 	node --test app/tests/*.test.mjs
+	node --test site.v5/tests/*.test.mjs
 	cd ./site.v5 && make test
 
 dev:

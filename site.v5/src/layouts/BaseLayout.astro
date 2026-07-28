@@ -11,6 +11,7 @@ import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import { imageTransform } from '../lib/utils.mjs';
 import { ICON_SIZES, faviconPath, iconPath } from '../lib/icon-meta.mjs';
+import { documentTitle, robotsContent } from '../lib/search-policy.mjs';
 import { SITE_META } from '../lib/site-meta.mjs';
 
 const {
@@ -22,13 +23,17 @@ const {
 } = Astro.props;
 
 const siteUrl = Astro.site ?? SITE_META.siteUrl;
-const pageTitle = seo.title ?? rawTitle ?? SITE_META.defaultTitle;
-const description = seo.description ?? SITE_META.description;
+const pageTitle = String(
+  seo.title ?? rawTitle ?? SITE_META.defaultTitle
+).trim();
+const browserTitle = String(seo.documentTitle ?? pageTitle).trim();
+const description = String(seo.description ?? SITE_META.description).trim();
 const pageType = seo.type ?? 'post';
 const tweet = seo.tweet ?? '';
 const readingTime = seo.readingTime ?? 0;
 const words = seo.words ?? 0;
 const extraMeta = Array.isArray(seo.meta) ? seo.meta : [];
+const robots = robotsContent(seo.index);
 
 const resolveImagePath = (value) => {
   if (!value) return undefined;
@@ -46,10 +51,7 @@ const optimisedImage = await getImage({
 }).catch(() => null);
 const imageUrl = optimisedImage?.src && siteUrl ? new URL(optimisedImage.src, siteUrl).toString() : undefined;
 
-let titleTag = pageTitle || SITE_META.defaultTitle;
-if (titleTag !== SITE_META.defaultTitle) {
-  titleTag = `${titleTag} | ${SITE_META.defaultTitle}`;
-}
+const titleTag = documentTitle(browserTitle, SITE_META.defaultTitle);
 
 const cardMeta = [];
 
@@ -85,6 +87,33 @@ const metaTags = [
 const canonical = siteUrl ? new URL(Astro.url.pathname, siteUrl).toString() : undefined;
 const sitemapUrl = siteUrl ? new URL('/sitemap-index.xml', siteUrl).toString() : '/sitemap-index.xml';
 const rssUrl = siteUrl ? new URL('/rss.xml', siteUrl).toString() : '/rss.xml';
+const structuredAuthor = seo.structuredData?.author === 'ajfisher'
+  ? {
+      '@type': 'Person',
+      name: SITE_META.authorName,
+      url: new URL('/who/', siteUrl).toString(),
+    }
+  : {
+      '@type': 'Person',
+      name: seo.structuredData?.author,
+    };
+const structuredData = seo.structuredData?.type === 'BlogPosting' && canonical ? {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: seo.structuredData.headline.trim(),
+  description,
+  url: canonical,
+  mainEntityOfPage: canonical,
+  author: structuredAuthor,
+  datePublished: new Date(seo.structuredData.datePublished).toISOString(),
+  ...(seo.structuredData.dateModified && {
+    dateModified: new Date(seo.structuredData.dateModified).toISOString(),
+  }),
+  ...(imageUrl && { image: imageUrl }),
+} : undefined;
+const structuredDataJson = structuredData
+  ? JSON.stringify(structuredData).replaceAll('<', '\\u003c')
+  : undefined;
 ---
 <html lang="en">
   <head>
@@ -101,7 +130,15 @@ const rssUrl = siteUrl ? new URL('/rss.xml', siteUrl).toString() : '/rss.xml';
     <link rel="sitemap" type="application/xml" title="Sitemap" href={sitemapUrl} />
     <link rel="alternate" type="application/rss+xml" title="RSS" href={rssUrl} />
     {markdownHref && <link rel="alternate" type="text/markdown" href={markdownHref} />}
+    {robots && <meta name="robots" content={robots} />}
     {metaTags.map((tag) => <meta {...tag} />)}
+    {structuredDataJson && (
+      <script
+        is:inline
+        type="application/ld+json"
+        set:html={structuredDataJson}
+      ></script>
+    )}
     { import.meta.env.PROD && (
       <Fragment>
         <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-CPBBDZJVXJ"></script>
