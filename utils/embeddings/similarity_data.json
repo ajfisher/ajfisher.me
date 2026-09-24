@@ -17,7 +17,7 @@
             {
                 "file": "2026-06-13-fail-fast-fix-faster.md",
                 "slug": "fail-fast-fix-faster",
-                "similarity": 0.587755513949877
+                "similarity": 0.584901527361316
             },
             {
                 "file": "2025-01-31-mistral-3-small-local-ai.md",
@@ -121,7 +121,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 1.0300605916284138
+                "similarity": 1.0300944977408797
             },
             {
                 "file": "2015-08-08-ddd-jsiot-workshop.md",
@@ -198,7 +198,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.8452506668887596
+                "similarity": 0.8431566272732873
             },
             {
                 "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
@@ -240,7 +240,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.6897373782344738
+                "similarity": 0.687327688930567
             },
             {
                 "file": "2007-10-14-jquery-slideshow.md",
@@ -297,7 +297,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 1.0080322224093248
+                "similarity": 1.0092716999079174
             },
             {
                 "file": "2009-07-29-an-unofficial-endorsement-of-the-android-platform.md",
@@ -354,7 +354,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 1.0087976711205848
+                "similarity": 1.0058940403422318
             },
             {
                 "file": "2011-11-07-app-stores-are-delivery-channels-not-search-engines.md",
@@ -394,7 +394,7 @@
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.7838551914223864
+                "similarity": 0.7909310962987495
             }
         ]
     },
@@ -446,7 +446,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.46328360038147337
+                "similarity": 0.45720295536180383
             },
             {
                 "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
@@ -458,57 +458,114 @@
     {
         "file": "2026-07-14-ai-deployment-gap-economic-value.md",
         "slug": "ai-deployment-gap-economic-value",
-        "hash": "1884420757cc556f59c80bc51d3a8f9c9d61cf1f4e46ea31dae45dd38c68e559",
+        "hash": "0984719c11527a976b29c65355d7e8ec36648ca9b80d52db7f0fa860f7e32439",
         "post_similarity": [
             {
                 "file": "2025-12-22-ai-incentives-power.md",
                 "slug": "ai-incentives-power",
-                "similarity": 1.0309178364813696
+                "similarity": 1.0330303390251485
             },
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 1.0185140488824895
+                "similarity": 1.021534099438016
             },
             {
                 "file": "2025-11-05-strategy-ai.md",
                 "slug": "strategy-ai",
-                "similarity": 0.951573705469643
+                "similarity": 0.9539711151607387
             },
             {
                 "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
                 "slug": "atlas-ai-browser-strategy-divide",
-                "similarity": 0.9375602348691559
+                "similarity": 0.9348296614920341
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
-                "similarity": 0.9185705894821569
+                "similarity": 0.9242230132729696
             },
             {
                 "file": "2026-07-28-two-stable-ai-futures.md",
                 "slug": "two-stable-ai-futures",
-                "similarity": 0.8704871724475824
+                "similarity": 0.8739137390726803
             },
             {
                 "file": "2025-01-31-mistral-3-small-local-ai.md",
                 "slug": "mistral-3-small-local-ai",
-                "similarity": 0.7953315817869275
+                "similarity": 0.7995074583341263
             },
             {
                 "file": "2025-09-12-scaling-coding-agents-without-breaking-your-dev-team.md",
                 "slug": "scaling-coding-agents-without-breaking-your-dev-team",
-                "similarity": 0.7229421385854525
+                "similarity": 0.7272573954310156
             },
             {
                 "file": "2025-01-28-deepseek-r1-geography-bias.md",
                 "slug": "deepseek-r1-geography-bias",
-                "similarity": 0.6960201853406183
+                "similarity": 0.7031026089108433
+            },
+            {
+                "file": "2026-02-26-mercury-2-diffusion-agents.md",
+                "slug": "mercury-2-diffusion-agents",
+                "similarity": 0.6998615997288481
+            }
+        ]
+    },
+    {
+        "file": "2026-09-24-information-design-agentic-age.md",
+        "slug": "information-design-agentic-age",
+        "hash": "46bd89a5db55e5f16a57a8c5e979747b23e3831338450385d4de607f59a4ca3b",
+        "post_similarity": [
+            {
+                "file": "2025-09-12-scaling-coding-agents-without-breaking-your-dev-team.md",
+                "slug": "scaling-coding-agents-without-breaking-your-dev-team",
+                "similarity": 0.6853992138241936
+            },
+            {
+                "file": "2026-07-14-ai-deployment-gap-economic-value.md",
+                "slug": "ai-deployment-gap-economic-value",
+                "similarity": 0.6846900446030154
+            },
+            {
+                "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
+                "slug": "software-engineering-reimagined-ai-native-era",
+                "similarity": 0.6264798787074796
+            },
+            {
+                "file": "2026-02-26-mercury-2-diffusion-agents.md",
+                "slug": "mercury-2-diffusion-agents",
+                "similarity": 0.6200443022557055
             },
             {
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
                 "slug": "when-will-ai-disrupt-travel",
-                "similarity": 0.6932679616650705
+                "similarity": 0.6070921017253692
+            },
+            {
+                "file": "2025-12-22-ai-incentives-power.md",
+                "slug": "ai-incentives-power",
+                "similarity": 0.6046830280265093
+            },
+            {
+                "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
+                "slug": "datatium-a-material-to-create-responsive-experiences",
+                "similarity": 0.5955999716200923
+            },
+            {
+                "file": "2025-12-08-llm-advisory-group-local-subscriptions.md",
+                "slug": "llm-advisory-group-local-subscriptions",
+                "similarity": 0.5949501488741312
+            },
+            {
+                "file": "2026-06-13-fail-fast-fix-faster.md",
+                "slug": "fail-fast-fix-faster",
+                "similarity": 0.5900814564856321
+            },
+            {
+                "file": "2026-07-28-two-stable-ai-futures.md",
+                "slug": "two-stable-ai-futures",
+                "similarity": 0.582164839159179
             }
         ]
     },
@@ -555,7 +612,7 @@
             {
                 "file": "2008-04-22-phorm-over-function.md",
                 "slug": "phorm-over-function",
-                "similarity": 0.5728184303616426
+                "similarity": 0.5727255683292691
             },
             {
                 "file": "2008-05-09-eeepcs-power-is-in-the-network-not-the-machine.md",
@@ -563,9 +620,9 @@
                 "similarity": 0.5726686794665414
             },
             {
-                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
-                "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.5718167307507857
+                "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
+                "slug": "a-clickster-fail-of-epic-proportions",
+                "similarity": 0.5706152104645321
             }
         ]
     },
@@ -716,7 +773,7 @@
             {
                 "file": "2026-07-14-ai-deployment-gap-economic-value.md",
                 "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.5811997396371863
+                "similarity": 0.5882203765864148
             },
             {
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
@@ -748,7 +805,7 @@
             {
                 "file": "2026-06-13-fail-fast-fix-faster.md",
                 "slug": "fail-fast-fix-faster",
-                "similarity": 1.0919191872598621
+                "similarity": 1.102027975268875
             },
             {
                 "file": "2025-12-08-llm-advisory-group-local-subscriptions.md",
@@ -771,14 +828,14 @@
                 "similarity": 0.7167124829307915
             },
             {
+                "file": "2026-07-14-ai-deployment-gap-economic-value.md",
+                "slug": "ai-deployment-gap-economic-value",
+                "similarity": 0.6998615997288481
+            },
+            {
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
                 "similarity": 0.694764216537619
-            },
-            {
-                "file": "2026-07-14-ai-deployment-gap-economic-value.md",
-                "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.6906603340450577
             },
             {
                 "file": "2025-01-31-mistral-3-small-local-ai.md",
@@ -815,12 +872,12 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.7964068533042852
+                "similarity": 0.7968684519176908
             },
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.7641285223815389
+                "similarity": 0.7632313451877899
             },
             {
                 "file": "2010-01-03-2010-the-year-the-netbook-turns-into-the-web-book.md",
@@ -870,14 +927,14 @@
                 "similarity": 0.8401179105260641
             },
             {
+                "file": "2026-06-13-fail-fast-fix-faster.md",
+                "slug": "fail-fast-fix-faster",
+                "similarity": 0.8189005368319225
+            },
+            {
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
                 "similarity": 0.8185114815849633
-            },
-            {
-                "file": "2026-06-13-fail-fast-fix-faster.md",
-                "slug": "fail-fast-fix-faster",
-                "similarity": 0.8175045833334194
             },
             {
                 "file": "2025-06-26-hands-on-gemini-cli.md",
@@ -897,7 +954,7 @@
             {
                 "file": "2026-07-14-ai-deployment-gap-economic-value.md",
                 "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.7229421385854525
+                "similarity": 0.7272573954310156
             },
             {
                 "file": "2024-06-19-follow-me-i-think-i-know-what-im-doing.md",
@@ -905,9 +962,9 @@
                 "similarity": 0.7163411017166148
             },
             {
-                "file": "2025-12-22-ai-incentives-power.md",
-                "slug": "ai-incentives-power",
-                "similarity": 0.6797818259955515
+                "file": "2026-09-24-information-design-agentic-age.md",
+                "slug": "information-design-agentic-age",
+                "similarity": 0.6853992138241936
             }
         ]
     },
@@ -964,7 +1021,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.5881285258563212
+                "similarity": 0.5866260944141964
             }
         ]
     },
@@ -1095,7 +1152,7 @@
             {
                 "file": "2026-07-14-ai-deployment-gap-economic-value.md",
                 "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.6960201853406183
+                "similarity": 0.7031026089108433
             },
             {
                 "file": "2025-12-22-ai-incentives-power.md",
@@ -1105,7 +1162,7 @@
             {
                 "file": "2026-07-28-two-stable-ai-futures.md",
                 "slug": "two-stable-ai-futures",
-                "similarity": 0.6831563757133617
+                "similarity": 0.6831563799756326
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
@@ -1152,7 +1209,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.6826443617457862
+                "similarity": 0.6783988754579722
             },
             {
                 "file": "2015-08-08-ddd-jsiot-workshop.md",
@@ -1224,12 +1281,12 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.6224034092247825
+                "similarity": 0.6214996580314825
             },
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.6204338615372188
+                "similarity": 0.616720149068633
             },
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
@@ -1261,7 +1318,7 @@
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.9180607665407072
+                "similarity": 0.9146718818498589
             },
             {
                 "file": "2008-05-09-eeepcs-power-is-in-the-network-not-the-machine.md",
@@ -1291,7 +1348,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.7015764494981286
+                "similarity": 0.7003772686526952
             },
             {
                 "file": "2012-06-10-is-this-the-end-of-windows-server.md",
@@ -1348,7 +1405,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.8192423022350251
+                "similarity": 0.8192620364397564
             },
             {
                 "file": "2009-07-29-an-unofficial-endorsement-of-the-android-platform.md",
@@ -1370,57 +1427,57 @@
     {
         "file": "2008-03-15-security-101-the-user-should-be-able-to-authenticate.md",
         "slug": "security-101-the-user-should-be-able-to-authenticate",
-        "hash": "db883d7aba7160630999ca51ec903d2a01821b7c99825321f53ba1002590dbcf",
+        "hash": "4b31dbb138a322282aea968f6b0ea57efea522b3ac3f34974f9701f223725a18",
         "post_similarity": [
             {
                 "file": "2007-11-30-pci-dss-will-wreak-havoc-on-smes.md",
                 "slug": "pci-dss-will-wreak-havoc-on-smes",
-                "similarity": 0.7880369337919052
+                "similarity": 0.7929394093499365
             },
             {
                 "file": "2007-11-21-why-was-data-being-passed-on-a-disc-and-what-was-eds-advice.md",
                 "slug": "why-was-data-being-passed-on-a-disc-and-what-was-eds-advice",
-                "similarity": 0.7573061593758191
+                "similarity": 0.7579150831662409
             },
             {
                 "file": "2025-07-02-qantas-breach-toxic-waste.md",
                 "slug": "qantas-breach-toxic-waste",
-                "similarity": 0.6806826737176725
+                "similarity": 0.6788151004188201
             },
             {
                 "file": "2009-02-03-rfid-documents-bad-idea.md",
                 "slug": "rfid-documents-bad-idea",
-                "similarity": 0.5795110170754867
+                "similarity": 0.5801460010342998
             },
             {
                 "file": "2008-04-22-phorm-over-function.md",
                 "slug": "phorm-over-function",
-                "similarity": 0.5225278620350352
-            },
-            {
-                "file": "2026-07-28-two-stable-ai-futures.md",
-                "slug": "two-stable-ai-futures",
-                "similarity": 0.4406683912718012
+                "similarity": 0.5118756819994179
             },
             {
                 "file": "2008-04-21-can-yahoo-really-get-things-so-wrong.md",
                 "slug": "can-yahoo-really-get-things-so-wrong",
-                "similarity": 0.4400087960901183
+                "similarity": 0.4350099162185274
+            },
+            {
+                "file": "2026-07-28-two-stable-ai-futures.md",
+                "slug": "two-stable-ai-futures",
+                "similarity": 0.43460753342491715
             },
             {
                 "file": "2008-01-31-the-state-of-oz-technology.md",
                 "slug": "the-state-of-oz-technology",
-                "similarity": 0.40638077704554265
+                "similarity": 0.39909286148575907
             },
             {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
                 "slug": "a-clickster-fail-of-epic-proportions",
-                "similarity": 0.3981372651837748
+                "similarity": 0.39294357179948247
             },
             {
                 "file": "2007-11-08-why-cant-i-have-100-laptop.md",
                 "slug": "why-cant-i-have-100-laptop",
-                "similarity": 0.37764182343200925
+                "similarity": 0.3706968942781015
             }
         ]
     },
@@ -1457,7 +1514,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.7938524917233639
+                "similarity": 0.7917730774334368
             },
             {
                 "file": "2007-02-15-please-nokia-slap-me-again-no-really.md",
@@ -1512,14 +1569,19 @@
                 "similarity": 0.3950565180032405
             },
             {
-                "file": "2013-08-21-should-javascript-devs-build-real-things.md",
-                "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.3929840482170891
+                "file": "2026-09-24-information-design-agentic-age.md",
+                "slug": "information-design-agentic-age",
+                "similarity": 0.39411809797974257
             },
             {
                 "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
                 "slug": "software-engineering-reimagined-ai-native-era",
                 "similarity": 0.3901406452508615
+            },
+            {
+                "file": "2013-08-21-should-javascript-devs-build-real-things.md",
+                "slug": "should-javascript-devs-build-real-things",
+                "similarity": 0.38681164140396296
             },
             {
                 "file": "2007-12-20-my-top-5-jquery-seasonal-wishes.md",
@@ -1530,11 +1592,6 @@
                 "file": "2007-11-02-css-structure-what-a-mess.md",
                 "slug": "css-structure-what-a-mess",
                 "similarity": 0.37590762085514606
-            },
-            {
-                "file": "2009-07-26-case-study-django-agile-sportsgirl-redevelopment.md",
-                "slug": "case-study-django-agile-sportsgirl-redevelopment",
-                "similarity": 0.3682949977288674
             }
         ]
     },
@@ -1566,7 +1623,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.8632710911474002
+                "similarity": 0.8626964324291928
             },
             {
                 "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
@@ -1581,7 +1638,7 @@
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.7699060826574677
+                "similarity": 0.7796303413122416
             },
             {
                 "file": "2010-01-28-ipad-almost-great.md",
@@ -1618,7 +1675,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.6339242650319168
+                "similarity": 0.6387297170198593
             },
             {
                 "file": "2015-09-07-js-not-just-language-of-the-web.md",
@@ -1673,6 +1730,11 @@
                 "similarity": 0.435128135003065
             },
             {
+                "file": "2026-09-24-information-design-agentic-age.md",
+                "slug": "information-design-agentic-age",
+                "similarity": 0.43481160253720197
+            },
+            {
                 "file": "2025-01-28-deepseek-r1-geography-bias.md",
                 "slug": "deepseek-r1-geography-bias",
                 "similarity": 0.4322786141653019
@@ -1701,11 +1763,6 @@
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
                 "similarity": 0.38465212389531633
-            },
-            {
-                "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
-                "slug": "thingstreams-the-future-of-brand-product-consumer-dialogue",
-                "similarity": 0.37724579642071326
             }
         ]
     },
@@ -1742,7 +1799,7 @@
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.5250803182164371
+                "similarity": 0.5195122264771036
             },
             {
                 "file": "2010-01-28-ipad-almost-great.md",
@@ -1752,7 +1809,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.5065792056468942
+                "similarity": 0.5053703386490527
             },
             {
                 "file": "2007-11-08-why-cant-i-have-100-laptop.md",
@@ -1774,7 +1831,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.6953942485854889
+                "similarity": 0.6893153884495444
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
@@ -1859,6 +1916,11 @@
                 "similarity": 0.4957871776672988
             },
             {
+                "file": "2026-09-24-information-design-agentic-age.md",
+                "slug": "information-design-agentic-age",
+                "similarity": 0.4955272607567309
+            },
+            {
                 "file": "2025-09-12-scaling-coding-agents-without-breaking-your-dev-team.md",
                 "slug": "scaling-coding-agents-without-breaking-your-dev-team",
                 "similarity": 0.48407050089309256
@@ -1866,17 +1928,12 @@
             {
                 "file": "2026-07-14-ai-deployment-gap-economic-value.md",
                 "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.4643843382913344
+                "similarity": 0.47301481208341306
             },
             {
                 "file": "2025-12-08-llm-advisory-group-local-subscriptions.md",
                 "slug": "llm-advisory-group-local-subscriptions",
                 "similarity": 0.4633421931386918
-            },
-            {
-                "file": "2008-04-22-phorm-over-function.md",
-                "slug": "phorm-over-function",
-                "similarity": 0.4464003036459275
             }
         ]
     },
@@ -1908,7 +1965,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.5535224907453504
+                "similarity": 0.55445463941401
             },
             {
                 "file": "2015-05-04-pebble-controlled-leds.md",
@@ -1990,7 +2047,7 @@
             {
                 "file": "2026-07-14-ai-deployment-gap-economic-value.md",
                 "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.5009317460481494
+                "similarity": 0.49774580804105695
             }
         ]
     },
@@ -2022,17 +2079,17 @@
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.7655750370561838
-            },
-            {
-                "file": "2013-08-21-should-javascript-devs-build-real-things.md",
-                "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.7520341324551558
+                "similarity": 0.7649257835747202
             },
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
                 "similarity": 0.7507697530278954
+            },
+            {
+                "file": "2013-08-21-should-javascript-devs-build-real-things.md",
+                "slug": "should-javascript-devs-build-real-things",
+                "similarity": 0.7499717257608144
             },
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
@@ -2149,14 +2206,14 @@
                 "similarity": 0.4816313605284476
             },
             {
+                "file": "2026-07-14-ai-deployment-gap-economic-value.md",
+                "slug": "ai-deployment-gap-economic-value",
+                "similarity": 0.4785669409042242
+            },
+            {
                 "file": "2025-12-22-ai-incentives-power.md",
                 "slug": "ai-incentives-power",
                 "similarity": 0.47363746123000317
-            },
-            {
-                "file": "2026-07-14-ai-deployment-gap-economic-value.md",
-                "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.47326378858821305
             },
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
@@ -2198,7 +2255,7 @@
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.42750630036209814
+                "similarity": 0.42642241952572635
             },
             {
                 "file": "2007-11-05-bye-bye-openmoko.md",
@@ -2218,7 +2275,7 @@
             {
                 "file": "2026-07-28-two-stable-ai-futures.md",
                 "slug": "two-stable-ai-futures",
-                "similarity": 0.37770527318799485
+                "similarity": 0.377705275806507
             }
         ]
     },
@@ -2243,11 +2300,6 @@
                 "similarity": 0.5847145988152078
             },
             {
-                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
-                "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.5749898799813798
-            },
-            {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
                 "similarity": 0.5667088837248283
@@ -2256,6 +2308,11 @@
                 "file": "2010-01-03-2010-the-year-the-netbook-turns-into-the-web-book.md",
                 "slug": "2010-the-year-the-netbook-turns-into-the-web-book",
                 "similarity": 0.5662752292121127
+            },
+            {
+                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
+                "slug": "computing-is-finally-becoming-personal",
+                "similarity": 0.5645653124206287
             },
             {
                 "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
@@ -2282,57 +2339,57 @@
     {
         "file": "2008-04-21-can-yahoo-really-get-things-so-wrong.md",
         "slug": "can-yahoo-really-get-things-so-wrong",
-        "hash": "9083dc88f390b41bbc7798eb9859c4c7e2491a4c39c77823d0977136f2c8e96c",
+        "hash": "4e898b41c430e83d045580174335360b01053af9ee679307c7a0b2578f089ec7",
         "post_similarity": [
             {
                 "file": "2010-03-23-an-open-internet-call-to-arms.md",
                 "slug": "an-open-internet-call-to-arms",
-                "similarity": 0.6191756354827536
+                "similarity": 0.6222510583352213
             },
             {
                 "file": "2008-04-22-phorm-over-function.md",
                 "slug": "phorm-over-function",
-                "similarity": 0.5406519517253767
+                "similarity": 0.5279125149284958
             },
             {
                 "file": "2007-11-21-why-was-data-being-passed-on-a-disc-and-what-was-eds-advice.md",
                 "slug": "why-was-data-being-passed-on-a-disc-and-what-was-eds-advice",
-                "similarity": 0.4903850421106526
+                "similarity": 0.4805711112950719
             },
             {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
                 "slug": "a-clickster-fail-of-epic-proportions",
-                "similarity": 0.44402570000527786
-            },
-            {
-                "file": "2025-07-02-qantas-breach-toxic-waste.md",
-                "slug": "qantas-breach-toxic-waste",
-                "similarity": 0.4400781783990265
+                "similarity": 0.4382477954581224
             },
             {
                 "file": "2008-03-15-security-101-the-user-should-be-able-to-authenticate.md",
                 "slug": "security-101-the-user-should-be-able-to-authenticate",
-                "similarity": 0.4400087960901183
+                "similarity": 0.4350099162185274
+            },
+            {
+                "file": "2025-07-02-qantas-breach-toxic-waste.md",
+                "slug": "qantas-breach-toxic-waste",
+                "similarity": 0.42430499108975367
             },
             {
                 "file": "2007-12-21-potent-messages-of-impotent-industries.md",
                 "slug": "potent-messages-of-impotent-industries",
-                "similarity": 0.42259444439536853
-            },
-            {
-                "file": "2007-11-30-pci-dss-will-wreak-havoc-on-smes.md",
-                "slug": "pci-dss-will-wreak-havoc-on-smes",
-                "similarity": 0.40501967325286437
+                "similarity": 0.4187360484631538
             },
             {
                 "file": "2007-12-19-sms-bamboozlement.md",
                 "slug": "sms-bamboozlement",
-                "similarity": 0.4046113745197625
+                "similarity": 0.4004376027685036
+            },
+            {
+                "file": "2007-11-30-pci-dss-will-wreak-havoc-on-smes.md",
+                "slug": "pci-dss-will-wreak-havoc-on-smes",
+                "similarity": 0.38967396605412574
             },
             {
                 "file": "2008-06-27-icann-approves-new-tlds.md",
                 "slug": "icann-approves-new-tlds",
-                "similarity": 0.40289295903542544
+                "similarity": 0.38618301313948533
             }
         ]
     },
@@ -2372,14 +2429,14 @@
                 "similarity": 0.5273377493515153
             },
             {
+                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
+                "slug": "computing-is-finally-becoming-personal",
+                "similarity": 0.48231296353699016
+            },
+            {
                 "file": "2010-10-18-how-to-avoid-the-audiencepresenter-disconnect.md",
                 "slug": "how-to-avoid-the-audiencepresenter-disconnect",
                 "similarity": 0.4817972657034478
-            },
-            {
-                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
-                "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.4749506979315481
             },
             {
                 "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
@@ -2406,7 +2463,7 @@
             {
                 "file": "2008-03-15-security-101-the-user-should-be-able-to-authenticate.md",
                 "slug": "security-101-the-user-should-be-able-to-authenticate",
-                "similarity": 0.7573061593758191
+                "similarity": 0.7579150831662409
             },
             {
                 "file": "2007-11-30-pci-dss-will-wreak-havoc-on-smes.md",
@@ -2416,7 +2473,7 @@
             {
                 "file": "2008-04-22-phorm-over-function.md",
                 "slug": "phorm-over-function",
-                "similarity": 0.6948610987778714
+                "similarity": 0.6904535251075122
             },
             {
                 "file": "2009-02-03-rfid-documents-bad-idea.md",
@@ -2431,7 +2488,7 @@
             {
                 "file": "2026-07-28-two-stable-ai-futures.md",
                 "slug": "two-stable-ai-futures",
-                "similarity": 0.5625611047572415
+                "similarity": 0.5625610981530557
             },
             {
                 "file": "2008-02-20-dvd-jon-strikes-again.md",
@@ -2446,7 +2503,7 @@
             {
                 "file": "2010-03-23-an-open-internet-call-to-arms.md",
                 "slug": "an-open-internet-call-to-arms",
-                "similarity": 0.5330672344304062
+                "similarity": 0.5353483987893551
             }
         ]
     },
@@ -2468,7 +2525,7 @@
             {
                 "file": "2008-04-22-phorm-over-function.md",
                 "slug": "phorm-over-function",
-                "similarity": 0.5551207143493873
+                "similarity": 0.5558487610163675
             },
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
@@ -2520,7 +2577,7 @@
             {
                 "file": "2026-07-14-ai-deployment-gap-economic-value.md",
                 "slug": "ai-deployment-gap-economic-value",
-                "similarity": 1.0185140488824895
+                "similarity": 1.021534099438016
             },
             {
                 "file": "2025-11-05-strategy-ai.md",
@@ -2550,7 +2607,7 @@
             {
                 "file": "2026-07-28-two-stable-ai-futures.md",
                 "slug": "two-stable-ai-futures",
-                "similarity": 0.7195484886855336
+                "similarity": 0.7195485127950164
             },
             {
                 "file": "2025-01-31-mistral-3-small-local-ai.md",
@@ -2659,7 +2716,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.667002906510571
+                "similarity": 0.6617440519032346
             },
             {
                 "file": "2007-11-05-bye-bye-openmoko.md",
@@ -2667,14 +2724,14 @@
                 "similarity": 0.6597324402993794
             },
             {
+                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
+                "slug": "computing-is-finally-becoming-personal",
+                "similarity": 0.6523970018765226
+            },
+            {
                 "file": "2025-12-22-ai-incentives-power.md",
                 "slug": "ai-incentives-power",
                 "similarity": 0.6510246623898448
-            },
-            {
-                "file": "2011-11-07-app-stores-are-delivery-channels-not-search-engines.md",
-                "slug": "app-stores-are-delivery-channels-not-search-engines",
-                "similarity": 0.6480221869736276
             }
         ]
     },
@@ -2696,12 +2753,12 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.836713291562963
+                "similarity": 0.8358486685026153
             },
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.8345726467492681
+                "similarity": 0.830582426484019
             },
             {
                 "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
@@ -2731,7 +2788,7 @@
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.7422168776741591
+                "similarity": 0.7309108772162438
             }
         ]
     },
@@ -2753,7 +2810,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.7322802568008936
+                "similarity": 0.7319183569266093
             },
             {
                 "file": "2025-06-26-hands-on-gemini-cli.md",
@@ -2773,7 +2830,7 @@
             {
                 "file": "2026-07-14-ai-deployment-gap-economic-value.md",
                 "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.6791554001069682
+                "similarity": 0.683070583370821
             },
             {
                 "file": "2025-12-08-llm-advisory-group-local-subscriptions.md",
@@ -2800,7 +2857,7 @@
             {
                 "file": "2026-06-13-fail-fast-fix-faster.md",
                 "slug": "fail-fast-fix-faster",
-                "similarity": 0.7918124972485369
+                "similarity": 0.7838263888699616
             },
             {
                 "file": "2026-02-26-mercury-2-diffusion-agents.md",
@@ -2840,7 +2897,7 @@
             {
                 "file": "2026-07-14-ai-deployment-gap-economic-value.md",
                 "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.6302002545002701
+                "similarity": 0.6331866999338512
             },
             {
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
@@ -2880,19 +2937,19 @@
                 "similarity": 0.6996475389722214
             },
             {
-                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
-                "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.6980620295545144
+                "file": "2009-11-09-admob-purchase-by-google-paves-way-for-interesting-developer-funding.md",
+                "slug": "admob-purchase-by-google-paves-way-for-interesting-developer-funding",
+                "similarity": 0.693378402772608
             },
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.6940392451757798
+                "similarity": 0.6888764872561831
             },
             {
-                "file": "2009-11-09-admob-purchase-by-google-paves-way-for-interesting-developer-funding.md",
-                "slug": "admob-purchase-by-google-paves-way-for-interesting-developer-funding",
-                "similarity": 0.693378402772608
+                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
+                "slug": "android-fragmentation-really-not-a-big-deal",
+                "similarity": 0.6887522946504212
             },
             {
                 "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
@@ -2944,7 +3001,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.8509017964841229
+                "similarity": 0.847852672234674
             },
             {
                 "file": "2008-07-17-mobile-dominance-on-track.md",
@@ -2971,7 +3028,7 @@
             {
                 "file": "2010-03-23-an-open-internet-call-to-arms.md",
                 "slug": "an-open-internet-call-to-arms",
-                "similarity": 0.7328324157210864
+                "similarity": 0.7298482488765692
             },
             {
                 "file": "2007-07-03-is-180-good-value-for-wii-sports.md",
@@ -2991,7 +3048,7 @@
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.47666987961783797
+                "similarity": 0.4710738976292769
             },
             {
                 "file": "2015-06-01-building-portable-minecraft-server.md",
@@ -3023,114 +3080,114 @@
     {
         "file": "2013-08-21-should-javascript-devs-build-real-things.md",
         "slug": "should-javascript-devs-build-real-things",
-        "hash": "a7235852307bea441a95e0de2a29d70280e6315ecc96bd08cb9416f18d6c88c0",
+        "hash": "ad5884514a2ba127c6e95b7715ecc93cb9c11505bc078da0a702b39ebb3c52e9",
         "post_similarity": [
             {
                 "file": "2015-09-07-js-not-just-language-of-the-web.md",
                 "slug": "js-not-just-language-of-the-web",
-                "similarity": 1.1422805624577703
+                "similarity": 1.1436102793986755
             },
             {
                 "file": "2016-01-27-road-to-interchange.md",
                 "slug": "road-to-interchange",
-                "similarity": 1.0300605916284138
+                "similarity": 1.0300944977408797
             },
             {
                 "file": "2015-08-08-ddd-jsiot-workshop.md",
                 "slug": "ddd-jsiot-workshop",
-                "similarity": 0.9522853513416258
+                "similarity": 0.9515286112647983
             },
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
-                "similarity": 0.9421981641103325
+                "similarity": 0.9416119829217663
             },
             {
                 "file": "2015-05-04-pebble-controlled-leds.md",
                 "slug": "pebble-controlled-leds",
-                "similarity": 0.8665680872478319
+                "similarity": 0.8642555083772554
             },
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
                 "slug": "humanising-the-internet-of-things",
-                "similarity": 0.8470621581011473
+                "similarity": 0.8441923524040129
             },
             {
                 "file": "2011-09-15-device-api-applications-of-devicemotion-and-deviceorientation.md",
                 "slug": "device-api-applications-of-devicemotion-and-deviceorientation",
-                "similarity": 0.8345726467492681
+                "similarity": 0.830582426484019
             },
             {
                 "file": "2015-01-21-context-in-ambient-technology.md",
                 "slug": "context-in-ambient-technology",
-                "similarity": 0.8240656154695714
+                "similarity": 0.826196127118664
             },
             {
                 "file": "2011-10-17-neo-futurism-in-the-information-age.md",
                 "slug": "neo-futurism-in-the-information-age",
-                "similarity": 0.7953576527996853
+                "similarity": 0.7920260368742058
             },
             {
-                "file": "2011-11-03-we-are-the-champions-of-the-web.md",
-                "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.7520341324551558
+                "file": "2015-09-02-iot-mobile-practices.md",
+                "slug": "iot-mobile-practices",
+                "similarity": 0.7504165239745053
             }
         ]
     },
     {
         "file": "2011-01-10-computing-is-finally-becoming-personal.md",
         "slug": "computing-is-finally-becoming-personal",
-        "hash": "e52b70ab2b6ac3d2eac60f0ba4ef410dac16c7f434668034e50f1ebf646fe0f0",
+        "hash": "bba67ac1968851f3002ab2ab1f4abd245e6b0e84b761f22ff611f1b5e58eca55",
         "post_similarity": [
             {
                 "file": "2010-01-03-2010-the-year-the-netbook-turns-into-the-web-book.md",
                 "slug": "2010-the-year-the-netbook-turns-into-the-web-book",
-                "similarity": 0.9180607665407072
-            },
-            {
-                "file": "2012-02-24-humanising-the-internet-of-things.md",
-                "slug": "humanising-the-internet-of-things",
-                "similarity": 0.8901298518153666
+                "similarity": 0.9146718818498589
             },
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.8788345500364352
+                "similarity": 0.8865163678667989
+            },
+            {
+                "file": "2012-02-24-humanising-the-internet-of-things.md",
+                "slug": "humanising-the-internet-of-things",
+                "similarity": 0.873414170146361
             },
             {
                 "file": "2010-01-28-ipad-almost-great.md",
                 "slug": "ipad-almost-great",
-                "similarity": 0.8589731726946195
-            },
-            {
-                "file": "2008-05-09-eeepcs-power-is-in-the-network-not-the-machine.md",
-                "slug": "eeepcs-power-is-in-the-network-not-the-machine",
-                "similarity": 0.7926882703728847
+                "similarity": 0.862747951714917
             },
             {
                 "file": "2009-12-20-prediction-2010-will-be-the-year-apple-and-google-have-a-cage-fight.md",
                 "slug": "prediction-2010-will-be-the-year-apple-and-google-have-a-cage-fight",
-                "similarity": 0.7838551914223864
+                "similarity": 0.7909310962987495
+            },
+            {
+                "file": "2008-05-09-eeepcs-power-is-in-the-network-not-the-machine.md",
+                "slug": "eeepcs-power-is-in-the-network-not-the-machine",
+                "similarity": 0.7906974809322637
             },
             {
                 "file": "2011-11-07-app-stores-are-delivery-channels-not-search-engines.md",
                 "slug": "app-stores-are-delivery-channels-not-search-engines",
-                "similarity": 0.7699060826574677
+                "similarity": 0.7796303413122416
             },
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.7655750370561838
+                "similarity": 0.7649257835747202
             },
             {
                 "file": "2010-10-07-i-like-where-i-think-sony-is-going.md",
                 "slug": "i-like-where-i-think-sony-is-going",
-                "similarity": 0.7641285223815389
+                "similarity": 0.7632313451877899
             },
             {
-                "file": "2011-09-15-device-api-applications-of-devicemotion-and-deviceorientation.md",
-                "slug": "device-api-applications-of-devicemotion-and-deviceorientation",
-                "similarity": 0.7422168776741591
+                "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
+                "slug": "the-golden-age-of-mobile-soon-maybe",
+                "similarity": 0.736474717641874
             }
         ]
     },
@@ -3142,7 +3199,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 1.1422805624577703
+                "similarity": 1.1436102793986755
             },
             {
                 "file": "2015-08-08-ddd-jsiot-workshop.md",
@@ -3199,7 +3256,7 @@
             {
                 "file": "2026-07-14-ai-deployment-gap-economic-value.md",
                 "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.9185705894821569
+                "similarity": 0.9242230132729696
             },
             {
                 "file": "2025-12-22-ai-incentives-power.md",
@@ -3239,7 +3296,7 @@
             {
                 "file": "2026-07-28-two-stable-ai-futures.md",
                 "slug": "two-stable-ai-futures",
-                "similarity": 0.7325972967899498
+                "similarity": 0.7325973002974915
             },
             {
                 "file": "2025-01-31-mistral-3-small-local-ai.md",
@@ -3259,14 +3316,14 @@
                 "similarity": 0.5859577067018495
             },
             {
-                "file": "2026-06-13-fail-fast-fix-faster.md",
-                "slug": "fail-fast-fix-faster",
-                "similarity": 0.511800414977164
-            },
-            {
                 "file": "2007-11-02-fah-goes-number-1-but-we-could-do-better.md",
                 "slug": "fah-goes-number-1-but-we-could-do-better",
                 "similarity": 0.5110955006332617
+            },
+            {
+                "file": "2026-06-13-fail-fast-fix-faster.md",
+                "slug": "fail-fast-fix-faster",
+                "similarity": 0.5110417947306053
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
@@ -3323,7 +3380,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.5218093239136153
+                "similarity": 0.5191998788266253
             },
             {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
@@ -3370,7 +3427,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.9522853513416258
+                "similarity": 0.9515286112647983
             },
             {
                 "file": "2015-09-07-js-not-just-language-of-the-web.md",
@@ -3467,7 +3524,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.6131756789303402
+                "similarity": 0.6093926183856396
             },
             {
                 "file": "2015-01-21-context-in-ambient-technology.md",
@@ -3494,7 +3551,7 @@
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.7926882703728847
+                "similarity": 0.7906974809322637
             },
             {
                 "file": "2010-01-28-ipad-almost-great.md",
@@ -3504,7 +3561,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.6705967547849768
+                "similarity": 0.6694055139109659
             },
             {
                 "file": "2009-10-11-the-only-reason-why-linux-isnt-ready-for-prime-time-desktop.md",
@@ -3551,12 +3608,12 @@
             {
                 "file": "2008-03-15-security-101-the-user-should-be-able-to-authenticate.md",
                 "slug": "security-101-the-user-should-be-able-to-authenticate",
-                "similarity": 0.5795110170754867
+                "similarity": 0.5801460010342998
             },
             {
                 "file": "2008-04-22-phorm-over-function.md",
                 "slug": "phorm-over-function",
-                "similarity": 0.47540944210420366
+                "similarity": 0.47429853886567386
             },
             {
                 "file": "2007-11-30-pci-dss-will-wreak-havoc-on-smes.md",
@@ -3571,7 +3628,7 @@
             {
                 "file": "2026-07-28-two-stable-ai-futures.md",
                 "slug": "two-stable-ai-futures",
-                "similarity": 0.3997553821791772
+                "similarity": 0.39975537238526543
             },
             {
                 "file": "2008-01-31-the-state-of-oz-technology.md",
@@ -3693,14 +3750,14 @@
                 "similarity": 0.4957579591723612
             },
             {
-                "file": "2013-08-21-should-javascript-devs-build-real-things.md",
-                "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.4818275791009534
-            },
-            {
                 "file": "2026-07-14-ai-deployment-gap-economic-value.md",
                 "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.48010548882073134
+                "similarity": 0.4829763280227169
+            },
+            {
+                "file": "2013-08-21-should-javascript-devs-build-real-things.md",
+                "slug": "should-javascript-devs-build-real-things",
+                "similarity": 0.4824585447742724
             }
         ]
     },
@@ -3717,7 +3774,7 @@
             {
                 "file": "2026-07-14-ai-deployment-gap-economic-value.md",
                 "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.9375602348691559
+                "similarity": 0.9348296614920341
             },
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
@@ -3814,7 +3871,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.6658420740584418
+                "similarity": 0.65895750117946
             }
         ]
     },
@@ -3834,14 +3891,14 @@
                 "similarity": 0.7198896116896583
             },
             {
+                "file": "2026-07-14-ai-deployment-gap-economic-value.md",
+                "slug": "ai-deployment-gap-economic-value",
+                "similarity": 0.6670063485688845
+            },
+            {
                 "file": "2025-12-22-ai-incentives-power.md",
                 "slug": "ai-incentives-power",
                 "similarity": 0.6645179141528084
-            },
-            {
-                "file": "2026-07-14-ai-deployment-gap-economic-value.md",
-                "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.6618353847679818
             },
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
@@ -3859,6 +3916,11 @@
                 "similarity": 0.5328997154450786
             },
             {
+                "file": "2026-09-24-information-design-agentic-age.md",
+                "slug": "information-design-agentic-age",
+                "similarity": 0.5239454318599709
+            },
+            {
                 "file": "2025-02-27-when-will-ai-disrupt-travel.md",
                 "slug": "when-will-ai-disrupt-travel",
                 "similarity": 0.520748707592509
@@ -3867,11 +3929,6 @@
                 "file": "2025-09-12-scaling-coding-agents-without-breaking-your-dev-team.md",
                 "slug": "scaling-coding-agents-without-breaking-your-dev-team",
                 "similarity": 0.4909436962911873
-            },
-            {
-                "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
-                "slug": "software-is-a-race-to-zero-how-do-you-create-revenue-then",
-                "similarity": 0.47444791659888974
             }
         ]
     },
@@ -3903,7 +3960,7 @@
             {
                 "file": "2026-06-13-fail-fast-fix-faster.md",
                 "slug": "fail-fast-fix-faster",
-                "similarity": 0.34522502950618084
+                "similarity": 0.344073870802245
             },
             {
                 "file": "2007-11-19-fuzzy-logic-could-book-more-flights.md",
@@ -4002,7 +4059,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.5433562671520012
+                "similarity": 0.5472890308460842
             },
             {
                 "file": "2011-09-15-device-api-applications-of-devicemotion-and-deviceorientation.md",
@@ -4064,7 +4121,7 @@
             {
                 "file": "2010-03-23-an-open-internet-call-to-arms.md",
                 "slug": "an-open-internet-call-to-arms",
-                "similarity": 0.7247978623287727
+                "similarity": 0.725983253577374
             },
             {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
@@ -4074,7 +4131,7 @@
             {
                 "file": "2008-04-22-phorm-over-function.md",
                 "slug": "phorm-over-function",
-                "similarity": 0.5440713680844692
+                "similarity": 0.5481774475217769
             },
             {
                 "file": "2007-11-21-why-was-data-being-passed-on-a-disc-and-what-was-eds-advice.md",
@@ -4099,178 +4156,178 @@
             {
                 "file": "2008-04-21-can-yahoo-really-get-things-so-wrong.md",
                 "slug": "can-yahoo-really-get-things-so-wrong",
-                "similarity": 0.42259444439536853
+                "similarity": 0.4187360484631538
             }
         ]
     },
     {
         "file": "2026-07-28-two-stable-ai-futures.md",
         "slug": "two-stable-ai-futures",
-        "hash": "0be4784dc5511f402c36ebe09c3f65790d783dd16cc16889a57007e025c28053",
+        "hash": "45ee099ee483633842ae96c2318eee93ada1fb6e0f511dc69f44f9ab4a6f3bd8",
         "post_similarity": [
             {
                 "file": "2026-07-14-ai-deployment-gap-economic-value.md",
                 "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.8704871724475824
+                "similarity": 0.8739137390726803
             },
             {
                 "file": "2025-12-22-ai-incentives-power.md",
                 "slug": "ai-incentives-power",
-                "similarity": 0.8113718893907744
+                "similarity": 0.8113718978927277
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
-                "similarity": 0.7325972967899498
+                "similarity": 0.7325973002974915
             },
             {
                 "file": "2024-04-16-now-or-never-growth-opportunities-in-retail.md",
                 "slug": "now-or-never-growth-opportunities-in-retail",
-                "similarity": 0.7195484886855336
+                "similarity": 0.7195485127950164
             },
             {
                 "file": "2025-01-28-deepseek-r1-geography-bias.md",
                 "slug": "deepseek-r1-geography-bias",
-                "similarity": 0.6831563757133617
+                "similarity": 0.6831563799756326
             },
             {
                 "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
                 "slug": "atlas-ai-browser-strategy-divide",
-                "similarity": 0.646916463240061
+                "similarity": 0.6469164772019393
             },
             {
                 "file": "2025-11-05-strategy-ai.md",
                 "slug": "strategy-ai",
-                "similarity": 0.6244290036620522
+                "similarity": 0.6244290284227244
             },
             {
                 "file": "2024-12-03-nous-research-distributed-llm-training.md",
                 "slug": "nous-research-distributed-llm-training",
-                "similarity": 0.599916149601476
+                "similarity": 0.5999161615246923
             },
             {
                 "file": "2025-01-31-mistral-3-small-local-ai.md",
                 "slug": "mistral-3-small-local-ai",
-                "similarity": 0.5887557448403841
+                "similarity": 0.588755737587951
             },
             {
-                "file": "2007-11-21-why-was-data-being-passed-on-a-disc-and-what-was-eds-advice.md",
-                "slug": "why-was-data-being-passed-on-a-disc-and-what-was-eds-advice",
-                "similarity": 0.5625611047572415
+                "file": "2026-09-24-information-design-agentic-age.md",
+                "slug": "information-design-agentic-age",
+                "similarity": 0.582164839159179
             }
         ]
     },
     {
         "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
         "slug": "android-fragmentation-really-not-a-big-deal",
-        "hash": "f265ce73c6e089be99476933d9fc666a3be3cf97000704bf111797fb36282a0d",
+        "hash": "21584937b953058e486915f0a929309d0638018ac97f8dcd943faa69ed67e9c6",
         "post_similarity": [
-            {
-                "file": "2009-12-20-prediction-2010-will-be-the-year-apple-and-google-have-a-cage-fight.md",
-                "slug": "prediction-2010-will-be-the-year-apple-and-google-have-a-cage-fight",
-                "similarity": 1.0087976711205848
-            },
             {
                 "file": "2010-06-27-a-telling-quarter-for-android.md",
                 "slug": "a-telling-quarter-for-android",
-                "similarity": 1.0080322224093248
+                "similarity": 1.0092716999079174
+            },
+            {
+                "file": "2009-12-20-prediction-2010-will-be-the-year-apple-and-google-have-a-cage-fight.md",
+                "slug": "prediction-2010-will-be-the-year-apple-and-google-have-a-cage-fight",
+                "similarity": 1.0058940403422318
             },
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.8788345500364352
+                "similarity": 0.8865163678667989
             },
             {
                 "file": "2011-11-07-app-stores-are-delivery-channels-not-search-engines.md",
                 "slug": "app-stores-are-delivery-channels-not-search-engines",
-                "similarity": 0.8632710911474002
+                "similarity": 0.8626964324291928
             },
             {
                 "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
                 "slug": "the-golden-age-of-mobile-soon-maybe",
-                "similarity": 0.8543376732240378
+                "similarity": 0.8567305253664431
             },
             {
                 "file": "2007-11-05-bye-bye-openmoko.md",
                 "slug": "bye-bye-openmoko",
-                "similarity": 0.8509017964841229
+                "similarity": 0.847852672234674
             },
             {
                 "file": "2009-07-29-an-unofficial-endorsement-of-the-android-platform.md",
                 "slug": "an-unofficial-endorsement-of-the-android-platform",
-                "similarity": 0.8452506668887596
+                "similarity": 0.8431566272732873
             },
             {
                 "file": "2011-09-15-device-api-applications-of-devicemotion-and-deviceorientation.md",
                 "slug": "device-api-applications-of-devicemotion-and-deviceorientation",
-                "similarity": 0.836713291562963
+                "similarity": 0.8358486685026153
             },
             {
                 "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
                 "slug": "microsoft-buys-nokia-for-0b-what-this-means-for-mobile",
-                "similarity": 0.8192423022350251
+                "similarity": 0.8192620364397564
             },
             {
                 "file": "2010-10-07-i-like-where-i-think-sony-is-going.md",
                 "slug": "i-like-where-i-think-sony-is-going",
-                "similarity": 0.7964068533042852
+                "similarity": 0.7968684519176908
             }
         ]
     },
     {
         "file": "2026-06-13-fail-fast-fix-faster.md",
         "slug": "fail-fast-fix-faster",
-        "hash": "ec46dabd4993a4d1170b8e6cb9e52884600497126c1dfcc49f3909bbbd32cfb1",
+        "hash": "69d0ab2b918ab1c83585de90b4797f6a513fc79fce97bad4eab416b3625b9820",
         "post_similarity": [
             {
                 "file": "2026-02-26-mercury-2-diffusion-agents.md",
                 "slug": "mercury-2-diffusion-agents",
-                "similarity": 1.0919191872598621
+                "similarity": 1.102027975268875
             },
             {
                 "file": "2025-09-12-scaling-coding-agents-without-breaking-your-dev-team.md",
                 "slug": "scaling-coding-agents-without-breaking-your-dev-team",
-                "similarity": 0.8175045833334194
+                "similarity": 0.8189005368319225
             },
             {
                 "file": "2025-12-08-llm-advisory-group-local-subscriptions.md",
                 "slug": "llm-advisory-group-local-subscriptions",
-                "similarity": 0.7918124972485369
+                "similarity": 0.7838263888699616
             },
             {
                 "file": "2025-06-26-hands-on-gemini-cli.md",
                 "slug": "hands-on-gemini-cli",
-                "similarity": 0.729235372166666
+                "similarity": 0.721121644966455
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
                 "slug": "ai-works-now",
-                "similarity": 0.6462903070971153
-            },
-            {
-                "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
-                "slug": "software-engineering-reimagined-ai-native-era",
-                "similarity": 0.6177123217154807
+                "similarity": 0.6626849343999671
             },
             {
                 "file": "2026-07-14-ai-deployment-gap-economic-value.md",
                 "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.6156281493192152
+                "similarity": 0.637643629637669
             },
             {
                 "file": "2025-01-31-mistral-3-small-local-ai.md",
                 "slug": "mistral-3-small-local-ai",
-                "similarity": 0.6063899552980758
+                "similarity": 0.6244568496420563
+            },
+            {
+                "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
+                "slug": "software-engineering-reimagined-ai-native-era",
+                "similarity": 0.6203588174370542
+            },
+            {
+                "file": "2026-09-24-information-design-agentic-age.md",
+                "slug": "information-design-agentic-age",
+                "similarity": 0.5900814564856321
             },
             {
                 "file": "2024-02-24-mixtral-8x7b-anxiety.md",
                 "slug": "mixtral-8x7b-anxiety",
-                "similarity": 0.587755513949877
-            },
-            {
-                "file": "2026-02-03-openclaw-raspberrypi-howto.md",
-                "slug": "openclaw-raspberrypi-howto",
-                "similarity": 0.5770798453020703
+                "similarity": 0.584901527361316
             }
         ]
     },
@@ -4327,7 +4384,7 @@
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.7226136903742565
+                "similarity": 0.711492524412577
             }
         ]
     },
@@ -4362,14 +4419,14 @@
                 "similarity": 0.6967109434132169
             },
             {
-                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
-                "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.6919223648218045
-            },
-            {
                 "file": "2011-10-17-neo-futurism-in-the-information-age.md",
                 "slug": "neo-futurism-in-the-information-age",
                 "similarity": 0.6859454251031443
+            },
+            {
+                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
+                "slug": "computing-is-finally-becoming-personal",
+                "similarity": 0.6835587281829522
             },
             {
                 "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
@@ -4466,11 +4523,6 @@
                 "similarity": 0.724412434561533
             },
             {
-                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
-                "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.7019096176023647
-            },
-            {
                 "file": "2011-11-07-app-stores-are-delivery-channels-not-search-engines.md",
                 "slug": "app-stores-are-delivery-channels-not-search-engines",
                 "similarity": 0.6995750791582258
@@ -4486,6 +4538,11 @@
                 "similarity": 0.6950130341053299
             },
             {
+                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
+                "slug": "computing-is-finally-becoming-personal",
+                "similarity": 0.69335360320244
+            },
+            {
                 "file": "2011-10-04-on-a-post-flash-world-and-adobes-place-within-it.md",
                 "slug": "on-a-post-flash-world-and-adobes-place-within-it",
                 "similarity": 0.6772282854838225
@@ -4498,7 +4555,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.6654417619870848
+                "similarity": 0.6655789564270201
             }
         ]
     },
@@ -4545,7 +4602,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.5672157506696676
+                "similarity": 0.5717259719087175
             },
             {
                 "file": "2015-09-07-js-not-just-language-of-the-web.md",
@@ -4605,14 +4662,14 @@
                 "similarity": 0.4304877713888323
             },
             {
+                "file": "2026-09-24-information-design-agentic-age.md",
+                "slug": "information-design-agentic-age",
+                "similarity": 0.3901772392778331
+            },
+            {
                 "file": "2023-02-14-podcast-enterprise-ai.md",
                 "slug": "podcast-enterprise-ai",
                 "similarity": 0.38970639888764913
-            },
-            {
-                "file": "2023-08-31-ai-works-now.md",
-                "slug": "ai-works-now",
-                "similarity": 0.3556804541933738
             }
         ]
     },
@@ -4629,7 +4686,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.8665680872478319
+                "similarity": 0.8642555083772554
             },
             {
                 "file": "2015-09-07-js-not-just-language-of-the-web.md",
@@ -4681,7 +4738,7 @@
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.8589731726946195
+                "similarity": 0.862747951714917
             },
             {
                 "file": "2010-01-03-2010-the-year-the-netbook-turns-into-the-web-book.md",
@@ -4691,7 +4748,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.7752549413373416
+                "similarity": 0.7706051225586761
             },
             {
                 "file": "2011-11-07-app-stores-are-delivery-channels-not-search-engines.md",
@@ -4748,7 +4805,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.7047019350667547
+                "similarity": 0.6991830268514843
             },
             {
                 "file": "2013-03-20-jump-start-responsive-design-launch.md",
@@ -4835,7 +4892,7 @@
             {
                 "file": "2026-06-13-fail-fast-fix-faster.md",
                 "slug": "fail-fast-fix-faster",
-                "similarity": 0.5770798453020703
+                "similarity": 0.5759808028280065
             },
             {
                 "file": "2025-12-22-ai-incentives-power.md",
@@ -4954,7 +5011,7 @@
             {
                 "file": "2026-07-14-ai-deployment-gap-economic-value.md",
                 "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.6190750791010379
+                "similarity": 0.6179347593453887
             }
         ]
     },
@@ -4966,7 +5023,7 @@
             {
                 "file": "2026-07-14-ai-deployment-gap-economic-value.md",
                 "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.951573705469643
+                "similarity": 0.9539711151607387
             },
             {
                 "file": "2025-12-22-ai-incentives-power.md",
@@ -5038,7 +5095,7 @@
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.4443989305913072
+                "similarity": 0.4459983345251023
             },
             {
                 "file": "2010-01-28-ipad-almost-great.md",
@@ -5058,7 +5115,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.36368662910290855
+                "similarity": 0.366625672046862
             },
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
@@ -5068,7 +5125,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.32819096924447555
+                "similarity": 0.3264538340135868
             }
         ]
     },
@@ -5120,7 +5177,7 @@
             {
                 "file": "2026-07-14-ai-deployment-gap-economic-value.md",
                 "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.6074261855343764
+                "similarity": 0.6022803236219301
             },
             {
                 "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
@@ -5147,7 +5204,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.8240656154695714
+                "similarity": 0.826196127118664
             },
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
@@ -5182,7 +5239,7 @@
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.6421867023992665
+                "similarity": 0.6351800643796982
             }
         ]
     },
@@ -5199,7 +5256,7 @@
             {
                 "file": "2026-07-14-ai-deployment-gap-economic-value.md",
                 "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.7953315817869275
+                "similarity": 0.7995074583341263
             },
             {
                 "file": "2025-12-22-ai-incentives-power.md",
@@ -5294,9 +5351,9 @@
                 "similarity": 0.6498630926423828
             },
             {
-                "file": "2010-03-23-an-open-internet-call-to-arms.md",
-                "slug": "an-open-internet-call-to-arms",
-                "similarity": 0.632051453222835
+                "file": "2010-04-13-adobe-narayens-kingdom-for-a-plan.md",
+                "slug": "adobe-narayens-kingdom-for-a-plan",
+                "similarity": 0.6314303703476946
             }
         ]
     },
@@ -5318,7 +5375,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.8543376732240378
+                "similarity": 0.8567305253664431
             },
             {
                 "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
@@ -5353,7 +5410,7 @@
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.7384247666039352
+                "similarity": 0.736474717641874
             }
         ]
     },
@@ -5375,7 +5432,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.9421981641103325
+                "similarity": 0.9416119829217663
             },
             {
                 "file": "2015-08-08-ddd-jsiot-workshop.md",
@@ -5435,14 +5492,14 @@
                 "similarity": 0.5887773043477718
             },
             {
-                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
-                "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.564175218920679
-            },
-            {
                 "file": "2007-02-15-please-nokia-slap-me-again-no-really.md",
                 "slug": "please-nokia-slap-me-again-no-really",
                 "similarity": 0.5637815444674872
+            },
+            {
+                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
+                "slug": "computing-is-finally-becoming-personal",
+                "similarity": 0.5634264441432113
             },
             {
                 "file": "2011-02-12-microsoft-buys-nokia-for-0b-what-this-means-for-mobile.md",
@@ -5512,14 +5569,14 @@
                 "similarity": 0.5341955386284146
             },
             {
+                "file": "2026-07-14-ai-deployment-gap-economic-value.md",
+                "slug": "ai-deployment-gap-economic-value",
+                "similarity": 0.4820755432457688
+            },
+            {
                 "file": "2025-12-22-ai-incentives-power.md",
                 "slug": "ai-incentives-power",
                 "similarity": 0.48043568929840136
-            },
-            {
-                "file": "2026-07-14-ai-deployment-gap-economic-value.md",
-                "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.480197058139491
             },
             {
                 "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
@@ -5658,19 +5715,19 @@
                 "similarity": 0.9069596817190042
             },
             {
+                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
+                "slug": "computing-is-finally-becoming-personal",
+                "similarity": 0.5648311278005675
+            },
+            {
                 "file": "2007-11-21-why-was-data-being-passed-on-a-disc-and-what-was-eds-advice.md",
                 "slug": "why-was-data-being-passed-on-a-disc-and-what-was-eds-advice",
                 "similarity": 0.5606192880019827
             },
             {
-                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
-                "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.5598161437279219
-            },
-            {
                 "file": "2010-03-23-an-open-internet-call-to-arms.md",
                 "slug": "an-open-internet-call-to-arms",
-                "similarity": 0.5371021401676769
+                "similarity": 0.5369638701481303
             },
             {
                 "file": "2007-12-19-sms-bamboozlement.md",
@@ -5678,14 +5735,14 @@
                 "similarity": 0.5190260541873758
             },
             {
-                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
-                "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.49349297005952
-            },
-            {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
                 "slug": "a-clickster-fail-of-epic-proportions",
                 "similarity": 0.4916952601865652
+            },
+            {
+                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
+                "slug": "android-fragmentation-really-not-a-big-deal",
+                "similarity": 0.4891241798414967
             },
             {
                 "file": "2010-01-28-ipad-almost-great.md",
@@ -5695,7 +5752,7 @@
             {
                 "file": "2008-04-22-phorm-over-function.md",
                 "slug": "phorm-over-function",
-                "similarity": 0.466632671081121
+                "similarity": 0.46946638113436223
             }
         ]
     },
@@ -5727,7 +5784,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.6275743528762886
+                "similarity": 0.6282593619520088
             },
             {
                 "file": "2016-02-11-moving-to-metalsmith.md",
@@ -5779,7 +5836,7 @@
             {
                 "file": "2026-07-14-ai-deployment-gap-economic-value.md",
                 "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.6932679616650705
+                "similarity": 0.6993949908024486
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
@@ -5831,7 +5888,7 @@
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.5982451344043955
+                "similarity": 0.5978127959669
             },
             {
                 "file": "2025-12-22-ai-incentives-power.md",
@@ -5861,7 +5918,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.5453098406871969
+                "similarity": 0.5390361428404717
             },
             {
                 "file": "2025-10-23-atlas-ai-browser-strategy-divide.md",
@@ -5898,7 +5955,7 @@
             {
                 "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
                 "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.7059295091697909
+                "similarity": 0.7108281043137983
             },
             {
                 "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
@@ -5970,7 +6027,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.6115252495396732
+                "similarity": 0.614540599880606
             },
             {
                 "file": "2012-02-24-humanising-the-internet-of-things.md",
@@ -6002,7 +6059,7 @@
             {
                 "file": "2008-04-22-phorm-over-function.md",
                 "slug": "phorm-over-function",
-                "similarity": 0.7335709065401832
+                "similarity": 0.733492661394326
             },
             {
                 "file": "2009-02-03-rfid-documents-bad-idea.md",
@@ -6012,12 +6069,12 @@
             {
                 "file": "2008-03-15-security-101-the-user-should-be-able-to-authenticate.md",
                 "slug": "security-101-the-user-should-be-able-to-authenticate",
-                "similarity": 0.6806826737176725
+                "similarity": 0.6788151004188201
             },
             {
                 "file": "2026-07-28-two-stable-ai-futures.md",
                 "slug": "two-stable-ai-futures",
-                "similarity": 0.540607724792594
+                "similarity": 0.5406077164318672
             },
             {
                 "file": "2008-07-01-mobile-more-interesting-in-germany.md",
@@ -6044,57 +6101,57 @@
     {
         "file": "2010-03-23-an-open-internet-call-to-arms.md",
         "slug": "an-open-internet-call-to-arms",
-        "hash": "f34875c1c553aa094014b1042480b3b819a540767be9b0812dd8c2afae13894b",
+        "hash": "3adc75ce3e7285dddf8219fc362f9475ccd6338a32e79c9f6a78fee09a64878a",
         "post_similarity": [
             {
                 "file": "2007-10-15-let-the-new-gaming-witch-hunt-begin.md",
                 "slug": "let-the-new-gaming-witch-hunt-begin",
-                "similarity": 0.7328324157210864
+                "similarity": 0.7298482488765692
             },
             {
                 "file": "2007-12-21-potent-messages-of-impotent-industries.md",
                 "slug": "potent-messages-of-impotent-industries",
-                "similarity": 0.7247978623287727
+                "similarity": 0.725983253577374
             },
             {
                 "file": "2007-05-03-drmed-for-life.md",
                 "slug": "drmed-for-life",
-                "similarity": 0.6461351684068749
+                "similarity": 0.6456711290393758
             },
             {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
                 "slug": "a-clickster-fail-of-epic-proportions",
-                "similarity": 0.632051453222835
+                "similarity": 0.6314025847527192
             },
             {
                 "file": "2008-04-21-can-yahoo-really-get-things-so-wrong.md",
                 "slug": "can-yahoo-really-get-things-so-wrong",
-                "similarity": 0.6191756354827536
+                "similarity": 0.6222510583352213
             },
             {
                 "file": "2008-04-22-phorm-over-function.md",
                 "slug": "phorm-over-function",
-                "similarity": 0.6088880878862725
+                "similarity": 0.6115979575392496
             },
             {
                 "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
                 "slug": "thingstreams-the-future-of-brand-product-consumer-dialogue",
-                "similarity": 0.5650729582163447
-            },
-            {
-                "file": "2011-11-03-we-are-the-champions-of-the-web.md",
-                "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.5396388847944402
+                "similarity": 0.5630886109978006
             },
             {
                 "file": "2008-02-20-dvd-jon-strikes-again.md",
                 "slug": "dvd-jon-strikes-again",
-                "similarity": 0.5371021401676769
+                "similarity": 0.5369638701481303
             },
             {
                 "file": "2007-11-21-why-was-data-being-passed-on-a-disc-and-what-was-eds-advice.md",
                 "slug": "why-was-data-being-passed-on-a-disc-and-what-was-eds-advice",
-                "similarity": 0.5330672344304062
+                "similarity": 0.5353483987893551
+            },
+            {
+                "file": "2011-11-03-we-are-the-champions-of-the-web.md",
+                "slug": "we-are-the-champions-of-the-web",
+                "similarity": 0.5335357397223724
             }
         ]
     },
@@ -6116,7 +6173,7 @@
             {
                 "file": "2010-03-23-an-open-internet-call-to-arms.md",
                 "slug": "an-open-internet-call-to-arms",
-                "similarity": 0.6461351684068749
+                "similarity": 0.6456711290393758
             },
             {
                 "file": "2007-11-21-why-was-data-being-passed-on-a-disc-and-what-was-eds-advice.md",
@@ -6126,7 +6183,7 @@
             {
                 "file": "2008-04-22-phorm-over-function.md",
                 "slug": "phorm-over-function",
-                "similarity": 0.5628380098780681
+                "similarity": 0.5683908528112837
             },
             {
                 "file": "2007-10-15-let-the-new-gaming-witch-hunt-begin.md",
@@ -6149,9 +6206,9 @@
                 "similarity": 0.5181994497125699
             },
             {
-                "file": "2010-04-13-adobe-narayens-kingdom-for-a-plan.md",
-                "slug": "adobe-narayens-kingdom-for-a-plan",
-                "similarity": 0.46491542721917084
+                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
+                "slug": "computing-is-finally-becoming-personal",
+                "similarity": 0.4662122462278727
             }
         ]
     },
@@ -6181,14 +6238,14 @@
                 "similarity": 0.487259684083728
             },
             {
-                "file": "2013-08-21-should-javascript-devs-build-real-things.md",
-                "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.46072211642523375
-            },
-            {
                 "file": "2011-10-04-on-a-post-flash-world-and-adobes-place-within-it.md",
                 "slug": "on-a-post-flash-world-and-adobes-place-within-it",
                 "similarity": 0.4569282889664812
+            },
+            {
+                "file": "2013-08-21-should-javascript-devs-build-real-things.md",
+                "slug": "should-javascript-devs-build-real-things",
+                "similarity": 0.4537057313200318
             },
             {
                 "file": "2011-10-17-neo-futurism-in-the-information-age.md",
@@ -6228,14 +6285,14 @@
                 "similarity": 0.8004589910861254
             },
             {
-                "file": "2013-08-21-should-javascript-devs-build-real-things.md",
-                "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.7953576527996853
-            },
-            {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
                 "slug": "web-facilitated-play-in-the-real-world",
                 "similarity": 0.7947835983918636
+            },
+            {
+                "file": "2013-08-21-should-javascript-devs-build-real-things.md",
+                "slug": "should-javascript-devs-build-real-things",
+                "similarity": 0.7920260368742058
             },
             {
                 "file": "2012-10-19-datatium-a-material-to-create-responsive-experiences.md",
@@ -6263,9 +6320,9 @@
                 "similarity": 0.6859454251031443
             },
             {
-                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
-                "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.6832537863632111
+                "file": "2007-12-19-sms-bamboozlement.md",
+                "slug": "sms-bamboozlement",
+                "similarity": 0.6745078841603895
             }
         ]
     },
@@ -6302,7 +6359,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.5558240359574865
+                "similarity": 0.5568355582021032
             },
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
@@ -6349,7 +6406,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.7157974921938567
+                "similarity": 0.7141036123527857
             },
             {
                 "file": "2012-07-25-web-facilitated-play-in-the-real-world.md",
@@ -6513,19 +6570,19 @@
                 "similarity": 0.8969731876335811
             },
             {
-                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
-                "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.8901298518153666
-            },
-            {
                 "file": "2011-09-15-device-api-applications-of-devicemotion-and-deviceorientation.md",
                 "slug": "device-api-applications-of-devicemotion-and-deviceorientation",
                 "similarity": 0.8845702495520669
             },
             {
+                "file": "2011-01-10-computing-is-finally-becoming-personal.md",
+                "slug": "computing-is-finally-becoming-personal",
+                "similarity": 0.873414170146361
+            },
+            {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.8470621581011473
+                "similarity": 0.8441923524040129
             },
             {
                 "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
@@ -6562,7 +6619,7 @@
             {
                 "file": "2026-07-14-ai-deployment-gap-economic-value.md",
                 "slug": "ai-deployment-gap-economic-value",
-                "similarity": 0.6713554582489176
+                "similarity": 0.6746649936260042
             },
             {
                 "file": "2023-08-31-ai-works-now.md",
@@ -6592,7 +6649,7 @@
             {
                 "file": "2026-07-28-two-stable-ai-futures.md",
                 "slug": "two-stable-ai-futures",
-                "similarity": 0.599916149601476
+                "similarity": 0.5999161615246923
             },
             {
                 "file": "2025-11-05-strategy-ai.md",
@@ -6614,57 +6671,57 @@
     {
         "file": "2008-04-22-phorm-over-function.md",
         "slug": "phorm-over-function",
-        "hash": "7d4400486fae05801a8f2fb800943863af1d0c084665c9acbedb1c9d274da452",
+        "hash": "191b9d3c64185e05cc9c2ae9c8bb935e51930f2d4c7f0f013ed3be4e21ddde0c",
         "post_similarity": [
             {
                 "file": "2025-07-02-qantas-breach-toxic-waste.md",
                 "slug": "qantas-breach-toxic-waste",
-                "similarity": 0.7335709065401832
+                "similarity": 0.733492661394326
             },
             {
                 "file": "2007-11-21-why-was-data-being-passed-on-a-disc-and-what-was-eds-advice.md",
                 "slug": "why-was-data-being-passed-on-a-disc-and-what-was-eds-advice",
-                "similarity": 0.6948610987778714
+                "similarity": 0.6904535251075122
             },
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
                 "slug": "we-are-the-champions-of-the-web",
-                "similarity": 0.6328932602119908
+                "similarity": 0.6351500112579784
             },
             {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
                 "slug": "a-clickster-fail-of-epic-proportions",
-                "similarity": 0.6195227170868992
+                "similarity": 0.6186629126431743
             },
             {
                 "file": "2010-03-23-an-open-internet-call-to-arms.md",
                 "slug": "an-open-internet-call-to-arms",
-                "similarity": 0.6088880878862725
+                "similarity": 0.6115979575392496
             },
             {
                 "file": "2010-07-20-thingstreams-the-future-of-brand-product-consumer-dialogue.md",
                 "slug": "thingstreams-the-future-of-brand-product-consumer-dialogue",
-                "similarity": 0.5913323096999696
+                "similarity": 0.5938387481830155
             },
             {
                 "file": "2009-07-21-the-golden-age-of-mobile-soon-maybe.md",
                 "slug": "the-golden-age-of-mobile-soon-maybe",
-                "similarity": 0.5752047989520287
+                "similarity": 0.5755550960290508
             },
             {
                 "file": "2008-01-31-the-state-of-oz-technology.md",
                 "slug": "the-state-of-oz-technology",
-                "similarity": 0.5728184303616426
+                "similarity": 0.5727255683292691
             },
             {
                 "file": "2007-05-03-drmed-for-life.md",
                 "slug": "drmed-for-life",
-                "similarity": 0.5628380098780681
+                "similarity": 0.5683908528112837
             },
             {
                 "file": "2026-07-28-two-stable-ai-futures.md",
                 "slug": "two-stable-ai-futures",
-                "similarity": 0.5575576189380145
+                "similarity": 0.5631238583649733
             }
         ]
     },
@@ -6694,11 +6751,6 @@
                 "similarity": 0.7531251117363985
             },
             {
-                "file": "2026-06-13-fail-fast-fix-faster.md",
-                "slug": "fail-fast-fix-faster",
-                "similarity": 0.729235372166666
-            },
-            {
                 "file": "2024-10-28-software-engineering-reimagined-ai-native-era.md",
                 "slug": "software-engineering-reimagined-ai-native-era",
                 "similarity": 0.7264531720241514
@@ -6707,6 +6759,11 @@
                 "file": "2025-12-08-llm-advisory-group-local-subscriptions.md",
                 "slug": "llm-advisory-group-local-subscriptions",
                 "similarity": 0.7254438426439213
+            },
+            {
+                "file": "2026-06-13-fail-fast-fix-faster.md",
+                "slug": "fail-fast-fix-faster",
+                "similarity": 0.721121644966455
             },
             {
                 "file": "2025-01-31-mistral-3-small-local-ai.md",
@@ -6719,9 +6776,9 @@
                 "similarity": 0.6374608840392394
             },
             {
-                "file": "2024-09-05-flux-loras-comicbook-experiments.md",
-                "slug": "flux-loras-comicbook-experiments",
-                "similarity": 0.6009229442104946
+                "file": "2026-07-14-ai-deployment-gap-economic-value.md",
+                "slug": "ai-deployment-gap-economic-value",
+                "similarity": 0.6033704299091397
             }
         ]
     },
@@ -6743,7 +6800,7 @@
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.7507550524247393
+                "similarity": 0.7504165239745053
             },
             {
                 "file": "2014-12-16-building-information-radiator.md",
@@ -6800,12 +6857,12 @@
             {
                 "file": "2011-01-10-computing-is-finally-becoming-personal.md",
                 "slug": "computing-is-finally-becoming-personal",
-                "similarity": 0.5945867886561123
+                "similarity": 0.5921285945975472
             },
             {
                 "file": "2013-08-21-should-javascript-devs-build-real-things.md",
                 "slug": "should-javascript-devs-build-real-things",
-                "similarity": 0.5709672479732235
+                "similarity": 0.5673741721983961
             },
             {
                 "file": "2011-11-03-we-are-the-champions-of-the-web.md",
@@ -6847,7 +6904,7 @@
             {
                 "file": "2008-03-15-security-101-the-user-should-be-able-to-authenticate.md",
                 "slug": "security-101-the-user-should-be-able-to-authenticate",
-                "similarity": 0.7880369337919052
+                "similarity": 0.7929394093499365
             },
             {
                 "file": "2025-07-02-qantas-breach-toxic-waste.md",
@@ -6862,7 +6919,7 @@
             {
                 "file": "2008-04-22-phorm-over-function.md",
                 "slug": "phorm-over-function",
-                "similarity": 0.5157463743931643
+                "similarity": 0.5153997701699963
             },
             {
                 "file": "2012-11-20-a-clickster-fail-of-epic-proportions.md",
@@ -6914,7 +6971,7 @@
             {
                 "file": "2026-07-14-ai-deployment-gap-economic-value.md",
                 "slug": "ai-deployment-gap-economic-value",
-                "similarity": 1.0309178364813696
+                "similarity": 1.0330303390251485
             },
             {
                 "file": "2025-11-05-strategy-ai.md",
@@ -6929,7 +6986,7 @@
             {
                 "file": "2026-07-28-two-stable-ai-futures.md",
                 "slug": "two-stable-ai-futures",
-                "similarity": 0.8113718893907744
+                "similarity": 0.8113718978927277
             },
             {
                 "file": "2010-09-29-software-is-a-race-to-zero-how-do-you-create-revenue-then.md",
@@ -7041,14 +7098,14 @@
                 "similarity": 0.7060609699533769
             },
             {
+                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
+                "slug": "android-fragmentation-really-not-a-big-deal",
+                "similarity": 0.6943271283614059
+            },
+            {
                 "file": "2011-10-04-on-a-post-flash-world-and-adobes-place-within-it.md",
                 "slug": "on-a-post-flash-world-and-adobes-place-within-it",
                 "similarity": 0.693378402772608
-            },
-            {
-                "file": "2011-01-18-android-fragmentation-really-not-a-big-deal.md",
-                "slug": "android-fragmentation-really-not-a-big-deal",
-                "similarity": 0.6925151554810369
             },
             {
                 "file": "2008-07-17-mobile-dominance-on-track.md",
