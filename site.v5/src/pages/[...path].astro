@@ -84,6 +84,7 @@ const seo = {
   } : undefined,
 };
 const hasSlideshow = Boolean(remarkPluginFrontmatter.hasSlideshow);
+const hasCodeBlocks = Boolean(remarkPluginFrontmatter.hasCodeBlocks);
 const markdownHref = buildMarkdownHref(entry.data, entry.collection);
 
 ---
@@ -92,6 +93,7 @@ const markdownHref = buildMarkdownHref(entry.data, entry.collection);
   slug={entry.data.slug}
   seo={seo}
   hasSlideshow={hasSlideshow}
+  hasCodeBlocks={hasCodeBlocks}
   markdownHref={markdownHref}
 >
   <Fragment slot="header" { ...entry.data }>

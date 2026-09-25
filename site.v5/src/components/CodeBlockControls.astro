@@ -1,0 +1,26 @@
+---
+import codeBlockStyles from '../styles/code-block.css?inline';
+
+import { Icon } from 'astro-icon/components';
+---
+
+<style is:global set:html={codeBlockStyles} />
+
+<div
+  aria-hidden="true"
+  style="position:absolute;width:0;height:0;overflow:hidden;opacity:0;pointer-events:none;"
+>
+  <Icon name="fa7-regular:copy" />
+  <Icon name="fa7-solid:text-width" />
+  <Icon name="fa7-solid:check" />
+</div>
+
+<p
+  data-code-block-live-region
+  aria-live="polite"
+  aria-atomic="true"
+></p>
+
+<script>
+  import '../lib/code-block-controller.mjs';
+</script>

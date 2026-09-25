@@ -7,6 +7,7 @@ import { getImage } from 'astro:assets';
 import humanize from 'humanize-plus';
 
 import SlideshowAssets from '../components/SlideshowAssets.astro';
+import CodeBlockControls from '../components/CodeBlockControls.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import { imageTransform } from '../lib/utils.mjs';
@@ -19,6 +20,7 @@ const {
   slug = '/',
   seo = {},
   hasSlideshow = false,
+  hasCodeBlocks = false,
   markdownHref = undefined,
 } = Astro.props;
 
@@ -153,6 +155,7 @@ const structuredDataJson = structuredData
   </head>
   <body>
     {hasSlideshow && <SlideshowAssets />}
+    {hasCodeBlocks && <CodeBlockControls />}
     {Astro.slots.has('header') && (
       <slot name="header" />
     )}

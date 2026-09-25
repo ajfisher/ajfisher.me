@@ -1,0 +1,210 @@
+.code-block {
+  position: relative;
+  margin: 1em 0;
+
+  > pre.astro-code {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    padding-block: 1rem;
+    padding-inline-end: max(var(--gutter), 9.2rem);
+  }
+
+  &[data-code-block-wrapped='true'] > pre.astro-code {
+    overflow-x: hidden !important;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+
+  > [role='group'] {
+    position: absolute;
+    z-index: 2;
+    inset-block-start: 0.8rem;
+    inset-inline-end: 0.8rem;
+    display: flex;
+    gap: 0.4rem;
+
+    > button {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 3.6rem;
+      height: 3.6rem;
+      padding: 0;
+      border: 0;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--dark-grey) 78%, transparent);
+      color: var(--light-text-colour);
+      opacity: 0.78;
+      cursor: pointer;
+      transition:
+        opacity 0.18s ease,
+        color 0.18s ease,
+        background-color 0.18s ease;
+
+      &:hover,
+      &:focus-visible,
+      &[aria-pressed='true'] {
+        background: var(--highlight);
+        color: var(--light-text-colour);
+        opacity: 1;
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--highlight);
+        outline-offset: 2px;
+      }
+
+      > [data-code-block-icon] {
+        width: 1.7rem;
+        height: 1.7rem;
+        pointer-events: none;
+        transition:
+          opacity 0.16s ease,
+          transform 0.16s ease;
+      }
+
+      > [data-code-block-icon='check'] {
+        position: absolute;
+        opacity: 0;
+        transform: scale(0.72);
+      }
+
+      &[data-copy-state='success'] {
+        > [data-code-block-icon='copy'] {
+          opacity: 0;
+          transform: scale(0.72);
+        }
+
+        > [data-code-block-icon='check'] {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      &::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        z-index: 3;
+        inset-block-start: calc(100% + 0.5rem);
+        inset-inline-start: 50%;
+        translate: -50% -0.2rem;
+        width: max-content;
+        max-width: 16rem;
+        padding: 0.3rem 0.6rem;
+        border-radius: 0.2rem;
+        background: var(--darkened-grey);
+        color: var(--light-text-colour);
+        font-family: var(--main-font-family);
+        font-size: 1.4rem;
+        line-height: 1.2;
+        opacity: 0;
+        pointer-events: none;
+        transition:
+          opacity 0.16s ease,
+          translate 0.16s ease;
+      }
+
+      &:hover::after,
+      &:focus-visible::after {
+        opacity: 1;
+        translate: -50% 0;
+      }
+
+      &[data-copy-state='success']::after,
+      &[data-copy-state='error']::after {
+        opacity: 0;
+      }
+    }
+  }
+
+  > [data-code-block-status] {
+    display: none;
+    position: absolute;
+    z-index: 4;
+    inset: auto;
+    margin: 0;
+    padding: 0.3rem 0.6rem;
+    border: 0;
+    border-radius: 0.2rem;
+    background: var(--darkened-grey);
+    color: var(--light-text-colour);
+    font-family: var(--main-font-family);
+    font-size: 1.4rem;
+    line-height: 1.2;
+
+    &:popover-open {
+      display: block;
+    }
+
+    &[data-code-block-visible='true'] {
+      display: block;
+      inset-block-start: 4.9rem;
+      inset-inline-end: 0.8rem;
+    }
+  }
+}
+
+[data-code-block-live-region] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@supports (anchor-name: --code-block) and (top: anchor(top)) {
+  .code-block {
+    > [role='group'] {
+      inset: auto;
+      top: anchor(top);
+      left: anchor(right);
+      translate: calc(-100% - 0.8rem) 0.8rem;
+    }
+
+    > [data-code-block-status]:popover-open {
+      top: anchor(bottom);
+      left: anchor(center);
+      translate: -50% 0.5rem;
+    }
+  }
+}
+
+@media (pointer: coarse) {
+  .code-block {
+    > pre.astro-code {
+      padding-inline-end: max(var(--gutter), 10.8rem);
+    }
+
+    > [role='group'] > button {
+      width: 4.4rem;
+      height: 4.4rem;
+      opacity: 0.86;
+
+      > [data-code-block-icon] {
+        width: 1.8rem;
+        height: 1.8rem;
+      }
+    }
+
+    > [data-code-block-status][data-code-block-visible='true'] {
+      inset-block-start: 5.7rem;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .code-block > [role='group'] > button {
+    transition: none;
+
+    > [data-code-block-icon],
+    &::after {
+      transition: none;
+    }
+  }
+}
