@@ -3,11 +3,11 @@ const COPY_FEEDBACK_MS = 1500;
 
 let codeBlockCount = 0;
 
-const createControlIcon = (iconSet, iconName, classNames = []) => {
+const createControlIcon = (iconSet, iconName, purpose = iconName) => {
   const icon = document.createElementNS(SVG_NAMESPACE, 'svg');
   const use = document.createElementNS(SVG_NAMESPACE, 'use');
 
-  icon.classList.add('code-block__icon', ...classNames);
+  icon.dataset.codeBlockIcon = purpose;
   icon.setAttribute('width', '1em');
   icon.setAttribute('height', '1em');
   icon.setAttribute('viewBox', '0 0 640 640');
@@ -25,7 +25,6 @@ const createButton = ({ action, label, tooltip }) => {
   const button = document.createElement('button');
 
   button.type = 'button';
-  button.className = 'code-block__control';
   button.dataset.codeBlockAction = action;
   button.dataset.tooltip = tooltip;
   button.setAttribute('aria-label', label);
@@ -104,13 +103,13 @@ const showStatus = (status, message, timeoutId) => {
   status.textContent = message;
 
   if (supportsAnchoredPopover(status)) {
-    status.classList.remove('is-visible');
+    status.dataset.codeBlockVisible = 'false';
     if (!status.matches(':popover-open')) {
       status.showPopover();
     }
   } else {
     status.removeAttribute('popover');
-    status.classList.add('is-visible');
+    status.dataset.codeBlockVisible = 'true';
   }
 
   return window.setTimeout(() => {
@@ -118,7 +117,7 @@ const showStatus = (status, message, timeoutId) => {
       && status.matches(':popover-open')) {
       status.hidePopover();
     }
-    status.classList.remove('is-visible');
+    status.dataset.codeBlockVisible = 'false';
   }, COPY_FEEDBACK_MS);
 };
 
@@ -147,7 +146,6 @@ const enhanceCodeBlock = (pre) => {
   wrapper.append(pre);
 
   const controls = document.createElement('div');
-  controls.className = 'code-block__controls';
   controls.setAttribute('role', 'group');
   controls.setAttribute('aria-label', 'Code block controls');
   controls.style.setProperty('position-anchor', blockAnchor);
@@ -167,19 +165,12 @@ const enhanceCodeBlock = (pre) => {
     tooltip: 'Copy code',
   });
   copyButton.style.setProperty('anchor-name', copyAnchor);
-  copyButton.append(createControlIcon(
-    'regular',
-    'copy',
-    ['code-block__icon--copy'],
-  ));
-  copyButton.append(createControlIcon(
-    'solid',
-    'check',
-    ['code-block__icon--check'],
-  ));
+  copyButton.append(createControlIcon('regular', 'copy'));
+  copyButton.append(createControlIcon('solid', 'check'));
 
   const status = document.createElement('span');
-  status.className = 'code-block__status';
+  status.dataset.codeBlockStatus = '';
+  status.dataset.codeBlockVisible = 'false';
   status.setAttribute('popover', 'manual');
   status.style.setProperty('position-anchor', copyAnchor);
 
@@ -190,9 +181,10 @@ const enhanceCodeBlock = (pre) => {
   let resetTimeoutId;
 
   wrapButton.addEventListener('click', () => {
-    const isWrapped = wrapper.classList.toggle('is-wrapped');
+    const isWrapped = wrapper.dataset.codeBlockWrapped !== 'true';
     const label = isWrapped ? 'Stop wrapping' : 'Wrap lines';
 
+    wrapper.dataset.codeBlockWrapped = String(isWrapped);
     wrapButton.setAttribute('aria-pressed', String(isWrapped));
     wrapButton.setAttribute('aria-label', label);
     wrapButton.dataset.tooltip = label;
