@@ -20,6 +20,7 @@ const {
   slug = '/',
   seo = {},
   hasSlideshow = false,
+  hasCodeBlocks = false,
   markdownHref = undefined,
 } = Astro.props;
 
@@ -154,7 +155,7 @@ const structuredDataJson = structuredData
   </head>
   <body>
     {hasSlideshow && <SlideshowAssets />}
-    <CodeBlockControls />
+    {hasCodeBlocks && <CodeBlockControls />}
     {Astro.slots.has('header') && (
       <slot name="header" />
     )}

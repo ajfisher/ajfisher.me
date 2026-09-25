@@ -6,6 +6,7 @@ import { unified } from '@astrojs/markdown-remark';
 import icon from "astro-icon";
 import sitemap from '@astrojs/sitemap';
 import rehypeRaw from 'rehype-raw';
+import remarkCodeBlocks from './src/lib/remark-code-blocks.mjs';
 import remarkPullQuotes from './src/lib/remark-pullquotes.mjs';
 import remarkSlideshow from './src/lib/remark-slideshow.mjs';
 import { remarkReadingTime } from './src/lib/remark-reading-time.mjs';
@@ -43,7 +44,12 @@ export default defineConfig({
   compressHTML: true,
   markdown: {
     processor: unified({
-      remarkPlugins: [remarkPullQuotes, remarkSlideshow, remarkReadingTime],
+      remarkPlugins: [
+        remarkPullQuotes,
+        remarkSlideshow,
+        remarkCodeBlocks,
+        remarkReadingTime,
+      ],
       rehypePlugins: [rehypeRaw],
     }),
   },
