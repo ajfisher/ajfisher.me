@@ -6,7 +6,7 @@ This directory holds the Lambda@Edge handlers deployed with CloudFront.
 
 - Functions target Node 20 (`nodejs20.x`) as defined in
   `infra/application/lambda.tf`. This is separate from the Astro site build
-  runtime, which requires Node `>=22.12.0`.
+  runtime, which requires Node `>=22.19.0`.
 - Use Node 20 locally when validating Lambda@Edge runtime compatibility.
 - Run `make test` from the repository root before committing to ensure linting
   passes.
