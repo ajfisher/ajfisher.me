@@ -19,8 +19,8 @@ plus the CloudFront Lambda@Edge handlers and Terraform infrastructure.
 
 The site build runtime and edge handler runtime are intentionally different.
 
-- Use Node `>=22.12.0` for `site.v5/` development, tests, and builds. Astro 7
-  requires this, and `.github/workflows/astro.build.yml` uses Node 22.
+- Use Node `>=22.19.0` for `site.v5/` development, tests, and builds. Astro 7
+  and its dependencies require this. The site build workflow uses Node 22.
 - The Lambda@Edge handlers in `app/` still target Node 20 because
   `infra/application/lambda.tf` sets their runtime to `nodejs20.x`.
 - Do not change the Lambda runtime when updating site dependencies unless the
